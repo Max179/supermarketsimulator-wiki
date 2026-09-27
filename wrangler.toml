@@ -1,0 +1,4 @@
+# Cloudflare Pages project for supermarketsimulator.wiki. The domain is attached in the Cloudflare dashboard, not here.
+name = "supermarketsimulator-wiki"
+pages_build_output_dir = "web/dist"
+compatibility_date = "2025-06-01"

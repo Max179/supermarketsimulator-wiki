@@ -1,0 +1,51 @@
+name: publish
+
+# Gates run before anything can reach the internet: build from the committed normalized data, then the test
+# suite, then the typecheck. The deploy job cannot start unless that job succeeded.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: build the site from the committed normalized data
+        run: node pipeline/schema_to_inventory.mjs && node pipeline/site.mjs
+      - name: gates
+        run: node tests/site.test.mjs
+      - name: typecheck (portable type roots for a clean runner)
+        run: |
+          npm i --no-save --no-package-lock typescript@5 @types/node@22
+          npx tsc --noEmit -p tsconfig.ci.json
+
+  deploy:
+    needs: gate
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: build the exact artefact that will be published
+        run: node pipeline/schema_to_inventory.mjs && node pipeline/site.mjs
+      - name: preflight
+        run: node tools/preflight.mjs
+      - name: publish to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy web/dist --project-name=supermarketsimulator-wiki --branch=main
+
+# Not automated here on purpose: adding the custom domain (supermarketsimulator.wiki) and any DNS record is a dashboard/API
+# action that belongs to the account owner. This workflow only uploads the files.

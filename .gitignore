@@ -1,0 +1,11 @@
+﻿node_modules/
+data/raw/
+web/.next/
+web/out/
+*.tmp
+reports/*.local.json
+
+
+# build output and raw game packages stay on Windows
+web/dist/
+data/raw/
