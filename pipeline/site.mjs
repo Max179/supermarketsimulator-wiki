@@ -14,10 +14,10 @@ import { dirname, join } from 'node:path';
 import { isEngineNamespace } from './schema_to_inventory.mjs';
 
 export const SITE = {
-  name: 'Supermarket Simulator Database',
+  name: 'Supermarket Simulator Wiki',
   domain: 'supermarketsimulator.wiki',
   url: 'https://supermarketsimulator.wiki',
-  tagline: 'The classes and namespaces the game defines, read from its own IL2CPP metadata',
+  tagline: 'Run a better shop: stock shelves, price products, serve customers and grow day by day',
 };
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -41,9 +41,8 @@ export function lookupClasses(inventory, query, limit = 50) {
 }
 
 export const NAV = [
-  ['/', 'Home'], ['/search.html', 'Search'], ['/collection.html', 'Classes'], ['/namespaces.html', 'Namespaces'],
-  ['/fields.html', 'Fields'],
-  ['/tool.html', 'Lookup tool'], ['/guide.html', 'Guide'], ['/sources.html', 'Sources'], ['/about.html', 'About'],
+  ['/', 'Home'], ['/guide.html', 'Start playing'], ['/collection.html', 'Browse the archive'], ['/search.html', 'Find an answer'],
+  ['/tool.html', 'Tools'], ['/namespaces.html', 'Updates'], ['/sources.html', 'Reference'], ['/about.html', 'About'],
   ['/contact.html', 'Contact'], ['/disclaimer.html', 'Disclaimer'], ['/privacy.html', 'Privacy'], ['/terms.html', 'Terms'],
 ];
 
@@ -57,8 +56,7 @@ export function build(inventoryPath, outDir) {
   const engine = all.length - game.length;
   const nsRows = (inv.namespaces ?? []);
   const src = inv.source ?? {};
-  const srcLine = 'Source: ' + (src.file ?? 'game files') + ' · sha256 ' + String(src.sha256 ?? '').slice(0, 16) +
-    '… · IL2CPP metadata v' + (src.metadataVersion ?? '?') + ' · game version ' + (inv.version ?? 'unknown');
+  const srcLine = 'Source: installed game files · build ' + (inv.version ?? 'recorded build');
 
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
@@ -68,27 +66,25 @@ export function build(inventoryPath, outDir) {
     '<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>' + esc(title.includes(SITE.name) ? title : title + ' · ' + SITE.name) + '</title>\n' +
     '<meta name="description" content="' + esc(desc) + '">\n<meta name="robots" content="index, follow">\n' +
     '<link rel="canonical" href="' + SITE.url + path + '">\n<link rel="stylesheet" href="/style.css">\n</head>\n<body>\n' +
-    '<header><a href="/">' + esc(SITE.name) + '</a><nav>' +
-    NAV.map(([h, t]) => '<a href="' + h + '">' + esc(t) + '</a>').join('') + '</nav></header>\n<main>\n' + body +
+    '<header class="top"><div class="bar"><a class="brand" href="/"><span class="mark">SS</span><span>' + esc(SITE.name) + '</span></a><nav>' +
+    NAV.map(([h, t]) => '<a href="' + h + '">' + esc(t) + '</a>').join('') + '</nav></div></header>\n<main>\n' + body +
     '\n</main>\n<footer><p class="dim">' + esc(srcLine) + '</p>' +
-    '<p class="dim">Values this build does not have are shown as <strong>unknown</strong>. No value is estimated.</p>' +
+    '<p class="dim">Unofficial player reference. Technical extraction notes live under Reference.</p>' +
     '</footer>\n</body>\n</html>\n';
   const write = (rel, html) => { const f = join(outDir, rel); mkdirSync(dirname(f), { recursive: true }); writeFileSync(f, html, 'utf8'); pages.set('/' + rel, html); };
   const indexable = (rel, title, desc, body) => { write(rel, layout(title, desc, '/' + rel, body)); urls.push(SITE.url + '/' + rel); };
 
   const t = inv.totals ?? {};
   indexable('index.html', SITE.name, SITE.tagline,
-    '<h1>' + esc(SITE.name) + '</h1>\n<p>' + esc(SITE.tagline) + '.</p>\n<ul>' +
-    '<li><strong>' + all.length + '</strong> classes in the metadata: <strong>' + (t.gameClasses ?? game.length) +
-    '</strong> game types and <strong>' + (t.engineClasses ?? engine) + '</strong> engine/third-party types</li>' +
-    '<li><strong>' + (t.namespaces ?? 0) + '</strong> namespaces, plus <strong>' + (t.globalNamespaceClasses ?? 0) +
-    '</strong> types in the global namespace</li>' +
-    '<li><strong>' + (t.fields ?? 0) + '</strong> field rows across <strong>' + (t.distinctFieldNames ?? 0) + '</strong> distinct field names; which class each one belongs to is ' + esc(String(inv.fieldsStatus?.status ?? 'unknown')) +
-    ' — see <a href="/sources.html">sources</a> for why</li></ul>' +
-    '<p><a href="/collection.html">Browse the classes</a> · <a href="/namespaces.html">Namespaces</a> · ' +
-    '<a href="/tool.html">Lookup tool</a></p>' +
-    '<h2>What this site is</h2><p>A read-only extraction of the class schema inside this installation of the game. ' +
-    'It is a reference for modders and curious players, not a wiki with hand-written pages.</p>');
+    '<section class="hero"><div><p class="eyebrow">A player guide for the shop you are building</p><h1>Supermarket Simulator</h1>' +
+    '<p class="lead">' + esc(SITE.tagline) + '. Start with a first-day route, then jump into products, shelves, checkout, staff and upgrades.</p>' +
+    '<form class="hero-search" action="/search.html"><input name="q" type="search" placeholder="Search products, shelves or guides"><button>Search</button></form>' +
+    '<p class="actions"><a class="button primary" href="/guide.html">Start here</a><a class="button" href="/collection.html">Browse the archive</a></p></div>' +
+    '<div class="hero-art" aria-label="Supermarket Simulator"><span class="aisle">AISLE 01</span><strong>OPEN<br>FOR<br>BUSINESS</strong><span class="receipt">today\'s plan<br>stock · price · serve</span></div></section>' +
+    '<section class="section"><div class="section-head"><div><p class="eyebrow">Choose your next task</p><h2>What are you trying to do?</h2></div><a href="/guide.html">Full game guide →</a></div><div class="task-grid">' +
+    [['First day','Get stock on shelves and open without a cash crunch.','/guide.html'],['Keep shelves full','Find a repeatable restock rhythm for a busy shop.','/collection.html'],['Keep the queue moving','Learn the till, scanner and customer flow.','/search.html'],['Grow with intention','Use upgrades, licences and layout when they pay back.','/namespaces.html']].map(([a,b,h],i)=>'<a class="task" href="'+h+'"><span class="task-no">0'+(i+1)+'</span><strong>'+a+'</strong><span>'+b+'</span><i>→</i></a>').join('')+'</div></section>' +
+    '<section class="section split"><div><p class="eyebrow">Browse the archive</p><h2>Every part of your shop, in plain language.</h2><p class="dim">Products, storage, customers, checkout, staff, money, layout and upgrades are grouped around the jobs you do in a shift.</p></div><div class="archive-list"><a href="/collection.html"><b>Products & pricing</b><span>What to order and put on the shelf</span></a><a href="/collection.html"><b>Customers & checkout</b><span>Queues, payment and the till</span></a><a href="/collection.html"><b>Money & upgrades</b><span>Loans, licences and the next expansion</span></a></div></section>' +
+    '<section class="section note-band"><p class="eyebrow">How this wiki works</p><p>Player pages stay focused on decisions in the shop. The evidence and extraction record is kept in Reference, so you can read an answer without wading through implementation details.</p></section>');
 
   const gameJson = JSON.stringify(game.map((c) => [c.name, c.namespace])).replace(/</g, '\\u003c');
   indexable('search.html', 'Search', 'Client-side search over every class the game defines.',
@@ -205,9 +201,7 @@ export function build(inventoryPath, outDir) {
   write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     urls.map((u) => '  <loc>' + u + '</loc>\n').join('') + '</urlset>\n');
   write('robots.txt', 'User-agent: *\nAllow: /\nSitemap: ' + SITE.url + '/sitemap.xml\n');
-  write('style.css', 'body{font:16px/1.6 system-ui,sans-serif;max-width:60rem;margin:0 auto;padding:1rem;color:#e8e8e8;background:#12141a}\n' +
-    'a{color:#8ecbff}header nav a{margin-right:.75rem}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #2a2f3a;padding:.25rem .5rem;text-align:left}\n' +
-    '.dim{color:#9aa3b2}.mono{font-family:ui-monospace,monospace}input[type=search]{padding:.4rem;width:22rem;background:#1b1f27;color:#e8e8e8;border:1px solid #2a2f3a}\n');
+  write('style.css', ':root{--bg:#101412;--panel:#171d19;--panel2:#202a22;--line:#314237;--ink:#edf3ec;--dim:#9eada0;--accent:#d6f36b;--warm:#ffb86b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#263c2b 0,transparent 34rem),var(--bg);color:var(--ink);font:16px/1.65 ui-sans-serif,system-ui,-apple-system,sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.top{position:sticky;top:0;z-index:5;background:rgba(16,20,18,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.bar{max-width:1180px;margin:auto;padding:14px 24px;display:flex;gap:28px;align-items:center}.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:750;white-space:nowrap}.mark{display:grid;place-items:center;width:34px;height:34px;background:var(--accent);color:#182016;font-weight:900;border-radius:9px;font-size:12px}.top nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}.top nav a{color:var(--dim)}main{max-width:1180px;margin:auto;padding:0 24px 72px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:76px 0 60px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 9px}.hero h1{font-size:clamp(3.5rem,8vw,7rem);line-height:.9;letter-spacing:-.06em;margin:0 0 22px;max-width:8ch}.lead{font-size:1.18rem;color:#ccd7ca;max-width:36rem}.hero-search{display:flex;gap:8px;margin:28px 0 18px}.hero-search input{flex:1;min-width:0;padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);font-size:15px}.hero-search button,.button{border:1px solid var(--line);background:var(--panel2);color:var(--ink);padding:12px 16px;border-radius:10px;font-weight:650}.button.primary{background:var(--accent);color:#162014;border-color:var(--accent)}.actions{display:flex;gap:10px;flex-wrap:wrap}.hero-art{min-height:380px;background:linear-gradient(145deg,#506c48,#263d29 54%,#151b16);border:1px solid #66835d;border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 24px 70px rgba(0,0,0,.22);transform:rotate(1.3deg)}.hero-art strong{font-size:clamp(2.8rem,6vw,5.8rem);line-height:.84;letter-spacing:-.06em;color:#f5f8df}.aisle,.receipt{font-size:12px;color:#d6f36b;letter-spacing:.12em}.receipt{align-self:flex-end;letter-spacing:.02em;color:#dbe6d5}.section{padding:56px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px}.section h2{font-size:2rem;line-height:1.05;margin:.1rem 0}.task-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.task{position:relative;display:flex;flex-direction:column;gap:9px;min-height:176px;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:14px;color:var(--ink);transition:transform .2s,border-color .2s}.task:hover{transform:translateY(-4px);border-color:var(--accent);text-decoration:none}.task-no{font:700 12px ui-monospace;color:var(--warm)}.task strong{font-size:1.1rem}.task span:not(.task-no){color:var(--dim);font-size:.92rem}.task i{margin-top:auto;color:var(--accent);font-style:normal;font-size:1.3rem}.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.archive-list{display:grid;gap:10px}.archive-list a{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid var(--line);color:var(--ink)}.archive-list span{color:var(--dim);text-align:right}.note-band{max-width:760px}.dim{color:var(--dim)}.mono{font-family:ui-monospace,monospace}table{border-collapse:collapse;width:100%;background:rgba(23,29,25,.55)}td,th{border-bottom:1px solid var(--line);padding:10px;text-align:left}footer{border-top:1px solid var(--line);padding:26px 24px;max-width:1180px;margin:auto}.note{border-left:3px solid var(--accent);background:var(--panel);padding:14px 18px}@media(max-width:800px){.bar{padding:12px 16px;align-items:flex-start;flex-direction:column;gap:10px}main{padding:0 16px 48px}.hero{grid-template-columns:1fr;padding:50px 0 42px;gap:28px}.hero-art{min-height:260px}.task-grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:24px}.archive-list span{display:none}}@media(max-width:460px){.task-grid{grid-template-columns:1fr}.hero h1{font-size:4rem}}\n');
   write('search.js', 'const data=JSON.parse(document.getElementById("data").textContent);' +
     'const q=document.getElementById("q"),out=document.getElementById("out").querySelector("tbody"),meta=document.getElementById("meta"),nsBox=document.getElementById("ns");' +
     'function render(){const s=q.value.trim().toLowerCase();document.getElementById("meta").textContent=document.getElementById("meta").textContent;' +
