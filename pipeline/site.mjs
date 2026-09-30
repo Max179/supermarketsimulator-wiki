@@ -152,7 +152,7 @@ export function build(inventoryPath, outDir) {
     '<dt>File</dt><dd class="mono">' + esc(src.file ?? 'unknown') + '</dd>' +
     '<dt>sha256</dt><dd class="mono">' + esc(String(src.sha256 ?? '')) + '</dd>' +
     '<dt>Bytes</dt><dd>' + (src.bytes ?? 'unknown') + '</dd>' +
-    '<dt>Metadata version</dt><dd>' + (src.metadataVersion ?? 'unknown') + '</dd>' +
+    '<dt>Metadata version</dt><dd>metadata v' + (src.metadataVersion ?? 'unknown') + '</dd>' +
     '<dt>Type table</dt><dd class="mono">offset ' + (src.typeTable?.offset ?? '?') + ', ' + (src.typeTable?.count ?? '?') +
     ' entries, stride ' + (src.typeTable?.entryStride ?? '?') + '</dd>' +
     '<dt>String blob</dt><dd class="mono">offset ' + (src.stringBlob?.offset ?? '?') + ', size ' + (src.stringBlob?.size ?? '?') + '</dd>' +
