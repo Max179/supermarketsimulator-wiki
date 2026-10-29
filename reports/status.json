@@ -1,31 +1,38 @@
 {
   "site": "supermarketsimulator.wiki",
-  "head": "e47d68f",
-  "commits": 46,
-  "pages": 20,
-  "indexable": 13,
-  "noindex": 7,
+  "head": "041ba7b",
+  "commits": 11,
+  "pages": 242,
+  "indexable": 203,
+  "noindex": 39,
   "classes": 21152,
   "fields": 170271,
-  "version": "Nokta Games | Supermarket Simulator",
+  "version": "1.6.0 (223)",
   "generatedBy": "pipeline/status.mjs",
   "headNote": "generated from this commit; the commit that adds this file is one step later",
   "handoff": {
-    "trackedFiles": 69,
+    "trackedFiles": 564,
     "byTop": {
-      "(root)": 6,
+      "(root)": 9,
       ".github": 1,
-      "data": 3,
-      "pipeline": 39,
-      "reports": 18,
+      "config": 2,
+      "content": 457,
+      "data": 5,
+      "docs": 2,
+      "pipeline": 41,
+      "reports": 30,
       "tests": 1,
-      "tools": 1
+      "tools": 12,
+      "web": 4
     },
     "excludedCount": 0,
     "excluded": []
   },
   "valueLayer": {
-    "file": "data/normalized/p0-field-rows.json",
-    "count": 170050
+    "file": "data/normalized/value-index.json",
+    "count": 170050,
+    "derived": true,
+    "derivedFrom": "data/normalized/p0-field-rows.json",
+    "sha256": "361f8a8ebc47aece12d69287367203638698fbcc013b2124ef4ae3b52521fde9"
   }
 }
