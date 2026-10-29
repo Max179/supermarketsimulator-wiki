@@ -8,6 +8,7 @@ file records the Mac-side verification of the delivered tree.
 | Item | Value |
 | --- | --- |
 | Verified on | 2026-10-30, macOS, Node 22.23.2 / npm 10.9.8, TypeScript 5.9.3 |
+| Tree verified at | commit `15c24fe` (integration commits `06fc38b` … `15c24fe`; this report's own commit is one step later) |
 | Build | `[site] pages=242 indexable=203 assets=261 mappedGameImages=164 gameClasses=11275 engineClasses=9877 out=web/dist` |
 | Site gates | `[site-tests] 87 passed, 0 failed` |
 | Typecheck | `npx tsc --noEmit -p tsconfig.ci.json` exit 0 |

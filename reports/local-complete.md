@@ -95,3 +95,7 @@ git status --porcelain                        -> (empty after the final reports 
    cite type/asset names and never claim a field belongs to a class.
 4. **No game extraction exists for any newer build**: the site documents `1.6.0 (223)` only until a new package is
    extracted on the Windows host.
+
+Integration commits (local, not pushed): `06fc38b` plan, `0b2b5fc` content/data, `df796c0` pipeline/tools/tests,
+`49033b5` Mac design port, `79601b0` build/docs/workflow, `041ba7b` reports, `15c24fe` status. The clean-tree
+gate chain above was run at `15c24fe`.
