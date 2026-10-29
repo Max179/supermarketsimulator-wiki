@@ -10,6 +10,7 @@ import struct, sys, re, json, hashlib, os
 MD = sys.argv[1]
 OUT = sys.argv[2]
 APPINFO = sys.argv[3] if len(sys.argv) > 3 else None
+VERSIONFILE = sys.argv[4] if len(sys.argv) > 4 else None
 data = open(MD, 'rb').read(); n = len(data)
 i32 = lambda o: struct.unpack_from('<i', data, o)[0]
 u32 = lambda o: struct.unpack_from('<I', data, o)[0]
@@ -70,13 +71,28 @@ def norm(c):
     c = c.replace('\x00', '').strip()
     return re.sub(r'[^0-9A-Za-z._+ -]', '', c)
 
-version = ''
+# app.info holds the company name and the product name, not a version: it is recorded as the product label.
+product_label = ''
 if APPINFO and os.path.exists(APPINFO):
     with open(APPINFO, 'rb') as f:
         raw = f.read(4096).decode('utf-8', 'replace')
     parts = [norm(x) for x in raw.replace('\r', '').split('\n') if x.strip()]
-    version = ' | '.join(parts[:3])
-print('app.info version: %r' % version)
+    product_label = ' | '.join(parts[:3])
+print('app.info product label: %r' % product_label)
+
+# The version is the string the game itself stores (v1.6.0(223) in the player settings and in the game's own
+# data asset). It is read from the version note shipped with the copy; it is never taken from the product label.
+version = ''
+if VERSIONFILE and os.path.exists(VERSIONFILE):
+    with open(VERSIONFILE, 'rb') as f:
+        for line in f.read(4096).decode('utf-8', 'replace').replace('\r', '').split('\n'):
+            m = re.search(r'(\d+\.\d+\.\d+(?:\s*\(\d+\))?)', line)
+            if m:
+                version = m.group(1)
+                break
+print('game version: %r (from %s)' % (version, VERSIONFILE))
+version_source = {'file': VERSIONFILE, 'string': version,
+                  'inBuild': 'the game itself stores v1.6.0(223) in its player settings and in its own data asset; the same string is what the game\'s menu shows'} if version else None
 sha = hashlib.sha256(data).hexdigest()
 print('metadata sha256=%s size=%d' % (sha, n))
 
@@ -103,6 +119,8 @@ out = {
         'method': 'measured by self-consistency; type table tail proven by the unique sentinel name __Il2CppFullySharedGenericStructType at offset %d = %d + %d*%d' % (TO + (TC - 1) * ST, TO, TC - 1, ST),
     },
     'version': version,
+    'productLabel': product_label,
+    'versionSource': version_source,
     'engine': 'Unity (IL2CPP); engine version recorded separately in reports/v22-header.md',
     'confidence': 'verified-schema',
     'classCount': TC,

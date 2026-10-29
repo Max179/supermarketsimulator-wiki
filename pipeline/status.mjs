@@ -46,8 +46,18 @@ try {
     const candidates = [d, d.instances, d.objects, d.rows, d.classes];
     const arr = candidates.find((c) => Array.isArray(c));
     valueCount = arr ? arr.length : (typeof d.fieldCount === 'number' ? d.fieldCount : null);
+    out.valueLayer = { file: valueFile, count: valueCount };
+  } else {
+    // A tree that never held the decoded rows (the Mac side of the handoff) carries the derived index instead, so the
+    // value layer is still recorded and the preflight can still check it. See pipeline/value_index.mjs.
+    const idxPath = 'data/normalized/value-index.json';
+    if (existsSync(idxPath)) {
+      const idx = JSON.parse(readFileSync(idxPath, 'utf8'));
+      out.valueLayer = { file: idxPath, count: idx.count ?? null, derived: true, derivedFrom: idx.derivedFrom ?? null, sha256: idx.sha256 ?? null };
+    } else {
+      out.valueLayer = null;
+    }
   }
-  out.valueLayer = valueFile ? { file: valueFile, count: valueCount } : null;
   writeFileSync('reports/status.json', JSON.stringify(out, null, 2) + '\n');
   console.log('[status] ' + JSON.stringify(out));
 } finally {

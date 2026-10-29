@@ -56,7 +56,9 @@ out = {
                'fieldTable': {'offset': F_OFF, 'rowStride': F_STRIDE, 'count': F_CNT, 'nextTableOffset': NEXT},
                'nameRule': 'name index must point at the start of a string (previous byte NUL); 100% of rows pass',
                'extractor': 'supermarket-p0-fields@0.1.0'},
-    'version': 'Nokta Games | Supermarket Simulator',
+    # the version the game itself stores (v1.6.0(223) in globalgamemanagers / its GameDataSO asset);
+    # app.info holds the company and product name only, so it is not a version.
+    'version': '1.6.0 (223)',
     'confidence': 'verified-schema',
     'fieldCount': F_CNT,
     'resolvedNames': len(rows),
