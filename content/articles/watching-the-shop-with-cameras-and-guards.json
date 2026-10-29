@@ -1,0 +1,47 @@
+{
+  "id": "watching-the-shop-with-cameras-and-guards",
+  "title": "Watching the shop with cameras and guards",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the security cameras and the guard in Supermarket Simulator, given that the cameras are objects you place and a manager keeps, and the guard works through patrol, guard and chase states.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with goods worth watching",
+    "Money for cameras and a guard",
+    "An idea of where thieves actually go"
+  ],
+  "steps": [
+    {
+      "do": "Place cameras as objects rather than hoping a setting covers the shop.",
+      "because": "the game ships security cameras you place in the shop (SecurityCamera, SecurityCameraVisible)"
+    },
+    {
+      "do": "Expect the cameras to be held together in one place.",
+      "because": "the shop's cameras are held together by a manager of their own (CCTVManager)"
+    },
+    {
+      "do": "Remember that a camera keeps a saved record, so where you put it persists.",
+      "because": "a camera has an interaction and its own saved record (SecurityCameraInteraction, SecurityCameraSaveData)"
+    },
+    {
+      "do": "Let the guard walk the shop: he has patrol, guard and chase states of his own.",
+      "because": "a guard patrols through modes and states of its own, including a patrol mode, a guard mode and a chase state (PatrolMode, GuardMode, ChaseState)"
+    },
+    {
+      "do": "Fit the door detector that goes with the security kit.",
+      "because": "the game ships its own icon for the door detector that works with the shop's security (T_Icon_ThiefDetector)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying cameras and never checking what they actually look at.",
+    "Expecting the guard to chase before a patrol is set up.",
+    "Forgetting that cameras are saved with the shop, so moving one is a job rather than a drag."
+  ],
+  "relatedEntities": [
+    "security-cameras-and-guards",
+    "shoplifters-in-your-shop"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

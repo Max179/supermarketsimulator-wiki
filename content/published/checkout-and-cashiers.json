@@ -1,0 +1,114 @@
+{
+  "id": "checkout-and-cashiers",
+  "title": "Checkout and cashiers",
+  "tier": "published",
+  "summary": "How paying customers works in Supermarket Simulator: customers queue at your checkout, you scan their shopping yourself, and later a hired cashier or a self-checkout can serve them.",
+  "body": [
+    "At the start you are the cashier. Customers bring their shopping to the checkout and you scan each item, then take payment. Customers leave once their basket is paid for.",
+    "Who is on the till is a state rather than a fixed post. A cashier can be idle, can restock and can drop an empty box, which is why the same worker is not always standing at the register when there is nothing to scan.",
+    "Later the shop grows into hired staff and self-checkout machines. The game has separate handling for a cashier-run checkout and for a self-checkout that can need repairs.",
+    "What this entry does not tell you: wages, scan speed, patience timers or repair costs. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A checkout can be operated by a hired cashier.",
+      "evidence": "identifier: StartCashierCheckout"
+    },
+    {
+      "claim": "Finishing a checkout is a distinct step in the game's own logic.",
+      "evidence": "identifier: FinishCheckout"
+    },
+    {
+      "claim": "Self-checkout machines can break down and need repairing.",
+      "evidence": "identifier: RepairingSelfCheckout"
+    },
+    {
+      "claim": "Checkout positions can be picked up and moved.",
+      "evidence": "identifier: MoveCheckoutPosition"
+    },
+    {
+      "claim": "A cashier works through states of its own, including being idle, restocking and dropping an empty box.",
+      "evidence": "identifiers: ClerkIdleState, ClerkRestockingState, ClerkDropEmptyBoxState"
+    },
+    {
+      "claim": "The build names the checkout's own counter, drawer and belt grid.",
+      "evidence": "asset names: Checkout Counter, Checkout Drawer, Checkout Belt Grid"
+    },
+    {
+      "claim": "Basket icons are shipped with the checkout artwork, including a newer one.",
+      "evidence": "asset names: T_Icon_ShoppingBasket, T_Icon_ShoppingBasket_1_New"
+    },
+    {
+      "claim": "The till itself is named: the build ships a cash register with an open and a close state of its own, in three register models.",
+      "evidence": "asset names: Cash Register, Cash Register Open, Cash Register Close, SM_CashRegister_A, SM_CashRegister_B, SM_CashRegister_C"
+    },
+    {
+      "claim": "The shop's point-of-sale terminal is named as an object of its own, with a material of its own.",
+      "evidence": "asset names: SM_PosTerminal, M_PosTerminal"
+    },
+    {
+      "claim": "The baskets and bags themselves are named in kinds: a plastic basket, two shopping bags, an old basket and a concrete basket.",
+      "evidence": "asset names: M_PlasticBasket, M_ShoppingBag, M_ShoppingBag2, M_old_basket, M_concrete_basket"
+    },
+    {
+      "claim": "The checkout furniture is textured by the build itself, with two counter sheets and a mirrored one for the self-checkout.",
+      "evidence": "asset names: T_Checkout_1_AlbedoTransparency, T_Checkout_2_AlbedoTransparency, T_SelfCheckout_alb_mirrored"
+    },
+    {
+      "claim": "The build also ships a mirrored checkout counter of its own.",
+      "evidence": "asset name: Mirrored Checkout Counter"
+    }
+  ],
+  "related": [
+    "restocking-shelves",
+    "the-self-checkout-and-its-rules"
+  ],
+  "images": [
+    {
+      "file": "mapped/checkout-and-cashiers-selfcheckout.png",
+      "kind": "game",
+      "alt": {
+        "en": "An albedo texture taken from the game of the self-checkout machine the entry mentions.",
+        "zh": "取自游戏的自助收银机反照率贴图。"
+      }
+    },
+    {
+      "file": "mapped/checkout-and-cashiers-basket.png",
+      "kind": "game",
+      "alt": {
+        "en": "The basket icon the game ships with the checkout artwork: a green plastic shopping basket.",
+        "zh": "游戏随收银素材提供的购物篮图标：一只绿色塑料购物篮。"
+      }
+    },
+    {
+      "file": "mapped/checkout-and-cashiers-basket-new.png",
+      "kind": "game",
+      "alt": {
+        "en": "The newer basket icon the game ships beside it, a dark green basket drawn from a lower angle.",
+        "zh": "游戏同时提供的较新购物篮图标：从较低视角绘制的深绿色购物篮。"
+      }
+    },
+    {
+      "file": "mapped/checkout-and-cashiers-mirrored-counter.png",
+      "kind": "game",
+      "alt": {
+        "en": "The mirrored checkout counter the game ships: an L-shaped till counter with two screens, a side cabinet and a bagging run.",
+        "zh": "游戏自带的镜像收银台：L 形柜台，两台屏幕、侧柜与打包台面。"
+      }
+    },
+    {
+      "file": "checkout-and-cashiers.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram of the checkout flow: a customer queues, items are scanned one by one, payment is taken, the customer leaves.",
+        "zh": "结账流程示意图：顾客排队、逐件扫码、收款、顾客离开。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "category": "Checkout",
+  "imageTier": "game-image"
+}

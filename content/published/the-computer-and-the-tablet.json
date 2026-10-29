@@ -1,0 +1,97 @@
+{
+  "id": "the-computer-and-the-tablet",
+  "title": "The computer and the tablet",
+  "category": "Shop",
+  "summary": "The machines the shop runs on in Supermarket Simulator are hardware as well as screens: the game keeps a computer object with its own interaction and a system with a desktop behind it, and it ships a tablet device with a scanner icon.",
+  "body": [
+    "The shop's computer is a thing in the room before it is a menu. There is a computer object and an interaction belonging to it, which is how the game can let you walk up to it and use it rather than only opening a screen.",
+    "Behind the screens there is a system. The game keeps an operating system of its own and a generic desktop, so what you see on the computer is drawn by something with a desktop rather than being a set of unrelated panels.",
+    "The game also ships a tablet: there is a tablet device in its own right, and the tablet carries a cart item, so a handheld machine is modelled rather than being the same object as the desk computer.",
+    "The screens can be moved through. There is a swipe controller in the build, so stepping between panels on a touch screen is a gesture the game handles rather than something each panel does for itself.",
+    "Orders reach the shop through customers of their own. There is a generator for them, a map item for showing one, and a networked form, which is why an online order can be tracked as a customer walking in rather than only as a line in a list.",
+    "The machines have their own look. The game ships a texture for the tablet and a scanner icon for it, which is what the handheld's screen and its scanning side are drawn from.",
+    "The two pictures beside this entry are the game's own: the tablet's texture and the icon it uses for scanning.",
+    "What this entry does not tell you: how many screens the computer has, what the tablet is for, or what any of it costs. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The computer is an object with an interaction of its own.",
+      "evidence": "identifiers: Computer, ComputerInteraction"
+    },
+    {
+      "claim": "It runs a system of its own, with a desktop.",
+      "evidence": "identifiers: ComputerOperatingSystem, GenericDesktop"
+    },
+    {
+      "claim": "The game has a tablet device of its own.",
+      "evidence": "identifier: TabletDevice"
+    },
+    {
+      "claim": "The tablet carries a cart item.",
+      "evidence": "identifier: TabletCartItem"
+    },
+    {
+      "claim": "Orders bring customers that are generated, shown on the map and kept in a networked form.",
+      "evidence": "identifiers: OnlineOrderCustomerGenerator, OnlineOrderCustomerMapItem, NetworkOnlineOrderCustomer"
+    },
+    {
+      "claim": "The game ships a texture for the tablet and a scanner icon for it.",
+      "evidence": "identifiers: T_Tablet_AlbedoTransparency, TabletScannerIcon"
+    },
+    {
+      "claim": "The build keeps a swipe controller of its own.",
+      "evidence": "identifier: SwipeController"
+    },
+    {
+      "claim": "The build ships materials for the shop computer and for a low-resolution checkout screen.",
+      "evidence": "asset names: M_SuperMarketComputer, M_CheckoutScreen_LowRes, M_SelfCheckout_Screen_LowRes"
+    },
+    {
+      "claim": "The device screens name a background of their own and an input-field background.",
+      "evidence": "asset names: Background_01, InputFieldBackground"
+    },
+    {
+      "claim": "The tablet itself has a colour sheet, a normal map and a metallic-smoothness sheet.",
+      "evidence": "asset names: T_Tablet_AlbedoTransparency, T_Tablet_Normal, T_Tablet_MetallicSmoothness"
+    },
+    {
+      "claim": "The build ships numbered icons for its own apps and activities.",
+      "evidence": "asset names: icon_app_18, icon_app_68, icon_app_133, icon_activity_47, icon_activity_63, icon_activity_69"
+    }
+  ],
+  "related": [
+    "the-shop-computer",
+    "the-management-tabs",
+    "online-orders-and-how-they-are-tracked"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-computer-and-the-tablet-tablet.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own texture for its tablet device.",
+        "zh": "游戏自带的平板设备贴图。"
+      }
+    },
+    {
+      "file": "mapped/the-computer-and-the-tablet-scanner-icon.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the tablet uses for scanning.",
+        "zh": "平板用于扫描的图标。"
+      }
+    },
+    {
+      "file": "mapped/the-computer-and-the-tablet-tablet-and-scanner.png",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own picture of the shop tablet and the handheld barcode scanner beside it, the tablet showing a blue shop screen.",
+        "zh": "游戏自带的画面：店铺平板与其旁的手持条码扫描器，平板上是蓝色店面界面。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

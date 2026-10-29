@@ -1,0 +1,45 @@
+{
+  "id": "a-trading-day-that-pays",
+  "title": "A trading day that pays for itself",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to run a single trading day so that it funds the next one, using only shop behaviour the game itself defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Shelves stocked before you open",
+    "A checkout you can stand at",
+    "Cash for at least one more order"
+  ],
+  "steps": [
+    {
+      "do": "Set your prices before you open, not while a queue is waiting.",
+      "because": "the game prices goods in bulk through its own manager and keeps discounts in a separate system (BulkPricingManager, DiscountManager)"
+    },
+    {
+      "do": "Keep stock in storage so a shelf can be refilled during the day.",
+      "because": "storage sections and crates are modelled separately from the shelf (StorageSectionItem, Crate)"
+    },
+    {
+      "do": "Hold back a cash buffer to service any credit you took.",
+      "because": "a loan carries a tracked status and has its own repayment tab (LoanStatus, LoanPaymentsTab)"
+    },
+    {
+      "do": "Hire a cashier when the till becomes the bottleneck, not before.",
+      "because": "cashiers are a defined worker type with their own items (Cashier, CashierItem)"
+    }
+  ],
+  "commonMistakes": [
+    "Discounting everything instead of pricing deliberately.",
+    "Spending the buffer and missing a repayment.",
+    "Hiring staff before the shop has stock worth selling."
+  ],
+  "relatedEntities": [
+    "setting-prices-in-bulk",
+    "storage-crates-and-the-storage-tab",
+    "loans-and-paying-them-back",
+    "hiring-a-cashier"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

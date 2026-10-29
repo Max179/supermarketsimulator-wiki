@@ -1,0 +1,44 @@
+{
+  "id": "from-empty-shop-to-first-sale",
+  "title": "From an empty shop to the first sale",
+  "tier": "published",
+  "kind": "article",
+  "target": "A first-day sequence for Supermarket Simulator that takes the shop from empty shelves to a paying customer, using only behaviour the game defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with at least one shelf",
+    "Stock in the storage room",
+    "A checkout you can stand at"
+  ],
+  "steps": [
+    {
+      "do": "Put stock on one shelf and stand back to watch it.",
+      "because": "a shelf refills an empty slot and sells what it holds (SpawnProductOnEmptyShelf)"
+    },
+    {
+      "do": "Open up and stay at the till for the first customers.",
+      "because": "paying is an explicit checkout and payment step (StartCashierCheckout, FinishCheckout)"
+    },
+    {
+      "do": "Watch where people walk once they are inside.",
+      "because": "customers follow a path and wait in a queue rather than standing where you place them (WaypointNavigator, Queue)"
+    },
+    {
+      "do": "Tidy up at the end of the day.",
+      "because": "cleanliness is tracked against the shop's standing (CleaningState, CleaningReputationManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Opening with empty shelves.",
+    "Leaving the till while a queue forms.",
+    "Ignoring mess because it looks harmless."
+  ],
+  "relatedEntities": [
+    "restocking-shelves",
+    "checkout-and-cashiers",
+    "dirt-and-cleaning"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

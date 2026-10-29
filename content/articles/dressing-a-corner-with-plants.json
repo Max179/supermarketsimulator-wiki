@@ -1,0 +1,53 @@
+{
+  "id": "dressing-a-corner-with-plants",
+  "title": "Dressing a corner with plants",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the plants and planters a Supermarket Simulator shop can buy, given that the pot and the plant are separate pieces with sheets of their own.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "A corner that looks bare",
+    "Money for the delivery",
+    "A shop level that stocks them"
+  ],
+  "steps": [
+    {
+      "do": "Treat the planter and the plant as two purchases rather than one.",
+      "because": "a planter is a piece of its own with its own sheets, and the plants are named apart from the pots (Flowerpot, Flowerpot_A, Flowers, Flowers_A)"
+    },
+    {
+      "do": "Pick a numbered planter to fit the space.",
+      "because": "planters are numbered into kinds, each with levels of detail of its own (Flowerpot_01_LOD0, Flowerpot_02_LOD0, Flowerpot_09_LOD0)"
+    },
+    {
+      "do": "Look at the planter's surfaces before you buy a row of them.",
+      "because": "a planter carries a colour, an ambient-occlusion, a metallic-smoothness and a normal sheet (Flowerpot_A, Flowerpot_AO, Flowerpot_MS, Flowerpot_N)"
+    },
+    {
+      "do": "Match the plant to the pot rather than the pot to the plant.",
+      "because": "the flowers carry a colour sheet and a normal map of their own (Flowers_A, Flowers_N)"
+    },
+    {
+      "do": "Use shop trees inside and ground trees outside.",
+      "because": "trees are named for the ground as well as for the shop, ground trees numbered into a set and a pair of shop trees beside them (Ground _Tree_01, Ground _Tree_03_LOD1, SM_Tree_B, SM_Tree_C)"
+    },
+    {
+      "do": "Put plants where they dress a room instead of where a shelf should be.",
+      "because": "they are layout pieces of the game rather than stock, named beside its other furnishings (Flowerpot, Flowers)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying a plant with no planter and leaving it on the floor.",
+    "Filling the aisle with planters so customers have to walk around them.",
+    "Using ground trees inside because they were cheaper.",
+    "Expecting a plant to change what the shop can sell."
+  ],
+  "relatedEntities": [
+    "the-plants-and-planters",
+    "furniture-and-shop-layout",
+    "the-shop-entrance"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

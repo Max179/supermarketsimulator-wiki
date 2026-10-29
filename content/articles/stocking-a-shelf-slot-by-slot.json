@@ -1,0 +1,47 @@
+{
+  "id": "stocking-a-shelf-slot-by-slot",
+  "title": "Stocking a shelf slot by slot",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to stock a shelf in Supermarket Simulator when the game treats it as separate slots rather than as one open surface you can pile goods onto.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shelf already placed in the shop",
+    "Stock in the storage room or in a box nearby",
+    "A product that suits the shelf you are filling"
+  ],
+  "steps": [
+    {
+      "do": "Treat each shelf as a set of positions and fill them one at a time.",
+      "because": "a shelf is kept as a set of rack slots with their own records (RackSlot)"
+    },
+    {
+      "do": "Fill the gaps rather than restocking from the left every time.",
+      "because": "each slot carries an index of its own, so the game knows which ones are empty (rackSlotIndex)"
+    },
+    {
+      "do": "Move boxes off the shelf once you have emptied them.",
+      "because": "a box standing on a shelf is tracked against a slot as well (RackSlotBoxTarget)"
+    },
+    {
+      "do": "Use a display case for what belongs in it instead of treating it as another shelf.",
+      "because": "display slots are tracked apart from rack slots (DisplaySlot)"
+    },
+    {
+      "do": "Do not force a product into a display that is built for something else.",
+      "because": "a display slot can carry a condition on what may be placed in it (IDisplaySlotProductPlacementCondition)"
+    }
+  ],
+  "commonMistakes": [
+    "Restocking only the front of a shelf and leaving gaps behind it.",
+    "Leaving empty boxes on the shelf after filling it.",
+    "Piling goods onto a display case that wants a particular product."
+  ],
+  "relatedEntities": [
+    "shelf-slots-and-display-space",
+    "restocking-shelves"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

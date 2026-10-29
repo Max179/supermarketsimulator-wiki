@@ -1,0 +1,70 @@
+{
+  "id": "loans-and-paying-them-back",
+  "title": "Loans and paying them back",
+  "category": "Loans",
+  "tier": "published",
+  "summary": "Growth in Supermarket Simulator can be financed rather than saved for: the game has bank credit, a loan status, a payments tab and a bankruptcy path if the money runs out.",
+  "body": [
+    "Credit is its own object in the game, so a loan is a state you carry rather than a one-off menu choice.",
+    "The game tracks whether a loan is current, which is why the interface can show a status for it and give repayments their own tab.",
+    "There is a bankruptcy path as well: the game defines bankruptcy handling and a screen for it, so failing to pay is a situation the game anticipates.",
+    "What this entry does not tell you: interest rates, repayment schedules, borrowing limits or what exactly triggers bankruptcy. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Borrowing is a defined object in the game.",
+      "evidence": "identifier: BankCreditSO"
+    },
+    {
+      "claim": "A loan carries a status the game tracks.",
+      "evidence": "identifier: LoanStatus"
+    },
+    {
+      "claim": "Repayments have their own interface tab.",
+      "evidence": "identifier: LoanPaymentsTab"
+    },
+    {
+      "claim": "The game has a bankruptcy path and its own screen for it.",
+      "evidence": "identifiers: BankruptcyManager, BankruptcyCanvas"
+    },
+    {
+      "claim": "The loan screen names a daily payment object of its own, with a label beside it.",
+      "evidence": "asset names: Daily Payment, Daily Payment Text"
+    },
+    {
+      "claim": "The loan screen ships its own amount and daily-interest labels along with a repayment item.",
+      "evidence": "asset names: Loan Amount Text, Daily Interest, Loan Repayment Item"
+    },
+    {
+      "claim": "Borrowing has a term length of its own, with a slider and a text field for it, and the screen names a loan button.",
+      "evidence": "asset names: Loan Term Length Slider, Loan Term Length Text, Loan Button"
+    }
+  ],
+  "related": [
+    "setting-prices-in-bulk",
+    "hiring-a-cashier"
+  ],
+  "images": [
+    {
+      "file": "mapped/loans-and-paying-them-back-bank.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture of the bank building the shop borrows from.",
+        "zh": "店铺借款所在的银行建筑反照率贴图。"
+      }
+    },
+    {
+      "file": "loans-and-paying-them-back.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you take credit, the loan has a status, you pay it back from takings, and failing to pay leads to a bankruptcy screen.",
+        "zh": "贷款示意图：借贷、产生还款状态、用营业额还款、无力偿还进入破产界面。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

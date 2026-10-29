@@ -1,0 +1,53 @@
+{
+  "id": "reading-the-icons-on-the-screens",
+  "title": "Reading the icons on the screens",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to read the line icons a Supermarket Simulator screen uses, given that they are drawn in families and numbered per family rather than named by subject.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "A shop open long enough to reach a screen",
+    "The tablet or the shop computer in front of you",
+    "One screen at a time"
+  ],
+  "steps": [
+    {
+      "do": "Treat the small marks on a screen as words rather than as decoration.",
+      "because": "the build names line icons in families of its own (icon_line_shopping_14, icon_line_tool_44, icon_line_weather_18)"
+    },
+    {
+      "do": "Learn the family before the individual mark.",
+      "because": "the icons are sorted into a shopping set, a tool set, a weather set, an arrow set, a gesture set, a game set and a common set (icon_line_arrow_1, icon_line_gesture_34, icon_line_game_40)"
+    },
+    {
+      "do": "Read the object the icon shows rather than the number in its name.",
+      "because": "some of them are a plain object: a trolley, a bin and a water drop (icon_line_shopping_14, icon_line_tool_44, icon_line_weather_18)"
+    },
+    {
+      "do": "Do not wait for a label to appear beside an icon.",
+      "because": "the icons are numbered per family rather than named by subject (icon_line_arrow_2, icon_line_arrow_15, icon_line_common_74)"
+    },
+    {
+      "do": "Watch for the app icons drawn in the same style.",
+      "because": "app icons are carried beside the line set (icon_app_78)"
+    },
+    {
+      "do": "Expect the same drawing to come back on another screen.",
+      "because": "the common family is reused across the game's own screens (icon_line_common_28, icon_line_common_77)"
+    }
+  ],
+  "commonMistakes": [
+    "Hunting for a word beside an icon that has none.",
+    "Treating two icons from different families as the same mark.",
+    "Guessing a number in an icon's name means something in the shop.",
+    "Learning one screen's icons and expecting them to mean something else elsewhere."
+  ],
+  "relatedEntities": [
+    "the-line-icons-the-game-draws",
+    "the-computer-and-the-tablet",
+    "the-management-tabs"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

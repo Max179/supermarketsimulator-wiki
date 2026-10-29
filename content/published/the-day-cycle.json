@@ -1,0 +1,81 @@
+{
+  "id": "the-day-cycle",
+  "title": "The day cycle and the clock",
+  "category": "Shop",
+  "summary": "Time in Supermarket Simulator is a system of its own: the game runs a day cycle with a clock, a percentage through the day and a way to finish one day and begin the next.",
+  "body": [
+    "The shop runs on a day, not on a session. The game keeps a day cycle with a manager of its own, which is why a trading day has a shape rather than ending whenever you decide to stop.",
+    "The clock is part of it. The game updates a clock of its own and shows the time, so what you are doing is always measured against a visible hour rather than a hidden timer.",
+    "A day has a percentage. The game tracks how far through the day you are, which is why the interface can show progress rather than only the hour.",
+    "Ending a day is an action. There is an interaction for moving to the next day, so closing up is something you do rather than something that happens to you.",
+    "The results are kept. The game tracks a daily profit and has its own place to display it and the day's orders, which is why a day ends with a summary rather than silence.",
+    "It works in a shared shop too. The cycle is carried on the network, which is why everyone in a joint shop is on the same day at the same time.",
+    "Something is counting as well. The build keeps a time counter of its own, which is why the day is something measured rather than only something that happens to you.",
+    "What this entry does not tell you: how long a day lasts, what time the shop opens or closes, or how the day affects anything. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The shop runs on a day cycle with a manager of its own.",
+      "evidence": "identifiers: DayCycleManager, DayCycleCanvas, dayCycling"
+    },
+    {
+      "claim": "The game updates a clock and displays the time.",
+      "evidence": "identifiers: UpdateClock, TimeText"
+    },
+    {
+      "claim": "A day carries a percentage showing how far through it you are.",
+      "evidence": "identifiers: dayPercentage, currentDay, newDay"
+    },
+    {
+      "claim": "Ending a day is its own interaction.",
+      "evidence": "identifier: NextDayInteraction"
+    },
+    {
+      "claim": "The build names an indicator for skipping to the next day and a night sky of its own.",
+      "evidence": "asset names: Skipt To Next Day Indicator, AllSky_Night_MoonBurst Equirect"
+    },
+    {
+      "claim": "The day's takings and orders are tracked and displayed.",
+      "evidence": "identifiers: dailyProfit, OrderTimeDisplay"
+    },
+    {
+      "claim": "The cycle is carried on the network for a shared shop.",
+      "evidence": "identifier: NetworkDayCycleManager"
+    },
+    {
+      "claim": "The build keeps a time counter of its own.",
+      "evidence": "identifier: TimeCounter"
+    },
+    {
+      "claim": "The sky carries a sun of the build's own, drawn as a shimmer with rays around it.",
+      "evidence": "asset name: Sun Shimmer1"
+    }
+  ],
+  "related": [
+    "checkout-and-cashiers",
+    "what-your-shop-spends"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-day-cycle-sun.png",
+      "kind": "game",
+      "alt": {
+        "en": "The sun the game draws for its day: a warm bright flare with rays reaching out from it.",
+        "zh": "游戏为白天绘制的太阳：暖白色光斑，周围射出光芒。"
+      }
+    },
+    {
+      "file": "the-day-cycle.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop opens, you trade through the day, the clock runs down, and you end the day for a new one.",
+        "zh": "示意图：开店、营业一天、时钟走向收尾、结束当天并进入下一天。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

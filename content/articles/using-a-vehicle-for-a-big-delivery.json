@@ -1,0 +1,47 @@
+{
+  "id": "using-a-vehicle-for-a-big-delivery",
+  "title": "Using a vehicle for a big delivery",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to make use of a vehicle in Supermarket Simulator for a large delivery, instead of carrying everything in by hand.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Money for a vehicle",
+    "Somewhere to keep it",
+    "A delivery large enough to be worth it"
+  ],
+  "steps": [
+    {
+      "do": "Buy the vehicle before the delivery you need it for, not after it arrives.",
+      "because": "vehicles are sold as items in the shop (VehicleSaleItem)"
+    },
+    {
+      "do": "Work at the vehicle rather than carrying everything by hand.",
+      "because": "the game keeps vehicle boxes and a restock area controller (VehicleRestockAreaController)"
+    },
+    {
+      "do": "Get in through the interaction rather than expecting it to drive itself.",
+      "because": "a player enters a vehicle through its own interaction (VehicleInteract)"
+    },
+    {
+      "do": "Learn what you are driving, since each vehicle is configured by the game.",
+      "because": "the game keeps vehicle data and a loader for it (VehicleDataLoader)"
+    },
+    {
+      "do": "Do not assume other players see something different.",
+      "because": "vehicles are carried on the network (NetworkVehicle)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying a vehicle with nowhere to keep it.",
+    "Leaving stock sitting in the vehicle instead of shelving it.",
+    "Expecting the vehicle to move without a driver."
+  ],
+  "relatedEntities": [
+    "the-vehicles-you-can-use",
+    "restock-areas-and-vehicles"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

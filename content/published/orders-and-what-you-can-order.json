@@ -1,0 +1,78 @@
+{
+  "id": "orders-and-what-you-can-order",
+  "title": "Orders and what you can order",
+  "category": "Products",
+  "tier": "published",
+  "summary": "What arrives in Supermarket Simulator starts as an order: the game models orders and keeps each product as its own object with an id, so the order list is built out of things the shop has unlocked.",
+  "body": [
+    "An order is a modelled thing in the game with its own order data, which is why ordering is a step you take rather than a shelf that refills itself.",
+    "Products are stored as their own objects with identifiers, so each product can be ordered, priced and sold as a distinct line.",
+    "Because identifiers keep growing as the catalogue does, the shop can add products over time without reusing an old line.",
+    "What this entry does not tell you: order sizes, delivery times or the price of any product. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Orders and their data are modelled by the game.",
+      "evidence": "identifiers: Order, OrderData"
+    },
+    {
+      "claim": "Products exist as their own objects rather than as text rows.",
+      "evidence": "identifier: ProductSOs"
+    },
+    {
+      "claim": "Product identifiers are allocated rather than fixed by name.",
+      "evidence": "identifier: NextProductID"
+    },
+    {
+      "claim": "Boxes carry a market price of their own.",
+      "evidence": "identifier: BoxMarketPrice"
+    },
+    {
+      "claim": "The build ships the paper bag an online order is packed into, along with its own indicator and a notebook paper material.",
+      "evidence": "asset names: SM_PaperBag, PaperBagIndicator, SM_Notebookpaper"
+    },
+    {
+      "claim": "An online delivery is drawn on the shop's own map, with a pin texture for it and one for the customer's own delivery.",
+      "evidence": "asset names: T_Mappins_OnlineDelivery, T_Customer_OnlineDelivery, SM_Deliverytag, SM_Deliverytagrope"
+    },
+    {
+      "claim": "The paper bag has further pieces of its own: an opened version and a second version, with a decal and a set of lines.",
+      "evidence": "asset names: SM_PaperBagOpened, SM_PaperBagv2, M_PaperBag_Decal, M_PaperBag_Lines"
+    },
+    {
+      "claim": "The paper bag side also names a bag for the checkout and an indicator for the bag an online order goes into, with a separate bag set that has its own suffix variants.",
+      "evidence": "asset names: PaperBagCheckout, Online Order Paper Bag Indicator, Bag_s45li3, Bag_s45li3_a, Bag_s45li3_m"
+    },
+    {
+      "claim": "Online orders are a setting and a set of pieces of their own: an enable flag, a toggle, a key entry for it, an order name, a notification and a customer indicator for an online order.",
+      "evidence": "asset names: EnableOnlineOrder, EnableOnlineOrderToggle, KeybindEntry_OnlineOrder, OrderName, Online_Order_Notif, Online Order Customer Indicator"
+    }
+  ],
+  "related": [
+    "products-and-deliveries",
+    "store-upgrades-and-licences"
+  ],
+  "images": [
+    {
+      "file": "mapped/orders-and-what-you-can-order-online.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture of the online order station the entry describes.",
+        "zh": "本条描述的线上订货站反照率贴图。"
+      }
+    },
+    {
+      "file": "orders-and-what-you-can-order.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you build an order, it arrives as stock, it is stored, and it is carried to the shelf.",
+        "zh": "订货示意图：下单、到货入库、存放、搬到货架。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

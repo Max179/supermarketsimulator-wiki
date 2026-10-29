@@ -1,0 +1,80 @@
+{
+  "id": "shoplifters-in-your-shop",
+  "title": "Shoplifters and the door detector",
+  "category": "Customers",
+  "summary": "Not every customer in Supermarket Simulator is paying: the game has its own shoplifter behaviour, a warning indicator of its own, and a detector built into the shop door that reacts when someone leaves without paying.",
+  "body": [
+    "A shoplifter is its own behaviour in the game. A thief is a distinct kind of customer with rules of its own rather than an ordinary shopper who happens to forget to pay.",
+    "You can be warned. The game keeps an indicator of its own for a shoplifter, and it raises that warning with a delay rather than the instant the theft starts, so reacting in time is part of the job.",
+    "The door notices too. The shop has a detector built for exactly this, so a shoplifter walking out with goods is something the shop reacts to and not something only you can see.",
+    "How often it happens is a setting. The game keeps spawn settings for shoplifters and can switch the behaviour on or off, which is why the pressure is different from one shop to the next.",
+    "It is taught rather than sprung on you. The game introduces the behaviour through its own tutorial shoplifter, so a new player meets one deliberately.",
+    "Three of the pictures beside this entry are the game's own: the icon it draws for a shoplifter, the screen that shows one at a shelf, and the detector texture built into the door.",
+    "What this entry does not tell you: how likely a thief is to appear, how long the warning delay runs, or what happens to the goods afterwards. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A shoplifter is its own kind of behaviour in the game.",
+      "evidence": "identifiers: Shoplifter, ShoplifterInteraction, _isShoplifter"
+    },
+    {
+      "claim": "The game keeps an indicator of its own that warns you about a shoplifter.",
+      "evidence": "identifiers: ShoplifterIndicator, NetworkShoplifterIndicator"
+    },
+    {
+      "claim": "The shop door has a detector built for catching theft.",
+      "evidence": "identifiers: T_ThiefDetector_AlbedoTransparency, T_Icon_Thief"
+    },
+    {
+      "claim": "How often shoplifters appear is a setting that can be enabled.",
+      "evidence": "identifiers: ShoplifterSpawnSettingSO, enableShoplifters, shoplifter"
+    },
+    {
+      "claim": "The behaviour is taught through a tutorial shoplifter.",
+      "evidence": "identifiers: TutorialShoplifter, NetworkShoplifterInteraction"
+    }
+  ],
+  "related": [
+    "customers-and-helpers",
+    "checkout-and-cashiers"
+  ],
+  "images": [
+    {
+      "file": "mapped/shoplifters-in-your-shop-thief.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game itself uses for a shoplifter: a black silhouette of a figure in a hat and sunglasses inside an orange circle.",
+        "zh": "游戏用于扒手的图标：橙色圆形内的黑色剪影——戴帽与墨镜的人形。"
+      }
+    },
+    {
+      "file": "mapped/shoplifters-in-your-shop-screen.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own picture of a shoplifter, a shopper in an orange tabard taking goods from a shelf while a tool wheel sits beside them.",
+        "zh": "游戏自带的小偷画面：穿橙色马甲的顾客在货架前拿商品，旁边是工作轮盘。"
+      }
+    },
+    {
+      "file": "mapped/shoplifters-in-your-shop-detector.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of the shop door detector used against shoplifters.",
+        "zh": "取自游戏的店门防盗探测器反照率贴图。"
+      }
+    },
+    {
+      "file": "shoplifters-in-your-shop.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a shoplifter takes goods, the warning indicator appears, the door detector reacts, and you deal with it.",
+        "zh": "示意图：扒手拿走商品、警告提示出现、门口探测器反应、你进行处理。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

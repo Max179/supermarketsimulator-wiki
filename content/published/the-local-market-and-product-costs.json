@@ -1,0 +1,63 @@
+{
+  "id": "the-local-market-and-product-costs",
+  "title": "The local market and product costs",
+  "category": "Pricing",
+  "tier": "published",
+  "summary": "Prices in Supermarket Simulator come from somewhere: the game keeps a local market with a product database, a product cost and a price display, so what you pay and what you charge are tracked, not invented.",
+  "body": [
+    "The game keeps its own product database for the market, which is why costs can change without you editing anything on the shelf.",
+    "Cost and display price are separate things in that market data, so the number you paid and the number a customer sees are two different numbers.",
+    "There is a shopping cart and a store controller in the same system, which is why the market behaves like a place you interact with rather than a static price list.",
+    "The cart carries a record of its own. The build keeps cart data alongside the cart object, which is why what a cart holds can be read by the game and not only by the player pushing it.",
+    "What this entry does not tell you: how fast prices move, by how much, or which goods move first. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps a local market with its own product database.",
+      "evidence": "identifier: LocalMarketProductDatabase"
+    },
+    {
+      "claim": "A product cost and a displayed price are tracked separately.",
+      "evidence": "identifiers: LocalMarketProductCost, LocalMarketProductPriceDisplay"
+    },
+    {
+      "claim": "The market system includes a shopping cart and a store controller.",
+      "evidence": "identifiers: MarketShoppingCart, LocalMarketStoreController"
+    },
+    {
+      "claim": "The build keeps cart data of its own.",
+      "evidence": "identifier: CartData"
+    },
+    {
+      "claim": "Cleanliness is tracked against the shop's standing.",
+      "evidence": "identifier: CleaningReputationManager"
+    }
+  ],
+  "related": [
+    "setting-prices-in-bulk",
+    "orders-and-what-you-can-order"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-local-market-and-product-costs-market.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The texture of a local market display stand the entry describes.",
+        "zh": "本条描述的本地市场陈列架贴图。"
+      }
+    },
+    {
+      "file": "the-local-market-and-product-costs.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the market updates a cost, your display price stays as set, a customer pays the display price.",
+        "zh": "本地市场示意图：市场更新成本、展示价保持不变、顾客按展示价支付。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

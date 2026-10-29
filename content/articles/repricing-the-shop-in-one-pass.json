@@ -1,0 +1,69 @@
+{
+  "id": "repricing-the-shop-in-one-pass",
+  "title": "Repricing the shop in one pass",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to reprice what you sell in Supermarket Simulator in one deliberate pass instead of shelf by shelf: the bulk panel, the pricing screen's sorting and quick picks, dynamic goods, offers and discounts.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with stock on the shelves",
+    "The pricing side of the shop reachable",
+    "A rough idea of the margin you want"
+  ],
+  "steps": [
+    {
+      "do": "Reprice in bulk rather than shelf by shelf, because prices can be set in bulk through a panel of its own.",
+      "because": "prices can be set in bulk through a dedicated manager and panel (BulkPricingManager, BulkPricingPanel)"
+    },
+    {
+      "do": "Know which section of the bulk panel you are working in, because the panel is built from typed sections.",
+      "because": "the bulk pricing panel is built from typed sections (BulkPricingSection, BulkPricingSectionType)"
+    },
+    {
+      "do": "Sort the list before you start changing anything, because the screen has its own sorting button, kinds and state.",
+      "because": "the list can be sorted with its own button, kinds and state (PricingSortingButton, PricingSortingType, PricingSortingState)"
+    },
+    {
+      "do": "Use the quick picks for prices you set again and again, because there are quick-pick buttons with a group, a mode and their own data.",
+      "because": "a price can be picked quickly through quick-pick buttons and their data (PriceQuickPickButton, PriceQuickPickGroup, PriceQuickPickMode, PriceQuickPickSO)"
+    },
+    {
+      "do": "Open the pricing canvas from the pricing side of the shop rather than hunting a menu, because that is how the game reaches it.",
+      "because": "prices are set on a canvas of their own, opened by its own interaction, on the pricing side of the shop (SettingPriceCanvas, PricingInteraction, Pricing)"
+    },
+    {
+      "do": "Expect some goods to price themselves, because there is a kind of product whose price is dynamic.",
+      "because": "there is a kind of product whose price is dynamic (DynamicPriceProduct)"
+    },
+    {
+      "do": "Let the game evaluate the prices rather than trusting what you typed, because evaluation is its own step and a change raises a notification.",
+      "because": "prices are evaluated by a manager of their own and a change raises a notification (PriceEvaluationManager, PriceChangeNotification)"
+    },
+    {
+      "do": "Check the margin rather than only the number, because margins are worked out through their own calculation.",
+      "because": "margins are computed through a calculation of their own (ComputeRequiredMarginsDelegate)"
+    },
+    {
+      "do": "Treat a wholesale offer as a separate decision from a price, because offers have a manager, a kind, a time limit and a canvas.",
+      "because": "wholesale offers run through a manager and settings of their own, with a kind, a time limit and a canvas (WholeSaleManager, WholeSaleSettingsSO, OfferType, offertime, WholeSaleOfferCanvas)"
+    },
+    {
+      "do": "Keep discounts apart from prices, because they are a system of their own with their own panel and rate.",
+      "because": "discounts are a separate system with a panel and a rate of their own (DiscountManager, DiscountPanel, discountRate)"
+    }
+  ],
+  "commonMistakes": [
+    "Walking the aisles changing tags one at a time when the bulk panel exists for exactly that.",
+    "Repricing before sorting and losing track of which goods have already been changed.",
+    "Setting a number that looks right on a tag without looking at the margin.",
+    "Treating a wholesale offer or a discount as if it were a price change."
+  ],
+  "relatedEntities": [
+    "setting-prices-in-bulk",
+    "the-pricing-screen-and-how-a-price-is-chosen",
+    "wholesale-offers-and-discounts"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

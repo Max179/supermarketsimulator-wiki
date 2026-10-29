@@ -1,0 +1,76 @@
+{
+  "id": "the-menu-the-game-opens-on",
+  "title": "The menu the game opens on",
+  "category": "Interface",
+  "summary": "Supermarket Simulator starts on screens of its own: a main menu manager, a loading scene behind it, and background art the game ships rather than a plain panel with buttons on it.",
+  "body": [
+    "The game does not open straight into a shop. It has a main menu of its own, run by a manager, which is why the first thing shown is a screen with its own behaviour rather than a bare list of buttons.",
+    "Something is shown before even that. The build keeps a splash screen with a manager and a trigger of its own, which is why the very first thing on screen is its own step rather than part of the menu.",
+    "Loading is a place as well as a wait. There is a loading scene of its own, so what happens between choosing and playing is a scene the game has arranged rather than an empty screen.",
+    "The menu is drawn on art. The game ships a background picture for the main menu, and a second one beside it, which is why the same menu can look different from one build to the next without the menu itself changing.",
+    "The loading screen has art too. There is a loading background and a rotating piece drawn on it, so a wait is shown with something moving rather than a frozen frame.",
+    "The picture is made of the shop's own goods. The first background is a pale collage of the products the game sells, which is how the menu reads as this game rather than as a generic shop.",
+    "What this entry does not tell you: how long a load takes, what the menu offers in each case, or which background a given build uses. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game has a main menu manager of its own.",
+      "evidence": "identifier: MainMenuManager"
+    },
+    {
+      "claim": "Loading is a scene of its own.",
+      "evidence": "identifier: LoadingScene"
+    },
+    {
+      "claim": "The main menu is drawn on a background picture the game ships, with a second one beside it.",
+      "evidence": "identifiers: Main Menu BG, Mainmenu_Background"
+    },
+    {
+      "claim": "The loading screen has a background and a rotating piece of its own.",
+      "evidence": "identifiers: Loading_Bg, Loading_Rotate_White"
+    },
+    {
+      "claim": "The build keeps a splash screen with a manager and a trigger of its own.",
+      "evidence": "identifiers: SplashScreenManager, SplashScreenTriggerer"
+    },
+    {
+      "claim": "The game ships its own name art for its screens.",
+      "evidence": "asset name: Game Name"
+    }
+  ],
+  "related": [
+    "the-settings-and-the-keys-you-can-change",
+    "how-the-game-shows-what-you-can-use",
+    "playing-with-a-controller"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-menu-the-game-opens-on-background.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own main menu background, a pale blue collage of the goods the shop sells.",
+        "zh": "游戏自带的主菜单背景：淡蓝色调、铺满店内商品的拼贴画。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-the-game-opens-on-background-2.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "A second main menu background the game ships, a city street at sunset with a hotel and traffic lights.",
+        "zh": "游戏自带的第二张主菜单背景：日落时分的城市街道，有旅馆招牌与红绿灯。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-the-game-opens-on-title.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own name art: SUPERMARKET SIMULATOR set in white letters on a red bar over a dark blue plate.",
+        "zh": "游戏自带的名称美术：红条与深蓝底板上写着白色 SUPERMARKET SIMULATOR。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

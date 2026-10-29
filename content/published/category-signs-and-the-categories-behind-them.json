@@ -1,0 +1,82 @@
+{
+  "id": "category-signs-and-the-categories-behind-them",
+  "title": "Category signs and the categories behind them",
+  "category": "Layout",
+  "summary": "A category sign in Supermarket Simulator is an object of its own: the game keeps sign data and a manager for the signs, a networked form for a shared shop, an interaction for using one, and a product category behind each sign.",
+  "body": [
+    "A category sign is a fixture rather than a painted board. The game keeps sign data of its own and a manager for the signs, which is why a sign can be placed, taken down and placed again instead of being drawn onto a wall.",
+    "Each sign is tied to a category. Products carry a category of their own and each entry in a category is its own record, so a sign names a group of goods rather than a single product.",
+    "The sign is set on a canvas of its own. There is a canvas for setting a category, which is how what the sign says is chosen in one place rather than in several different screens.",
+    "You use the sign itself. There is an interaction for a sign and a networked version of that interaction, so opening one behaves the same way whether you are on your own or sharing the shop.",
+    "In a shared shop the sign travels. There is a networked sign and a networked manager for signs, which is why two players see the same sign over the same aisle rather than each keeping their own.",
+    "The signs are managed rather than counted by hand. Because a manager keeps them, the game holds the shop's signs as a list of its own instead of leaving them as part of the scenery.",
+    "A sign can be coloured as well as named. There is an entry of its own for a colour choice in the sign's dropdown, which is why two signs over two aisles can be told apart at a glance.",
+    "The image beside this entry is the game's own: one of the category signs it ships, showing the dairy category as a cheese wedge and a milk carton.",
+    "What this entry does not tell you: how many signs a shop may hold, what a sign costs, or how the game decides which category a product belongs to. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A category sign is its own object with data of its own.",
+      "evidence": "identifiers: CategorySign, CategorySignSO, CategorySignData"
+    },
+    {
+      "claim": "The signs are kept by a manager of their own.",
+      "evidence": "identifier: CategorySignManager"
+    },
+    {
+      "claim": "Products carry a category, and each category entry is a record of its own.",
+      "evidence": "identifiers: ProductCategory, ProductCategoryEntry"
+    },
+    {
+      "claim": "There is a canvas for setting a category.",
+      "evidence": "identifier: SettingCategoryCanvas"
+    },
+    {
+      "claim": "A sign has an interaction of its own, and a networked version of that interaction.",
+      "evidence": "identifiers: CategorySignInteraction, NetworkCategorySignInteraction"
+    },
+    {
+      "claim": "A shared shop has a networked sign and a networked sign manager.",
+      "evidence": "identifiers: NetworkCategorySign, NetworkCategorySignManager"
+    },
+    {
+      "claim": "A sign's colour is chosen from a dropdown of its own.",
+      "evidence": "identifier: CategorySignColorDropdownItem"
+    },
+    {
+      "claim": "The build ships the colour materials its category signs are made in, black and dune among them.",
+      "evidence": "asset names: M_CategorySign_Black, M_CategorySign_Dune"
+    },
+    {
+      "claim": "Further sign colours are shipped as their own materials, including a gulf-stream blue and a jungle-mist green.",
+      "evidence": "asset names: M_CategorySign_Gulf Stream, M_CategorySign_Jungle Mist"
+    }
+  ],
+  "related": [
+    "signs-labels-and-organising",
+    "how-products-are-displayed"
+  ],
+  "images": [
+    {
+      "file": "mapped/category-signs-and-the-categories-behind-them-sign.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "One of the category signs the game ships for the shop's shelves.",
+        "zh": "游戏为货架分类提供的招牌之一。"
+      }
+    },
+    {
+      "file": "category-signs-and-the-categories-behind-them.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: place a category sign, set it on its own canvas, it names a product category, and in a shared shop everyone sees the same sign.",
+        "zh": "示意图：放置分类标牌、在专属界面中设置、标牌对应一个商品分类，联机时所有人看到同一块标牌。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

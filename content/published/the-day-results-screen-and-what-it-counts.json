@@ -1,0 +1,57 @@
+{
+ "id": "the-day-results-screen-and-what-it-counts",
+ "title": "The day's results and the screen that shows them",
+ "category": "Finance",
+ "summary": "Supermarket Simulator keeps a record for a day of its own: a manager holds it, something draws it, and a screen with an animation of its own is built around it, so a day can be looked back at rather than only lived through.",
+ "body": [
+  "A day has a record of its own. The game keeps a daily record separately from the money you can see at the counter, which is why a day can be looked back at instead of only lived through.",
+  "There is a screen built around that record. The day's figures have a screen of their own, so what happened is shown somewhere rather than only stored out of sight.",
+  "The screen is presented rather than swapped in. It has an animation of its own, which is why opening it is a moment in the day rather than an instant change of text.",
+  "A manager keeps it. One part holds the daily record and updates it, so the counting is not scattered through the shop.",
+  "Drawing the record is a step of its own, named apart from the screen that shows it, which is why what is counted and what is displayed are two separate jobs in the game.",
+  "Because the record, its manager, its drawing and its screen are separate, a day can be counted while you work and shown when you want it rather than only while you are standing at the counter.",
+  "What this entry does not tell you: which figures the screen shows, how a day is broken up, or how far back the records go. We have not verified those numbers, so we do not print them."
+ ],
+ "facts": [
+  {
+   "claim": "The game keeps a daily record of its own.",
+   "evidence": "identifier: DailyStatisticsData"
+  },
+  {
+   "claim": "There is a screen built around that record.",
+   "evidence": "identifier: DailyStatisticsScreen"
+  },
+  {
+   "claim": "The screen has an animation of its own.",
+   "evidence": "identifier: DailyStatisticsScreenAnimation"
+  },
+  {
+   "claim": "A manager holds the daily record and updates it.",
+   "evidence": "identifier: DailyStatisticsManager"
+  },
+  {
+   "claim": "Drawing the record is a step of its own, named apart from the screen.",
+   "evidence": "identifier: DrawStatistics"
+  }
+ ],
+ "related": [
+  "the-day-cycle",
+  "bills-loans-and-growth-screens",
+  "the-management-tabs"
+ ],
+ "images": [
+  {
+   "file": "the-day-results-screen-and-what-it-counts.svg",
+   "kind": "diagram",
+   "alt": {
+    "en": "Diagram: a daily record, a manager that keeps it, a separate drawing step, and an animated screen built around it.",
+    "zh": "示意图：每日记录、维护它的管理器、独立的绘制步骤，以及围绕记录构建的带动画界面。"
+   },
+   "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+  }
+ ],
+ "sources": [
+  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+ ],
+ "imageTier": "diagram-only"
+}

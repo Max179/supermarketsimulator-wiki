@@ -1,0 +1,81 @@
+{
+  "id": "what-the-customers-say",
+  "title": "What the customers say",
+  "category": "Customers",
+  "summary": "In Supermarket Simulator the people in your shop are not scenery: their speech is a list of entries sorted into kinds, their names are drawn above them, their behaviour follows strategies, and they queue for a till rather than crowding it.",
+  "body": [
+    "What a customer says is data rather than decoration. The game keeps speech of its own with a list of entries, which is why the same line can be spoken by many shoppers instead of being tied to one of them.",
+    "It is sorted into kinds. Speech is typed rather than being a single list, so a complaint and a greeting are different entries rather than the same one with different words.",
+    "A shopper is named above their head. The name is drawn on a board of its own, which is why you can tell one person from another at a distance instead of reading them off a list.",
+    "Customers do not wander at random. The game keeps a manager of strategies, which is why two people in the same aisle can be doing entirely different things.",
+    "How busy the shop becomes is decided somewhere. There is a manager for the settings that spawn customers, so how many people arrive is a setting rather than an accident.",
+    "They wait their turn. Customers queue, and the queue is modelled rather than left as a crowd around the till.",
+    "A helper can be occupied by one customer. The game marks a helper as busy with a customer, which is why a job you hand over can be held rather than instantly free again.",
+    "Even small facts are kept. A customer has a gender the game records, which is how a crowd can be built out of different people rather than one figure repeated.",
+    "What this entry does not tell you: how many lines of speech the game has, what any of them say, or what decides how busy the shop gets. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Customer speech is data of its own with a list of entries.",
+      "evidence": "identifiers: CustomerSpeech, CustomerSpeechEntry"
+    },
+    {
+      "claim": "Speech is sorted into kinds rather than kept as one list.",
+      "evidence": "identifier: CustomerSpeechType"
+    },
+    {
+      "claim": "A customer's name is drawn on a board of its own.",
+      "evidence": "identifier: CustomerNameBilboard"
+    },
+    {
+      "claim": "Customer behaviour follows strategies the game keeps.",
+      "evidence": "identifier: CustomerStrategiesManager"
+    },
+    {
+      "claim": "The settings that decide how customers spawn have their own manager.",
+      "evidence": "identifier: CustomerSpawnSettingManager"
+    },
+    {
+      "claim": "Customers queue rather than only occupying the shop.",
+      "evidence": "identifier: CustomerQueue"
+    },
+    {
+      "claim": "A helper can be marked busy with a customer.",
+      "evidence": "identifier: SetCustomerHelperBusy"
+    },
+    {
+      "claim": "A customer's gender is recorded by the game.",
+      "evidence": "identifier: CustomerGender"
+    },
+    {
+      "claim": "The customer side is named in pieces of its own: a speech object, an indicator, a payment and a need-help flag.",
+      "evidence": "asset names: Customer Speech, Customer Indicator, Customer Payment, CustomerNeedHelp"
+    }
+  ],
+  "related": [
+    "who-comes-into-the-shop",
+    "shoplifters-in-your-shop"
+  ],
+  "images": [
+    {
+      "file": "mapped/what-the-customers-say-bubble.png",
+      "kind": "game",
+      "alt": {
+        "en": "The speech bubble frame the game draws a customer's line inside, with its tail pointing at the speaker.",
+        "zh": "游戏用来装顾客台词的对话气泡边框，尾巴指向说话的人。"
+      }
+    },
+    {
+      "file": "mapped/what-the-customers-say-small-bubble.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second speech bubble frame the game ships for customer speech, drawn smaller and rounder.",
+        "zh": "游戏为顾客台词准备的第二个对话气泡边框，更小更圆。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

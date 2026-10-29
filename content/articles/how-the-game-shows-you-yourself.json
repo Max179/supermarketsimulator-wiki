@@ -1,0 +1,61 @@
+{
+  "id": "how-the-game-shows-you-yourself",
+  "title": "How the game shows you yourself",
+  "tier": "published",
+  "kind": "article",
+  "target": "What is driving the body and the view in Supermarket Simulator, so first-person settings are understood rather than guessed at.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A save loaded",
+    "A controller or keyboard and mouse",
+    "The settings menu within reach"
+  ],
+  "steps": [
+    {
+      "do": "Expect two controllers rather than one: the first-person view and the player character.",
+      "because": "the game keeps a first-person controller of its own and the player character has a controller of its own (FirstPersonController, PlayerController)"
+    },
+    {
+      "do": "Know that the body is posed rather than animated as one fixed piece.",
+      "because": "an IK handler poses the body rather than playing one fixed animation (PlayerIKHandler)"
+    },
+    {
+      "do": "Expect the surfaces you wear to be applied by their own controller.",
+      "because": "a skin controller applies the avatar's surfaces (PlayerSkinController)"
+    },
+    {
+      "do": "Let the game decide which device you are on, and expect the prompt to follow.",
+      "because": "input devices are handled by a manager of their own, with a kind of key display (InputDeviceManager, KeyDisplayType)"
+    },
+    {
+      "do": "Know that blinking is a system rather than a decoration.",
+      "because": "blinking is a system of its own, with a controller, a kind of blink and reasons for one (BlinkController, BlinkType, BlinkReasons)"
+    },
+    {
+      "do": "Change the view in one place, because the camera has its own controller and presets.",
+      "because": "the view is run by a camera controller of its own and camera setups can be kept as presets (CameraController, CameraPreset)"
+    },
+    {
+      "do": "Remember there is a camera that is not yours as well.",
+      "because": "there is a free camera of its own, separate from the one the player carries (FreeCamera)"
+    },
+    {
+      "do": "Expect a camera setting to be announced and answered rather than applied once.",
+      "because": "camera settings are invoked and listened for rather than applied in one place, and the picture is fitted to the screen by a fitter of its own (CameraSettingsInvoker, CameraSettingsListener, AspectRatioCameraFitter)"
+    }
+  ],
+  "commonMistakes": [
+    "Looking for one camera setting when the view, the presets and the free camera are separate.",
+    "Assuming the body you do not see is animating like a character in front of you.",
+    "Wondering why a prompt changed shape instead of reading it as a key-display kind.",
+    "Treating a screen-fit change as a gameplay setting."
+  ],
+  "relatedEntities": [
+    "the-body-you-do-not-see",
+    "the-camera-you-play-through",
+    "the-animations-your-body-plays"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

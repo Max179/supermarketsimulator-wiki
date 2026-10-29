@@ -1,0 +1,72 @@
+{
+  "id": "the-fridges-and-freezers",
+  "title": "The fridges and freezers",
+  "category": "Shop",
+  "summary": "Chilled storage in Supermarket Simulator is a line of its own: the game names fridges and freezers in sizes, repeats each size in twelve colourways, and gives the chiller display slots and surfaces of its own.",
+  "body": [
+    "Chilled storage is bought as its own furniture rather than borrowed from the shelves. The game names fridges and freezers in sizes, so a small aisle and a big one are fitted with different pieces of the same family.",
+    "The sizes are kept apart. There is a mini, a medium and a double fridge, and a single, a double and a triple freezer, which is why a chiller can be chosen for the space rather than for the stock alone.",
+    "Each size is named again in colours. Twelve colourways run from dune and gulf stream through to terracotta and viola, so a chiller can be matched to the rest of the shop's furniture instead of standing out as the one grey box in the room.",
+    "The chiller holds its own display space. It has display slots of its own, one named for a fridge and one for a freezer, which is why chilled goods are placed in it rather than on an ordinary shelf.",
+    "Its surfaces are its own as well. The build names a body sheet for the fridge and a trim sheet beside it, with a normal map and an emissive sheet for each, so the chiller does not simply take on the shop's wall finish.",
+    "The build even ships artwork for the pieces themselves. There is a picture of a double fridge and pictures of the freezers, which is why the screens can show what you are buying without loading the furniture.",
+    "The image beside this entry is the game's own: the double display fridge it ships, with glass doors and shelves inside.",
+    "What this entry does not tell you: what any chiller costs, how much it holds, or how quickly chilled goods sell. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The chillers are named in sizes: a mini, a medium and a double fridge, and a single, a double and a triple freezer.",
+      "evidence": "asset names: FridgeMini_1Default, FridgeMedium_1Default, FridgeDouble_1Default, Freezer_Single, Freezer_Double, Freezer_Triple"
+    },
+    {
+      "claim": "Each size is named again per colourway, twelve of them, from dune and gulf stream to terracotta and viola.",
+      "evidence": "asset names: Freezer_Double_Dune, Freezer_Double_Viola, FridgeMedium_Rock Blue, FridgeMini_Sprout"
+    },
+    {
+      "claim": "The chiller has display slots of its own, one for a fridge and one for a freezer.",
+      "evidence": "asset names: Display Slot (Fridge), Display Slot (Freezer)"
+    },
+    {
+      "claim": "The fridge's surfaces are named: a body sheet, a normal map and an emissive sheet, with a trim sheet of its own beside them.",
+      "evidence": "asset names: T_Fridge_RGBA, T_Fridge_Normal, T_Fridge_Emmisive, T_FridgesTrim_AlbedoTransparency, T_FridgesTrim_Normal, T_FridgesTrim_Emmisive"
+    },
+    {
+      "claim": "The build ships artwork for the pieces themselves: a double fridge and the freezers among the pictures.",
+      "evidence": "asset names: Fridge_Double, Freezer_Single, Freezer_Double"
+    }
+  ],
+  "related": [
+    "shelf-slots-and-display-space",
+    "furniture-and-shop-layout"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-fridges-and-freezers-fridge.png",
+      "kind": "game",
+      "alt": {
+        "en": "The double display fridge the game ships: a white cabinet with two glass doors and shelves inside.",
+        "zh": "游戏自带的双门展示冰箱：白色柜体、两扇玻璃门，里面分层货架。"
+      }
+    },
+    {
+      "file": "mapped/the-fridges-and-freezers-freezer.png",
+      "kind": "game",
+      "alt": {
+        "en": "The double freezer the game ships: a chest freezer with a glass lid and a control panel on the front.",
+        "zh": "游戏自带的双联冷柜：玻璃盖卧式冷柜，正面带控制面板。"
+      }
+    },
+    {
+      "file": "mapped/the-fridges-and-freezers-single-freezer.png",
+      "kind": "game",
+      "alt": {
+        "en": "The single freezer the game ships: the same chest freezer at half the width.",
+        "zh": "游戏自带的单门冷柜：同款卧式冷柜，宽度减半。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "catching-a-shoplifter-in-time",
+  "title": "Catching a shoplifter in time",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to react to a shoplifter in Supermarket Simulator using the warning the game already gives you, instead of finding out about the loss after the goods have left the building.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with customers coming through the door",
+    "The door detector in place",
+    "Someone free to watch the shop rather than just the till"
+  ],
+  "steps": [
+    {
+      "do": "Watch the warning indicator and not only the checkout queue.",
+      "because": "the game keeps a shoplifter indicator of its own (ShoplifterIndicator)"
+    },
+    {
+      "do": "Act on the warning rather than waiting for the door to tell you.",
+      "because": "the warning is raised with a delay rather than the moment the theft starts (NetworkShoplifterIndicator)"
+    },
+    {
+      "do": "Keep the door detector working instead of treating it as decoration.",
+      "because": "the game ships a detector built for the shop door (T_ThiefDetector_AlbedoTransparency)"
+    },
+    {
+      "do": "Learn the behaviour in the tutorial rather than meeting it for the first time in a busy shop.",
+      "because": "the game introduces it through a tutorial shoplifter (TutorialShoplifter)"
+    },
+    {
+      "do": "Decide how much of it you want before your shop grows.",
+      "because": "shoplifter frequency is a setting that can be enabled or left off (ShoplifterSpawnSettingSO)"
+    }
+  ],
+  "commonMistakes": [
+    "Waiting for the door to sound before doing anything.",
+    "Treating every customer as a thief.",
+    "Turning the behaviour on and then never watching the shop floor."
+  ],
+  "relatedEntities": [
+    "shoplifters-in-your-shop",
+    "customers-and-helpers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

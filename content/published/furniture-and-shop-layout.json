@@ -1,0 +1,92 @@
+{
+  "id": "furniture-and-shop-layout",
+  "title": "Furniture and shop layout",
+  "summary": "Furniture in Supermarket Simulator arrives as a box you have to handle: you buy a piece, take it out of the box in a placing mode, and the game shows you where that piece is allowed to stand.",
+  "body": [
+    "Furniture is bought as a box. A piece arrives packed and has to be handled before it can be used, which is why an empty shop ends up with furniture boxes sitting around after a delivery rather than a finished aisle.",
+    "Putting it down is its own mode. The game switches you into a placing mode for the box and a placing mode for the piece, so you are never simply dropping furniture wherever you happen to be standing.",
+    "The game decides where a piece is allowed to go. Furniture carries snap points and a snap direction, so a unit locks onto a sensible position instead of floating wherever the camera was pointing.",
+    "The range on offer is data, not a fixed counter. What you can buy is listed through the game's own furniture records, and a layout setting governs how the shop is arranged, which is why the catalogue can differ from one shop to the next.",
+    "Furniture can be taken back out as well. There is an interface for things the game is allowed to remove and a manager that handles those removals, which is why rearranging a shop is a supported job rather than a one-way purchase.",
+    "Putting it down is a job of its own. The build keeps a placer for furniture and a way to handle its boxes in a batch, which is why a delivery of fittings can be dealt with as a set rather than one crate at a time.",
+    "What this entry does not tell you: prices, how many pieces exist, or which furniture earns the most. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Furniture arrives in a box that has to be handled before the piece can be used.",
+      "evidence": "identifiers: FurnitureBox, FurnitureBoxData, furnitureBoxData"
+    },
+    {
+      "claim": "Placing a piece is a separate mode from carrying its box.",
+      "evidence": "identifiers: FurniturePlacingMode, FurnitureBoxPlacingMode"
+    },
+    {
+      "claim": "The game defines snap points and a snap direction that decide where a piece may sit.",
+      "evidence": "identifiers: FurnitureSnapPoint, FurnitureSnapPointSetup, FurnitureSnapDirection"
+    },
+    {
+      "claim": "Furniture is offered and presented through the game's own furniture records.",
+      "evidence": "identifiers: FurnitureSO, FurnitureData, FurnitureSalesItem"
+    },
+    {
+      "claim": "The furniture options come from one layout setting.",
+      "evidence": "identifiers: FurnitureLayoutConfig, FurnitureGenerator"
+    },
+    {
+      "claim": "Furniture can be removed as well as placed: there is an interface for things that can be destroyed and a manager that handles them.",
+      "evidence": "identifiers: IDestroyable, DestroyableManager"
+    },
+    {
+      "claim": "The build keeps a placer for furniture and a way to batch the boxes it arrives in.",
+      "evidence": "identifiers: FurniturePlacer, FurnitureBoxBatch"
+    },
+    {
+      "claim": "The build names an advertising pillar and a point-of-sale terminal among the fixtures a shop can hold.",
+      "evidence": "asset names: Advertising_Pillar, SM_PosTerminal, M_PosTerminal"
+    },
+    {
+      "claim": "The build also names a fountain element of its own among the things a shop can hold.",
+      "evidence": "asset names: Fountain_element_01_LOD0, Fountain_element_01_LOD1"
+    },
+    {
+      "claim": "Mirrors are held as objects of their own with a collider beside them.",
+      "evidence": "asset names: Mirror_Left, Mirror_Left_Collider"
+    },
+    {
+      "claim": "A magazine rack is named among the fittings a shop can hold.",
+      "evidence": "asset name: Ml_Magazine_Rack_01a"
+    },
+    {
+      "claim": "The build names its shelves by shape and by colour: concave and convex shelves in dune, gulf stream, jungle mist, lunar green, pale orange, pine glade, rock blue, sandrift, ship gray, sprout, terracotta and viola.",
+      "evidence": "asset names: Concave_Shelf_Dune, Concave_Shelf_Terracotta, Concave_Shelf_Viola, Convex_Shelf_Lunar Green, Convex_Shelf_Rock Blue, Convex_Shelf_London Hue"
+    }
+  ],
+  "related": [
+    "restocking-shelves",
+    "signs-labels-and-organising"
+  ],
+  "images": [
+    {
+      "file": "mapped/furniture-and-shop-layout-atlas.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own icon atlas of the furniture it offers you to place in the shop.",
+        "zh": "游戏自带的家具图标图集，展示可以摆放到店里的家具。"
+      }
+    },
+    {
+      "file": "furniture-and-shop-layout.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: buy the furniture, carry the box, enter placing mode, and let snap points settle the piece.",
+        "zh": "示意图：购买家具、搬运箱子、进入放置模式、由吸附点固定位置。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "category": "Shop",
+  "imageTier": "game-image"
+}

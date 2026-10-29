@@ -1,0 +1,69 @@
+{
+  "id": "packing-online-orders-without-losing-the-list",
+  "title": "Packing online orders without losing the list",
+  "tier": "published",
+  "kind": "article",
+  "target": "How online orders work in Supermarket Simulator: where an order lives, how it is tracked, what the notebook keeps, and how to use the map and the counter so nothing is packed twice or missed.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with online ordering unlocked",
+    "A stocked shop to pick from",
+    "Access to the order notebook and the map"
+  ],
+  "steps": [
+    {
+      "do": "Treat an order as a thing of its own rather than a line in a list somewhere, because orders and their data are modelled by the game.",
+      "because": "orders and their data are modelled by the game (Order, OrderData)"
+    },
+    {
+      "do": "Know where they are held, because orders sit in a container of their own with a manager over them.",
+      "because": "online orders are held together in a container of their own with a manager over them (OrdersContainer, OrderManager)"
+    },
+    {
+      "do": "Expect the order list to have data of its own and a shared form, so an order can be seen by more than one player.",
+      "because": "the order list has data of its own and a networked form (OrderListData, OrderNetworkData)"
+    },
+    {
+      "do": "Pack for the customer attached to the order rather than for a generic buyer, because an online order has its own customer.",
+      "because": "an online order has a customer of its own (OnlineOrderCustomer)"
+    },
+    {
+      "do": "Use the map when you are collecting, because an order can put a task on it.",
+      "because": "an online order can put a task on the map (OnlineOrderOpenMapTask)"
+    },
+    {
+      "do": "Handle the order at the counter rather than by looking for a menu, because there is an interaction for it.",
+      "because": "there is an interaction for an online order (OnlineOrderInteraction)"
+    },
+    {
+      "do": "In a shared shop, expect that interaction to be shared as well.",
+      "because": "the order interaction has a networked version (NetworkOnlineOrderInteraction)"
+    },
+    {
+      "do": "Read the notebook entry for a product rather than guessing at what the order wants, because the notebook keeps a product entry.",
+      "because": "the order notebook keeps an entry for a product (OrderNotebookProductEntry)"
+    },
+    {
+      "do": "Use the order interface and its document button when you need the details in front of you.",
+      "because": "the order interface is its own, with a document button (OrdersUI, OnlineDocButton)"
+    },
+    {
+      "do": "Remember that what you ship has a price of its own, because boxes carry a market price.",
+      "because": "boxes carry a market price of their own (BoxMarketPrice)"
+    }
+  ],
+  "commonMistakes": [
+    "Picking from memory instead of reading the notebook entry for the product.",
+    "Packing for a sale at the till when the order belongs to an online customer of its own.",
+    "Forgetting the map task and walking the aisles looking for something already listed.",
+    "In a shared shop, both players packing the same order because neither looked at the shared list."
+  ],
+  "relatedEntities": [
+    "online-orders-and-how-they-are-tracked",
+    "orders-and-what-you-can-order",
+    "the-global-map-and-its-markers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

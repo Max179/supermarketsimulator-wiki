@@ -1,0 +1,147 @@
+{
+  "id": "the-street-outside",
+  "title": "The street outside the shop",
+  "category": "Shop",
+  "summary": "The shop in Supermarket Simulator sits on a street rather than in a void: the game ships a petrol station, street lighting and traffic of its own, and lands some deliveries out on the road.",
+  "body": [
+    "The shop has a street. The game ships a petrol station with a pump of its own, which is why there is more outside the walls than scenery to look at.",
+    "The street is lit. The game has street lighting with a controller behind it, so the road behaves like a place rather than a painted backdrop.",
+    "There is traffic. A traffic manager runs the cars outside, which is why the road is used rather than merely drawn.",
+    "Some deliveries happen on the street. The game keeps street targets and a street storage area, which is why stock can be involved with the road rather than only with the back room.",
+    "The neighbours are part of the map. The game ships artwork for neighbouring buildings such as a bank, a hotel, a barber and a garage, so the shop is one unit on a street instead of the only building.",
+    "The road is built rather than painted. The game keeps roads as objects of their own — a road base, a creator, a drawer and a loader — and a road knows the connections it makes with the roads around it.",
+    "Its lanes are drawn and joined by parts of their own, so the surface a car drives on and the route it takes are laid out together rather than separately.",
+    "Where a car may appear and where it may go are marked by waypoints. They carry settings of their own, and they are used both to bring traffic in and to find a path along the road.",
+    "Laying the street out is done in tools of its own: setting a road up, viewing roads, connecting roads, editing a road, and working at an intersection.",
+    "The street is also kept as a network rather than a drawing. It tracks which cells and which intersections are active and keeps a density of its own, with managers over the intersections and over the town's layout, which is why the game can answer where a car may be without reading the whole map.",
+    "Finding a way along it is work of its own. There is a manager for finding a path and a manager over the waypoints, so a route is something the street works out rather than something painted on it.",
+    "Two of the pictures beside this entry are the game's own: the icon it draws for the petrol station and the forecourt sign it prints for it, brand and fuel grades included.",
+    "It matters because it is where you are. Since the street is where deliveries land and where you walk in, it belongs to the shop's routine rather than being decoration.",
+    "What this entry does not tell you: how many neighbours there are, what the traffic does to your shop, or whether any of it can be changed. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The street has a petrol station with a pump of its own.",
+      "evidence": "identifier: GasStationPump"
+    },
+    {
+      "claim": "The street is lit by street lighting with a controller behind it.",
+      "evidence": "identifiers: StreetLights, StreetLightController"
+    },
+    {
+      "claim": "Traffic outside is run by a manager rather than painted on.",
+      "evidence": "identifiers: NPCTrafficManager, TrafficHolder"
+    },
+    {
+      "claim": "Some deliveries and storage are tied to the street.",
+      "evidence": "identifiers: StreetBoxTarget, StorageStreet"
+    },
+    {
+      "claim": "The game ships artwork for the neighbouring buildings.",
+      "evidence": "identifiers: T_Barber_Emission, T_Hotels_Emission, T_GasStation_Emission"
+    },
+    {
+      "claim": "The street's roads are objects of their own — a road base, a creator, a drawer and a loader — and a road knows its connections.",
+      "evidence": "identifiers: RoadBase, RoadCreator, RoadDrawer, RoadsLoader, RoadConnectionsBase"
+    },
+    {
+      "claim": "The road's lanes are drawn and joined by parts of their own.",
+      "evidence": "identifiers: LaneDrawer, LaneConnectors"
+    },
+    {
+      "claim": "Waypoints carry settings of their own and are used both to bring traffic in and to find a path.",
+      "evidence": "identifiers: WaypointSettingsBase, ConnectionWaypoints, SpawnWaypoint, PathFindingWaypoint, CellWaypointsData"
+    },
+    {
+      "claim": "Laying the street out is done in tools of its own, for setting up a road, viewing roads, connecting roads, editing a road and working at an intersection.",
+      "evidence": "identifiers: RoadSetupWindowBase, ViewRoadsWindowBase, ConnectRoadsWindowBase, EditRoadWindowBase, IntersectionWindowBase, EditWaypointWindowBase"
+    },
+    {
+      "claim": "The game ships its own albedo for the petrol station's forecourt sign, printed with a brand and its fuel grades.",
+      "evidence": "asset name: TX_Gas_Station_Sign_02a_ALB"
+    },
+    {
+      "claim": "The road network is held as active cells and active intersections with a density of its own, with managers over the intersections and over the urban layout.",
+      "evidence": "identifiers: ActiveCellsManager, ActiveIntersectionsManager, DensityManager, IntersectionManager, UrbanManager"
+    },
+    {
+      "claim": "Finding a route and the waypoints it uses have managers of their own.",
+      "evidence": "identifiers: PathFindingManager, WaypointManager"
+    },
+    {
+      "claim": "The neighbouring businesses on the street are built as named pieces of their own, a cafe, a restaurant and a pharmacy among them.",
+      "evidence": "asset names: SM_CafeTatsune_LOD0, SM_Restaurant_Chicken_LOD0, SM_Pharmacy_A_LOD0"
+    },
+    {
+      "claim": "The buildings on the street carry their own roofs and their own bike parking.",
+      "evidence": "asset names: M_Roof_Blue, Bike_Parking_01_LOD0, Bike_Parking_02_LOD0"
+    },
+    {
+      "claim": "A butcher is named among the neighbouring businesses as well, with a colour texture of its own.",
+      "evidence": "asset names: M_Butcher, T_Butcher_BCA"
+    },
+    {
+      "claim": "The buildings have garage doors of their own, with a material and a built version shipped.",
+      "evidence": "asset names: M_Garagedoor, SM_GarageDoor_A"
+    },
+    {
+      "claim": "The street's edges are furnished with named pieces of their own: metal and iron fences, a hedge fence and a construction fence, with a stone road barrier and a traffic barrier beside them.",
+      "evidence": "asset names: M_MetalFence, M_iron_fence, Hedge_fence_01, Ml_construction_fence_01a, M_StoneRoadBarrier, Ml_Trafficbarrier_01a"
+    },
+    {
+      "claim": "Bollards are placed in more than one kind, and an iron fence gate is named with the fences.",
+      "evidence": "asset names: SM_Bollards_01c, Ml_Bollard_01a, Iron_fence_gate_LOD0, Iron_fence_LOD0"
+    },
+    {
+      "claim": "A bus sign is named with its own colour sheet, and the petrol station carries a second forecourt sign of its own.",
+      "evidence": "asset names: M_BusSign, T_BusSign_BaseColor, SM_Gas_Station_Sign_03a, TX_Gas_Station_Sign_03a_ALB"
+    },
+    {
+      "claim": "The street props carry their own texture sets: a bollard and an air pump each have one.",
+      "evidence": "asset names: TX_Bollard_01a_ALB, TX_Bollard_01a_AO, TX_Bollard_01a_MS, TX_Bollard_01a_NRM, TX_Air_Pump_01a_ALB, TX_Air_Pump_01a_NRM"
+    },
+    {
+      "claim": "An awning, barber-shop fittings and a bicycle are named among the pieces the street carries.",
+      "evidence": "asset names: M_Awning, M_BarberShops, M_Bicycle"
+    },
+    {
+      "claim": "The street also carries a portable water tank, a propane station and its tank holder, with a sign of its own among them.",
+      "evidence": "asset names: Ml_PortableWaterTank_01a, Ml_Propane_Station_01a, Ml_Propane_Tank_Holder_01a, Ml_Sign_06a"
+    }
+  ],
+  "related": [
+    "restock-areas-and-vehicles",
+    "orders-and-what-you-can-order"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-street-outside-gassign.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own albedo for the petrol station sign: an orange QIICK logo under the grade labels Regular, Plus and Supreme Unleaded with their prices.",
+        "zh": "游戏为加油站招牌提供的反照率贴图：橙色 QIICK 标志，下方是 Regular、Plus、Supreme Unleaded 三种油品与其价格。"
+      }
+    },
+    {
+      "file": "mapped/the-street-outside-gas.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game itself uses for the petrol station on the street.",
+        "zh": "游戏本身用于街边加油站的图标。"
+      }
+    },
+    {
+      "file": "the-street-outside.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop opens onto a street with a petrol station, lighting and traffic, and deliveries arrive there.",
+        "zh": "示意图：店铺临街，有加油站、路灯与车流，货物也送到街上。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

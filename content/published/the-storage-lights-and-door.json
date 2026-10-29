@@ -1,0 +1,63 @@
+{
+  "id": "the-storage-lights-and-door",
+  "title": "The storage lights and its door",
+  "category": "Storage",
+  "summary": "The back room in Supermarket Simulator is not just shelves: the game gives the storage area a door and a set of lights of its own, and it tracks whether those lights are switched on.",
+  "body": [
+    "Storage is a room with fittings of its own. The game keeps a door and a set of lights for the storage area rather than treating the back as a plain extension of the shop floor.",
+    "The lights have a state. The game tracks whether the storage lights are on, which is why the back room being lit or dark is something the game knows about and not only something you can see.",
+    "They are switched like anything else. There is an interaction for the storage lights with a manager behind it, so turning them on is an action you take in the world rather than a setting you tick.",
+    "In a shared shop the lights are shared. The game keeps the storage lights on the network as an object of their own, which is why one player switching them on is something everyone else sees too.",
+    "The door is part of that room as well. It has its own object, so the way into the back is a thing in the game rather than a painted opening in a wall.",
+    "What this entry does not tell you: how many lights there are, whether they cost money to run, or whether brightness changes how customers behave. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The storage area has lights of its own.",
+      "evidence": "identifiers: StorageLight, StorageLightManager"
+    },
+    {
+      "claim": "The game tracks whether the storage lights are on.",
+      "evidence": "identifiers: isStorageLightsOpen, storageLightViewId"
+    },
+    {
+      "claim": "The lights have an interaction of their own in the world.",
+      "evidence": "identifiers: StorageLightInteraction, storageLight"
+    },
+    {
+      "claim": "In a shared shop the storage lights are kept on the network.",
+      "evidence": "identifiers: NetworkStorageLight, NetworkStorageLightInteraction"
+    },
+    {
+      "claim": "The storage area has a door of its own.",
+      "evidence": "identifier: StorageDoor"
+    }
+  ],
+  "related": [
+    "storage-sections-and-sorting",
+    "raising-your-storage-and-shop-level"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-storage-lights-and-door-door.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture of a door of the kind the storage area uses.",
+        "zh": "仓储区所用门体的反照率贴图。"
+      }
+    },
+    {
+      "file": "the-storage-lights-and-door.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you walk to the back room, open its door, switch the storage lights on, and the light state is shared with the shop.",
+        "zh": "示意图：走到后仓、打开仓门、开启仓储灯、灯光状态同步给店内。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

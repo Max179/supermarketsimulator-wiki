@@ -1,0 +1,124 @@
+{
+  "id": "the-menu-you-pause-into",
+  "title": "The menu you pause into",
+  "category": "Interface",
+  "summary": "Pausing in Supermarket Simulator opens a menu of its own: the game keeps an escape menu, a manager for its tabs and a second one for sub-tabs, plus kinds for leaving and for the transition between screens.",
+  "body": [
+    "Pausing is a screen rather than a freeze. The game has an escape menu of its own, so stopping play opens something built for that purpose instead of leaving you in the shop with the controls off.",
+    "The menu is divided by tabs. Tabs are run by a manager of their own, which is why the pause menu can hold several pages without each one being built separately.",
+    "There is a second level. Sub-tabs have their own manager, so a page inside the pause menu can have its own divisions rather than everything sitting on one screen.",
+    "Leaving is typed. There are kinds of quitting, which is why going back to the main menu and closing the game can be offered as different things rather than one button that does whatever it does.",
+    "Screens change in a way the game has named. Transitions are typed as well, so the movement between one screen and the next is chosen rather than happening by accident.",
+    "What this entry does not tell you: what each tab holds, how long a transition takes, or which kinds of quitting are offered in a given build. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Pausing opens an escape menu of its own.",
+      "evidence": "identifier: EscapeMenuManager"
+    },
+    {
+      "claim": "The menu's tabs are run by a manager of their own.",
+      "evidence": "identifier: TabManager"
+    },
+    {
+      "claim": "Sub-tabs have a manager of their own.",
+      "evidence": "identifier: SubTabManager"
+    },
+    {
+      "claim": "Quitting is sorted into kinds.",
+      "evidence": "identifier: QuitType"
+    },
+    {
+      "claim": "Transitions between screens are typed as well.",
+      "evidence": "identifier: TransitionType"
+    },
+    {
+      "claim": "The game draws a pause icon of its own for the menus.",
+      "evidence": "asset name: Icon_PictoIcon_Pause"
+    },
+    {
+      "claim": "The build ships a variant of the escape menu for multiplayer.",
+      "evidence": "asset name: Escape Menu Multiplayer Variant"
+    },
+    {
+      "claim": "The menu set also names pictograms for back, play, next, previous and sound on.",
+      "evidence": "asset names: Icon_PictoIcon_Back, Icon_PictoIcon_Play, Icon_PictoIcon_Next02, Icon_PictoIcon_Prev02, Icon_PictoIcon_Sound_on"
+    },
+    {
+      "claim": "The menu itself is drawn as a grid of four rounded squares.",
+      "evidence": "asset name: Icon_MenuIcon01_Menu_s"
+    },
+    {
+      "claim": "The pictogram set also names wifi, a search mark, music and an information image.",
+      "evidence": "asset names: Icon_PictoIcon_Wifi, Icon_PictoIcon_Search, Icon_PictoIcon_Music_on, Icon_ImageIcon_Info"
+    }
+  ],
+  "related": [
+    "the-controls-the-menus-are-built-from",
+    "the-settings-and-the-keys-you-can-change",
+    "the-hints-and-pings-the-game-gives"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-menu-you-pause-into-menu.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The menu icon the game itself draws: a grid of four rounded white squares.",
+        "zh": "游戏自己画的菜单图标：四个圆角白色方块组成的格子。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-you-pause-into-back.png",
+      "kind": "game",
+      "alt": {
+        "en": "The back pictogram from the game's own menu set: a white triangle pointing left.",
+        "zh": "游戏菜单自带的返回图标：指向左侧的白色三角。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-you-pause-into-wifi.png",
+      "kind": "game",
+      "alt": {
+        "en": "The signal pictogram from the same set: an arc with a dot beneath it.",
+        "zh": "同一套图标中的信号图标：一段弧线，下方一个圆点。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-you-pause-into-search.png",
+      "kind": "game",
+      "alt": {
+        "en": "The search mark from the same set, an outlined magnifying glass on transparency.",
+        "zh": "同一套图标中的搜索标记：描边的放大镜，背景透明。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-you-pause-into-next.png",
+      "kind": "game",
+      "alt": {
+        "en": "The next pictogram from the game's own menu set: a double chevron pointing right.",
+        "zh": "游戏菜单自带的「下一个」图标：向右的双箭头。"
+      }
+    },
+    {
+      "file": "mapped/the-menu-you-pause-into-previous.png",
+      "kind": "game",
+      "alt": {
+        "en": "The previous pictogram from the same set: the same double chevron pointing left.",
+        "zh": "同一套图标中的「上一个」图标：同款双箭头，方向向左。"
+      }
+    },
+    {
+      "file": "the-menu-you-pause-into.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: pausing opens the escape menu, its tabs and sub-tabs are managed, quitting comes in kinds, and screens change with a named transition.",
+        "zh": "示意图：暂停打开退出菜单、标签与子标签各由管理器负责、退出分为若干种类、界面切换用命名的过渡方式。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

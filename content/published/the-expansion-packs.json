@@ -1,0 +1,76 @@
+{
+  "id": "the-expansion-packs",
+  "title": "The expansion packs the game offers",
+  "category": "Products",
+  "summary": "Supermarket Simulator sells extra content as packs rather than as loose items: the game has a screen of its own for them, checks which are installed, and gives each pack its own banners, products and displays.",
+  "body": [
+    "Extra content in Supermarket Simulator arrives as packs rather than as a list of loose items. The game has a screen of its own for them, with an element for each pack it knows about, so the list you see is drawn from the game rather than from a shop page.",
+    "The game checks what is actually installed instead of assuming. Pack information is held as its own record and a flag states whether a pack is present, which is why two machines running the same build can show different things in the shop.",
+    "A pack can add products and the licences to sell them. The game keeps a list of the products that belong to packs and a separate list of what a pack licenses, which is why a pack's goods can stay out of your shop until the pack is there.",
+    "A pack can also bring its own furniture. There is a list of the displays that come from packs, and the game ships the display artwork for them, which is why a pack's goods can sit on fixtures that the base game does not have.",
+    "The game ships its own banner art naming the packs it offers. Two of those banners are shown beside this entry: one names the electronics pack and one names the clothing pack, and both were drawn by the game rather than by this site.",
+    "A pack can bring a whole counter with it, as the bakery does, where the goods pass through baking stages under their own manager rather than being treated as ordinary stock.",
+    "What this entry does not tell you: what any pack costs, everything it contains, or which packs are available for your copy of the game. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game has a screen of its own for extra content packs, with an element for each pack it knows about.",
+      "evidence": "identifiers: DLCScreen, DLCScreenController, DLCElement"
+    },
+    {
+      "claim": "Pack information is held as its own record, and a flag states whether a pack is installed.",
+      "evidence": "identifiers: DlcInformation, DlcInstalled_t, DLCReader"
+    },
+    {
+      "claim": "The game keeps a list of the products that belong to packs and a separate list of what a pack licenses.",
+      "evidence": "identifiers: dlcProducts, dlcProductLicences"
+    },
+    {
+      "claim": "There is a list of the displays that come with packs.",
+      "evidence": "identifier: dlcDisplaysSO"
+    },
+    {
+      "claim": "The game ships its own banner art naming the packs it offers.",
+      "evidence": "asset names: electronicsIcon, clothingIcon"
+    },
+    {
+      "claim": "A pack can bring a counter of its own, with goods handled by a manager for that pack.",
+      "evidence": "identifiers: BakeryManager, NetworkBakeryManager"
+    }
+  ],
+  "related": [
+    "the-bakery-counter",
+    "raising-your-storage-and-shop-level"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-expansion-packs-electronics.png",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own banner for its electronics pack, naming the pack.",
+        "zh": "游戏自带的电子品类 DLC 横幅，标注了扩展包名称。"
+      }
+    },
+    {
+      "file": "mapped/the-expansion-packs-clothing.png",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own banner for its clothing pack, naming the pack.",
+        "zh": "游戏自带的服饰品类 DLC 横幅。"
+      }
+    },
+    {
+      "file": "the-expansion-packs.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a pack is installed, its products and displays appear, and its goods can then be sold in the shop.",
+        "zh": "示意图：安装扩展包后，其商品与陈列出现，并可上架销售。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

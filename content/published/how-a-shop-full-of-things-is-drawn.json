@@ -1,0 +1,56 @@
+{
+  "id": "how-a-shop-full-of-things-is-drawn",
+  "title": "How a shop full of things is drawn",
+  "category": "Interface",
+  "summary": "A busy shop in Supermarket Simulator is drawn with machinery of its own: an occlusion controller, occludee and instance data with bounds, a static instancer that generates matrices, and a manager for the obstacles people walk around.",
+  "body": [
+    "A shop with hundreds of objects is not drawn object by object. The game runs an occlusion controller of its own, which is how it can decide what is worth drawing before anything is put on the screen.",
+    "What may be hidden is recorded. There is occludee data of its own, so what can be skipped is a thing the game knows rather than something worked out again each frame.",
+    "Objects that repeat are drawn together. The game keeps instance data, with bounds for an instance, which is why a row of identical goods is cheaper to draw than a row of different ones.",
+    "The repeated pieces are placed from matrices. There is an indexed static instancer that generates the matrices for them, which is how the same object can appear many times without many copies of the object.",
+    "People still have to walk around it. There is a manager for navigation obstacles of its own, so a fixture blocks a shopper's path without the game having to test every wall by hand.",
+    "What this entry does not tell you: how many objects a shop can hold, when something is skipped, or which objects are instanced. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game runs an occlusion controller of its own.",
+      "evidence": "identifier: OcclusionController"
+    },
+    {
+      "claim": "What may be hidden is recorded as occludee data.",
+      "evidence": "identifier: OccludeeData"
+    },
+    {
+      "claim": "Repeated objects are held as instance data, with bounds for an instance.",
+      "evidence": "identifiers: InstanceData, InstanceBoundsData"
+    },
+    {
+      "claim": "An indexed static instancer generates the matrices the repeated pieces are placed from.",
+      "evidence": "identifier: IndexedStaticInstancerMatrixGenerator"
+    },
+    {
+      "claim": "Obstacles that people walk around have a manager of their own.",
+      "evidence": "identifier: NavMeshObstacleManager"
+    }
+  ],
+  "related": [
+    "furniture-and-shop-layout",
+    "how-products-are-displayed",
+    "the-shop-computer"
+  ],
+  "images": [
+    {
+      "file": "how-a-shop-full-of-things-is-drawn.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: an occlusion controller decides what to draw, occludee and instance data say what may be skipped or repeated, matrices place the repeats, and a manager keeps the walking obstacles.",
+        "zh": "示意图：遮挡控制器决定画什么、可遮挡与实例数据记录可跳过或可重复的对象、矩阵摆放重复件，另有一个管理器维护行走障碍。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

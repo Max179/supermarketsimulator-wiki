@@ -1,0 +1,65 @@
+{
+  "id": "cleanliness-and-standing",
+  "title": "Cleanliness and the shop's standing",
+  "category": "Shop",
+  "tier": "published",
+  "summary": "Supermarket Simulator watches how clean the shop is: the game ties cleanliness to the shop's standing, so a messy floor is recorded rather than merely inconvenient.",
+  "body": [
+    "Cleanliness is tracked by the game against the shop's standing, which is why cleaning is part of running the shop rather than a side chore.",
+    "Because it is a tracked value rather than a visual effect, how the shop looks can matter beyond the moment you tidy it.",
+    "Everything else on this page about reputation, reviews and their effect is not something we could verify, so we do not describe it here.",
+    "What this entry does not tell you: how much cleanliness affects anything, how fast the shop gets dirty, or what customers do about it. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Cleanliness is tracked against the shop's standing.",
+      "evidence": "identifier: CleaningReputationManager"
+    },
+    {
+      "claim": "The game keeps a store controller for the market side of the shop.",
+      "evidence": "identifier: LocalMarketStoreController"
+    },
+    {
+      "claim": "The build keeps a cached cleanup record of its own.",
+      "evidence": "identifier: PlayerCleanupCachedData"
+    },
+    {
+      "claim": "The mop is named twice over in the build, alongside a controller for mopping and a sound effect that goes with it.",
+      "evidence": "asset names: SM_Mop, SM_Mop_1, MopCleaningController, Mop Cleaning SFX"
+    },
+    {
+      "claim": "Trash is named per product line, and for some lines the build carries two spellings of the same name.",
+      "evidence": "asset names: SM_Trash_Apple Juice_Bio Juice, SM_Trash_Apple_Juice_Bio_Juice, SM_TrashPasta Spaghetti_Elo, SM_TrashPasta_Spaghetti_Elo"
+    }
+  ],
+  "related": [
+    "restock-areas-and-vehicles",
+    "how-customers-find-their-way",
+    "dirt-and-cleaning",
+    "who-keeps-the-shop-clean",
+    "dirt-dust-and-rubbish-are-three-jobs"
+  ],
+  "images": [
+    {
+      "file": "mapped/cleanliness-and-standing-mop.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of the mop used to clean the shop.",
+        "zh": "取自游戏的清洁拖把反照率贴图。"
+      }
+    },
+    {
+      "file": "cleanliness-and-standing.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop gets messy, you clean it, the game records the shop's standing, and trading continues.",
+        "zh": "清洁与口碑示意图：店铺变脏、你打扫、游戏记录店铺口碑、继续营业。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

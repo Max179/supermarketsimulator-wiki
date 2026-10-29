@@ -1,0 +1,68 @@
+{
+  "id": "who-keeps-the-shop-clean",
+  "title": "Who keeps the shop clean",
+  "category": "Staff",
+  "tier": "published",
+  "summary": "Cleaning in Supermarket Simulator can be somebody else's job: the game defines a cleaning worker with their own item, a mop you can hold, and a generator for the people you employ.",
+  "body": [
+    "There is a worker role for cleaning rather than one generic employee, which is why tidying up can be delegated once the shop is big enough.",
+    "The mop is an item of its own, so cleaning is something done with equipment rather than a menu command.",
+    "Cleaning has its own routine in the game, which is how a worker can keep going while you serve customers.",
+    "What this entry does not tell you: wages, how many people you may employ or how thorough a worker is. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "There is a cleaning worker with an item of their own.",
+      "evidence": "identifiers: JanitorItem, Mop"
+    },
+    {
+      "claim": "Cleaning is carried out by a routine of its own.",
+      "evidence": "identifier: CleaningForJanitorCoroutine"
+    },
+    {
+      "claim": "The people you employ are produced by the game.",
+      "evidence": "identifier: EmployeeGenerator"
+    },
+    {
+      "claim": "The build ships a cleaner model, a cleaning marker and the rubbish bags the job produces.",
+      "evidence": "asset names: Cleaner_Wesh, Cleaning Arrow, Garbage_Bag_01_LOD0"
+    },
+    {
+      "claim": "More than one cleaner model is shipped, each named separately.",
+      "evidence": "asset names: Cleaner_Kilemol, Cleaner_Yamo"
+    },
+    {
+      "claim": "The shop has a janitor of its own, with a controller, an avatar, a ticket material and a janitorial supply named beside them.",
+      "evidence": "asset names: Janitor Controller, JanitorAvatar, Janitor_Ticket_Mat, SM_JanitorialSupply_LOD2"
+    }
+  ],
+  "related": [
+    "dirt-and-cleaning",
+    "jobs-you-can-hand-over",
+    "the-janitor",
+    "dirt-dust-and-rubbish-are-three-jobs"
+  ],
+  "images": [
+    {
+      "file": "mapped/who-keeps-the-shop-clean-janitor.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game itself uses for the staff who keep the shop clean.",
+        "zh": "游戏本身用于清洁员工的图标。"
+      }
+    },
+    {
+      "file": "who-keeps-the-shop-clean.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: mess builds up, a cleaning worker is hired, the mop is used, and the shop's condition is restored.",
+        "zh": "清洁岗位示意图：脏污累积、雇佣清洁员工、使用拖把、恢复店铺状况。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "what-the-tutorial-is-teaching-you",
+  "title": "What the tutorial is teaching you",
+  "tier": "published",
+  "kind": "article",
+  "target": "How the tutorial layer in Supermarket Simulator is put together: the scale, the online orders and the shoplifter each have their own lesson, objectives are their own data, and the missions underneath have named kinds.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop in its first days",
+    "The scale and the computer within reach",
+    "A moment to read what it is asking"
+  ],
+  "steps": [
+    {
+      "do": "Read the tutorial as a set of lessons rather than one long prompt, because there is a tutorial interface behind it rather than only ad-hoc messages.",
+      "because": "the game carries a tutorial interface rather than only ad-hoc prompts (ITutorial)"
+    },
+    {
+      "do": "Watch the scale closely, because it has a tutorial manager of its own with an indicator and a part that positions it.",
+      "because": "the scale has a tutorial manager of its own with an indicator display and a position container (ScaleTutorialManager, ScaleTutorialIndicatorDisplay, ScaleTutorialIndicatorPositionContainer)"
+    },
+    {
+      "do": "Expect a lesson of its own for online orders, since they are introduced separately.",
+      "because": "online ordering has a tutorial of its own (OnlineOrderTutorial)"
+    },
+    {
+      "do": "Expect a lesson for shoplifting as well, and it brings its own customer to act the part.",
+      "because": "shoplifting has a tutorial of its own with a customer made for it (TutorialShoplifter, ShoplifterTutorialCustomer)"
+    },
+    {
+      "do": "Watch the animation of that lesson, because the shoplifter tutorial listens to events of its own.",
+      "because": "that tutorial has an animation listener of its own (TutorialShoplifterAnimationEventListener)"
+    },
+    {
+      "do": "Read what a step is asking before doing it, because tutorial objectives are their own data with a display.",
+      "because": "tutorial objectives are stored as their own data with a display (TutorialObjectiveData, TutorialObjectiveDisplay)"
+    },
+    {
+      "do": "Do not rush the step: the game checks objectives after a delay rather than instantly.",
+      "because": "the game checks objectives after a delay (DelayedObjectiveCheck)"
+    },
+    {
+      "do": "Treat a lesson as a mission underneath, because the game carries a mission system with a container and data of its own.",
+      "because": "the game carries a mission system with a container for missions and mission data (MissionSystem, MissionContainer, MissionData)"
+    },
+    {
+      "do": "Know that a mission can be one task or several, and that the game names kinds of mission.",
+      "because": "a mission can be a single task or several, and missions are grouped by a kind of their own (MissionTask, SingleTaskMission, MissionType)"
+    },
+    {
+      "do": "Expect named missions for particular lessons, such as switching on an online order and a step at the scale.",
+      "because": "there are named missions for an online order and for a step at the scale (OnlineOrderActivateMission, ScaleStepMission)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating the tutorial as one message and clicking through it without doing the step.",
+    "Ignoring the scale lesson and working out the weighing order later the hard way.",
+    "Missing that the shoplifter lesson uses a customer of its own, and taking it for a real thief.",
+    "Assuming an objective is checked the moment you act, when the game checks after a delay."
+  ],
+  "relatedEntities": [
+    "the-tutorials-that-point-you-at-things",
+    "missions-and-the-objectives-the-game-sets",
+    "the-task-layer-under-the-missions"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

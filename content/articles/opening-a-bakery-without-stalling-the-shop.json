@@ -1,0 +1,47 @@
+{
+  "id": "opening-a-bakery-without-stalling-the-shop",
+  "title": "Opening a bakery without stalling the shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to add the bakery counter to a Supermarket Simulator shop without letting the rest of the shop stall while you learn how the counter works.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop already selling from shelves",
+    "Money set aside for the counter and its fittings",
+    "Someone you can put on the bakery"
+  ],
+  "steps": [
+    {
+      "do": "Fit the counter out before you start baking into it.",
+      "because": "the bakery display and its baskets are their own pieces with their own artwork (T_BakeryDlc_Display_BCA)"
+    },
+    {
+      "do": "Put a worker on it instead of baking and running the tills yourself.",
+      "because": "the bakery has its own kind of worker (BakerSO)"
+    },
+    {
+      "do": "Expect the goods to change as they bake rather than looking finished at once.",
+      "because": "the game ships separate surfaces for each baking stage (T_BakeryDlc_L1_Baked_BCA)"
+    },
+    {
+      "do": "Keep watching the rest of the shop while the bakery runs.",
+      "because": "the bakery runs through a manager of its own (BakeryManager)"
+    },
+    {
+      "do": "Check what is available before planning a range rather than assuming everything is.",
+      "because": "bakery content sits in the game's own list of added content (dlcProducts)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying the counter and then leaving it empty.",
+    "Trying to run the bakery yourself while the tills queue.",
+    "Assuming every bakery item is available from the start."
+  ],
+  "relatedEntities": [
+    "the-bakery-counter",
+    "the-shop-computer"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

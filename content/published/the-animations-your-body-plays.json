@@ -1,0 +1,69 @@
+{
+  "id": "the-animations-your-body-plays",
+  "title": "The animations your body plays",
+  "category": "Interface",
+  "summary": "Your character in Supermarket Simulator is animated in states of its own: the game keeps an upper-body idle, a bicycle animation, a way to look forward and to turn towards something safe, and an animation test of its own.",
+  "body": [
+    "The body has states rather than one animation. The game keeps an upper-body idle of its own, which is why your arms and shoulders can keep moving while your legs walk.",
+    "There is a bicycle animation as well. The game ships a rider's animation for it, which is how a bicycle is ridden rather than rolled along beside you.",
+    "Looking is its own behaviour. The game can make the body look forward without turning the whole character, so what you are facing and what you are looking at are two different things.",
+    "Turning has a safe version. There is a behaviour for rotating towards a direction only when that is safe, which is why a character does not turn into something it should not.",
+    "There is a place to test the animations. The build keeps an animation test of its own, which is where those states can be run through without a shop full of customers.",
+    "There is more than walking. The build keeps a sound for the bicycle and a skateboard with a controller, an interactable and an interaction of its own, which is why getting about is something the body can be put into rather than only a way of moving.",
+    "What this entry does not tell you: how many animations exist, which one plays when, or how long any of them take. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The body has an upper idle state of its own.",
+      "evidence": "identifier: UpperIdleState"
+    },
+    {
+      "claim": "There is a bicycle animation of its own.",
+      "evidence": "identifier: BicycleAnimation"
+    },
+    {
+      "claim": "The body can look forward separately and can turn towards a direction only when that is safe.",
+      "evidence": "identifiers: LookForward, RotateTowardsSafe"
+    },
+    {
+      "claim": "The build keeps an animation test of its own.",
+      "evidence": "identifier: PlayerAnimationTest"
+    },
+    {
+      "claim": "The build keeps a bicycle sound of its own.",
+      "evidence": "identifier: BicycleSound"
+    },
+    {
+      "claim": "The build names the character rig down to individual finger joints rather than only the main limbs.",
+      "evidence": "asset names: Barney_RightForeArm, Barney_RightHandIndex1, Barney_RightHandMiddle3"
+    },
+    {
+      "claim": "The build also carries a skateboard, with a controller, something to interact with and an interaction of its own.",
+      "evidence": "identifiers: SkateboardController, SkateboardInteract, SkateboardInteraction"
+    },
+    {
+      "claim": "The body's feet have placement targets of their own, one left and one right, with a leg target beside them.",
+      "evidence": "asset names: LeftLegPlacement, RightLegPlacement, LegPlacementTarget"
+    }
+  ],
+  "related": [
+    "the-body-you-do-not-see",
+    "how-the-game-shows-what-you-can-use",
+    "playing-with-a-controller"
+  ],
+  "images": [
+    {
+      "file": "the-animations-your-body-plays.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: an upper idle runs while the legs walk, a bicycle has its own animation, looking and safe turning are separate behaviours, and the build keeps a test for them.",
+        "zh": "示意图：上身待机与行走并行、自行车有专属动画、注视与安全转身是两套行为，构建里还留有测试场景。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

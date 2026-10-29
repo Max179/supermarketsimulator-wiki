@@ -1,0 +1,82 @@
+{
+ "id": "how-the-game-decides-to-warn-you",
+ "title": "How the game decides to warn you",
+ "category": "Interface",
+ "summary": "A warning in Supermarket Simulator is not simply a popup with a message: the game runs a warning system of its own, keeps a pool of warnings, puts the delayed ones on their own canvas, sorts them into kinds such as interaction and baker warnings, and keeps separate records and panels for a connection warning and a sign-in warning.",
+ "body": [
+  "Warnings have machinery of their own. The game runs a warning system apart from the popups, so a warning and a popup are two different things even when they look alike on screen.",
+  "Warnings are pooled. They are kept together in a pool rather than built fresh every time, which is why the same warning can come back without the game making a new one for it.",
+  "Some warnings wait. There is a canvas for warnings that appear after a delay while you are playing, so a warning can be held back instead of being fired the moment something happens.",
+  "Warnings are sorted into kinds. Interaction warnings and baker warnings each have a type of their own, which is how the game decides what kind of warning a situation deserves.",
+  "A connection warning is a record of its own. That is how the state of the link can be shown rather than only felt as a stutter in the shop.",
+  "Signing in has a panel of its own, so a problem with the platform account is a warning like any other rather than a separate sort of message.",
+  "A warning can be stopped as well as started, and the delay before one appears is a routine of its own, which is why a warning that no longer applies can go away again.",
+  "Each warning keeps a screen or canvas of its own rather than borrowing the popup system, and an interaction can register a warning of its own.",
+  "What this entry does not tell you: how long a warning waits before showing, how many warnings can be on screen at once, or which warning a given situation triggers. We have not verified those points, so we do not print them."
+ ],
+ "facts": [
+  {
+   "claim": "Warnings are run by a system of their own, apart from the popups.",
+   "evidence": "identifier: WarningSystem"
+  },
+  {
+   "claim": "Warnings are kept in a pool rather than made fresh each time.",
+   "evidence": "identifier: WarningsPool"
+  },
+  {
+   "claim": "There is a canvas for warnings that appear after a delay in game.",
+   "evidence": "identifier: InGameDelayWarningCanvas"
+  },
+  {
+   "claim": "Warnings are sorted into kinds, with an interaction warning type and a baker warning type.",
+   "evidence": "identifiers: InteractionWarningType, BakerWarningType"
+  },
+  {
+   "claim": "A connection warning has a record of its own.",
+   "evidence": "identifier: ConnectionWarningEntry"
+  },
+  {
+   "claim": "Signing in has a warning panel of its own.",
+   "evidence": "identifier: SigninWarningPanel"
+  },
+  {
+   "claim": "A warning can be stopped as well as started, with a delay routine of its own.",
+   "evidence": "identifiers: StopWarning, WarningDelayCoroutine"
+  },
+  {
+   "claim": "Each warning keeps a screen or canvas of its own, and an interaction can register a warning.",
+   "evidence": "identifiers: WarningScreen, DirtinessIndicatorWarningCanvas, InteractionWarningEntry"
+  },
+  {
+   "claim": "The dirtiness warning draws an icon of its own, a filled droplet the game ships as a picture.",
+   "evidence": "identifiers: DirtinessIndicatorWarningCanvas, Dirtiness Indicator Icon"
+  }
+ ],
+ "related": [
+  "the-warnings-the-game-shows",
+  "the-popups-in-the-game"
+ ],
+ "images": [
+  {
+   "file": "mapped/how-the-game-decides-to-warn-you-dirtiness.png",
+   "kind": "game",
+   "alt": {
+    "en": "The icon the game draws for its dirtiness warning: a white droplet outline with a yellow fill.",
+    "zh": "游戏为脏污警告绘制的图标：白色水滴轮廓，内部填充黄色。"
+   }
+  },
+  {
+   "file": "how-the-game-decides-to-warn-you.svg",
+   "kind": "diagram",
+   "alt": {
+    "en": "Diagram: a warning system keeps a pool of warnings, sorts them into kinds, delays some onto their own canvas, and gives each a screen.",
+    "zh": "示意图：警告系统维护一个警告池，按类型区分，部分延迟后显示在专属画布上，并为每个警告提供自己的界面。"
+   },
+   "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+  }
+ ],
+ "sources": [
+  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+ ],
+ "imageTier": "game-image"
+}

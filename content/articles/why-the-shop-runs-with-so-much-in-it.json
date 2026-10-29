@@ -1,0 +1,61 @@
+{
+  "id": "why-the-shop-runs-with-so-much-in-it",
+  "title": "Why the shop runs with so much in it",
+  "tier": "published",
+  "kind": "article",
+  "target": "How a full Supermarket Simulator shop is drawn and how placements behave, so a shop that stutters or will not line up can be reasoned about.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with a lot of stock in it",
+    "Fixtures you can move",
+    "A day you can pause"
+  ],
+  "steps": [
+    {
+      "do": "Know that the game decides what you cannot see.",
+      "because": "the game runs an occlusion controller of its own and records what may be hidden as occludee data (OcclusionController, OccludeeData)"
+    },
+    {
+      "do": "Do not count repeated goods as separate objects.",
+      "because": "repeated objects are held as instance data, with bounds for an instance (InstanceData, InstanceBoundsData)"
+    },
+    {
+      "do": "Know that their positions are generated rather than placed by hand.",
+      "because": "an indexed static instancer generates the matrices the repeated pieces are placed from (IndexedStaticInstancerMatrixGenerator)"
+    },
+    {
+      "do": "Expect the walkable floor to be managed separately from the shop.",
+      "because": "obstacles that people walk around have a manager of their own (NavMeshObstacleManager)"
+    },
+    {
+      "do": "Place things in the placement mode rather than by dragging anywhere.",
+      "because": "placement is a mode, and the modes are held by a manager (IPlacingMode, LayoutModeManager)"
+    },
+    {
+      "do": "Expect a placement to be checked before it is accepted.",
+      "because": "a position validator checks a placement (PositionValidator)"
+    },
+    {
+      "do": "Line fixtures up on the grid instead of trusting the eye.",
+      "because": "a grid of its own is what a placement lines up on (GridManager)"
+    },
+    {
+      "do": "Remember that a placement keeps track of its neighbours.",
+      "because": "a placement records the neighbouring positions it relates to (PlacementNeighbourData)"
+    }
+  ],
+  "commonMistakes": [
+    "Blaming the goods for a stutter when the game is hiding what you cannot see.",
+    "Nudging a fixture by eye instead of using the grid.",
+    "Assuming a placement that looks wrong was accepted.",
+    "Moving one shelf and expecting the fixture beside it not to care."
+  ],
+  "relatedEntities": [
+    "how-a-shop-full-of-things-is-drawn",
+    "the-mode-you-place-things-in",
+    "furniture-and-shop-layout"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

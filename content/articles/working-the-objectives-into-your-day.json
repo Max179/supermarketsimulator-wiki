@@ -1,0 +1,61 @@
+{
+  "id": "working-the-objectives-into-your-day",
+  "title": "Working the objectives into your day",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to fit the objectives Supermarket Simulator sets — missions, the tasks under them and the tutorials — around a normal shop day, using only the parts the game itself defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is already open for business",
+    "Some idea of what the shop can do",
+    "The shop computer within reach"
+  ],
+  "steps": [
+    {
+      "do": "Read what the game is asking for before you buy anything for it.",
+      "because": "the game keeps missions in a container of their own with a system behind them, and each mission has data of its own (MissionSystem, MissionContainer, MissionData)"
+    },
+    {
+      "do": "Treat a mission as a set of tasks rather than one job.",
+      "because": "a mission is built on named tasks, and the game also has a mission shape that is a single task plus a mission that runs in steps (MissionTask, ScaleStepMission)"
+    },
+    {
+      "do": "Take the order work one task at a time.",
+      "because": "filling an order, closing it and delivering it are three named tasks, so an order can be part of the way through rather than all or nothing (FillOrderTask, CloseOrderTask, DeliverOrderTask)"
+    },
+    {
+      "do": "Do the objectives that need money before the day's spending.",
+      "because": "there is a mission activated by an online order, and the money side of the shop is a system of its own (OnlineOrderActivateMission, ExpensesManager, OrderManager)"
+    },
+    {
+      "do": "Use the tutorial prompts as a checklist rather than as instructions.",
+      "because": "tutorial objectives have their own data and their own display, and the scale has a display of its own (TutorialObjectiveData, TutorialObjectiveDisplay, ScaleTutorialIndicatorDisplay)"
+    },
+    {
+      "do": "Do the weighing steps while you are already at the scale.",
+      "because": "the scale has an interaction task and a tutorial manager of its own, so the steps line up with work you are doing anyway (ScaleInteractionTask, ScaleTutorialManager)"
+    },
+    {
+      "do": "Check progress where the game keeps it instead of counting by hand.",
+      "because": "the mission data describes the shape of a mission and the task is the unit that is tracked (MissionData, MissionTask)"
+    },
+    {
+      "do": "Leave the objectives that need stock until after the shelves are filled.",
+      "because": "stock arrives through orders of its own, so filling shelves and doing objectives can be planned as separate passes over the shop (OrderManager, OrderData)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying stock for an objective before reading what the objective actually asks for.",
+    "Treating a mission as one job when it is several separate tasks.",
+    "Queueing for a weighing step while a customer is already at the scale.",
+    "Following a tutorial prompt as an instruction long after the tutorial is done."
+  ],
+  "relatedEntities": [
+    "missions-and-the-objectives-the-game-sets",
+    "the-task-layer-under-the-missions",
+    "the-tutorials-that-point-you-at-things"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

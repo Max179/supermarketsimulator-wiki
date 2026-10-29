@@ -1,0 +1,69 @@
+{
+  "id": "the-crates-you-buy",
+  "title": "The crates you can buy",
+  "category": "Products",
+  "summary": "Supermarket Simulator sells goods in crates as well as on shelves: the game has crates as their own item, an interaction for them that works in a shared shop, and a numbered grid of its own.",
+  "body": [
+    "A crate is an object of its own. The game keeps crates as their own kind of thing rather than treating them as a shelf or a box, which is why a crate behaves differently from both.",
+    "Crates are sold. The game has a sale item for a crate, which is why a crate can be bought as a purchase in its own right rather than only arriving with an order.",
+    "You interact with one. There is an interaction for crates, so a crate is opened or used in the world rather than consumed from a menu.",
+    "It works in a shared shop. The interaction is carried on the network, which is why everyone in a joint shop sees the same crate being dealt with.",
+    "The game keeps a numbered grid. A crate has a grid of numbers of its own, which is why the game can lay something out in a crate rather than treating it as one lump.",
+    "There is a mystery box as well. The game carries a box of its own whose contents are not stated on the outside, which is why not every container in the shop is a crate of something you already chose.",
+    "The produce stall is part of the same picture. The game has its own fitting that works out how produce sits on a stall, which is why goods in crates and goods on a stall are placed rather than merely dropped.",
+    "What this entry does not tell you: what a crate contains, what one costs, or how many items are in it. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A crate is an object of its own in the game.",
+      "evidence": "identifier: Crate"
+    },
+    {
+      "claim": "Crates are sold as their own kind of item.",
+      "evidence": "identifier: CrateSaleItem"
+    },
+    {
+      "claim": "There is an interaction for a crate, and it works in a shared shop.",
+      "evidence": "identifiers: CrateInteraction, NetworkCrateInteraction"
+    },
+    {
+      "claim": "The game keeps a grid of numbers for a crate.",
+      "evidence": "identifier: CrateGridNumbersAuto"
+    },
+    {
+      "claim": "The produce stall is its own fitting with its own product placement.",
+      "evidence": "identifier: ProduceStallProductTransformCalculator"
+    },
+    {
+      "claim": "There is a mystery box object of its own in the build.",
+      "evidence": "identifier: MysteryBox"
+    }
+  ],
+  "related": [
+    "products-and-deliveries",
+    "storage-crates-and-the-storage-tab"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-crates-you-buy-crate.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of one of the crates it ships.",
+        "zh": "取自游戏的板条箱反照率贴图之一。"
+      }
+    },
+    {
+      "file": "the-crates-you-buy.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a crate is bought, brought in, opened in the shop, and its goods are shelved.",
+        "zh": "示意图：购买板条箱、搬进店内、在店里打开、商品上架。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

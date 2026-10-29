@@ -1,0 +1,39 @@
+{
+  "id": "restocking-routine",
+  "title": "A restocking routine that keeps shelves selling",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to keep shelves from running dry during a trading day, using the shelf and stock behaviour the game itself defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Shelves built and placed",
+    "Stock in the storage room",
+    "Enough money for the next order"
+  ],
+  "steps": [
+    {
+      "do": "Walk the shelves before you open, not after the first complaint.",
+      "because": "an empty slot is what triggers the game's own refill behaviour (SpawnProductOnEmptyShelf)"
+    },
+    {
+      "do": "Carry the stock in yourself and fill the shelf by hand while the shop is small.",
+      "because": "restocking is part of the shop logic rather than an instant action (ProductRestockLoop)"
+    },
+    {
+      "do": "Keep money aside for the next order instead of spending it all on space.",
+      "because": "products are tracked by their own product id, so an order you cannot afford means an empty shelf (ProductId)"
+    }
+  ],
+  "commonMistakes": [
+    "Restocking only once a shelf is completely empty.",
+    "Spending the day's takings on furniture and leaving nothing for stock.",
+    "Assuming every product is orderable from the start."
+  ],
+  "relatedEntities": [
+    "restocking-shelves",
+    "checkout-and-cashiers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

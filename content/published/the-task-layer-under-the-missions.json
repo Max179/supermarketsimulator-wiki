@@ -1,0 +1,61 @@
+{
+ "id": "the-task-layer-under-the-missions",
+ "title": "The task layer under the missions",
+ "category": "Tasks",
+ "summary": "A mission in Supermarket Simulator is not one job: the game has named tasks underneath it, covering filling, closing and delivering an order, an interaction at the scale, ice-cream requests with a display and pictures of their own, and a container that holds progression.",
+ "body": [
+  "Missions are built on tasks. The game keeps a task of its own alongside the mission, the container and the system, which is why a mission can be made of several steps rather than being a single instruction.",
+  "Order work is named in three parts: filling an order, closing it and delivering it. They are separate jobs rather than one job of handling an order, which is why an order can be part-finished without being finished.",
+  "The scale has an interaction task of its own, so weighing something is a job the game can hand out rather than only an action you perform when you get there.",
+  "Ice cream has requests of its own. A request is an object of its own, it has a display, and it has a generator that makes the pictures on it, which is why an order for ice cream can be shown rather than described.",
+  "Progression is kept in a container, which is how the game can hold what has been unlocked and what has not without every screen keeping a copy of its own.",
+  "Teaching jobs are shown by a display of their own, so a tutorial objective and a mission task are told apart by what shows them rather than by what they ask for.",
+  "What this entry does not tell you: how many tasks a mission holds, what a task pays, or how progression is counted. We have not verified those points, so we do not print them."
+ ],
+ "facts": [
+  {
+   "claim": "A mission is built on tasks of its own rather than being a single instruction.",
+   "evidence": "identifiers: Mission, MissionTask"
+  },
+  {
+   "claim": "Order work is three named tasks: filling, closing and delivering.",
+   "evidence": "identifiers: FillOrderTask, CloseOrderTask, DeliverOrderTask"
+  },
+  {
+   "claim": "The scale has an interaction task of its own.",
+   "evidence": "identifier: ScaleInteractionTask"
+  },
+  {
+   "claim": "An ice-cream request is an object with a display and a generator for its pictures.",
+   "evidence": "identifiers: IceCreamRequest, IceCreamRequestDisplay, IceCreamRequestVisualGenerator"
+  },
+  {
+   "claim": "Progression is kept in a container of its own.",
+   "evidence": "identifier: ProgressionContainer"
+  },
+  {
+   "claim": "A teaching job is shown by a display of its own.",
+   "evidence": "identifiers: TutorialObjectiveData, TutorialObjectiveDisplay"
+  }
+ ],
+ "related": [
+  "missions-and-the-objectives-the-game-sets",
+  "the-tutorials-that-point-you-at-things",
+  "serving-ice-cream"
+ ],
+ "images": [
+  {
+   "file": "the-task-layer-under-the-missions.svg",
+   "kind": "diagram",
+   "alt": {
+    "en": "Diagram: a mission is built on tasks, including filling, closing and delivering an order, an interaction task at the scale, ice-cream requests and a container for progression.",
+    "zh": "示意图：任务由多个子任务构成，包括填写、结单与外送订单、电子秤的交互任务、冰淇淋请求，以及保存进度的容器。"
+   },
+   "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+  }
+ ],
+ "sources": [
+  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+ ],
+ "imageTier": "diagram-only"
+}

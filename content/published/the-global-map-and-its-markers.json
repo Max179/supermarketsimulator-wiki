@@ -1,0 +1,72 @@
+{
+  "id": "the-global-map-and-its-markers",
+  "title": "The map and its markers",
+  "category": "Interface",
+  "summary": "Supermarket Simulator has a map of its own: the game keeps a minimap, a larger map with its own cursor and markers, and a way to point things out to the other players.",
+  "body": [
+    "There is a map, and there is a larger one. The game keeps a minimap and a bigger map as separate pieces, which is why opening the larger view is a different thing from glancing at the corner.",
+    "The larger map has a cursor. It tracks a cursor of its own rather than being a still picture, so you move around it instead of only looking at it.",
+    "Markers are objects of their own. The game keeps markers for the map, including ones for particular fixtures in the shop, which is why a map can show more than the shape of the building.",
+    "You can point at things. There is a ping marker, which is how one player draws another's attention to a spot instead of describing it.",
+    "The map explains itself. It has a tooltip of its own, so selecting something gives an explanation rather than leaving you to work out a symbol.",
+    "It works in a shared shop. The tracking behind the minimap is carried on the network, so the markers are shared rather than each player seeing their own.",
+    "What this entry does not tell you: how large the map is, how many markers exist, or whether it can be zoomed. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps a minimap and a larger map as separate pieces.",
+      "evidence": "identifiers: MiniMap, MiniMapTracker, GlobalMapCursor"
+    },
+    {
+      "claim": "The larger map tracks a cursor of its own.",
+      "evidence": "identifier: GlobalMapCursor"
+    },
+    {
+      "claim": "Map markers are their own objects, including ones for particular fixtures in the shop.",
+      "evidence": "identifiers: GlobalMapMarker, VendingGlobalMapUIMarker"
+    },
+    {
+      "claim": "There is a ping marker for pointing something out to another player.",
+      "evidence": "identifier: PingMarker"
+    },
+    {
+      "claim": "The map has a tooltip of its own.",
+      "evidence": "identifier: MapTooltip"
+    },
+    {
+      "claim": "The minimap is tracked on the network for a shared shop.",
+      "evidence": "identifier: NetworkMinimapTracker"
+    },
+    {
+      "claim": "Customers arriving through an online order have their own map target.",
+      "evidence": "identifier: OnlineOrderCustomerMinimapCustomTarget"
+    }
+  ],
+  "related": [
+    "the-shop-computer",
+    "customers-and-helpers"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-global-map-and-its-markers-pin.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "One of the map icons the game itself uses on its map.",
+        "zh": "游戏本身在地图上使用的图标之一。"
+      }
+    },
+    {
+      "file": "the-global-map-and-its-markers.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you open the map, move the cursor, read a marker, and ping a spot for the other players.",
+        "zh": "示意图：打开地图、移动光标、读取标记、向其他玩家标记位置。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

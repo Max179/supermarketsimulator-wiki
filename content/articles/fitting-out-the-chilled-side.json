@@ -1,0 +1,48 @@
+{
+  "id": "fitting-out-the-chilled-side",
+  "title": "Fitting out the chilled side",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to put the chilled part of a Supermarket Simulator shop together, given that fridges and freezers come in sizes and colourways, that the chiller carries display slots of its own, and that the build ships the pieces as named artwork.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "Room along a wall or an aisle end",
+    "Enough money for the size you actually need",
+    "Chilled stock on the way"
+  ],
+  "steps": [
+    {
+      "do": "Choose the size the aisle can take before you choose the one you like.",
+      "because": "the chillers are named in sizes, a mini, a medium and a double fridge, and a single, a double and a triple freezer (FridgeMini_1Default, FridgeMedium_1Default, FridgeDouble_1Default, Freezer_Single, Freezer_Double, Freezer_Triple)"
+    },
+    {
+      "do": "Put chilled goods in the chiller rather than on an ordinary shelf.",
+      "because": "the chiller has display slots of its own, one named for a fridge and one for a freezer (Display Slot (Fridge), Display Slot (Freezer))"
+    },
+    {
+      "do": "Match the chiller's colour to the furniture around it.",
+      "because": "each size is named again in twelve colourways, from dune to viola (Freezer_Double_Dune, Freezer_Double_Viola, FridgeMedium_Rock Blue, FridgeMini_Sprout)"
+    },
+    {
+      "do": "Keep the freezer for what is actually frozen and the fridge for the rest.",
+      "because": "the freezers are named as their own line, a single, a double and a triple (Freezer_Single, Freezer_Double, Freezer_Triple)"
+    },
+    {
+      "do": "Do not expect a wall finish to repaint the chiller: its surfaces are its own.",
+      "because": "the fridge has a body sheet, a normal map and an emissive sheet, with a trim sheet beside them (T_Fridge_RGBA, T_Fridge_Normal, T_Fridge_Emmisive, T_FridgesTrim_AlbedoTransparency, T_FridgesTrim_Normal, T_FridgesTrim_Emmisive)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying the biggest freezer and then finding no aisle wide enough for it.",
+    "Treating the chiller as decoration instead of as where the chilled goods go.",
+    "Leaving one grey chiller among colour-matched furniture.",
+    "Putting frozen goods in a fridge because the two look similar from the front."
+  ],
+  "relatedEntities": [
+    "the-fridges-and-freezers",
+    "shelf-slots-and-display-space"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

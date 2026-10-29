@@ -1,0 +1,74 @@
+{
+  "id": "the-baseball-bat",
+  "title": "The baseball bat and what it is for",
+  "category": "Customers",
+  "tier": "published",
+  "summary": "The baseball bat in Supermarket Simulator is stock and a tool at once: the game sells it as a bat sale item, hands it to the player through the tool wheel, and says in its own words what to use it on.",
+  "body": [
+    "The baseball bat is stock and a tool at once. The game names a bat sale item among the things the shop supplies, and it names an objective that sends the player to the market to buy one, so the bat is something a player is expected to own rather than only to sell.",
+    "Once it is bought, the bat is reached through the tool wheel rather than off a shelf. The game keeps a handler for the tool wheel's input hint, which is why it can tell a player to hold a key, open the wheel and pick the bat out of it.",
+    "The game also says what the bat is for in its own on-screen text. Its description tells the player to use the bat to hit a shoplifter and force them to drop the stolen items, and the hit itself has a line of its own.",
+    "That is why the bat is a counter to theft rather than a decoration. The game keeps the shoplifter's side of that meeting in an interaction of its own, so a swing and a dropped item are two halves of one exchange.",
+    "The bat is animated rather than a slab that swings itself. A swing and a bat swing are named beside an idle of its own, so the motion a player sees is the animation the game plays rather than something the camera fakes.",
+    "It has its own picture as well. The game draws an icon for the bat, and the bat itself is a modelled object with a colour sheet, a normal map and a metallic smoothness map, which is why the wood and the taped grip read as two different surfaces.",
+    "The same corner of the game holds a basketball hoop with the court it stands on. The hoop and the court share texture names, so the two are one set of sporting pieces rather than two unrelated props.",
+    "What this entry does not tell you: what the bat costs, how much a hit takes off a shoplifter, or where in the shop the game puts a bought one. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The bat is a sale item of its own in the game, and the game sets the player an objective to buy one from the market.",
+      "evidence": "identifiers: BatSaleItem, _buyBatObjective"
+    },
+    {
+      "claim": "The bat is picked through the tool wheel, and the game keeps the input hint for that wheel.",
+      "evidence": "identifiers: ToolWheelInputHintHandler, NetworkToolWheel, _openBatHint"
+    },
+    {
+      "claim": "The game's own description says what the bat is for: hitting a shoplifter and forcing them to drop the stolen items.",
+      "evidence": "identifiers: _useBatDescription, _hitShoplifter, Shoplifter"
+    },
+    {
+      "claim": "The shoplifter's half of that exchange is kept in an interaction of its own.",
+      "evidence": "identifiers: NetworkShoplifterInteraction, ShoplifterInteraction"
+    },
+    {
+      "claim": "The bat carries a swing and an idle of its own.",
+      "evidence": "asset names: Swing_Bat, BaseballBatSwing, baseballidle"
+    },
+    {
+      "claim": "The bat has an icon of its own and a texture set with a colour sheet, a normal map and a metallic smoothness map.",
+      "evidence": "asset names: T_Icon_BaseballBat, SM_BaseballBat, M_BaseballBat, T_BaseballBat_AlbedoTransparency, T_BaseballBat__Normal, T_BaseballBat_MetallicSmoothness"
+    },
+    {
+      "claim": "A basketball hoop is named with the court it stands on, and the two share texture names.",
+      "evidence": "asset names: SM_BasketballHoop, M_BasketballHoop, T_BasketballCourt_A, T_BasketballCourt_lp_M_BasketballHoop_AlbedoTransparency, T_BasketballCourt_lp_M_BasketballHoop_Normal"
+    }
+  ],
+  "related": [
+    "shoplifters-in-your-shop",
+    "the-list-you-buy-from",
+    "how-the-game-shows-what-you-can-use"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-baseball-bat-icon.png",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game itself draws for the baseball bat: a wooden bat with a taped grip, on a light background.",
+        "zh": "游戏自己为棒球棍绘制的图标：浅色底上一根木棒，握把缠着胶带。"
+      }
+    },
+    {
+      "file": "mapped/the-baseball-bat-court.png",
+      "kind": "game",
+      "alt": {
+        "en": "The basketball court the game ships with the hoop: white court markings on a grey-green surface.",
+        "zh": "游戏随篮架一起提供的篮球场地面：灰绿底色上的白色场地线。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "choosing-an-entrance-that-suits-the-shop",
+  "title": "Choosing an entrance that suits the shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to change the front of a Supermarket Simulator shop, using the entrance variants, the overlay and the name sign the game provides.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop you are allowed to change",
+    "Money for the change",
+    "A doorway customers already use"
+  ],
+  "steps": [
+    {
+      "do": "Decide on the entrance before spending on decoration behind it.",
+      "because": "the entrance is a system with a manager of its own (EntranceManager)"
+    },
+    {
+      "do": "Look at the variants rather than settling for the first front you were given.",
+      "because": "the game keeps a holder and signboards for entrance variants (EntranceVariantHolder)"
+    },
+    {
+      "do": "Change it through the overlay rather than expecting it to swap on its own.",
+      "because": "there is an overlay and a change item for it (EntranceChangeOverlay)"
+    },
+    {
+      "do": "Set the name sign in the same visit, since it sits on the entrance.",
+      "because": "the entrance name has its own setter (EntranceNameSignSetter)"
+    },
+    {
+      "do": "Leave the doorway clear after rearranging the front.",
+      "because": "the entrance is built from its own brick, wall and trim pieces (T_StoreEntrance_Wall_AlbedoTransparency)"
+    }
+  ],
+  "commonMistakes": [
+    "Decorating the inside and never touching the front.",
+    "Changing the entrance and forgetting the name sign.",
+    "Blocking the doorway after rearranging the front."
+  ],
+  "relatedEntities": [
+    "the-shop-entrance",
+    "signs-labels-and-organising"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "questions-players-ask",
+  "title": "Questions players ask most",
+  "category": "FAQ",
+  "summary": "Short, checkable answers to the questions this site is asked most about Supermarket Simulator, each one pointing at the entry that explains it in full.",
+  "body": [
+    "These are the questions that come up most, answered in a sentence rather than a page. Every answer here is backed by something the game itself defines, and the longer explanation is in the entry named beside it.",
+    "On the shop itself: the floor and the walls are both surfaces you can paint, the front entrance has variants of its own, and the computer keeps separate tabs for hiring, for the shop name and doors, and for music.",
+    "On customers: they are generated rather than fixed, and theft is a behaviour the game models, with its own warning indicator and a detector at the door.",
+    "On money: you can borrow, and repayments are tracked separately from the loan, with their own screen and the option to pay early.",
+    "On time: there is a real day cycle with a clock, and ending the day is an action you take rather than something that happens to you.",
+    "On stock: a shelf is a set of slots rather than one surface, and crates you buy are a different object from the boxes you store things in.",
+    "What this list does not do is guess. If a question needs a number we have not verified, the answer says so instead of inventing one, and the fuller entry repeats that."
+  ],
+  "facts": [
+    {
+      "claim": "You can repaint both the floor and the walls.",
+      "evidence": "identifiers: PaintableFloor, PaintableWall"
+    },
+    {
+      "claim": "You can change the look of the shop entrance, including its name sign.",
+      "evidence": "identifiers: EntranceManager, EntranceNameSignSetter"
+    },
+    {
+      "claim": "There is a computer with separate tabs for hiring, for customising the shop and for music.",
+      "evidence": "identifiers: Hiring_Tab.HiringTab, CustomizationTab.CustomizationTab, MusicPlayerTab.MusicPlayerTab"
+    },
+    {
+      "claim": "Customers are generated, and theft is a behaviour with its own warning and door detector.",
+      "evidence": "identifiers: CustomerGenerator, Shoplifter, T_ThiefDetector_AlbedoTransparency"
+    },
+    {
+      "claim": "You can borrow money, and repayments are tracked apart from the loan, with early payment possible.",
+      "evidence": "identifiers: BankCreditSO, LoanRepaymentItem, earlyPayment"
+    },
+    {
+      "claim": "There is a day cycle with a clock, and ending the day is its own interaction.",
+      "evidence": "identifiers: DayCycleManager, UpdateClock, NextDayInteraction"
+    },
+    {
+      "claim": "Staff can be hired, and there is a janitor with named cleaning tasks.",
+      "evidence": "identifiers: EmployeeManager, JanitorManager"
+    },
+    {
+      "claim": "A shelf is a set of slots, and a crate you buy is a different object from a storage box.",
+      "evidence": "identifiers: RackSlot, Crate"
+    }
+  ],
+  "related": [
+    "the-day-cycle",
+    "floors-and-floor-painting"
+  ],
+  "images": [
+    {
+      "file": "mapped/questions-players-ask-question.png",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own question picture: a dark question mark on a white rounded square.",
+        "zh": "游戏自带的问号图：白色圆角方块上的深色问号。"
+      }
+    },
+    {
+      "file": "questions-players-ask.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a question is asked, checked against the game, answered in short, and linked to the entry that explains it.",
+        "zh": "示意图：提出问题、对照游戏核实、简短回答、链接到详细条目。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Every answer is backed by the identifiers listed on the technical reference pages."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "the-warnings-the-game-shows",
+  "title": "The warnings the game shows you",
+  "category": "Interface",
+  "summary": "Not every message in Supermarket Simulator is a popup: the game keeps separate warning routines with delays for the bat, the crate, dirt, shoplifters, the tablet and the vegetables, and ships its own artwork for those warning screens.",
+  "body": [
+    "Not every message in the shop is a popup of the kind that asks a question. The game also has warning screens of its own, and it decides what is worth warning about rather than leaving it to you to notice.",
+    "Each warning is a routine with a delay. There is one for the bat, one for the crate, one for dirt on the floor, one for shoplifters, one for the tablet and one for the vegetables, which is why a warning tends to arrive a moment after the thing it is about rather than at the instant it happens.",
+    "Warnings keep canvases of their own rather than sharing the popups. The game has a canvas for the dirtiness warning and one for the over-change warning, and a warning can be stopped as well as started, which is how one can clear itself once you have dealt with the cause.",
+    "Some of them show you what to do about it. The cleaning warning is a teaching picture: it draws the tool wheel with the bat, the sponge, the crate, the mop and the tablet around an empty hand, beside a dirty floor and the dirtiness indicator that sits in the corner of the screen.",
+    "Others point at the shop's security. The security warning puts a detector gate, a camera and a guard in one picture, which is the game telling you the three things it expects a shop to buy rather than a description of any one of them.",
+    "The artwork beside this entry is the game's own: two of its warning screens, taken from the installation this site describes, and neither was drawn by this site.",
+    "What this entry does not tell you: how long each warning waits before it appears, which of them can be switched off, or how often shoplifters actually turn up. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps separate warning routines with a delay for the bat, the crate, dirt, shoplifters, the tablet and the vegetables.",
+      "evidence": "identifiers: ShowBatWarningWithDelay, ShowCrateWarningWithDelay, ShowDirtinessIndicatorWarningWithDelay, ShowEnableShoplifterWarningWithDelay, ShowTabletWarningWithDelay, ShowVeggiesWarningWithDelay"
+    },
+    {
+      "claim": "Warnings keep canvases of their own rather than sharing the popups.",
+      "evidence": "identifiers: DirtinessIndicatorWarningCanvas, OverChangeWarningCanvasSwicthListener, WarningScreen"
+    },
+    {
+      "claim": "A warning can be stopped as well as started.",
+      "evidence": "identifiers: StopWarning, WarningDelayCoroutine"
+    },
+    {
+      "claim": "An interaction can register a warning of its own.",
+      "evidence": "identifier: InteractionWarningEntry"
+    },
+    {
+      "claim": "The game ships its own artwork for the warning screens.",
+      "evidence": "asset names: SecurityWarningScreen, dirtiness arrow warning"
+    },
+    {
+      "claim": "The cleaning warning shows the tool wheel with the bat, sponge, crate, mop and tablet beside a dirty floor and the dirtiness indicator.",
+      "evidence": "asset name: dirtiness arrow warning"
+    },
+    {
+      "claim": "The security warning shows a detector gate, a camera and a guard in one picture.",
+      "evidence": "asset name: SecurityWarningScreen"
+    }
+  ],
+  "related": [
+    "the-popups-in-the-game",
+    "shoplifters-in-your-shop"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-warnings-the-game-shows-cleaning.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own warning screen about a dirty shop: the tool wheel with the bat, sponge, crate, mop and tablet, beside a dirty floor.",
+        "zh": "游戏自带的脏乱提醒画面：工具轮盘（球棒、海绵、货筐、拖把、平板）与脏地板。"
+      }
+    },
+    {
+      "file": "mapped/the-warnings-the-game-shows-security.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own warning screen about shop security: a detector gate, a camera and a guard.",
+        "zh": "游戏自带的防盗提醒画面：防盗门、摄像头与保安。"
+      }
+    },
+    {
+      "file": "the-warnings-the-game-shows.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the game notices a situation, waits, shows its warning screen, and you act on what it says.",
+        "zh": "示意图：游戏察觉状况、等待片刻、显示提醒画面，你再据此处理。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

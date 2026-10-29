@@ -1,0 +1,138 @@
+{
+  "id": "signs-labels-and-organising",
+  "title": "Signs, labels and organising the shop",
+  "category": "Layout",
+  "tier": "published",
+  "summary": "Finding things in a big shop is a design problem in Supermarket Simulator: the game gives signs their own icon and colour controls and puts labels on racks.",
+  "body": [
+    "Signs are not decoration: the game lets you choose the icon and the colour a category sign carries, which is why a sign is a piece of information rather than a board.",
+    "Labels go on the racks themselves, so the shelf tells the customer what belongs there instead of leaving it to be discovered.",
+    "Even the shop's name can be set on an entrance sign, which is why the front of the shop is something you configure rather than accept.",
+    "What this entry does not tell you: how much signage changes customer behaviour or which icons exist. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Category signs carry an icon chosen from the game's own set.",
+      "evidence": "identifier: CategorySignIconController"
+    },
+    {
+      "claim": "Signs have a colour setting of their own.",
+      "evidence": "identifier: CategorySignColorDropdown"
+    },
+    {
+      "claim": "Racks can carry labels.",
+      "evidence": "identifiers: RackLabelMaskController, LabelMaskController"
+    },
+    {
+      "claim": "The shop's entrance sign can be named.",
+      "evidence": "identifier: EntranceNameSignSetter"
+    },
+    {
+      "claim": "The build ships its category sign materials and a closed sign of its own.",
+      "evidence": "asset names: M_CategorySign_1Standard, Close_Sign"
+    },
+    {
+      "claim": "The sign palette is named in full, and includes London hue, lunar green, pale orange, pine glade, rock blue, sandrift and ship gray.",
+      "evidence": "asset names: M_CategorySign_London Hue, M_CategorySign_Lunar Green, M_CategorySign_Pale Orange, M_CategorySign_Pine Glade, M_CategorySign_Rock Blue, M_CategorySign_Sandrift, M_CategorySign_Ship Gray"
+    },
+    {
+      "claim": "Labels are shipped per place they belong to, with one for an item, one for a rack and one for a stall.",
+      "evidence": "asset names: Item Label, Rack Label, StallLabel"
+    },
+    {
+      "claim": "The label set also names blank coloured labels, a title ribbon, a left label and a liquor-shop label.",
+      "evidence": "asset names: Label_BasicLabel01_White, Label_TitleRibbon_Blue, Label_LeftLabel02, SM_LiquorShop_Label"
+    },
+    {
+      "claim": "A display stand is shipped for flyers, and the build names a flyer of its own with a second variant and an emissive sheet.",
+      "evidence": "asset names: SM_DisplayStand_Flyer, FlyerAsteroid, FlyerAsteroidB001, FlyerAsteroidEmissive"
+    },
+    {
+      "claim": "The signage artwork also includes a graffiti sheet and a cart logo, with a smoothness sheet for the road signs.",
+      "evidence": "asset names: T_Graffiti_2, Cart Logo, Road_Signs_MS"
+    },
+    {
+      "claim": "The game draws a department sign of its own for each part of the shop: book, breakfast, cleaning, dairy, pasta, meat, frozen, decoration, produce, toilet, water and wine.",
+      "evidence": "asset names: Sign1_Book, Sign2_Breakfast, Sign3_Cleaning, Sign4_Dairy, Sign5_Pastas, Sign6_Meat, Sign7_Frozen, Sign8_Decoration, Sign9_Produce, Sign10_Toilet, Sign11_Water, Sign12_Wine"
+    },
+    {
+      "claim": "The build also names price stands per department, with a deli, a green market, a liquor, a meat-and-dairy and a janitor's stand among them.",
+      "evidence": "asset names: SM_PriceStand_Deli, SM_PriceStand_GreenMarket, SM_PriceStand_Liquor, SM_PriceStand_MeatDiary, SM_PriceStand_Janitor"
+    },
+    {
+      "claim": "The shop's own signage runs to a closed sign, a sign board and a store entrance signboard, with a coloured version of the last.",
+      "evidence": "asset names: Closed Sign, M_SignBoard, M_StoreEntrance_Signboard, M_StoreEntrance_Signboard Colored, Conditioner_03_CloseSign"
+    },
+    {
+      "claim": "A walk-lane sign is named among the shop's own signs.",
+      "evidence": "asset name: M_ Walk Lane Sign"
+    }
+  ],
+  "related": [
+    "how-products-are-displayed",
+    "how-customers-find-their-way"
+  ],
+  "images": [
+    {
+      "file": "mapped/signs-labels-and-organising-categorysign.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture of the category sign the entry describes.",
+        "zh": "本条描述的分类标牌反照率贴图。"
+      }
+    },
+    {
+      "file": "mapped/signs-labels-and-organising-produce-sign.png",
+      "kind": "game",
+      "alt": {
+        "en": "The produce sign the game itself draws for the aisle: an apple, an avocado and a carrot.",
+        "zh": "游戏自己为农产品货架画的标牌：苹果、牛油果与胡萝卜。"
+      }
+    },
+    {
+      "file": "mapped/signs-labels-and-organising-meat-sign.png",
+      "kind": "game",
+      "alt": {
+        "en": "The meat sign the game itself draws for the aisle: a cut of meat with a bone.",
+        "zh": "游戏自己为肉类货架画的标牌：一块带骨的肉。"
+      }
+    },
+    {
+      "file": "mapped/signs-labels-and-organising-frozen-sign.png",
+      "kind": "game",
+      "alt": {
+        "en": "The frozen sign the game itself draws for the aisle: a blue frozen bag with a snowflake beside a pizza box.",
+        "zh": "游戏自己为冷冻货架画的标牌：印着雪花的蓝色冷冻袋，旁边是一只披萨盒。"
+      }
+    },
+    {
+      "file": "mapped/signs-labels-and-organising-wine-sign.png",
+      "kind": "game",
+      "alt": {
+        "en": "The wine sign the game itself draws for the aisle: a bottle and a glass.",
+        "zh": "游戏自己为酒类货架画的标牌：一只酒瓶与一只酒杯。"
+      }
+    },
+    {
+      "file": "mapped/signs-labels-and-organising-toilet-sign.png",
+      "kind": "game",
+      "alt": {
+        "en": "One of the game's own signs: a roll of toilet paper on its holder, drawn for the toilet.",
+        "zh": "游戏自带的标牌之一：卷纸架上的卫生纸，为卫生间而画。"
+      }
+    },
+    {
+      "file": "signs-labels-and-organising.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you pick a sign icon, choose its colour, label the rack, and customers can find the category.",
+        "zh": "招牌与标签示意图：选择图标、设置颜色、为货架贴标签、顾客可找到该品类。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

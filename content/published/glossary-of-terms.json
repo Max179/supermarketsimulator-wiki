@@ -1,0 +1,60 @@
+{
+  "id": "glossary-of-terms",
+  "title": "Glossary of the terms this site uses",
+  "category": "Glossary",
+  "summary": "The words this site uses for Supermarket Simulator in plain language, each with a note on which part of the game it comes from so you can match it to what you see on screen.",
+  "body": [
+    "We keep a small vocabulary. Where the game has its own word for something, this site uses that word rather than inventing a new one, so a name here matches a name you have already seen.",
+    "A slot is one position on a shelf or a display, not the shelf itself. The game keeps shelf positions and display positions separately, which is why a shelf can be part full rather than simply stocked or empty.",
+    "A rack is what stock is stood on, while a display is a fixture built to show a particular product. They are managed by different parts of the game, which is why this site describes them as different things.",
+    "A crate here means a crate you buy, not a storage box. The game treats those as separate objects, so they appear in separate entries rather than being lumped together.",
+    "A shop level is how far the shop has grown, and an upgrade is a change you pay for. They are tracked separately, so a shop level and a storage upgrade are not the same thing even though both are about growth.",
+    "A payment type is how a customer pays rather than how much they pay, which is why the entries about payments and about prices are different entries.",
+    "Where we cannot match a word to one of the game's own, we say so instead of guessing. The technical reference explains how each term was checked for anyone who wants to see the working."
+  ],
+  "facts": [
+    {
+      "claim": "A slot is one position on a shelf or a display, not the shelf itself.",
+      "evidence": "identifiers: RackSlot, DisplaySlot"
+    },
+    {
+      "claim": "A rack is what stock is stood on, while a display is a fixture for a particular product.",
+      "evidence": "identifiers: RackManager, DisplaySlot"
+    },
+    {
+      "claim": "A crate here means a crate you buy rather than a storage box.",
+      "evidence": "identifier: Crate"
+    },
+    {
+      "claim": "A shop level is not the same thing as a storage or shelf upgrade.",
+      "evidence": "identifiers: StoreLevelManager, storageUpgradeLevel"
+    },
+    {
+      "claim": "A payment type is how a customer pays rather than how much.",
+      "evidence": "identifier: PlayerPaymentType"
+    },
+    {
+      "claim": "A day cycle is the trading day itself rather than the calendar.",
+      "evidence": "identifier: DayCycleManager"
+    }
+  ],
+  "related": [
+    "shelf-slots-and-display-space",
+    "the-crates-you-buy"
+  ],
+  "images": [
+    {
+      "file": "glossary-of-terms.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a term used on this site is matched to the part of the game it comes from, then used consistently.",
+        "zh": "示意图：本站使用的术语对应到游戏中的出处，并保持一致。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each term is on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

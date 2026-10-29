@@ -1,0 +1,47 @@
+{
+  "id": "growing-the-shop-in-the-right-order",
+  "title": "Growing the shop in the right order",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to spend on growth in Supermarket Simulator when the shop level, the upgrades and the storage each move on a track of their own.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop trading well enough to spend on",
+    "Some stock already in the back room",
+    "An idea of what is actually limiting you today"
+  ],
+  "steps": [
+    {
+      "do": "Work out whether the limit is shelf space or back-room space before buying anything.",
+      "because": "storage has an upgrade level of its own, separate from the shop's (storageUpgradeLevel)"
+    },
+    {
+      "do": "Buy storage when you are turning stock away, not when a shelf is merely untidy.",
+      "because": "storage has to be purchased rather than arriving with the shop (purchasedStorage)"
+    },
+    {
+      "do": "Read the upgrade figure as the next step rather than as where you already are.",
+      "because": "the upgrade level and its cost are tracked apart from the current level (upgradeCosts)"
+    },
+    {
+      "do": "Check what you have already bought instead of paying for it twice.",
+      "because": "the game marks purchases you have already made (PurchasedLicenseIndicator)"
+    },
+    {
+      "do": "Spend on growth before you spend on how the shop looks.",
+      "because": "the shop's level is tracked separately from its appearance (StoreLevelManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying decoration while the back room is overflowing.",
+    "Assuming storage grows by itself as the shop levels up.",
+    "Buying a licence that is already marked as bought."
+  ],
+  "relatedEntities": [
+    "raising-your-storage-and-shop-level",
+    "store-upgrades-and-licences"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "store-upgrades-and-licences",
+  "title": "Store upgrades and licences",
+  "category": "Upgrades",
+  "tier": "published",
+  "summary": "Growing the shop is not only about floor space: Supermarket Simulator ties products and licences to a store level, so what you may sell grows with the shop.",
+  "body": [
+    "Licences are their own objects in the game, which is why being allowed to sell something is a separate step from being able to afford it.",
+    "A product can carry a required store level, so the catalogue opens up as the shop grows instead of being available in one go.",
+    "Products keep their own identity, so an unlocked licence changes what you can order rather than what already sits on your shelf.",
+    "What this entry does not tell you: licence prices, the order the licences unlock in, or how much each upgrade costs. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Licences are separate objects in the game.",
+      "evidence": "identifier: ProductLicenseSOs"
+    },
+    {
+      "claim": "A product can require a minimum store level before it is available.",
+      "evidence": "identifier: RequiredStoreLevel"
+    },
+    {
+      "claim": "Products are tracked individually, so a licence changes what can be ordered.",
+      "evidence": "identifier: ProductId"
+    },
+    {
+      "claim": "The licence screen is built from its own product entries and a slider, with a set of licence materials behind it.",
+      "evidence": "asset names: LicenceProductItem, LicenceSlider, M_License_1"
+    },
+    {
+      "claim": "Licences are laid out as a row of their own, one model per licence, each with its own code of letters and digits.",
+      "evidence": "asset names: SM_license_us_Row, SM_license_us_N700, SM_license_us_WS15, SM_license_us_Su4"
+    },
+    {
+      "claim": "The licence screen names an information line, a name and an item for each licence, plus a separate item for downloadable content.",
+      "evidence": "asset names: License Info, License Name, License Item, License Item DLC"
+    }
+  ],
+  "related": [
+    "products-and-deliveries",
+    "loans-and-paying-them-back"
+  ],
+  "images": [
+    {
+      "file": "mapped/store-upgrades-and-licences-licence.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The licence artwork the game itself uses.",
+        "zh": "游戏本身使用的许可证图案。"
+      }
+    },
+    {
+      "file": "store-upgrades-and-licences.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop grows, a licence unlocks, new products can be ordered, and they reach the shelf.",
+        "zh": "升级与许可示意图：店铺成长、解锁许可、可订购新商品、商品上架。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

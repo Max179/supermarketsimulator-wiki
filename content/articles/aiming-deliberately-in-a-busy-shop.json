@@ -1,0 +1,47 @@
+{
+  "id": "aiming-deliberately-in-a-busy-shop",
+  "title": "Aiming deliberately in a busy shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the aim hints and aim settings in Supermarket Simulator so you act on the right thing when the shop is full.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with customers in it",
+    "Something you intend to pick up or use",
+    "A moment to look before you press"
+  ],
+  "steps": [
+    {
+      "do": "Wait for the hint before acting, rather than assuming what a thing does.",
+      "because": "the game shows aim hints through their own controller and display (AimHintDisplay)"
+    },
+    {
+      "do": "Aim at the object itself rather than near it.",
+      "because": "aim is tracked by slot rather than as one universal marker (AimSlot)"
+    },
+    {
+      "do": "Change how the aim looks if you keep losing it against the shop.",
+      "because": "the aim has a colour preview you can set (AimColorPreview)"
+    },
+    {
+      "do": "Look at the aim settings once rather than fighting them every day.",
+      "because": "there is a settings menu and a set of aim settings of its own (AimSettingsMenu)"
+    },
+    {
+      "do": "Do not confuse the crosshair with the aim itself.",
+      "because": "the game tracks them separately (PlayerAimCanvas)"
+    }
+  ],
+  "commonMistakes": [
+    "Acting before the hint appears.",
+    "Aiming near an object instead of at it.",
+    "Never looking at the aim settings."
+  ],
+  "relatedEntities": [
+    "the-aim-and-its-settings",
+    "how-the-game-shows-what-you-can-use"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

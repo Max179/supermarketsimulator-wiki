@@ -1,0 +1,47 @@
+{
+  "id": "getting-music-into-the-shop",
+  "title": "Getting music into the shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to put music into a Supermarket Simulator shop using the player, the speakers and the tab the game already provides.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A computer in the shop",
+    "Money for a speaker",
+    "A spot customers actually walk past"
+  ],
+  "steps": [
+    {
+      "do": "Decide where the speakers go before you buy them.",
+      "because": "speakers are placed objects with a manager of their own (SpeakerManager)"
+    },
+    {
+      "do": "Set what is playing at the computer rather than expecting it to change itself.",
+      "because": "the music player has a tab among the management screens (MusicPlayerTab)"
+    },
+    {
+      "do": "Check that a speaker you have placed is set up, not merely switched on.",
+      "because": "the game keeps a record for a speaker of its own (SpeakerSO)"
+    },
+    {
+      "do": "Expect the choice to be shared in a joint shop.",
+      "because": "the music player is carried on the network (NetworkMusicPlayerManager)"
+    },
+    {
+      "do": "Plan speakers as fittings rather than as an afterthought.",
+      "because": "they are ordinary electrical devices like the rest (ElectricalDevice)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying speakers and putting them where nobody walks.",
+    "Looking for the track list in settings rather than at the computer.",
+    "Expecting each player to hear something different."
+  ],
+  "relatedEntities": [
+    "music-in-your-shop",
+    "the-shop-computer"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

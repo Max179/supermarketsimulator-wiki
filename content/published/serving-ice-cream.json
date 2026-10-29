@@ -1,0 +1,82 @@
+{
+  "id": "serving-ice-cream",
+  "title": "Serving ice cream",
+  "category": "Products",
+  "summary": "Ice cream in Supermarket Simulator is its own little machine of a system: the game keeps buckets, cones, flavours with their own graphics, a scooping animation and displays built to hold cones.",
+  "body": [
+    "Ice cream is its own system. The game keeps buckets, cones and the stand as separate pieces rather than folding them into ordinary stock, which is why serving it is its own routine.",
+    "Flavours are data with their own look. Each flavour has a record and its own graphics, so what you serve is chosen rather than whatever happens to be in the machine.",
+    "Scooping is animated. The game has a scooping animation and its own spoon graphics, which is why serving a cone takes a moment rather than being an instant transfer.",
+    "It has displays built for it. There is a display for cones and display slots of its own, so the counter is made for this product instead of being a shelf with ice cream on it.",
+    "The buckets are made and tracked. Buckets are produced by their own generator and carry a status, which is why a machine can run out or still be full.",
+    "Flavours and toppings are things you can reach. A flavour exists as an instance with an interactable of its own, and a topping has the same pair, which is why choosing what goes on a cone is done at the machine rather than in a menu.",
+    "The stand is also kept in step. It has a networked helper of its own and a comparison tester, which is why what one player serves is what the others see.",
+    "It is a stall with a helper, like the others. The game keeps a helper record for the ice cream stand, which is why staff can be put on it.",
+    "What this entry does not tell you: what a cone costs, how many flavours exist, or how quickly stock runs out. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Ice cream is a system of its own, with buckets and cones as separate pieces.",
+      "evidence": "identifiers: IceCreamBucket, IceCreamCone, IceCreamConeInteractable"
+    },
+    {
+      "claim": "Flavours are data with their own graphics.",
+      "evidence": "identifiers: IceCreamFlavourData, IceCreamFlavourGraphics"
+    },
+    {
+      "claim": "Scooping has its own animation and spoon graphics.",
+      "evidence": "identifiers: IceCreamScoopAnimation, IceCreamSpoonGraphics"
+    },
+    {
+      "claim": "Cones have a display and display slots of their own.",
+      "evidence": "identifiers: IceCreamConeDisplay, IceCreamConeDisplaySlot"
+    },
+    {
+      "claim": "Buckets are produced by their own generator and carry a status.",
+      "evidence": "identifiers: IceCreamBucketGenerator, IceCreamStatus, iceCreamStandData"
+    },
+    {
+      "claim": "The stand has its own helper record, like the shop's other stations.",
+      "evidence": "identifier: IceCreamHelperSO"
+    },
+    {
+      "claim": "A flavour exists as an instance with an interactable of its own.",
+      "evidence": "identifiers: IceCreamFlavourInstance, IceCreamFlavourInteractable"
+    },
+    {
+      "claim": "A topping has a topping object and an interactable of its own.",
+      "evidence": "identifiers: IceCreamTopping, IceCreamToppingInteractable"
+    },
+    {
+      "claim": "The stand is kept in step over a network and has a comparison tester of its own.",
+      "evidence": "identifiers: NetworkIceCreamHelper, IceCreamComparisonTester"
+    }
+  ],
+  "related": [
+    "shelf-slots-and-display-space",
+    "who-keeps-the-shop-clean"
+  ],
+  "images": [
+    {
+      "file": "mapped/serving-ice-cream-bucket.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of the ice cream bucket the scoops come out of.",
+        "zh": "取自游戏的冰淇淋桶反照率贴图。"
+      }
+    },
+    {
+      "file": "serving-ice-cream.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a bucket is loaded, a flavour is chosen, you scoop it into a cone, and the customer takes it.",
+        "zh": "示意图：装入冰淇淋桶、选择口味、舀进球筒、顾客取走。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

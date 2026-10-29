@@ -1,0 +1,60 @@
+{
+  "id": "using-the-map-instead-of-walking-the-shop",
+  "title": "Using the map instead of walking the shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How the maps work in Supermarket Simulator: the minimap and the larger map as separate pieces, the cursor the larger map tracks, the markers that belong to fixtures, the tooltip, the online-order customer's own target, and pinging a spot for the other players.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with something worth finding",
+    "The map opened at least once so you know where it sits",
+    "Another player if you intend to ping something"
+  ],
+  "steps": [
+    {
+      "do": "Treat the small map and the large one as two different things.",
+      "because": "the game keeps a minimap and a larger map as separate pieces, so the corner of the screen and the map you open are not the same view at two sizes (MiniMap, MiniMapTracker)"
+    },
+    {
+      "do": "Use the cursor on the larger map rather than chasing your own position.",
+      "because": "the larger map tracks a cursor of its own, so you can look at part of the shop without walking there (GlobalMapCursor)"
+    },
+    {
+      "do": "Read the markers rather than searching the aisles.",
+      "because": "markers are objects of their own, including ones for particular fixtures, so what you own can be shown on the map instead of only found by eye (GlobalMapMarker, VendingGlobalMapUIMarker)"
+    },
+    {
+      "do": "Hover a marker before you act on it.",
+      "because": "the map has a tooltip of its own, so a marker can be identified without leaving the map (MapTooltip)"
+    },
+    {
+      "do": "In a shared shop, expect one map for everyone.",
+      "because": "the minimap is tracked on the network, so a marker one player sees is a marker the crew shares (NetworkMinimapTracker)"
+    },
+    {
+      "do": "When an online order arrives, look for its own target before hunting for the customer.",
+      "because": "a customer arriving through an online order has a map target of its own rather than using an ordinary one (OnlineOrderCustomerMinimapCustomTarget)"
+    },
+    {
+      "do": "Ping a spot rather than describing it aloud.",
+      "because": "there is a ping marker for pointing something out to another player, so a shelf or a spill can be marked instead of explained (PingMarker)"
+    },
+    {
+      "do": "Do not plan the whole shop from the map alone.",
+      "because": "the map shows what has markers rather than everything on the floor, so the layout still has to be walked to be judged (GlobalMapMarker, MiniMap)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating the minimap as the map and never opening the larger one.",
+    "Searching the shop by eye for things that carry a marker.",
+    "Hunting for an online-order customer without using its map target.",
+    "Describing a location to another player instead of pinging it."
+  ],
+  "relatedEntities": [
+    "the-global-map-and-its-markers",
+    "what-a-shared-shop-keeps-in-step"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

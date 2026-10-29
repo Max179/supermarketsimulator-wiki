@@ -1,0 +1,2998 @@
+{
+  "generatedFor": "supermarketsimulator.wiki",
+  "generatedOn": "the extraction host (Windows)",
+  "basis": {
+    "head": "b4b067f",
+    "commits": 559,
+    "pages": 242,
+    "indexable": 203
+  },
+  "gitHistoryIncluded": false,
+  "hashAlgorithm": "sha256",
+  "files": [
+    {
+      "rel": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "rel": ".github/workflows/publish.yml",
+      "bytes": 1913,
+      "sha256": "259ade2107ba15950e75d270eb457ce6fc9393698feeda17487c6e05bcf9a51b"
+    },
+    {
+      "rel": ".gitignore",
+      "bytes": 157,
+      "sha256": "04540fd75124a03f8498bf850e6c25a78a3619f43776d97fd93c171645bf1eea"
+    },
+    {
+      "rel": "config/coverage.json",
+      "bytes": 5288,
+      "sha256": "398a54923a3690a543647b7b26fa01b52e545be61495e1ebbe13d7e61fd02089"
+    },
+    {
+      "rel": "config/urls.json",
+      "bytes": 38031,
+      "sha256": "31a6607f1ba9998d6c4174596068f645ee974bb1a7aa0dcaa5aebd46889b4d70"
+    },
+    {
+      "rel": "content/articles/a-computer-routine-that-keeps-the-shelves-full.json",
+      "bytes": 2034,
+      "sha256": "6c2cc8186a1336dce1bf1c50e2ac3c4eaa074a2065c915f2b072566334dcc46e"
+    },
+    {
+      "rel": "content/articles/a-first-licence-without-running-out.json",
+      "bytes": 1825,
+      "sha256": "a63b7a1615f959523378f914a2a3d5415bc3f1dbdf4fcb484dcdcd175e12fc22"
+    },
+    {
+      "rel": "content/articles/a-trading-day-that-pays.json",
+      "bytes": 1867,
+      "sha256": "dae3ec9b6422c3027a3d3d661ab4423863d16fa8b4657b615dcc70c9b07c9f19"
+    },
+    {
+      "rel": "content/articles/aiming-deliberately-in-a-busy-shop.json",
+      "bytes": 1830,
+      "sha256": "dc7739e22a675c63014cce64fa46ce88b72ab6c528fc119dc51c2976f9bcfecf"
+    },
+    {
+      "rel": "content/articles/bagging-a-purchase-without-losing-track-of-it.json",
+      "bytes": 2623,
+      "sha256": "6c5efc25644e33f8bfb3d9c7d980362ef1a2175dc409f3f0d5ad39c2b0cdc375"
+    },
+    {
+      "rel": "content/articles/borrowing-without-drowning-in-repayments.json",
+      "bytes": 2205,
+      "sha256": "1d4e8890cd98c2484975f0a2053511bc3c3595a036cf4607ed2268e0eedbf667"
+    },
+    {
+      "rel": "content/articles/borrowing-without-sinking-the-shop.json",
+      "bytes": 3621,
+      "sha256": "8b6df5b8913d4de99a50583e81e7989bf2a6735adc3fa7a7bdab841d16d11711"
+    },
+    {
+      "rel": "content/articles/building-a-drinks-shelf.json",
+      "bytes": 2481,
+      "sha256": "5151788e94882f0227063eaecd7bf931016326934b933880217083ee597dfe5a"
+    },
+    {
+      "rel": "content/articles/buying-a-crate-without-filling-the-back-room.json",
+      "bytes": 1897,
+      "sha256": "560b09a9fac343f32ae2274ee85669201b4cda4dd65572033cb9644d115e550a"
+    },
+    {
+      "rel": "content/articles/buying-a-licence-and-knowing-what-it-unlocks.json",
+      "bytes": 2826,
+      "sha256": "dc296e5aa8a892df1770c7a9f89935a6b72bc764d60d7c672dd751a75bc616b4"
+    },
+    {
+      "rel": "content/articles/buying-and-using-the-bat.json",
+      "bytes": 2374,
+      "sha256": "563abe207001b664aab1b4d622ce75ff41159eb1d02b7989140f8a04a0f3090f"
+    },
+    {
+      "rel": "content/articles/buying-equipment-from-the-shop-computer.json",
+      "bytes": 3767,
+      "sha256": "c37279b9fd7cbd08c6d112bcff9f1aca3799810c68503ddac3d1acd5de3164d6"
+    },
+    {
+      "rel": "content/articles/buying-from-the-list-without-buying-twice.json",
+      "bytes": 2886,
+      "sha256": "5d6b379f7ea0a89e952424d9fb7a2744db84850f9a0734d51a8481812a1ba2db"
+    },
+    {
+      "rel": "content/articles/buying-on-offer-without-filling-the-back-room.json",
+      "bytes": 3607,
+      "sha256": "22e1d8fd2b9d64f0856da802ae75ce3945e409423f045381cd10c9153b23c2c3"
+    },
+    {
+      "rel": "content/articles/buying-stock-without-being-taken-in.json",
+      "bytes": 4051,
+      "sha256": "52fdadd2fb6107eabd6a378597637b4e314e3a95bb3321a094c77030c33758c6"
+    },
+    {
+      "rel": "content/articles/catching-a-shoplifter-in-time.json",
+      "bytes": 2071,
+      "sha256": "9fcc2a178ce647449c03b0ec0fd6df1718e5984992a5c6eb6f493d13b4d19edc"
+    },
+    {
+      "rel": "content/articles/choosing-an-entrance-that-suits-the-shop.json",
+      "bytes": 1960,
+      "sha256": "ec673190f35f1d3f66d34bc881d994b7e57d922ec4cb72d6c9683773d26fdab1"
+    },
+    {
+      "rel": "content/articles/choosing-and-shelving-fresh-produce.json",
+      "bytes": 2627,
+      "sha256": "b4c7b574eee9c5e6247478b15557f6757b56aa6dbff95e1a8d95c76046a76849"
+    },
+    {
+      "rel": "content/articles/clearing-a-delivery-without-blocking-the-door.json",
+      "bytes": 3307,
+      "sha256": "89ecfb950d701838f59d8da2b3f636dd3dd76e5a13be91510334629c791d4fd1"
+    },
+    {
+      "rel": "content/articles/closing-the-shop-and-keeping-what-you-earned.json",
+      "bytes": 3937,
+      "sha256": "222b7b9623746287be0841ecb03db9897f73d56ecfb44d1f66c8cdbaa2d4bb98"
+    },
+    {
+      "rel": "content/articles/cutting-theft-without-chasing-people.json",
+      "bytes": 2078,
+      "sha256": "6db1670f936381098d98635a0a0d7cbf79b466a0c43bc671e08336ade3dd2b9b"
+    },
+    {
+      "rel": "content/articles/dealing-with-rubbish-without-losing-the-day.json",
+      "bytes": 2958,
+      "sha256": "f46d335cbf94511b89ad6da856b092084f479851107e9201852f7f32afab2880"
+    },
+    {
+      "rel": "content/articles/dressing-a-corner-with-plants.json",
+      "bytes": 2482,
+      "sha256": "8cca9a341b4588c1ce0222da43e47b834b1cc1b9e70578beaf4ab81de7c426b6"
+    },
+    {
+      "rel": "content/articles/finding-your-way-around-the-menus.json",
+      "bytes": 2981,
+      "sha256": "375c3bed49042bd6b7fcce9fe695209b83f53de987a7ed4a886d9fc2cfe3d1a4"
+    },
+    {
+      "rel": "content/articles/fitting-out-a-meat-and-dairy-section.json",
+      "bytes": 2535,
+      "sha256": "599965fa0f80120a6b5054e17e9fbde81e47eb67bf8fd4b23f9b52e348e2b6fa"
+    },
+    {
+      "rel": "content/articles/fitting-out-the-chilled-side.json",
+      "bytes": 2631,
+      "sha256": "e2f091dfea1176f8422ebef6319255af9bb5c030a5fb6b8d3a21037ad5782aeb"
+    },
+    {
+      "rel": "content/articles/from-empty-shop-to-first-sale.json",
+      "bytes": 1711,
+      "sha256": "a562b3365d2ee3a6f7fac25e2bae800d0e8b5373fca5d77b61a08e5e8850daab"
+    },
+    {
+      "rel": "content/articles/getting-a-helper-to-the-right-job.json",
+      "bytes": 2990,
+      "sha256": "50a2599c57c98ad14b8e188d1c93f5db86b004e6cbf618120f247d70c1e20fe3"
+    },
+    {
+      "rel": "content/articles/getting-music-into-the-shop.json",
+      "bytes": 1849,
+      "sha256": "e372b6eefeb22027225076a080abce1b8fe68f73ec3638f009c0a509ad51ac65"
+    },
+    {
+      "rel": "content/articles/growing-the-shop-in-the-right-order.json",
+      "bytes": 2059,
+      "sha256": "967c7a49a1a4f94013d9e395c8e1aa25f9e27e7798fdb9c7a55b7b1d46c6804e"
+    },
+    {
+      "rel": "content/articles/handing-over-a-job-without-standing-over-anyone.json",
+      "bytes": 3018,
+      "sha256": "797d6a6aa8e348e9a304e1c07c612702aa6644d11ab85c4cb46aac429ba4a21e"
+    },
+    {
+      "rel": "content/articles/how-the-game-shows-you-yourself.json",
+      "bytes": 3104,
+      "sha256": "45a7a7dec2312f0661bd1c38ea01e3b615db5eb632c06888527d22de04d68e30"
+    },
+    {
+      "rel": "content/articles/keeping-a-record-of-what-your-shop-did.json",
+      "bytes": 2845,
+      "sha256": "5d1952802082dd16536cc804336e8c1c789d3a987b80964aa854e7df8f3ec8aa"
+    },
+    {
+      "rel": "content/articles/keeping-a-save-you-can-go-back-to.json",
+      "bytes": 3895,
+      "sha256": "cdb458207ff285ef30156fcebbf7eaee26077f6756e94effb99eb9147e3f70fd"
+    },
+    {
+      "rel": "content/articles/keeping-a-self-checkout-moving.json",
+      "bytes": 2574,
+      "sha256": "e41d11b3619da73e0dd496f144867d4107993e08cb5bf89a2844a3e614f5ae57"
+    },
+    {
+      "rel": "content/articles/keeping-the-back-room-usable.json",
+      "bytes": 3748,
+      "sha256": "407bd922374dd0a90f96ce5b780ae28dd1789e7deea87d636f4719ca7a845a6d"
+    },
+    {
+      "rel": "content/articles/keeping-the-shop-clean-without-stopping-the-day.json",
+      "bytes": 3487,
+      "sha256": "3f2409d01d2ae44b22f687209e70fada4fcd325c561f93b4c8bf7acaa1128c8d"
+    },
+    {
+      "rel": "content/articles/keeping-the-shop-window-clear.json",
+      "bytes": 2352,
+      "sha256": "1765e5c38f51b49184e4a1d83fc4855dde7aecf098ef9dafe559cec995f0e4a0"
+    },
+    {
+      "rel": "content/articles/keeping-the-tills-moving-as-the-shop-grows.json",
+      "bytes": 4106,
+      "sha256": "be361b7c0d5c7c39496bc0cb6e5e4b8599c4592209a3a1ae14724e3118bbed98"
+    },
+    {
+      "rel": "content/articles/laying-out-a-shop-you-can-work-in.json",
+      "bytes": 3527,
+      "sha256": "27cc57e63118528204062d790fb2d5f06a5a59a9222a06f0abd2c6c8b0ff8fb8"
+    },
+    {
+      "rel": "content/articles/lighting-the-shop-and-the-back-room.json",
+      "bytes": 3660,
+      "sha256": "c62f02af2c508d1616dec700ff003ad465193685599fb459b48a6b40d85c7010"
+    },
+    {
+      "rel": "content/articles/living-with-the-popups.json",
+      "bytes": 1799,
+      "sha256": "6e40d4ff4f61247e9b3ee34456121df15627372bc813fb2b3b45f0b632b66e80"
+    },
+    {
+      "rel": "content/articles/making-a-product-line-worth-displaying.json",
+      "bytes": 2924,
+      "sha256": "998948ec36d8661053b1b6c9cce343751419ff23809a05c18639903255321cf7"
+    },
+    {
+      "rel": "content/articles/opening-a-bakery-without-stalling-the-shop.json",
+      "bytes": 1986,
+      "sha256": "2bca8b0876a569265a626fc3f30e8694748c9b4fd078a3274a1d768645254882"
+    },
+    {
+      "rel": "content/articles/opening-your-first-day.json",
+      "bytes": 1604,
+      "sha256": "350593fdf6e50ce5969224a7b0cb0c20c749165cdc488ea4a48ad1378d701031"
+    },
+    {
+      "rel": "content/articles/packing-online-orders-without-losing-the-list.json",
+      "bytes": 3603,
+      "sha256": "1df59c640c783f263242dbf96fe63bde81e9b52a3fceb10a2afe40198fc93be1"
+    },
+    {
+      "rel": "content/articles/painting-the-floor-and-naming-the-shop.json",
+      "bytes": 3032,
+      "sha256": "e2a587d8ec792cabee40be6e889cf0f8a41d41d9bedc22e964a254b42adc5f3a"
+    },
+    {
+      "rel": "content/articles/painting-the-shop-floor.json",
+      "bytes": 2182,
+      "sha256": "577c09542c1b1bf6e3c54e6138f9136b1c172bdbc57bbcdea213fa0c457827bf"
+    },
+    {
+      "rel": "content/articles/painting-the-walls-without-wasting-paint.json",
+      "bytes": 3344,
+      "sha256": "3b31cec8ed9ca870e4e86ac5c78c8fb6ced04a036407c425d23d2cb4385ed6a6"
+    },
+    {
+      "rel": "content/articles/playing-with-a-controller-without-losing-the-prompts.json",
+      "bytes": 4074,
+      "sha256": "fd0bcb6561c506b426381f1c472007788deb47068552bc7cc6350e9e7bd00cf7"
+    },
+    {
+      "rel": "content/articles/reading-the-games-own-objectives.json",
+      "bytes": 2790,
+      "sha256": "fef4a8bb4fe422d58cfff1f04ad96c6586c7fdc865053a11c7a2f7979f37b4d5"
+    },
+    {
+      "rel": "content/articles/reading-the-icons-on-the-screens.json",
+      "bytes": 2455,
+      "sha256": "2090d1084bc5b5ca9dc12a9c976f0814e033181d87663fb8eb0c9a06d6a604fc"
+    },
+    {
+      "rel": "content/articles/reading-the-street-before-you-step-into-it.json",
+      "bytes": 2849,
+      "sha256": "63714ff94a968098039f92e10df5a2117ca3bf9d5e365ae0523803042c5865fc"
+    },
+    {
+      "rel": "content/articles/reading-the-warnings-without-fighting-the-popups.json",
+      "bytes": 3744,
+      "sha256": "01823db3043bfeb924362c13a483fc711c6f7009e263ba862cc6c603ce1b8676"
+    },
+    {
+      "rel": "content/articles/reading-what-the-game-is-offering.json",
+      "bytes": 1900,
+      "sha256": "43c70dc969eb6f8ead18c66da3073ec0a1b0d23622a1d9f233fffe082f5881a6"
+    },
+    {
+      "rel": "content/articles/reading-your-shops-own-state.json",
+      "bytes": 3005,
+      "sha256": "6bfb8ced4be25fcadc94a6c20f92f93ec2e7251c2cc65a62463378b4da3cdd92"
+    },
+    {
+      "rel": "content/articles/repricing-the-shop-in-one-pass.json",
+      "bytes": 4165,
+      "sha256": "3fe0f2d26f0618fb87588bfaf52206cb3a7493519e1dd6296c14b5eedc7b087d"
+    },
+    {
+      "rel": "content/articles/restocking-routine.json",
+      "bytes": 1624,
+      "sha256": "17d50e86015398b7733c69dc0fd1223fc28515b7115bf1c0edaa5cce84222b64"
+    },
+    {
+      "rel": "content/articles/running-a-shared-shop-without-stepping-on-each-other.json",
+      "bytes": 4210,
+      "sha256": "1ed2e4f85430d4935b316085048a0757f1d6925e43e729e63bdce7727a243d50"
+    },
+    {
+      "rel": "content/articles/running-an-ice-cream-stand.json",
+      "bytes": 3380,
+      "sha256": "31a6d769fcdec7086afa5e7ff66ebb6d1cf73af4c8e0db35c895d6d75eda51ae"
+    },
+    {
+      "rel": "content/articles/running-the-shop-from-the-tabs.json",
+      "bytes": 1887,
+      "sha256": "8ec9badab3c66fe5e720f236ebb5fda0fa35a9ddd93c2a1c3e741ec4218e1a17"
+    },
+    {
+      "rel": "content/articles/setting-up-a-vending-machine.json",
+      "bytes": 2072,
+      "sha256": "401c1580bd4af8ddebf26b40153be08e44c8fd563cf60c33e9a78f3b9c79ca96"
+    },
+    {
+      "rel": "content/articles/signing-the-shop-so-customers-find-things.json",
+      "bytes": 3931,
+      "sha256": "c372b9afb841c4b5342397bcda182282134aebb89c0ea601aee4f49be972fca2"
+    },
+    {
+      "rel": "content/articles/stocking-a-shelf-slot-by-slot.json",
+      "bytes": 2045,
+      "sha256": "f3b2220bbe080beecdac13d1cbdd92354990c2762c93cebf58170449f312d9fe"
+    },
+    {
+      "rel": "content/articles/taking-payment-without-mixing-up-the-money.json",
+      "bytes": 2731,
+      "sha256": "4b510b356d9e3c633454e1135470db35d18f0cd470eac0b2bac73f8cc92508d7"
+    },
+    {
+      "rel": "content/articles/the-machines-and-the-prompts.json",
+      "bytes": 3062,
+      "sha256": "fb13414c44bbca22a975af136c556cdfa1257cd5fac8683b4b0cb9a23a092bde"
+    },
+    {
+      "rel": "content/articles/the-things-that-keep-going-while-you-do-something-else.json",
+      "bytes": 2945,
+      "sha256": "6c72b4753a7bd5a942f6b1f210198d4652dd55f6f5d9141588ccdf46f8b46b8e"
+    },
+    {
+      "rel": "content/articles/turning-a-days-results-into-the-next-days-plan.json",
+      "bytes": 4023,
+      "sha256": "19c7bef34db52c280ad349052cc9d56cb83ae1e1044b2528c97676bbc9f49b11"
+    },
+    {
+      "rel": "content/articles/using-a-vehicle-for-a-big-delivery.json",
+      "bytes": 1877,
+      "sha256": "3dfb5660875ca70015a4111999247aa548c606e263223bff5822aa60ce97e1a4"
+    },
+    {
+      "rel": "content/articles/using-the-map-instead-of-walking-the-shop.json",
+      "bytes": 3269,
+      "sha256": "64b12765dd4f7645cbd93475e498b8790eef5440d0d481271d3e9970168be60d"
+    },
+    {
+      "rel": "content/articles/watching-the-shop-with-cameras-and-guards.json",
+      "bytes": 2237,
+      "sha256": "583e2bec0294fe77a7d88790f068fa568a1856b9a9960c4bfb57b335df5ead69"
+    },
+    {
+      "rel": "content/articles/weighing-goods-without-slowing-the-queue.json",
+      "bytes": 2028,
+      "sha256": "84296681ac60b81f1b05b3d396b75e14686083805db6aa7e74b73d6cf99e2d72"
+    },
+    {
+      "rel": "content/articles/what-gets-a-copy-in-a-shared-shop.json",
+      "bytes": 3145,
+      "sha256": "ecb332194138ea1766caae0365517b0c20c653351a7ec6808708dc4e5cfcfe27"
+    },
+    {
+      "rel": "content/articles/what-the-cabin-tells-you.json",
+      "bytes": 2869,
+      "sha256": "451da311b39853cc185e81683efdc05641183a31ed2f854d3b51c91fcf65519e"
+    },
+    {
+      "rel": "content/articles/what-the-tutorial-is-teaching-you.json",
+      "bytes": 3987,
+      "sha256": "a8ab0dc9c21d32b4b3f51ef0f72325180dfba10f80adc06d6fce1a55bad170d1"
+    },
+    {
+      "rel": "content/articles/why-the-shop-runs-with-so-much-in-it.json",
+      "bytes": 2737,
+      "sha256": "75566c3809d0b199903d6602958b453947647216d2d89f0e729f3f1986e5823d"
+    },
+    {
+      "rel": "content/articles/working-the-objectives-into-your-day.json",
+      "bytes": 3447,
+      "sha256": "66c4f6e79fa6184ebb852e4b1d84842e23561adf55f1834b623734b54785b5b6"
+    },
+    {
+      "rel": "content/assets/asking-a-helper-to-fetch-something.svg",
+      "bytes": 1924,
+      "sha256": "348e1fe051d88a2813e2b17d15c2a551c181e53a8446164082bf51f6f875f316"
+    },
+    {
+      "rel": "content/assets/bills-loans-and-growth-screens.svg",
+      "bytes": 1909,
+      "sha256": "892a6002ad30117e498b2a6fbbceb09bf9ebfd9ae51b714c1f335ab6bdf2e304"
+    },
+    {
+      "rel": "content/assets/category-signs-and-the-categories-behind-them.svg",
+      "bytes": 1931,
+      "sha256": "809e50e7c7255850a1c88934e8a3b8b5fa1dfc25a7a069c41344e35190c84286"
+    },
+    {
+      "rel": "content/assets/checkout-and-cashiers.svg",
+      "bytes": 1919,
+      "sha256": "3874f97eb6522d212ded888183e500797182c58ca65783b1b7ac8092db56753a"
+    },
+    {
+      "rel": "content/assets/cleanliness-and-standing.svg",
+      "bytes": 1924,
+      "sha256": "25af3e3b4e2b388a615b1d34b084f37a2d23227dc1b78fbce33b90ec484c4b5b"
+    },
+    {
+      "rel": "content/assets/customers-and-helpers.svg",
+      "bytes": 1918,
+      "sha256": "0866ba0582f3c0102fd9421197bd3583abce8bacf54b25873a4aed3748783aba"
+    },
+    {
+      "rel": "content/assets/dirt-and-cleaning.svg",
+      "bytes": 1919,
+      "sha256": "cd7aa1744826a8464ee3676b44d2ea9c6cd436a93ae9e6d99249522215e0c29c"
+    },
+    {
+      "rel": "content/assets/floors-and-floor-painting.svg",
+      "bytes": 1933,
+      "sha256": "e80531b38691bfaddf347ec2e55484374e999b64a6d09bd0c3a5939909146b85"
+    },
+    {
+      "rel": "content/assets/furniture-and-shop-layout.svg",
+      "bytes": 1932,
+      "sha256": "ca3f7200a790bbfe36fe9bf8127422ce2c698b6e2e4297eb6f38651d3bd3aca5"
+    },
+    {
+      "rel": "content/assets/glossary-of-terms.svg",
+      "bytes": 1920,
+      "sha256": "66bf3518b05376e10263e38dd4e50aafba7e8e18b7fc936d53ec99303fae54cf"
+    },
+    {
+      "rel": "content/assets/hiring-a-cashier.svg",
+      "bytes": 1906,
+      "sha256": "243d67098fbe207e4834f3e3b8dbc4e28deacfd6302b82e3d405099a40f6ec84"
+    },
+    {
+      "rel": "content/assets/how-a-shop-full-of-things-is-drawn.svg",
+      "bytes": 1958,
+      "sha256": "eeaea594a39e0b44b7282b0d3b940ccc2635cb3ddca897da83445987fd921aae"
+    },
+    {
+      "rel": "content/assets/how-customers-find-their-way.svg",
+      "bytes": 1896,
+      "sha256": "93500c46b112ad99f283c3e159c76bfacc09376cb0c64b52903348caa5d1cd5a"
+    },
+    {
+      "rel": "content/assets/how-products-are-displayed.svg",
+      "bytes": 1923,
+      "sha256": "5badf054d3f335cdcf29e6d19b4f25414c7f0062c7013aab26e69c6c5c7a601b"
+    },
+    {
+      "rel": "content/assets/how-the-game-decides-to-warn-you.svg",
+      "bytes": 1936,
+      "sha256": "0120602153e49b2dc902432598ce7b7778400a11d023d5feee91fcb90a9ae5f8"
+    },
+    {
+      "rel": "content/assets/how-the-game-shows-what-you-can-use.svg",
+      "bytes": 1936,
+      "sha256": "5ec2040e3ef6ddf1654ea79fabce435265e6fcbb30776c1c9b5674b2ecaaa7a7"
+    },
+    {
+      "rel": "content/assets/how-your-shop-is-saved.svg",
+      "bytes": 1921,
+      "sha256": "9aaf384c5ff5dc276b1d98e173b2f44dc01d622e7f59cc0aa209ce32231326ac"
+    },
+    {
+      "rel": "content/assets/inside-a-vehicle.svg",
+      "bytes": 1931,
+      "sha256": "7d6d5ef7a4e67796bdf7c53642ee4b252866d1f12a571d076c354a7616ec5aea"
+    },
+    {
+      "rel": "content/assets/jobs-you-can-hand-over.svg",
+      "bytes": 1931,
+      "sha256": "7c17a18ef256d4c21cb410a0c015fb5b05ca3cd4903868ca1e1cbd0f3d0e5be2"
+    },
+    {
+      "rel": "content/assets/licence-items-and-their-icons.svg",
+      "bytes": 1930,
+      "sha256": "cc52bf2ed06ce92905dad2d29f477d753e4340b778ea3dbab51dce3f60f4e2cd"
+    },
+    {
+      "rel": "content/assets/loans-and-paying-them-back.svg",
+      "bytes": 1897,
+      "sha256": "39a86ea1d3181f39c8c250b9a56b47b972ffe15146be93114ba8890d83e2baa4"
+    },
+    {
+      "rel": "content/assets/mapped/barcodes-and-the-scanner-barcode-vegie.png",
+      "bytes": 32783,
+      "sha256": "06a25410ff2dae25b3fa9438f49835a6290d3cdcd1638b3132c95d8e8f2817c1"
+    },
+    {
+      "rel": "content/assets/mapped/barcodes-and-the-scanner-discounted.jpg",
+      "bytes": 10207,
+      "sha256": "d34b3ae327675aed26b814675809f1edd9d69154beeb3e3ab3ac94c1e357ff40"
+    },
+    {
+      "rel": "content/assets/mapped/barcodes-and-the-scanner-plain.jpg",
+      "bytes": 10098,
+      "sha256": "a9bd46635079226a572afd46418b8192f3c445b4364ef2fd7416e9b91499aefe"
+    },
+    {
+      "rel": "content/assets/mapped/bills-loans-and-growth-screens-bill.jpg",
+      "bytes": 147370,
+      "sha256": "2739f4dd95969cf90c44b1ab03eb9373f6051304bafd4e6a4c7caa23ee555bb1"
+    },
+    {
+      "rel": "content/assets/mapped/category-signs-and-the-categories-behind-them-sign.jpg",
+      "bytes": 5600,
+      "sha256": "9d246a0a863f391ecb6f773ca97b1b20fbf1b18d9b300371e5f3ff6c9e2f8158"
+    },
+    {
+      "rel": "content/assets/mapped/checkout-and-cashiers-basket-new.png",
+      "bytes": 142539,
+      "sha256": "5e9a5ebec8a6a48b73062df7fe40644a0d7fc875c557c1d61712fbb397da089b"
+    },
+    {
+      "rel": "content/assets/mapped/checkout-and-cashiers-basket.png",
+      "bytes": 94264,
+      "sha256": "9a5d12324e84e4a044decf3b069a62e34b1f036b43e1db699f1ae4047b8fe797"
+    },
+    {
+      "rel": "content/assets/mapped/checkout-and-cashiers-mirrored-counter.png",
+      "bytes": 101852,
+      "sha256": "e9795946f2484f69d75efa4d70e876cc5ff7442b35bd9ea56ac75212ba1aed28"
+    },
+    {
+      "rel": "content/assets/mapped/checkout-and-cashiers-selfcheckout.png",
+      "bytes": 177508,
+      "sha256": "4c1eb419e60e7a9e7cf68a77207fbc35b3f96ff6be7aac86bb4ceefe714927a8"
+    },
+    {
+      "rel": "content/assets/mapped/cleanliness-and-standing-mop.jpg",
+      "bytes": 81801,
+      "sha256": "250c00fb46208aa5e77283ea0c5bc2c5121ab650827ffbb541deb8fba42b9af1"
+    },
+    {
+      "rel": "content/assets/mapped/customers-and-helpers-customer.jpg",
+      "bytes": 36387,
+      "sha256": "bf4a09671ec878b741cebcceee4e448c0ae56cf0cbf2e5d2e76a31386fa07d28"
+    },
+    {
+      "rel": "content/assets/mapped/dirt-and-cleaning-dirt.jpg",
+      "bytes": 105237,
+      "sha256": "ca9fe7ba7899ce676a1c776d03ede7836a5af65a59249370a840443ceb61ca7e"
+    },
+    {
+      "rel": "content/assets/mapped/dirt-dust-and-rubbish-are-three-jobs-bags.jpg",
+      "bytes": 112359,
+      "sha256": "5b5185c1243b8648af239194036bc40b7c9ff2a3cf3dfa5821b078d7694aa57c"
+    },
+    {
+      "rel": "content/assets/mapped/floors-and-floor-painting-atlas.jpg",
+      "bytes": 34734,
+      "sha256": "489921634c304c265642a85ef4a01c14a9a383f73ffc7baef38723e03564407f"
+    },
+    {
+      "rel": "content/assets/mapped/floors-and-floor-painting-pattern.jpg",
+      "bytes": 64207,
+      "sha256": "88e22bb624b5f1f7f53fdffa8002d532eb816c8bf4a5e8400b35b587ac07f9bd"
+    },
+    {
+      "rel": "content/assets/mapped/floors-and-floor-painting-tiles.jpg",
+      "bytes": 208977,
+      "sha256": "24dee6f576600a788ca6a8c5029edb7e9c21b1d8b37da17093f54290f7d0bb43"
+    },
+    {
+      "rel": "content/assets/mapped/furniture-and-shop-layout-atlas.jpg",
+      "bytes": 124809,
+      "sha256": "b043815fc59333e410ee5a024fa67ac15a077c3d706346bfefe20ba47636b76a"
+    },
+    {
+      "rel": "content/assets/mapped/how-a-product-is-drawn-on-a-shelf-atlas.jpg",
+      "bytes": 151827,
+      "sha256": "b10cfbfc5b653c2ccef7539885346bdaeeb9c944a4b35cf1126b1ccf05333db8"
+    },
+    {
+      "rel": "content/assets/mapped/how-a-product-is-drawn-on-a-shelf-atlas2.jpg",
+      "bytes": 134613,
+      "sha256": "3c7aa58460c008fed84a82270b0bb67101fbe0e43c281b6e419e0e0ce10dab26"
+    },
+    {
+      "rel": "content/assets/mapped/how-a-product-is-drawn-on-a-shelf-baby-formula.png",
+      "bytes": 104692,
+      "sha256": "1b1ae9b534035e70af36b576d6832a020b07ef87ea6f8c2598b7554cef4e9056"
+    },
+    {
+      "rel": "content/assets/mapped/how-a-product-is-drawn-on-a-shelf-cat-food.png",
+      "bytes": 236464,
+      "sha256": "3baa951465d5ef1e9cf11c0895a75d224e69ca62889fcea5b6235caa05ded647"
+    },
+    {
+      "rel": "content/assets/mapped/how-a-vehicle-drives-scooter.jpg",
+      "bytes": 89018,
+      "sha256": "80d1d74d52136e58a01b1874483cd34a9806f082d233d69fda59f66a6811ece4"
+    },
+    {
+      "rel": "content/assets/mapped/how-customers-find-their-way-sign.jpg",
+      "bytes": 3753,
+      "sha256": "8b79d2da081cf7af9cd616f33ef6cbdb597e22e6ad409220a6b9741e58bc0ecc"
+    },
+    {
+      "rel": "content/assets/mapped/how-products-are-displayed-pegboard.jpg",
+      "bytes": 136713,
+      "sha256": "14cdc548dbb3a893ba712eb483def533dd272f599c488c292a94ff229df8b1b8"
+    },
+    {
+      "rel": "content/assets/mapped/how-the-game-decides-to-warn-you-dirtiness.png",
+      "bytes": 37790,
+      "sha256": "118011a2266f8cc29d0c392ad78fd0943d6488b40c8ef3ec85a8d432fc8efb92"
+    },
+    {
+      "rel": "content/assets/mapped/how-the-game-shows-what-you-can-use-crosshair.jpg",
+      "bytes": 43123,
+      "sha256": "4f5dcaa0620736b553bd6da7422e47f19d7e3e52518a8b9115a1a12c4197962f"
+    },
+    {
+      "rel": "content/assets/mapped/how-the-game-shows-what-you-can-use-mop.png",
+      "bytes": 42262,
+      "sha256": "4ed5617bf86e0dfe11c6275b6090ad75bbd82ee2df12a7e1d01281b59a7a26e5"
+    },
+    {
+      "rel": "content/assets/mapped/how-your-shop-is-saved-flashdrive.jpg",
+      "bytes": 30761,
+      "sha256": "da4f911d0f45d4afa875329aaddfdb2c3f281ea2c4b53e465ef997dbcf225fa0"
+    },
+    {
+      "rel": "content/assets/mapped/inside-a-vehicle-dashboard.png",
+      "bytes": 11118,
+      "sha256": "084be35637e165cc6f428a8b271fba6884d5d8e0c8ff51047c7743fee36363a2"
+    },
+    {
+      "rel": "content/assets/mapped/licence-items-and-their-icons-sheet.jpg",
+      "bytes": 212866,
+      "sha256": "c66824e64a2801b1c2407ac70f54883745d34f584aed8b71a019d296f6812446"
+    },
+    {
+      "rel": "content/assets/mapped/licence-items-and-their-icons-vegetables.jpg",
+      "bytes": 76619,
+      "sha256": "f837ffad9adbf774c01d9053cb23a22b1331ae4835053aebef3afd9d568a7987"
+    },
+    {
+      "rel": "content/assets/mapped/loans-and-paying-them-back-bank.jpg",
+      "bytes": 126862,
+      "sha256": "8bb6a3ef0d990119afaf16c9928c0f45c8163d88e698016de4217740c6cb0049"
+    },
+    {
+      "rel": "content/assets/mapped/mixing-paint-and-picking-a-colour-bucket.png",
+      "bytes": 82306,
+      "sha256": "b4c08ab3499834e97a79681d466e00742f7c6c85e3c6f0fd31c793f3825ab90b"
+    },
+    {
+      "rel": "content/assets/mapped/mixing-paint-and-picking-a-colour-buckets.jpg",
+      "bytes": 81658,
+      "sha256": "95c289039d701a98adc0595ef4cf3b1c7e6865a3b086e6d149feb461d71aafd9"
+    },
+    {
+      "rel": "content/assets/mapped/money-as-an-object-in-the-shop-note.png",
+      "bytes": 136931,
+      "sha256": "c06431011f600a9ead80ef32c1eb8f954d77309953c5b8c18c751b37923493e4"
+    },
+    {
+      "rel": "content/assets/mapped/music-in-your-shop-speaker.jpg",
+      "bytes": 9005,
+      "sha256": "6510b16987ab120d90500ed5d62440dc4b4dd855e8ef4dc69fa844062315fbea"
+    },
+    {
+      "rel": "content/assets/mapped/online-orders-and-how-they-are-tracked-indicator.png",
+      "bytes": 20018,
+      "sha256": "ab01627baeede57d5c2aa1fc4c98197abc1ce2ef44242458e9122d6f73421d01"
+    },
+    {
+      "rel": "content/assets/mapped/orders-and-what-you-can-order-online.jpg",
+      "bytes": 76177,
+      "sha256": "c435bba79b6fb80029da81b343967b9a52ce11ac42564919c2f35b0af06f3c2e"
+    },
+    {
+      "rel": "content/assets/mapped/painting-the-walls-bucket-gold.png",
+      "bytes": 84001,
+      "sha256": "c8595e34de5d784c6f34c66d98c7d00aa07cfcc6e016ed4b3313532ddeddd6d7"
+    },
+    {
+      "rel": "content/assets/mapped/painting-the-walls-bucket-teal.png",
+      "bytes": 81912,
+      "sha256": "6cc4ea2c4372f8fcd8ad2470cdef34232c49c0fb6f28bff2923fe63a194b6cb5"
+    },
+    {
+      "rel": "content/assets/mapped/painting-the-walls-bucket-white.png",
+      "bytes": 84321,
+      "sha256": "903984e839d918b4337d52648cc2adaf65562f96faf16e069057b6350c5386f1"
+    },
+    {
+      "rel": "content/assets/mapped/painting-the-walls-buckets.jpg",
+      "bytes": 77476,
+      "sha256": "d89ae5a0c055f5c90cee4a59de9b93edecb7398180ba1c139c2d4a099860dd8b"
+    },
+    {
+      "rel": "content/assets/mapped/paper-bags-and-packing-a-purchase-bag.jpg",
+      "bytes": 27146,
+      "sha256": "351d884cc7586354672328fbac78634b7c748d5f3155785e66b61031eb4abf0f"
+    },
+    {
+      "rel": "content/assets/mapped/paper-bags-and-packing-a-purchase-icon.jpg",
+      "bytes": 25499,
+      "sha256": "80dc9a4de30bd683bfc24604e34d3213831994ed4ad43784f63b33fd6068ff20"
+    },
+    {
+      "rel": "content/assets/mapped/paying-by-card-or-cash-register.jpg",
+      "bytes": 43504,
+      "sha256": "ad361e8f099e433c6982b4eb21d0a95d3b4a6fa772b70c2fa866e5f3bd984083"
+    },
+    {
+      "rel": "content/assets/mapped/playing-with-a-controller-button-a.png",
+      "bytes": 4058,
+      "sha256": "6ea06135782b8468763a98452514881f79f41fa27fd09760e58a238aadc149d3"
+    },
+    {
+      "rel": "content/assets/mapped/playing-with-a-controller-button-b.png",
+      "bytes": 3951,
+      "sha256": "fa916ebf66d96b9587786d256554f3ca5d4d3f72a5f2a044753b03e8e682f973"
+    },
+    {
+      "rel": "content/assets/mapped/products-and-deliveries-egg.png",
+      "bytes": 282018,
+      "sha256": "9ec698608572be8adbac099eeefb0f41d2138cbedadabcc3c1405779eacf67a3"
+    },
+    {
+      "rel": "content/assets/mapped/products-and-deliveries-sauce.png",
+      "bytes": 171397,
+      "sha256": "3f9b7120e1b4ddab978db82d33d5b93aa82c8fd1ea019d4f7fc59cedadba4ace"
+    },
+    {
+      "rel": "content/assets/mapped/questions-players-ask-question.png",
+      "bytes": 1216,
+      "sha256": "01fa964eb8ac93ecbe00944e7499372b5ef728d715948fd9f344d0a9dc41141f"
+    },
+    {
+      "rel": "content/assets/mapped/raising-your-storage-and-shop-level-warehouse.jpg",
+      "bytes": 58824,
+      "sha256": "c2e07a3fb7168c5941c1ba8cc8758841c522a4e3536437c1dd7739897f560cb6"
+    },
+    {
+      "rel": "content/assets/mapped/repaying-a-loan-payment-by-payment-card.jpg",
+      "bytes": 71791,
+      "sha256": "4d93c058344b202bbadc413e5e9d6189a118b6fadf00cee0bbfc023b067fd7ff"
+    },
+    {
+      "rel": "content/assets/mapped/restock-areas-and-vehicles-sedan.jpg",
+      "bytes": 15034,
+      "sha256": "09a20eacbbb888b9bbf0d38cc393947cd6cf4c9f2079584fa4b4c95c65ac3fd7"
+    },
+    {
+      "rel": "content/assets/mapped/restocking-shelves-shelf.png",
+      "bytes": 390152,
+      "sha256": "f46acce67c66b7fc69d24af0155cdfddf5bd4be3b7b1b5aa66b4e0eb22cceb28"
+    },
+    {
+      "rel": "content/assets/mapped/save-slots-and-what-each-one-holds-flashdrive.jpg",
+      "bytes": 30761,
+      "sha256": "da4f911d0f45d4afa875329aaddfdb2c3f281ea2c4b53e465ef997dbcf225fa0"
+    },
+    {
+      "rel": "content/assets/mapped/security-cameras-and-guards-camera.png",
+      "bytes": 93690,
+      "sha256": "b775b37aaf62e75223ddb9f6fcf2673492bb254313269fda1a02ab60ac3f01c1"
+    },
+    {
+      "rel": "content/assets/mapped/security-cameras-and-guards-detector.jpg",
+      "bytes": 17220,
+      "sha256": "f9c93cb94e29e3dd4f11081941c2c3086176df02807324697088e42cc2c1ac56"
+    },
+    {
+      "rel": "content/assets/mapped/serving-ice-cream-bucket.jpg",
+      "bytes": 20593,
+      "sha256": "d69f4842a9572892a7f8cf928282e00265bac9c6325d879e5d6c71653b68754f"
+    },
+    {
+      "rel": "content/assets/mapped/shelf-slots-and-display-space-icecream.jpg",
+      "bytes": 31525,
+      "sha256": "9cf809631edaf1f0830cb9c5651ed932537da29b34ad8ac29103728dd8814b76"
+    },
+    {
+      "rel": "content/assets/mapped/shelf-slots-and-display-space-shelf.png",
+      "bytes": 68316,
+      "sha256": "3456ce1233bef5650a0318242be0ea0abe58d2a19e3da3f6c8b8e3d7e36c7038"
+    },
+    {
+      "rel": "content/assets/mapped/shoplifters-in-your-shop-detector.jpg",
+      "bytes": 75441,
+      "sha256": "6851459fdcde2a7dc43fdb75c05f0872d54fa7326740bb05fc30b2c8bd6f7837"
+    },
+    {
+      "rel": "content/assets/mapped/shoplifters-in-your-shop-screen.jpg",
+      "bytes": 104654,
+      "sha256": "fee1f8eea6455afc261150b2ee2c39e2f19734a1a302e350ace0266b624367c8"
+    },
+    {
+      "rel": "content/assets/mapped/shoplifters-in-your-shop-thief.jpg",
+      "bytes": 27920,
+      "sha256": "de49c34fab308f180bee9e08c1b74980be9d6c590d416645bcff3b1a6bfcab2e"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-categorysign.jpg",
+      "bytes": 9622,
+      "sha256": "43211b731323240b15b3fd57bffbfec800794fc0f149e2b7cd8c7ffdaa208b30"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-frozen-sign.png",
+      "bytes": 6048,
+      "sha256": "f3d2d693426a9d811fd7d981919fd1dd1b82858f6f4e1c23af0981452a019c38"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-meat-sign.png",
+      "bytes": 9744,
+      "sha256": "9660109c7178571f49115875606b7902c11a2f1c1917c22787568203066c8ac2"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-produce-sign.png",
+      "bytes": 10650,
+      "sha256": "ff2ef43bbe327472762738636719ea81714572669e7ebf47ffb96d203582dba9"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-toilet-sign.png",
+      "bytes": 8261,
+      "sha256": "50dc00d91652d26a15be592690baa25c6ae9f75c5e1ba7740a19ac3f4bd1166b"
+    },
+    {
+      "rel": "content/assets/mapped/signs-labels-and-organising-wine-sign.png",
+      "bytes": 5987,
+      "sha256": "8ad0b25bc81a8b8d19875a71e12eb089885756094c17318a68fa0036262d5431"
+    },
+    {
+      "rel": "content/assets/mapped/storage-crates-and-the-storage-tab-box.png",
+      "bytes": 2778409,
+      "sha256": "520557a17baabbe3116a5da5edf5bd617eea6abc93e493dccda9365a857b2908"
+    },
+    {
+      "rel": "content/assets/mapped/storage-sections-and-sorting-rack.jpg",
+      "bytes": 92004,
+      "sha256": "c7e7e514fbde1c6252425bdb3d7debb52ec2f2439cca4fda889b93cafbc69139"
+    },
+    {
+      "rel": "content/assets/mapped/store-upgrades-and-licences-licence.jpg",
+      "bytes": 146043,
+      "sha256": "7e85d1e02b07c99fb4783f6e13fd922cd600e84cb9e14019dc10f04ca115a15b"
+    },
+    {
+      "rel": "content/assets/mapped/the-aim-and-its-settings-crosshairs.jpg",
+      "bytes": 43123,
+      "sha256": "4f5dcaa0620736b553bd6da7422e47f19d7e3e52518a8b9115a1a12c4197962f"
+    },
+    {
+      "rel": "content/assets/mapped/the-bakery-counter-display.jpg",
+      "bytes": 176401,
+      "sha256": "56c6c4a6ba10f15fa2c0a130b1c32611e5440226ffe0e03fb54fd4bed3c6aeb9"
+    },
+    {
+      "rel": "content/assets/mapped/the-baseball-bat-court.png",
+      "bytes": 665720,
+      "sha256": "50363257ecce5e4210a264c48883a7bb14d419c3eb5d34f33caf99e8484285b9"
+    },
+    {
+      "rel": "content/assets/mapped/the-baseball-bat-icon.png",
+      "bytes": 60198,
+      "sha256": "18347cbea3f59a63f06b172bcd159fd41cb6a2b691bacfb4a5beb343a4739bb5"
+    },
+    {
+      "rel": "content/assets/mapped/the-body-you-do-not-see-body.png",
+      "bytes": 461615,
+      "sha256": "33353a8063d6185df1469fd6326cc52ccb5b6099d087c6abc0444f8506741bb0"
+    },
+    {
+      "rel": "content/assets/mapped/the-boxes-in-the-back-room-box.jpg",
+      "bytes": 94506,
+      "sha256": "6b89dacbab57fea4c3968250c68f7b7883ec54e3d2fb144b762f629e3ca7a72e"
+    },
+    {
+      "rel": "content/assets/mapped/the-boxes-in-the-back-room-greengrocer.jpg",
+      "bytes": 145024,
+      "sha256": "90785ca198d0191926f0df29b1f799d75ce3bcf11706be7436be43eec8ea31fb"
+    },
+    {
+      "rel": "content/assets/mapped/the-computer-and-the-tablet-scanner-icon.jpg",
+      "bytes": 29887,
+      "sha256": "1acf13f71824035b045a73845910e7b079cd1f40242e350e10dcb39f5942fba8"
+    },
+    {
+      "rel": "content/assets/mapped/the-computer-and-the-tablet-tablet-and-scanner.png",
+      "bytes": 126433,
+      "sha256": "a9454a4937beff900716740df9a5e68d711e54bfa646bd6f1d69d0bbf616f5b9"
+    },
+    {
+      "rel": "content/assets/mapped/the-computer-and-the-tablet-tablet.jpg",
+      "bytes": 14812,
+      "sha256": "cd3ac7cfca7c1a14d279f6fe85cdaeebaed10f2d29c3be57217d04603ea4ad1d"
+    },
+    {
+      "rel": "content/assets/mapped/the-controls-the-menus-are-built-from-sheet.jpg",
+      "bytes": 228652,
+      "sha256": "6a77beeed35ec09101f90ea6daabac8b33eb535beb37d83a197c7534e8a0ea3a"
+    },
+    {
+      "rel": "content/assets/mapped/the-crates-you-buy-crate.jpg",
+      "bytes": 35760,
+      "sha256": "5aef73e2a761dcbb9dd6d9698460d45d919822a6af1fdfdb0aa26b2bd053ede6"
+    },
+    {
+      "rel": "content/assets/mapped/the-day-cycle-sun.png",
+      "bytes": 50794,
+      "sha256": "98ac74fe31614030bb3909a143bfef2dbeb6064ec670c406c1b7b1c34f624062"
+    },
+    {
+      "rel": "content/assets/mapped/the-devices-the-game-can-shake-controller.png",
+      "bytes": 1391,
+      "sha256": "71c5a56da21423f315108552dee17dbef815ae0246eb59823f09ab4d8e58f723"
+    },
+    {
+      "rel": "content/assets/mapped/the-display-behind-the-shelf-display.jpg",
+      "bytes": 74134,
+      "sha256": "33a9fab62ebffddc3f48d8b7885d3c25694659779e6de18d3f2a318e066bd8ca"
+    },
+    {
+      "rel": "content/assets/mapped/the-drinks-the-shop-carries-cola.png",
+      "bytes": 100417,
+      "sha256": "737d210e13e50dddd8f68d69c7fdc9c52ea0cb16aec2f6e043609791730ddc40"
+    },
+    {
+      "rel": "content/assets/mapped/the-drinks-the-shop-carries-juice.png",
+      "bytes": 169425,
+      "sha256": "1a3cd20df732d3170ee63c059278b93deb1a3c2b039cd401dc41a166577fdc1f"
+    },
+    {
+      "rel": "content/assets/mapped/the-drinks-the-shop-carries-wine.png",
+      "bytes": 83716,
+      "sha256": "a3b2d9a5604f6ef412071638ebbaf615bc47cbce9eb8a185f084e5d1500d8367"
+    },
+    {
+      "rel": "content/assets/mapped/the-expansion-packs-clothing.png",
+      "bytes": 158210,
+      "sha256": "ad07cc613aa88337c08a99563f752496ffe61805ad3042373dc2678046da8aee"
+    },
+    {
+      "rel": "content/assets/mapped/the-expansion-packs-electronics.png",
+      "bytes": 148896,
+      "sha256": "46928f3e0e7ac85b08901e9cf12837a882fc71dc6b46acd039ca22fb429172fc"
+    },
+    {
+      "rel": "content/assets/mapped/the-fresh-produce-in-the-shop-artichoke.png",
+      "bytes": 191328,
+      "sha256": "e8ca9f57fd63674fd7bfd93cc12a8d1ffe233a8ace3564c74ea48b7676ee2463"
+    },
+    {
+      "rel": "content/assets/mapped/the-fridges-and-freezers-freezer.png",
+      "bytes": 115714,
+      "sha256": "a874c6a65fba778eef435ed70e9b9ae4878003e94b586210acd6df057c7b3a97"
+    },
+    {
+      "rel": "content/assets/mapped/the-fridges-and-freezers-fridge.png",
+      "bytes": 87307,
+      "sha256": "b54b42fb0caf363687be9937d91feb4f9f5b91f997abf203ee72e81eae59a882"
+    },
+    {
+      "rel": "content/assets/mapped/the-fridges-and-freezers-single-freezer.png",
+      "bytes": 113696,
+      "sha256": "3c3108d288c4225958ae215cd82792ab25de851bb5b72157c197a213e844b4a6"
+    },
+    {
+      "rel": "content/assets/mapped/the-global-map-and-its-markers-pin.jpg",
+      "bytes": 25777,
+      "sha256": "1058bd25246b590ff35d1ea9689890b618f24b25f483102eb750ce41be5325cf"
+    },
+    {
+      "rel": "content/assets/mapped/the-hints-and-pings-the-game-gives-hint.jpg",
+      "bytes": 110875,
+      "sha256": "e5d362547e9c029ac5c140806a6aa911776d7592505340fea2bdf910fcfa6c5a"
+    },
+    {
+      "rel": "content/assets/mapped/the-janitor-icon.png",
+      "bytes": 41254,
+      "sha256": "f7cf7655b66f7062ad24af104506c138eda25f061b8b944510953aab2b30a379"
+    },
+    {
+      "rel": "content/assets/mapped/the-lights-and-the-switches-handle.png",
+      "bytes": 4491,
+      "sha256": "3f817e1ca736bc7d37c0a2e643068191af79b56df8b1189b3bc87e452ae3902b"
+    },
+    {
+      "rel": "content/assets/mapped/the-lights-and-the-switches-spot-icon.png",
+      "bytes": 57791,
+      "sha256": "c038c389338bc135c7086a61ed42dcc2abf20bb66a8ce4f47bfa64ded23175b0"
+    },
+    {
+      "rel": "content/assets/mapped/the-line-icons-the-game-draws-shopping.png",
+      "bytes": 2541,
+      "sha256": "dd2befa8592336ab8caad7b401d29caf561fe3a2a3a1ba6f556109ec132e0fd5"
+    },
+    {
+      "rel": "content/assets/mapped/the-line-icons-the-game-draws-tool.png",
+      "bytes": 1368,
+      "sha256": "9a60a5ce8969bd3bbf70206f8efa016778557eaaace71290ac1372dd8a5779ce"
+    },
+    {
+      "rel": "content/assets/mapped/the-line-icons-the-game-draws-weather.png",
+      "bytes": 2986,
+      "sha256": "ca69919559f539395c88322358544803e91e30e8395bf32a1032d6e61654afb1"
+    },
+    {
+      "rel": "content/assets/mapped/the-list-you-buy-from-box.jpg",
+      "bytes": 41535,
+      "sha256": "b10b908fdca44488ffdaae72a8d81ebbe5cf8430a4ed0c627f8300f0879202cf"
+    },
+    {
+      "rel": "content/assets/mapped/the-local-market-and-product-costs-market.jpg",
+      "bytes": 69731,
+      "sha256": "f564db136983db81d7875dac1ebfa8f134ea969cc9a997a444077522e3da03f4"
+    },
+    {
+      "rel": "content/assets/mapped/the-machinery-behind-each-job-glue-gun.png",
+      "bytes": 130670,
+      "sha256": "36dd4fa30fcbaecc2408b0622390a12e95476a3bb165c354ef5864a4b7e12608"
+    },
+    {
+      "rel": "content/assets/mapped/the-machinery-behind-each-job-level-set.png",
+      "bytes": 65692,
+      "sha256": "2b3e5f8ffa67aeff8f4c89b40b4b99cc75b0b3e820e82a18af3fc194156b1652"
+    },
+    {
+      "rel": "content/assets/mapped/the-machinery-behind-each-job-tape-measure.png",
+      "bytes": 96192,
+      "sha256": "16723ea8bae22eae5336da312f16cc9a5445c382e72f8dc2bf3e3e690ed9f1ff"
+    },
+    {
+      "rel": "content/assets/mapped/the-machinery-behind-each-job-toolbox.png",
+      "bytes": 92515,
+      "sha256": "c72ebe59b1116b4da6eb40c1aff766fd4920b8667bb805398b417efa3f8bed52"
+    },
+    {
+      "rel": "content/assets/mapped/the-management-tabs-bar-frame.png",
+      "bytes": 3222,
+      "sha256": "81aa902a50fcd7a422f6861901116256e965ffa44b9f16a5f25743294f64f8c2"
+    },
+    {
+      "rel": "content/assets/mapped/the-management-tabs-item-frame.png",
+      "bytes": 1815,
+      "sha256": "06d0398dcb26b58ca56a520bcdd17afd00f6bfa3478450776b52aaf65bdb32a2"
+    },
+    {
+      "rel": "content/assets/mapped/the-meat-and-dairy-section-cheese.png",
+      "bytes": 219426,
+      "sha256": "aa0ec1bee569f649645c38bf0e5932b79551a6ab971ff3b2b0d91979c9f3afaf"
+    },
+    {
+      "rel": "content/assets/mapped/the-meat-and-dairy-section-eggs.png",
+      "bytes": 129378,
+      "sha256": "b2ebbfe99c57f9aa18c9d2e7048e3dd9d51cdccea223910d8279ef93a86db32b"
+    },
+    {
+      "rel": "content/assets/mapped/the-meat-and-dairy-section-milk.png",
+      "bytes": 147444,
+      "sha256": "d6247c343a50c7f2ba7f82f6e5e2d1bd1aa03c15a0966652c4c278bf7e9ac1c5"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-the-game-opens-on-background-2.jpg",
+      "bytes": 69880,
+      "sha256": "9df306b041d5642201b3be215f167ae392334da0ad9d72066427700c935c799e"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-the-game-opens-on-background.jpg",
+      "bytes": 56443,
+      "sha256": "6d74f7d58ef10cb6a1e7891ee1ad0d043a6dc86715585cb58e16b75cd1758cff"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-the-game-opens-on-title.jpg",
+      "bytes": 37945,
+      "sha256": "79b1c51cbff77f322f17a3fd57d0afab3c1d942e97de8836cd8b080cd63b10b7"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-back.png",
+      "bytes": 2070,
+      "sha256": "a5f27c400a5eefb53eb5dcc033516365e8884f2be09e6cb3912f1375f2587b7f"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-menu.jpg",
+      "bytes": 1554,
+      "sha256": "1de689ae01b162bd1c9cbd9e127e54ce4762b61b94ce7ff7e47b670435e0eb36"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-next.png",
+      "bytes": 1432,
+      "sha256": "a1f2482dbbb66d6d47cbbb05a0afdf6137181d089cff5c30f7701659c127694f"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-previous.png",
+      "bytes": 1515,
+      "sha256": "6ba64a7e898addb797e484a96d36bd389e3e4d5bb68e5fc166271284acef6c90"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-search.png",
+      "bytes": 2262,
+      "sha256": "62542321dac2cc191f022cdcc74c9494af1ee295897d502550981909c305e671"
+    },
+    {
+      "rel": "content/assets/mapped/the-menu-you-pause-into-wifi.png",
+      "bytes": 1026,
+      "sha256": "e002d68d21993fc4eb94104f7400dfc679b844c5d57c8f7e416603ebc46af489"
+    },
+    {
+      "rel": "content/assets/mapped/the-mode-you-place-things-in-grid.png",
+      "bytes": 14613,
+      "sha256": "a42bb4880df5470613f95bcaf5de295ab5872b31be50b911de5d42549c4e7547"
+    },
+    {
+      "rel": "content/assets/mapped/the-notebook-your-orders-are-written-in-order.jpg",
+      "bytes": 14203,
+      "sha256": "327157f785f43a089c2c3629950d614c40a6a6c119288008358741159604831d"
+    },
+    {
+      "rel": "content/assets/mapped/the-oven-and-the-baker-display.png",
+      "bytes": 154427,
+      "sha256": "00d3aaad064a0e5bd58924a5225854aaab1378c2399cdcfbbc2a33ad948052f5"
+    },
+    {
+      "rel": "content/assets/mapped/the-oven-and-the-baker-frozen-bread.jpg",
+      "bytes": 44436,
+      "sha256": "130f5aea42e1c9bf6c686b92677e0127f20254f73e19ae2fdea51a53c5e90c89"
+    },
+    {
+      "rel": "content/assets/mapped/the-oven-and-the-baker-oven.jpg",
+      "bytes": 28051,
+      "sha256": "1c55349b2a1af0a14d393631d21a54479209bc5911bf26905b0f8da7c941a9e9"
+    },
+    {
+      "rel": "content/assets/mapped/the-plants-and-planters-flowers.png",
+      "bytes": 312840,
+      "sha256": "8dc00f90158e188774485135824268b226694cbf17cc7cce490f156611a05b32"
+    },
+    {
+      "rel": "content/assets/mapped/the-popups-in-the-game-info.png",
+      "bytes": 2631,
+      "sha256": "88ef8af1e998bce9ace68767b575a882c11645fc4a0efa4ea2403c72fa65eedf"
+    },
+    {
+      "rel": "content/assets/mapped/the-racks-the-back-room-uses-small-rack.png",
+      "bytes": 143692,
+      "sha256": "d8a2c9a257bd7a6139ed395bd724ba584565c0f6bd89d21781f519bd82d38083"
+    },
+    {
+      "rel": "content/assets/mapped/the-racks-the-back-room-uses-tall-rack.jpg",
+      "bytes": 37728,
+      "sha256": "4a2587e532f014e555812d4ee037e55cfc88b6b7ee2513fbfe615ff251a82272"
+    },
+    {
+      "rel": "content/assets/mapped/the-road-traffic-and-its-signals-signs.jpg",
+      "bytes": 90622,
+      "sha256": "9cfd1ad8b52ac07a7e7d91b0b107d2e4a58c917c3b388e0a5a14ff0f4ffe3f63"
+    },
+    {
+      "rel": "content/assets/mapped/the-rubbish-and-where-it-goes-bags.jpg",
+      "bytes": 30368,
+      "sha256": "19a20a587df99a9a308ceaa4344530d51ae5eac142563e88366ef37e720e6478"
+    },
+    {
+      "rel": "content/assets/mapped/the-rubbish-and-where-it-goes-bin.jpg",
+      "bytes": 39893,
+      "sha256": "2b20cc6323c8e8d1943947108cac04d487af9920ed4a45373208bd38698f1b2f"
+    },
+    {
+      "rel": "content/assets/mapped/the-self-checkout-and-its-rules-machine.jpg",
+      "bytes": 25658,
+      "sha256": "5381a8c299680023792f07a550bb7260aee791192c81165be68bf98f767f1088"
+    },
+    {
+      "rel": "content/assets/mapped/the-settings-and-the-keys-you-can-change-screen.jpg",
+      "bytes": 64852,
+      "sha256": "da7de4d7af270db859b135251136947e3201faecdd0c2b53ecc1fd4ca895e75c"
+    },
+    {
+      "rel": "content/assets/mapped/the-shop-computer-computer.jpg",
+      "bytes": 63250,
+      "sha256": "4b099e6710b31d49987dec64a3d3f4e8a9cf2a8411c42c45674fda2c65359b75"
+    },
+    {
+      "rel": "content/assets/mapped/the-shop-entrance-trim.jpg",
+      "bytes": 76838,
+      "sha256": "7a6ad5b36247a3850d59cafad19c8b254cdcb8e0187d597857ad30a283b5661c"
+    },
+    {
+      "rel": "content/assets/mapped/the-shop-windows-and-the-glass-atlas.png",
+      "bytes": 427705,
+      "sha256": "afa42c0497da24ae1a5a5a437fa74e87d4e9fe59ee2e69d872c3e6c51aaaa93d"
+    },
+    {
+      "rel": "content/assets/mapped/the-shop-windows-and-the-glass-shards.png",
+      "bytes": 5098,
+      "sha256": "808fa4357af8304b802ca197fb9f3a555e1293e94997c5b3dc9fe187a47e80c4"
+    },
+    {
+      "rel": "content/assets/mapped/the-shops-status-its-doors-and-its-ground-doors.jpg",
+      "bytes": 100863,
+      "sha256": "a0938cc8f0e5f88b9b6c94d500ac504428cea9cc37fdc7be96f541509964c44d"
+    },
+    {
+      "rel": "content/assets/mapped/the-storage-lights-and-door-door.jpg",
+      "bytes": 100863,
+      "sha256": "a0938cc8f0e5f88b9b6c94d500ac504428cea9cc37fdc7be96f541509964c44d"
+    },
+    {
+      "rel": "content/assets/mapped/the-street-outside-gas.jpg",
+      "bytes": 10836,
+      "sha256": "b45c6a6955bf8befc98b1bc6e46c669811206fc7d7877710d890523c7b3aef2e"
+    },
+    {
+      "rel": "content/assets/mapped/the-street-outside-gassign.jpg",
+      "bytes": 51457,
+      "sha256": "afcca3fa9b9c34f7e076ba4d174acee71de0897b3e27197c3a5309013e7018da"
+    },
+    {
+      "rel": "content/assets/mapped/the-till-and-its-monitor-screen.jpg",
+      "bytes": 14437,
+      "sha256": "ed30d904e90cfa3fc5e6231821dd842985915f485b0c1b88ca0e874cd749a213"
+    },
+    {
+      "rel": "content/assets/mapped/the-till-and-its-screens-take-money-back.jpg",
+      "bytes": 62003,
+      "sha256": "60fe169ae9bdbcf0bbfb5c939581ef42b43e18f1d2b9e06c8e819d6daf1e47c5"
+    },
+    {
+      "rel": "content/assets/mapped/the-tutorials-that-point-you-at-things-hint.jpg",
+      "bytes": 110875,
+      "sha256": "e5d362547e9c029ac5c140806a6aa911776d7592505340fea2bdf910fcfa6c5a"
+    },
+    {
+      "rel": "content/assets/mapped/the-vehicles-you-can-use-car.jpg",
+      "bytes": 27113,
+      "sha256": "9d90138eef437936b202cb56e0947c36df4605bdb99bbf263b87bfb869b40029"
+    },
+    {
+      "rel": "content/assets/mapped/the-warnings-the-game-shows-cleaning.jpg",
+      "bytes": 95581,
+      "sha256": "48a2913d1da759899e67c07d81250a331e8449e3b75eea35104b4a66be13f813"
+    },
+    {
+      "rel": "content/assets/mapped/the-warnings-the-game-shows-security.jpg",
+      "bytes": 66331,
+      "sha256": "7c09b9744c9178494c80c873edc705681ac1667970e802bf053f8c1bc86719d7"
+    },
+    {
+      "rel": "content/assets/mapped/the-weighing-scale-produce-screen.jpg",
+      "bytes": 104773,
+      "sha256": "f52ae82d46d6f0c0091d6c0138fd2e5ac0167d69de83c36075c7084d70a68927"
+    },
+    {
+      "rel": "content/assets/mapped/the-weighing-scale-scale.jpg",
+      "bytes": 73962,
+      "sha256": "ffdfbc63be4ad70b8e7e338772ad81c148a4c094b6f6dad998bb653f367b11da"
+    },
+    {
+      "rel": "content/assets/mapped/vending-machines-machine.jpg",
+      "bytes": 44008,
+      "sha256": "d2574ce67ba364382e80a0bfd4e8e45cbb33a53c35733c5e7be06d93e5f8aeb5"
+    },
+    {
+      "rel": "content/assets/mapped/watching-your-vending-machines-computer-icon.jpg",
+      "bytes": 14107,
+      "sha256": "15525306078e93737b8f8cd2ce81deab91d7dccc94ab1fbc69fb6d0f5a10e037"
+    },
+    {
+      "rel": "content/assets/mapped/watching-your-vending-machines-machine.jpg",
+      "bytes": 27502,
+      "sha256": "4a6140da72551f9025d32284ac1b12a5a8756ed401eb601d10bd0e15779f40b7"
+    },
+    {
+      "rel": "content/assets/mapped/what-the-customers-say-bubble.png",
+      "bytes": 3130,
+      "sha256": "e02cc6a09767172d1545d067aefa8864e9f991fea0a8c5f5254e4be9cf4f8503"
+    },
+    {
+      "rel": "content/assets/mapped/what-the-customers-say-small-bubble.png",
+      "bytes": 1884,
+      "sha256": "666554bcacf4d14a8e69b0bd8eac37e80983aec28fbe2a582bcf4904a2185001"
+    },
+    {
+      "rel": "content/assets/mapped/what-your-shop-spends-money.jpg",
+      "bytes": 300739,
+      "sha256": "ff174abfdebaec398de77256b29a259867027caae806a7f1cb06671481fbd233"
+    },
+    {
+      "rel": "content/assets/mapped/which-version-this-site-documents-early-access.png",
+      "bytes": 25661,
+      "sha256": "fb60a743f929ab781efde5ae004c1ee6d1a40d43783c5a04b9e86c4a618a4989"
+    },
+    {
+      "rel": "content/assets/mapped/who-comes-into-the-shop-cloth.jpg",
+      "bytes": 29740,
+      "sha256": "0766f03ee39e6e30956dbecc1248a5ba3b60d380f26c4e33e6e10e64d0265f01"
+    },
+    {
+      "rel": "content/assets/mapped/who-keeps-the-shop-clean-janitor.jpg",
+      "bytes": 48294,
+      "sha256": "c4b08c1f31b1a9c9b4c7cfc0c35d3f0fbad9416b22d9ba80e7a2035a32a94871"
+    },
+    {
+      "rel": "content/assets/mapped/wholesale-offers-and-discounts-icon.jpg",
+      "bytes": 53977,
+      "sha256": "0099371e0336e17f7e4fae6f8535085d32957bf6c21bd8e056faa86fcc88a2de"
+    },
+    {
+      "rel": "content/assets/missions-and-the-objectives-the-game-sets.svg",
+      "bytes": 1933,
+      "sha256": "2b334f6fe40ce153b6406ef6de7b51f3ace3aeb24ff7f821e23753be4816c951"
+    },
+    {
+      "rel": "content/assets/mixing-paint-and-picking-a-colour.svg",
+      "bytes": 1926,
+      "sha256": "1e3d1dc527e68bff78eeb6025aab9dca91a08c7403c21593e5cdeb11d5ec05f2"
+    },
+    {
+      "rel": "content/assets/music-in-your-shop.svg",
+      "bytes": 1915,
+      "sha256": "760f4e80f489517428a41cd49a00e1ed68bba595fbc918827c1a215fce78d563"
+    },
+    {
+      "rel": "content/assets/orders-and-what-you-can-order.svg",
+      "bytes": 1916,
+      "sha256": "bdf686376ffc8c4b45b84b965d7a46aecd4a643ad89c504f28a54ef7c94141f6"
+    },
+    {
+      "rel": "content/assets/painting-the-walls.svg",
+      "bytes": 1929,
+      "sha256": "1b4f9f1c455529c7294a1bbe6feac0cc5217dbd718f88bd0afdc0c968f6c65f7"
+    },
+    {
+      "rel": "content/assets/paper-bags-and-packing-a-purchase.svg",
+      "bytes": 1920,
+      "sha256": "2316ccc7e38b319a0c9beb57c8a6f32a88bbaccdce3d4b5c25a38598a01bca49"
+    },
+    {
+      "rel": "content/assets/paying-by-card-or-cash.svg",
+      "bytes": 1933,
+      "sha256": "d359dcd6830ef50f219e81022d2549b937624e31513396f6ae8ef23026368184"
+    },
+    {
+      "rel": "content/assets/playing-with-a-controller.svg",
+      "bytes": 1927,
+      "sha256": "87532bd098da7b577c198e2e1adfb84e565fdc12b16617120a2cad3579640190"
+    },
+    {
+      "rel": "content/assets/questions-players-ask.svg",
+      "bytes": 1908,
+      "sha256": "8271c41ae1e90e3e033189de1ad8ab071c5010fa65c110dff11787e0894a4446"
+    },
+    {
+      "rel": "content/assets/raising-your-storage-and-shop-level.svg",
+      "bytes": 1939,
+      "sha256": "351c93b496cbc01a721ec60f73e40892a520300aafd046119a046e84c3927d6b"
+    },
+    {
+      "rel": "content/assets/repaying-a-loan-payment-by-payment.svg",
+      "bytes": 1940,
+      "sha256": "fb9fc86448a27faae36fa87459b9df34952e1caea83fb28c80fe9c4d89431c99"
+    },
+    {
+      "rel": "content/assets/restock-areas-and-vehicles.svg",
+      "bytes": 1933,
+      "sha256": "57081d650df3651f9a1b242bae859abf15761713686e73c9e11e599f4eae15b9"
+    },
+    {
+      "rel": "content/assets/restocking-shelves.svg",
+      "bytes": 1917,
+      "sha256": "b3a45b61c73700f12ee6b87c38c6242dee0152b37a0f9c0abdb2e53ed5e0d7c0"
+    },
+    {
+      "rel": "content/assets/running-a-shop-with-other-players.svg",
+      "bytes": 1931,
+      "sha256": "96e4bb7643ff61da1da0b7896e01607b03819406780809f307e19af22311a2f1"
+    },
+    {
+      "rel": "content/assets/save-slots-and-what-each-one-holds.svg",
+      "bytes": 1931,
+      "sha256": "d3d43d39f358f8f5144a044d0373d88e8e9d4b05f7450c6afa98ed12b56a19f3"
+    },
+    {
+      "rel": "content/assets/security-cameras-and-guards.svg",
+      "bytes": 1922,
+      "sha256": "9b189eb7bef695770a11a8c2f20775d2a9663ff8b5566c568e6c4569b47f703f"
+    },
+    {
+      "rel": "content/assets/serving-ice-cream.svg",
+      "bytes": 1929,
+      "sha256": "bdd00deb97018369528dae65d0a1387320d310037091ae0a1c557bbd6c07ee8f"
+    },
+    {
+      "rel": "content/assets/setting-prices-in-bulk.svg",
+      "bytes": 1907,
+      "sha256": "899c575253c6728d8705154fc9b0b4d82e3a18ac9247ae4b83094df63cca1e76"
+    },
+    {
+      "rel": "content/assets/shelf-slots-and-display-space.svg",
+      "bytes": 1933,
+      "sha256": "d000eeffda8f9c1230e1abc71a84437ad12c06a39f12271f53d96cd5c49f7115"
+    },
+    {
+      "rel": "content/assets/shoplifters-in-your-shop.svg",
+      "bytes": 1940,
+      "sha256": "2bebd3c5c45fba8fbcd19bec49be75c2945c374b3eaa6d81150cda0981310b76"
+    },
+    {
+      "rel": "content/assets/signs-labels-and-organising.svg",
+      "bytes": 1924,
+      "sha256": "2b791ace81dfa28de511869083ce1ce622a5f12ca65e5c10175d85b7ff706111"
+    },
+    {
+      "rel": "content/assets/storage-crates-and-the-storage-tab.svg",
+      "bytes": 1905,
+      "sha256": "a3429c0f691c9d8a33d7a90194c4ce76c4850245e51cef467530f6a324cd35d2"
+    },
+    {
+      "rel": "content/assets/storage-sections-and-sorting.svg",
+      "bytes": 1920,
+      "sha256": "bf6b676af6bf15aa3d8a2d342872f6c511301b0d3ac17d4ff04c938146ff05a2"
+    },
+    {
+      "rel": "content/assets/store-upgrades-and-licences.svg",
+      "bytes": 1926,
+      "sha256": "e8928ac94526515fb082b5cfacf14cd3786ed1e0ddc9a11b8e14dd96f4bf3af1"
+    },
+    {
+      "rel": "content/assets/the-aim-and-its-settings.svg",
+      "bytes": 1904,
+      "sha256": "5bd8a43e7f3163b4e48523903ea7a1e531c771cda69e2bcbd62f2c82d2cbbd0e"
+    },
+    {
+      "rel": "content/assets/the-animations-your-body-plays.svg",
+      "bytes": 1942,
+      "sha256": "6333c756f1c1c600a0a86e1856a581fed3a1c7676826512560a93e63972f4ef3"
+    },
+    {
+      "rel": "content/assets/the-bakery-counter.svg",
+      "bytes": 1928,
+      "sha256": "fd839012014b00953c54010401b533603f74a9e13f92f47c2470dd9b0342cf4c"
+    },
+    {
+      "rel": "content/assets/the-barcodes-and-the-scanner.svg",
+      "bytes": 1949,
+      "sha256": "e21bae7fe831782c74b430cf121bb5b4942b3d4e0b7b3121e576ad5a22238542"
+    },
+    {
+      "rel": "content/assets/the-body-you-do-not-see.svg",
+      "bytes": 1958,
+      "sha256": "ec5e1c0bf9d225b6de57d5b37d23a32e68d3853dc42020044ae0d5b818c9cc3d"
+    },
+    {
+      "rel": "content/assets/the-camera-you-play-through.svg",
+      "bytes": 1957,
+      "sha256": "c9edffbdb8b858bfd57355c46a2b3bb3a8aa95895f53e86da99f958b25dcd786"
+    },
+    {
+      "rel": "content/assets/the-controls-the-menus-are-built-from.svg",
+      "bytes": 1965,
+      "sha256": "86084bcc12f015b6c0c6ae8166427ffb6e6f0e4f0c332e3be5cba1b301b545a0"
+    },
+    {
+      "rel": "content/assets/the-crates-you-buy.svg",
+      "bytes": 1901,
+      "sha256": "6910f65da9efe20d4bbba8209b7d25a87c620692de3bbf97ffb8e180cb1c20c8"
+    },
+    {
+      "rel": "content/assets/the-day-cycle.svg",
+      "bytes": 1928,
+      "sha256": "3d53e38edd1cf7bf14516ab7be337e464015b6f2cc883f52703d0f5b3eade64d"
+    },
+    {
+      "rel": "content/assets/the-day-results-screen-and-what-it-counts.svg",
+      "bytes": 1939,
+      "sha256": "287fecc55034b34c03d906c73a73432dd63fa6cc04fe2e1fbf887f8d0927ff43"
+    },
+    {
+      "rel": "content/assets/the-devices-the-game-can-shake.svg",
+      "bytes": 1925,
+      "sha256": "037043afcc6d95482083812a8e8dd48c43db2f29dd8e3c1e1f4d5d498997405c"
+    },
+    {
+      "rel": "content/assets/the-display-behind-the-shelf.svg",
+      "bytes": 1957,
+      "sha256": "57c257404771e0db5367b9370a96573cd70090fc632822a58856e9b13378ce26"
+    },
+    {
+      "rel": "content/assets/the-expansion-packs.svg",
+      "bytes": 1943,
+      "sha256": "3755882d3840427624d9cbc2aea5449fc3f5d1c978efaad64269265ed06b4709"
+    },
+    {
+      "rel": "content/assets/the-global-map-and-its-markers.svg",
+      "bytes": 1908,
+      "sha256": "941ddb845e0c17128fb53f2e484136525665f481b42e5f37bef738a802119e94"
+    },
+    {
+      "rel": "content/assets/the-hints-and-pings-the-game-gives.svg",
+      "bytes": 1955,
+      "sha256": "8dedb6189bcd4d1ad6067db3baaa138af4e35c885a13e64eba33ae2f991eb357"
+    },
+    {
+      "rel": "content/assets/the-janitor.svg",
+      "bytes": 1909,
+      "sha256": "0c9f4c5bdc8a3308355a5c6f3c8ea461a7804599d644afcf9bedb626f260a04d"
+    },
+    {
+      "rel": "content/assets/the-kinds-of-missions-the-game-builds.svg",
+      "bytes": 1972,
+      "sha256": "3ecbd70fa1af07074487eb0fba206e490a7bec0759af38365f4e98599a5708e0"
+    },
+    {
+      "rel": "content/assets/the-lights-and-the-switches.svg",
+      "bytes": 1930,
+      "sha256": "5e58d2e3d23670d38385df7883d4464700fd00f0138f61a384c77cb6d06f31c2"
+    },
+    {
+      "rel": "content/assets/the-local-market-and-product-costs.svg",
+      "bytes": 1911,
+      "sha256": "47544b63dff910e493589a4ae9c55fbd3bc7ff8049cb41defd9a63bbd197c7a2"
+    },
+    {
+      "rel": "content/assets/the-machinery-behind-each-job.svg",
+      "bytes": 1963,
+      "sha256": "ea92889b8ec316957eb04c87197a7f9cf913bcc9fdc58b90b97b27d2057abaff"
+    },
+    {
+      "rel": "content/assets/the-management-tabs.svg",
+      "bytes": 1916,
+      "sha256": "3ff56846ece1b41dc853e6c4252d4c4977a7532b23a23f1d264083decf077929"
+    },
+    {
+      "rel": "content/assets/the-menu-you-pause-into.svg",
+      "bytes": 1943,
+      "sha256": "99102395d3ef5cd98807660e3bd7bf0c1b4d5749b66312d724da88f46af5a2bf"
+    },
+    {
+      "rel": "content/assets/the-mode-you-place-things-in.svg",
+      "bytes": 1965,
+      "sha256": "c6f16b658758733da2d192a6e2a283ddc9f69093c7bb5a9643eeed2703803207"
+    },
+    {
+      "rel": "content/assets/the-networked-copies-in-a-shared-shop.svg",
+      "bytes": 2458,
+      "sha256": "b5990039cadb81a63d547a96c75122f38c35674e1a3b7323db7d673801757412"
+    },
+    {
+      "rel": "content/assets/the-notebook-your-orders-are-written-in.svg",
+      "bytes": 1961,
+      "sha256": "974b7f9699a97355659dafe5c34ce264ff150c91333c23fa997446392a7d7550"
+    },
+    {
+      "rel": "content/assets/the-popups-in-the-game.svg",
+      "bytes": 1915,
+      "sha256": "fb95fa963b549168c086fa5572bce289049ce5b930ce637e6cfadb14e14e39cb"
+    },
+    {
+      "rel": "content/assets/the-pricing-screen-and-how-a-price-is-chosen.svg",
+      "bytes": 1955,
+      "sha256": "91ede81e439c59b0c1d40117e38442908eb1409f83642af765b1ae5018aceb27"
+    },
+    {
+      "rel": "content/assets/the-racks-the-back-room-uses.svg",
+      "bytes": 1950,
+      "sha256": "67c5772bb8a0839d724f0e09afd340a8d2ba971c2b8e7e3d10886173c53dd1a9"
+    },
+    {
+      "rel": "content/assets/the-self-checkout-and-its-rules.svg",
+      "bytes": 1932,
+      "sha256": "25806ce90f0554fdcac5f150003e1b8a4b67a2168338461405208652b41afd95"
+    },
+    {
+      "rel": "content/assets/the-settings-and-the-keys-you-can-change.svg",
+      "bytes": 1929,
+      "sha256": "fe6648d24438eea3d7e309e1cebf4dff411ff08e4c65e61182ace353c1aaade9"
+    },
+    {
+      "rel": "content/assets/the-shop-computer.svg",
+      "bytes": 1950,
+      "sha256": "06132fece4e7ce06f22420493e7b62ebab1532c61a6d9ae23f6e72b24887e886"
+    },
+    {
+      "rel": "content/assets/the-shop-entrance.svg",
+      "bytes": 1923,
+      "sha256": "5e016d51a0f12dc0c169aca980c35ddab350f0cabfaf035e55bc17adcf892858"
+    },
+    {
+      "rel": "content/assets/the-storage-lights-and-door.svg",
+      "bytes": 1932,
+      "sha256": "89b67b56e7f1e2f46e49f226eac112cdeba53f7c5d98ec7068c6adc885e96095"
+    },
+    {
+      "rel": "content/assets/the-street-outside.svg",
+      "bytes": 1925,
+      "sha256": "6cf7632844e99ccb8c4ed6ea27e701277980890aa745442686e4c7f9eed0635a"
+    },
+    {
+      "rel": "content/assets/the-task-layer-under-the-missions.svg",
+      "bytes": 1938,
+      "sha256": "678409d5cd795892ca7f7cb0a77b9fd742e4eb79c24c4636e44e88ff3b70a9d3"
+    },
+    {
+      "rel": "content/assets/the-tutorials-that-point-you-at-things.svg",
+      "bytes": 1943,
+      "sha256": "81571cb73dff057e424b831b7dedeafd37e7b9bbb3a290678071d1f1b982b3d7"
+    },
+    {
+      "rel": "content/assets/the-vehicles-you-can-use.svg",
+      "bytes": 1890,
+      "sha256": "ac983caeab255661bf47ac4a5f4342d6ec91636ee11e499a96268f762da6c12f"
+    },
+    {
+      "rel": "content/assets/the-warnings-the-game-shows.svg",
+      "bytes": 1931,
+      "sha256": "a6aa5f9c8e3b47f8e6f4fa927934d76f253e181d5bc60515af44460a4c9d059d"
+    },
+    {
+      "rel": "content/assets/the-weighing-scale.svg",
+      "bytes": 1933,
+      "sha256": "248378211d213ff1dbc62d80ee893dda6ad2bff2cc7e0b0ab122206c6b90951b"
+    },
+    {
+      "rel": "content/assets/the-window-the-money-tabs-live-in.svg",
+      "bytes": 1934,
+      "sha256": "03641406637a74c98f74e872d11d7f8f4bcfbf75ab0fb0122fdeac71eb7b4ac6"
+    },
+    {
+      "rel": "content/assets/vending-machines.svg",
+      "bytes": 1944,
+      "sha256": "ff7bd2aa05b2702c4b7165556560eb871996913a26092a78144fc0ff21fba0f8"
+    },
+    {
+      "rel": "content/assets/what-a-shared-shop-keeps-in-step.svg",
+      "bytes": 1960,
+      "sha256": "930fc8228e410fcec31f1e5d9f9c77286ad926cd4a8f6221951d0119b11f55db"
+    },
+    {
+      "rel": "content/assets/what-the-game-keeps-about-an-employee.svg",
+      "bytes": 2071,
+      "sha256": "bab3bed5d5ea6ec2ba21e110a23b2e66fc3b1ef222e4b8aa9435e6c6eb7f2b71"
+    },
+    {
+      "rel": "content/assets/what-your-shop-spends.svg",
+      "bytes": 1934,
+      "sha256": "7c5579097461f4f2925d4259a2f79e796aefb30f53fc5f25cc97b03a02e5468a"
+    },
+    {
+      "rel": "content/assets/which-version-this-site-documents.svg",
+      "bytes": 1933,
+      "sha256": "734187fbf2b3e5e120b82242bc416c6ed70017536bff6053acc70320546128f5"
+    },
+    {
+      "rel": "content/assets/who-comes-into-the-shop.svg",
+      "bytes": 1930,
+      "sha256": "52ae453be94555d0dd26cf8859207eeb0cc81b7e46e43d1590d6e87e40d19a11"
+    },
+    {
+      "rel": "content/assets/who-keeps-the-shop-clean.svg",
+      "bytes": 1913,
+      "sha256": "e221d7b28b70b49a4a184895317de713f42b927732b3f3fc295d6b1f4adf2ca8"
+    },
+    {
+      "rel": "content/assets/wholesale-offers-and-discounts.svg",
+      "bytes": 1936,
+      "sha256": "cc59c6b1961171afc15e6b6c4a35fb4ecd95edbdfd46db60d700f48a71b3b588"
+    },
+    {
+      "rel": "content/assets/writing-a-name-that-fits.svg",
+      "bytes": 1915,
+      "sha256": "ef19bb9c6a094ddab0013bf80d960ca8922792e939ba7172ac04d7384ce91288"
+    },
+    {
+      "rel": "content/images-manifest.json",
+      "bytes": 77595,
+      "sha256": "97a224834ebd198bc4ffb2250f260eb3616892e4d3afeb471869f62b172d26a2"
+    },
+    {
+      "rel": "content/published/asking-a-helper-to-fetch-something.json",
+      "bytes": 4255,
+      "sha256": "4f3ae10452e87c2aa692ed96ba4a91b6c97c65f18b6f60c8554601b26a25e2ac"
+    },
+    {
+      "rel": "content/published/barcodes-and-the-scanner.json",
+      "bytes": 5734,
+      "sha256": "7ca449a1ad04e7045d1b29c66214887033f40c53776db2bc7e58efddab1ed335"
+    },
+    {
+      "rel": "content/published/bills-loans-and-growth-screens.json",
+      "bytes": 4363,
+      "sha256": "28565c189f4540bfb9e50b85a89375b57e22250a2ad073170169028bf261557a"
+    },
+    {
+      "rel": "content/published/category-signs-and-the-categories-behind-them.json",
+      "bytes": 4826,
+      "sha256": "f29ae3f11a0328285b7def467c88c8b45adb4b9677f81c632a4b89fd2f8b46b0"
+    },
+    {
+      "rel": "content/published/checkout-and-cashiers.json",
+      "bytes": 5452,
+      "sha256": "65194fdb07d836c83f5dde356228e4c6f02f553051dcbcaa40a76bbe1c048b3b"
+    },
+    {
+      "rel": "content/published/cleanliness-and-standing.json",
+      "bytes": 3036,
+      "sha256": "3613a3c309673f4f5ebb8011a27b3eb50eefb36d3321f8f33ec734f62a5f9df1"
+    },
+    {
+      "rel": "content/published/customers-and-helpers.json",
+      "bytes": 3013,
+      "sha256": "ede7acff3d8d46621924813fcc13fa5fd1213b96af69aa961b4f5a668505cf53"
+    },
+    {
+      "rel": "content/published/dirt-and-cleaning.json",
+      "bytes": 3477,
+      "sha256": "3243092adbf29c0d1d2cd2f9a424dca3e12e94f250810760673995fd661db1c4"
+    },
+    {
+      "rel": "content/published/dirt-dust-and-rubbish-are-three-jobs.json",
+      "bytes": 4121,
+      "sha256": "2df86074473bac51f44cd088f7e82faea04b819036d9eada497c30dfc736d17b"
+    },
+    {
+      "rel": "content/published/floors-and-floor-painting.json",
+      "bytes": 4112,
+      "sha256": "7c145bdcfcbe1731de6092bec5d62d2284549e5b55f234a089361809d41dc4c8"
+    },
+    {
+      "rel": "content/published/furniture-and-shop-layout.json",
+      "bytes": 5342,
+      "sha256": "ef31ffedcdca206e288baf494a07a82f436a568ca1693b9f2f5e6d1ef4436b42"
+    },
+    {
+      "rel": "content/published/glossary-of-terms.json",
+      "bytes": 3320,
+      "sha256": "18a5e69596204d073ff2fda8c848759c7eaabbbacaa641508bdade98a5c9d72b"
+    },
+    {
+      "rel": "content/published/hiring-a-cashier.json",
+      "bytes": 2837,
+      "sha256": "7b917d489e11dd7488cdfd1cbdde8fc66b06353fe8eff99bc9a8e1b979f4eba7"
+    },
+    {
+      "rel": "content/published/how-a-product-is-drawn-on-a-shelf.json",
+      "bytes": 5461,
+      "sha256": "5ceea95999f1b5b6a47b0c36936000c33535d970b83d200b124703e39b823b48"
+    },
+    {
+      "rel": "content/published/how-a-shop-full-of-things-is-drawn.json",
+      "bytes": 3266,
+      "sha256": "8ff8c45d79c8051c811e9de9e8a12ebc1f130359088444d5ff132da8c447b5cc"
+    },
+    {
+      "rel": "content/published/how-a-vehicle-drives.json",
+      "bytes": 6213,
+      "sha256": "7f8e5228ab0295f724f5f90b1386dfcd4ff0daa91ec1ed79795b3d7aa73f3a88"
+    },
+    {
+      "rel": "content/published/how-customers-find-their-way.json",
+      "bytes": 3487,
+      "sha256": "eb27ad71ed26d6177bbc04c9b2a0ce39b7447b3e60c5b593800bebc39f9cdd8c"
+    },
+    {
+      "rel": "content/published/how-products-are-displayed.json",
+      "bytes": 3069,
+      "sha256": "b5a01b10a781b9a2c73cff437efcd81f9b80b2f8030bd968d93ba907d9d4ed97"
+    },
+    {
+      "rel": "content/published/how-the-game-decides-to-warn-you.json",
+      "bytes": 4591,
+      "sha256": "15b09793881eac6268fd620d7e4f4f4b84646684dedb6417326c44cfcb2ae40e"
+    },
+    {
+      "rel": "content/published/how-the-game-shows-what-you-can-use.json",
+      "bytes": 5164,
+      "sha256": "fac3adc0d89d58bc66ffbd68741a70d0239ed64d0106faefb3f08d914fc347eb"
+    },
+    {
+      "rel": "content/published/how-your-shop-is-saved.json",
+      "bytes": 4672,
+      "sha256": "d0e5e0f52db8735dd7e26c28e3279b961e6189bc9f08e052f4e8eafc58687a19"
+    },
+    {
+      "rel": "content/published/inside-a-vehicle.json",
+      "bytes": 4874,
+      "sha256": "0eef7cb0cb603b6c50939390cf4b1d2e6f8422eac22a2aa4cd664c6fa1bd91dd"
+    },
+    {
+      "rel": "content/published/jobs-you-can-hand-over.json",
+      "bytes": 2723,
+      "sha256": "a3da26ebf90351e981c8b34dde2b3dfcf9f804d0e926b144ad04c9d4784e5924"
+    },
+    {
+      "rel": "content/published/licence-items-and-their-icons.json",
+      "bytes": 4517,
+      "sha256": "6153912da370eb4975d95d3cad018852a357f8bba4b7b050bdfa800da394a631"
+    },
+    {
+      "rel": "content/published/loans-and-paying-them-back.json",
+      "bytes": 3105,
+      "sha256": "3156556bf44b01f096e3c8b25b87aa7388c3560228970f08c045842626fe69a8"
+    },
+    {
+      "rel": "content/published/missions-and-the-objectives-the-game-sets.json",
+      "bytes": 3795,
+      "sha256": "f609a219f10b37e6082f3d5d59c86eef3f7de0ae49c01870b99de3cea6b24f8e"
+    },
+    {
+      "rel": "content/published/mixing-paint-and-picking-a-colour.json",
+      "bytes": 4995,
+      "sha256": "c2b665142cab55ddf622cc6e2e1edba7cf3a5de2a8fc961c350f416fb53deb96"
+    },
+    {
+      "rel": "content/published/money-as-an-object-in-the-shop.json",
+      "bytes": 3584,
+      "sha256": "d74e8d00f9a735c9990c41d12aab1eb20e099b3cf74b6e3b1c03f2203a21a5ec"
+    },
+    {
+      "rel": "content/published/music-in-your-shop.json",
+      "bytes": 3885,
+      "sha256": "a7ecd3a9dd16b2befdc9831f650e3ecacf1d99c079d3f8795b52100f191106f5"
+    },
+    {
+      "rel": "content/published/online-orders-and-how-they-are-tracked.json",
+      "bytes": 3682,
+      "sha256": "47babeb461f2f64fba3c394162cde83dff8a781e5cc1f3f67d0fa7b123413be5"
+    },
+    {
+      "rel": "content/published/orders-and-what-you-can-order.json",
+      "bytes": 3914,
+      "sha256": "d72bcbc225a5124941c51cee0bec951f9634537e90f7dae321773221c259654f"
+    },
+    {
+      "rel": "content/published/painting-the-walls.json",
+      "bytes": 4518,
+      "sha256": "ae819dee53c2918bbb436cefd3b4f1574c03f344cabcc74061d8bf6e1c5aa38a"
+    },
+    {
+      "rel": "content/published/paper-bags-and-packing-a-purchase.json",
+      "bytes": 4667,
+      "sha256": "4a25e97675322592030f06e81a841b423f09c1c1071617b0f87d51cb03f5cf3d"
+    },
+    {
+      "rel": "content/published/paying-by-card-or-cash.json",
+      "bytes": 3494,
+      "sha256": "180558d1ac435de4bb6cd526bf2081a9a0252375ae9e6e27eb0dc81680ddcde1"
+    },
+    {
+      "rel": "content/published/playing-with-a-controller.json",
+      "bytes": 5479,
+      "sha256": "5bf9bfcdbb76eb307e3b84d79937c124768ce78700ad9a37e0632cef6dbb7ce1"
+    },
+    {
+      "rel": "content/published/products-and-deliveries.json",
+      "bytes": 4439,
+      "sha256": "44535e2544dc96653ec8c0852005080f15b486a7b2dffad522cfd0b1da5edc48"
+    },
+    {
+      "rel": "content/published/questions-players-ask.json",
+      "bytes": 4012,
+      "sha256": "0679342a9426e1f7bfc16bea09a6c452db5780caafa149e0227d5f5e947c8cba"
+    },
+    {
+      "rel": "content/published/raising-your-storage-and-shop-level.json",
+      "bytes": 3620,
+      "sha256": "5c9f1fb710a7d1dd393c923448155256b1fc85cb9586582e6ddbe5320d1d3fe7"
+    },
+    {
+      "rel": "content/published/repaying-a-loan-payment-by-payment.json",
+      "bytes": 3296,
+      "sha256": "27670539c11301e429395abe35d51a63f5a263f2a8a8923ec4de3757c2b71c9d"
+    },
+    {
+      "rel": "content/published/restock-areas-and-vehicles.json",
+      "bytes": 3025,
+      "sha256": "00d8580ddec884e554bfc68ed7786be7528172bb6d1ade8e0835219b539617ce"
+    },
+    {
+      "rel": "content/published/restocking-shelves.json",
+      "bytes": 2720,
+      "sha256": "18b43da20bad9705e3a844cea4bf4e9ccbe973cc389fc3dd8a57f1d17761d6e8"
+    },
+    {
+      "rel": "content/published/running-a-shop-with-other-players.json",
+      "bytes": 5269,
+      "sha256": "8784390620b420094cb20fce2e122b5f3d67b379ece23447f82fd58425466518"
+    },
+    {
+      "rel": "content/published/save-slots-and-what-each-one-holds.json",
+      "bytes": 4135,
+      "sha256": "c1aaa27d317cddb3374dd2f154dde532403da72867f127f6c72c3dc6bf868f09"
+    },
+    {
+      "rel": "content/published/security-cameras-and-guards.json",
+      "bytes": 6265,
+      "sha256": "3f54e91ee32f10d9e106782e4940bdf753aca39b1d7d7d5f9dd98c626f891100"
+    },
+    {
+      "rel": "content/published/serving-ice-cream.json",
+      "bytes": 4460,
+      "sha256": "702aa584d6a50ae791041a487f56e11f55769bfe180c12391f4c99033dee7fb8"
+    },
+    {
+      "rel": "content/published/setting-prices-in-bulk.json",
+      "bytes": 3555,
+      "sha256": "06b61f908b07e69f3c9826e189dd29225b41071a844db3aaf3dbe563e37b3674"
+    },
+    {
+      "rel": "content/published/shelf-slots-and-display-space.json",
+      "bytes": 4861,
+      "sha256": "b587cb88a85a0ba5028f5a586a895a3429f0d18b547994324af15edfaa70dc8e"
+    },
+    {
+      "rel": "content/published/shoplifters-in-your-shop.json",
+      "bytes": 4346,
+      "sha256": "bf320598144e390a6ad0993f8f4d1057cc7c94f744104f212cfb15a94038abed"
+    },
+    {
+      "rel": "content/published/signs-labels-and-organising.json",
+      "bytes": 6809,
+      "sha256": "ad2d9d642f9a3b4af4314d5bdaf14152d2d49d08d8d37e793d2bb710b5a3f2a7"
+    },
+    {
+      "rel": "content/published/storage-crates-and-the-storage-tab.json",
+      "bytes": 3064,
+      "sha256": "795fbcbe8806cb3a4b9a680d55ae8b0520e6afb8cc0c5358ee08343d5cff8b56"
+    },
+    {
+      "rel": "content/published/storage-sections-and-sorting.json",
+      "bytes": 3242,
+      "sha256": "4aa01eaca092e61b79b49fab6173ad419c1ecdd9e5544f81b35724d49ab4851e"
+    },
+    {
+      "rel": "content/published/store-upgrades-and-licences.json",
+      "bytes": 3058,
+      "sha256": "a1e1c3e632a7138b6d10c6869cf2349d287ed80ed9537d9bf104f68e3c09c6d0"
+    },
+    {
+      "rel": "content/published/the-aim-and-its-settings.json",
+      "bytes": 3646,
+      "sha256": "92c6d0056b119de448dfb7845cc21690aca05e6ab88a36e11eea96de4c7627a3"
+    },
+    {
+      "rel": "content/published/the-animations-your-body-plays.json",
+      "bytes": 3961,
+      "sha256": "27098e34bf9de4adc3cecc1496c5f272088b004b5eb70007ed43bdb7179f2c83"
+    },
+    {
+      "rel": "content/published/the-bakery-counter.json",
+      "bytes": 4951,
+      "sha256": "f88c41bd4a1839e15ab81388db1bceef646adaccb615146db0825f0507420657"
+    },
+    {
+      "rel": "content/published/the-baseball-bat.json",
+      "bytes": 4859,
+      "sha256": "59dcb5f962b054107e254771f816b7afee0654f0d9e93f5b709a7a7e0bd6e975"
+    },
+    {
+      "rel": "content/published/the-body-you-do-not-see.json",
+      "bytes": 4357,
+      "sha256": "42cce13d0021cf80591e0e0b45efeccdbfe457f532ca1c700cb39448f61c4fab"
+    },
+    {
+      "rel": "content/published/the-boxes-in-the-back-room.json",
+      "bytes": 4971,
+      "sha256": "86d479d80a9ddcd0674c6605856286980af3d4462d951b53a0122f0339137c92"
+    },
+    {
+      "rel": "content/published/the-camera-you-play-through.json",
+      "bytes": 3658,
+      "sha256": "de02fa38c05dc1dad76d75e5514af363153e3f4fbe122e76f2c6051f7d090c0d"
+    },
+    {
+      "rel": "content/published/the-computer-and-the-tablet.json",
+      "bytes": 5104,
+      "sha256": "44274a8dba3386905a4577fde557d361829a58414640fecff320162d07b6182a"
+    },
+    {
+      "rel": "content/published/the-controls-the-menus-are-built-from.json",
+      "bytes": 5458,
+      "sha256": "8251678d2d166ce0549e36fe00bb09da8a84107d77e095c498ea392deeb8ef0f"
+    },
+    {
+      "rel": "content/published/the-crates-you-buy.json",
+      "bytes": 3531,
+      "sha256": "28db0c75fc0b68089e256c24fadc60b8abe2789f22edb80a797c2e4acbf764cf"
+    },
+    {
+      "rel": "content/published/the-day-cycle.json",
+      "bytes": 4041,
+      "sha256": "6e73dff3d80284731c8c458798e3989322e7f2ed467029e647bc3a75655b9406"
+    },
+    {
+      "rel": "content/published/the-day-results-screen-and-what-it-counts.json",
+      "bytes": 3012,
+      "sha256": "f051e71ff423245bb271907633a5644c8606d7622fd08cc987f7a8298bac2772"
+    },
+    {
+      "rel": "content/published/the-devices-the-game-can-shake.json",
+      "bytes": 3990,
+      "sha256": "627d3382cad8c55d5de8be8713844505042c3cc1bd0ac56a435bbd9d29a3a149"
+    },
+    {
+      "rel": "content/published/the-display-behind-the-shelf.json",
+      "bytes": 4042,
+      "sha256": "984c20f264eb6eb589d9dc8ced7319235347024ad558803a076ed57baf745db6"
+    },
+    {
+      "rel": "content/published/the-drinks-the-shop-carries.json",
+      "bytes": 4904,
+      "sha256": "5ecc83bb0e4de5aa43ffd399aebd5843802f66a8e5c5c3b0475efadeebc1192f"
+    },
+    {
+      "rel": "content/published/the-expansion-packs.json",
+      "bytes": 4312,
+      "sha256": "fc098ef90bba29d0a6d3b45b47c82202acb06f9ef6cc14bcea909760341b2a49"
+    },
+    {
+      "rel": "content/published/the-fresh-produce-in-the-shop.json",
+      "bytes": 3889,
+      "sha256": "40621e2fbffb41d84ae158df3ec3469ba9fe3d6bba95f1a876129b24659e3d1b"
+    },
+    {
+      "rel": "content/published/the-fridges-and-freezers.json",
+      "bytes": 4542,
+      "sha256": "caff01b1ac83d53318ca788bd4ab47cfe2838124cf4fa27861e402bd8e3e5915"
+    },
+    {
+      "rel": "content/published/the-global-map-and-its-markers.json",
+      "bytes": 3506,
+      "sha256": "c17103230bdf2db47420d0dfbe2075cd16db1ec3f41b90a7652b941264c17ee3"
+    },
+    {
+      "rel": "content/published/the-hints-and-pings-the-game-gives.json",
+      "bytes": 4044,
+      "sha256": "fab3bb3efbcef1126ede3c0b1563f8b306e68ce93b335f1d3bb630e60e2bf6fd"
+    },
+    {
+      "rel": "content/published/the-janitor.json",
+      "bytes": 3530,
+      "sha256": "88e78ef029f1140f049f3629a1c28db21de383aeb17f512da544b4a361701bca"
+    },
+    {
+      "rel": "content/published/the-kinds-of-missions-the-game-builds.json",
+      "bytes": 4289,
+      "sha256": "5ad7a829059ac7bb3dc769ec2829464c9e3bd6c3c182cc7ec52d47252d3a8c5a"
+    },
+    {
+      "rel": "content/published/the-lights-and-the-switches.json",
+      "bytes": 5982,
+      "sha256": "fed8e2133c30b38cfe5a9191b828514590a6799d91a604c24fddf040267da3e0"
+    },
+    {
+      "rel": "content/published/the-line-icons-the-game-draws.json",
+      "bytes": 4974,
+      "sha256": "44cd4624cda414cd5096f80180751856c22c332709a2ee929559bb666e1e64c9"
+    },
+    {
+      "rel": "content/published/the-list-you-buy-from.json",
+      "bytes": 3543,
+      "sha256": "3f1500b7600fa88be7f7882ed1a68e774e8e0700cb463fe4f822cebcc8005b95"
+    },
+    {
+      "rel": "content/published/the-local-market-and-product-costs.json",
+      "bytes": 2993,
+      "sha256": "3a12d371dd30acbcb12f68f034a35585e0e796e774aa219c95a4d546da02282f"
+    },
+    {
+      "rel": "content/published/the-machinery-behind-each-job.json",
+      "bytes": 5380,
+      "sha256": "4d042c2cdbaefea0bf2a3eccc88fb14e839d3d9055c4569c00b548b73f11ea4a"
+    },
+    {
+      "rel": "content/published/the-management-tabs.json",
+      "bytes": 4441,
+      "sha256": "d768f3e1cb25f3da50d83d12bd29a508d40fd3051250d6d44160b5ef3e11df61"
+    },
+    {
+      "rel": "content/published/the-meat-and-dairy-section.json",
+      "bytes": 5462,
+      "sha256": "10bea1b2c5ce5534b0f9b864097d6df736be06ecee6db6b84108980594523dd2"
+    },
+    {
+      "rel": "content/published/the-menu-the-game-opens-on.json",
+      "bytes": 3989,
+      "sha256": "26b16d199c11d51e68ddc8e7307814754f58226ce8cbbb1e5a3c6eff4fd8b0e9"
+    },
+    {
+      "rel": "content/published/the-menu-you-pause-into.json",
+      "bytes": 5675,
+      "sha256": "9747335245f2a3aab94052af3cb08bff9dc8fc1716aaa89382e20607beab5f7a"
+    },
+    {
+      "rel": "content/published/the-mode-you-place-things-in.json",
+      "bytes": 3719,
+      "sha256": "dfded911ab6f14127b295d879f964aecebdc04cfe82cbc268d5ff199714e7761"
+    },
+    {
+      "rel": "content/published/the-networked-copies-in-a-shared-shop.json",
+      "bytes": 6327,
+      "sha256": "dd079291e1c9db7c4c10de7402ef24fdde93b066573da1e46a170d721c5c1a91"
+    },
+    {
+      "rel": "content/published/the-notebook-your-orders-are-written-in.json",
+      "bytes": 3656,
+      "sha256": "f35b40294e2a77680022cb702e837ccfa4fae413407effeb3a359152256fa92e"
+    },
+    {
+      "rel": "content/published/the-oven-and-the-baker.json",
+      "bytes": 6064,
+      "sha256": "e74eeb9ccd4f0219cbd803b6dcc7b6a3473594fac541b6f930d4cf6b5897ce31"
+    },
+    {
+      "rel": "content/published/the-plants-and-planters.json",
+      "bytes": 3573,
+      "sha256": "0fa0df35a8c8f257a23770b16d2d167f27948183bef744f4f6db6050ae4cde48"
+    },
+    {
+      "rel": "content/published/the-popups-in-the-game.json",
+      "bytes": 4527,
+      "sha256": "daa090a01fb7eaa5455b305bb063a7e3ea4ec9775da4cfd128b0017c3300335c"
+    },
+    {
+      "rel": "content/published/the-pricing-screen-and-how-a-price-is-chosen.json",
+      "bytes": 5325,
+      "sha256": "d4fbc5515bf55e7c4e8817890a9ebb5027f95e9d4dd9655c48145241f78baf01"
+    },
+    {
+      "rel": "content/published/the-racks-the-back-room-uses.json",
+      "bytes": 4504,
+      "sha256": "c882bd279e42f27d6580d08af86e793ae7146b2967bb47b897b0b9ab7d8a3bea"
+    },
+    {
+      "rel": "content/published/the-road-traffic-and-its-signals.json",
+      "bytes": 5781,
+      "sha256": "eb2530ccf4994066b21d07ad9565f67aa7855598c940f501b2cce03183e0c4fe"
+    },
+    {
+      "rel": "content/published/the-rubbish-and-where-it-goes.json",
+      "bytes": 4112,
+      "sha256": "5e345ff34a88cfd9884a77e970863e85f4ddd9b19136dceab6aa185f40d2ddec"
+    },
+    {
+      "rel": "content/published/the-self-checkout-and-its-rules.json",
+      "bytes": 4240,
+      "sha256": "72a8a494b06ed00d422d9f5ca62e7cbc8a32c3f9f177594eb4855e8f8035b490"
+    },
+    {
+      "rel": "content/published/the-settings-and-the-keys-you-can-change.json",
+      "bytes": 6100,
+      "sha256": "fcc253fc4649e397ed727647b997abaf0d417479a34c26e7a318a61e7205a1cd"
+    },
+    {
+      "rel": "content/published/the-shop-computer.json",
+      "bytes": 3406,
+      "sha256": "61f8b5e879682a0b4081cf93119abeb977603b419ffff41476edba32699cae5c"
+    },
+    {
+      "rel": "content/published/the-shop-entrance.json",
+      "bytes": 3448,
+      "sha256": "5ef3ab59cde3ba5bcd57507bd13c513f328f55f8750850d0c57d9c3d980b75e3"
+    },
+    {
+      "rel": "content/published/the-shop-windows-and-the-glass.json",
+      "bytes": 5039,
+      "sha256": "2fad44bcbce367b5ac34207ad15a8c99f8370434d0cf7bfe3ad64696e1cbd636"
+    },
+    {
+      "rel": "content/published/the-shops-status-its-doors-and-its-ground.json",
+      "bytes": 3892,
+      "sha256": "0d713d840e35dbaef3c9bcb715fc03192676ad722ec1db0845ab01985bde5950"
+    },
+    {
+      "rel": "content/published/the-storage-lights-and-door.json",
+      "bytes": 3258,
+      "sha256": "e325b1285400870264a92f04b418382e75f374c2b598e09abd5a16ee0b9a71cc"
+    },
+    {
+      "rel": "content/published/the-street-outside.json",
+      "bytes": 9270,
+      "sha256": "2d0c21c15b83fdef252352180adeaee8fd59240f659d5a7e31013dd225f1ee89"
+    },
+    {
+      "rel": "content/published/the-task-layer-under-the-missions.json",
+      "bytes": 3568,
+      "sha256": "a70fbb94740b73a12610266279f8df36a692d7d8681fc965fcbe4f0b076735ff"
+    },
+    {
+      "rel": "content/published/the-till-and-its-screens.json",
+      "bytes": 4267,
+      "sha256": "a638863cc06d8ab2786715bf3ee5f445a7bad6d32fb46360b24dc4ced1c5f9c7"
+    },
+    {
+      "rel": "content/published/the-tutorials-that-point-you-at-things.json",
+      "bytes": 4635,
+      "sha256": "d6b2cbf9f8ee9d0b0509da5a12c8a4752216e0b6bb21fba6104cb31af5e9ba36"
+    },
+    {
+      "rel": "content/published/the-vehicles-you-can-use.json",
+      "bytes": 3449,
+      "sha256": "f2e64a6809245d9d9cced4a8eed78aaa9c674be2806c79d3084baa124a845cbd"
+    },
+    {
+      "rel": "content/published/the-warnings-the-game-shows.json",
+      "bytes": 4982,
+      "sha256": "dab130d49d46f33372986e0ba5fd73865000a6e29cb79c38a0950038f797a40e"
+    },
+    {
+      "rel": "content/published/the-weighing-scale.json",
+      "bytes": 4762,
+      "sha256": "fed1580fd678752d8d58a7042dc40a6222e50e89a18d0978c1a72b206dd8afc1"
+    },
+    {
+      "rel": "content/published/the-window-the-money-tabs-live-in.json",
+      "bytes": 3584,
+      "sha256": "4e5b78c04d72e5aa2639b23bdfbf54a06f9b1f7232fbdef219c53322f86ddb9f"
+    },
+    {
+      "rel": "content/published/vending-machines.json",
+      "bytes": 4212,
+      "sha256": "a9dfc6844432905e0fd5098847f168b0575a0aa6d0f13be751016a5d87590de7"
+    },
+    {
+      "rel": "content/published/watching-your-vending-machines.json",
+      "bytes": 4905,
+      "sha256": "b52f1485e7d3c9b09713acf78c0d159a938f7e164334fd446a943fe62be46449"
+    },
+    {
+      "rel": "content/published/what-a-shared-shop-keeps-in-step.json",
+      "bytes": 5464,
+      "sha256": "29b8a4d3c7200a99382b2c5fe2fb94677cbdbbc1d990e4befe9b4afb3ddcf37f"
+    },
+    {
+      "rel": "content/published/what-the-customers-say.json",
+      "bytes": 4287,
+      "sha256": "a4af38af1ac0dd95593d37b3eaf6db48fc6e07881f72bdc488aa8329591c6895"
+    },
+    {
+      "rel": "content/published/what-the-game-keeps-about-an-employee.json",
+      "bytes": 3687,
+      "sha256": "14ab50fbd1a7e9545b44bb3fd3f23aa47a8243fdb8ed8766bb5a46f03b44d7dd"
+    },
+    {
+      "rel": "content/published/what-your-shop-spends.json",
+      "bytes": 3152,
+      "sha256": "08912f385a937251b40aad6646f62a9d8f37d0e9280623b4731debc882d2235f"
+    },
+    {
+      "rel": "content/published/which-version-this-site-documents.json",
+      "bytes": 4371,
+      "sha256": "5038aabaa877df98bd585457d0ce49cf50ab877cd2bd543de4dd83e427117cab"
+    },
+    {
+      "rel": "content/published/who-comes-into-the-shop.json",
+      "bytes": 4599,
+      "sha256": "f4d331931b14525f1615bce0fec4cf7954b494c72b8722d2cdd16a99a8f2eea7"
+    },
+    {
+      "rel": "content/published/who-keeps-the-shop-clean.json",
+      "bytes": 2982,
+      "sha256": "2dfda68b59ff7cfc1f0015c9eb0e352f634a02ab89eba9160845885b468d50db"
+    },
+    {
+      "rel": "content/published/wholesale-offers-and-discounts.json",
+      "bytes": 3880,
+      "sha256": "3f6f6eaae907358ae72bad3e97946633128211f16b22d940d53dbdaeb955cd08"
+    },
+    {
+      "rel": "content/published/writing-a-name-that-fits.json",
+      "bytes": 4020,
+      "sha256": "03cb8c910a3d5eda29736e6aa1932b86c9f778f852fb926e6c5df3768bb0071f"
+    },
+    {
+      "rel": "content/README.md",
+      "bytes": 3080,
+      "sha256": "e8306310de2cb2fd5b3d0b0fbc3c83a3c79438fb6fc25c4c3a32778c40bca41e"
+    },
+    {
+      "rel": "content/updates.json",
+      "bytes": 2286,
+      "sha256": "dfecb87715784ad4543dde2d0839c5e1132cd299fedfacdb43d45b153d6addcb"
+    },
+    {
+      "rel": "data/guide-questions.json",
+      "bytes": 6960,
+      "sha256": "e7bdc405fb9337a35333bbd29f4bff2bb5ac55ae08cc46d86d29cffa4f777c5e"
+    },
+    {
+      "rel": "data/normalized/citation-index.json",
+      "bytes": 294793,
+      "sha256": "7a4ac348abd94077e380c812d158d41b51fa4636c8237ac6bba7102c712c9d8b"
+    },
+    {
+      "rel": "data/normalized/p0-inventory.json",
+      "bytes": 3213803,
+      "sha256": "806585f0a5ac3abf0b81e30349ef6de26423238cba90c4791164fb955a468037"
+    },
+    {
+      "rel": "data/normalized/supermarket-object-names.json",
+      "bytes": 248871,
+      "sha256": "3ca05bd96171c80bcfb654ccdbca80258e04cd62fc2b752d5fb1b816197863ce"
+    },
+    {
+      "rel": "data/normalized/value-index.json",
+      "bytes": 1233,
+      "sha256": "722f29e63013efceb69b3e2fe6635d28db8c1988a07112bc4ed3c472ad0a871e"
+    },
+    {
+      "rel": "docs/redesign-spec.md",
+      "bytes": 8526,
+      "sha256": "dad7f1dc851e665af75333dcab22183ff17f16f2701416c5195531a9b750e46b"
+    },
+    {
+      "rel": "pipeline/audit_page_similarity.py",
+      "bytes": 784,
+      "sha256": "3a83c06b3563db1c8cc39ee8879f93b04fbb55f6401a96bcad7741e191a51f69"
+    },
+    {
+      "rel": "pipeline/citation_index.mjs",
+      "bytes": 3522,
+      "sha256": "4ed3b19eadc160a93fd131cc5018b77bd186671ccb7dbd009cc9b966de1204cc"
+    },
+    {
+      "rel": "pipeline/decode_values2.ts",
+      "bytes": 1861,
+      "sha256": "659ca18da2a6e34d7cdca73bf152bd35187039779466450e1eee7a0da2eace1e"
+    },
+    {
+      "rel": "pipeline/il2cpp_field_rows.py",
+      "bytes": 3964,
+      "sha256": "83f833679881fe01003aade4b7648f33734d01b9391fd84ac85cbd5abfbe1e97"
+    },
+    {
+      "rel": "pipeline/il2cpp_find_types.py",
+      "bytes": 2837,
+      "sha256": "cd34088ef2c4d83545ae1bdec3d8da4d8b1b170461c2633cab1ee96322c7ca21"
+    },
+    {
+      "rel": "pipeline/il2cpp_name_diag.py",
+      "bytes": 1052,
+      "sha256": "aad25b5b8f2c0e5109a8f6c3a33d6d4e12a6a27198f77e4ab2a878a74bc32623"
+    },
+    {
+      "rel": "pipeline/il2cpp_ns_diag.py",
+      "bytes": 1912,
+      "sha256": "f0d6f016ae2805e91236badb06ac675045314187e72561646431f710cedd6b11"
+    },
+    {
+      "rel": "pipeline/il2cpp_schema.py",
+      "bytes": 2331,
+      "sha256": "57224499dd7d6091cc07b50ef6a37ae30aa7a13470c02d88f143a41bad9365e3"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent.py",
+      "bytes": 4801,
+      "sha256": "96ca759abecdc784720e694d505d973a342a69c3a1b9514fc83386359dd8d35f"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent10.py",
+      "bytes": 2057,
+      "sha256": "983132ff19df9bd4a7ea3c47613002c1d415a0f23a8a3cd44490c8bfb16103be"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent11.py",
+      "bytes": 3355,
+      "sha256": "e6a692acfe3ca8d1cb387676c5c9ad729573033c9201c258200ab0117105bd5a"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent12.py",
+      "bytes": 3472,
+      "sha256": "b96b7008b17b8f92a1b4f102ff1bf208976b3733f12917192b8c3163b00078fc"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent13.py",
+      "bytes": 2250,
+      "sha256": "a8dac5fceb94078f79586a5b459359d76dc3edee22e4161693f24984955bb2af"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent14.py",
+      "bytes": 2052,
+      "sha256": "ebb3834fd6fc975bd70b2a9e316c9c9f0b7b76d8c71f40e7582956abb49b041a"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent15.py",
+      "bytes": 1563,
+      "sha256": "339e7ea86efb85217d9f578a724727bb75435c6be22f2edfef00a783e8f1e7c3"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent16.py",
+      "bytes": 2454,
+      "sha256": "3596d292b524b0fb0a801ccee4698aa78920fb04b568e30bb54f6d02ff08ad05"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent17.py",
+      "bytes": 2704,
+      "sha256": "eb32b9249761b2ee7772be8924e3c604340ca52b501176f6e55fca34f100374c"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent18.py",
+      "bytes": 2052,
+      "sha256": "1beeca1e7e03e378a0cb6eb022756fd853d0a0e028f3b6b23015e02c173b6e9b"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent2.py",
+      "bytes": 2627,
+      "sha256": "a26b82c51ce01b075edd2c3765d35204141b4856dddee37a1600a41b69206659"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent3.py",
+      "bytes": 1775,
+      "sha256": "6debfe85e7745fe12742949783a3b08c87f2ecde1900b14f7b2aacc200cfcbd5"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent4.py",
+      "bytes": 2133,
+      "sha256": "6ffcf363c604e7ceefbee843236906cd11d334b8b987e4b580a379be5567b886"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent5.py",
+      "bytes": 3279,
+      "sha256": "66c1c6b67e0c3592d1c2269e57d8e77d0fa6fa161cb409124e0e6741261c480c"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent6.py",
+      "bytes": 2434,
+      "sha256": "9e50af2271cb11634609422791f9a46eb922b849348ad675fa186b3e5d9f7d19"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent7.py",
+      "bytes": 2884,
+      "sha256": "0262a62d8ee4024098b34ff1116ac64ce865dc5c66732481889762b10f93391a"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent8.py",
+      "bytes": 1815,
+      "sha256": "4ca836ce0c083c17eed04027c74628f65db00bcadbd514b095ebc6bb69406ea0"
+    },
+    {
+      "rel": "pipeline/il2cpp_selfconsistent9.py",
+      "bytes": 3274,
+      "sha256": "c6643a66d2f5929cf8a074f45ba96043bfff0ccb7d6799d511019847a3d924d8"
+    },
+    {
+      "rel": "pipeline/il2cpp_types.py",
+      "bytes": 6129,
+      "sha256": "29cfa4712ea4b6bcf552f589e81e9e9b4889885f2c14dfb580fbe3d8af4a5d76"
+    },
+    {
+      "rel": "pipeline/measure_builtins.ts",
+      "bytes": 3648,
+      "sha256": "4e2f7e13a5eac3d7ca1d208c2798a344f4b73725b18a038f651c1de2b7c4bd5a"
+    },
+    {
+      "rel": "pipeline/mono-values.ts",
+      "bytes": 6432,
+      "sha256": "54c937b2dc350ca3990458f229bbfe686d360d4a8f8d94ec24b18030b6397a9b"
+    },
+    {
+      "rel": "pipeline/plant_synthetic_table.py",
+      "bytes": 697,
+      "sha256": "ebd8e1e4902212445516effef6e37f0e4e0d120bf708e061eb9744267a605657"
+    },
+    {
+      "rel": "pipeline/schema_to_inventory.mjs",
+      "bytes": 5466,
+      "sha256": "8cf0f4eba1cdd854f3f4b4ebd9e38f91ff1865f92c6ea855556c3bc586bb6568"
+    },
+    {
+      "rel": "pipeline/site.mjs",
+      "bytes": 49347,
+      "sha256": "68f3a46d29eeddea9f0147e4eb6ab20925943a545ecb4e26ad96a632886adf3e"
+    },
+    {
+      "rel": "pipeline/status.mjs",
+      "bytes": 3504,
+      "sha256": "4dd8a14b0416325196bf711ff2b230ed2ad23eb0937081a40ee779705c464529"
+    },
+    {
+      "rel": "pipeline/unitypy_dump_payloads.py",
+      "bytes": 1837,
+      "sha256": "2445e748222ef65a662706677012682c59bc938601fe21d5414f24f1887d3d5c"
+    },
+    {
+      "rel": "pipeline/unitypy_find_scripts.py",
+      "bytes": 1293,
+      "sha256": "e5680d7ca62b018352b25cc5db408ed2687d31e58188ab196ca4fe013728bf67"
+    },
+    {
+      "rel": "pipeline/unitypy_multifile.py",
+      "bytes": 2189,
+      "sha256": "138f11088a32992f288c028fdc68b27baa3137ac5ae6e783fc47b231dd335e43"
+    },
+    {
+      "rel": "pipeline/unitypy_name_all.py",
+      "bytes": 2253,
+      "sha256": "87d85a5a840b240bae21dca227a542b0f72b33c7aa59b5563e39cdd8f9d4e0c7"
+    },
+    {
+      "rel": "pipeline/unitypy_probe.py",
+      "bytes": 2138,
+      "sha256": "e2368df01297f4cf611975b3a13a77f6a5716336f4e7b0a971eec9588eea165f"
+    },
+    {
+      "rel": "pipeline/unitypy_rawscript.py",
+      "bytes": 2064,
+      "sha256": "e4f1b3513287ad7faad0711e58b9e0cb9f49a4e6641b82d971319ebfc763443c"
+    },
+    {
+      "rel": "pipeline/unitypy_scripts.py",
+      "bytes": 1385,
+      "sha256": "070949faf2b271ad851c41e8ddb40361a98ea43b19d4983a377f7da22cbb87bd"
+    },
+    {
+      "rel": "pipeline/value_index.mjs",
+      "bytes": 2340,
+      "sha256": "f228da6d83cfeedd06066e00eaa58b52dc81358d5ee5674870cc0c1525ac652d"
+    },
+    {
+      "rel": "reports/coverage-report.md",
+      "bytes": 2094,
+      "sha256": "c01d2632695f62acffbfa22badd85ec5b50aecbf7742563d3a9763ffc7f68afa"
+    },
+    {
+      "rel": "reports/handoff.md",
+      "bytes": 14356,
+      "sha256": "b2e8aa33957755badd6e088429b3a63bc623d32e2babf07b4a85355195127844"
+    },
+    {
+      "rel": "reports/image-coverage.md",
+      "bytes": 20326,
+      "sha256": "8b8d8637c368e4084620404f14c97d466799d0353baaed29068a9f09bee07771"
+    },
+    {
+      "rel": "reports/image-reviews.md",
+      "bytes": 55912,
+      "sha256": "03cad3f547a8ec16f7c1f07d42b4708cc7df59ae5a76cae786a820a70de131cf"
+    },
+    {
+      "rel": "reports/image-sanity.md",
+      "bytes": 1525,
+      "sha256": "e3e8952bea5440c8f8d8ef4dca1d367a6a0e8bea7ec3b09db73bbbb109ac90ed"
+    },
+    {
+      "rel": "reports/local-complete.md",
+      "bytes": 7585,
+      "sha256": "f717252372bd72bd2e8c35d800080074a357744059cb349fcd2af84d87e10db8"
+    },
+    {
+      "rel": "reports/status.json",
+      "bytes": 1052,
+      "sha256": "5589b82b761f7f6cbf7112f19c01d1dd00ea157331381eefceae6d2061f69480"
+    },
+    {
+      "rel": "tests/site.test.mjs",
+      "bytes": 38658,
+      "sha256": "f42e5eca21026f5a9f49b3748d216202fa0882e0d126435bedde05861186ef2f"
+    },
+    {
+      "rel": "tools/classify-urls.mjs",
+      "bytes": 2809,
+      "sha256": "46125bb336bcb1a835fbdc6744c44abbbae4fc17c2943531004a6124ee7eedee"
+    },
+    {
+      "rel": "tools/content-gate.mjs",
+      "bytes": 8405,
+      "sha256": "ccfe13be7e90494369acd7d2c6f5c3c95d432f5c19505529a03c63e4570c5af8"
+    },
+    {
+      "rel": "tools/coverage.mjs",
+      "bytes": 6915,
+      "sha256": "daf7a90fbe0691d1200938768f5b8d56f0a85a6d8e4a82c2629c7eaddbe93c99"
+    },
+    {
+      "rel": "tools/deploy-check.mjs",
+      "bytes": 1997,
+      "sha256": "88969aab31cd76b5445b4ee6f0469ae97ef4e79a3e00bf69cc8b4c29acb06f71"
+    },
+    {
+      "rel": "tools/extract-images.py",
+      "bytes": 50973,
+      "sha256": "1f77140c263f2cb6f4341022f9e5adf02488d2a5bff09dfce8bb54518c6d3099"
+    },
+    {
+      "rel": "tools/extract-localization.py",
+      "bytes": 7582,
+      "sha256": "62a7375eca03ad6a1bc85582cca861020d312b5e9ba8c5fb414d39cacd5f184d"
+    },
+    {
+      "rel": "tools/image-coverage.mjs",
+      "bytes": 3851,
+      "sha256": "2636468a2490dfb8b130fe28e9c769f6a3defbb1b5864845ec0514a811f2e197"
+    },
+    {
+      "rel": "tools/image-sanity.py",
+      "bytes": 5179,
+      "sha256": "564fae4c68759406f1ae1a26f056662563674f13db1c2c14af853ab0e58f2ce4"
+    },
+    {
+      "rel": "tools/mac-package.mjs",
+      "bytes": 9109,
+      "sha256": "94c4cc6a8a55c7bbb35b4de6fcf1b31c91055488328c784e410a96dab9adaf1d"
+    },
+    {
+      "rel": "tools/preflight.mjs",
+      "bytes": 5282,
+      "sha256": "6b5404ed45cc8d6eb067c6276ffa044002ca036b2236ddbdf208925e09b12db9"
+    },
+    {
+      "rel": "tools/smoke.mjs",
+      "bytes": 4064,
+      "sha256": "039c8a46171e0e3fa40dd9de3c553fdf1dac6dc4f3aa75a952feb83377bc278a"
+    },
+    {
+      "rel": "tools/verify-citations.mjs",
+      "bytes": 7627,
+      "sha256": "f6ed48c6c8322de40488189fa449e01a6e90e4ac33998e4ee172dc6e2726e25f"
+    },
+    {
+      "rel": "tsconfig.ci.json",
+      "bytes": 129,
+      "sha256": "06e294e1814b8f047b1f9805d1ab5368f481ef245dd683f4f7313d164ed7aa40"
+    },
+    {
+      "rel": "tsconfig.json",
+      "bytes": 533,
+      "sha256": "0aff85cc9c3970a577874d63e90d2f63f4534bc9b5a6798dea77a55e8473b6db"
+    },
+    {
+      "rel": "web/assets/favicon.svg",
+      "bytes": 364,
+      "sha256": "fd5ba7ebbf4324dde8e747ca6b8be6ce3d8b74859c788e062cb2ba069ba875ab"
+    },
+    {
+      "rel": "web/assets/guide-flow.svg",
+      "bytes": 1277,
+      "sha256": "4644f4536df6d3473058d80ee85964e753443e98e45a45d98aa4f8ed33c23af0"
+    },
+    {
+      "rel": "web/assets/hero.svg",
+      "bytes": 1977,
+      "sha256": "7fcc7c2192c5860ea232c9ced9a1e134dd5d699a1227ea6521a2b33cdc71feda"
+    },
+    {
+      "rel": "web/assets/README.txt",
+      "bytes": 425,
+      "sha256": "b6a55aad1366d578659d58d5c6f38755d7afc17be5c3cc0c565812a204267ee4"
+    },
+    {
+      "rel": "wrangler.toml",
+      "bytes": 225,
+      "sha256": "ae387504307fccd75cc36b7e94c7b5763e6998a6676c7cbce968d467505143f5"
+    }
+  ],
+  "totals": {
+    "files": 536,
+    "bytes": 21267029,
+    "byGroup": {
+      "source": {
+        "files": 58,
+        "bytes": 362175
+      },
+      "published": {
+        "files": 119,
+        "bytes": 513302
+      },
+      "articles": {
+        "files": 77,
+        "bytes": 217348
+      },
+      "images": {
+        "files": 258,
+        "bytes": 16217627
+      },
+      "data": {
+        "files": 5,
+        "bytes": 3765660
+      },
+      "contentRoot": {
+        "files": 3,
+        "bytes": 82961
+      },
+      "shell": {
+        "files": 9,
+        "bytes": 5106
+      },
+      "reports": {
+        "files": 7,
+        "bytes": 102850
+      }
+    },
+    "groupSha256": {
+      "source": "266b3a5a7e328c69cc3eba281dbbce3f2280ecc4005bd9d78352d485d4e9feda",
+      "published": "9c4532a3a433890ae3597615741ac7bf871e1f985d577f1626475dbc99841957",
+      "articles": "0ca561efde432e4163655ec9b9b48d6af7da6a96a96cb121fa71da9faf4f9868",
+      "images": "027eb979b2f69bbc2cb27d01efd21e718c74ebeed6b1006eb05f342d9e2c231b",
+      "data": "a34b23c0cebd770e363f4cbc87bc1087275daecfb006b8119e84097ed3a8939c",
+      "contentRoot": "32586adcfed4badc0bbae02b7dd5e1e14a688bb8aae38b6a4a5719df38e28c6d",
+      "shell": "1f1149a27e81b6a0af27490ee6ad65d8f961d6afaa9767fd383eabab1269a80e",
+      "reports": "087279c462ee8b9f5730f0acc7b6f8293499281250907ceaeb7b80bf2158ee59"
+    },
+    "allSha256": "3ed35f13600030a60dfe349ffffb5ae35920d63be6d6e10690f4506f705d166e"
+  },
+  "excluded": {
+    "files": [
+      {
+        "rel": ".git/",
+        "bytes": null,
+        "why": "git history and build output are not part of a source handoff"
+      },
+      {
+        "rel": "data/normalized/localization-cs-cz.json",
+        "bytes": 45615,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-da-dk.json",
+        "bytes": 43965,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-de.json",
+        "bytes": 45863,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-en.json",
+        "bytes": 44049,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-es-es.json",
+        "bytes": 46935,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-fi-fi.json",
+        "bytes": 44731,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-fr-fr.json",
+        "bytes": 46851,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-hu-hu.json",
+        "bytes": 46524,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-it.json",
+        "bytes": 46942,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-ja-jp.json",
+        "bytes": 50453,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-ko-kr.json",
+        "bytes": 47912,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-lt-lt.json",
+        "bytes": 46685,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-nl-nl.json",
+        "bytes": 44993,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-pl-pl.json",
+        "bytes": 45614,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-pt-br.json",
+        "bytes": 46833,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-pt-pt.json",
+        "bytes": 45945,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-ro-ro.json",
+        "bytes": 45809,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-ru-ru.json",
+        "bytes": 59603,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-tr.json",
+        "bytes": 44085,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/localization-zh-cn.json",
+        "bytes": 42313,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/p0-field-rows.json",
+        "bytes": 5461188,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "data/normalized/p0-schema.json",
+        "bytes": 3251751,
+        "why": "decoded layer or extracted locale table: raw output, stays on the extraction host"
+      },
+      {
+        "rel": "HARNESS-NEXT-ACTION.md",
+        "bytes": 1429,
+        "why": "a process note for the extraction host, not site content"
+      },
+      {
+        "rel": "reports/container-probe.md",
+        "bytes": 912,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/data-boundary.md",
+        "bytes": 4029,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/decoder-arrays.md",
+        "bytes": 1807,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/decoder-enums.md",
+        "bytes": 1590,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/decoder-structs.md",
+        "bytes": 2100,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/il2cpp-metadata-v39.md",
+        "bytes": 12459,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/il2cpp-metadata.md",
+        "bytes": 1827,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/il2cpp-pair21-retracted.md",
+        "bytes": 2221,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/il2cpp-type-table-failed.md",
+        "bytes": 2407,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/image-mapping-audit.md",
+        "bytes": 5249,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/localization-extraction.md",
+        "bytes": 2815,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/measure-builtins.md",
+        "bytes": 2291,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/monoscript-location.md",
+        "bytes": 2277,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/publish-checklist.md",
+        "bytes": 5448,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/redesign-p0/entities-checkout.png",
+        "bytes": 100697,
+        "why": "screenshots of the built site taken on the extraction host; the site rebuilds them"
+      },
+      {
+        "rel": "reports/redesign-p0/entry-detail.png",
+        "bytes": 82150,
+        "why": "screenshots of the built site taken on the extraction host; the site rebuilds them"
+      },
+      {
+        "rel": "reports/redesign-p0/entry.png",
+        "bytes": 430825,
+        "why": "screenshots of the built site taken on the extraction host; the site rebuilds them"
+      },
+      {
+        "rel": "reports/redesign-p0/home-grid.png",
+        "bytes": 253159,
+        "why": "screenshots of the built site taken on the extraction host; the site rebuilds them"
+      },
+      {
+        "rel": "reports/redesign-p0/home.png",
+        "bytes": 203269,
+        "why": "screenshots of the built site taken on the extraction host; the site rebuilds them"
+      },
+      {
+        "rel": "reports/route-d-values.md",
+        "bytes": 2671,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/tooling-and-il2cpp-probe.md",
+        "bytes": 2638,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/unitypy-object-table.md",
+        "bytes": 2644,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/v22-header.md",
+        "bytes": 2285,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/v22-object-table.md",
+        "bytes": 2126,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "reports/verification.md",
+        "bytes": 2792,
+        "why": "extraction-side working record; the live reports listed in the manifest are kept"
+      },
+      {
+        "rel": "web/dist/",
+        "bytes": null,
+        "why": "git history and build output are not part of a source handoff"
+      }
+    ],
+    "bytes": 10778776
+  }
+}

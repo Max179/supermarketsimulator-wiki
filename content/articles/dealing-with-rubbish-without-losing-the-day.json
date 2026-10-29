@@ -1,0 +1,61 @@
+{
+  "id": "dealing-with-rubbish-without-losing-the-day",
+  "title": "Dealing with rubbish without losing the day",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to keep on top of rubbish in Supermarket Simulator while treating it as the separate job it is.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with bins and bags available",
+    "Somewhere to put a bag out",
+    "A janitor if you have one"
+  ],
+  "steps": [
+    {
+      "do": "Separate rubbish from dirt and dust before you start, because they are different jobs.",
+      "because": "cleaning is split into named actions for dirt, dust and rubbish, with a kind that tells them apart (CleanDirtAction, CleanDustAction, CleanGarbageAction, CleaningType)"
+    },
+    {
+      "do": "Expect rubbish to be produced rather than only left behind.",
+      "because": "the game keeps a generator and a manager for rubbish (GarbageGenerator, GarbageManager)"
+    },
+    {
+      "do": "Treat the mess as objects in the world, not as a texture on the floor.",
+      "because": "there is a rubbish object and a trash object of the game's own (Garbage, Trash)"
+    },
+    {
+      "do": "Use the bins and bags the game provides rather than your own arrangement.",
+      "because": "rubbish has bins and bags of its own (TrashBin, TrashBag)"
+    },
+    {
+      "do": "Count going to the rubbish as a step of its own when you plan a lap of the shop.",
+      "because": "going to the rubbish is a step of its own (GoToTrash)"
+    },
+    {
+      "do": "Know that putting a bag out is an action which can be switched off.",
+      "because": "the bag has its own interaction and the action can be disabled (TrashbagInteraction, DisableTrashBagAction)"
+    },
+    {
+      "do": "Look for the bin that comes with the thing you placed.",
+      "because": "the ice cream stand has a bin of its own (IceCreamTrashBin)"
+    },
+    {
+      "do": "Hand the job to a janitor if you have one, and it will keep its own states per kind of mess.",
+      "because": "the janitor runs through a manager and a state machine, with separate cleaning states for dirt, dust and rubbish, and it works in a shared shop (JanitorManager, Janitor, DirtCleaningState, DustCleaningState, GarbageCleaningState, NetworkJanitor)"
+    }
+  ],
+  "commonMistakes": [
+    "Mopping as if rubbish were dirt and then wondering why the mess is still there.",
+    "Filling bins you cannot reach instead of using the bags.",
+    "Forgetting that a bag left ready to go out is not the same as gone.",
+    "Buying a janitor and then doing the cleaning yourself anyway."
+  ],
+  "relatedEntities": [
+    "dirt-dust-and-rubbish-are-three-jobs",
+    "the-rubbish-and-where-it-goes",
+    "the-janitor"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

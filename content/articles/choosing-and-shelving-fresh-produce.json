@@ -1,0 +1,52 @@
+{
+  "id": "choosing-and-shelving-fresh-produce",
+  "title": "Choosing and shelving fresh produce",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to handle the fresh side of a Supermarket Simulator shop, given that each fruit and vegetable is its own named good, that the produce stall places goods for you, and that weighing is a routine on the scale.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "A produce stall or the space for one",
+    "A scale with a barcode to scan",
+    "Room in the chiller for what you buy"
+  ],
+  "steps": [
+    {
+      "do": "Buy fresh goods as individual lines rather than as one lump of stock.",
+      "because": "each fresh good is shipped with a picture of its own, an artichoke, an avocado, a banana and a carrot among them (Artichoke, Avocado, Banana, Carrot)"
+    },
+    {
+      "do": "Set them out on the produce stall and let the stall space them.",
+      "because": "the produce stall has a calculator of its own for where a product goes (ProduceStallProductTransformCalculator)"
+    },
+    {
+      "do": "Take anything sold by weight to the scale, not to the shelf.",
+      "because": "the scale is a system of its own with a manager, a controller and its own data (ScaleManager, Scale, ScaleController, ScaleData)"
+    },
+    {
+      "do": "Scan the barcode or key in the code when the scale asks for it.",
+      "because": "both ways of identifying a weighed good are provided (Barcode, ScaleApplyBarcodeTask, ScaleEnterCodeTask)"
+    },
+    {
+      "do": "Wait for the customer the scale is weighing for rather than walking away.",
+      "because": "the scale has a step where it waits for the customer (ScaleWaitCustomerTask)"
+    },
+    {
+      "do": "Keep the tinned goods in their own lines beside the fresh ones.",
+      "because": "tinned goods are named per brand and per kind, green beans, cayenne pepper, crushed pineapple, mixed fruit, tomato and corn among them (253_Canned_Beaneto_GreenBeans, 260_Canned_RedRock_Tomato, 262_Canned_SunValley_Corn)"
+    }
+  ],
+  "commonMistakes": [
+    "Putting fresh goods on an ordinary shelf slot and wondering why they do not sit right.",
+    "Walking off while the scale is still waiting on a customer.",
+    "Mixing tinned lines together so that two brands share one space.",
+    "Buying produce before checking what the scale needs for it."
+  ],
+  "relatedEntities": [
+    "the-fresh-produce-in-the-shop",
+    "the-weighing-scale"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

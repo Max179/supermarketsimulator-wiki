@@ -1,0 +1,57 @@
+{
+  "id": "reading-the-street-before-you-step-into-it",
+  "title": "Reading the street before you step into it",
+  "tier": "published",
+  "kind": "article",
+  "target": "What is actually happening outside the shop in Supermarket Simulator, so going out to the street is a decision rather than a gamble.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with a street outside it",
+    "Some reason to go out — a delivery, a pump or a vehicle",
+    "A little patience"
+  ],
+  "steps": [
+    {
+      "do": "Treat the street as a place of its own rather than as scenery.",
+      "because": "the roads are objects of their own — a base, a creator, a drawer and a loader — and a road knows its connections (RoadBase, RoadCreator, RoadDrawer, RoadsLoader, RoadConnectionsBase)"
+    },
+    {
+      "do": "Watch the traffic rather than the markings.",
+      "because": "traffic follows waypoints that carry data of their own, with a navigator working along them (WaypointData, WaypointNavigator)"
+    },
+    {
+      "do": "Cross where a light is reporting a state rather than where it looks clear.",
+      "because": "a traffic light reports a change of its own state (TrafficLight, TrafficLightChanged)"
+    },
+    {
+      "do": "Expect a vehicle to change lanes as part of its route, not as a warning to you.",
+      "because": "changing lanes is part of following a route (LaneChange)"
+    },
+    {
+      "do": "Remember who is holding the traffic together.",
+      "because": "the street's traffic is run by a manager and a holder of its own (NPCTrafficManager, TrafficHolder)"
+    },
+    {
+      "do": "In a shared shop, expect the traffic to be shared too.",
+      "because": "the street's traffic has a shared form as well as a local one (TrafficComponent, TrafficComponentMultiplayer)"
+    },
+    {
+      "do": "Know what is actually out there before you plan a trip.",
+      "because": "the street has a petrol station with a pump, street lighting with a controller behind it, and deliveries and storage tied to the street (GasStationPump, StreetLights, StreetLightController, StreetBoxTarget, StorageStreet)"
+    }
+  ],
+  "commonMistakes": [
+    "Stepping out because the road looks empty rather than because a light says so.",
+    "Assuming a vehicle that is changing lanes has seen you.",
+    "Forgetting that a delivery can be tied to the street rather than to the shop floor.",
+    "Treating the road as something drawn rather than something built from its own pieces."
+  ],
+  "relatedEntities": [
+    "the-street-outside",
+    "the-road-traffic-and-its-signals",
+    "how-a-vehicle-drives"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "buying-a-licence-and-knowing-what-it-unlocks",
+  "title": "Buying a licence and knowing what it unlocks",
+  "tier": "published",
+  "kind": "article",
+  "target": "What a licence actually is in Supermarket Simulator — an item with a tab, a record on each product and a difference between unlocked and active — so a purchase is understood rather than guessed at.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Enough money for a licence",
+    "The computer or tablet in reach",
+    "A product line you want to sell"
+  ],
+  "steps": [
+    {
+      "do": "Treat a licence as an item you buy rather than as a switch you flip.",
+      "because": "a licence is bought as an item, listed in a tab of its own with an indicator for a purchase (LicenseItem, LicensesTab, PurchasedLicenseIndicator)"
+    },
+    {
+      "do": "Read the licence tab as a screen with its own layout.",
+      "because": "the licence tab has a layout configuration of its own (LicenseLayoutConfig)"
+    },
+    {
+      "do": "Know that the connection runs the other way as well: the product carries the licence, and separately the game describes what a licence unlocks.",
+      "because": "a product carries a licence record and there is separate data describing what a licence unlocks (ProductLicenseSO, LicenseProductsData, productLicenseSos)"
+    },
+    {
+      "do": "Keep unlocked and active licences apart in your head.",
+      "because": "unlocked licences and active licences are kept apart, and a set of licence numbers can be disabled (unlockedLicenses, activeLicenses, disabledLicenseIDs)"
+    },
+    {
+      "do": "Expect the purchase to be checked rather than simply charged.",
+      "because": "buying a licence is checked, with a store-side handle and a result, and there are add-on licences (storeCanAcquireLicenseResult, storeLicenseHandle, addOnLicenses)"
+    },
+    {
+      "do": "Use the icons to scan a long licence list.",
+      "because": "licence icons are kept on sheets grouped by kind and by range of licence numbers (asset names: T_IconAtlasLicence-1-10, T_IconAtlasLicence-Vegetables, T_IconAtlasLicense-11-20)"
+    }
+  ],
+  "commonMistakes": [
+    "Assuming a bought licence is an active one.",
+    "Looking for a product's licence on the shelf rather than on the product record.",
+    "Ignoring add-on licences because the main purchase looked complete.",
+    "Hunting through a long list by name when the icons are grouped by kind and number."
+  ],
+  "relatedEntities": [
+    "licence-items-and-their-icons",
+    "store-upgrades-and-licences",
+    "the-list-you-buy-from"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

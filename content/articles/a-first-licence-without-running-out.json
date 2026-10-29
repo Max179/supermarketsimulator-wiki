@@ -1,0 +1,44 @@
+{
+  "id": "a-first-licence-without-running-out",
+  "title": "Getting your first licence without running out of cash",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to open up new products without wrecking the shop's cash flow, using the licence, level and credit behaviour the game defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that already sells something",
+    "Stock in storage",
+    "An idea of your daily takings"
+  ],
+  "steps": [
+    {
+      "do": "Unlock the licence before you order the stock it covers.",
+      "because": "licences are their own objects, separate from ordering (ProductLicenseSOs)"
+    },
+    {
+      "do": "Check the store level a product needs before planning around it.",
+      "because": "a product can carry a required store level (RequiredStoreLevel)"
+    },
+    {
+      "do": "Keep the licence purchase inside money you already have rather than borrowing for it first.",
+      "because": "borrowing is a tracked state with repayments of its own (BankCreditSO, LoanStatus, LoanPaymentsTab)"
+    },
+    {
+      "do": "Price the new line before it reaches the shelf.",
+      "because": "prices are set through the shop's bulk pricing rather than per shelf item (BulkPricingManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Ordering stock for a product the shop level has not unlocked.",
+    "Borrowing for a licence and then missing a repayment.",
+    "Shelving a new product with no price on it."
+  ],
+  "relatedEntities": [
+    "store-upgrades-and-licences",
+    "products-and-deliveries",
+    "setting-prices-in-bulk"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

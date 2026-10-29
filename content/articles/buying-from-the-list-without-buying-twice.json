@@ -1,0 +1,57 @@
+{
+  "id": "buying-from-the-list-without-buying-twice",
+  "title": "Buying from the list without buying twice",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the buying lists in Supermarket Simulator, and how to tell what a content pack adds before you spend on its goods.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A computer or tablet in the shop",
+    "Money available to spend",
+    "At least one pack installed if you want its goods"
+  ],
+  "steps": [
+    {
+      "do": "Buy from the list rather than walking the shop looking for something to order.",
+      "because": "what can be bought is kept as sales items with a kind of sale of its own, so stock, equipment and fittings share one way of being shown (SalesItem, SalesType)"
+    },
+    {
+      "do": "Filter the list before you scroll it.",
+      "because": "the list can be filtered, with filter types and filtered items, including one for a toolbox (FilterType, FilteredItem, ToolboxItemFilterType)"
+    },
+    {
+      "do": "Know that a row can toggle something rather than only describe it.",
+      "because": "every row is a UI element of its own and there is an item that toggles a product (SalesUIElement, ProductToggleItem)"
+    },
+    {
+      "do": "Check what the catalogue is showing you through its own viewer.",
+      "because": "what the list shows goes through a product viewer (ProductViewer)"
+    },
+    {
+      "do": "Look at the pack screen before you buy a pack's goods.",
+      "because": "the game has a screen of its own for packs, with an element per pack and a controller behind it (DLCScreen, DLCScreenController, DLCElement)"
+    },
+    {
+      "do": "Check whether the pack is actually installed, because that decides what you can sell.",
+      "because": "pack information is held as its own record and a flag states whether a pack is present, with a list of the products that belong to packs and a separate list of what a pack licenses (DlcInformation, DlcInstalled_t, DLCReader, dlcProducts, dlcProductLicences)"
+    },
+    {
+      "do": "Expect a pack's goods to need the fixture that came with the pack.",
+      "because": "there is a list of the displays that come with packs (dlcDisplaysSO)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying a pack's goods on a machine where the pack is not installed.",
+    "Scrolling the whole catalogue instead of filtering it.",
+    "Ordering a fitting twice because the row toggles rather than describes.",
+    "Expecting pack goods to sit on base-game fixtures."
+  ],
+  "relatedEntities": [
+    "the-list-you-buy-from",
+    "the-expansion-packs",
+    "the-local-market-and-product-costs"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

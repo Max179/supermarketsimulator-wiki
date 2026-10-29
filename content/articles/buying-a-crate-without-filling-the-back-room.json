@@ -1,0 +1,47 @@
+{
+  "id": "buying-a-crate-without-filling-the-back-room",
+  "title": "Buying a crate without filling the back room",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to buy and open crates in Supermarket Simulator without turning the storage room into a wall of unopened stock.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Room to put a crate down",
+    "Money for the crate as well as for ordinary stock",
+    "Shelves that will take what comes out"
+  ],
+  "steps": [
+    {
+      "do": "Decide where the crate will be opened before you buy it.",
+      "because": "a crate is an object of its own rather than a shelf (Crate)"
+    },
+    {
+      "do": "Buy it as its own purchase rather than assuming it arrives with an order.",
+      "because": "the game has a sale item for a crate (CrateSaleItem)"
+    },
+    {
+      "do": "Open it in the shop rather than leaving it sealed in the back.",
+      "because": "a crate has an interaction for dealing with it in the world (CrateInteraction)"
+    },
+    {
+      "do": "Expect the contents to be laid out rather than all in one place.",
+      "because": "the game keeps a numbered grid for a crate (CrateGridNumbersAuto)"
+    },
+    {
+      "do": "Check the shop when you are in a shared game, since the crate is shared.",
+      "because": "the crate interaction is carried on the network (NetworkCrateInteraction)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying crates faster than you can open them.",
+    "Opening one with nowhere to put the contents.",
+    "Assuming a crate is a shelf and leaving it sealed."
+  ],
+  "relatedEntities": [
+    "the-crates-you-buy",
+    "products-and-deliveries"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

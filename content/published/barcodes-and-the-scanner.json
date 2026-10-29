@@ -1,0 +1,99 @@
+{
+  "id": "barcodes-and-the-scanner",
+  "title": "Barcodes, the scanner and the discount label",
+  "category": "Checkout",
+  "summary": "Supermarket Simulator makes the barcode an object rather than a marking: the game spawns one for a product, lets you drag it onto the scanner, and keeps a second, green label for discounted goods.",
+  "body": [
+    "In this shop a barcode is a thing you handle rather than a marking printed on the box. The game has a barcode object, a spawner that produces it and a way of dragging it, which is why scanning is an action you take rather than a menu choice you make.",
+    "The scanner is a device of its own. It has its own interaction and its own networked version, so in a shared shop the game can show one player scanning without letting the other do it by accident.",
+    "A hint handler tells you what the scanner expects. The same device keeps a helper for its input hint, which is how the game prompts you at the till rather than leaving you to guess at a button.",
+    "Scanning produces a sale item. What you scan is recorded as a sale item on the scanner rather than quietly changing a total, which is why an item that went through wrongly can still be dealt with before the customer pays.",
+    "Discounts have a barcode of their own. The game ships a second label picture for discounted goods, and the discount side of the shop has a manager and a panel of its own, so a reduced product is not simply the ordinary label with a smaller number behind it.",
+    "The scale shares the same work. One of the game's task records applies a barcode at the scale, so weighing a loose item and scanning a packaged one belong to the same flow rather than two separate jobs.",
+    "The till itself is a set of named parts: a belt, a belt grid, a drawer, a change manager and a screen, and a checkout carries a type, which is how the game tells an ordinary till from the self-service one.",
+    "The two labels beside this entry are the game's own: the one it spawns for a product and the green one it keeps for discounted goods.",
+    "What this entry does not tell you: how the digits on the label are generated, what they mean, or how a discount is calculated. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A barcode is an object the game spawns, with a spawner and a way of dragging it.",
+      "evidence": "identifiers: Barcode, BarcodeSpawner, BarcodeDragger"
+    },
+    {
+      "claim": "The scanner is a device with its own interaction and a networked version.",
+      "evidence": "identifiers: ScannerDevice, ScannerInteraction, NetworkScannerInteraction"
+    },
+    {
+      "claim": "The game keeps a helper that tells you what input the scanner expects.",
+      "evidence": "identifier: ScannerInputHintHandler"
+    },
+    {
+      "claim": "What is scanned is recorded as a sale item rather than only changing a total.",
+      "evidence": "identifiers: ScannerSaleItem, NetworkScannerSaleItem"
+    },
+    {
+      "claim": "The game ships a second label picture for discounted goods, and discounts have a manager and a panel.",
+      "evidence": "identifiers: DiscountManager, DiscountPanel, isDiscount"
+    },
+    {
+      "claim": "One of the game's task records applies a barcode at the scale.",
+      "evidence": "identifier: ScaleApplyBarcodeTask"
+    },
+    {
+      "claim": "The build has a handler for the animation a scan plays.",
+      "evidence": "identifier: ScanAnimationHandler"
+    },
+    {
+      "claim": "A till is made of named parts, and a checkout carries a type.",
+      "evidence": "identifiers: CheckoutBelt, CheckoutBeltGrid, CheckoutDrawer, CheckoutChangeManager, CheckoutType"
+    },
+    {
+      "claim": "Barcodes are drawn from their own pieces: a barcode material with an icon, a background for that icon and a shadow, plus a barcode of its own for produce.",
+      "evidence": "asset names: M_Barcode, M_Barcode_Icon, M_Barcode_Icon_BG, M_Barcode_Shadow, T_Barcode_Vegie"
+    }
+  ],
+  "related": [
+    "checkout-and-cashiers",
+    "paying-by-card-or-cash",
+    "the-weighing-scale"
+  ],
+  "images": [
+    {
+      "file": "mapped/barcodes-and-the-scanner-plain.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The product label and barcode the game spawns at the till: a yellow label reading PRODUCT.",
+        "zh": "游戏在收银台生成的产品标签与条形码：黄色标签，印有 PRODUCT。"
+      }
+    },
+    {
+      "file": "mapped/barcodes-and-the-scanner-discounted.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The green label and barcode the game ships for discounted goods.",
+        "zh": "游戏为打折商品提供的绿色标签与条形码。"
+      }
+    },
+    {
+      "file": "mapped/barcodes-and-the-scanner-barcode-vegie.png",
+      "kind": "game",
+      "alt": {
+        "en": "The produce label the game itself draws: a barcode with a yellow band and green shoots over it.",
+        "zh": "游戏自己为农产品画的价签：条形码上压着黄色色带与绿色芽苗。"
+      }
+    },
+    {
+      "file": "the-barcodes-and-the-scanner.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a barcode is spawned, dragged onto the scanner, recorded as a sale item, and discounted goods use their own label.",
+        "zh": "示意图：生成条形码、拖到扫描器、记为销售项；打折商品使用专用标签。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

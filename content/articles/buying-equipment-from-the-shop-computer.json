@@ -1,0 +1,68 @@
+{
+  "id": "buying-equipment-from-the-shop-computer",
+  "title": "Buying equipment from the shop computer",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to buy paint, tools, vehicles and fittings in Supermarket Simulator: why the computer has a viewer for each kind of thing rather than one list, where the vending machines are filed, and what the computer's screens are built on.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with a computer placed",
+    "Enough money for what you intend to buy",
+    "Somewhere to put the thing once it arrives"
+  ],
+  "steps": [
+    {
+      "do": "Start at the computer rather than looking for a catalogue in a menu.",
+      "because": "the computer is an object in the shop with a desk of its own, so buying equipment happens where the machine stands (T_SuperMarketComputer_AlbedoTransparency, T_SuperMarketComputerDesk_AlbedoTransparency)"
+    },
+    {
+      "do": "Expect a different viewer for each kind of thing instead of one long list.",
+      "because": "the shop floor has a viewer of its own and the furniture has another, so looking over what you own and buying something new are separate screens (FloorViewer, FurnituresViewer)"
+    },
+    {
+      "do": "Look for tools in their own viewer and their own kind of sale entry.",
+      "because": "tools are filed as a catalogue of their own rather than as ordinary stock (ToolsViewer, ToolSalesItem)"
+    },
+    {
+      "do": "Do not go to the stock list for a vehicle.",
+      "because": "vehicles have a viewer of their own, so what you drive is bought where the game keeps it rather than beside the groceries (VehiclesViewer)"
+    },
+    {
+      "do": "Treat paint as a purchase rather than a service.",
+      "because": "paint is sold as an item of its own, so it arrives as something you then use rather than as a job done for you (PaintSalesItem)"
+    },
+    {
+      "do": "Buy floors from their own entry and check them in their own viewer.",
+      "because": "flooring is filed as its own kind of sale entry rather than as a general fitting (FloorSalesItem, FloorViewer)"
+    },
+    {
+      "do": "Do not forget where the vending machines are kept.",
+      "because": "vending machines have a tab of their own on the computer, apart from the rest of the fittings (VendingMachineTab, VendingMachineComputerSlot)"
+    },
+    {
+      "do": "Expect the computer's screens to behave like windows rather than like full-screen menus.",
+      "because": "its screens are windows drawn on a desktop canvas of their own, so they open over one another rather than replacing the whole view (AppWindow, DesktopCanvas)"
+    },
+    {
+      "do": "Expect pricing to have its own controls inside the machine.",
+      "because": "the computer carries a handler for pricing controls rather than relying on a general input path (PricingControllerHandler)"
+    },
+    {
+      "do": "Plan where the thing will go before you buy it.",
+      "because": "what you buy is an object you then place, and placement is its own step rather than part of buying (VendingMachinePlacementDeadZone, VendingMachineTransformCalculator)"
+    }
+  ],
+  "commonMistakes": [
+    "Searching the stock list for a vehicle or a tool.",
+    "Expecting one catalogue to hold every kind of purchase.",
+    "Buying paint and expecting the game to apply it for you.",
+    "Treating the computer's screens as full-screen menus that replace each other."
+  ],
+  "relatedEntities": [
+    "the-shop-computer",
+    "the-vehicles-you-can-use"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

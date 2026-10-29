@@ -1,0 +1,70 @@
+{
+  "id": "writing-a-name-that-fits",
+  "title": "Writing a name that fits",
+  "category": "Interface",
+  "summary": "Naming a shop in Supermarket Simulator is its own system: the game keeps customisation data and items, networked for every player, with an overlay, name data and a font that sizes itself.",
+  "body": [
+    "A name in this shop is not a line of text typed into a box. It belongs to a customisation system with a manager and its own data, and the same system covers the fittings you choose for the shop.",
+    "The customisation is networked. There is a networked version of the manager, so a name or a fitting chosen by one player is the shop's name for everyone rather than something only one person sees.",
+    "The name is drawn on an overlay of its own rather than being part of a menu. That is what allows it to appear over the shop rather than in a corner of an interface.",
+    "Categories have overlays of their own. A sign over an aisle and the shop's own name are therefore handled by the same idea, even though they show different things.",
+    "A name has data behind it. There is a record of its own for a name rather than the string being stored wherever it happens to be used, which is how the game can keep a name with the shop.",
+    "It is sized to fit. There is a component whose job is to fit a name to the space it has, so a long shop name does not run off the sign it is written on.",
+    "Text can also size itself. The same arrangement is used for translated text, which is why a name that is short in one language and long in another still fits its box.",
+    "Because the data, the overlay, the fit and the language handling are separate, the game can change how names look without changing what a name is.",
+    "What this entry does not tell you: how long a name may be, what characters are allowed, or how it is drawn on screen. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A name belongs to a customisation system with a manager, its own data and its own items.",
+      "evidence": "identifiers: CustomizationManager, CustomizationData, CustomizationItem"
+    },
+    {
+      "claim": "The customisation is networked, so a change is the shop's change for every player.",
+      "evidence": "identifier: NetworkCustomizationManager"
+    },
+    {
+      "claim": "The name is drawn on an overlay of its own rather than inside a menu.",
+      "evidence": "identifier: ChangeNameOverlay"
+    },
+    {
+      "claim": "A category name has an overlay of its own.",
+      "evidence": "identifier: CategoryNameOverlay"
+    },
+    {
+      "claim": "A name has its own data record.",
+      "evidence": "identifier: NameCustomizationData"
+    },
+    {
+      "claim": "A name is fitted to its space by a font sizer.",
+      "evidence": "identifier: NameFontSizer"
+    },
+    {
+      "claim": "Text can also size itself, which is how a translation of a different length still fits.",
+      "evidence": "identifier: LocalizeAutoSize"
+    },
+    {
+      "claim": "The game builds its name text with a font atlas of its own, in a regular and an extra-light weight.",
+      "evidence": "asset names: FontAsset_Oswald SDF Atlas, Font_Oswald_ExtraLight SDF Atlas"
+    }
+  ],
+  "related": [
+    "signs-labels-and-organising",
+    "the-management-tabs"
+  ],
+  "images": [
+    {
+      "file": "writing-a-name-that-fits.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a name is entered, stored as its own data, fitted by a sizer, drawn on an overlay, and shared with the crew.",
+        "zh": "示意图：输入名称、存为独立数据、由适配器调整大小、绘制在浮层上，并共享给同队玩家。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

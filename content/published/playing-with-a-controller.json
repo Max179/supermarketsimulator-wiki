@@ -1,0 +1,90 @@
+{
+  "id": "playing-with-a-controller",
+  "title": "Playing with a controller",
+  "category": "Interface",
+  "summary": "Supermarket Simulator can be run with a controller rather than only with a keyboard and mouse: the game switches its prompts, makes its menus selectable for a pad, and drives vibration through a haptic layer of its own.",
+  "body": [
+    "The shop can be run with a controller rather than only with a keyboard and mouse, and the game has a layer of its own for it instead of treating a pad as a keyboard with different names.",
+    "There is an input manager for the controller and a set of functions for the pad's interface, which is why menus behave differently with a pad than they do with a pointer.",
+    "The prompts change to match what you are holding. The game has a switch for the pad, a second switch for individual screens, an icon switcher and a dispatcher for the layout, so one action can be shown as a key or as a button depending on what is in your hands.",
+    "Menu items are made selectable for a pad. There are selectable parents, a check for where the focus is and a helper around it, which is how a selection moves down a list rather than a pointer being dragged across the screen.",
+    "Typing is handled as well. A listener hands text entry to a virtual keyboard when a pad is in use, so naming the shop or searching for a product does not mean putting the controller down.",
+    "Whole screens have their own pad handling. The vending machine, its computer slot and its individual slots each have a handler, and the sale screens for furniture, paint, produce and loans adjust themselves for a pad too.",
+    "Vibration is part of the same work. There is a haptic manager with patterns, durations and a preset configuration behind it, so the pad is told what to do rather than shaking at random.",
+    "The pictures beside this entry are the game's own: two of the controller buttons it ships for its prompts.",
+    "What this entry does not tell you: which controllers are supported, what each button does by default, or which platforms get vibration. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game has a controller input manager and its own set of pad interface functions.",
+      "evidence": "identifiers: ControllerInputManager, GamepadUIFunctionLibrary, GamepadUIHandler"
+    },
+    {
+      "claim": "Prompts switch between key and button pictures, with a switch, a deeper switch, an icon switcher and a layout dispatcher.",
+      "evidence": "identifiers: GamepadSwitch, GamepadDeepSwitch, GamepadIconSwitcher, GamepadLayoutToggleDispatcher"
+    },
+    {
+      "claim": "Menu items are made selectable for a pad, with a focus check and selectable parents.",
+      "evidence": "identifiers: GamepadUISelectable, GamepadSelectableParent, CheckGamepadFocus"
+    },
+    {
+      "claim": "Text entry can be handed to a virtual keyboard when a pad is in use.",
+      "evidence": "identifier: VirtualKeyboardGamepadSwitchListener"
+    },
+    {
+      "claim": "The vending machine and its slots have pad handlers of their own.",
+      "evidence": "identifiers: VendingGamepadHandler, VendingComputerSlotGamepadHandler, VendingSlotGamepadParent"
+    },
+    {
+      "claim": "The sale screens for furniture, paint, produce and loans adjust themselves for a pad.",
+      "evidence": "identifiers: FurnitureSaleItemGamepadUIAdjuster, PaintSaleItemGamepadUIAdjuster, ProducSaleItemGamepadUIAdjuster, LoanItemGamepadUIAdjuster"
+    },
+    {
+      "claim": "Vibration has a manager with patterns, durations and a preset configuration.",
+      "evidence": "identifiers: HapticManager, HapticPattern, HapticDuration, HapticPresetConfig"
+    },
+    {
+      "claim": "The game ships its own controller button pictures for its prompts.",
+      "evidence": "asset names: XboxOne_A, XboxOne_B, XboxOne_X, XboxOne_Y, KeyboardControllersSpriteAtlas_Cropped_xBox"
+    },
+    {
+      "claim": "The control pictures are also cut out one by one, numbered per glyph.",
+      "evidence": "asset names: KeyboardControllersSpriteAtlas_Cropped_0, KeyboardControllersSpriteAtlas_Cropped_10"
+    }
+  ],
+  "related": [
+    "the-management-tabs",
+    "how-the-game-shows-what-you-can-use"
+  ],
+  "images": [
+    {
+      "file": "mapped/playing-with-a-controller-button-a.png",
+      "kind": "game",
+      "alt": {
+        "en": "One of the controller button pictures the game ships for its prompts: the green A button.",
+        "zh": "游戏自带的按键图片之一：绿色 A 键。"
+      }
+    },
+    {
+      "file": "mapped/playing-with-a-controller-button-b.png",
+      "kind": "game",
+      "alt": {
+        "en": "Another of the controller button pictures: the red B button.",
+        "zh": "另一张按键图片：红色 B 键。"
+      }
+    },
+    {
+      "file": "playing-with-a-controller.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the prompts switch to buttons, menus become selectable, typing goes to a virtual keyboard, and the pad vibrates.",
+        "zh": "示意图：提示切换为按键、菜单可选中、输入转虚拟键盘、手柄震动。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "a-computer-routine-that-keeps-the-shelves-full",
+  "title": "A computer routine that keeps the shelves full",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the shop computer in Supermarket Simulator as a routine, so ordering, licences and fittings stop being a last-minute scramble.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A computer placed in the shop",
+    "Money put aside for the next order",
+    "A shelf that is actually selling"
+  ],
+  "steps": [
+    {
+      "do": "Look over what you already own before you buy anything new.",
+      "because": "the computer keeps a viewer for the shop floor as well as one for furniture (FloorViewer)"
+    },
+    {
+      "do": "Order stock in the same pass you use to check the shop over.",
+      "because": "floor items are listed in the computer as entries of their own (FloorSalesItem)"
+    },
+    {
+      "do": "Buy furniture from its own part rather than mixing it in with stock.",
+      "because": "furniture has a separate viewer with its own entries (FurnituresViewer)"
+    },
+    {
+      "do": "Use the vending tab when you are filling machines, not the ordinary stock list.",
+      "because": "vending machines have a tab of their own on the computer (VendingMachineTab)"
+    },
+    {
+      "do": "Finish at the computer before the shop gets busy.",
+      "because": "the computer is a placed object you have to walk to (T_SuperMarketComputer_AlbedoTransparency)"
+    }
+  ],
+  "commonMistakes": [
+    "Ordering stock without checking what is already on the shelves.",
+    "Looking for furniture in the stock list and assuming it never arrived.",
+    "Leaving the computer until the shelves are already empty."
+  ],
+  "relatedEntities": [
+    "the-shop-computer",
+    "orders-and-what-you-can-order"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

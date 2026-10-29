@@ -1,0 +1,53 @@
+{
+  "id": "building-a-drinks-shelf",
+  "title": "Building a drinks shelf",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to set out the drinks a Supermarket Simulator shop carries, given that soda, water, juice, beer and wine are separate named goods with containers of their own.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "Shelf space for a drinks row",
+    "The ordering list open",
+    "Money for the next delivery"
+  ],
+  "steps": [
+    {
+      "do": "Order soda by brand rather than as one line of cola.",
+      "because": "the game names six sodas, each with a model of its own (SM_Soda_Cola, SM_Soda_Zap, SM_Soda_Kouje, SM_Soda_Pulp, SM_Soda_Ropico, SM_Soda_Turko)"
+    },
+    {
+      "do": "Give the bottled water a row of its own.",
+      "because": "three bottled waters are named for the brands they carry (SM_Bottled Water_Aotte, SM_Bottled Water_Fort-lacs, SM_Bottled Water_Montcuq)"
+    },
+    {
+      "do": "Put the juice out in the shape the game ships it.",
+      "because": "the juice brand is carried on the pack and on the model that stands in the shop (SM_Orange Juice_Bio Juice, Orange Juice_Bio Juice)"
+    },
+    {
+      "do": "Keep the beer apart from the rest of the drinks.",
+      "because": "beer arrives as a bottle, a keg and a pack, and there is a beer house with a collider of its own (M_Beer, M_Beerkeg, M_Beerpack, SM_BeerHouse_Collider)"
+    },
+    {
+      "do": "Stand the wine so its label faces the aisle.",
+      "because": "the wine bottle and its printed labels are art the game ships (M_Wine, Wine Chebon, Wine_Pouilleux)"
+    },
+    {
+      "do": "Match the shelf shape to the container instead of forcing one shelf to hold everything.",
+      "because": "the containers are modelled apart from the goods themselves (M_SodaCan, M_Cans_A, M_Juice_A, M_WaterPack)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating every soda as one product and leaving five brands unordered.",
+    "Putting bottled water and juice on the same line because the bottles look alike.",
+    "Storing the keg where a shelf slot should be and blocking the aisle.",
+    "Buying wine before checking it has a label side to face out."
+  ],
+  "relatedEntities": [
+    "the-drinks-the-shop-carries",
+    "the-list-you-buy-from",
+    "how-products-are-displayed"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

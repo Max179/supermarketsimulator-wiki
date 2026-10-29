@@ -1,0 +1,39 @@
+{
+  "id": "opening-your-first-day",
+  "title": "Opening your first day",
+  "tier": "published",
+  "kind": "article",
+  "target": "A short, factual checklist for the first time you open the shop, based only on things the game's own files establish.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A new save with the starting shop",
+    "At least one shelf you can reach",
+    "Stock available in the storage room"
+  ],
+  "steps": [
+    {
+      "do": "Put stock on a shelf before you open the door.",
+      "because": "the game only sells what the shelf holds and it refills a slot that is empty (ProductRestockLoop, SpawnProductOnEmptyShelf)"
+    },
+    {
+      "do": "Stand at the checkout when the first customers arrive.",
+      "because": "paying customers go through explicit checkout and payment steps (StartCashierCheckout, FinishCheckout)"
+    },
+    {
+      "do": "Spend the first takings on products you can already order.",
+      "because": "a product can require a store level before it becomes available (RequiredStoreLevel)"
+    }
+  ],
+  "commonMistakes": [
+    "Opening with empty shelves: a shelf sells only what you put on it.",
+    "Trying to order a product that the shop level has not unlocked yet.",
+    "Leaving the checkout unattended while a queue forms."
+  ],
+  "relatedEntities": [
+    "restocking-shelves",
+    "checkout-and-cashiers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

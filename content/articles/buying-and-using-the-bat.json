@@ -1,0 +1,53 @@
+{
+  "id": "buying-and-using-the-bat",
+  "title": "Buying and using the bat",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to get the baseball bat into a player's hands in Supermarket Simulator, and what the game says to use it on.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "Money for the market order",
+    "A shop that has been opened for the day",
+    "A free tool slot"
+  ],
+  "steps": [
+    {
+      "do": "Buy the bat from the market rather than waiting to find one.",
+      "because": "the game names a bat sale item and sets the player an objective to buy one from market (BatSaleItem, _buyBatObjective)"
+    },
+    {
+      "do": "Pick it out of the tool wheel once you own it.",
+      "because": "the game keeps a handler for the tool wheel's input hint, which is how it tells a player to hold a key and choose the bat (ToolWheelInputHintHandler, _openBatHint)"
+    },
+    {
+      "do": "Aim it at the shoplifter rather than at the stock.",
+      "because": "the game's own description says to hit the shoplifter and force them to drop the stolen items (_useBatDescription, _hitShoplifter)"
+    },
+    {
+      "do": "Swing and expect the goods to fall.",
+      "because": "the shoplifter's half of that exchange is kept in an interaction of its own (NetworkShoplifterInteraction)"
+    },
+    {
+      "do": "Watch the swing rather than guessing the reach.",
+      "because": "a swing and a bat swing are named beside an idle of its own (Swing_Bat, BaseballBatSwing, baseballidle)"
+    },
+    {
+      "do": "Keep the bat in the tool wheel rather than on a shelf.",
+      "because": "the bat has an icon of its own and a mesh with its own sheets (T_Icon_BaseballBat, SM_BaseballBat, M_BaseballBat)"
+    }
+  ],
+  "commonMistakes": [
+    "Looking for the bat in the shop's own stock list instead of the market.",
+    "Carrying the bat in a hand that was needed for the counter.",
+    "Swinging at the shelf the thief is standing next to rather than at the thief.",
+    "Assuming a hit ends the theft rather than making the thief drop what was taken."
+  ],
+  "relatedEntities": [
+    "the-baseball-bat",
+    "shoplifters-in-your-shop",
+    "the-list-you-buy-from"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "reading-the-games-own-objectives",
+  "title": "Reading the game's own objectives",
+  "tier": "published",
+  "kind": "article",
+  "target": "How missions, tasks and achievements are put together in Supermarket Simulator, so the objective you are working on is a structure you can read.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A save with objectives available",
+    "A day in progress",
+    "Somewhere to check progress"
+  ],
+  "steps": [
+    {
+      "do": "Expect objectives to be run by a system and held in a container.",
+      "because": "missions run through a system of their own and are held in a container (MissionSystem, MissionContainer)"
+    },
+    {
+      "do": "Read a mission as a set of tasks rather than one instruction.",
+      "because": "a mission is built out of tasks of its own (Mission, MissionTask)"
+    },
+    {
+      "do": "Break order work into its three tasks.",
+      "because": "order work is three named tasks: filling, closing and delivering (FillOrderTask, CloseOrderTask, DeliverOrderTask)"
+    },
+    {
+      "do": "Look for the task that belongs to the scale.",
+      "because": "the scale has an interaction task of its own (ScaleInteractionTask)"
+    },
+    {
+      "do": "Read the type of a mission before deciding what it wants.",
+      "because": "a mission carries a type of its own (MissionType)"
+    },
+    {
+      "do": "Expect one kind of mission to be measured in steps rather than finished at once.",
+      "because": "one kind of mission is built around steps (ScaleStepMission)"
+    },
+    {
+      "do": "Know that a mission can be what switches a feature on.",
+      "because": "there is a mission that activates online orders (OnlineOrderActivateMission)"
+    },
+    {
+      "do": "Keep achievements apart from missions, because they are counted separately per platform.",
+      "because": "achievements are held in a container of their own and handled separately for the platforms the game ships on (AchievementContainer, SteamAchievements, XBoxAchievements)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating a mission as a single instruction when it is a set of tasks.",
+    "Looking for order progress in one place rather than in filling, closing and delivering.",
+    "Assuming a step-based objective finishes the moment you start it.",
+    "Counting an achievement as a mission because they were earned together."
+  ],
+  "relatedEntities": [
+    "the-kinds-of-missions-the-game-builds",
+    "missions-and-the-objectives-the-game-sets",
+    "the-task-layer-under-the-missions"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

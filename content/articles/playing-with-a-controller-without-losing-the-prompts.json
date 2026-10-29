@@ -1,0 +1,64 @@
+{
+  "id": "playing-with-a-controller-without-losing-the-prompts",
+  "title": "Playing with a controller without losing the prompts",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to move Supermarket Simulator onto a controller without fighting the interface: what the game redraws for you, why a screen can still show key pictures, how a menu is walked, where typing goes, and where vibration actually comes from.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open and running",
+    "A controller connected and recognised by the machine",
+    "A screen you can watch the prompts change on"
+  ],
+  "steps": [
+    {
+      "do": "Switch to the pad and let the game redraw the prompts rather than rebinding anything first.",
+      "because": "the game carries a switch and a deeper switch for the pad along with an icon switcher, so what is shown for an action is chosen rather than bound by hand (GamepadSwitch, GamepadDeepSwitch, GamepadIconSwitcher)"
+    },
+    {
+      "do": "If one screen still shows key pictures, look at that screen's layout before you touch your bindings.",
+      "because": "there is a dispatcher for the pad layout, so a screen can be toggled for a pad separately from the global switch (GamepadLayoutToggleDispatcher)"
+    },
+    {
+      "do": "Expect to walk through a menu instead of pointing at it.",
+      "because": "menu items are made selectable for a pad and the focus is checked, which is why a selection moves down a list rather than a pointer sweeping across it (GamepadUISelectable, CheckGamepadFocus)"
+    },
+    {
+      "do": "When something will not become selectable, look for a missing selectable parent rather than rebinding the button.",
+      "because": "selectable parents are what make a list behave under a pad, and there is even a separate one for a bill entry (GamepadSelectableParent, GamepadSelectableParentBill)"
+    },
+    {
+      "do": "Keep the controller in your hands when a name or a search needs text.",
+      "because": "text entry is handed to a virtual keyboard while a pad is in use rather than forcing you back to the keyboard (VirtualKeyboardGamepadSwitchListener)"
+    },
+    {
+      "do": "Judge vibration by the game's own haptic settings, not by the pad's.",
+      "because": "there is a haptic manager with patterns, durations and a preset configuration behind it, so what the pad does is chosen by the game (HapticManager, HapticPattern, HapticDuration, HapticPresetConfig)"
+    },
+    {
+      "do": "Do not assume one screen's behaviour carries to the next.",
+      "because": "whole screens have handlers of their own, including the vending machine, its computer slot and its individual slots (VendingGamepadHandler, VendingMachineComputerSlot, VendingSlotGamepadParent)"
+    },
+    {
+      "do": "Expect the buying screens to rearrange themselves for the pad.",
+      "because": "the sale items for furniture, paint, produce and loans each carry a pad adjuster of their own (FurnitureSaleItemGamepadUIAdjuster, PaintSaleItemGamepadUIAdjuster, ProducSaleItemGamepadUIAdjuster, LoanItemGamepadUIAdjuster)"
+    },
+    {
+      "do": "Treat a missing button picture as a prompt problem rather than a lost input.",
+      "because": "the game ships its own button pictures for the prompts it draws (XboxOne_A, XboxOne_B, XboxOne_X, XboxOne_Y, KeyboardControllersSpriteAtlas_Cropped_xBox)"
+    }
+  ],
+  "commonMistakes": [
+    "Rebinding buttons when the screen only needed its pad layout toggled.",
+    "Expecting a pointer-style menu when the pad walks through selections.",
+    "Calling a list broken when it simply has no selectable parent.",
+    "Judging vibration by the pad's own software instead of the game's haptic settings."
+  ],
+  "relatedEntities": [
+    "playing-with-a-controller",
+    "the-devices-the-game-can-shake"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

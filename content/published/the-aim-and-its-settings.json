@@ -1,0 +1,73 @@
+{
+  "id": "the-aim-and-its-settings",
+  "title": "The aim and the settings around it",
+  "category": "Interface",
+  "summary": "Aiming in Supermarket Simulator is a system of its own: the game keeps hints that appear while you aim, an aim canvas, a colour preview and a settings menu for it.",
+  "body": [
+    "Aiming is its own system. The game keeps an aim of its own apart from the crosshair, which is why what you are pointing at is tracked separately from how you are holding it.",
+    "It shows hints. The game has a controller and a display for aim hints, so what you can do at a target is offered rather than left to memory.",
+    "The hints are a defined kind. Hints share a common behaviour of their own, which is why new targets can offer hints without each one being wired in by hand.",
+    "It has a canvas. The aim is drawn on a canvas of its own, so what you see while aiming is a piece of interface rather than part of the world.",
+    "You can set it up. There is a settings menu and a set of aim settings of its own, which is why how aiming behaves is something you can change.",
+    "It can be coloured. The game keeps a colour preview for the aim, which is why what you see can be adjusted rather than only switched on.",
+    "It also has slots. The game keeps aim slots, which is why the aim can be tied to particular things rather than being one universal marker.",
+    "What this entry does not tell you: what each setting does, what the defaults are, or whether aim settings affect anything else. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Aiming is its own system, tracked apart from the crosshair.",
+      "evidence": "identifiers: Aim, PlayerAimCanvas"
+    },
+    {
+      "claim": "The game shows hints while aiming, with a controller and a display of their own.",
+      "evidence": "identifiers: AimHintController, AimHintDisplay"
+    },
+    {
+      "claim": "Aim hints share a common behaviour.",
+      "evidence": "identifier: IAimHint"
+    },
+    {
+      "claim": "Aim has a settings menu and its own settings.",
+      "evidence": "identifiers: AimSettingsMenu, PlayerAimSettings"
+    },
+    {
+      "claim": "The aim can be coloured, with a preview of the colour.",
+      "evidence": "identifier: AimColorPreview"
+    },
+    {
+      "claim": "Aim is also tracked by slot.",
+      "evidence": "identifier: AimSlot"
+    },
+    {
+      "claim": "The build runs the aim through a system of its own, with a follow eye and a crosshair panel.",
+      "evidence": "asset names: AimSystem, AimFollowEye, CrosshairPanel"
+    }
+  ],
+  "related": [
+    "how-the-game-shows-what-you-can-use",
+    "the-popups-in-the-game"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-aim-and-its-settings-crosshairs.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The crosshair shapes the game draws: a square, a ring with a centre dot, a ring and a dot.",
+        "zh": "游戏自带的准星图形：方形、带中心点的圆环、圆环与圆点。"
+      }
+    },
+    {
+      "file": "the-aim-and-its-settings.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you aim at something, a hint appears, you change how it looks in its settings, and you act.",
+        "zh": "示意图：瞄准某物、出现提示、在设置中调整其外观、执行动作。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

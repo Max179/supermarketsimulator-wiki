@@ -1,0 +1,47 @@
+{
+  "id": "borrowing-without-drowning-in-repayments",
+  "title": "Borrowing without drowning in repayments",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to take a loan in Supermarket Simulator and live with it, given that the game sets a term length, a daily payment and a daily interest, and keeps a bankruptcy path if it goes wrong.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is already trading",
+    "A reason for the money that pays for itself",
+    "An idea of what a day currently earns"
+  ],
+  "steps": [
+    {
+      "do": "Decide what the money is for before opening the loan screen.",
+      "because": "the loan screen ships its own amount and daily-interest labels rather than a single figure (Loan Amount Text, Daily Interest)"
+    },
+    {
+      "do": "Set the term length deliberately rather than accepting the first value.",
+      "because": "a loan has a term length of its own, with a slider and a text field for it (Loan Term Length Slider, Loan Term Length Text)"
+    },
+    {
+      "do": "Read the daily payment as a cost per day, not as a total.",
+      "because": "the screen names a daily payment object of its own, with a label beside it (Daily Payment, Daily Payment Text)"
+    },
+    {
+      "do": "Check the repayment tab before the end of the day rather than after it.",
+      "because": "repayments have their own interface tab (RepaymentTab)"
+    },
+    {
+      "do": "Know where the bankruptcy path is before you need it.",
+      "because": "the game has a bankruptcy path and its own screen for it (BankruptcyScreen)"
+    }
+  ],
+  "commonMistakes": [
+    "Borrowing for stock that will not sell before the payments land.",
+    "Taking the longest term without checking what the daily interest does to a day's profit.",
+    "Waiting for the repayment tab to warn you instead of reading it yourself."
+  ],
+  "relatedEntities": [
+    "loans-and-paying-them-back",
+    "bills-loans-and-growth-screens"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

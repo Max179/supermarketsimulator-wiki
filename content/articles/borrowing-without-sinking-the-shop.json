@@ -1,0 +1,69 @@
+{
+  "id": "borrowing-without-sinking-the-shop",
+  "title": "Borrowing without sinking the shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "How loans, repayments and bills work in Supermarket Simulator: what a loan actually is in the game, how a repayment differs from a running balance, how automatic payments are taken, and what the bankruptcy path means.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with a bank loan available",
+    "Access to the computer's money tabs",
+    "Enough takings to cover a payment"
+  ],
+  "steps": [
+    {
+      "do": "Treat the loan as a thing of its own rather than a number that changes when you spend, because borrowing is a defined object in the game.",
+      "because": "borrowing is a defined object in the game (BankCreditSO)"
+    },
+    {
+      "do": "Check the loan's status before assuming it is still running, because a loan carries a status the game tracks.",
+      "because": "a loan carries a status the game tracks (LoanStatus)"
+    },
+    {
+      "do": "Find repayments in their own tab rather than mixed in with the loan, because they have a tab of their own.",
+      "because": "repayments have their own interface tab (LoanPaymentsTab)"
+    },
+    {
+      "do": "Think of a repayment as an item in a list rather than a running balance, because each repayment is its own item.",
+      "because": "a repayment is its own item rather than one running balance (LoanRepaymentItem)"
+    },
+    {
+      "do": "Watch how many payments are left instead of guessing from the money, because the game keeps a remaining payment count.",
+      "because": "the game keeps a remaining payment count (remainingPaymentNumber)"
+    },
+    {
+      "do": "You can clear a loan early, so do not plan around the full term if a good week arrives.",
+      "because": "the game handles paying a loan early (earlyPayment)"
+    },
+    {
+      "do": "Expect the loan and the repayments to be laid out separately, because each has a layout of its own.",
+      "because": "repayments have a layout of their own, apart from the loan (RepaymentLayoutConfig, LoanLayoutConfig)"
+    },
+    {
+      "do": "Know that a payment can be taken for you, and that the way it was paid is written down.",
+      "because": "a repayment can be taken automatically, and the method used is recorded (AutoPaymentManager, paymentViaCreditCard)"
+    },
+    {
+      "do": "Do not confuse the payment to staff with the loan payment, because the game tracks both separately.",
+      "because": "the game tracks payments made to staff as well as loan payments (staffPayment, loanPayment)"
+    },
+    {
+      "do": "Take the bankruptcy path seriously, because it is a state with a screen of its own rather than a quiet reset.",
+      "because": "the game has a bankruptcy path and its own screen for it (BankruptcyManager, BankruptcyCanvas)"
+    }
+  ],
+  "commonMistakes": [
+    "Spending the takings and finding out about the repayment only when it is taken.",
+    "Assuming the loan and the repayment screen are the same place, since they are laid out apart.",
+    "Planning the whole term around a loan that could be cleared early.",
+    "Treating bankruptcy as a soft reset when the game gives it its own screen."
+  ],
+  "relatedEntities": [
+    "loans-and-paying-them-back",
+    "repaying-a-loan-payment-by-payment",
+    "bills-loans-and-growth-screens"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

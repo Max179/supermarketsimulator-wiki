@@ -1,0 +1,61 @@
+{
+  "id": "what-gets-a-copy-in-a-shared-shop",
+  "title": "What gets a copy in a shared shop",
+  "tier": "published",
+  "kind": "article",
+  "target": "Which parts of a Supermarket Simulator shop are kept in step between players, so a shared shop can be reasoned about when something disagrees.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shared shop with more than one player",
+    "Something being built or moved",
+    "A disagreement about what each player sees"
+  ],
+  "steps": [
+    {
+      "do": "Expect money, stock and licences to be kept by networked managers rather than by each machine.",
+      "because": "money, the stock and the licences each have a networked manager of their own (NetworkMoneyManager, NetworkInventoryManager, NetworkLicenseManager)"
+    },
+    {
+      "do": "Expect the bakery to be shared as two things rather than one.",
+      "because": "the bakery's oven and the baker each have a networked copy (NetworkOven, NetworkBaker)"
+    },
+    {
+      "do": "Know that a clerk is networked as well as being animated.",
+      "because": "the clerk has a networked copy (NetworkClerk)"
+    },
+    {
+      "do": "Expect fittings and the boxes they arrive in to be shared, along with the interaction that opens them.",
+      "because": "furniture, the furniture box interaction, floor boxes and the floor box interaction each have networked forms (NetworkFurniture, NetworkFurnitureBoxInteraction, NetworkFloorBox, NetworkFloorBoxInteraction)"
+    },
+    {
+      "do": "Expect the shop's glass to have a networked interaction of its own.",
+      "because": "glass has a networked interaction (NetworkGlassInteraction)"
+    },
+    {
+      "do": "Watch customers being shared rather than simulated twice.",
+      "because": "customers, their transform and the view that follows an NPC's transform are networked (NetworkCustomer, NetworkCustomerTransform, NetworkNPCTransformView)"
+    },
+    {
+      "do": "Expect vehicles in a shared shop to be shared as well.",
+      "because": "a vehicle has a networked component (NetworkVehicleComponent)"
+    },
+    {
+      "do": "Remember that the day, the janitor, the market cart and packing are each kept in step too.",
+      "because": "the day cycle, the janitor, the market's shopping cart and packed order bags all have networked forms (NetworkDayCycleManager, NetworkJanitor, NetworkMarketShoppingCart, NetworkOrderPaperBag)"
+    }
+  ],
+  "commonMistakes": [
+    "Blaming a desync on the wrong thing when several parts have their own copies.",
+    "Forgetting that the interaction around an object is networked, not only the object.",
+    "Treating the bakery's oven and its worker as one shared thing.",
+    "Assuming a customer is only simulated by whoever is closest."
+  ],
+  "relatedEntities": [
+    "the-networked-copies-in-a-shared-shop",
+    "what-a-shared-shop-keeps-in-step",
+    "running-a-shop-with-other-players"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

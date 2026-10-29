@@ -1,0 +1,56 @@
+{
+  "id": "getting-a-helper-to-the-right-job",
+  "title": "Getting a helper to the right job",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to hand work to a helper in Supermarket Simulator without leaving a job half done: it covers the check the game runs first, the two errands a helper can be sent on, and the flags that say whether one is already busy.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "At least one helper on the payroll",
+    "Something that needs doing: a shelf to fill or goods to weigh",
+    "A till or a scale the helper can be sent to"
+  ],
+  "steps": [
+    {
+      "do": "Check that the thing you want done can be handed over before you try to hand it over.",
+      "because": "the game keeps a kind of check of its own for whether something can be controlled by a helper (HelperControllableCheckType)"
+    },
+    {
+      "do": "Send the helper to the object that needs help when the job is about stock.",
+      "because": "there is a fetch for an object that needs help rather than a general instruction (FetchObjectNeedingHelp)"
+    },
+    {
+      "do": "Send the helper to the scale when the job is about weighing rather than fetching.",
+      "because": "the scale has its own fetch and its own start for helping (FetchScaleNeedingHelp, StartHelpScale)"
+    },
+    {
+      "do": "Use the checkout start for the till rather than the scale start.",
+      "because": "helping at the checkout and helping at the scale are separate instructions (StartHelpCheckout, StartHelpScale)"
+    },
+    {
+      "do": "Check whether the helper is already busy before assigning the next job.",
+      "because": "the game tracks being busy and being currently helpful as separate flags (IsCustomerHelperBusy, IsCustomerHelperHelping)"
+    },
+    {
+      "do": "Do not expect a helper to stand where you would: the game has a standing position for it.",
+      "because": "the helper is placed through standing and control transforms of its own (GetHelperControllableStandingTransform, GetHelperControllableControlTransform)"
+    },
+    {
+      "do": "Treat the helper as a configured kind rather than a person with preferences.",
+      "because": "a helper is described by its own data with an animation controller behind it (CustomerHelperSO, CustomerHelperAnimationController)"
+    }
+  ],
+  "commonMistakes": [
+    "Sending a helper to a job that cannot be controlled and wondering why nothing happens.",
+    "Assigning a second job while the busy flag is still set.",
+    "Using the scale instruction for a till, or the till instruction for weighing.",
+    "Standing where the helper is about to work and blocking it."
+  ],
+  "relatedEntities": [
+    "asking-a-helper-to-fetch-something",
+    "jobs-you-can-hand-over"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

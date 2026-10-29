@@ -1,0 +1,95 @@
+{
+  "id": "painting-the-walls",
+  "title": "Painting the walls",
+  "category": "Layout",
+  "summary": "Walls in Supermarket Simulator can be painted as well as floors: the game keeps them as paintable surfaces, knows each wall by its own identifier, and colours them from paint buckets you carry.",
+  "body": [
+    "Walls are paintable surfaces. The game treats a wall as something that can be painted rather than as fixed decoration, which is why the look of the shop can change without rebuilding the room.",
+    "Each wall knows which one it is. Walls carry an identifier of their own, so a colour is applied to a particular wall instead of being sprayed across the whole building at once.",
+    "The paint comes out of a bucket. Colours are chosen from paint buckets, and a bucket has its own placing mode, which is why painting is something you hold and carry rather than something hidden in a settings screen.",
+    "The colour itself is kept as data. The game stores the colours and the painted result as their own records, so the wall and whatever was put on it remain two separate pieces of information.",
+    "It survives leaving the shop. The bucket and the painted wall are both saved, which is why a shop you painted last week is still painted when you come back to it.",
+    "What this entry does not tell you: how many colours exist, what a bucket costs, or whether wall colours change how customers behave. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A wall is a paintable surface rather than fixed decoration.",
+      "evidence": "identifiers: PaintableWall, wallID, wallRenderer"
+    },
+    {
+      "claim": "Painting is done from a paint bucket with a placing mode of its own.",
+      "evidence": "identifiers: PaintBucket, BucketPlacingMode"
+    },
+    {
+      "claim": "The build names a general wall paint material along with paints for particular sections of the shop.",
+      "evidence": "asset names: M_WallPaint, M_PaintBucket, M_Grocery_WallPaint"
+    },
+    {
+      "claim": "Walls and buckets are both saved, so the paint survives.",
+      "evidence": "identifiers: BucketSaveData, BucketSo"
+    },
+    {
+      "claim": "The colours and the painted result are kept as their own data.",
+      "evidence": "identifiers: ColorData, PaintData, BucketData"
+    },
+    {
+      "claim": "The game ships an icon atlas of its paint buckets.",
+      "evidence": "identifier: T_IconAtlas_PaintBuckets"
+    },
+    {
+      "claim": "The buckets also come as a numbered set of icons of their own.",
+      "evidence": "asset names: BucketIcon_1, BucketIcon_2, BucketIcon_28"
+    }
+  ],
+  "related": [
+    "floors-and-floor-painting",
+    "signs-labels-and-organising"
+  ],
+  "images": [
+    {
+      "file": "mapped/painting-the-walls-buckets.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own icon atlas of the paint buckets used on walls.",
+        "zh": "游戏自带的墙面油漆桶图标图集。"
+      }
+    },
+    {
+      "file": "mapped/painting-the-walls-bucket-gold.png",
+      "kind": "game",
+      "alt": {
+        "en": "One of the numbered bucket icons the game ships: a steel paint tin filled with a golden paint.",
+        "zh": "游戏自带编号油漆桶图标之一：铁皮漆桶里盛着金褐色油漆。"
+      }
+    },
+    {
+      "file": "mapped/painting-the-walls-bucket-white.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second numbered bucket icon: the same tin filled with an off-white paint.",
+        "zh": "第二个编号油漆桶图标：同款漆桶，里面是米白色油漆。"
+      }
+    },
+    {
+      "file": "mapped/painting-the-walls-bucket-teal.png",
+      "kind": "game",
+      "alt": {
+        "en": "A third numbered bucket icon: the same tin filled with a teal paint.",
+        "zh": "第三个编号油漆桶图标：同款漆桶，里面是青绿色油漆。"
+      }
+    },
+    {
+      "file": "painting-the-walls.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: take a paint bucket, choose a colour, paint one wall, and the wall is saved.",
+        "zh": "示意图：拿起油漆桶、选择颜色、刷一面墙、这面墙被保存。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

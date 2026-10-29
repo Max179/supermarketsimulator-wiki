@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "derivedFrom": "data/normalized/p0-field-rows.json",
+  "sha256": "361f8a8ebc47aece12d69287367203638698fbcc013b2124ef4ae3b52521fde9",
+  "bytes": 5461188,
+  "source": {
+    "file": "C:\\uTorria\\Downloads\\Supermarket Simulator (2025)\\Supermarket Simulator\\Supermarket Simulator_Data\\il2cpp_data\\Metadata\\global-metadata.dat",
+    "sha256": "acac0e03010dc02a976b8aafe2d8ec915e902c3681f43ab5bf82028f9bb6c4e0",
+    "bytes": 19350248,
+    "metadataVersion": 39,
+    "fieldTable": {
+      "offset": 11105620,
+      "rowStride": 12,
+      "count": 170271,
+      "nextTableOffset": 13148872
+    },
+    "nameRule": "name index must point at the start of a string (previous byte NUL); 100% of rows pass",
+    "extractor": "supermarket-p0-fields@0.1.0",
+    "productLabel": "Nokta Games | Supermarket Simulator"
+  },
+  "version": "1.6.0 (223)",
+  "confidence": "verified-schema",
+  "count": 170050,
+  "countMeaning": "length of the row array pipeline/status.mjs reads from the value layer, measured the same way",
+  "fieldCount": 170271,
+  "distinctNames": 15236,
+  "note": "the decoded rows stay on the extraction host; the site, its gates and its tests read this index instead and never need the rows file"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "making-a-product-line-worth-displaying",
+  "title": "Making a product line worth displaying",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to choose and place a display in Supermarket Simulator so a product line reads as a line rather than as stock left on a shelf.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A display bought and placed",
+    "A product line you want to push",
+    "Stock to fill it with"
+  ],
+  "steps": [
+    {
+      "do": "Decide the display before you decide the stock, because the display is the game's own object.",
+      "because": "displays have a manager, data, subtypes and a definition of their own (DisplayManager, DisplayData, DisplaySubType, DisplaySO)"
+    },
+    {
+      "do": "Take the colour from the game's set rather than inventing one.",
+      "because": "the colour side has data of its own and a manager of its own (DisplayColorSO, DisplayColorManager)"
+    },
+    {
+      "do": "Match the product to a display type rather than assuming every product belongs on one.",
+      "because": "products carry a display type of their own (ProductDisplayType)"
+    },
+    {
+      "do": "Remember that a product's identity belongs to the product, not to the shelf.",
+      "because": "each product keeps its own identifier, independent of any shelf (ProductId)"
+    },
+    {
+      "do": "Unload crates knowing they carry their contents with them.",
+      "because": "crates carry product data of their own (CrateProductsData)"
+    },
+    {
+      "do": "Let the layout setting decide where things sit.",
+      "because": "where products sit is decided by a layout setting of its own, and a calculator works out the transform of a displayed product (ProductLayoutConfig, DisplayProductTransformCalculator)"
+    },
+    {
+      "do": "Expect the picture on the pack to be handled by the game, not by the model.",
+      "because": "there is a manager for product pictures, and a product has a renderable form and a kind of material of its own (ProductAtlasManager, ProductRenderable, ProductMaterialType)"
+    },
+    {
+      "do": "Count the line in pairs rather than in ones.",
+      "because": "products are counted as a pair of amounts (ProductCountPair)"
+    }
+  ],
+  "commonMistakes": [
+    "Filling a display with whatever is nearby instead of with a line.",
+    "Recolouring by eye when the game has its own colour data for displays.",
+    "Treating every product as displayable in the same place.",
+    "Moving stock out of a crate without noticing what the crate was carrying."
+  ],
+  "relatedEntities": [
+    "the-display-behind-the-shelf",
+    "how-products-are-displayed",
+    "how-a-product-is-drawn-on-a-shelf"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

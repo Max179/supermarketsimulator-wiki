@@ -1,0 +1,68 @@
+{
+  "id": "running-a-shared-shop-without-stepping-on-each-other",
+  "title": "Running a shared shop without stepping on each other",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to run Supermarket Simulator with other players: the room you start in, the money you share, the jobs worth dividing, the objects only one player can hold, the day everyone shares, the pings that save talking, and leaving cleanly.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open and wants a second pair of hands",
+    "A connection able to host or join a room",
+    "At least one job each player is happy to take"
+  ],
+  "steps": [
+    {
+      "do": "Start with the room and read what it is set to before anyone starts work.",
+      "because": "a shared shop begins with a lobby, room settings, a room timer and a record of who is in it, so the shape of the session is chosen rather than assumed (LobbyManager, RoomSettingsManager, RoomTimerManager, RoomInfoPlayer)"
+    },
+    {
+      "do": "Agree before spending, because the takings are not yours alone.",
+      "because": "money is shared: the room listens for money changes and there is a networked money manager and a networked bank manager behind it (RoomMoneyListener, NetworkMoneyManager, NetworkBankManager)"
+    },
+    {
+      "do": "Divide the jobs the game lets you hand over rather than both following the same queue.",
+      "because": "staff and fittings have networked forms, so a cashier, a restocker and a mop can each belong to whoever is nearest rather than to one player (NetworkCashier, NetworkRestocker, NetworkCheckout, NetworkMopInteraction)"
+    },
+    {
+      "do": "Remember the customers are one crowd, not one each.",
+      "because": "the customer generator and customer manager are networked, so a shopper walking to a shelf is the same shopper for everybody (NetworkCustomerGenerator, NetworkCustomerManager)"
+    },
+    {
+      "do": "Do not both grab the same crate expecting two.",
+      "because": "an object has an owner and ownership can be moved between players, so a box can only be held once (NetworkPhotonViewOwnerTransporter, NetworkObjectHandler)"
+    },
+    {
+      "do": "Expect the day and the shop to be shared, not mirrored.",
+      "because": "the day cycle, the shop's status and the store's sections and vehicles are all carried on the network, so the crew closes up and stocks up together (NetworkDayCycleManager, NetworkStoreStatus, NetworkSectionManager, NetworkVehicleManager)"
+    },
+    {
+      "do": "Use a ping instead of trying to describe a shelf over voice.",
+      "because": "pings and avatars are broadcast and each player's room properties are listened to, so a mark can point at the same thing for everyone (PingAndAvatarBroadcaster, RoomPlayerPropsListener)"
+    },
+    {
+      "do": "Expect signs the crew puts up to be everyone's signs.",
+      "because": "signs have a networked form, so what one player labels is labelled for the shop (NetworkCategorySign)"
+    },
+    {
+      "do": "Watch the connection rather than blaming each other for a late-looking shop.",
+      "because": "the game keeps a statistics manager for the connection and a limiter on what is sent, so a lagging shop is a link problem before it is a player problem (PhotonNetworkStatsManager, NetworkLimiter)"
+    },
+    {
+      "do": "Leave through the game when you are finished.",
+      "because": "there is a manager for exiting a networked session, so a player can leave cleanly rather than dropping out of the room (PhotonExitManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Spending shared money on one player's plan without agreeing first.",
+    "Putting two players on the same job while a queue builds elsewhere.",
+    "Treating a customer as yours when the crowd is one crowd.",
+    "Closing the game instead of leaving the session properly."
+  ],
+  "relatedEntities": [
+    "running-a-shop-with-other-players",
+    "what-a-shared-shop-keeps-in-step"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

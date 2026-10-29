@@ -1,0 +1,71 @@
+{
+  "id": "storage-sections-and-sorting",
+  "title": "Storage sections and sorting",
+  "category": "Storage",
+  "tier": "published",
+  "summary": "Storage in Supermarket Simulator is not one big cupboard: the game builds it out of sections and individually sortable cells, and the same section idea appears in growth.",
+  "body": [
+    "Storage is made of sections rather than a single list, which is why putting something away is a choice of where rather than only what.",
+    "Cells inside that storage can be sorted, so the order you keep stock in is something the game lets you decide on purpose.",
+    "The same section idea is used elsewhere, including growth, which is why screens in this game tend to be organised the same way.",
+    "Sorting is kept as its own state. The game names a sort state and a sort result, which is the vocabulary behind a cell order rather than a fixed arrangement.",
+    "What this entry does not tell you: how many cells a shop has or how much each one holds. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Storage is built from sections rather than one flat list.",
+      "evidence": "identifier: StorageSectionItem"
+    },
+    {
+      "claim": "Storage cells can be sorted.",
+      "evidence": "identifier: SortableAreaCell"
+    },
+    {
+      "claim": "Growth is presented through the same section idea.",
+      "evidence": "identifier: GrowthSectionItem"
+    },
+    {
+      "claim": "Sorting is kept as a state of its own with a result.",
+      "evidence": "identifiers: SortState, SortResult"
+    },
+    {
+      "claim": "The build names a rack of its own, a material for it and an in-rack amount label.",
+      "evidence": "asset names: 7_SmallRack, M_Cloth_Rack, In Rack Amount"
+    },
+    {
+      "claim": "The storage section is an item of its own in the build, with a blueprint beside it.",
+      "evidence": "asset names: Storage Section Item, Storage Section ItemBP"
+    },
+    {
+      "claim": "The build names areas of its own as well: a crate area, a fill area, a slider area with its handle, and a text area.",
+      "evidence": "asset names: CrateArea, Fill Area, Sliding Area, Handle Slide Area, Text Area"
+    }
+  ],
+  "related": [
+    "storage-crates-and-the-storage-tab",
+    "restock-areas-and-vehicles"
+  ],
+  "images": [
+    {
+      "file": "mapped/storage-sections-and-sorting-rack.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture of the storage rack the back room is built from.",
+        "zh": "后仓所用仓储货架的反照率贴图。"
+      }
+    },
+    {
+      "file": "storage-sections-and-sorting.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: stock arrives, it fills a section cell, you sort the cells, and a shelf is refilled from storage.",
+        "zh": "仓储分区示意图：到货、放入分区格、整理格子、从仓储补货到货架。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

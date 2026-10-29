@@ -1,0 +1,67 @@
+{
+  "id": "raising-your-storage-and-shop-level",
+  "title": "Raising your storage and shop level",
+  "category": "Upgrades",
+  "summary": "Growing the shop in Supermarket Simulator has more than one dial: the game tracks a shop level, a next upgrade level and a storage upgrade level of its own, and marks what you have already bought.",
+  "body": [
+    "The shop has a level. The game keeps a manager for it and tracks the level the shop has reached, so growth is a value the game holds rather than a one-off unlock that happens once.",
+    "Upgrading is separate from the level you are on. The game keeps an upgrade level and a cost for upgrades apart from the current level, which is why the screen can offer a next step rather than only reporting where you are.",
+    "Storage grows on its own track. Storage has its own upgrade level and has to be bought, so more back-room space is a purchase instead of something that arrives with the shop.",
+    "The game marks what you already own. There is an indicator for purchases you have made, so a licence or an upgrade already taken is shown as bought rather than left to your memory.",
+    "The storage behind the door is a system in its own right, with its own door and its own records, which is why expanding storage changes the back room rather than the shop floor.",
+    "What this entry does not tell you: what any upgrade costs, how many levels there are, or what each level unlocks. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The shop's level is run by a manager of its own.",
+      "evidence": "identifiers: StoreLevelManager, currentStoreLevel, storeLevel"
+    },
+    {
+      "claim": "The next upgrade is tracked apart from the current level, together with its cost.",
+      "evidence": "identifiers: upgradeStoreLevel, upgradeCosts"
+    },
+    {
+      "claim": "Storage has its own upgrade level and must be purchased.",
+      "evidence": "identifiers: storageUpgradeLevel, purchasedStorage"
+    },
+    {
+      "claim": "The game marks what you have already bought.",
+      "evidence": "identifiers: PurchasedLicenseIndicator, LicensesTab"
+    },
+    {
+      "claim": "The storage sections are managed as their own system behind their own door.",
+      "evidence": "identifiers: StorageSectionManager, StorageSO, StorageDoor"
+    },
+    {
+      "claim": "The build also names a frozen-goods storage unit among the shop's storage, with a lower-detail copy and a colour sheet of its own.",
+      "evidence": "asset names: Ml_Ice_Storage_01a, UCX_SM_Ice_Storage_01a_LOD0, TX_Ice_Storage_01a_ALB"
+    }
+  ],
+  "related": [
+    "store-upgrades-and-licences",
+    "storage-crates-and-the-storage-tab"
+  ],
+  "images": [
+    {
+      "file": "mapped/raising-your-storage-and-shop-level-warehouse.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game itself uses for the storage you buy.",
+        "zh": "游戏本身用于可购买仓储的图标。"
+      }
+    },
+    {
+      "file": "raising-your-storage-and-shop-level.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop trades, storage is bought, the upgrade level rises, and the shop level follows.",
+        "zh": "示意图：店铺营业、购买仓储、升级等级提升、店铺等级随之变化。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

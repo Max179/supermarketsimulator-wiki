@@ -1,0 +1,47 @@
+{
+  "id": "running-the-shop-from-the-tabs",
+  "title": "Running the shop from the tabs",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the management tabs on a Supermarket Simulator computer so hiring, the shop layout and the music are dealt with once rather than in a rush.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A computer in the shop",
+    "Money for whatever you are changing",
+    "A moment before the shop fills up"
+  ],
+  "steps": [
+    {
+      "do": "Do your hiring before the shift rather than in the middle of it.",
+      "because": "hiring has a tab of its own on the computer (Hiring_Tab.HiringTab)"
+    },
+    {
+      "do": "Change the shop name and its doors in the same visit, not separately.",
+      "because": "customisation covers the name and door placement together (CustomizationTab.DoorPlaceItem)"
+    },
+    {
+      "do": "Check what a restocker has been told to do rather than assuming they know.",
+      "because": "the game keeps restocker management records (RestockerManagementData)"
+    },
+    {
+      "do": "Set the music once and leave it alone.",
+      "because": "music sits in a tab alongside the other management screens (MusicPlayerTab.MusicPlayerTab)"
+    },
+    {
+      "do": "Finish at the computer before customers arrive.",
+      "because": "the computer is a placed object you have to walk to (Hiring_Tab.BakerItem)"
+    }
+  ],
+  "commonMistakes": [
+    "Hiring in the middle of a rush.",
+    "Moving the doors and forgetting the shop name.",
+    "Assuming a restocker needs no instructions."
+  ],
+  "relatedEntities": [
+    "the-management-tabs",
+    "the-shop-computer"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

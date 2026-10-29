@@ -1,0 +1,64 @@
+{
+  "id": "painting-the-walls-without-wasting-paint",
+  "title": "Painting the walls without wasting paint",
+  "tier": "published",
+  "kind": "article",
+  "target": "How wall painting works in Supermarket Simulator: the bucket as a placed object rather than a resource, the colour carried by that bucket, the wall as something paintable in its own right, and the records the game keeps of what was painted.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with at least one wall you own",
+    "Enough money for a bucket and its colour",
+    "Somewhere to put the bucket while you work"
+  ],
+  "steps": [
+    {
+      "do": "Buy the paint as a bucket rather than as a pot of paint.",
+      "because": "the paint is an object with its own data behind it, so what you buy is a thing you place and use (PaintBucket, BucketSo)"
+    },
+    {
+      "do": "Place the bucket before you expect to paint anything.",
+      "because": "putting a bucket down is a mode of its own, which is how the game knows a bucket is in use rather than only owned (BucketPlacingMode)"
+    },
+    {
+      "do": "Choose the colour on the bucket.",
+      "because": "a bucket carries colour data, so the colour belongs to the object being used rather than to the wall (ColorData, BucketData)"
+    },
+    {
+      "do": "Treat the wall as a paintable object in its own right.",
+      "because": "walls are their own kind of surface in the game, which is why painting them is separate from painting a floor (PaintableWall)"
+    },
+    {
+      "do": "Expect what you painted to be recorded apart from the bucket.",
+      "because": "the paint has its own data and the system keeps its own save records, so the wall remembers its finish after the bucket is gone (PaintData, BucketSaveData)"
+    },
+    {
+      "do": "Expect the whole wall to be one job rather than a patch at a time.",
+      "because": "a wall is a paintable surface rather than a grid of tiles, so a wall is finished as a wall (PaintableWall)"
+    },
+    {
+      "do": "In a shared shop, expect everyone to see the same bucket.",
+      "because": "the bucket has a networked form, so what one player places is placed for the crew (NetworkPaintBucket)"
+    },
+    {
+      "do": "Expect the surface to move with the paint rather than only change colour.",
+      "because": "the painting system carries a wobble of its own, so the finish is animated rather than a flat fill (Wobble)"
+    },
+    {
+      "do": "Do not treat a repaint as free just because the wall is already painted.",
+      "because": "repainting has data of its own rather than being the same as painting a bare wall (RepaintData)"
+    }
+  ],
+  "commonMistakes": [
+    "Looking for paint as a resource in the stock list instead of buying a bucket.",
+    "Choosing a colour and expecting it to apply to every wall at once.",
+    "Repainting a wall and expecting the old finish to be replaced without being recorded.",
+    "Painting in a shared shop without checking that everyone else can see the bucket."
+  ],
+  "relatedEntities": [
+    "painting-the-walls",
+    "mixing-paint-and-picking-a-colour"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

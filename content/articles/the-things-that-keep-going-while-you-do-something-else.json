@@ -1,0 +1,61 @@
+{
+  "id": "the-things-that-keep-going-while-you-do-something-else",
+  "title": "The things that keep going while you do something else",
+  "tier": "published",
+  "kind": "article",
+  "target": "How vending machines and the back-room racks are tracked in Supermarket Simulator, so the parts of the shop that run on their own can be checked from wherever you are.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "At least one vending machine placed",
+    "Something on the back-room racks",
+    "The computer or tablet to check from"
+  ],
+  "steps": [
+    {
+      "do": "Know that a machine can be watched from elsewhere.",
+      "because": "there is a tracker and a tracker object for vending machines (VendingMachineTracker, VendingMachineTrackerObject)"
+    },
+    {
+      "do": "Look for the machine on the map rather than walking to it.",
+      "because": "each machine has an object of its own for the mini-map (VendingMachineMiniMapObject)"
+    },
+    {
+      "do": "Read what a machine holds from its container rather than from the machine.",
+      "because": "what a machine holds is kept in a container and the tracker's data has a list of its own (VendingContainer, VendingDataListWrapper)"
+    },
+    {
+      "do": "On a controller, use the tracker panel's own handlers.",
+      "because": "the tracker panel is built for a controller, with handlers for the panel and for what it shows (VendingTrackerPanelGamepadHandler, VendingTrackerProductGamepadHandler)"
+    },
+    {
+      "do": "Treat a back-room rack as a recorded thing rather than as furniture.",
+      "because": "a rack has data of its own and is also defined by a definition object (RackData, RackSO)"
+    },
+    {
+      "do": "Know that a box on a rack and a box on a stand are kept apart.",
+      "because": "a box on a rack is recorded on its own and a box on a stand is recorded separately (RackedBoxData, StandBoxData)"
+    },
+    {
+      "do": "Expect being racked to be a state.",
+      "because": "a box on a rack is an object of its own and being racked is a state (RackBox, RackingState)"
+    },
+    {
+      "do": "Remember the back room as a whole has its own record.",
+      "because": "storage has data of its own (StorageData)"
+    }
+  ],
+  "commonMistakes": [
+    "Walking to a vending machine to check it when the tracker exists.",
+    "Assuming a box is recorded the same way whether it is on a rack or on a stand.",
+    "Treating the back room as one pile rather than as recorded racks and boxes.",
+    "Looking for a machine's contents on the machine instead of in its container."
+  ],
+  "relatedEntities": [
+    "watching-your-vending-machines",
+    "the-racks-the-back-room-uses",
+    "the-oven-and-the-baker"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

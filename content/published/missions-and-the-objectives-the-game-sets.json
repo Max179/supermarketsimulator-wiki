@@ -1,0 +1,60 @@
+{
+  "id": "missions-and-the-objectives-the-game-sets",
+  "title": "Missions and the objectives the game sets",
+  "category": "Tasks",
+  "summary": "Supermarket Simulator does have missions of its own: the game carries a mission system with missions, tasks and objective displays, including named missions for placing an online order and for stepping on the scale.",
+  "body": [
+    "The game carries a mission system of its own. It has a container for missions and mission data, so a mission is a record the game keeps rather than a line of text on a screen.",
+    "Missions are built out of tasks. The game names a mission task and a single-task mission, which means one mission can be a single step while another is a series of them.",
+    "Some of those missions are tied to things the shop already does. There are named missions for switching on an online order and for a step at the scale, which is how the game walks a new player through the systems it has built.",
+    "Objectives are kept separately from the missions themselves. The game has tutorial objective data and a display for it, so what you are being asked to do has somewhere to live and something to show it on screen.",
+    "That makes the shop guided by two things at once. The licences and the shop level decide what you are allowed to sell, and the missions decide what the game has asked you to do next, which is why a new shop can feel directed without a separate story mode.",
+    "Missions sit beside those gates rather than replacing them, so reading the licence list and watching the objectives are two different jobs.",
+    "What this entry does not tell you: how many missions there are, what any of them rewards, or the order in which they arrive. The detail of these missions could not be read from the build this site documents, so only their names are given here."
+  ],
+  "facts": [
+    {
+      "claim": "The game carries a mission system with a container for missions and mission data.",
+      "evidence": "identifiers: MissionSystem, MissionContainer, MissionData"
+    },
+    {
+      "claim": "A mission can be a single task or several: the game names a mission task and a single-task mission.",
+      "evidence": "identifiers: MissionTask, SingleTaskMission"
+    },
+    {
+      "claim": "There are named missions for switching on an online order and for a step at the scale.",
+      "evidence": "identifiers: OnlineOrderActivateMission, ScaleStepMission"
+    },
+    {
+      "claim": "Missions are grouped by a kind of their own.",
+      "evidence": "identifier: MissionType"
+    },
+    {
+      "claim": "The game keeps tutorial objectives with their own data and a display, checked after a delay.",
+      "evidence": "identifiers: TutorialObjectiveData, TutorialObjectiveDisplay, DelayedObjectiveCheck"
+    },
+    {
+      "claim": "The mission system sits in the game code rather than in a third-party package.",
+      "evidence": "the mission types are recorded under the game's own project namespace in the normalized data"
+    }
+  ],
+  "related": [
+    "store-upgrades-and-licences",
+    "the-management-tabs"
+  ],
+  "images": [
+    {
+      "file": "missions-and-the-objectives-the-game-sets.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the game holds a mission made of tasks, shows the objective it sets, and checks it after a delay.",
+        "zh": "示意图：游戏持有一个由任务组成的使命、显示所设目标，并在延迟后检查完成情况。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

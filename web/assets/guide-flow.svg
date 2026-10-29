@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200" role="img" aria-label="Three steps: type a name, check the game's lists, read where it lives">
+  <rect width="960" height="200" fill="#12141a"/>
+  <defs><marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#8ecbff"/></marker></defs>
+  <g font-family="system-ui,sans-serif" font-size="14" fill="#9aa3b2">
+    <rect x="20" y="50" width="260" height="90" rx="12" fill="#1b1f27" stroke="#2a2f3a"/><text x="44" y="82">1 - type a name</text><text x="44" y="112" fill="#e8e8e8" font-family="ui-monospace,monospace">Shelf</text>
+    <rect x="350" y="50" width="260" height="90" rx="12" fill="#1b1f27" stroke="#2a2f3a"/><text x="374" y="82">2 - we check the game's lists</text><text x="374" y="112" fill="#e8e8e8">classes and data fields</text>
+    <rect x="680" y="50" width="260" height="90" rx="12" fill="#1b1f27" stroke="#2a2f3a"/><text x="704" y="82">3 - you read the answer</text><text x="704" y="112" fill="#e8e8e8" font-family="ui-monospace,monospace">name + where it lives</text>
+  </g>
+  <g stroke="#8ecbff" stroke-width="2"><path d="M292 95 H338" marker-end="url(#b)"/><path d="M622 95 H668" marker-end="url(#b)"/></g>
+</svg>

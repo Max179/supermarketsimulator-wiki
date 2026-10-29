@@ -1,0 +1,68 @@
+{
+  "id": "signing-the-shop-so-customers-find-things",
+  "title": "Signing the shop so customers find things",
+  "tier": "published",
+  "kind": "article",
+  "target": "How signage works in Supermarket Simulator: the category sign as a placed object with its own data and manager, the icon and colour you choose for it, the canvas you set the category on, the categories your products actually carry, and the signs for the entrance and the shop's own status.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with at least one sign placed",
+    "Products already stocked in the categories you intend to sign",
+    "Enough money for another sign if you are adding one"
+  ],
+  "steps": [
+    {
+      "do": "Put a sign over a group of goods rather than only on one product.",
+      "because": "a category sign is its own kind of object with its own data, so a sign names a class of goods instead of a single item (CategorySign, CategorySignSO, CategorySignData)"
+    },
+    {
+      "do": "Choose the icon and the colour deliberately, because they are the sign's information.",
+      "because": "there are controls for the sign's icon and for its colour, so the look is a setting rather than decoration (CategorySignIconController, CategorySignColorDropdown)"
+    },
+    {
+      "do": "Set the category on the sign's own canvas.",
+      "because": "there is a canvas for setting a category, which is where the sign is bound to what it names (SettingCategoryCanvas)"
+    },
+    {
+      "do": "Treat the sign as an object you can move like any other fitting.",
+      "because": "a sign has its own interaction for being used and placed, so a layout change is a matter of moving a sign rather than repainting one (CategorySignInteraction)"
+    },
+    {
+      "do": "Do not rely on signing a category you do not actually stock.",
+      "because": "the categories come from the products themselves, and each entry in a category is its own record, so a sign names goods the shop has (ProductCategory, ProductCategoryEntry)"
+    },
+    {
+      "do": "Expect the signs to be kept track of rather than counted by eye.",
+      "because": "the signs are held by a manager, which is what lets the game list a shop's signs rather than treating them as scenery (CategorySignManager)"
+    },
+    {
+      "do": "Do not forget the shop's own name where customers arrive.",
+      "because": "there is a setter for the entrance name sign, so the way in can carry the shop's name rather than being unlabelled (EntranceNameSignSetter)"
+    },
+    {
+      "do": "Check the status sign as well as the category signs.",
+      "because": "the shop has a status sign of its own and an animation for opening and closing, so whether the shop is open can be shown rather than inferred (StoreStatusSign, OpenCloseSignAnimation)"
+    },
+    {
+      "do": "In a shared shop, expect a sign you place to appear for everyone.",
+      "because": "signs have a networked form, so a sign put up by one player is put up for the crew (NetworkCategorySign)"
+    },
+    {
+      "do": "Keep an eye on the name overlay if you rename a category.",
+      "because": "a category's name can be drawn on an overlay of its own, so a change of wording is visible rather than hidden in a setting (CategoryNameOverlay)"
+    }
+  ],
+  "commonMistakes": [
+    "Signing a category the shop does not actually stock.",
+    "Expecting a sign to sort the shelf under it for you.",
+    "Leaving the entrance and the shop's own status unlabelled.",
+    "Forgetting that a sign placed in a shared shop appears for everyone."
+  ],
+  "relatedEntities": [
+    "category-signs-and-the-categories-behind-them",
+    "signs-labels-and-organising"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

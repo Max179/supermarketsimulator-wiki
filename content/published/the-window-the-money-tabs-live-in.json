@@ -1,0 +1,66 @@
+{
+ "id": "the-window-the-money-tabs-live-in",
+ "title": "The window the money tabs live in",
+ "category": "Interface",
+ "summary": "Supermarket Simulator does not open loans, bills and growth as three separate pages: they are tabs inside a window of the game's own, with a tab for the payments a loan is made of and the same arrangement holding the licences and the storage.",
+ "body": [
+  "The money screens are windows rather than pages. The game builds them on a window of its own, so the bills, the loans and the growth figures are opened in the same kind of frame instead of each being a screen of its own.",
+  "A window is made of tabs. There is a tab of its own for a window, which is how one frame can hold more than one screen at a time.",
+  "Loans have a tab, bills have a tab and growth has a tab. They are separate stops inside one window rather than three different places in the game.",
+  "A loan is not one tab. The payments a loan is made of have a tab beside the loan itself, which is why the amount and the schedule can be looked at separately.",
+  "Licences and storage sit in the same arrangement, so the window is where the shop's paperwork lives and not only its money.",
+  "The frame is scaled to whatever it is drawn on. A canvas scaler with a multiplier of its own sits behind it, which is how the same window keeps its proportions across different screen sizes rather than being redrawn for each.",
+  "Because the frame and its tabs are separate from the figures they show, a screen can be added to the window without the shop's money moving anywhere else.",
+  "What this entry does not tell you: how many tabs the window holds, what each screen shows, or how a repayment is worked out. We have not verified those points, so we do not print them."
+ ],
+ "facts": [
+  {
+   "claim": "The money screens are built on a window of their own.",
+   "evidence": "identifier: BaseWindow"
+  },
+  {
+   "claim": "A window is made of tabs of its own.",
+   "evidence": "identifier: WindowTab"
+  },
+  {
+   "claim": "Loans, bills and growth each have a tab.",
+   "evidence": "identifiers: LoansTab, BillsTab, GrowthTab"
+  },
+  {
+   "claim": "A loan has a payments tab of its own beside it.",
+   "evidence": "identifier: LoanPaymentsTab"
+  },
+  {
+   "claim": "Licences and storage sit in the same arrangement.",
+   "evidence": "identifiers: LicensesTab, StorageTab"
+  },
+  {
+   "claim": "The window is scaled by a canvas scaler with a multiplier of its own.",
+   "evidence": "identifier: CanvasScalerWithMultiplier"
+  },
+  {
+   "claim": "The money window is drawn on a canvas of its own, with a screen background and a value text beside it.",
+   "evidence": "asset names: CollectedMoneyCanvas, CollectedMoneyScreenBG, CollectedMoneyValueText"
+  }
+ ],
+ "related": [
+  "bills-loans-and-growth-screens",
+  "the-management-tabs",
+  "loans-and-paying-them-back"
+ ],
+ "images": [
+  {
+   "file": "the-window-the-money-tabs-live-in.svg",
+   "kind": "diagram",
+   "alt": {
+    "en": "Diagram: a window frame holds tabs for loans, bills and growth, with a payments tab beside the loan and licences and storage in the same arrangement.",
+    "zh": "示意图：窗口框架中包含贷款、账单与成长标签页，贷款旁边另有还款页，执照与仓储也使用同一套结构。"
+   },
+   "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+  }
+ ],
+ "sources": [
+  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+ ],
+ "imageTier": "diagram-only"
+}

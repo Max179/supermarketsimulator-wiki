@@ -1,0 +1,47 @@
+{
+  "id": "weighing-goods-without-slowing-the-queue",
+  "title": "Weighing goods without slowing the queue",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the scale in Supermarket Simulator for goods sold by weight, without turning every weighed item into a hold-up at the counter.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A scale in the shop",
+    "A product that is sold by weight",
+    "A customer who wants that product"
+  ],
+  "steps": [
+    {
+      "do": "Treat the scale as a job of its own and keep the space around it clear.",
+      "because": "the scale is a system of its own with a manager and a controller (ScaleManager)"
+    },
+    {
+      "do": "Scan the barcode when the item has one instead of keying it in by hand.",
+      "because": "the game has one step for applying a barcode and another for entering a code (ScaleApplyBarcodeTask)"
+    },
+    {
+      "do": "Stay with the scale while a customer is waiting on it.",
+      "because": "the scale has its own step where it waits for the customer (ScaleWaitCustomerTask)"
+    },
+    {
+      "do": "Read the scale display rather than guessing what the item comes to.",
+      "because": "the scale shows the product and its details on a display of its own (ScaleProductDisplay)"
+    },
+    {
+      "do": "Learn it on the first weighed item rather than during a rush.",
+      "because": "the game provides tutorial indicators for the scale (ScaleTutorialIndicatorDisplay)"
+    }
+  ],
+  "commonMistakes": [
+    "Keying in a code when the item has a barcode that could be scanned.",
+    "Walking away while the scale is waiting on a customer.",
+    "Assuming every product in the shop goes through the scale."
+  ],
+  "relatedEntities": [
+    "the-weighing-scale",
+    "products-and-deliveries"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "laying-out-a-shop-you-can-work-in",
+  "title": "Laying out a shop you can work in",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to place furniture in Supermarket Simulator: pieces arrive boxed, they are placed in a mode of their own, the game checks the position and shows the snap points that decide where a piece may sit.",
+  "version": "1.6.0 (223), read from this build (see the sources page for how the version line was read)",
+  "prerequisites": [
+    "Furniture bought and delivered",
+    "Room in the shop or the back room",
+    "A moment to plan the aisles"
+  ],
+  "steps": [
+    {
+      "do": "Open the box before you plan the room, because a piece arrives as a box that has to be handled first.",
+      "because": "furniture arrives in a box with its own data before it can be used (FurnitureBox, FurnitureBoxData)"
+    },
+    {
+      "do": "Enter the game's placing mode rather than dragging the piece, because placing is a mode of its own.",
+      "because": "placing a piece is a mode of its own, separate from carrying its box (FurniturePlacingMode, IPlacingMode)"
+    },
+    {
+      "do": "Watch where the game allows the piece to stand, because the position is validated before it is taken.",
+      "because": "a position is checked by a validator of its own (PositionValidator)"
+    },
+    {
+      "do": "Use the snap points rather than eyeballing the gap, because the game defines where a piece may connect and in which direction.",
+      "because": "the game defines snap points and a snap direction (FurnitureSnapPoint, FurnitureSnapPointSetup, FurnitureSnapDirection)"
+    },
+    {
+      "do": "Place the shop's pieces in the shop and the back room's in the back room, because the rules are different for each.",
+      "because": "an object can be marked as belonging in the shop or in the warehouse (m_PlaceObjectInShopOnly, m_PlaceObjectInWarehouseOnly)"
+    },
+    {
+      "do": "Keep the aisles walkable as you go, because the game shows the area a piece may legally be moved through.",
+      "because": "the game shows where an object may legally be moved (m_MoveStateValidArea, m_ShelfMoveStateValidArea)"
+    },
+    {
+      "do": "Leave the neighbours in mind, because a placement records the places next to it.",
+      "because": "a placement keeps the neighbouring places it relates to (PlacementNeighbourData)"
+    },
+    {
+      "do": "Line rows up rather than nudging them, because placements work to a grid of their own.",
+      "because": "placements line up on a grid of their own (GridManager)"
+    },
+    {
+      "do": "Take the options from one place rather than hunting for furniture, because the shop's furniture comes from a layout setting.",
+      "because": "the furniture options come from one layout setting (FurnitureLayoutConfig, FurnitureGenerator)"
+    }
+  ],
+  "commonMistakes": [
+    "Dragging a boxed piece into position instead of opening it and placing the piece.",
+    "Ignoring the snap points and leaving a row visibly out of line.",
+    "Packing the aisles so tightly that a loaded cart cannot pass.",
+    "Placing a back-room piece on the shop floor, where the game will not allow it.",
+    "Rearranging furniture while the shop is full of customers."
+  ],
+  "relatedEntities": [
+    "furniture-and-shop-layout",
+    "how-customers-find-their-way",
+    "shelf-slots-and-display-space"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ]
+}

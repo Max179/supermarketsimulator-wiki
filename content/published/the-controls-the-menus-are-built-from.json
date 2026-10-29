@@ -1,0 +1,79 @@
+{
+  "id": "the-controls-the-menus-are-built-from",
+  "title": "The controls the menus are built from",
+  "category": "Interface",
+  "summary": "The menus in Supermarket Simulator are assembled from controls the game made for itself: drop lists with their own controller and scroller, grid menus, tabs whose colours change with their state, windows on a desktop of their own, text entry, and a pad layer that names what each button does instead of numbering it.",
+  "body": [
+    "The game does not hand its screens over to a generic menu system. It keeps controls of its own, so a list in the shop computer and a list in a settings screen are built the same way rather than each being a one-off.",
+    "Drop lists are one of them. A dropdown has a controller of its own and a scroller alongside it, which is why a long list of goods or settings can be scrolled through instead of being cut off.",
+    "Grid menus are another. There is a grid object of its own, which is how a wall of items or a set of fixtures can be laid out as a grid rather than as a column.",
+    "Tabs show their state in colour. There is a colour group and a colour state behind a tab button, so the tab you are on can be told apart from the ones you are not, and the change is part of the control rather than painted on separately.",
+    "The computer runs windows on a desktop. There is a window object and a desktop canvas behind it, which is why the computer's screens behave like programs on a machine rather than like full-screen menus replacing one another.",
+    "Typing has its own handler. Text entry is a control in its own right, so a text box can take typed text without the whole screen being rebuilt around it.",
+    "The pad is wired into the same controls. The buttons are named by what they do rather than by a number: there are handlers for confirming, for going back, for the d-pad, for the menu and the option button, for the north and west faces, for the shoulder and the trigger, and for pressing and holding either stick.",
+    "A list item can be made selectable for a pad. That is how a selection moves down a list of goods or a list of bills without a pointer being dragged across it.",
+    "There is a panel for the pad's own interface as well, so a screen can hand part of itself over to pad handling rather than each control solving it separately.",
+    "What this entry does not tell you: how many screens the game has, which control each of them uses, or what every button is bound to by default. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The menus are built from the game's own controls, including a dropdown, a grid menu, a pad panel and a text-entry handler.",
+      "evidence": "identifiers: CustomDropdown, GridMenuObject, GamepadUIPanel, InputFieldHandler"
+    },
+    {
+      "claim": "A dropdown has a controller and a scroller of its own.",
+      "evidence": "identifiers: DropDownController, UIDropdownScroller"
+    },
+    {
+      "claim": "Tab buttons carry a colour group and a colour state, so the tab's appearance follows its state.",
+      "evidence": "identifiers: TabButtonColorGroup, TabButtonColorState"
+    },
+    {
+      "claim": "The computer's screens are windows on a desktop canvas of their own.",
+      "evidence": "identifiers: AppWindow, DesktopCanvas"
+    },
+    {
+      "claim": "The pad is driven by named roles: confirm, back, d-pad, menu, option, north, west, shoulder and trigger each have a handler.",
+      "evidence": "identifiers: GamepadUIConfirm, GamepadUIBack, GamepadUIDPad, GamepadUIMenu, GamepadUIOption, GamepadUINorth, GamepadUIWest, GamepadUIShoulder, GamepadUITrigger"
+    },
+    {
+      "claim": "There are handlers for the left stick, for clicking either stick and for holding the right stick.",
+      "evidence": "identifiers: GamepadLeftStick, GamepadUILeftStickClick, GamepadUIRightStickClick, GamepadUIRightStickButtonHold"
+    },
+    {
+      "claim": "A list item can be made selectable for a pad, including an entry for a bill.",
+      "evidence": "identifiers: GamepadSelectableParentBill, GamepadSelectableParent"
+    },
+    {
+      "claim": "There is a handler for pricing controls of its own.",
+      "evidence": "identifier: PricingControllerHandler"
+    }
+  ],
+  "related": [
+    "playing-with-a-controller",
+    "the-shop-computer"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-controls-the-menus-are-built-from-sheet.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own sheet of keyboard and mouse pictures, the key caps and mouse icons its control prompts are drawn from.",
+        "zh": "游戏自带的键鼠图片表：提示里用到的键帽与鼠标图标都取自这里。"
+      }
+    },
+    {
+      "file": "the-controls-the-menus-are-built-from.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: drop lists and grids, tabs that show their state in colour, windows on a desktop, and a pad layer that names what each button does.",
+        "zh": "示意图：下拉列表与网格菜单、用颜色表示状态的标签页、桌面上的窗口，以及按功能命名的按键层。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "the-meat-and-dairy-section",
+  "title": "The meat and dairy section",
+  "category": "Layout",
+  "tier": "published",
+  "summary": "Supermarket Simulator ships the chilled section as a fixture of its own: a base with a collider, two doors and a panel, a wall paint, and cheeses, eggs, milk and ham stocked under named brands.",
+  "body": [
+    "The meat and dairy section is a fixture of its own rather than a shelf with a different label. The base, its collider, a left and a right door and a panel are each named for the section, so what a player places is a display unit built to be walked up to.",
+    "It is also painted to match. A wall paint is named for the section, and a level-of-detail piece carries a second spelling of dairy, which is the kind of thing this project reports rather than tidies up on the game's behalf.",
+    "The cheese is stocked under named kinds. A Comté, a Gruyère and a Mimolette stand beside a mozzarella, a parmigiano and a parmesan of its own, so the section holds a range rather than one block of cheese.",
+    "Eggs are stocked with a bio kind of their own, and the same name is carried on the carton art as well, so the product reads the same on the shelf and on the pack.",
+    "Milk is stocked under a named brand. The build carries the brand on the model and on the carton's own picture, which is why a row of milk can be a row of one product rather than several.",
+    "The meat side is named as well: a ham of its own and a ham pastry stand beside the cheeses, so the section is not only dairy.",
+    "The section carries sheets rather than a plain colour. An albedo, a normal map and a metallic smoothness map are named for it, with a display sheet beside them, and the cheese pieces have sheets of their own. Spilled milk even has a dirt decal of its own, which is why the section can look used.",
+    "What this entry does not tell you: what any of these goods costs, how much of it a customer takes, or which of it unlocks at which level. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The section is a fixture of its own, with a base, a collider, a left and a right door and a panel named for it.",
+      "evidence": "asset names: SM_Meat&Dairy, SM_Meat&Dairy_Collider, SM_Meat&Dairy_Door_l, SM_Meat&Dairy_Door_r, SM_Meat&Dairy_Panel"
+    },
+    {
+      "claim": "A wall paint is named for the section, and a level-of-detail piece carries a second spelling of dairy.",
+      "evidence": "asset names: M_Meat&Dairy, M_Meat&Dairy_WallPaint, SM_Meat&Diary_LOD2"
+    },
+    {
+      "claim": "Cheese is stocked under named kinds: a Comté, a Gruyère, a Mimolette, a mozzarella, a parmigiano and a parmesan of its own.",
+      "evidence": "asset names: SM_Cheese_Comté, SM_Cheese_Gruyere, SM_Cheese_Mimolette, SM_CheeseMozzarella, SM_CheeseParmigiano, SM_Cheese_Parmesan_EROS"
+    },
+    {
+      "claim": "Eggs are stocked with a bio kind of their own, named on the model and on the carton art.",
+      "evidence": "asset names: SM_Eggs_Bio, Eggs Bio"
+    },
+    {
+      "claim": "Milk is stocked under a named brand, carried on the model and on the carton's own picture.",
+      "evidence": "asset names: SM_Milk_Bourlait, Milk Bourlait"
+    },
+    {
+      "claim": "The meat side is named as well: a ham of its own and a ham pastry beside the cheeses.",
+      "evidence": "asset names: SM_Ham_B&K, SM_Ham Pastry_Ronpoint"
+    },
+    {
+      "claim": "The section carries an albedo, a normal map and a metallic smoothness map, with a display sheet beside them.",
+      "evidence": "asset names: T_Meat&Dairy_Alb, T_Meat&Dairy_N, T_Meat&Dairy_Ms, T_LocalMarket Display_Meat&Dairy"
+    },
+    {
+      "claim": "The cheese pieces have sheets of their own, a colour, a normal and a second colour sheet among them.",
+      "evidence": "asset names: T_Cheese_A_BCA, T_Cheese_A_N, T_Cheese_A_RGBA, T_Cheese_B_BCA, T_Cheese_B_N, T_Cheese_B_RGBA"
+    },
+    {
+      "claim": "Spilled milk has a dirt decal of its own.",
+      "evidence": "asset names: T_Dirt_Milk_Alb, T_Dirt_Milk_N, T_Dirt_Milk_MS"
+    }
+  ],
+  "related": [
+    "furniture-and-shop-layout",
+    "the-fridges-and-freezers",
+    "the-list-you-buy-from"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-meat-and-dairy-section-cheese.png",
+      "kind": "game",
+      "alt": {
+        "en": "A good the section holds: the game's own parmesan pack, a green Eros wrapper marked Parmigiano Reggiano.",
+        "zh": "这一区里的一种商品：游戏自带的帕玛森包装，绿色 Eros 外袋，写着 Parmigiano Reggiano。"
+      }
+    },
+    {
+      "file": "mapped/the-meat-and-dairy-section-milk.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second good the section holds: the game's own milk carton, a one-litre Bourlait semi-skimmed.",
+        "zh": "这一区里的第二种商品：游戏自带的牛奶盒，一升装 Bourlait 半脱脂牛奶。"
+      }
+    },
+    {
+      "file": "mapped/the-meat-and-dairy-section-eggs.png",
+      "kind": "game",
+      "alt": {
+        "en": "A third good the section holds: the game's own egg box, an eight-egg bio carton.",
+        "zh": "这一区里的第三种商品：游戏自带的蛋盒，八枚装有机鸡蛋。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

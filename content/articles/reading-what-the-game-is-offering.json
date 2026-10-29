@@ -1,0 +1,47 @@
+{
+  "id": "reading-what-the-game-is-offering",
+  "title": "Reading what the game is offering you",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the crosshair, the highlight and the indicators in Supermarket Simulator so you act on what the game is actually offering.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with objects in it",
+    "Something in your hands",
+    "A moment to look before you act"
+  ],
+  "steps": [
+    {
+      "do": "Watch the crosshair rather than guessing what is usable.",
+      "because": "the game has a crosshair manager of its own (PlayerCrosshairManager)"
+    },
+    {
+      "do": "Look for the highlight when you are unsure whether something can be acted on.",
+      "because": "usable objects are highlighted by a manager of their own (HighlightManager)"
+    },
+    {
+      "do": "Check the indicator for what you are holding, separately from what you are looking at.",
+      "because": "the carried item has its own indicator (HoldingInteractionIndicator)"
+    },
+    {
+      "do": "Read the on-screen text when something happens.",
+      "because": "the game shows messages in words as well as in colour (InGameTextIndicator)"
+    },
+    {
+      "do": "Take the hint when a cart fills up rather than pushing on.",
+      "because": "a full cart has an indicator of its own (CartMaxedIndicator)"
+    }
+  ],
+  "commonMistakes": [
+    "Acting on something that was never usable.",
+    "Ignoring the indicator for what you are carrying.",
+    "Filling a cart and wondering why nothing else fits."
+  ],
+  "relatedEntities": [
+    "how-the-game-shows-what-you-can-use",
+    "checkout-and-cashiers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

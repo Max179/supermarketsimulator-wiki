@@ -1,0 +1,53 @@
+{
+  "id": "keeping-the-shop-window-clear",
+  "title": "Keeping the shop window clear",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to keep the glass in a Supermarket Simulator shop presentable, given that windows, shards, dust and cleaning are all separate named pieces.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "A shop with windows in it",
+    "A cleaning tool",
+    "Money for a replacement pane"
+  ],
+  "steps": [
+    {
+      "do": "Know which pane is which before anything breaks.",
+      "because": "four shop windows are named, a front left and right beside a left and a right one (Window_Front_Left, Window_Front_Right, Window_Left, Window_Right)"
+    },
+    {
+      "do": "Replace a broken pane rather than covering it.",
+      "because": "each window has a shard version named beside it (Window_Front_Left_Shards, Window_Left_Shards)"
+    },
+    {
+      "do": "Clean the glass instead of replacing it when the problem is only dust.",
+      "because": "dust for glass is named with its own maps and a window is named as something that can be cleaned (M_Dust_For_Glass, Window Cleaning)"
+    },
+    {
+      "do": "Match a replacement to the glass the shop already uses.",
+      "because": "the glass is a material of its own with a colour sheet and a normal map (Glass_A, Glass_N, Glass_MS)"
+    },
+    {
+      "do": "Expect more than one grade of breakage.",
+      "because": "shards come with an easy, a medium and a strong version beside the plain set (Shards_Easy, Shards_Medium, Shards_Strong)"
+    },
+    {
+      "do": "Keep the display cases glassed as well.",
+      "because": "a showcase material carries a fade, a metallic smoothness and a normal sheet (Glass_Showcase, Glass_Showcase_Fade, Glass_Showcase_MS)"
+    }
+  ],
+  "commonMistakes": [
+    "Replacing a whole window when only the dust needed clearing.",
+    "Leaving a broken pane in place and losing the light it let in.",
+    "Ordering a pane without checking what the shop's glass is.",
+    "Forgetting that a display case is glassed too."
+  ],
+  "relatedEntities": [
+    "the-shop-windows-and-the-glass",
+    "dirt-and-cleaning",
+    "furniture-and-shop-layout"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

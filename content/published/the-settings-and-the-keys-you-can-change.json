@@ -1,0 +1,95 @@
+{
+  "id": "the-settings-and-the-keys-you-can-change",
+  "title": "The settings and the keys you can change",
+  "category": "Interface",
+  "summary": "The options in Supermarket Simulator are a system of their own: the game keeps a settings manager, a container and the data behind them, with separate entries for each setting and a rebinding interface for keys.",
+  "body": [
+    "The options are a system of their own rather than a screen with buttons on it. The game keeps a settings manager, a container that holds the settings and the data behind them, which is why a change survives being closed and reopened.",
+    "The menu is grouped. There is a manager for the settings menu and a canvas for a category, so the list is built from categories instead of being one long page of switches.",
+    "Each setting is an entry of its own. That is what allows the game to build a list of settings where every item carries its own label and its own value, rather than every option being written out by hand.",
+    "Keys can be rebound. There is a manager, a loader and a settings object for key bindings, so the keys are data the game reads rather than names fixed in the code.",
+    "The rebinding interface is built from parts: a view for an entry, a view for a tab and a bridge that joins them. That is how one system can show keys for a controller and for a keyboard without being written twice.",
+    "The camera has settings of its own, with a listener that reacts to how wide the view is. Keeping a listener rather than setting the value directly is how a change can be picked up by everything that has to follow it.",
+    "Language is handled by a localisation manager. What gets translated is not only text: strings, sprites, audio clips and materials all have localised forms, so a picture or a sound can change with the language as well as a word.",
+    "The region can be chosen as well. There is a controller for it, a record describing a region and a localised dropdown, which is why the list of regions follows the language you are using.",
+    "The screens are assembled from panels. The build keeps a settings panel of its own, which is why what you change options on is a piece of the menu rather than the whole page.",
+    "What this entry does not tell you: which settings each platform offers, what the defaults are, or what values they take. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps a settings manager, a container for settings and the data behind them.",
+      "evidence": "identifiers: SettingsManager, SettingsContainer, SettingsData"
+    },
+    {
+      "claim": "The settings menu is managed and grouped by category.",
+      "evidence": "identifiers: SettingsMenuManager, SettingCategoryCanvas"
+    },
+    {
+      "claim": "An individual setting is an entry of its own.",
+      "evidence": "identifier: SettingEntry"
+    },
+    {
+      "claim": "Keys can be rebound, with a manager, a loader and a settings object.",
+      "evidence": "identifiers: KeybindManager, KeybindLoader, KeybindSettings"
+    },
+    {
+      "claim": "The rebinding interface is built from an entry view, a tab view and a bridge.",
+      "evidence": "identifiers: KeybindEntryView, KeybindingTabView, KeybindingUIBridge"
+    },
+    {
+      "claim": "The camera has settings of its own with a listener that reacts to how wide the view is.",
+      "evidence": "identifiers: CameraSettings, CameraSettingsFOVListener"
+    },
+    {
+      "claim": "Language is handled by a localisation manager, and the game localises assets by type rather than only text.",
+      "evidence": "identifiers: LocalizationManager, LocalizedString, LocalizedSprite, LocalizedAudioClip, LocalizedMaterial"
+    },
+    {
+      "claim": "The region can be chosen, with a controller, a record for a region and a localised dropdown.",
+      "evidence": "identifiers: RegionController, RegionInfo, RegionDropdownLocalizer"
+    },
+    {
+      "claim": "The settings menu the game draws is a picture of its own, showing the gameplay tab and rows such as enabling shoplifters.",
+      "evidence": "identifiers: SettingsMenuManager, EnableShoplifterScreen"
+    },
+    {
+      "claim": "The build keeps a settings panel of its own.",
+      "evidence": "identifier: SettingsPanel"
+    },
+    {
+      "claim": "The build names its settings tabs and the buttons beside them, including a crosshair tab button.",
+      "evidence": "asset names: Gameplay Tab Button, Graphics Tab Button, Audio Tab Button, CrosshairTabButton"
+    },
+    {
+      "claim": "The build names toggles of its own for v-sync, for full screen and for confining the cursor.",
+      "evidence": "asset names: VSync Toggle, Full Screen Toggle, CursorConfineToggle"
+    }
+  ],
+  "related": [
+    "playing-with-a-controller",
+    "the-aim-and-its-settings"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-settings-and-the-keys-you-can-change-screen.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own settings screen: a Settings panel with Gameplay, Graphics and Audio tabs and rows for language, mouse sensitivity, invert axes and enabling shoplifters.",
+        "zh": "游戏自带的设置界面：Settings 面板带 Gameplay/Graphics/Audio 三个标签，以及语言、鼠标灵敏度、反转轴与启用小偷等条目。"
+      }
+    },
+    {
+      "file": "the-settings-and-the-keys-you-can-change.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: settings live in a container, are listed by category with one entry each, and keys, the camera, the language and the region all feed into the same system.",
+        "zh": "示意图：设置存放在容器中、按类别以条目列出，按键、镜头、语言与地区都接入同一套系统。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

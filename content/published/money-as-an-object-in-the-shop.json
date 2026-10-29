@@ -1,0 +1,64 @@
+{
+ "id": "money-as-an-object-in-the-shop",
+ "title": "Money as an object in the shop",
+ "category": "Finance",
+ "summary": "In Supermarket Simulator money is a thing the game builds and keeps an eye on as well as a number: there is a pack of money, something that produces money objects, a manager that holds the count, a text readout for an amount and a limit on what can be typed into a money box.",
+ "body": [
+  "Money is an object as well as a number. The game has a pack of money of its own, so cash can exist in the shop as something rather than only as a figure in a menu.",
+  "Something produces it. There is a part of the game whose job is producing money objects, which is why what you pick up is a thing in the shop and not only a change to a count.",
+  "The count is kept by a manager. One part holds the shop's money, and there is a networked version of that manager for a shared shop, so the two cases are handled by the same idea rather than by two different ones.",
+  "Amounts are shown as text of their own. There is a text readout for money, which is how a figure can be displayed beside the money itself rather than being the money.",
+  "What you can type is limited. There is a part that restricts what goes into a money box, so an amount cannot be any string at all, which is what keeps a typed price or payment inside the game's own idea of a number.",
+  "Money in the room is noticed rather than invisible. The game keeps a listener for money objects in the room, so cash on the floor is something the game is aware of.",
+  "The picture beside this entry is the game's own: a picture of a dollar note that the build ships among its money pictures.",
+  "What this entry does not tell you: how much a pack of money holds, how quickly the game produces money, or what happens if you type a very large amount. We have not verified those numbers, so we do not print them."
+ ],
+ "facts": [
+  {
+   "claim": "The game has a pack of money as an object of its own.",
+   "evidence": "identifier: MoneyPack"
+  },
+  {
+   "claim": "A part of the game produces money objects.",
+   "evidence": "identifier: MoneyGenerator"
+  },
+  {
+   "claim": "The shop's money is held by a manager, with a networked version for a shared shop.",
+   "evidence": "identifiers: MoneyManager, NetworkMoneyManager"
+  },
+  {
+   "claim": "There is a text readout for an amount of money.",
+   "evidence": "identifier: MoneyText"
+  },
+  {
+   "claim": "There is a limit on what can be typed into a money box.",
+   "evidence": "identifier: MoneyInputRestrictor"
+  },
+  {
+   "claim": "The game keeps a listener for money objects that are in the room.",
+   "evidence": "identifier: RoomMoneyListener"
+  },
+  {
+   "claim": "The till's case and monitor are named in two finishes, black plastic and silver, and the game keeps a position and a sound for the change.",
+   "evidence": "asset names: Cash_R_Case_Black_Plastic, Cash_R_Case_Silver, Cash_R_Monitor_Black_Plastic, Cash_R_Monitor_Silver, Coin Change Position, Coin SFX"
+  }
+ ],
+ "related": [
+  "paying-by-card-or-cash",
+  "what-your-shop-spends"
+ ],
+ "images": [
+  {
+   "file": "mapped/money-as-an-object-in-the-shop-note.png",
+   "kind": "game",
+   "alt": {
+    "en": "The game's own picture of a one-dollar note, one of the money pictures the build ships.",
+    "zh": "游戏自带的一美元纸币图片，是游戏内置的货币图片之一。"
+   }
+  }
+ ],
+ "sources": [
+  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+ ],
+ "imageTier": "game-image"
+}

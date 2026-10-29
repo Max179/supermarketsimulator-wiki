@@ -1,0 +1,61 @@
+{
+  "id": "handing-over-a-job-without-standing-over-anyone",
+  "title": "Handing over a job without standing over anyone",
+  "tier": "published",
+  "kind": "article",
+  "target": "Which duties in Supermarket Simulator can be handed over, and what each of them runs behind the scenes, so a worker is given a job rather than a hope.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A worker hired",
+    "A till that needs serving",
+    "A restocking job worth doing"
+  ],
+  "steps": [
+    {
+      "do": "Hand over a duty that exists as a thing rather than asking for help in general.",
+      "because": "cashier duty is tied to items of its own, with a definition behind them (Cashier, CashierSO, CashierItem)"
+    },
+    {
+      "do": "Keep cashier duty and helper duty apart in your head.",
+      "because": "helper duty is tied to helper items rather than to the cashier (CustomerHelperItem, IceCreamHelperItem)"
+    },
+    {
+      "do": "Hand over the taking of an order, which is a task of its own.",
+      "because": "taking an order is a task that can be handed to a helper (StartCustomerHelperCheckoutOrder)"
+    },
+    {
+      "do": "Remember that serving at the till stays the checkout's own behaviour.",
+      "because": "starting a cashier checkout and finishing it belong to the checkout (StartCashierCheckout, FinishCheckout)"
+    },
+    {
+      "do": "Expect restocking to have machinery of its own rather than being generic work.",
+      "because": "restocking staff are run by a manager of their own and a restocker has a definition of its own (RestockerManager, RestockerSO)"
+    },
+    {
+      "do": "Check what state a restocker is in before deciding it is idle.",
+      "because": "a restocker works through states of its own, including one for restocking itself (RestockerState, RestockingState)"
+    },
+    {
+      "do": "Know that a clerk is animated by its own controller, so what you see is that job's animation rather than a generic worker.",
+      "because": "a clerk has an animation controller of its own (ClerkAnimationController)"
+    },
+    {
+      "do": "Remember the ice cream side has its own manager and its own generator settings.",
+      "because": "the ice cream stand has a manager of its own and keeps a set of generator settings (IceCreamManager, IceCreamGeneratorSettings)"
+    }
+  ],
+  "commonMistakes": [
+    "Expecting a helper to serve at the till when that belongs to the checkout.",
+    "Handing over restocking and then re-stacking the same shelves yourself.",
+    "Reading a restocker's paused state as it doing nothing.",
+    "Assuming every stand uses the same machinery as the tills."
+  ],
+  "relatedEntities": [
+    "jobs-you-can-hand-over",
+    "the-machinery-behind-each-job",
+    "what-the-game-keeps-about-an-employee"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

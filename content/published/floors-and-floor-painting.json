@@ -1,0 +1,85 @@
+{
+  "id": "floors-and-floor-painting",
+  "title": "Floors and floor painting",
+  "summary": "Can you change the floor in Supermarket Simulator? The game treats the shop floor as a surface you paint, keeps the texture you chose, and remembers the previous floor so a repaint replaces it.",
+  "body": [
+    "The floor is part of the shop you can change. The game keeps the floor as a surface that can be painted, and the work is done from a floor box you hold rather than from a settings menu, so it is something you do in the room with the shop around you.",
+    "What you pick is a floor texture. The game keeps that texture as its own record, separate from the floor it is applied to, which is why the same surface can later be repainted with something else without rebuilding the room.",
+    "That change is meant to last. The floor and the floor box are both saved, and the game keeps the previous floor as a separate record as well, which is how a repaint can replace what was there before instead of simply stacking on top of it.",
+    "What this entry does not tell you: how much a floor costs, how many floor styles the game ships, or whether a floor changes how customers behave. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The shop floor is a surface the game lets you paint, not a fixed part of the building.",
+      "evidence": "identifier: PaintableFloor"
+    },
+    {
+      "claim": "Painting is done with a floor box and a paint tool you hold.",
+      "evidence": "identifiers: FloorBox, FloorBoxData, paintBucket, painterHandle"
+    },
+    {
+      "claim": "The floor texture you choose is stored as its own record.",
+      "evidence": "identifiers: FloorTextureData, FloorTextureType, FloorSo"
+    },
+    {
+      "claim": "The floor and its box are saved so the change survives.",
+      "evidence": "identifiers: FloorSaveData, FloorBoxSaveData"
+    },
+    {
+      "claim": "The game also keeps the previous floor, which is what a repaint replaces.",
+      "evidence": "identifier: OldFloorSaveData"
+    },
+    {
+      "claim": "The game ships the floor patterns a painted floor can use, as textures of their own.",
+      "evidence": "asset name: FloorIcon_10"
+    },
+    {
+      "claim": "A grid version of those floor pictures is shipped beside them.",
+      "evidence": "asset names: FloorGridIcon_1_Default, FloorGridIcon_5, FloorGridIcon_13"
+    }
+  ],
+  "related": [
+    "store-upgrades-and-licences",
+    "restock-areas-and-vehicles"
+  ],
+  "images": [
+    {
+      "file": "mapped/floors-and-floor-painting-atlas.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own icon atlas of the floor textures you are allowed to paint onto the shop floor.",
+        "zh": "游戏自带的店面地板贴图图标图集，展示可以刷到地面上的材质。"
+      }
+    },
+    {
+      "file": "mapped/floors-and-floor-painting-tiles.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "A tile floor texture taken from the game, one of the surfaces you can apply.",
+        "zh": "取自游戏的瓷砖地板贴图，属于可应用的地面材质之一。"
+      }
+    },
+    {
+      "file": "floors-and-floor-painting.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: pick up a floor box, choose a texture, paint the surface, and the floor is saved.",
+        "zh": "示意图：拿起地板箱、选择材质、刷在地面上、地板被保存。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    },
+    {
+      "file": "mapped/floors-and-floor-painting-pattern.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "A floor pattern the game ships for painted floors: dark cracked stone, laid out in tiles.",
+        "zh": "游戏自带的涂装地板图案之一：深色龟裂石面，按格子平铺。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "category": "Layout",
+  "imageTier": "game-image"
+}

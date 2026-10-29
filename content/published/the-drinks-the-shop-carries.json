@@ -1,0 +1,78 @@
+{
+  "id": "the-drinks-the-shop-carries",
+  "title": "The drinks the shop carries",
+  "category": "Products",
+  "tier": "published",
+  "summary": "Drinks in Supermarket Simulator are a stocked range with brands of their own: six sodas, three bottled waters, a juice brand, beer as a bottle, a keg and a pack, and a wine with its own printed label.",
+  "body": [
+    "Drinks in Supermarket Simulator are a range of named products rather than one bottle repeated. Soda alone is stocked under six brands, each with a model of its own, so what a shelf of drinks shows is a line of goods rather than one grey can.",
+    "Water is stocked the same way. Three bottled waters are named for the brands they carry, which is why one shelf can hold a row of near-identical bottles that are still three different products.",
+    "Juice comes as a brand of its own. A single juice name is carried on the pack and on the model that stands in the shop, so the product reads the same whether a player is looking at the shelf or at the list behind it.",
+    "Beer is stocked in more than one shape. A bottle, a keg and a pack are each named as their own object, and there is a beer house with a collider of its own, which is why the drink can arrive by the bottle, by the box or by the barrel.",
+    "Wine is a named good with a bottle and a printed label. The label is art the game ships rather than something a list generates, so two wines can stand side by side and read as two products.",
+    "The containers are modelled apart from the goods. A soda can, a plain can, a juice bottle and a pack of water each have their own model and their own sheet, so the same kind of drink can arrive in the shape the game chose for it.",
+    "That is why the drinks side of a shop is worth stocking deliberately: the range is a defined list with brands and shapes, and a shelf built for it can be arranged by brand rather than by accident.",
+    "What this entry does not tell you: what any drink costs, how much a customer will pay for a brand, or which brands unlock at which level. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Soda is stocked under named brands, each with a model of its own: a cola, a zap, a kouje, a pulp, a ropico and a turko among them.",
+      "evidence": "asset names: SM_Soda_Cola, SM_Soda_Zap, SM_Soda_Kouje, SM_Soda_Pulp, SM_Soda_Ropico, SM_Soda_Turko"
+    },
+    {
+      "claim": "Three bottled waters are named for the brands they carry.",
+      "evidence": "asset names: SM_Bottled Water_Aotte, SM_Bottled Water_Fort-lacs, SM_Bottled Water_Montcuq"
+    },
+    {
+      "claim": "A juice brand is named on the pack and on the model that stands in the shop.",
+      "evidence": "asset names: Orange Juice_Bio Juice, SM_Orange Juice_Bio Juice, Apple Juice_Bio Juice, SM_Apple Juice_Bio Juice"
+    },
+    {
+      "claim": "Beer is stocked as more than one object: a bottle, a keg and a pack, with a beer house of its own that carries a collider.",
+      "evidence": "asset names: M_Beer, M_Beerkeg, M_Beerpack, M_BeerHouse, SM_BeerHouse_LOD0, SM_BeerHouse_Collider"
+    },
+    {
+      "claim": "Wine is a named good with a bottle of its own and printed labels the game ships.",
+      "evidence": "asset names: M_Wine, Wine Chebon, Wine_Pouilleux"
+    },
+    {
+      "claim": "The drink containers are modelled apart from the goods: a soda can, a can, a juice bottle and a water pack each have their own model and sheet.",
+      "evidence": "asset names: M_SodaCan, T_SodaCan_BCA, M_Cans_A, T_Cans_A_BCA, M_Juice_A, M_WaterPack"
+    }
+  ],
+  "related": [
+    "the-list-you-buy-from",
+    "the-fresh-produce-in-the-shop",
+    "category-signs-and-the-categories-behind-them"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-drinks-the-shop-carries-cola.png",
+      "kind": "game",
+      "alt": {
+        "en": "A drink the game ships: a cola bottle, dark soda with a red cap and a Cola label.",
+        "zh": "游戏自带的一种饮料：可乐瓶，深色汽水、红色瓶盖，标签写着 Cola。"
+      }
+    },
+    {
+      "file": "mapped/the-drinks-the-shop-carries-juice.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second drink the game ships: a one-litre Bio Juice carton with oranges printed on it.",
+        "zh": "游戏自带的第二种饮料：一升装 Bio Juice 果汁盒，盒身印着橙子。"
+      }
+    },
+    {
+      "file": "mapped/the-drinks-the-shop-carries-wine.png",
+      "kind": "game",
+      "alt": {
+        "en": "A third drink the game ships: a pale rose wine bottle with a printed label.",
+        "zh": "游戏自带的第三种饮料：淡粉色葡萄酒瓶，瓶身贴着印刷标签。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

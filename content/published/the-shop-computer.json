@@ -1,0 +1,63 @@
+{
+  "id": "the-shop-computer",
+  "title": "The shop computer",
+  "category": "Shop",
+  "summary": "Ordering, licences and new fittings in Supermarket Simulator run through a computer of the game's own: it keeps a viewer for what you have and a separate screen for what you can buy.",
+  "body": [
+    "The computer is an object in the shop. The game gives it a machine of its own, with its own desk and its own surfaces, so the screen you order from is something you place rather than a menu you can open from anywhere.",
+    "It holds viewers rather than one long list. There is a viewer for the shop floor and a separate one for furniture, which is why looking over what you already own and buying something new are two different screens.",
+    "Stock and fittings are sold through the same machine. Floor items, furniture and the vending machines each have their own entries there, with their own selection controls rather than one shared list.",
+    "Vending machines get a tab of their own. The computer keeps a screen for them apart from the rest, which mirrors the way the machines themselves are kept apart in the shop.",
+    "It is where the shop's systems meet. Because the ordering, the licences and the fittings all sit behind this screen, the computer is the one place you keep coming back to as the shop grows.",
+    "What this entry does not tell you: what anything costs, what order the screens unlock in, or whether it can be used while the shop is open. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The shop computer is an object of its own with its own desk.",
+      "evidence": "identifiers: T_SuperMarketComputer_AlbedoTransparency, T_SuperMarketComputerDesk_AlbedoTransparency"
+    },
+    {
+      "claim": "It keeps a viewer for the shop floor.",
+      "evidence": "identifier: FloorViewer"
+    },
+    {
+      "claim": "It keeps a separate viewer for furniture, with its own entries and dropdown.",
+      "evidence": "identifiers: FurnituresViewer, FurnitureSalesItem, FurnitureSalesItemDropdown"
+    },
+    {
+      "claim": "Floor items are listed in it as their own kind of entry.",
+      "evidence": "identifier: FloorSalesItem"
+    },
+    {
+      "claim": "Vending machines have a tab of their own on the computer.",
+      "evidence": "identifiers: VendingMachineTab, VendingMachineComputerSlot"
+    }
+  ],
+  "related": [
+    "orders-and-what-you-can-order",
+    "vending-machines"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-shop-computer-computer.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of the shop computer the ordering screens run on.",
+        "zh": "取自游戏的店铺电脑反照率贴图，订货界面就在上面。"
+      }
+    },
+    {
+      "file": "the-shop-computer.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: you walk to the computer, check what you own, order stock, and buy furniture from its own screen.",
+        "zh": "示意图：走到电脑前、查看已有物品、订购库存、在独立界面购买家具。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "finding-your-way-around-the-menus",
+  "title": "Finding your way around the menus",
+  "tier": "published",
+  "kind": "article",
+  "target": "Where Supermarket Simulator keeps its own menus, its settings and its key bindings, so a change is made in the right place rather than hunted for.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop open or a save loaded",
+    "Something you want to change",
+    "A keyboard or a controller"
+  ],
+  "steps": [
+    {
+      "do": "Expect pausing to open a menu of its own rather than a list of buttons.",
+      "because": "pausing opens an escape menu of its own (EscapeMenuManager)"
+    },
+    {
+      "do": "Know that tabs and sub-tabs are separate layers.",
+      "because": "the menu's tabs are run by a manager of their own and sub-tabs have another (TabManager, SubTabManager)"
+    },
+    {
+      "do": "Be deliberate about leaving, because quitting is sorted into kinds.",
+      "because": "quitting is sorted into kinds and transitions between screens are typed as well (QuitType, TransitionType)"
+    },
+    {
+      "do": "Go to settings for a change rather than to the menu you happen to be in.",
+      "because": "the game keeps a settings manager, a container for settings and the data behind them (SettingsManager, SettingsContainer, SettingsData)"
+    },
+    {
+      "do": "Look for the category a setting belongs to instead of scrolling everything.",
+      "because": "the settings menu is managed and grouped by category (SettingsMenuManager, SettingCategoryCanvas)"
+    },
+    {
+      "do": "Treat each option as its own entry.",
+      "because": "an individual setting is an entry of its own (SettingEntry)"
+    },
+    {
+      "do": "Rebind keys in the interface built for it rather than editing anything by hand.",
+      "because": "keys can be rebound through a manager, a loader and a settings object, and the interface is built from an entry view, a tab view and a bridge (KeybindManager, KeybindLoader, KeybindSettings, KeybindEntryView, KeybindingTabView, KeybindingUIBridge)"
+    },
+    {
+      "do": "Know the pause mark is the game's own art rather than something this site drew.",
+      "because": "the game ships its own pause icon for the menus (asset name: Icon_PictoIcon_Pause)"
+    }
+  ],
+  "commonMistakes": [
+    "Looking for a setting inside the tab you were using rather than in the settings menu.",
+    "Rebinding a key in a controller screen when the binding lives in its own interface.",
+    "Leaving by the wrong kind of quit when a save was wanted.",
+    "Assuming a sub-tab is the same thing as a tab."
+  ],
+  "relatedEntities": [
+    "the-menu-you-pause-into",
+    "the-settings-and-the-keys-you-can-change",
+    "the-menu-the-game-opens-on"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

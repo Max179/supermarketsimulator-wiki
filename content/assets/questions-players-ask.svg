@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" width="980" height="220" role="img" aria-label="Questions">
+  <rect width="980" height="220" fill="#12141a"/>
+  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#8ecbff"/></marker></defs>
+  <rect x="20" y="60" width="200" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="38" y="92" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">step 1</text>
+  <text x="38" y="120" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">A question</text>
+  <rect x="255" y="60" width="200" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="273" y="92" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">step 2</text>
+  <text x="273" y="120" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">Checked</text>
+  <rect x="490" y="60" width="200" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="508" y="92" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">step 3</text>
+  <text x="508" y="120" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">Answered short</text>
+  <rect x="725" y="60" width="200" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="743" y="92" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">step 4</text>
+  <text x="743" y="120" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">Linked to an entry</text>
+  <g stroke="#8ecbff" stroke-width="2"><path d="M220 103 H247" marker-end="url(#ar)"/><path d="M455 103 H482" marker-end="url(#ar)"/><path d="M690 103 H717" marker-end="url(#ar)"/></g>
+  <text x="20" y="180" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="12">Original diagram drawn for this site - not a screenshot. Numbers we could not verify are not shown.</text>
+</svg>

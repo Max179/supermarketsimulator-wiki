@@ -1,0 +1,61 @@
+{
+  "id": "what-the-cabin-tells-you",
+  "title": "What the cabin tells you",
+  "tier": "published",
+  "kind": "article",
+  "target": "What the inside of a Supermarket Simulator vehicle is made of and what it reports, so a delivery run is driven from the dashboard rather than from guesswork.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A vehicle you can drive",
+    "Somewhere to drive it",
+    "A delivery worth making"
+  ],
+  "steps": [
+    {
+      "do": "Treat the dashboard as part of the car rather than as a separate screen.",
+      "because": "the dashboard is an object inside the car rather than a screen of its own (DashboardInsideCar)"
+    },
+    {
+      "do": "Steer with the vehicle's own steering controls, and expect a limit.",
+      "because": "steering has its own controls, its own wheel element and a steering limit (SteerWheelControls, SteerWheelUI, SteerConfig, maxSteer)"
+    },
+    {
+      "do": "Read your speed rather than feeling for it.",
+      "because": "the game keeps a speedometer with a current speed and a maximum speed for the vehicle (Speedometer, currentSpeed, maxSpeed)"
+    },
+    {
+      "do": "Use the handbrake as its own control, not as a brake you hold.",
+      "because": "a handbrake is modelled as a control of its own (handBrake)"
+    },
+    {
+      "do": "Act on the low-fuel warning when it comes rather than when the engine stops.",
+      "because": "the game carries a low-fuel warning of its own (RumbleLowFuelWarning)"
+    },
+    {
+      "do": "Expect the dashboard to have warning icons of its own.",
+      "because": "the game ships its own dashboard warning icons, covering the engine among other things (dashboard warning icons)"
+    },
+    {
+      "do": "Know that the car itself is built from named parts, not one model.",
+      "because": "a vehicle has a controller of its own with a separate one for the car, a type, an engine configuration and wheels of its own (VehicleController, CarController, VehicleType, EngineConfig, Wheel)"
+    },
+    {
+      "do": "Remember the lights are a system rather than a switch.",
+      "because": "there is a lighting component, a kind of light and a controller that drives them (CarLighting, CarLightType, VehicleLightController)"
+    }
+  ],
+  "commonMistakes": [
+    "Driving by feel while the speedometer is in front of you.",
+    "Treating the handbrake as an ordinary brake.",
+    "Ignoring the low-fuel warning until the vehicle stops.",
+    "Reading the car's lights as one switch when they are a system."
+  ],
+  "relatedEntities": [
+    "inside-a-vehicle",
+    "how-a-vehicle-drives",
+    "the-vehicles-you-can-use"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

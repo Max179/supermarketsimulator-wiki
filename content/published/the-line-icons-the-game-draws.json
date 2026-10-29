@@ -1,0 +1,74 @@
+{
+  "id": "the-line-icons-the-game-draws",
+  "title": "The line icons the game draws",
+  "category": "Interface",
+  "tier": "published",
+  "summary": "Supermarket Simulator draws an icon set of its own: line icons sorted into shopping, tool, weather, arrow, gesture, game and common families, numbered per family, with app icons beside them.",
+  "body": [
+    "Supermarket Simulator draws an icon set of its own rather than borrowing one. The build names line icons in families, a shopping set, a tool set, a weather set, an arrow set, a gesture set, a game set and a common set among them, so a screen can say something without writing it out.",
+    "The icons are drawn as line art. Each one is an outline on a transparent ground rather than a filled picture, which is why the set reads the same on a dark panel as on a light one and why the same drawing can stand in for a label at very small sizes.",
+    "Some of them show a plain object. One shopping icon is a trolley, one tool icon is a bin and one weather icon is a water drop, so a player who has seen the screen once can recognise the mark without reading it.",
+    "The icons are numbered rather than named by subject. An arrow family runs through its own numbers and a common family through its own, which is why the set is bigger than the handful of marks a player notices.",
+    "App icons are drawn beside the line set. A screen that needs to say which part of the shop a player is looking at can use one of them, so the interface does not have to spell the name out.",
+    "That is why the icons are worth knowing about even for a player who never reads a menu: they are the same drawings the game reuses, so a mark learned in one screen shows up again in another without being explained twice.",
+    "The set is part of the interface rather than of the shop. Nothing about it changes what a shelf holds or what a customer costs, which is why this entry is filed with the screens rather than with the stock.",
+    "What this entry does not tell you: how many icons the set holds in total, which screen each one appears on, or whether every one of them is reachable in play. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The build names line icons in families of its own: shopping, tool, weather, arrow, gesture, game and common sets among them.",
+      "evidence": "asset names: icon_line_shopping_14, icon_line_shopping_24, icon_line_tool_44, icon_line_weather_18, icon_line_arrow_1, icon_line_gesture_34, icon_line_game_40, icon_line_common_28"
+    },
+    {
+      "claim": "Some of the line icons show a plain object: a trolley for shopping, a bin for tools and a water drop for weather.",
+      "evidence": "asset names: icon_line_shopping_14, icon_line_tool_44, icon_line_weather_18"
+    },
+    {
+      "claim": "The icons are numbered per family rather than named by subject.",
+      "evidence": "asset names: icon_line_arrow_1, icon_line_arrow_2, icon_line_arrow_15, icon_line_arrow_16, icon_line_common_28, icon_line_common_74, icon_line_common_77"
+    },
+    {
+      "claim": "App icons are drawn in the same style beside the line set.",
+      "evidence": "asset name: icon_app_78"
+    },
+    {
+      "claim": "Beyond the line set the build names arrow, shopping, tool, common, device, feeling, food, media, social-media, traffic and simple-shape icons, with named marks like a check, a close and a settings icon among them.",
+      "evidence": "asset names: icon_arrow, icon_check, icon_close, icon_settings, icon_shopping_1, icon_tool_12, icon_common_16, icon_traffic_13, icon_weather_20, icon_device_63, icon_feeling_117, icon_food_7, icon_media_48, icon_socialmedia_22, icon_simpleshape_1"
+    }
+  ],
+  "related": [
+    "the-computer-and-the-tablet",
+    "the-controls-the-menus-are-built-from",
+    "the-management-tabs"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-line-icons-the-game-draws-shopping.png",
+      "kind": "game",
+      "alt": {
+        "en": "One of the game's own line icons: a shopping trolley drawn in white outline.",
+        "zh": "游戏自带的线描图标之一：白色轮廓画出的购物车。"
+      }
+    },
+    {
+      "file": "mapped/the-line-icons-the-game-draws-tool.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second line icon from the same set: a waste bin drawn in white outline.",
+        "zh": "同一套里的第二个线描图标：白色轮廓画出的垃圾桶。"
+      }
+    },
+    {
+      "file": "mapped/the-line-icons-the-game-draws-weather.png",
+      "kind": "game",
+      "alt": {
+        "en": "A third line icon from the same set: a water drop drawn in white outline.",
+        "zh": "同一套里的第三个线描图标：白色轮廓画出的一滴水。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

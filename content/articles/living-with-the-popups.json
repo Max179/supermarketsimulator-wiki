@@ -1,0 +1,47 @@
+{
+  "id": "living-with-the-popups",
+  "title": "Living with the popups",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to deal with the popups in Supermarket Simulator, given that some of them take over input and some of them are questions you have to answer.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop running",
+    "A moment to read rather than click",
+    "Something worth changing"
+  ],
+  "steps": [
+    {
+      "do": "Expect a popup to take over input rather than treating it as decoration.",
+      "because": "popups take focus through a handler of their own (PopupFocusHandler)"
+    },
+    {
+      "do": "Read which kind of popup it is before reacting.",
+      "because": "the game sorts popups into types (PopupType)"
+    },
+    {
+      "do": "Answer a question deliberately rather than clicking through it.",
+      "because": "there is a question popup of its own (QuestionPopup)"
+    },
+    {
+      "do": "Use the information popups when you are unsure how a system works.",
+      "because": "they are assembled from their own elements and content (InfoPopupElement)"
+    },
+    {
+      "do": "Do not assume every popup appears the instant something happens.",
+      "because": "the manager can raise one after a delay (PopUpManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Clicking through a question without reading it.",
+    "Carrying on as though a popup were scenery.",
+    "Ignoring the information panels when learning a system."
+  ],
+  "relatedEntities": [
+    "the-popups-in-the-game",
+    "the-management-tabs"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

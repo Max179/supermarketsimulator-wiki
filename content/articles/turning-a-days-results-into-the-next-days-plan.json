@@ -1,0 +1,66 @@
+{
+  "id": "turning-a-days-results-into-the-next-days-plan",
+  "title": "Turning a day's results into the next day's plan",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to read a finished day in Supermarket Simulator and turn it into tomorrow's plan: the record the game keeps, the costs behind it, the standing it feeds, and the decisions that belong before the next day starts.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A day finished rather than paused halfway",
+    "The day's own screen or the shop computer to read it on",
+    "Some idea of the shop's current level and standing"
+  ],
+  "steps": [
+    {
+      "do": "Read the finished day before you spend anything from it.",
+      "because": "the game keeps a daily record with a manager of its own, a screen of its own and a drawing step of its own, so the day can be read back rather than remembered (DailyStatisticsData, DailyStatisticsManager, DailyStatisticsScreen, DrawStatistics)"
+    },
+    {
+      "do": "Separate what came in from what the shop owes.",
+      "because": "recurring costs are a system of their own, with a manager, a container for the settings and a record for each expense (ExpensesManager, ExpensesSO, ExpensesData, ExpenseType)"
+    },
+    {
+      "do": "Check what was paid for you before counting the day as yours.",
+      "because": "bills can be settled automatically, and the game keeps a canvas showing what it paid with an entry per bill (AutoPaymentManager, AutoPaidBillsCanvas, BillItem)"
+    },
+    {
+      "do": "Read cleanliness as part of the result rather than a separate chore list.",
+      "because": "cleanliness is tracked against the shop's standing, so the state of the shop feeds the same standing the day is measured by (CleaningReputationManager)"
+    },
+    {
+      "do": "Look at the shop's level before planning what to buy.",
+      "because": "the shop's level is tracked apart from the money, and the licence and growth screens are organised around it (StoreLevelManager, currentStoreLevel, LicenseLayoutConfig, GrowthLayoutConfig)"
+    },
+    {
+      "do": "Decide whether tomorrow is a buying day or a mending day.",
+      "because": "what can be ordered is modelled as real objects rather than text rows, and a box carries a market price of its own, so a buying day has a price the game already knows (Order, OrderData, ProductSOs, BoxMarketPrice)"
+    },
+    {
+      "do": "Bank before you shop, and know what the shop is holding.",
+      "because": "the shop's money is held by a manager, with a networked manager in a shared shop and a listener for money objects in the room (MoneyManager, NetworkMoneyManager, RoomMoneyListener)"
+    },
+    {
+      "do": "Plan the tills before you plan the shelves.",
+      "because": "there is a checkout manager and more than one kind of checkout, so standing at a till is a decision the game models rather than an assumption (CheckoutManager, CheckoutType, AutomatedCheckout)"
+    },
+    {
+      "do": "Only then close the day.",
+      "because": "ending the day is an interaction of its own, the day cycle has a networked manager, and the shop's status is part of the shared state in a co-op shop (NextDayInteraction, NetworkDayCycleManager, StoreStatus, NetworkStoreStatus)"
+    }
+  ],
+  "commonMistakes": [
+    "Spending the day's takings before reading what the day actually owed.",
+    "Treating cleanliness as decoration when it feeds the standing the results are judged against.",
+    "Ordering stock before checking what the shop's level and licences allow.",
+    "Planning a solo day in a shop that is shared with other players."
+  ],
+  "relatedEntities": [
+    "the-day-results-screen-and-what-it-counts",
+    "what-your-shop-spends",
+    "bills-loans-and-growth-screens",
+    "the-day-cycle"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

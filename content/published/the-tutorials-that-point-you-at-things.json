@@ -1,0 +1,77 @@
+{
+  "id": "the-tutorials-that-point-you-at-things",
+  "title": "The tutorials that point you at things",
+  "category": "Tasks",
+  "summary": "Supermarket Simulator teaches its own systems with small tutorials rather than one help screen: the scale has a tutorial manager with an on-screen indicator and a position for it, and online orders and shoplifters each have a tutorial of their own.",
+  "body": [
+    "The shop is not explained in writing alone. The game carries a tutorial layer with a manager of its own, and the one for the scale arrives with an indicator: a display plus a part that gives that display its position.",
+    "An indicator with a position is a pointer. Because the thing shown on screen and the place it belongs are kept as separate parts, a tutorial can point at something in the shop instead of only describing it in text.",
+    "Online ordering has a tutorial of its own. That is why the first order is a guided step rather than a screen you have to find for yourself.",
+    "Shoplifting has one as well. There is a tutorial for it, an animation listener that belongs to that tutorial and a customer made for it, so the first theft you meet is staged rather than left to chance.",
+    "The objectives are kept apart from the tutorials. The game stores tutorial objective data and has a display for it, so what you are being asked to do is a record with something to show it on screen.",
+    "Taken together, that is how a new shop is taught: a pointer that leads you to the scale, a first online order walked through with you, and a shoplifter staged for the occasion, each with its own parts rather than one general help panel.",
+    "There is a manager over the teaching. An onboarding manager of its own sits above the individual tutorials, which is why a new shop can be walked through rather than only explained.",
+    "What this entry does not tell you: how many tutorials there are, when each of them runs, or what any of them gives you. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The scale has a tutorial manager of its own, with an indicator display and a part that holds the indicator's position.",
+      "evidence": "identifiers: ScaleTutorialManager, ScaleTutorialIndicatorDisplay, ScaleTutorialIndicatorPositionContainer"
+    },
+    {
+      "claim": "The game carries a tutorial interface rather than only ad-hoc prompts.",
+      "evidence": "identifier: ITutorial"
+    },
+    {
+      "claim": "Online ordering has a tutorial of its own.",
+      "evidence": "identifier: OnlineOrderTutorial"
+    },
+    {
+      "claim": "Shoplifting has a tutorial of its own.",
+      "evidence": "identifier: TutorialShoplifter"
+    },
+    {
+      "claim": "That tutorial has an animation listener of its own and a customer made for it.",
+      "evidence": "identifiers: TutorialShoplifterAnimationEventListener, ShoplifterTutorialCustomer"
+    },
+    {
+      "claim": "Tutorial objectives are stored as their own data with a display.",
+      "evidence": "identifiers: TutorialObjectiveData, TutorialObjectiveDisplay"
+    },
+    {
+      "claim": "The hint for the tablet is a picture of its own, drawn with the tablet's jobs laid out around it.",
+      "evidence": "identifiers: OnlineOrderTutorial, tablet hint image"
+    },
+    {
+      "claim": "The tutorial layer has an onboarding manager of its own.",
+      "evidence": "identifier: OnboardingManager"
+    }
+  ],
+  "related": [
+    "missions-and-the-objectives-the-game-sets",
+    "the-weighing-scale"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-tutorials-that-point-you-at-things-hint.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The hint picture the game ships for the tablet: a wheel of its jobs around a tablet, beside a screen showing an online order.",
+        "zh": "游戏为平板准备的提示图：平板周围一圈可选工作，旁边是显示线上订单的平板界面。"
+      }
+    },
+    {
+      "file": "the-tutorials-that-point-you-at-things.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a tutorial points at the scale, walks through the first online order, stages a shoplifter, and checks off objectives.",
+        "zh": "示意图：教程指向秤、带你完成第一笔线上订单、安排一次小偷事件，并勾选目标。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

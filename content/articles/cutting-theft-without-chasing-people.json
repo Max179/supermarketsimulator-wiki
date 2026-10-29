@@ -1,0 +1,47 @@
+{
+  "id": "cutting-theft-without-chasing-people",
+  "title": "Cutting theft without chasing people",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the security equipment in Supermarket Simulator to cut theft, instead of spending the day running after customers.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with customers coming through the door",
+    "Money for a camera or a guard",
+    "Somebody watching the shop rather than only the till"
+  ],
+  "steps": [
+    {
+      "do": "Fit a camera before buying anything else, because it works while you are at the counter.",
+      "because": "the game ships cameras as placed objects with their own interaction (SecurityCamera)"
+    },
+    {
+      "do": "Put the camera where goods leave rather than where they are shelved.",
+      "because": "a camera keeps a saved record of where you placed it (SecurityCameraSaveData)"
+    },
+    {
+      "do": "Hire a guard when you cannot watch the floor yourself.",
+      "because": "the guard has behaviour of his own and patrols rather than standing still (SecurityGuardStateController)"
+    },
+    {
+      "do": "Expect a guard to notice things you are not looking at.",
+      "because": "the guard has an antenna with a detection area of its own (SecurityAntennaDetechArea)"
+    },
+    {
+      "do": "Do not treat security as a replacement for watching the warning indicator.",
+      "because": "the shoplifter warning is a separate system from the cameras (SecurityCameraInteraction)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying a guard while the goods walk out of an unwatched door.",
+    "Assuming a camera removes the need to watch the warning.",
+    "Fitting a camera and never checking what it actually covers."
+  ],
+  "relatedEntities": [
+    "security-cameras-and-guards",
+    "shoplifters-in-your-shop"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

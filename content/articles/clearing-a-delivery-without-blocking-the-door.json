@@ -1,0 +1,66 @@
+{
+  "id": "clearing-a-delivery-without-blocking-the-door",
+  "title": "Clearing a delivery without blocking the door",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to handle the boxes a delivery leaves in Supermarket Simulator: carrying them by their target, letting the game sort them, taking from them and merging them, and keeping the cells and the shop floor in mind.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A delivery to clear",
+    "Room in the back room",
+    "A moment before the next customer"
+  ],
+  "steps": [
+    {
+      "do": "Carry a box in rather than dragging it about, because carrying has a target of its own.",
+      "because": "carrying a box uses a target, with an interface for things that can be a box's target (CarryBoxTarget, IBoxTarget)"
+    },
+    {
+      "do": "Put a box down where boxes belong and let the game sort it, because boxes are sortable objects with a manager behind them.",
+      "because": "boxes are sortable objects kept by a manager of their own (SortableBox, SortableBoxManager)"
+    },
+    {
+      "do": "Open a box where you need it, knowing that taking is an action with an answer rather than a guess.",
+      "because": "taking from a box has its own action and returns a result (TakeBox, TakeBoxResult)"
+    },
+    {
+      "do": "Merge part-used boxes instead of keeping two half boxes side by side.",
+      "because": "there is a control for merging boxes (BoxMergeControl)"
+    },
+    {
+      "do": "Let the cells decide what fits, because a box is divided into cells laid out on a grid.",
+      "because": "a box has cells, laid out on a grid of its own (BoxCell, BoxGridLayout3D)"
+    },
+    {
+      "do": "Keep the kind of box in mind, because a freezer box and a greengrocer's box are not the same thing to the game.",
+      "because": "a box has a definition of its own (BoxSO)"
+    },
+    {
+      "do": "Dress a shop with dummy boxes when stock is short, rather than leaving shelves bare.",
+      "because": "the game can generate dummy boxes to dress a shop (DummyBoxGenerator)"
+    },
+    {
+      "do": "Expect treats in a box of their own, so the ice cream counter is cleared like any other.",
+      "because": "ice cream has a box kind of its own (IceCreamBucketBox)"
+    },
+    {
+      "do": "Clear the floor before the next delivery rather than letting boxes pile up, because what is in the back room is kept in the manager's lists.",
+      "because": "every kind of box is kept in the manager's own lists (SortableBoxManager, BoxCell)"
+    }
+  ],
+  "commonMistakes": [
+    "Dragging a box around instead of carrying it by its target.",
+    "Leaving two half boxes on the floor when they could be merged.",
+    "Putting a freezer box where a greengrocer's box belongs, expecting the game to sort it out.",
+    "Opening a box and walking away without checking what came out.",
+    "Letting the next delivery arrive into a floor that is still full."
+  ],
+  "relatedEntities": [
+    "the-boxes-in-the-back-room",
+    "the-crates-you-buy",
+    "storage-crates-and-the-storage-tab"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ]
+}

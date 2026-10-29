@@ -1,0 +1,88 @@
+{
+  "id": "shelf-slots-and-display-space",
+  "title": "Shelf slots and display space",
+  "category": "Shelf and stock",
+  "summary": "A shelf in Supermarket Simulator is not one open surface: the game divides it into rack slots and display slots, tracks each one by index, and gives some displays a rule about what may be placed on them.",
+  "body": [
+    "A shelf is made of slots. The game keeps a shelf as a set of rack slots with records of their own, which is why stocking a shelf is a slot-by-slot job rather than one shared pile of goods.",
+    "Every slot has an address. Slots carry an index and identifiers of their own, so the game can tell a shelf that is half full from one that is empty and one that is full.",
+    "Boxes are tied to slots as well. A box standing on a shelf is tracked against a slot, which is why a delivery left on the shelf is a different situation from stock sitting in the back room.",
+    "Displays are not the same thing as shelves. The game keeps display slots apart from rack slots, with their own indices, so a display case and a shelf are handled by different parts of the same system.",
+    "Some displays are built for one product. There are display slots made for ice cream cones and for ice cream flavours, which is why a freezer display is not interchangeable with a general shelf.",
+    "Displays can carry rules too. A display slot can have a condition attached about what may be placed in it, so the game is able to refuse a product that does not belong there.",
+    "What this entry does not tell you: how many slots a shelf has, how much a slot holds, or how many display types exist. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A shelf is made of rack slots with records of their own.",
+      "evidence": "identifiers: RackSlot, RackSlotData, RackSlots"
+    },
+    {
+      "claim": "Each slot carries an index and its own identifiers.",
+      "evidence": "identifiers: rackSlotIndex, rackSlotIDs, slotIndex"
+    },
+    {
+      "claim": "A box on a shelf is tracked against a slot as well.",
+      "evidence": "identifiers: RackSlotBoxTarget, targetRackSlot, targetRackSlotIndex"
+    },
+    {
+      "claim": "Display slots are tracked apart from rack slots.",
+      "evidence": "identifiers: DisplaySlot, displaySlotIndex, displaySlots, targetDisplaySlot"
+    },
+    {
+      "claim": "Some display slots are built for a particular product, including ice cream cones and flavours.",
+      "evidence": "identifiers: IceCreamConeDisplaySlot, IceCreamFlavourDisplaySlot"
+    },
+    {
+      "claim": "A display slot can carry a condition on what may be placed in it.",
+      "evidence": "identifier: IDisplaySlotProductPlacementCondition"
+    },
+    {
+      "claim": "Further display pieces are named, including a pegboard display slot and a double-width bakery display.",
+      "evidence": "asset names: Display Slot (PegBoard) Variant, SM_BakeryDlc_L3_Display_Double"
+    },
+    {
+      "claim": "Display slots are named per appliance as well, with a freezer and a fridge variant among them.",
+      "evidence": "asset names: Display Slot (Freezer), Display Slot (Fridge)"
+    },
+    {
+      "claim": "A display slot is named for a garment rack as well as for the other fittings.",
+      "evidence": "asset name: Display Slot (Garment_Rack) Variant"
+    }
+  ],
+  "related": [
+    "restocking-shelves",
+    "how-products-are-displayed"
+  ],
+  "images": [
+    {
+      "file": "mapped/shelf-slots-and-display-space-icecream.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The texture taken from the game of a display case built for a particular product, the kind of display the entry describes.",
+        "zh": "取自游戏的产品专用陈列柜贴图，即本条词条描述的那类陈列位。"
+      }
+    },
+    {
+      "file": "mapped/shelf-slots-and-display-space-shelf.png",
+      "kind": "game",
+      "alt": {
+        "en": "The single shelf unit the game ships: a white gondola with three shelves on an upright frame and a base that turns the corner.",
+        "zh": "游戏自带的单面货架：白色货架三层层板装在立柱上，底座带转角。"
+      }
+    },
+    {
+      "file": "shelf-slots-and-display-space.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a shelf holds rack slots, each slot has an index, boxes are tracked to slots, and display slots follow their own rules.",
+        "zh": "示意图：货架由货道组成、每个货道有编号、箱子对应货道、陈列位另有规则。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

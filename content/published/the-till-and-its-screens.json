@@ -1,0 +1,77 @@
+{
+  "id": "the-till-and-its-screens",
+  "title": "The till and its screens",
+  "category": "Checkout",
+  "summary": "A checkout in Supermarket Simulator is hardware as well as a job: the game gives it a register with a screen, a point-of-sale terminal with buttons, its own data and grid, and cashiers an animation control of their own.",
+  "body": [
+    "The checkout is not one object with a job attached. The game gives the till a register of its own with a screen of its own, which is why the machine at the end of a lane is a separate thing from the lane itself.",
+    "The checkout has parts with their own names as well. There are screens, items, an interaction and data belonging to the checkout, so what you press, what is on the belt and what the machine knows are tracked apart from each other.",
+    "There is a grid size belonging to the checkout too, which is how the game can lay out what stands on it rather than treating the till as a single block.",
+    "The register is worked through a point-of-sale terminal, and the terminal has buttons of its own. That is how the game models the counter you press rather than only the drawer that opens.",
+    "The self-service till is one kind of checkout rather than a separate machine, so the rules documented for the automated counter apply to the same family of hardware.",
+    "The cashiers have their own animation control, which is why the person at the till and the till itself are kept as two things that have to agree rather than one.",
+    "Two of the pictures beside this entry are the game's own: the monitor of the register with its keypad and receipt area, and the screen it uses for taking money back, with the drawer open and the change on show.",
+    "What this entry does not tell you: how fast a till serves a customer, how many tills a shop may have, or what a register costs. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The till has a register of its own with a screen of its own.",
+      "evidence": "identifiers: CashRegister, CashRegisterScreen"
+    },
+    {
+      "claim": "The checkout has its own screens, items, interaction and data rather than being one object.",
+      "evidence": "identifiers: CheckoutScreen, CheckoutItem, CheckoutInteraction, CheckoutData, CheckoutSO"
+    },
+    {
+      "claim": "The checkout has a grid size of its own.",
+      "evidence": "identifier: CheckoutGridSize"
+    },
+    {
+      "claim": "The register is worked through a point-of-sale terminal with buttons of its own.",
+      "evidence": "identifiers: PosTerminal, TerminalButton"
+    },
+    {
+      "claim": "The self-service till is a kind of checkout of its own.",
+      "evidence": "identifier: SelfCheckout"
+    },
+    {
+      "claim": "Cashiers have an animation controller of their own.",
+      "evidence": "identifier: CashierAnimationController"
+    },
+    {
+      "claim": "The game ships a picture for the register's monitor.",
+      "evidence": "identifier: Cash_Register_Monitor_Diffuse"
+    },
+    {
+      "claim": "The game also ships a screen picture for taking money back at the till, with the drawer open and the change due.",
+      "evidence": "asset name: Take money back"
+    }
+  ],
+  "related": [
+    "checkout-and-cashiers",
+    "the-self-checkout-and-its-rules",
+    "paying-by-card-or-cash"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-till-and-its-screens-take-money-back.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own till screen for taking money back: an open cash drawer with notes and coins under a monitor reading Received, Total, Change and Giving.",
+        "zh": "游戏自带的找零界面图：打开的收银抽屉内摆放纸币与硬币，上方屏幕显示 Received、Total、Change 与 Giving。"
+      }
+    },
+    {
+      "file": "mapped/the-till-and-its-monitor-screen.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own picture of the checkout register's monitor.",
+        "zh": "游戏自带的收银机显示器贴图。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

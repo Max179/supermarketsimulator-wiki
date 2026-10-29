@@ -1,0 +1,57 @@
+{
+  "id": "keeping-a-record-of-what-your-shop-did",
+  "title": "Keeping a record of what your shop did",
+  "tier": "published",
+  "kind": "article",
+  "target": "Where Supermarket Simulator writes things down for you, so you can check orders, money and warnings instead of trying to remember them.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that has taken at least one order",
+    "At least one bill that comes due",
+    "The computer or tablet within reach"
+  ],
+  "steps": [
+    {
+      "do": "Let the notebook hold your orders rather than trying to remember them.",
+      "because": "orders are kept in a notebook and a container of its own, with a display of its own (OrderNotebook, OrderNotebookContainer, OrderNotebookDisplay)"
+    },
+    {
+      "do": "Go to the money window for loans, bills and growth instead of hunting through menus.",
+      "because": "those screens are built on a window made of tabs, with a tab each for loans, bills and growth (BaseWindow, WindowTab, LoansTab, BillsTab, GrowthTab)"
+    },
+    {
+      "do": "Open the loan payments tab when the question is a repayment rather than a loan.",
+      "because": "a loan has a payments tab of its own beside it (LoanPaymentsTab)"
+    },
+    {
+      "do": "Look for licences and storage in the same arrangement.",
+      "because": "licences and storage sit in the same window of tabs (LicensesTab, StorageTab)"
+    },
+    {
+      "do": "Read warnings as their own system rather than as more popups.",
+      "because": "warnings are run by a system of their own and kept in a pool (WarningSystem, WarningsPool)"
+    },
+    {
+      "do": "Match the warning to what is actually happening before you act on it.",
+      "because": "warnings are sorted into kinds, with an interaction warning type and a baker warning type among them (InteractionWarningType, BakerWarningType)"
+    },
+    {
+      "do": "Check on a delayed warning rather than assuming nothing happened.",
+      "because": "a warning can be stopped as well as started, with a delay routine of its own (StopWarning, WarningDelayCoroutine)"
+    }
+  ],
+  "commonMistakes": [
+    "Tracking orders in your head when the game writes them into a notebook.",
+    "Looking for a bill under the loan's own screen instead of the payments tab.",
+    "Treating a warning as decoration rather than as something that tells you what to do next.",
+    "Assuming a warning that has stopped means the problem is gone."
+  ],
+  "relatedEntities": [
+    "the-notebook-your-orders-are-written-in",
+    "the-window-the-money-tabs-live-in",
+    "how-the-game-decides-to-warn-you"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

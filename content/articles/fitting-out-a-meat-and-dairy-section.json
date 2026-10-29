@@ -1,0 +1,53 @@
+{
+  "id": "fitting-out-a-meat-and-dairy-section",
+  "title": "Fitting out a meat and dairy section",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to set up and stock the meat and dairy section in Supermarket Simulator, given that it is a fixture of its own with goods named one by one.",
+  "version": "1.6.0 (223) (see the sources page)",
+  "prerequisites": [
+    "Floor space for a section",
+    "The shop's own wall paint",
+    "Money for the first delivery"
+  ],
+  "steps": [
+    {
+      "do": "Place the section as a unit rather than lining up ordinary shelves.",
+      "because": "the section has a base, a collider, a left and a right door and a panel of its own (SM_Meat&Dairy, SM_Meat&Dairy_Collider, SM_Meat&Dairy_Door_l, SM_Meat&Dairy_Door_r)"
+    },
+    {
+      "do": "Paint the wall to match the section.",
+      "because": "a wall paint is named for the section, and a level-of-detail piece carries a second spelling of dairy (M_Meat&Dairy_WallPaint, SM_Meat&Diary_LOD2)"
+    },
+    {
+      "do": "Order the cheese by kind rather than as one line.",
+      "because": "a Comté, a Gruyère, a Mimolette, a mozzarella, a parmigiano and a parmesan are each named (SM_Cheese_Comté, SM_Cheese_Gruyere, SM_Cheese_Mimolette, SM_CheeseMozzarella, SM_CheeseParmigiano)"
+    },
+    {
+      "do": "Give the eggs and the milk their own rows.",
+      "because": "eggs come as a bio kind and milk under a named brand, each named on the pack as well (SM_Eggs_Bio, Eggs Bio, SM_Milk_Bourlait, Milk Bourlait)"
+    },
+    {
+      "do": "Do not forget the meat side of the same section.",
+      "because": "a ham of its own and a ham pastry stand beside the cheeses (SM_Ham_B&K, SM_Ham Pastry_Ronpoint)"
+    },
+    {
+      "do": "Expect the section to need cleaning.",
+      "because": "spilled milk has a dirt decal of its own, and the section carries its own sheets (T_Dirt_Milk_Alb, T_Meat&Dairy_Alb, T_Meat&Dairy_N)"
+    }
+  ],
+  "commonMistakes": [
+    "Putting cheese on a general shelf and losing the section's own display.",
+    "Buying one kind of cheese and calling the section stocked.",
+    "Leaving the wall unpainted so the section looks borrowed.",
+    "Ignoring a spill because the section is chilled rather than the floor."
+  ],
+  "relatedEntities": [
+    "the-meat-and-dairy-section",
+    "furniture-and-shop-layout",
+    "the-fridges-and-freezers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; nothing here is estimated."
+  ]
+}

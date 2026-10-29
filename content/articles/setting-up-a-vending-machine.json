@@ -1,0 +1,47 @@
+{
+  "id": "setting-up-a-vending-machine",
+  "title": "Setting up a vending machine that actually sells",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to place, stock and price a vending machine in Supermarket Simulator using the machine behaviour the game itself defines.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "Enough money to buy the machine",
+    "A product you already stock",
+    "Space in the shop away from the blocked area"
+  ],
+  "steps": [
+    {
+      "do": "Pick the spot before you buy, and keep clear of the area where the game will not let a machine stand.",
+      "because": "the game defines a placement dead zone for machines (VendingMachinePlacementDeadZone)"
+    },
+    {
+      "do": "Buy the machine and let it be placed as its own fixture instead of treating it as a shelf.",
+      "because": "a machine carries its own data and is managed separately from shelving (VendingMachine)"
+    },
+    {
+      "do": "Fill the slots with a product you already sell rather than leaving slots empty.",
+      "because": "the game tracks how many of the machine's slots are filled (collectedSlotCount)"
+    },
+    {
+      "do": "Set the machine's own price tags instead of assuming the shelf price carries over.",
+      "because": "prices hang on the machine's own tags (VendingPriceTag)"
+    },
+    {
+      "do": "Leave it to trade and check the machine's own screen on the shop computer later.",
+      "because": "the machine collects income on its own while you work elsewhere (vendingIncome)"
+    }
+  ],
+  "commonMistakes": [
+    "Buying the machine before checking where it is allowed to stand.",
+    "Filling a few slots and forgetting the rest.",
+    "Assuming the shelf price is automatically the machine price."
+  ],
+  "relatedEntities": [
+    "vending-machines",
+    "restocking-shelves"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

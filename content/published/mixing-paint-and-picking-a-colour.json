@@ -1,0 +1,86 @@
+{
+  "id": "mixing-paint-and-picking-a-colour",
+  "title": "Mixing paint and picking a colour",
+  "category": "Shop",
+  "summary": "Paint in Supermarket Simulator is made rather than only bought: the game generates buckets, keeps them in step between players, and gives you a colour picker with its own button and preview.",
+  "body": [
+    "Paint in this shop is something the game produces rather than a colour you simply select. There is a manager for paint with a routine of its own that keeps the buckets in step, so a bucket mixed by one player is a bucket for everyone.",
+    "Buckets are generated. There is a generator for them and a viewer of its own, which is why a bucket is an object in the world rather than a value attached to a wall.",
+    "Placing a bucket is a mode of its own. There is a placing mode, a bucket interaction and a networked version of that interaction, so where a bucket goes is decided in the world rather than in a menu.",
+    "Colours are chosen with a picker. It has a button, a panel that switches to it and a preview, which is how a colour can be tried before it is committed to a wall or a floor.",
+    "The picker works with either kind of input. It has a handler for a gamepad and a control that routes it through a virtual keyboard, so choosing a colour does not depend on a pointer.",
+    "There is a button for the background colour as well, and an aim colour preview, which is how the same picking system can serve more than one part of the shop instead of being written twice.",
+    "The paint itself is an item. It has an adjustment of its own for a gamepad, and it sits on a shelf like anything else you sell, which is why a colour can be bought as well as chosen.",
+    "Because the buckets are shared, the paint a player pours is part of the shop rather than part of their screen, and the colour of a wall is the same wall for everybody.",
+    "What this entry does not tell you: how much paint a bucket holds, how many colours there are, or what any colour costs. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "There is a paint manager with a routine that keeps the buckets in step, and networked buckets.",
+      "evidence": "identifiers: PaintManager, PaintManagerSyncCoroutine, NetworkPaintBucket"
+    },
+    {
+      "claim": "Buckets are generated and have a viewer of their own.",
+      "evidence": "identifiers: PaintBucketGenerator, BucketViewer"
+    },
+    {
+      "claim": "Placing a bucket is a mode, with a bucket interaction and a networked version of it.",
+      "evidence": "identifiers: BucketPlacingMode, BucketInteraction, NetworkBucketInteraction"
+    },
+    {
+      "claim": "The colour picker has a button, a panel that switches to it and a preview.",
+      "evidence": "identifiers: ColorPicker, ColorPickerButton, ColorPickerPanelSwitch, ColorPreview"
+    },
+    {
+      "claim": "The picker works with a gamepad and with a virtual keyboard.",
+      "evidence": "identifiers: ColorPickerGamepadHandler, ColorPickerVirtualKeyboardControl"
+    },
+    {
+      "claim": "There is a background colour button and an aim colour preview of its own.",
+      "evidence": "identifiers: BackgroundColorPickerButton, AimColorPreview"
+    },
+    {
+      "claim": "Paint is a sale item with an adjustment for a gamepad of its own.",
+      "evidence": "identifier: PaintSaleItemGamepadUIAdjuster"
+    },
+    {
+      "claim": "The paint colours are carried as numbered bucket icons of their own.",
+      "evidence": "asset names: BucketIcon_3, BucketIcon_10, BucketIcon_17, BucketIcon_27"
+    }
+  ],
+  "related": [
+    "painting-the-walls",
+    "floors-and-floor-painting"
+  ],
+  "images": [
+    {
+      "file": "mapped/mixing-paint-and-picking-a-colour-buckets.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own icon atlas of the paint buckets a colour is picked from.",
+        "zh": "游戏自带的油漆桶图标图集，用于挑选颜色。"
+      }
+    },
+    {
+      "file": "mixing-paint-and-picking-a-colour.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a bucket is generated, mixed in the picker with a preview, placed in the world, and shared with the other players.",
+        "zh": "示意图：生成油漆桶、在取色器中调配并预览、在世界中放置，并与其他玩家共享。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    },
+    {
+      "file": "mapped/mixing-paint-and-picking-a-colour-bucket.png",
+      "kind": "game",
+      "alt": {
+        "en": "One of the numbered paint buckets the game ships: a white can filled with teal paint.",
+        "zh": "游戏自带的编号油漆桶之一：白色桶里装着青色油漆。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "the-racks-the-back-room-uses",
+  "title": "The racks the back room uses",
+  "category": "Warehouse",
+  "summary": "Storage in Supermarket Simulator is racked rather than piled: the game keeps data for a rack, a further record for the boxes racked on it, and a third for the boxes that stand on their own.",
+  "body": [
+    "A rack is a thing in data. The game keeps rack data of its own, which is why a rack can be placed and understood by the shop rather than being a piece of scenery with boxes stacked against it.",
+    "Boxes on a rack are recorded separately. There is a record for a racked box of its own, so what is on a rack is known as a relationship between a box and the rack it sits on rather than as a loose object.",
+    "Boxes that stand on the floor are recorded too. There is a record for a box on a stand of its own, which is why a box in the back room and a box on a rack are two different things to the game.",
+    "Storage as a whole has data. There is storage data of its own, which is where the back room's arrangement is kept rather than being read back off the objects each time.",
+    "A rack is defined before it is recorded. There is a definition of a rack of its own, which is why one rack and another can share a shape rather than each being written out separately.",
+    "Being racked is a state. A box on a rack is an object of its own and a rack has a state of its own, which is why putting a box away is a change the shop tracks rather than only a movement.",
+    "The image beside this entry is the game's own: the artwork it ships for a tall rack of the kind the back room uses, a steel upright with five levels.",
+    "What this entry does not tell you: how many racks a back room takes, how much a rack holds, or what either costs. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A rack has data of its own.",
+      "evidence": "identifier: RackData"
+    },
+    {
+      "claim": "A box on a rack is recorded on its own.",
+      "evidence": "identifier: RackedBoxData"
+    },
+    {
+      "claim": "A box on a stand is recorded separately from one on a rack.",
+      "evidence": "identifier: StandBoxData"
+    },
+    {
+      "claim": "Storage has data of its own.",
+      "evidence": "identifier: StorageData"
+    },
+    {
+      "claim": "A rack is defined by a definition object of its own as well as recorded.",
+      "evidence": "identifier: RackSO"
+    },
+    {
+      "claim": "A box on a rack is an object of its own and being racked is a state.",
+      "evidence": "identifiers: RackBox, RackingState"
+    },
+    {
+      "claim": "The game ships its own artwork for a tall rack of the kind the back room uses.",
+      "evidence": "asset name: Tall Rack"
+    },
+    {
+      "claim": "The racks are named in sizes of their own, a small one beside the tall one.",
+      "evidence": "asset name: Small Rack"
+    }
+  ],
+  "related": [
+    "the-boxes-in-the-back-room",
+    "storage-sections-and-sorting",
+    "restock-areas-and-vehicles"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-racks-the-back-room-uses-tall-rack.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own artwork for a tall rack: a grey steel upright with five levels and a blue panel behind it.",
+        "zh": "游戏自带的高架图案：灰色钢制立柱、五层隔板，后面是一块蓝色背板。"
+      }
+    },
+    {
+      "file": "mapped/the-racks-the-back-room-uses-small-rack.png",
+      "kind": "game",
+      "alt": {
+        "en": "The game's own artwork for the smaller rack: a black steel frame with four levels and cross bracing.",
+        "zh": "游戏自带的小号货架图案：黑色钢架、四层隔板并带交叉支撑。"
+      }
+    },
+    {
+      "file": "the-racks-the-back-room-uses.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a rack is placed from its own data, a box on it is recorded as a racked box, a box on the floor as a stand box, and the arrangement is kept as storage data.",
+        "zh": "示意图：货架按自己的数据放置、架上的箱子记为架上箱、地上的箱子记为独立箱，整体布置保存在仓储数据里。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

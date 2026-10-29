@@ -1,0 +1,57 @@
+{
+  "id": "taking-payment-without-mixing-up-the-money",
+  "title": "Taking payment without mixing up the money",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to keep cash, card and the shop's own money objects straight in Supermarket Simulator, so the till's business is not confused with the shop's.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with at least one lane",
+    "Customers being served",
+    "Bills that come due"
+  ],
+  "steps": [
+    {
+      "do": "Expect more than one kind of payment rather than a single checkout action.",
+      "because": "the game keeps payment types and entries of its own (PlayerPaymentType, PlayerPaymentTypeEntry)"
+    },
+    {
+      "do": "Remember that how a customer paid is recorded, not inferred.",
+      "because": "the method and whether it was by card are held on the player's payment data (PlayerPaymentData, paymentType, paymentViaCreditCard, viaCreditCard)"
+    },
+    {
+      "do": "Treat a coin payment as its own case.",
+      "because": "coin payment is tracked separately (isCoin)"
+    },
+    {
+      "do": "Treat each customer payment as its own record instead of one running total.",
+      "because": "a customer payment is kept as a record of its own (CustomerPayment)"
+    },
+    {
+      "do": "Work the till through its own screen and terminal rather than reading the shop's total.",
+      "because": "the register has a screen of its own and the terminal has buttons of its own (CashRegister, CashRegisterScreen, PosTerminal, TerminalButton)"
+    },
+    {
+      "do": "Let the game settle bills for you only if you want to see what it paid.",
+      "because": "bills can be paid automatically and then displayed (AutoPaymentManager, AutoPaidBillsCanvas, BillItem)"
+    },
+    {
+      "do": "Remember that money in this shop is also an object on the floor.",
+      "because": "there is a pack of money as an object, a generator for it and a listener for the money in the room (MoneyPack, MoneyGenerator, RoomMoneyListener)"
+    }
+  ],
+  "commonMistakes": [
+    "Assuming every lane takes the same kinds of payment in the same way.",
+    "Reading the shop's total and treating it as the till's takings.",
+    "Forgetting that money can exist as an object in the room and not only as a number.",
+    "Letting bills settle automatically and then not looking at what was paid."
+  ],
+  "relatedEntities": [
+    "paying-by-card-or-cash",
+    "the-till-and-its-screens",
+    "money-as-an-object-in-the-shop"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

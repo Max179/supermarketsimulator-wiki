@@ -1,0 +1,93 @@
+{
+  "id": "the-popups-in-the-game",
+  "title": "The popups that interrupt you",
+  "category": "Interface",
+  "summary": "Supermarket Simulator talks to you through popups of its own: the game keeps a manager, a set of kinds, questions and apologies, and information panels with their own content.",
+  "body": [
+    "Popups are a system. The game runs them through a manager of its own rather than showing text wherever it happens to fit, which is why they behave consistently.",
+    "They come in kinds. The game sorts popups into types, so a question behaves differently from an apology rather than all messages looking the same.",
+    "Some of them wait. A popup can be raised after a delay rather than immediately, which is why the game can let a moment pass before it says anything.",
+    "They take focus. The game has a handler for popup focus, which is why a popup can take over input instead of being decoration you can ignore.",
+    "There are information panels. The game keeps information popups with their own elements and content records, so a longer explanation is assembled from parts rather than written out once.",
+    "One of them is about the grid. There is a canvas for grid system information, which is why the shop's layout can be explained in place rather than in a manual.",
+    "The image beside this entry is the game's own: the information icon it draws on a popup, a blue i in a pale circle.",
+    "What this entry does not tell you: how many popups there are, when each is triggered, or whether they can be turned off. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Popups are run by a manager of their own.",
+      "evidence": "identifiers: IPopUp, PopUpManager, Popup"
+    },
+    {
+      "claim": "The game sorts popups into types.",
+      "evidence": "identifier: PopupType"
+    },
+    {
+      "claim": "The build names its info button and info panel, and keeps a checkout warning of its own.",
+      "evidence": "asset names: Info Button, Info Panel, Checkout Warning SFX"
+    },
+    {
+      "claim": "There is a question popup and an apology popup.",
+      "evidence": "identifiers: QuestionPopup, ApologyPopup"
+    },
+    {
+      "claim": "A popup can take focus over input.",
+      "evidence": "identifier: PopupFocusHandler"
+    },
+    {
+      "claim": "There are information popups assembled from their own elements and content.",
+      "evidence": "identifiers: InfoPopup, InfoPopupElement, InformationContent, InformationPopupData"
+    },
+    {
+      "claim": "One popup covers grid system information.",
+      "evidence": "identifier: GridSystemInfoCanvas"
+    },
+    {
+      "claim": "A second manager runs popups independently of the first, with pieces of its own.",
+      "evidence": "identifiers: PopupManager, PopupTextElement"
+    },
+    {
+      "claim": "Information popups have a manager and kinds of their own.",
+      "evidence": "identifiers: InformationPopupManager, InformationPopupType"
+    },
+    {
+      "claim": "A popup can ask for a confirmation through a handler of its own.",
+      "evidence": "identifier: IConfirmHandler"
+    },
+    {
+      "claim": "The game also keeps a stream of player notifications, placed by position.",
+      "evidence": "identifiers: PlayerNotifications, NotificationPosition"
+    },
+    {
+      "claim": "The game draws an information icon of its own for a popup.",
+      "evidence": "asset name: Icon_ImageIcon_Info"
+    }
+  ],
+  "related": [
+    "how-the-game-shows-what-you-can-use",
+    "the-management-tabs"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-popups-in-the-game-info.png",
+      "kind": "game",
+      "alt": {
+        "en": "The information icon the game draws on a popup: a blue lower-case i in a pale circle with a dark ring.",
+        "zh": "游戏在弹窗上绘制的信息图标：浅色圆底配深色圆环，中间是蓝色小写 i。"
+      }
+    },
+    {
+      "file": "the-popups-in-the-game.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: something happens, a popup is raised, it takes focus, you answer it, and play resumes.",
+        "zh": "示意图：发生事件、弹出提示、夺取输入焦点、你作出回应、继续游戏。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "storage-crates-and-the-storage-tab",
+  "title": "Storage, crates and the storage tab",
+  "category": "Storage",
+  "tier": "published",
+  "summary": "Behind the shop floor Supermarket Simulator keeps a storage side: the game defines crates, crate sale items, storage sections and a storage tab, which is where stock waits before it reaches a shelf.",
+  "body": [
+    "Storage is organised into sections with their own layout, and the interface gives storage its own tab rather than mixing it with the shop floor.",
+    "Crates are objects in their own right, and a crate can also be offered for sale, which is why the game distinguishes a crate from a crate sale item.",
+    "Because stock waits in storage, how you arrange it decides how long a refill takes.",
+    "What this entry does not tell you: crate capacities, storage limits or how much a crate is worth when sold. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Storage is laid out in sections with a defined arrangement.",
+      "evidence": "identifiers: StorageLayoutConfig, StorageSectionItem"
+    },
+    {
+      "claim": "Storage has its own interface tab.",
+      "evidence": "identifier: StorageTab"
+    },
+    {
+      "claim": "A crate is an object, and a crate can also be sold as an item.",
+      "evidence": "identifiers: Crate, CrateSaleItem"
+    },
+    {
+      "claim": "The build ships the crates and vegetable crates the storage work uses, with a colour texture of their own.",
+      "evidence": "asset names: SM_Crate_01b_LOD0, SM_Vegiecrate, TX_Crate_01a_ALB"
+    },
+    {
+      "claim": "A further crate piece is shipped at a lower level of detail.",
+      "evidence": "asset names: Ml_Crate_01a, SM_Crate_01a_pCube103_LOD0"
+    },
+    {
+      "claim": "The crates are modelled at several levels of detail, and a produce crate has a display slot of its own.",
+      "evidence": "asset names: SM_Crate_01c_LOD0, SM_Vegiecrate_LOD0, Vegiecrate_DisplaySlot"
+    }
+  ],
+  "related": [
+    "restocking-shelves",
+    "setting-prices-in-bulk",
+    "storage-sections-and-sorting"
+  ],
+  "images": [
+    {
+      "file": "mapped/storage-crates-and-the-storage-tab-box.png",
+      "kind": "game",
+      "alt": {
+        "en": "An albedo texture taken from the game of the cardboard box used for stock.",
+        "zh": "取自游戏用于存货的纸箱反照率贴图。"
+      }
+    },
+    {
+      "file": "storage-crates-and-the-storage-tab.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: stock arrives, it is stored in a section, you move it to the shelf when needed, empty slots are refilled.",
+        "zh": "仓储示意图：到货、入库到存储区、需要时搬到货架、空位补货。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

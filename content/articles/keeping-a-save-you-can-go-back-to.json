@@ -1,0 +1,69 @@
+{
+  "id": "keeping-a-save-you-can-go-back-to",
+  "title": "Keeping a save you can go back to",
+  "tier": "published",
+  "kind": "article",
+  "target": "How saving works in Supermarket Simulator: where a shop actually lives, what a save slot holds, how the game brings an older shop forward when the build changes, and why keeping more than one slot is worth it.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop worth keeping",
+    "Access to the save slots screen",
+    "A moment before you change something big"
+  ],
+  "steps": [
+    {
+      "do": "Know where the shop actually lives: in a save slot, chosen from a panel of slots rather than a single file.",
+      "because": "a shop is kept in a save slot, with a panel of slots of its own (SaveSlotsPanel)"
+    },
+    {
+      "do": "Read a slot before picking it, because a save has a record of its own and sits among entries rather than being an unnamed file.",
+      "because": "a save has its own record and sits among entries (SaveInfo, SaveEntry)"
+    },
+    {
+      "do": "Save before a big change and load deliberately after it, because writing into a slot and loading from one are separate behaviours.",
+      "because": "writing into a slot and loading from one are separate behaviours (SaveSlotsSaveBehaviour, SaveSlotsLoadBehaviour)"
+    },
+    {
+      "do": "Expect a moment while it writes: the save is managed and announced rather than silent.",
+      "because": "a manager keeps the save and an event announces it (SaveManager, SaveEvent)"
+    },
+    {
+      "do": "Do not interrupt the game while it is saving, because the shop is written in chunks through a handler and a root record.",
+      "because": "the save is written by a handler and a root record in chunks (SaveFileHandler, SaveFileRoot, SaveChunkData)"
+    },
+    {
+      "do": "Keep more than one slot so that a shop you have outgrown is still there.",
+      "because": "slots are chosen from a panel and each save has its own record (SaveSlotsPanel, SaveInfo)"
+    },
+    {
+      "do": "After a game update, expect a saved shop to be brought forward rather than refused.",
+      "because": "the game keeps a changelog updater so a save can be brought forward when the build changes (ChangelogUpdater)"
+    },
+    {
+      "do": "If a loaded shop behaves oddly, remember that the game resets its shared services rather than reusing them.",
+      "because": "there is a hub for resetting shared services so a saved shop can be loaded cleanly (SingletonResetHub)"
+    },
+    {
+      "do": "Do not assume money, stock and licences come back by themselves: each is restored by its own manager.",
+      "because": "money, stock and licences are kept by managers of their own that a save has to restore (NetworkMoneyManager, NetworkInventoryManager, NetworkLicenseManager)"
+    },
+    {
+      "do": "Remember that even the mess is saved, because dirt, dust and rubbish each have a save record of their own.",
+      "because": "dirt, dust and rubbish have save records of their own (DirtSaveData, DustingSaveData, GarbageSaveData)"
+    }
+  ],
+  "commonMistakes": [
+    "Playing on one slot only and having nothing to go back to when a shop goes wrong.",
+    "Closing the game while it is writing, when the save is written in chunks rather than at once.",
+    "Assuming an old save will be refused after an update rather than brought forward.",
+    "Expecting a load to wipe the shop, when what happens is that the shared services are reset and the managers restore their own parts."
+  ],
+  "relatedEntities": [
+    "how-your-shop-is-saved",
+    "save-slots-and-what-each-one-holds",
+    "which-version-this-site-documents"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

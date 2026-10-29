@@ -1,0 +1,53 @@
+{
+  "id": "keeping-a-self-checkout-moving",
+  "title": "Keeping a self-checkout moving",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to treat the self-service till in Supermarket Simulator as a checkout with conditions of its own, so it keeps serving customers instead of stalling.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A self-service till placed in the shop",
+    "At least one other lane customers can use",
+    "The scanning side already set up"
+  ],
+  "steps": [
+    {
+      "do": "Expect conditions rather than a smaller version of a staffed lane.",
+      "because": "the game checks whether the machine can be used at all before it takes a customer (AutomatedCheckout, CanSelfCheckoutUsable)"
+    },
+    {
+      "do": "Watch for a customer who wants help, not only for a machine that has stopped.",
+      "because": "wanting help is tracked as its own question, apart from whether the machine works (IsSelfCheckoutWantHelp)"
+    },
+    {
+      "do": "Check that somebody is actually standing in front of it before you expect anything to happen.",
+      "because": "the game keeps track of whether a customer is at the till (HasCheckoutCustomer)"
+    },
+    {
+      "do": "Keep it where you can watch it, because the shop decides how much of it to draw.",
+      "because": "a renderer switches its detail by distance (LODCheckoutRenderer)"
+    },
+    {
+      "do": "Count it as one of your checkout kinds when you plan the front of the shop.",
+      "because": "a checkout carries a type and the automated machine is one of those types rather than a system apart (CheckoutType)"
+    },
+    {
+      "do": "Use the same scanning habits at it as at any other till.",
+      "because": "the scanning side is shared, so what differs is the rules around the machine rather than the act of scanning (ScanAnimationHandler)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating a self-checkout as a smaller staffed lane and expecting the same customers to use it.",
+    "Waiting for the machine to fail instead of watching for a customer who wants a hand.",
+    "Blaming the machine when nobody is standing in front of it.",
+    "Placing it out of sight and then wondering why it stalls."
+  ],
+  "relatedEntities": [
+    "the-self-checkout-and-its-rules",
+    "checkout-and-cashiers",
+    "barcodes-and-the-scanner"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "what-your-shop-spends",
+  "title": "What your shop spends",
+  "category": "Finance",
+  "summary": "Money leaves the shop as well as arriving: Supermarket Simulator keeps its running costs as a system of their own, with a manager, its own records and more than one kind of expense.",
+  "body": [
+    "Spending is organised rather than incidental. The game keeps expenses as a system of their own instead of folding every cost into the price of a product, which is why the shop has running costs at all.",
+    "There is more than one kind of expense. The game sorts its costs into types, so not every outgoing payment behaves the same way or appears in the same place.",
+    "Each expense is recorded. Expenses are kept as their own records, and the system is one the game can share with another player in a joint shop, which is why a partner sees the same costs you do.",
+    "It has a manager of its own. A dedicated manager runs the expense system, which is why bills and expenses sit apart from the money you handle at the till.",
+    "The shop's level is a separate thing again. The game tracks the level your shop has reached on its own, which is why growing the shop and paying its costs are two different concerns.",
+    "What this entry does not tell you: how large any expense is, how often it falls due, or how many kinds exist. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps recurring expenses as a system of their own.",
+      "evidence": "identifiers: ExpensesManager, ExpensesSO"
+    },
+    {
+      "claim": "Expenses are sorted into types rather than being one kind of cost.",
+      "evidence": "identifier: ExpenseType"
+    },
+    {
+      "claim": "Each expense is kept as its own record.",
+      "evidence": "identifiers: ExpensesData, expenses"
+    },
+    {
+      "claim": "The expense system works in a shared shop as well as a solo one.",
+      "evidence": "identifier: NetworkExpensesManager"
+    },
+    {
+      "claim": "The shop's level is tracked apart from the money.",
+      "evidence": "identifiers: StoreLevelManager, currentStoreLevel, storeLevel"
+    }
+  ],
+  "related": [
+    "bills-loans-and-growth-screens",
+    "the-local-market-and-product-costs"
+  ],
+  "images": [
+    {
+      "file": "mapped/what-your-shop-spends-money.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "The albedo texture taken from the game of the money leaving the shop.",
+        "zh": "取自游戏的钞票反照率贴图。"
+      }
+    },
+    {
+      "file": "what-your-shop-spends.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the shop trades, expenses of several kinds are recorded, the bill is paid, and the shop keeps its level.",
+        "zh": "示意图：店铺营业、记录多种支出、支付账单、店铺维持等级。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

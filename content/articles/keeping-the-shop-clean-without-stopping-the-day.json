@@ -1,0 +1,64 @@
+{
+  "id": "keeping-the-shop-clean-without-stopping-the-day",
+  "title": "Keeping the shop clean without stopping the day",
+  "tier": "published",
+  "kind": "article",
+  "target": "How cleaning works in Supermarket Simulator: dirt as an object with a dirtiness mark, cleaning as a state with its own animations for floors and windows, handing the job to a janitor whose work runs as a routine, and the shop standing that cleanliness feeds into.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with customers coming in",
+    "A mop or a cleaning job you can hand over",
+    "Enough money for a hire if you are handing the work over"
+  ],
+  "steps": [
+    {
+      "do": "Clean where the dirt actually is rather than wiping the whole shop evenly.",
+      "because": "dirt is placed as an object of its own in the shop, and the game marks how dirty something is, so the mess has a location (Dirt, DirtinessIndicator)"
+    },
+    {
+      "do": "Expect a cleaning job to be something that runs rather than something that happens.",
+      "because": "cleaning carries a tracked state of its own, which is why it can be interrupted and picked up again (CleaningState)"
+    },
+    {
+      "do": "Use the right job for the surface.",
+      "because": "mopping and window cleaning each have their own animation event, so a floor and a window are not the same task (MopCleaningAnimationEvent, WindowCleaningAnimationEvent)"
+    },
+    {
+      "do": "Hand the floors over when you cannot keep up with them yourself.",
+      "because": "there is a cleaning worker with a janitor item and a mop of their own, so the job can belong to somebody else (JanitorItem, Mop)"
+    },
+    {
+      "do": "Once a cleaner is hired, leave them to it rather than standing over them.",
+      "because": "the work is carried out by a routine of its own rather than waiting on you (CleaningForJanitorCoroutine)"
+    },
+    {
+      "do": "Treat hiring as a step of its own before you expect the shop to get cleaner.",
+      "because": "the people you employ are produced by the game through an employee generator (EmployeeGenerator)"
+    },
+    {
+      "do": "Expect a janitor to move through states rather than to wander and clean at random.",
+      "because": "the cleaning side carries a state machine and a state interface of its own (StateMachine, IState)"
+    },
+    {
+      "do": "Do not leave the mess for later just because it is not a sale.",
+      "because": "cleanliness is tracked against the shop's standing, so how clean the shop is becomes part of how it is judged (CleaningReputationManager)"
+    },
+    {
+      "do": "In a shared shop, expect one mop to be the mop for everybody.",
+      "because": "the mop has a networked interaction, so cleaning is a shared event rather than a local animation (NetworkMopInteraction)"
+    }
+  ],
+  "commonMistakes": [
+    "Letting dirt build up until it starts costing you standing.",
+    "Expecting a hired cleaner to take on the windows as well as the floors.",
+    "Treating cleaning as instant when it is a state that has to run.",
+    "Assuming cleanliness only matters visually rather than to the shop's standing."
+  ],
+  "relatedEntities": [
+    "who-keeps-the-shop-clean",
+    "dirt-and-cleaning"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

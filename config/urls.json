@@ -1,0 +1,1178 @@
+{
+  "site": "supermarketsimulator.wiki",
+  "note": "One line per emitted page. \"redirects\" stays empty until this site has ever been published under an older URL; a redirect entry must point at a page that exists.",
+  "generatedBy": "tools/classify-urls.mjs",
+  "redirects": [],
+  "entries": [
+    {
+      "url": "/about.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/a-computer-routine-that-keeps-the-shelves-full.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/a-first-licence-without-running-out.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/a-trading-day-that-pays.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/aiming-deliberately-in-a-busy-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/bagging-a-purchase-without-losing-track-of-it.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/borrowing-without-drowning-in-repayments.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/borrowing-without-sinking-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/building-a-drinks-shelf.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-a-crate-without-filling-the-back-room.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-a-licence-and-knowing-what-it-unlocks.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-and-using-the-bat.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-equipment-from-the-shop-computer.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-from-the-list-without-buying-twice.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-on-offer-without-filling-the-back-room.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/buying-stock-without-being-taken-in.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/catching-a-shoplifter-in-time.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/choosing-an-entrance-that-suits-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/choosing-and-shelving-fresh-produce.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/clearing-a-delivery-without-blocking-the-door.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/closing-the-shop-and-keeping-what-you-earned.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/cutting-theft-without-chasing-people.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/dealing-with-rubbish-without-losing-the-day.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/dressing-a-corner-with-plants.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/finding-your-way-around-the-menus.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/fitting-out-a-meat-and-dairy-section.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/fitting-out-the-chilled-side.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/from-empty-shop-to-first-sale.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/getting-a-helper-to-the-right-job.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/getting-music-into-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/growing-the-shop-in-the-right-order.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/handing-over-a-job-without-standing-over-anyone.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/how-the-game-shows-you-yourself.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/index.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-a-record-of-what-your-shop-did.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-a-save-you-can-go-back-to.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-a-self-checkout-moving.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-the-back-room-usable.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-the-shop-clean-without-stopping-the-day.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-the-shop-window-clear.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/keeping-the-tills-moving-as-the-shop-grows.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/laying-out-a-shop-you-can-work-in.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/lighting-the-shop-and-the-back-room.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/living-with-the-popups.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/making-a-product-line-worth-displaying.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/opening-a-bakery-without-stalling-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/opening-your-first-day.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/packing-online-orders-without-losing-the-list.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/painting-the-floor-and-naming-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/painting-the-shop-floor.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/painting-the-walls-without-wasting-paint.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/playing-with-a-controller-without-losing-the-prompts.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-the-games-own-objectives.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-the-icons-on-the-screens.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-the-street-before-you-step-into-it.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-the-warnings-without-fighting-the-popups.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-what-the-game-is-offering.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/reading-your-shops-own-state.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/repricing-the-shop-in-one-pass.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/restocking-routine.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/running-a-shared-shop-without-stepping-on-each-other.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/running-an-ice-cream-stand.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/running-the-shop-from-the-tabs.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/setting-up-a-vending-machine.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/signing-the-shop-so-customers-find-things.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/stocking-a-shelf-slot-by-slot.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/taking-payment-without-mixing-up-the-money.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/the-machines-and-the-prompts.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/the-things-that-keep-going-while-you-do-something-else.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/turning-a-days-results-into-the-next-days-plan.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/using-a-vehicle-for-a-big-delivery.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/using-the-map-instead-of-walking-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/watching-the-shop-with-cameras-and-guards.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/weighing-goods-without-slowing-the-queue.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/what-gets-a-copy-in-a-shared-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/what-the-cabin-tells-you.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/what-the-tutorial-is-teaching-you.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/why-the-shop-runs-with-so-much-in-it.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/articles/working-the-objectives-into-your-day.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/collection.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/contact.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/disclaimer.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/basics.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/checkout.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/customers.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/index.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/interface.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/layout.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/money.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/multiplayer.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/products.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/running-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/shelves-and-stock.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/staff.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/upgrades.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entities/vehicles.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/barcodes-and-the-scanner.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/bills-loans-and-growth-screens.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/category-signs-and-the-categories-behind-them.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/checkout-and-cashiers.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/cleanliness-and-standing.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/customers-and-helpers.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/dirt-and-cleaning.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/dirt-dust-and-rubbish-are-three-jobs.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/floors-and-floor-painting.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/furniture-and-shop-layout.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-a-product-is-drawn-on-a-shelf.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-a-vehicle-drives.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-customers-find-their-way.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-products-are-displayed.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-the-game-decides-to-warn-you.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-the-game-shows-what-you-can-use.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/how-your-shop-is-saved.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/index.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/inside-a-vehicle.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/licence-items-and-their-icons.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/loans-and-paying-them-back.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/mixing-paint-and-picking-a-colour.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/money-as-an-object-in-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/music-in-your-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/online-orders-and-how-they-are-tracked.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/orders-and-what-you-can-order.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/painting-the-walls.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/paper-bags-and-packing-a-purchase.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/paying-by-card-or-cash.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/playing-with-a-controller.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/products-and-deliveries.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/questions-players-ask.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/raising-your-storage-and-shop-level.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/repaying-a-loan-payment-by-payment.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/restock-areas-and-vehicles.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/restocking-shelves.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/save-slots-and-what-each-one-holds.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/security-cameras-and-guards.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/serving-ice-cream.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/shelf-slots-and-display-space.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/shoplifters-in-your-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/signs-labels-and-organising.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/storage-crates-and-the-storage-tab.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/storage-sections-and-sorting.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/store-upgrades-and-licences.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-aim-and-its-settings.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-bakery-counter.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-baseball-bat.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-body-you-do-not-see.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-boxes-in-the-back-room.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-computer-and-the-tablet.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-controls-the-menus-are-built-from.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-crates-you-buy.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-day-cycle.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-devices-the-game-can-shake.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-display-behind-the-shelf.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-drinks-the-shop-carries.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-expansion-packs.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-fresh-produce-in-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-fridges-and-freezers.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-global-map-and-its-markers.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-hints-and-pings-the-game-gives.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-janitor.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-lights-and-the-switches.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-line-icons-the-game-draws.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-list-you-buy-from.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-local-market-and-product-costs.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-machinery-behind-each-job.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-management-tabs.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-meat-and-dairy-section.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-menu-the-game-opens-on.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-menu-you-pause-into.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-mode-you-place-things-in.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-notebook-your-orders-are-written-in.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-oven-and-the-baker.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-plants-and-planters.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-popups-in-the-game.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-racks-the-back-room-uses.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-road-traffic-and-its-signals.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-rubbish-and-where-it-goes.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-self-checkout-and-its-rules.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-settings-and-the-keys-you-can-change.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-shop-computer.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-shop-entrance.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-shop-windows-and-the-glass.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-shops-status-its-doors-and-its-ground.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-storage-lights-and-door.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-street-outside.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-till-and-its-screens.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-tutorials-that-point-you-at-things.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-vehicles-you-can-use.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-warnings-the-game-shows.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-weighing-scale.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/vending-machines.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/watching-your-vending-machines.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/what-the-customers-say.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/what-your-shop-spends.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/which-version-this-site-documents.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/who-comes-into-the-shop.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/who-keeps-the-shop-clean.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/wholesale-offers-and-discounts.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/fields.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/guide.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/index.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/namespaces.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/privacy.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/reference/collection.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/fields.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/index.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/namespaces.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/asking-a-helper-to-fetch-something.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/glossary-of-terms.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/hiring-a-cashier.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/how-a-shop-full-of-things-is-drawn.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/index.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/jobs-you-can-hand-over.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/missions-and-the-objectives-the-game-sets.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/running-a-shop-with-other-players.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/setting-prices-in-bulk.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-animations-your-body-plays.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-camera-you-play-through.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-day-results-screen-and-what-it-counts.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-kinds-of-missions-the-game-builds.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-networked-copies-in-a-shared-shop.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-pricing-screen-and-how-a-price-is-chosen.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-task-layer-under-the-missions.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/the-window-the-money-tabs-live-in.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/what-a-shared-shop-keeps-in-step.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/what-the-game-keeps-about-an-employee.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/notes/writing-a-name-that-fits.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/sources.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/reference/tool.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/search.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/sources.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/terms.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/tool.html",
+      "action": "noindex",
+      "reason": "technical reference or duplicate kept reachable but not indexed"
+    },
+    {
+      "url": "/tools/index.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/updates.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    }
+  ]
+}

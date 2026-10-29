@@ -1,0 +1,67 @@
+{
+  "id": "which-version-this-site-documents",
+  "title": "Which version of the game this site documents",
+  "category": "Versions",
+  "summary": "Every page here describes one installation of Supermarket Simulator: this entry states which build was read, what was measured from it, and what that means for what you can rely on.",
+  "body": [
+    "This site describes one installation. Everything published here was read from the copy of Supermarket Simulator installed on the machine that built the site, and the version line recorded from it is the one named below.",
+    "The version string is the game's own. It is read from the version the game stores in its own files rather than from a store listing, so it reflects the build that was actually on disk when the site was produced.",
+    "We record measurements rather than claims. The build we read contains twenty-one thousand one hundred and fifty-two named types in total, of which eleven thousand two hundred and seventy-five are the game's own and nine thousand eight hundred and seventy-seven belong to the engine and its libraries. It also contains one hundred and seventy thousand two hundred and seventy-one rows of stored data names, of which one hundred and seventy thousand and fifty have names that parse without ambiguity.",
+    "What that means for you: if your copy is a different version, an entry here may describe something that has since changed. We do not attempt to cover versions we have not read, and we do not carry over a claim from one build to another.",
+    "Where a system is absent from the build we read, we say so rather than filling the gap. That is why some columns on this site have a note explaining that nothing was found for them.",
+    "What this entry does not tell you: when any update shipped, what changed between versions, or whether a newer build behaves differently. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "This site documents the build whose version the game itself reports: 1.6.0 (223).",
+      "evidence": "read from the version string the game stores in its own player settings and its data asset (v1.6.0(223))"
+    },
+    {
+      "claim": "The version string is read from the game's own files rather than from a store listing.",
+      "evidence": "the version string the game stores in its own player settings, listed on the technical sources page for this site"
+    },
+    {
+      "claim": "The build we read contains twenty-one thousand one hundred and fifty-two named types, eleven thousand two hundred and seventy-five of them the game's own.",
+      "evidence": "counted from the normalized type list committed with this site"
+    },
+    {
+      "claim": "The build we read contains one hundred and seventy thousand two hundred and seventy-one rows of stored data names, of which one hundred and seventy thousand and fifty parse unambiguously.",
+      "evidence": "counted from the committed rows of stored data names"
+    },
+    {
+      "claim": "Every published page here describes this build only.",
+      "evidence": "the build is recorded in the machine-readable status file committed with this site"
+    },
+    {
+      "claim": "The build ships an Early Access tag of its own as store art.",
+      "evidence": "identifier: Early Access Tag"
+    }
+  ],
+  "related": [
+    "the-shop-computer",
+    "the-day-cycle"
+  ],
+  "images": [
+    {
+      "file": "mapped/which-version-this-site-documents-early-access.png",
+      "kind": "game",
+      "alt": {
+        "en": "The Early Access tag the game ships: a pink badge with EARLY ACCESS printed in white.",
+        "zh": "游戏自带的抢先体验标签：粉色底、白色 EARLY ACCESS 字样。"
+      }
+    },
+    {
+      "file": "which-version-this-site-documents.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: one installation is read, its version line and counts are recorded, and every page is built from that.",
+        "zh": "示意图：读取一份安装、记录其版本号与统计、所有页面据此生成。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The version line and the counts are listed on the sources page; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "the-body-you-do-not-see",
+  "title": "The body you do not see",
+  "category": "Interface",
+  "summary": "Your own character in Supermarket Simulator is driven even though you look through its eyes: the game keeps a first-person controller and a player controller, an IK handler that poses the body, a skin controller that dresses it, and a manager for which input device is in use.",
+  "body": [
+    "You look through the character rather than at it, but the body is still there. The game keeps a first-person controller of its own, which is why the view and the body underneath it are two different things.",
+    "There is a controller for the player as well. A player controller of its own handles the character, so what moves through the shop is a thing the game can manage separately from the camera.",
+    "The body is posed rather than animated key by key. An IK handler of its own adjusts the limbs, which is why arms and legs follow what you are doing instead of playing one fixed animation.",
+    "The body is dressed by a controller. A skin controller of its own puts the avatar's surfaces on, so changing how you look is a thing the game applies rather than a new model.",
+    "The game knows what you are playing with. There is a manager for input devices, and a kind of key display, which is why prompts can change from a keyboard to a pad without the game guessing.",
+    "Even the eyes are a system. Blinking has a controller, a kind of blink and a set of reasons for one, which is why the character's face can react without a script being written for each moment.",
+    "The player is tracked as a state as well. There is a state for the player of its own, which is how the game can tell one situation from another without reading it off the animations.",
+    "What this entry does not tell you: how many cosmetics exist, how a body is posed in detail, or what each input device changes. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game keeps a first-person controller of its own.",
+      "evidence": "identifier: FirstPersonController"
+    },
+    {
+      "claim": "The player character has a controller of its own.",
+      "evidence": "identifier: PlayerController"
+    },
+    {
+      "claim": "An IK handler poses the body rather than playing one fixed animation.",
+      "evidence": "identifier: PlayerIKHandler"
+    },
+    {
+      "claim": "A skin controller applies the avatar's surfaces.",
+      "evidence": "identifier: PlayerSkinController"
+    },
+    {
+      "claim": "Input devices are handled by a manager of their own, with a kind of key display.",
+      "evidence": "identifiers: InputDeviceManager, KeyDisplayType"
+    },
+    {
+      "claim": "Blinking is a system of its own, with a controller, a kind of blink and reasons for one.",
+      "evidence": "identifiers: BlinkController, BlinkType, BlinkReasons"
+    },
+    {
+      "claim": "The player has a state of its own.",
+      "evidence": "identifier: PlayerState"
+    }
+  ],
+  "related": [
+    "playing-with-a-controller",
+    "how-the-game-shows-what-you-can-use",
+    "the-settings-and-the-keys-you-can-change"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-body-you-do-not-see-body.png",
+      "kind": "game",
+      "alt": {
+        "en": "The colour sheet the game ships for the body of the character the player controls, showing the face, skin and the body panels laid out for the model.",
+        "zh": "游戏为玩家所控制角色的身体自带的颜色贴图，可见面部、皮肤与身体各面板的展开布局。"
+      }
+    },
+    {
+      "file": "the-body-you-do-not-see.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a first-person controller and a player controller drive the character, an IK handler poses it, a skin controller dresses it, and the input device manager switches the prompts.",
+        "zh": "示意图：第一人称控制器与玩家控制器驱动角色、IK 处理器摆姿势、皮肤控制器换表面，输入设备管理器切换提示。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

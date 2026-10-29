@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260" width="980" height="260" role="img" aria-label="What gets a networked copy in a shared shop">
+  <rect width="980" height="260" fill="#12141a"/>
+  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#8ecbff"/></marker></defs>
+  <rect x="20" y="40" width="212" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="38" y="70" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">machines and staff</text>
+  <text x="38" y="98" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">the oven, the baker,</text>
+  <text x="38" y="116" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">the clerk</text>
+  <rect x="256" y="40" width="212" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="274" y="70" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">furniture and fittings</text>
+  <text x="274" y="98" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">furniture, boxes,</text>
+  <text x="274" y="116" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">glass and floor boxes</text>
+  <rect x="492" y="40" width="212" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="510" y="70" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">people and vehicles</text>
+  <text x="510" y="98" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">customers, their</text>
+  <text x="510" y="116" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">transforms, vehicles</text>
+  <rect x="728" y="40" width="232" height="86" rx="12" fill="#1b1f27" stroke="#2a2f3a"/>
+  <text x="746" y="70" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="13">counters and orders</text>
+  <text x="746" y="98" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">the ice cream stand,</text>
+  <text x="746" y="116" fill="#e8e8e8" font-family="system-ui,sans-serif" font-size="15">its pieces and orders</text>
+  <text x="20" y="186" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="14">Each has a networked copy, a networked interaction or a networked manager, which is what a shared</text>
+  <text x="20" y="208" fill="#9aa3b2" font-family="system-ui,sans-serif" font-size="14">shop keeps in step. Objects are also created through a networked generator.</text>
+</svg>

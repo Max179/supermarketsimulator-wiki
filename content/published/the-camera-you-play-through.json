@@ -1,0 +1,66 @@
+{
+  "id": "the-camera-you-play-through",
+  "title": "The camera you play through",
+  "category": "Interface",
+  "summary": "The view in Supermarket Simulator is a system of its own: the game keeps a camera controller and presets, offers a free camera for looking around, invokes camera settings and listens for changes, and fits the picture to the screen.",
+  "body": [
+    "The view is managed rather than fixed. The game keeps a camera controller of its own, which is why what you are looking at can change without the shop changing with it.",
+    "Setups can be kept. There are camera presets, so a particular way of looking at something is a thing the game can hold rather than something rebuilt each time.",
+    "There is a camera that is free of a body. The game has a free camera of its own, which is how the view can be taken somewhere a player is not.",
+    "Settings are announced rather than applied silently. Camera settings are invoked and listened for, so a change to the view can be made in one place and reacted to in another.",
+    "The picture is fitted to the screen. There is a fitter for the aspect ratio, which is why the same view works on a wide screen and a narrow one rather than being cropped.",
+    "The camera also carries settings you can change: the entry on the settings menu keeps its own camera settings and a listener that reacts to how wide the view is.",
+    "The camera knows what it is doing. It keeps a state of its own, which is how the game can tell one way of viewing from another without rebuilding the controller.",
+    "What this entry does not tell you: what each preset frames, how fast a camera moves, or how the aspect fitter chooses its cropping. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The view is run by a camera controller of its own.",
+      "evidence": "identifier: CameraController"
+    },
+    {
+      "claim": "Camera setups can be kept as presets.",
+      "evidence": "identifier: CameraPreset"
+    },
+    {
+      "claim": "There is a free camera of its own, separate from the one the player carries.",
+      "evidence": "identifier: FreeCamera"
+    },
+    {
+      "claim": "Camera settings are invoked and listened for rather than applied in one place.",
+      "evidence": "identifiers: CameraSettingsInvoker, CameraSettingsListener"
+    },
+    {
+      "claim": "The picture is fitted to the screen by a fitter of its own.",
+      "evidence": "identifier: AspectRatioCameraFitter"
+    },
+    {
+      "claim": "The camera has settings on the settings menu, with a listener that reacts to the field of view.",
+      "evidence": "identifiers: CameraSettings, CameraSettingsFOVListener"
+    },
+    {
+      "claim": "The camera also keeps a state of its own.",
+      "evidence": "identifier: CameraState"
+    }
+  ],
+  "related": [
+    "the-aim-and-its-settings",
+    "the-settings-and-the-keys-you-can-change",
+    "playing-with-a-controller"
+  ],
+  "images": [
+    {
+      "file": "the-camera-you-play-through.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a camera controller drives presets and a free camera, settings are invoked and listened for, and the picture is fitted to the screen.",
+        "zh": "示意图：相机控制器驱动预设与自由相机，设置被发出并有人监听，画面再适配屏幕比例。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

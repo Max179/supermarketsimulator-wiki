@@ -1,0 +1,61 @@
+{
+  "id": "the-machines-and-the-prompts",
+  "title": "The machines and the prompts",
+  "tier": "published",
+  "kind": "article",
+  "target": "What the shop's computer and tablet are, and where the game's own prompts and hints come from, so the two halves of the interface can be told apart.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A computer or tablet in the shop",
+    "Something to order",
+    "A keyboard or a controller"
+  ],
+  "steps": [
+    {
+      "do": "Treat the shop's computer as an object in the room before it is a menu.",
+      "because": "the computer is an object with an interaction of its own (Computer, ComputerInteraction)"
+    },
+    {
+      "do": "Expect the screens to belong to a system with a desktop of its own.",
+      "because": "it runs a system of its own, with a desktop (ComputerOperatingSystem, GenericDesktop)"
+    },
+    {
+      "do": "Know that the tablet is a device of its own rather than the same machine.",
+      "because": "the game has a tablet device of its own and the tablet carries a cart item (TabletDevice, TabletCartItem)"
+    },
+    {
+      "do": "Look at the tablet's own art rather than assuming it shares the computer's.",
+      "because": "the game ships a texture for the tablet and a scanner icon for it (T_Tablet_AlbedoTransparency, TabletScannerIcon)"
+    },
+    {
+      "do": "Follow an online order as a customer rather than as a line in a list.",
+      "because": "orders bring customers that are generated, shown on the map and kept in a networked form (OnlineOrderCustomerGenerator, OnlineOrderCustomerMapItem, NetworkOnlineOrderCustomer)"
+    },
+    {
+      "do": "Read hints as the game's own system rather than as part of the machine.",
+      "because": "interaction hints are handled by a manager of their own and the game runs a ping system of its own (InteractionHintsManager, PingSystem)"
+    },
+    {
+      "do": "Expect the tool wheel and the keys to have prompts of their own.",
+      "because": "the tool wheel has a handler for its input hint, and key icons are managed with kinds of their own (ToolWheelInputHintHandler, KeyIconManager, KeyDisplayType)"
+    },
+    {
+      "do": "Know that a prompt can be chosen because the interaction has a type.",
+      "because": "an interaction and the thing interacted with each carry a type (InteractionType, InteractactableType)"
+    }
+  ],
+  "commonMistakes": [
+    "Looking for the tablet's screens on the computer.",
+    "Hunting in menus for something the prompt system is already telling you.",
+    "Reading an online order as a delivery rather than as a customer.",
+    "Assuming every machine in the shop draws its prompts the same way."
+  ],
+  "relatedEntities": [
+    "the-computer-and-the-tablet",
+    "the-hints-and-pings-the-game-gives",
+    "the-controls-the-menus-are-built-from"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

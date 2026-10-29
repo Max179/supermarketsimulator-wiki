@@ -1,0 +1,61 @@
+{
+  "id": "reading-your-shops-own-state",
+  "title": "Reading your shop's own state",
+  "tier": "published",
+  "kind": "article",
+  "target": "The state a Supermarket Simulator shop keeps about itself — its status, its ground, its doors and the crowd inside — so what the shop is doing can be read rather than sensed.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop open for the day",
+    "Customers arriving",
+    "A door you can reach"
+  ],
+  "steps": [
+    {
+      "do": "Expect the shop itself to have a status.",
+      "because": "the shop has a status of its own, with an interaction built around it (StoreStatus, StoreStatusInteraction)"
+    },
+    {
+      "do": "Know that the walkable ground is prepared for you.",
+      "because": "there is a navigation mesh for the shop, so the walkable ground is prepared (StoreNavmesh)"
+    },
+    {
+      "do": "Keep the two doors apart.",
+      "because": "there is a door into the store and a door of the market's own (DoorToStore, LocalMarketDoor)"
+    },
+    {
+      "do": "Read the door switch's overlay rather than hunting for a handle.",
+      "because": "a door switch has an overlay of its own (DoorSwitchOverlay)"
+    },
+    {
+      "do": "Expect the market side to have its own controllers, including its lights.",
+      "because": "the market's store is held by a controller with a networked version, and the market's lights have a controller of their own (NetworkLocalMarketStoreController, MarketLightsController)"
+    },
+    {
+      "do": "Expect customers to be produced rather than to be a fixed cast.",
+      "because": "customers are produced by a generator and how many arrive is governed by a spawn setting of its own (CustomerGenerator, CustomerSpawnSettingSO)"
+    },
+    {
+      "do": "Recognise the crowd as a set of models rather than one shopper repeated.",
+      "because": "the crowd is drawn from a set of character models the game ships (BusinessMan_Jacket_MAT_AlbedoTransparency_V3, UrbanGuy_B_Body_MAT_AlbedoTransparency_V1)"
+    },
+    {
+      "do": "Listen to the customers as data rather than as noise.",
+      "because": "customer speech is data of its own with a list of entries, sorted into kinds, and a customer's name is drawn on a board of its own (CustomerSpeech, CustomerSpeechEntry, CustomerSpeechType, CustomerNameBilboard)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating the shop as a room rather than as an object with a status.",
+    "Confusing the store door with the market's own door.",
+    "Expecting the same customers every day.",
+    "Reading a name board as decoration rather than as the customer's own name."
+  ],
+  "relatedEntities": [
+    "the-shops-status-its-doors-and-its-ground",
+    "who-comes-into-the-shop",
+    "what-the-customers-say"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

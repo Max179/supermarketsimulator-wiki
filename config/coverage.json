@@ -1,0 +1,226 @@
+{
+  "site": "supermarketsimulator.wiki",
+  "floor": 21,
+  "columns": [
+    {
+      "id": "products",
+      "label": "Products, categories and what they cost",
+      "categories": [
+        "Products"
+      ],
+      "entries": [
+        "the-expansion-packs"
+      ]
+    },
+    {
+      "id": "ordering",
+      "label": "Ordering stock and getting it in",
+      "categories": [
+        "Shelf and stock"
+      ],
+      "entries": [
+        "orders-and-what-you-can-order",
+        "the-crates-you-buy",
+        "wholesale-offers-and-discounts",
+        "products-and-deliveries"
+      ]
+    },
+    {
+      "id": "shelves",
+      "label": "Shelves, slots and display",
+      "categories": [
+        "Layout"
+      ],
+      "entries": [
+        "shelf-slots-and-display-space",
+        "how-products-are-displayed",
+        "restocking-shelves"
+      ]
+    },
+    {
+      "id": "inventory",
+      "label": "Stock levels and sorting",
+      "categories": [
+        "Storage"
+      ]
+    },
+    {
+      "id": "warehouse",
+      "label": "The back room and storage space",
+      "entries": [
+        "the-storage-lights-and-door",
+        "raising-your-storage-and-shop-level",
+        "restock-areas-and-vehicles",
+        "the-boxes-in-the-back-room"
+      ]
+    },
+    {
+      "id": "checkout",
+      "label": "Checkout and taking payment",
+      "categories": [
+        "Checkout"
+      ],
+      "entries": [
+        "paying-by-card-or-cash",
+        "barcodes-and-the-scanner",
+        "the-self-checkout-and-its-rules"
+      ]
+    },
+    {
+      "id": "customers",
+      "label": "Customers and what they want",
+      "categories": [
+        "Customers"
+      ],
+      "entries": [
+        "who-comes-into-the-shop",
+        "shoplifters-in-your-shop"
+      ]
+    },
+    {
+      "id": "staff",
+      "label": "Hiring, staff and cleaning",
+      "categories": [
+        "Staff"
+      ],
+      "entries": [
+        "the-janitor",
+        "who-keeps-the-shop-clean",
+        "asking-a-helper-to-fetch-something"
+      ]
+    },
+    {
+      "id": "upgrades",
+      "label": "Shop upgrades and licences",
+      "categories": [
+        "Upgrades"
+      ],
+      "entries": [
+        "licence-items-and-their-icons"
+      ]
+    },
+    {
+      "id": "money",
+      "label": "Loans, bills and running the business",
+      "categories": [
+        "Finance",
+        "Loans"
+      ],
+      "entries": [
+        "what-your-shop-spends",
+        "repaying-a-loan-payment-by-payment"
+      ]
+    },
+    {
+      "id": "vehicles",
+      "label": "Vehicles",
+      "entries": [
+        "the-vehicles-you-can-use",
+        "inside-a-vehicle",
+        "the-road-traffic-and-its-signals"
+      ]
+    },
+    {
+      "id": "facilities",
+      "label": "Store facilities and fittings",
+      "categories": [
+        "Shop"
+      ],
+      "entries": [
+        "the-shop-computer",
+        "vending-machines",
+        "music-in-your-shop",
+        "the-shop-entrance",
+        "security-cameras-and-guards",
+        "the-bakery-counter",
+        "serving-ice-cream",
+        "furniture-and-shop-layout",
+        "painting-the-walls",
+        "floors-and-floor-painting",
+        "mixing-paint-and-picking-a-colour",
+        "the-lights-and-the-switches"
+      ]
+    },
+    {
+      "id": "interface",
+      "label": "Screens, prompts and feedback",
+      "categories": [
+        "Interface"
+      ],
+      "entries": [
+        "the-management-tabs",
+        "the-popups-in-the-game",
+        "the-aim-and-its-settings",
+        "the-warnings-the-game-shows",
+        "how-your-shop-is-saved",
+        "playing-with-a-controller",
+        "the-settings-and-the-keys-you-can-change",
+        "writing-a-name-that-fits",
+        "the-devices-the-game-can-shake"
+      ]
+    },
+    {
+      "id": "tasks",
+      "label": "Tasks, missions and unlocks",
+      "entries": [
+        "missions-and-the-objectives-the-game-sets",
+        "the-tutorials-that-point-you-at-things",
+        "the-kinds-of-missions-the-game-builds"
+      ]
+    },
+    {
+      "id": "time",
+      "label": "Time of day and weather",
+      "entries": [
+        "the-day-cycle"
+      ],
+      "status": "weather has no evidence in this title; only the day cycle is documented"
+    },
+    {
+      "id": "pricing",
+      "label": "Prices, margins and what to charge",
+      "categories": [
+        "Pricing"
+      ],
+      "entries": [
+        "setting-prices-in-bulk",
+        "the-local-market-and-product-costs"
+      ]
+    },
+    {
+      "id": "faq",
+      "label": "Answers to the questions players ask most",
+      "entries": [
+        "questions-players-ask"
+      ]
+    },
+    {
+      "id": "glossary",
+      "label": "Glossary of the terms this site uses",
+      "entries": [
+        "glossary-of-terms"
+      ]
+    },
+    {
+      "id": "versions",
+      "label": "Which version this site documents",
+      "entries": [
+        "which-version-this-site-documents"
+      ]
+    },
+    {
+      "id": "coop",
+      "label": "Running the shop with other players",
+      "entries": [
+        "running-a-shop-with-other-players",
+        "the-networked-copies-in-a-shared-shop",
+        "what-a-shared-shop-keeps-in-step"
+      ]
+    },
+    {
+      "id": "guides",
+      "label": "Step-by-step management guides",
+      "kind": "articles"
+    }
+  ]
+}

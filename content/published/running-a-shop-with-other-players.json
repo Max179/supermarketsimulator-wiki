@@ -1,0 +1,75 @@
+{
+  "id": "running-a-shop-with-other-players",
+  "title": "Running a shop with other players",
+  "category": "Multiplayer",
+  "summary": "Supermarket Simulator is a networked shop rather than a single-player one: money, stock, staff, customers, the checkout and the furniture all have networked versions that keep several players in the same shop.",
+  "body": [
+    "The shop is built to be run by more than one person. The game is networked throughout, and almost everything in it has a networked version rather than one player being the owner of the world.",
+    "It starts with a room. There is a lobby of its own, with room settings, a room timer and a record of who is in it, so a shared shop begins with a room rather than with a save file being passed around.",
+    "Each player is a networked object. There is a networked player with its own animation and an optimised transform view, which is how your avatar and everyone else's are kept in step rather than only appearing to be.",
+    "Money is shared rather than local. The room listens for money changes and there is a networked money manager, which is why two players see the same takings instead of two private totals.",
+    "The people who work and shop are networked too. Cashiers, restockers, the customer generator and the customer manager all have networked counterparts, so a customer walking to a shelf is one customer for everybody rather than one per screen.",
+    "The checkout is networked as well, including the scanner: there is a networked checkout, a networked checkout interaction, a networked scanner interaction and networked sale items, along with an automated checkout of its own.",
+    "The shop's objects are networked. Boxes, crates, racks, furniture and the products themselves each have a networked form, which is how a box you carry is a box someone else can see you carrying.",
+    "Some objects have an owner, and ownership can be moved between players. That is what lets one player hand an object over without it being duplicated, and it is why the game keeps a handler for networked objects.",
+    "Vehicles and the shop's own status are networked as well, and the game watches the connection with a statistics manager and a limiter rather than assuming the link is perfect.",
+    "What this entry does not tell you: how many players a shop may hold, what the room settings change, or how the connection is limited. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A shared shop begins with a room: there is a lobby with room settings, a room timer and a record of who is in it.",
+      "evidence": "identifiers: LobbyManager, RoomSettingsManager, RoomTimerManager, RoomInfoPlayer"
+    },
+    {
+      "claim": "Money is shared rather than kept locally, with the room listening for changes and a networked money manager.",
+      "evidence": "identifiers: RoomMoneyListener, NetworkMoneyManager"
+    },
+    {
+      "claim": "Players are networked objects with their own animation and transform views.",
+      "evidence": "identifiers: NetworkPlayer, NetworkPlayerAnimation, PhotonTransformViewPlayer"
+    },
+    {
+      "claim": "Cashiers, restockers and the customers themselves have networked counterparts.",
+      "evidence": "identifiers: NetworkCashier, NetworkRestocker, NetworkCustomerGenerator, NetworkCustomerManager"
+    },
+    {
+      "claim": "The checkout, its interaction and the scanner have networked versions, and there is an automated checkout of its own.",
+      "evidence": "identifiers: NetworkCheckout, NetworkCheckoutInteraction, NetworkScannerInteraction, NetworkScannerSaleItem, NetworkAutomatedCheckout"
+    },
+    {
+      "claim": "Objects in the shop are networked: boxes, crates, racks, furniture and products.",
+      "evidence": "identifiers: NetworkBox, NetworkCrateInteraction, NetworkRack, NetworkFurnitureBox, NetworkProduct"
+    },
+    {
+      "claim": "An object can have an owner, and ownership can be moved between players.",
+      "evidence": "identifiers: NetworkPhotonViewOwnerTransporter, NetworkObjectHandler"
+    },
+    {
+      "claim": "Vehicles and the shop's status are networked as well.",
+      "evidence": "identifiers: NetworkVehicle, MultiplayerVehicleBroadcast, NetworkStoreStatus"
+    },
+    {
+      "claim": "The game watches the connection with a statistics manager and a limiter.",
+      "evidence": "identifiers: PhotonNetworkStatsManager, NetworkLimiter"
+    }
+  ],
+  "related": [
+    "the-shop-computer",
+    "bills-loans-and-growth-screens"
+  ],
+  "images": [
+    {
+      "file": "running-a-shop-with-other-players.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: players join a room, money and stock are shared, and customers, staff, the checkout and the furniture all exist once for everyone.",
+        "zh": "示意图：玩家加入房间，金钱与库存共享，顾客、员工、收银与家具对所有人只有一份。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

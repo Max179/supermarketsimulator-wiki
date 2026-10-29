@@ -1,0 +1,69 @@
+{
+  "id": "buying-on-offer-without-filling-the-back-room",
+  "title": "Buying on offer without filling the back room",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to use the wholesale offers and the discounts in Supermarket Simulator deliberately: what an offer actually is, where it is announced, how it differs from a discount, and when buying in bulk is worth the space it takes.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with stock space to spare",
+    "Access to ordering",
+    "A rough idea of what sells"
+  ],
+  "steps": [
+    {
+      "do": "Look at the offer before you place the order rather than after it arrives, because wholesale runs through a manager and settings of its own.",
+      "because": "wholesale offers run through a manager and settings of their own (WholeSaleManager, WholeSaleSettingsSO)"
+    },
+    {
+      "do": "Check that wholesale is turned on at all before you wait for an offer.",
+      "because": "the system keeps a switch for wholesale and for wholesale orders (isWholeSale, enableWholesaleOrders)"
+    },
+    {
+      "do": "Read the kind of offer as well as the price, because an offer carries a kind and may be a buying offer rather than a selling one.",
+      "because": "offers carry a kind and can be buying offers (OfferType, isBuyOffer)"
+    },
+    {
+      "do": "Watch the clock: an offer has a time limit of its own rather than lasting until you take it.",
+      "because": "offers carry a time limit (offertime)"
+    },
+    {
+      "do": "Accept deliberately, because accepting is a step of its own rather than something the order does for you.",
+      "because": "there is a check for whether an offer can be accepted (CanAcceptOffer)"
+    },
+    {
+      "do": "Look for the offer where it is announced instead of hunting through the menus.",
+      "because": "an offer is announced with an indicator and a canvas of its own (WholesaleOfferIndicator, WholeSaleOfferCanvas)"
+    },
+    {
+      "do": "Expect online orders to carry their own offer indicator as well.",
+      "because": "online orders have their own offer indicator (OnlineOrderOfferIndicator)"
+    },
+    {
+      "do": "Keep discounts apart from offers, because they are a separate system with their own panel and rate.",
+      "because": "discounts have their own manager, panel, current value and rate (DiscountManager, DiscountPanel, currentDiscount, discountRate, isDiscount)"
+    },
+    {
+      "do": "Use the bulk discount rather than assuming it, because buying in bulk carries a ratio of its own.",
+      "because": "bulk buying carries a discount ratio of its own (bulkDiscountRatio)"
+    },
+    {
+      "do": "In a shared shop, agree who is taking the offer, because the offer screen is shared too.",
+      "because": "the wholesale manager and its offer canvas have networked forms (NetworkWholeSaleManager, NetworkWholeSaleOfferCanvas)"
+    }
+  ],
+  "commonMistakes": [
+    "Ordering first and reading the offer afterwards.",
+    "Treating a discount and an offer as the same thing and doubling up by accident.",
+    "Missing the time limit and finding the offer gone when the order is placed.",
+    "Buying a bulk lot that is cheap per unit and expensive in shelf space."
+  ],
+  "relatedEntities": [
+    "wholesale-offers-and-discounts",
+    "the-local-market-and-product-costs",
+    "setting-prices-in-bulk"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

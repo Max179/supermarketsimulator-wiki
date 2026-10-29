@@ -1,0 +1,65 @@
+{
+  "id": "the-devices-the-game-can-shake",
+  "title": "The devices the game can shake",
+  "category": "Interface",
+  "summary": "Vibration in Supermarket Simulator is handled device by device: the game keeps a base device and an interface, separate versions for a computer and a pad, and a request with an intensity of its own.",
+  "body": [
+    "Vibration in this shop is not one thing sent to whatever controller happens to be plugged in. The game keeps a base haptic device with an interface behind it, so a device is something the game can ask to vibrate rather than a set of buttons it pokes.",
+    "There are separate versions for different hardware. One is written for a computer and one for a console pad, which is why the same event can be felt in one case and not in the other without the game being wrong about it.",
+    "A request is its own object. Keeping the request apart from the device means the game can ask for a vibration without knowing which device will answer, and the devices can answer in their own way.",
+    "An intensity is a value of its own. That is how the same pattern can be played strongly for one event and lightly for another rather than every shake being the same size.",
+    "The patterns, durations and presets documented on the controller entry sit above this layer. That entry describes what the game asks for; this one describes what does the asking and what answers, which is why the two are separate pages.",
+    "Because a device is described by an interface rather than being one fixed kind of thing, a platform that cannot vibrate can still be represented honestly: there is a device, and it does whatever that device does.",
+    "The image beside this entry is the game's own: the controller icon it ships, white art on a transparent sheet, which is how this site's icons are drawn to be read on the dark background the pages use.",
+    "What this entry does not tell you: which events vibrate, how strong any of them are, or whether your own controller supports it. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "There is a base haptic device with an interface behind it.",
+      "evidence": "identifiers: BaseHapticDevice, IHapticDevice"
+    },
+    {
+      "claim": "There are separate implementations for a computer and for a console pad.",
+      "evidence": "identifiers: PCHapticDevice, XboxHapticDevice"
+    },
+    {
+      "claim": "A vibration request is its own object rather than a call made directly on the device.",
+      "evidence": "identifier: HapticRequest"
+    },
+    {
+      "claim": "An intensity is a value of its own.",
+      "evidence": "identifier: HapticIntensity"
+    },
+    {
+      "claim": "The game ships a controller icon of its own.",
+      "evidence": "asset name: icon_controller_152"
+    }
+  ],
+  "related": [
+    "playing-with-a-controller",
+    "the-settings-and-the-keys-you-can-change"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-devices-the-game-can-shake-controller.png",
+      "kind": "game",
+      "alt": {
+        "en": "The controller icon the game itself ships: a white rounded pad shape on a transparent field, drawn to read on the site's dark background.",
+        "zh": "游戏自带的控制器图标：透明底上的白色圆角手柄图形，按本站深色底观看绘制。"
+      }
+    },
+    {
+      "file": "the-devices-the-game-can-shake.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the game files a request with an intensity, and whichever device is present answers it in its own way.",
+        "zh": "示意图：游戏提交带强度的震动请求，由当前设备以自己的方式响应。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

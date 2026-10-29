@@ -1,0 +1,75 @@
+{
+  "id": "the-kinds-of-missions-the-game-builds",
+  "title": "The kinds of missions the game builds",
+  "category": "Tasks",
+  "summary": "Missions in Supermarket Simulator are built rather than scripted one by one: the game runs them through a system and a container, types them, builds each one out of tasks, and keeps achievements in a container of their own.",
+  "body": [
+    "A mission is a thing the game makes. Missions run through a system of their own and are held in a container, which is why the game can hand out objectives without each one being written into the shop by hand.",
+    "They are sorted by type. A mission carries a type, so the game can tell one kind of job from another before it decides what to show or what to hand out.",
+    "Each one is built out of tasks. A mission is assembled from tasks rather than being a single step, which is why a long objective can be broken into pieces the game can check off separately.",
+    "There is a step-based kind. One of the mission kinds is built around steps, so progress can be measured as a scale rather than as a simple done or not done.",
+    "A mission can be what starts something else. There is a mission that activates online orders, which is why the first order can arrive as the result of a job rather than on a timer.",
+    "Achievements are kept apart. They sit in a container of their own rather than in the mission list, so an achievement and a mission are two different things even when they are earned together.",
+    "They are reported per platform. The game keeps separate achievement handling for the platforms it ships on, which is why the same achievement can be counted differently depending on where it is played.",
+    "The tasks run in order. The game keeps a sequence and a task inside a sequence, and tracks a status for a task beside a status for aborting it, which is why a job can be stopped part-way rather than only finished.",
+    "What this entry does not tell you: how many missions the game has, what any of them ask for, or how an achievement is granted. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Missions run through a system of their own and are held in a container.",
+      "evidence": "identifiers: MissionSystem, MissionContainer"
+    },
+    {
+      "claim": "A mission carries a type of its own.",
+      "evidence": "identifier: MissionType"
+    },
+    {
+      "claim": "A mission is built out of tasks.",
+      "evidence": "identifier: MissionTask"
+    },
+    {
+      "claim": "One kind of mission is built around steps.",
+      "evidence": "identifier: ScaleStepMission"
+    },
+    {
+      "claim": "There is a mission that activates online orders.",
+      "evidence": "identifier: OnlineOrderActivateMission"
+    },
+    {
+      "claim": "Achievements are held in a container of their own.",
+      "evidence": "identifier: AchievementContainer"
+    },
+    {
+      "claim": "Achievements are handled separately for the platforms the game ships on.",
+      "evidence": "identifiers: SteamAchievements, XBoxAchievements"
+    },
+    {
+      "claim": "A mission carries data of its own.",
+      "evidence": "identifiers: Mission, MissionData"
+    },
+    {
+      "claim": "The game keeps a sequence and a task inside it, and tracks a status for a task beside a status for aborting it.",
+      "evidence": "identifiers: Sequence, SequenceTask, TaskStatus, AbortStatus"
+    }
+  ],
+  "related": [
+    "the-tutorials-that-point-you-at-things",
+    "how-the-game-shows-what-you-can-use",
+    "the-menu-the-game-opens-on"
+  ],
+  "images": [
+    {
+      "file": "the-kinds-of-missions-the-game-builds.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a mission type is chosen, the mission is built from tasks, its steps are checked off, and achievements are kept separately per platform.",
+        "zh": "示意图：选定任务类型、由若干子任务组成、逐步勾选完成，成就另行按平台记录。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

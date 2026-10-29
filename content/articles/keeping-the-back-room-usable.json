@@ -1,0 +1,68 @@
+{
+  "id": "keeping-the-back-room-usable",
+  "title": "Keeping the back room usable",
+  "tier": "published",
+  "kind": "article",
+  "target": "How the back room works in Supermarket Simulator: storage as sections rather than one pile, the tab that shows it, the cells you can sort, crates as objects with a grid of their own, the manager and door behind the sections, and the storage upgrade you have to buy.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with a back room in use",
+    "At least one crate or delivery to store",
+    "Enough money for the storage upgrade if you are expanding"
+  ],
+  "steps": [
+    {
+      "do": "Think of the back room as sections rather than as one pile.",
+      "because": "storage is laid out in sections with a defined arrangement, so what you own is grouped rather than spread over one shelf (StorageSectionItem, StorageLayoutConfig)"
+    },
+    {
+      "do": "Look at what you have through the storage tab rather than by walking about.",
+      "because": "storage has its own interface tab, so the state of the back room can be read from the same place you manage the rest of the shop (StorageTab)"
+    },
+    {
+      "do": "Sort the cells before the section is full, not after.",
+      "because": "storage cells can be sorted, which is what keeps a section searchable as it fills (SortableAreaCell)"
+    },
+    {
+      "do": "Buy crates knowing they are objects you then place.",
+      "because": "a crate is an object of its own and is also sold as an item, so buying one is not the same as having somewhere for it (Crate, CrateSaleItem)"
+    },
+    {
+      "do": "In a shared shop, expect the crate you move to move for everyone.",
+      "because": "a crate has an interaction of its own and a networked version of it, so handling one is a shared event (CrateInteraction, NetworkCrateInteraction)"
+    },
+    {
+      "do": "Do not treat a crate as a bin with no order.",
+      "because": "the game keeps a grid of numbers for a crate, which is why what is in one is arranged rather than tipped in (CrateGridNumbersAuto)"
+    },
+    {
+      "do": "Expect the sections to be a system of their own behind their own door.",
+      "because": "the sections are managed by their own manager with their own data and a door of their own, so the back room is a place in the shop and not only a list (StorageSectionManager, StorageSO, StorageDoor)"
+    },
+    {
+      "do": "Do not expect storage to grow by itself.",
+      "because": "storage has its own upgrade level and a purchase behind it, so more room is bought rather than unlocked by time (storageUpgradeLevel, purchasedStorage)"
+    },
+    {
+      "do": "Expect growth to be presented through the same sections.",
+      "because": "growth is shown in sections too, so expanding the shop uses the arrangement you already know rather than a new screen (GrowthSectionItem)"
+    },
+    {
+      "do": "Buy a crate with a home in mind.",
+      "because": "what you buy becomes an object in the shop, so a delivery with nowhere to go is a problem you made rather than one the game made for you (Crate, StorageSectionItem)"
+    }
+  ],
+  "commonMistakes": [
+    "Treating storage as one flat list and losing track of what is where.",
+    "Filling a section until nothing in it can be found.",
+    "Buying crates with no space set aside for them.",
+    "Expecting storage space to grow without buying the upgrade."
+  ],
+  "relatedEntities": [
+    "storage-sections-and-sorting",
+    "the-crates-you-buy"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

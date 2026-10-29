@@ -1,0 +1,101 @@
+{
+  "id": "the-machinery-behind-each-job",
+  "title": "The machinery behind each job",
+  "category": "Staff",
+  "summary": "Each job in Supermarket Simulator has machinery of its own behind it: restocking staff have a manager and a definition, a clerk has an animation controller, and the ice cream stand runs on a manager with settings.",
+  "body": [
+    "A job is not one system with a name attached to it. Restocking staff are run by a manager of their own, which is why the game can keep several of them working without handling each one by hand.",
+    "A restocker is described before it works. There is a definition of a restocker of its own, so what a restocker is and what it does are kept in one place rather than spread through the shop.",
+    "The clerk is animated separately. A clerk carries an animation controller of its own, which is why the till can be staffed by something that moves like a person rather than a fixed model sliding along a rail.",
+    "The ice cream stand is its own job. It has a manager of its own, so the counter is run as a system rather than as a set of objects that happen to be next to each other.",
+    "A restocker is a machine in states. Its work runs through states of its own, with one for restocking in particular, which is why a worker can be doing one job and then another without being rebuilt.",
+    "That stand has settings of its own. There is a set of generator settings for the ice cream side, which is why what the stand produces can be configured rather than being fixed by the model.",
+    "What this entry does not tell you: what a worker costs, how quickly one restocks, or how many a shop may hire. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "Restocking staff are run by a manager of their own.",
+      "evidence": "identifier: RestockerManager"
+    },
+    {
+      "claim": "A restocker has a definition of its own.",
+      "evidence": "identifier: RestockerSO"
+    },
+    {
+      "claim": "A clerk has an animation controller of its own.",
+      "evidence": "identifier: ClerkAnimationController"
+    },
+    {
+      "claim": "The ice cream stand has a manager of its own.",
+      "evidence": "identifier: IceCreamManager"
+    },
+    {
+      "claim": "The ice cream side keeps a set of generator settings.",
+      "evidence": "identifier: IceCreamGeneratorSettings"
+    },
+    {
+      "claim": "A restocker works through states of its own, including one for restocking itself.",
+      "evidence": "identifiers: RestockerState, RestockingState"
+    },
+    {
+      "claim": "The tools the jobs are done with have icons of their own, a sponge and a baseball bat among them.",
+      "evidence": "asset names: T_Icon_Sponge, T_Icon_BaseballBat"
+    },
+    {
+      "claim": "The branded tools each have an icon, a glue gun, a level set, a tape measure, a portable toolbox, a multi-tool, nose pliers, a multi-screwdriver and a wall hook among them.",
+      "evidence": "asset names: T_icon_Glusim_GlueGun, T_icon_Hyunda_LevelSet, T_icon_Mezurex_TapeMeasure, T_icon_Nailcore_PortableToolbox, T_icon_Forge_HammerMultiTool, T_icon_Forge_NosePliers, T_icon_Gripx_MultiSCrewdriver, T_icon_Ironit_WallHook"
+    }
+  ],
+  "related": [
+    "who-keeps-the-shop-clean",
+    "checkout-and-cashiers",
+    "restocking-shelves"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-machinery-behind-each-job-glue-gun.png",
+      "kind": "game",
+      "alt": {
+        "en": "The icon the game ships for one of the branded tools: an orange Glusim dual-temp hot glue gun on its card.",
+        "zh": "游戏为某款品牌工具提供的图标：橙色 Glusim 双温热熔胶枪，装在包装卡上。"
+      }
+    },
+    {
+      "file": "mapped/the-machinery-behind-each-job-level-set.png",
+      "kind": "game",
+      "alt": {
+        "en": "A second branded tool icon: a Hyundai five-piece mini level set on a yellow card.",
+        "zh": "第二个品牌工具图标：现代（Hyundai）五件套迷你水平尺，装在黄色包装卡上。"
+      }
+    },
+    {
+      "file": "mapped/the-machinery-behind-each-job-tape-measure.png",
+      "kind": "game",
+      "alt": {
+        "en": "A third branded tool icon: a teal Mezurex tape measure on its card.",
+        "zh": "第三个品牌工具图标：青绿色 Mezurex 卷尺，装在包装卡上。"
+      }
+    },
+    {
+      "file": "mapped/the-machinery-behind-each-job-toolbox.png",
+      "kind": "game",
+      "alt": {
+        "en": "A fourth branded tool icon: an orange and black portable toolbox with a folding handle.",
+        "zh": "第四个品牌工具图标：橙黑双色便携工具箱，带折叠提手。"
+      }
+    },
+    {
+      "file": "the-machinery-behind-each-job.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a restocker is defined and managed, a clerk is animated, and the ice cream stand runs on its own manager and settings.",
+        "zh": "示意图：补货员有自己的定义与管理器、收银员有自己的动画控制器、冰淇淋摊有自己的管理器与设置。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

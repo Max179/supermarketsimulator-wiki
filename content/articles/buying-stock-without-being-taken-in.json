@@ -1,0 +1,68 @@
+{
+  "id": "buying-stock-without-being-taken-in",
+  "title": "Buying stock without being taken in",
+  "tier": "published",
+  "kind": "article",
+  "target": "How buying stock works in Supermarket Simulator: the market cost that moves on its own, the price you display, wholesale offers with a kind and a time limit, discounts as a separate system, the bulk ratio, and what a box is worth.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop that is open with stock to sell",
+    "Something left in the till to spend",
+    "A shelf or back-room space for what you buy"
+  ],
+  "steps": [
+    {
+      "do": "Watch what the market charges rather than what you are displaying.",
+      "because": "the market keeps a product cost of its own and your displayed price is tracked separately, so the two can move apart without you touching anything (LocalMarketProductCost, LocalMarketProductPriceDisplay)"
+    },
+    {
+      "do": "Treat the market's list as the game's, not as yours.",
+      "because": "the market has its own product database and its own store controller, so what is available is decided by the game rather than by what you have stocked before (LocalMarketProductDatabase, LocalMarketStoreController)"
+    },
+    {
+      "do": "Make a market trip a trip of its own.",
+      "because": "the market system carries a shopping cart of its own, so buying there is a separate activity from ordering to the door (MarketShoppingCart)"
+    },
+    {
+      "do": "Check whether wholesale is switched on before you plan around it.",
+      "because": "wholesale runs through its own manager and settings, with a flag for whether it is active and one for whether wholesale orders are allowed (WholeSaleManager, WholeSaleSettingsSO, isWholeSale, enableWholesaleOrders)"
+    },
+    {
+      "do": "Read an offer before you accept it, including how long it lasts.",
+      "because": "an offer carries a kind and a time limit and has to be accepted, and there is a flag for whether it is a buying offer rather than a selling one (OfferType, offertime, CanAcceptOffer, isBuyOffer)"
+    },
+    {
+      "do": "Know where offers appear rather than discovering them late.",
+      "because": "an offer is announced through an indicator and a canvas of its own, and online orders have a separate indicator (WholesaleOfferIndicator, WholeSaleOfferCanvas, OnlineOrderOfferIndicator)"
+    },
+    {
+      "do": "Do not confuse an offer with a discount.",
+      "because": "discounts are a separate system with their own manager and panel and a rate of their own, along with a flag for whether a discount is running (DiscountManager, DiscountPanel, currentDiscount, discountRate, isDiscount)"
+    },
+    {
+      "do": "Do not assume buying in bulk always saves money.",
+      "because": "bulk buying carries a discount ratio of its own rather than being free of cost (bulkDiscountRatio)"
+    },
+    {
+      "do": "Judge a box by its own price, not by the goods inside it alone.",
+      "because": "boxes carry a market price of their own, so what a box is worth is tracked separately from what is on your shelf (BoxMarketPrice)"
+    },
+    {
+      "do": "In a shared shop, expect one set of offers for everyone.",
+      "because": "the wholesale manager and its offer canvas have networked forms, so a deal is a deal for the whole crew rather than per player (NetworkWholeSaleManager, NetworkWholeSaleOfferCanvas)"
+    }
+  ],
+  "commonMistakes": [
+    "Reading your displayed price as the cost you are paying.",
+    "Accepting an offer without checking how long it stays open.",
+    "Treating a running discount and a wholesale offer as the same thing.",
+    "Assuming that buying more always means paying less per unit."
+  ],
+  "relatedEntities": [
+    "wholesale-offers-and-discounts",
+    "the-local-market-and-product-costs"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

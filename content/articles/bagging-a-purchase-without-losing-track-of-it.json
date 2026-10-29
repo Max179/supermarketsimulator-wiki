@@ -1,0 +1,57 @@
+{
+  "id": "bagging-a-purchase-without-losing-track-of-it",
+  "title": "Bagging a purchase without losing track of it",
+  "tier": "published",
+  "kind": "article",
+  "target": "How paper bags and the packing step work in Supermarket Simulator, including the part the counter plays in it.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A counter with some room",
+    "Something to pack",
+    "Bags available"
+  ],
+  "steps": [
+    {
+      "do": "Expect a bag to be made by the game rather than a prop you place.",
+      "because": "a paper bag is built by the game rather than placed in the shop as decoration (PaperBagFactory)"
+    },
+    {
+      "do": "Use the bag-placing mode instead of dropping things into a pile.",
+      "because": "there is a mode of its own for placing a bag (PaperBagPlacingMode)"
+    },
+    {
+      "do": "Know that once something is bagged it is a different object.",
+      "because": "a product that is in a bag is its own object and there is a bag form of a product (PaperBagProductInstance, ProductPaperBag)"
+    },
+    {
+      "do": "Treat a bag as part of an order rather than as loose packaging.",
+      "because": "a bag belongs to an order, with its own data and a container of them (OrderPaperBag, OrderPaperBagData, OrderPaperBagContainer)"
+    },
+    {
+      "do": "Expect a packed bag to have a shared form and an online form.",
+      "because": "the packed order bag has a shared form and one for online orders (NetworkOrderPaperBag, OnlineOrderPaperBagContainer)"
+    },
+    {
+      "do": "Leave the packing to play out rather than interrupting it.",
+      "because": "packing a bag has an animation of its own (OrderPaperBagAnimation)"
+    },
+    {
+      "do": "Plan the packing around the counter you actually have.",
+      "because": "the counter is modelled as a belt with a grid, a drawer and a manager for change (CheckoutBelt, CheckoutBeltGrid, CheckoutDrawer, CheckoutChangeManager)"
+    }
+  ],
+  "commonMistakes": [
+    "Stacking purchases beside a bag instead of bagging them.",
+    "Treating a bagged product as the same object as the one on the shelf.",
+    "Forgetting that an online order is packed into a bag form of its own.",
+    "Packing on a counter that has no room left on its belt."
+  ],
+  "relatedEntities": [
+    "paper-bags-and-packing-a-purchase",
+    "checkout-and-cashiers",
+    "orders-and-what-you-can-order"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

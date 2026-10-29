@@ -1,0 +1,54 @@
+{
+  "id": "the-plants-and-planters",
+  "title": "The plants and planters",
+  "category": "Layout",
+  "tier": "published",
+  "summary": "Supermarket Simulator ships plants and planters as pieces of their own: planters with their own sheets in numbered kinds, flowers named apart from the pots, and trees for the ground and the shop.",
+  "body": [
+    "Supermarket Simulator ships plants as pieces of their own rather than as part of a wall or a display. A planter is named as an object with its own sheets, so what holds the plant is as much a placed thing as the plant itself.",
+    "The planters are numbered. Several kinds are named, each with levels of detail of its own, which is why a shop can be greened without the same pot appearing twice.",
+    "The plants are named apart from the pots. A set of flowers is named with a colour sheet and a normal map of its own, and the art that goes with it is a sheet of leaves, ferns and two flowering shrubs rather than a single picture of one plant.",
+    "There is greenery for outside as well. Trees are named for the ground, numbered into a set, and a pair of shop trees is named beside them, so the same idea covers what stands outside and what stands on the shop floor.",
+    "That is why the plants are worth treating as stock of a kind. They are pieces the game ships and the shop can buy and place, which is what makes them a way to dress a corner rather than an accident of the map.",
+    "They also give the shop somewhere to put what a player has earned. A plant is not a shelf, so it changes the look of a room without changing what the room can sell, which is exactly what furniture is for.",
+    "The entry is filed with the layout rather than with the stock because that is what it does: it dresses a room, and the room still has to make money on its own.",
+    "What this entry does not tell you: what any plant costs, whether customers notice one, or which plants unlock at which shop level. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A planter is a piece of its own, with a colour sheet, an ambient-occlusion sheet, a metallic-smoothness sheet and a normal map.",
+      "evidence": "asset names: Flowerpot, Flowerpot_A, Flowerpot_AO, Flowerpot_MS, Flowerpot_N"
+    },
+    {
+      "claim": "Planters are numbered into kinds with several levels of detail each.",
+      "evidence": "asset names: Flowerpot_01_LOD0, Flowerpot_02_LOD0, Flowerpot_04_LOD1, Flowerpot_05_LOD2.001, Flowerpot_09_LOD0"
+    },
+    {
+      "claim": "The plants are named apart from the pots, with their own colour sheet and normal map.",
+      "evidence": "asset names: Flowers, Flowers_A, Flowers_N"
+    },
+    {
+      "claim": "Trees are named for the ground as well as for the shop: ground trees numbered into a set and a pair of shop trees.",
+      "evidence": "asset names: Ground _Tree_01, Ground _Tree_03_LOD1, SM_Tree_B, SM_Tree_C"
+    }
+  ],
+  "related": [
+    "furniture-and-shop-layout",
+    "floors-and-floor-painting",
+    "the-shop-entrance"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-plants-and-planters-flowers.png",
+      "kind": "game",
+      "alt": {
+        "en": "The plant sheet the game ships: leaves, ferns and two flowering shrubs laid out together.",
+        "zh": "游戏自带的植物贴图集：叶片、蕨类与两丛开花灌木。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

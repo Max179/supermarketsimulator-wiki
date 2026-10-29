@@ -1,0 +1,101 @@
+{
+  "id": "the-networked-copies-in-a-shared-shop",
+  "title": "The networked copies in a shared shop",
+  "category": "Multiplayer",
+  "summary": "A shared shop in Supermarket Simulator keeps its objects in step through networked copies: the oven and the baker, the clerk, furniture and its boxes, glass and floor boxes, customers and their transforms, vehicles, the ice cream stand and its pieces, and the order side each have one.",
+  "body": [
+    "A shop with more than one player is not one copy of the game talking to itself. Many of the objects have a networked form of their own, which is why what one player does to the oven or the till can be seen by another rather than only by the host.",
+    "The bakery is a good example. The oven and the baker each have a networked copy, so loading, baking and collecting can be shared rather than being the business of whoever placed the machine.",
+    "Staff do as well. The clerk has a networked copy, which is how a hired worker is the same worker for everyone in the shop rather than a local illusion.",
+    "Furniture and its packaging are networked as well. Furniture, the interaction for a furniture box, floor boxes and the interaction for a floor box each have their own networked form, which is what keeps a shop floor in the same state for two players placing fittings at once.",
+    "Glass has a networked interaction too, so what happens to a display case is shared.",
+    "People and vehicles are kept in step as well. Customers, their transform and the view that follows an NPC's transform are networked, and a vehicle has a networked component, which is why customers walk the same route for everyone and two players do not see a car in different places.",
+    "The ice cream side has networked pieces rather than one networked stand: the box, the bucket, the cone interaction, the stand, the general interaction, the bucket interaction and the stand's helper record all have networked forms.",
+    "Orders are networked through a manager, which is how an online order can be accepted and delivered by whoever is free.",
+    "Objects themselves are created through a networked generator, and animation is networked as well, so the same object exists for everyone rather than each machine inventing its own.",
+    "This diagram shows the kinds of thing that carry a networked copy rather than listing every one of them.",
+    "What this entry does not tell you: how many players a shop holds, how the game decides who owns an object, or what happens when two players grab the same one. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The bakery's oven and the baker each have a networked copy.",
+      "evidence": "identifiers: NetworkOven, NetworkBaker"
+    },
+    {
+      "claim": "The clerk has a networked copy.",
+      "evidence": "identifier: NetworkClerk"
+    },
+    {
+      "claim": "Furniture, the furniture box interaction, floor boxes and the floor box interaction each have networked forms.",
+      "evidence": "identifiers: NetworkFurniture, NetworkFurnitureBoxInteraction, NetworkFloorBox, NetworkFloorBoxInteraction"
+    },
+    {
+      "claim": "Glass has a networked interaction.",
+      "evidence": "identifier: NetworkGlassInteraction"
+    },
+    {
+      "claim": "Customers, their transform and the view that follows an NPC's transform are networked.",
+      "evidence": "identifiers: NetworkCustomer, NetworkCustomerTransform, NetworkNPCTransformView"
+    },
+    {
+      "claim": "A vehicle has a networked component.",
+      "evidence": "identifier: NetworkVehicleComponent"
+    },
+    {
+      "claim": "The ice cream side has networked pieces: the box, the bucket, the cone interaction, the stand, the general interaction and the bucket interaction.",
+      "evidence": "identifiers: NetworkIceCreamBox, NetworkIceCreamBucket, NetworkIceCreamConeInteractable, NetworkIceCreamStand, NetworkIceCreamInteraction, NetworkIceCreamBucketInteraction"
+    },
+    {
+      "claim": "Orders go through a networked manager.",
+      "evidence": "identifier: NetworkOrderManager"
+    },
+    {
+      "claim": "Objects are created through a networked generator and animation is networked as well.",
+      "evidence": "identifiers: NetworkObjectGenerator, NetworkedAnimation"
+    },
+    {
+      "claim": "There is a networked manager over these copies.",
+      "evidence": "identifier: NetworkManager"
+    },
+    {
+      "claim": "Positions are sent, with a fix-up that runs when the ordinary sync is not enough and a receiver for the result.",
+      "evidence": "identifiers: PunTransformSync, PositionSyncFixInvoker, ITransformSyncReceiver"
+    },
+    {
+      "claim": "There is a transform view made for boxed objects, as well as an optimised one and a setup run at run time.",
+      "evidence": "identifiers: PhotonTransformView_Box, PhotonTransformViewOptimized, RuntimeTransformSyncSetup"
+    },
+    {
+      "claim": "Placing an object happens in a networked area rather than locally.",
+      "evidence": "identifier: INetworkedPlacementArea"
+    },
+    {
+      "claim": "A player's skin and a piece of furniture's interaction each have a networked form.",
+      "evidence": "identifiers: PlayerSkinNetwork, NetworkFurnitureInteraction"
+    },
+    {
+      "claim": "The game keeps a sync state and a clicker that is itself synced.",
+      "evidence": "identifiers: SyncState, SyncClicker"
+    }
+  ],
+  "related": [
+    "what-a-shared-shop-keeps-in-step",
+    "running-a-shop-with-other-players",
+    "serving-ice-cream"
+  ],
+  "images": [
+    {
+      "file": "the-networked-copies-in-a-shared-shop.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: the oven and the baker, furniture and boxes, customers and vehicles, the ice cream stand and its pieces, and the order side each carry a networked copy or interaction.",
+        "zh": "示意图：烤箱与面包师、家具与箱子、顾客与车辆、冰淇淋摊及其部件、以及订单一侧各自带有联机副本或联机交互。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "diagram-only"
+}

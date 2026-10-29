@@ -1,0 +1,78 @@
+{
+  "id": "the-shop-windows-and-the-glass",
+  "title": "The shop windows and the glass that breaks",
+  "category": "Shop",
+  "tier": "published",
+  "summary": "A shop in Supermarket Simulator is glazed rather than walled: the build names four shop windows with shard versions beside them, a glass material, shards in three strengths, dust on glass and a window to clean.",
+  "body": [
+    "A shop in Supermarket Simulator is glazed rather than walled. The game names four windows of its own, a front left and a front right beside a left and a right one, so the shopfront is assembled from pieces rather than left as a gap in a wall.",
+    "Each window carries a shard version as well. A broken window is not the same object as an intact one, which is why the game can swap the pane for its pieces rather than only play a sound over it.",
+    "The glass itself is a material of its own, with a colour sheet and a normal map beside it, so a pane reflects and shades without the game drawing a separate window for every angle.",
+    "Dust is part of the job. The build carries dust for glass with maps of its own, and a window is a thing that can be cleaned, which is why a shop's windows are part of keeping the place presentable rather than pure decoration.",
+    "There are display cases glassed to match. One showcase material is carried with a fade, a metallic smoothness and a normal sheet beside it, so what is behind the glass can be looked through rather than hidden.",
+    "Cars are glazed from the same vocabulary. A saloon and an SUV are each named with their own glass and shard pieces, with a tempered-glass material beside them, so the same idea of a pane and its pieces runs through the vehicles.",
+    "The shopfront windows come as a numbered set, and the window has a background and a bubble particle of its own, so what a passer-by sees through the glass is drawn rather than left as an empty hole.",
+    "What this entry does not tell you: how much a window costs to replace, whether a broken one changes what customers do, or how long dust takes to build up. We have not verified those, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "The game names four shop windows of its own: a front left and a front right beside a left and a right window, each with a shard version named beside it.",
+      "evidence": "asset names: Window_Front_Left, Window_Front_Right, Window_Left, Window_Right, Window_Front_Left_Shards, Window_Front_Right_Shards, Window_Left_Shards, Window_Right_Shards"
+    },
+    {
+      "claim": "The glass is a material of its own with a colour sheet and a normal map beside it.",
+      "evidence": "asset names: Glass_A, Glass_N, Glass_MS, Glass1"
+    },
+    {
+      "claim": "Shards come in tiers: a plain shard set with an easy, a medium and a strong version beside it.",
+      "evidence": "asset names: Shards, Shards_Easy, Shards_Medium, Shards_Strong"
+    },
+    {
+      "claim": "Dust for glass is named with maps of its own, and a window is named as something that can be cleaned.",
+      "evidence": "asset names: M_Dust_For_Glass, T_Dust_For_Glass_MA, T_Dust_For_Glass_N, Window Cleaning"
+    },
+    {
+      "claim": "A display case is glassed as well, with a fade, a metallic smoothness and a normal sheet beside it.",
+      "evidence": "asset names: Glass_Showcase, Glass_Showcase_Fade, Glass_Showcase_MS, Glass_Showcase_N"
+    },
+    {
+      "claim": "A saloon and an SUV are each named with their own glass pieces, with a tempered-glass material beside them.",
+      "evidence": "asset names: Suv_Car_01_Glass, Suv_Car_01_Glass_A, T_Sedan_glass_AlbedoTransparency, TemperGlass"
+    },
+    {
+      "claim": "The shopfront windows come as a numbered set.",
+      "evidence": "asset names: Sm_Store_Window_1, Sm_Store_Window_2, Sm_Store_Window_3, Sm_Store_Window_4, Sm_Store_Window_5"
+    },
+    {
+      "claim": "The window has a background and a bubble particle of its own.",
+      "evidence": "asset names: Window BG, Window Bubble Particle"
+    }
+  ],
+  "related": [
+    "the-fridges-and-freezers",
+    "category-signs-and-the-categories-behind-them",
+    "the-shops-status-its-doors-and-its-ground"
+  ],
+  "images": [
+    {
+      "file": "mapped/the-shop-windows-and-the-glass-atlas.png",
+      "kind": "game",
+      "alt": {
+        "en": "The window atlas the game ships: curtained, blinded and plain glass panes in a grid.",
+        "zh": "游戏自带的窗户图集：网格排布的窗帘窗、百叶窗与普通玻璃。"
+      }
+    },
+    {
+      "file": "mapped/the-shop-windows-and-the-glass-shards.png",
+      "kind": "game",
+      "alt": {
+        "en": "The strip of white shard shapes the game cuts a broken window into, drawn on a transparent field.",
+        "zh": "游戏把碎窗切成的一列白色碎玻璃形状，绘在透明底上。"
+      }
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
+}

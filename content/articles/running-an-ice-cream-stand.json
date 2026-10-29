@@ -1,0 +1,61 @@
+{
+  "id": "running-an-ice-cream-stand",
+  "title": "Running an ice cream stand",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to keep the ice cream stand in Supermarket Simulator stocked and serving: what the game produces for you, what it asks you to do by hand, and why the stand is a station rather than a shelf.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "An ice cream stand placed in the shop",
+    "Cones and flavours bought or produced",
+    "Someone free to serve while the tills run"
+  ],
+  "steps": [
+    {
+      "do": "Treat the stand as a station of its own rather than as a shelf, because ice cream has its own buckets, cones and interactions.",
+      "because": "ice cream is a system of its own, with buckets and cones as separate pieces (IceCreamBucket, IceCreamCone, IceCreamConeInteractable)"
+    },
+    {
+      "do": "Serve from the cone side rather than the bucket side, since the two are separate objects with their own interactions.",
+      "because": "the cone is its own interactable object beside the bucket (IceCreamConeInteractable, IceCreamBucket)"
+    },
+    {
+      "do": "Keep more than one flavour in mind when you stock up, because each flavour is data carrying its own pictures rather than a colour swap.",
+      "because": "flavours are data with their own graphics (IceCreamFlavourData, IceCreamFlavourGraphics)"
+    },
+    {
+      "do": "Leave time for serving, because scooping is an action with an animation and spoon graphics of its own rather than an instant hand-over.",
+      "because": "scooping has its own animation and spoon graphics (IceCreamScoopAnimation, IceCreamSpoonGraphics)"
+    },
+    {
+      "do": "Put the cones where the display can hold them, since cones have a display with slots of their own.",
+      "because": "cones have a display and display slots (IceCreamConeDisplay, IceCreamConeDisplaySlot)"
+    },
+    {
+      "do": "Let the stand produce the buckets instead of buying every one by hand, because buckets come from a generator.",
+      "because": "buckets are produced by their own generator (IceCreamBucketGenerator)"
+    },
+    {
+      "do": "Watch the state of what is on the stand rather than only counting cones, because a bucket carries a status and the stand keeps data of its own.",
+      "because": "a bucket carries a status and the stand has its own data (IceCreamStatus, iceCreamStandData)"
+    },
+    {
+      "do": "Check the helper record when you are unsure what the stand accepts, since the game keeps one for it the way it does for its other stations.",
+      "because": "the stand has a helper record of its own (IceCreamHelperSO)"
+    }
+  ],
+  "commonMistakes": [
+    "Stocking the stand like a shelf and expecting the game to scoop for you.",
+    "Running one flavour and treating every cone as interchangeable when the flavours carry their own look.",
+    "Serving in the middle of a rush and letting the queue at the tills grow while you scoop.",
+    "Buying buckets one at a time when the stand produces them itself."
+  ],
+  "relatedEntities": [
+    "serving-ice-cream",
+    "the-bakery-counter",
+    "checkout-and-cashiers"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}
