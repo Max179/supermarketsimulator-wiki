@@ -1,11 +1,33 @@
-# Harness next action — do not stop at parser blockers
+# Harness next action — supermarket-simulator
 
-Issued by project supervisor. Continue work autonomously and do not leave the project in partial merely because Unity 6 instance parsing is incomplete.
+Updated 2026-10-30 by the Mac integration. The 2026-10-02 handoff package is now in the real repository and the
+local gates are green; the publish leg belongs to the Lead.
 
-1. Supermarket and TCG: use every verified source already readable (assembly schemas, enums, localization, Addressables, strings, static defaults) to build a small high-quality P0 site now. Unknown numeric fields must be explicit unknown; never invent.
-2. In parallel, keep Unity 6/IL2CPP parser work isolated. Parser failure must not block site scaffold, multilingual routes, policy pages, SEO checks, tests, production build, local-complete report, and commit.
-3. R.E.P.O.: if the package is still absent, build the source-only project skeleton, release workflow, policy/SEO/test harness, and blocked-data report. Do not fabricate game facts. Continue immediately when a local package appears.
-4. Run tests, typecheck, build, mobile/static/SEO/AdSense checks. Commit each meaningful milestone locally and update reports with exact next action.
-5. Do not deploy until local quality gates pass. After local_complete, create the dedicated GitHub repo and Cloudflare Pages/GitHub Actions release using Mac credentials if Windows lacks permission.
+## State
 
-Do not wait for user confirmation for these in-scope engineering fallbacks. Stop only for genuinely missing user-owned data or credentials, and document the exact blocker.
+- Build: `node pipeline/site.mjs` -> **pages=242 indexable=203** (87 gates passing, typecheck exit 0).
+- Content: 119 published entries (100 with a confirmed game picture + 19 noindex notes), 77 guides, 164 mapped
+  game images, 94 diagrams, coverage 21/21 columns.
+- Data: `data/normalized/p0-inventory.json` (21,152 types / 170,271 field rows / 15,236 names) plus the derived
+  `value-index.json` / `citation-index.json`; the decoded layers and the game package stay on the Windows host.
+- Design: Mac design commits ported onto the package generator (player home page, in-game imagery, shift-dashboard
+  interactions, source version gate) and extended with JSON-LD / Open Graph / Twitter metadata.
+- Evidence: `reports/revival-2026-10-30.md` (assessment, merge, verification), `reports/local-complete.md` (full
+  record incl. the Mac section), `reports/quality-audit-2026-10-30.md` (mobile/static/SEO/AdSense checks),
+  `reports/verification.md` (the Mac run table), `reports/status.json` (regenerated from this tree).
+
+## Next actions
+
+1. **Lead**: push `main` and let GitHub Actions gate + deploy; then run
+   `node tools/smoke.mjs https://supermarketsimulator.wiki` as the post-publish check. Do not edit the workflow
+   deploy secrets logic (only the build step changed: it no longer runs the extraction-host
+   `schema_to_inventory.mjs`).
+2. **Growth/Data (later)**: raise coverage with new entries only when grounded; replace diagram-only subjects with
+   confirmed game pictures one at a time (each needs a manifest record + review verdict).
+3. **Extraction host (later)**: new game build -> re-run the extractors and the derived indexes; type→field
+   attribution for IL2CPP v39 remains an open decoder problem (see `docs/data-pipeline.md`).
+4. **AdSense**: after the site is live and indexed, apply and place non-intrusive units below direct answers; keep
+   the gates green (no ads in the first screen).
+
+Unknown numeric fields stay unknown. Parser failures must not block scaffold/build/SEO/tests/commit.
+Commit milestones. Deploy only after local gates pass.
