@@ -1,0 +1,26 @@
+{
+  "name": "supermarketsimulator-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static Supermarket Simulator player reference (supermarketsimulator.wiki), generated from a committed normalized data index.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node pipeline/site.mjs",
+    "test": "node tests/site.test.mjs",
+    "gates": "node tools/content-gate.mjs && node tools/verify-citations.mjs && node tools/coverage.mjs && node tools/image-coverage.mjs",
+    "classify": "node tools/classify-urls.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.ci.json",
+    "preflight": "node tools/preflight.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "deploy-check": "node tools/deploy-check.mjs",
+    "status": "node pipeline/status.mjs",
+    "verify": "npm test && npm run typecheck && npm run preflight"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^22.0.0"
+  }
+}

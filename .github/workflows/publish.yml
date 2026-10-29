@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '22'
       - name: build the site from the committed normalized data
-        run: node pipeline/schema_to_inventory.mjs && node pipeline/site.mjs
+        run: node pipeline/site.mjs
       - name: gates
         run: node tests/site.test.mjs
       - name: typecheck (portable type roots for a clean runner)
@@ -37,9 +37,11 @@ jobs:
         with:
           node-version: '22'
       - name: build the exact artefact that will be published
-        run: node pipeline/schema_to_inventory.mjs && node pipeline/site.mjs
+        run: node pipeline/site.mjs
       - name: preflight
         run: node tools/preflight.mjs
+      - name: smoke test the exact artefact that will be published
+        run: node tools/smoke.mjs
       - name: publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
