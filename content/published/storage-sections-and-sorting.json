@@ -47,11 +47,11 @@
   ],
   "images": [
     {
-      "file": "mapped/storage-sections-and-sorting-rack.jpg",
+      "file": "mapped/storage-sections-and-sorting-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the storage rack the back room is built from.",
-        "zh": "后仓所用仓储货架的反照率贴图。"
+        "en": "In-game picture of the back room racks filled with stock from Supermarket Simulator, used to illustrate Storage sections and sorting.",
+        "zh": "《Supermarket Simulator》游戏内the back room racks filled with stock的画面，用于说明「Storage sections and sorting」。"
       }
     },
     {

@@ -49,19 +49,11 @@
   ],
   "images": [
     {
-      "file": "mapped/paper-bags-and-packing-a-purchase-icon.jpg",
+      "file": "mapped/paper-bags-and-packing-a-purchase-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon of the paper bag a checkout purchase is packed into, shown with its tag.",
-        "zh": "游戏自带的纸袋图标，结账商品就装进这种袋子，图上还带着标签。"
-      }
-    },
-    {
-      "file": "mapped/paper-bags-and-packing-a-purchase-bag.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The paper texture the game puts on its bags, carrying recycling marks and the fold lines of a folded bag.",
-        "zh": "游戏贴在纸袋上的纸张贴图，上面有回收标志与折痕。"
+        "en": "In-game picture of the checkout counters inside the shop from Supermarket Simulator, used to illustrate Paper bags and packing a purchase.",
+        "zh": "《Supermarket Simulator》游戏内the checkout counters inside the shop的画面，用于说明「Paper bags and packing a purchase」。"
       }
     },
     {

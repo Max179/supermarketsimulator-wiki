@@ -47,11 +47,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-list-you-buy-from-box.jpg",
+      "file": "mapped/the-list-you-buy-from-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon for an item in the list you buy from.",
-        "zh": "游戏为可购买清单里的商品提供的图标。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate The list you buy from.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「The list you buy from」。"
       }
     }
   ],

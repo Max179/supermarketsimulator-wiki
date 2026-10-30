@@ -71,11 +71,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-lights-and-the-switches-handle.png",
+      "file": "mapped/the-lights-and-the-switches-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The handle the game draws for a switch in its off position.",
-        "zh": "游戏为关闭状态的开关绘制的把手。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle stocked with products, used to illustrate The lights and the switches in your shop.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle stocked with products，用于说明「The lights and the switches in your shop」。"
       }
     },
     {
@@ -86,14 +86,6 @@
         "zh": "示意图：店内灯与仓库灯各有管理器，二者都通过放置在世界中的开关控制。"
       },
       "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
-    },
-    {
-      "file": "mapped/the-lights-and-the-switches-spot-icon.png",
-      "kind": "game",
-      "alt": {
-        "en": "The picture the game itself draws for an interior spot light: a grey ceiling fitting with a glowing white lens.",
-        "zh": "游戏为室内射灯绘制的图形：灰色吸顶灯具与发白的灯面。"
-      }
     }
   ],
   "sources": [

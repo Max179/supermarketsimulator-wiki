@@ -47,27 +47,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-drinks-the-shop-carries-cola.png",
+      "file": "mapped/the-drinks-the-shop-carries-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "A drink the game ships: a cola bottle, dark soda with a red cap and a Cola label.",
-        "zh": "游戏自带的一种饮料：可乐瓶，深色汽水、红色瓶盖，标签写着 Cola。"
-      }
-    },
-    {
-      "file": "mapped/the-drinks-the-shop-carries-juice.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second drink the game ships: a one-litre Bio Juice carton with oranges printed on it.",
-        "zh": "游戏自带的第二种饮料：一升装 Bio Juice 果汁盒，盒身印着橙子。"
-      }
-    },
-    {
-      "file": "mapped/the-drinks-the-shop-carries-wine.png",
-      "kind": "game",
-      "alt": {
-        "en": "A third drink the game ships: a pale rose wine bottle with a printed label.",
-        "zh": "游戏自带的第三种饮料：淡粉色葡萄酒瓶，瓶身贴着印刷标签。"
+        "en": "In-game picture of Beer Brown Ale Keg (Degl) from Supermarket Simulator, used to illustrate The drinks the shop carries.",
+        "zh": "《Supermarket Simulator》游戏内Beer Brown Ale Keg (Degl)的画面，用于说明「The drinks the shop carries」。"
       }
     }
   ],

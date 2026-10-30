@@ -52,11 +52,11 @@
   ],
   "images": [
     {
-      "file": "mapped/online-orders-and-how-they-are-tracked-indicator.png",
+      "file": "mapped/online-orders-and-how-they-are-tracked-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own indicator picture for an online order: an orange marker with a shopping bag inside it.",
-        "zh": "游戏自带的线上订单指示图标：橙色标记内有一个购物袋。"
+        "en": "In-game picture of File:File:Supermarket Simulator Demo from Supermarket Simulator, used to illustrate Online orders and how they are tracked.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Supermarket Simulator Demo的画面，用于说明「Online orders and how they are tracked」。"
       }
     }
   ],

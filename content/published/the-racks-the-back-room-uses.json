@@ -54,19 +54,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-racks-the-back-room-uses-tall-rack.jpg",
+      "file": "mapped/the-racks-the-back-room-uses-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own artwork for a tall rack: a grey steel upright with five levels and a blue panel behind it.",
-        "zh": "游戏自带的高架图案：灰色钢制立柱、五层隔板，后面是一块蓝色背板。"
-      }
-    },
-    {
-      "file": "mapped/the-racks-the-back-room-uses-small-rack.png",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own artwork for the smaller rack: a black steel frame with four levels and cross bracing.",
-        "zh": "游戏自带的小号货架图案：黑色钢架、四层隔板并带交叉支撑。"
+        "en": "In-game picture of File:File:Take money back.png from Supermarket Simulator, used to illustrate The racks the back room uses.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Take money back.png的画面，用于说明「The racks the back room uses」。"
       }
     },
     {

@@ -54,11 +54,11 @@
   ],
   "images": [
     {
-      "file": "mapped/how-your-shop-is-saved-flashdrive.jpg",
+      "file": "mapped/how-your-shop-is-saved-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own texture for its save media: a retail package holding a black USB flash drive branded DISKORA FlashCore.",
-        "zh": "游戏为存档介质准备的贴图：零售包装内一支印着 DISKORA FlashCore 的黑色 U 盘。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate How your shop is saved.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「How your shop is saved」。"
       }
     },
     {

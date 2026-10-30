@@ -45,27 +45,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-menu-the-game-opens-on-background.jpg",
+      "file": "mapped/the-menu-the-game-opens-on-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own main menu background, a pale blue collage of the goods the shop sells.",
-        "zh": "游戏自带的主菜单背景：淡蓝色调、铺满店内商品的拼贴画。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-the-game-opens-on-background-2.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "A second main menu background the game ships, a city street at sunset with a hotel and traffic lights.",
-        "zh": "游戏自带的第二张主菜单背景：日落时分的城市街道，有旅馆招牌与红绿灯。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-the-game-opens-on-title.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own name art: SUPERMARKET SIMULATOR set in white letters on a red bar over a dark blue plate.",
-        "zh": "游戏自带的名称美术：红条与深蓝底板上写着白色 SUPERMARKET SIMULATOR。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate The menu the game opens on.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「The menu the game opens on」。"
       }
     }
   ],

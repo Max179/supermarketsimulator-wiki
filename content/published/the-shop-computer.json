@@ -39,11 +39,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-shop-computer-computer.jpg",
+      "file": "mapped/the-shop-computer-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the shop computer the ordering screens run on.",
-        "zh": "取自游戏的店铺电脑反照率贴图，订货界面就在上面。"
+        "en": "In-game picture of Cashier (New) from Supermarket Simulator, used to illustrate The shop computer.",
+        "zh": "《Supermarket Simulator》游戏内Cashier (New)的画面，用于说明「The shop computer」。"
       }
     },
     {

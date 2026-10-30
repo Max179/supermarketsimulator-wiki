@@ -47,35 +47,11 @@
   ],
   "images": [
     {
-      "file": "mapped/painting-the-walls-buckets.jpg",
+      "file": "mapped/painting-the-walls-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon atlas of the paint buckets used on walls.",
-        "zh": "游戏自带的墙面油漆桶图标图集。"
-      }
-    },
-    {
-      "file": "mapped/painting-the-walls-bucket-gold.png",
-      "kind": "game",
-      "alt": {
-        "en": "One of the numbered bucket icons the game ships: a steel paint tin filled with a golden paint.",
-        "zh": "游戏自带编号油漆桶图标之一：铁皮漆桶里盛着金褐色油漆。"
-      }
-    },
-    {
-      "file": "mapped/painting-the-walls-bucket-white.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second numbered bucket icon: the same tin filled with an off-white paint.",
-        "zh": "第二个编号油漆桶图标：同款漆桶，里面是米白色油漆。"
-      }
-    },
-    {
-      "file": "mapped/painting-the-walls-bucket-teal.png",
-      "kind": "game",
-      "alt": {
-        "en": "A third numbered bucket icon: the same tin filled with a teal paint.",
-        "zh": "第三个编号油漆桶图标：同款漆桶，里面是青绿色油漆。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle seen from above the trolley, used to illustrate Painting the walls.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle seen from above the trolley，用于说明「Painting the walls」。"
       }
     },
     {

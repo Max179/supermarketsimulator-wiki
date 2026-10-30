@@ -45,11 +45,11 @@
   ],
   "images": [
     {
-      "file": "mapped/paying-by-card-or-cash-register.jpg",
+      "file": "mapped/paying-by-card-or-cash-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the cash register that takes payment.",
-        "zh": "用于收款的收银机反照率贴图。"
+        "en": "In-game picture from Supermarket Simulator showing customers paying at the checkout counters, used to illustrate Paying by card or by cash.",
+        "zh": "《Supermarket Simulator》游戏内画面：customers paying at the checkout counters，用于说明「Paying by card or by cash」。"
       }
     },
     {

@@ -54,11 +54,11 @@
   ],
   "images": [
     {
-      "file": "mapped/mixing-paint-and-picking-a-colour-buckets.jpg",
+      "file": "mapped/mixing-paint-and-picking-a-colour-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon atlas of the paint buckets a colour is picked from.",
-        "zh": "游戏自带的油漆桶图标图集，用于挑选颜色。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate Mixing paint and picking a colour.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「Mixing paint and picking a colour」。"
       }
     },
     {
@@ -69,14 +69,6 @@
         "zh": "示意图：生成油漆桶、在取色器中调配并预览、在世界中放置，并与其他玩家共享。"
       },
       "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
-    },
-    {
-      "file": "mapped/mixing-paint-and-picking-a-colour-bucket.png",
-      "kind": "game",
-      "alt": {
-        "en": "One of the numbered paint buckets the game ships: a white can filled with teal paint.",
-        "zh": "游戏自带的编号油漆桶之一：白色桶里装着青色油漆。"
-      }
     }
   ],
   "sources": [

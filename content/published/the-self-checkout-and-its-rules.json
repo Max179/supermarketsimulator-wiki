@@ -46,11 +46,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-self-checkout-and-its-rules-machine.jpg",
+      "file": "mapped/the-self-checkout-and-its-rules-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own picture of the self-service checkout machine.",
-        "zh": "游戏自带的自助收银机图。"
+        "en": "In-game picture from Supermarket Simulator showing customers paying at the checkout counters, used to illustrate The self-checkout and its rules.",
+        "zh": "《Supermarket Simulator》游戏内画面：customers paying at the checkout counters，用于说明「The self-checkout and its rules」。"
       }
     },
     {

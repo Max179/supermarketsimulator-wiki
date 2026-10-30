@@ -44,19 +44,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-expansion-packs-electronics.png",
+      "file": "mapped/the-expansion-packs-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own banner for its electronics pack, naming the pack.",
-        "zh": "游戏自带的电子品类 DLC 横幅，标注了扩展包名称。"
-      }
-    },
-    {
-      "file": "mapped/the-expansion-packs-clothing.png",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own banner for its clothing pack, naming the pack.",
-        "zh": "游戏自带的服饰品类 DLC 横幅。"
+        "en": "In-game picture of Beer Brown Ale 6-Pack (BK) from Supermarket Simulator, used to illustrate The expansion packs the game offers.",
+        "zh": "《Supermarket Simulator》游戏内Beer Brown Ale 6-Pack (BK)的画面，用于说明「The expansion packs the game offers」。"
       }
     },
     {

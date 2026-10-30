@@ -42,11 +42,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-fresh-produce-in-the-shop-artichoke.png",
+      "file": "mapped/the-fresh-produce-in-the-shop-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The picture the game ships for one of its fresh goods: a green artichoke with its stem on transparency.",
-        "zh": "游戏为其一件生鲜商品提供的图片：透明底上一颗带柄的绿色朝鲜蓟。"
+        "en": "In-game picture of Apple Juice (Bio Juice) from Supermarket Simulator, used to illustrate The fresh produce in the shop.",
+        "zh": "《Supermarket Simulator》游戏内Apple Juice (Bio Juice)的画面，用于说明「The fresh produce in the shop」。"
       }
     }
   ],

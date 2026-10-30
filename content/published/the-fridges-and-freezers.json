@@ -41,27 +41,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-fridges-and-freezers-fridge.png",
+      "file": "mapped/the-fridges-and-freezers-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The double display fridge the game ships: a white cabinet with two glass doors and shelves inside.",
-        "zh": "游戏自带的双门展示冰箱：白色柜体、两扇玻璃门，里面分层货架。"
-      }
-    },
-    {
-      "file": "mapped/the-fridges-and-freezers-freezer.png",
-      "kind": "game",
-      "alt": {
-        "en": "The double freezer the game ships: a chest freezer with a glass lid and a control panel on the front.",
-        "zh": "游戏自带的双联冷柜：玻璃盖卧式冷柜，正面带控制面板。"
-      }
-    },
-    {
-      "file": "mapped/the-fridges-and-freezers-single-freezer.png",
-      "kind": "game",
-      "alt": {
-        "en": "The single freezer the game ships: the same chest freezer at half the width.",
-        "zh": "游戏自带的单门冷柜：同款卧式冷柜，宽度减半。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate The fridges and freezers.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「The fridges and freezers」。"
       }
     }
   ],

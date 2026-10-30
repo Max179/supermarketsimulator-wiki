@@ -58,11 +58,11 @@
   ],
   "images": [
     {
-      "file": "mapped/serving-ice-cream-bucket.jpg",
+      "file": "mapped/serving-ice-cream-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the ice cream bucket the scoops come out of.",
-        "zh": "取自游戏的冰淇淋桶反照率贴图。"
+        "en": "In-game picture of a freezer full of products with the carry overlay from Supermarket Simulator, used to illustrate Serving ice cream.",
+        "zh": "《Supermarket Simulator》游戏内a freezer full of products with the carry overlay的画面，用于说明「Serving ice cream」。"
       }
     },
     {

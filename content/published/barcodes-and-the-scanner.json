@@ -59,27 +59,11 @@
   ],
   "images": [
     {
-      "file": "mapped/barcodes-and-the-scanner-plain.jpg",
+      "file": "mapped/barcodes-and-the-scanner-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The product label and barcode the game spawns at the till: a yellow label reading PRODUCT.",
-        "zh": "游戏在收银台生成的产品标签与条形码：黄色标签，印有 PRODUCT。"
-      }
-    },
-    {
-      "file": "mapped/barcodes-and-the-scanner-discounted.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The green label and barcode the game ships for discounted goods.",
-        "zh": "游戏为打折商品提供的绿色标签与条形码。"
-      }
-    },
-    {
-      "file": "mapped/barcodes-and-the-scanner-barcode-vegie.png",
-      "kind": "game",
-      "alt": {
-        "en": "The produce label the game itself draws: a barcode with a yellow band and green shoots over it.",
-        "zh": "游戏自己为农产品画的价签：条形码上压着黄色色带与绿色芽苗。"
+        "en": "In-game picture of the checkout counters inside the shop from Supermarket Simulator, used to illustrate Barcodes, the scanner and the discount label.",
+        "zh": "《Supermarket Simulator》游戏内the checkout counters inside the shop的画面，用于说明「Barcodes, the scanner and the discount label」。"
       }
     },
     {

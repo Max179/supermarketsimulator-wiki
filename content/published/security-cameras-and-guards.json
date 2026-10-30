@@ -80,19 +80,11 @@
   ],
   "images": [
     {
-      "file": "mapped/security-cameras-and-guards-detector.jpg",
+      "file": "mapped/security-cameras-and-guards-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon for a door detector: a tall grey anti-theft gate with a red indicator at the top and a base unit.",
-        "zh": "游戏自带的门禁探测器图标：一座灰色高闸门，顶部有红色指示灯、底部有底座。"
-      }
-    },
-    {
-      "file": "mapped/security-cameras-and-guards-camera.png",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture of the wall-mounted security camera it hangs in the shop: a grey housing with an infrared ring and a bracket.",
-        "zh": "游戏自带的画面：店里墙装的监控摄像头，灰色机身、红外灯环与支架。"
+        "en": "In-game picture from Supermarket Simulator showing the produce aisle of the shop, used to illustrate Security cameras and guards.",
+        "zh": "《Supermarket Simulator》游戏内画面：the produce aisle of the shop，用于说明「Security cameras and guards」。"
       }
     },
     {

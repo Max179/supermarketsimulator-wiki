@@ -66,27 +66,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-computer-and-the-tablet-tablet.jpg",
+      "file": "mapped/the-computer-and-the-tablet-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own texture for its tablet device.",
-        "zh": "游戏自带的平板设备贴图。"
-      }
-    },
-    {
-      "file": "mapped/the-computer-and-the-tablet-scanner-icon.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The icon the tablet uses for scanning.",
-        "zh": "平板用于扫描的图标。"
-      }
-    },
-    {
-      "file": "mapped/the-computer-and-the-tablet-tablet-and-scanner.png",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture of the shop tablet and the handheld barcode scanner beside it, the tablet showing a blue shop screen.",
-        "zh": "游戏自带的画面：店铺平板与其旁的手持条码扫描器，平板上是蓝色店面界面。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle stocked with products, used to illustrate The computer and the tablet.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle stocked with products，用于说明「The computer and the tablet」。"
       }
     }
   ],

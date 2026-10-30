@@ -50,11 +50,11 @@
   ],
   "images": [
     {
-      "file": "mapped/music-in-your-shop-speaker.jpg",
+      "file": "mapped/music-in-your-shop-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the speaker it ships for shop music.",
-        "zh": "取自游戏的店内音乐音箱反照率贴图。"
+        "en": "In-game picture from Supermarket Simulator showing the produce aisle of the shop, used to illustrate Music in your shop.",
+        "zh": "《Supermarket Simulator》游戏内画面：the produce aisle of the shop，用于说明「Music in your shop」。"
       }
     },
     {

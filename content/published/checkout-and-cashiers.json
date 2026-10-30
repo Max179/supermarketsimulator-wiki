@@ -65,35 +65,11 @@
   ],
   "images": [
     {
-      "file": "mapped/checkout-and-cashiers-selfcheckout.png",
+      "file": "mapped/checkout-and-cashiers-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "An albedo texture taken from the game of the self-checkout machine the entry mentions.",
-        "zh": "取自游戏的自助收银机反照率贴图。"
-      }
-    },
-    {
-      "file": "mapped/checkout-and-cashiers-basket.png",
-      "kind": "game",
-      "alt": {
-        "en": "The basket icon the game ships with the checkout artwork: a green plastic shopping basket.",
-        "zh": "游戏随收银素材提供的购物篮图标：一只绿色塑料购物篮。"
-      }
-    },
-    {
-      "file": "mapped/checkout-and-cashiers-basket-new.png",
-      "kind": "game",
-      "alt": {
-        "en": "The newer basket icon the game ships beside it, a dark green basket drawn from a lower angle.",
-        "zh": "游戏同时提供的较新购物篮图标：从较低视角绘制的深绿色购物篮。"
-      }
-    },
-    {
-      "file": "mapped/checkout-and-cashiers-mirrored-counter.png",
-      "kind": "game",
-      "alt": {
-        "en": "The mirrored checkout counter the game ships: an L-shaped till counter with two screens, a side cabinet and a bagging run.",
-        "zh": "游戏自带的镜像收银台：L 形柜台，两台屏幕、侧柜与打包台面。"
+        "en": "In-game picture of the checkout counters inside the shop from Supermarket Simulator, used to illustrate Checkout and cashiers.",
+        "zh": "《Supermarket Simulator》游戏内the checkout counters inside the shop的画面，用于说明「Checkout and cashiers」。"
       }
     },
     {

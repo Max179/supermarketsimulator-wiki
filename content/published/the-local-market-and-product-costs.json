@@ -39,11 +39,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-local-market-and-product-costs-market.jpg",
+      "file": "mapped/the-local-market-and-product-costs-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The texture of a local market display stand the entry describes.",
-        "zh": "本条描述的本地市场陈列架贴图。"
+        "en": "In-game picture from Supermarket Simulator showing customers paying at the checkout counters, used to illustrate The local market and product costs.",
+        "zh": "《Supermarket Simulator》游戏内画面：customers paying at the checkout counters，用于说明「The local market and product costs」。"
       }
     },
     {

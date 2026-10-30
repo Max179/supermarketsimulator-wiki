@@ -39,11 +39,11 @@
   ],
   "images": [
     {
-      "file": "mapped/what-your-shop-spends-money.jpg",
+      "file": "mapped/what-your-shop-spends-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the money leaving the shop.",
-        "zh": "取自游戏的钞票反照率贴图。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate What your shop spends.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「What your shop spends」。"
       }
     },
     {

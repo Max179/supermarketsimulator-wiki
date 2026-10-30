@@ -42,11 +42,11 @@
   ],
   "images": [
     {
-      "file": "mapped/store-upgrades-and-licences-licence.jpg",
+      "file": "mapped/store-upgrades-and-licences-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The licence artwork the game itself uses.",
-        "zh": "游戏本身使用的许可证图案。"
+        "en": "In-game picture of File:File:Supermarket Management.png from Supermarket Simulator, used to illustrate Store upgrades and licences.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Supermarket Management.png的画面，用于说明「Store upgrades and licences」。"
       }
     },
     {

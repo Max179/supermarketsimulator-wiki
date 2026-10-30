@@ -65,19 +65,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-boxes-in-the-back-room-greengrocer.jpg",
+      "file": "mapped/the-boxes-in-the-back-room-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own cardboard texture for a greengrocer's delivery box, printed with a label, a barcode and recycling marks.",
-        "zh": "游戏给蔬菜水果送货箱准备的颜色贴图，上面印着运单、条码与回收标志。"
-      }
-    },
-    {
-      "file": "mapped/the-boxes-in-the-back-room-box.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "Another of the game's box textures, a pale box printed FREEZER BOX with snowflakes and an instant-delivery label.",
-        "zh": "游戏的另一种箱体贴图：浅色箱面印着 FREEZER BOX、雪花图案与即时配送标签。"
+        "en": "In-game picture of File:File:50 Cents Back.png from Supermarket Simulator, used to illustrate The boxes in the back room.",
+        "zh": "《Supermarket Simulator》游戏内File:File:50 Cents Back.png的画面，用于说明「The boxes in the back room」。"
       }
     }
   ],

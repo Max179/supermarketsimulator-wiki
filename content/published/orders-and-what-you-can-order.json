@@ -54,11 +54,11 @@
   ],
   "images": [
     {
-      "file": "mapped/orders-and-what-you-can-order-online.jpg",
+      "file": "mapped/orders-and-what-you-can-order-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the online order station the entry describes.",
-        "zh": "本条描述的线上订货站反照率贴图。"
+        "en": "In-game picture of Book (Mother and Child) from Supermarket Simulator, used to illustrate Orders and what you can order.",
+        "zh": "《Supermarket Simulator》游戏内Book (Mother and Child)的画面，用于说明「Orders and what you can order」。"
       }
     },
     {

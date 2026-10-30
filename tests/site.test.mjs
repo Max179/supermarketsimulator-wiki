@@ -459,6 +459,25 @@ try {
 ok('every game image used in an entry has a manifest record and exists in the build', badGameImages.length === 0 && gameImages.length > 0,
     badGameImages.map((x) => x.id + ':' + x.img.file).join(', ') || (gameImages.length ? '' : 'no game image is used yet'));
 
+// Picture provenance: every mapped picture must name the site and page it came from, say what the rights review
+// found, and be listed on the sources page the reader can reach. The raw-texture manifest could pass none of this,
+// so this gate could only land with the sourced manifest.
+{
+  const provenance = manifest.records ?? [];
+  const problems = [];
+  for (const r of provenance) {
+    const absent = ['sourceName', 'sourcePage', 'retrievedAt'].filter((k) => !String(r[k] ?? '').trim());
+    if (!String(r.rightsReview ?? '').trim() && !String(r.license ?? '').trim()) absent.push('rightsReview');
+    if (absent.length) problems.push(r.file + ' lacks ' + absent.join('/'));
+    const page = String(r.sourcePage ?? '');
+    if (page && !/^https?:\/\/[^\s<>"]+$/.test(page)) problems.push(r.file + ' sourcePage is not an absolute http(s) URL');
+  }
+  const sourcesHtml = readFileSync(join(dir, 'reference', 'sources.html'), 'utf8');
+  for (const r of provenance) if (!sourcesHtml.includes(r.file)) problems.push(r.file + ' is not listed on the sources page');
+  ok('every picture names its source page, rights review and retrieval date, and is listed on the sources page',
+    provenance.length > 0 && problems.length === 0, problems.slice(0, 4).join('; '));
+}
+
   const idLeaks = [];
   for (const e of published) {
     const h = readFileSync(entityFile(e), 'utf8');

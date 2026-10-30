@@ -40,11 +40,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-shop-entrance-trim.jpg",
+      "file": "mapped/the-shop-entrance-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the trim on its shop entrance variants.",
-        "zh": "取自游戏的店铺门面边框反照率贴图。"
+        "en": "In-game picture of File:File:25 Cents Front.png from Supermarket Simulator, used to illustrate The shop entrance.",
+        "zh": "《Supermarket Simulator》游戏内File:File:25 Cents Front.png的画面，用于说明「The shop entrance」。"
       }
     },
     {

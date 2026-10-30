@@ -43,27 +43,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-line-icons-the-game-draws-shopping.png",
+      "file": "mapped/the-line-icons-the-game-draws-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "One of the game's own line icons: a shopping trolley drawn in white outline.",
-        "zh": "游戏自带的线描图标之一：白色轮廓画出的购物车。"
-      }
-    },
-    {
-      "file": "mapped/the-line-icons-the-game-draws-tool.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second line icon from the same set: a waste bin drawn in white outline.",
-        "zh": "同一套里的第二个线描图标：白色轮廓画出的垃圾桶。"
-      }
-    },
-    {
-      "file": "mapped/the-line-icons-the-game-draws-weather.png",
-      "kind": "game",
-      "alt": {
-        "en": "A third line icon from the same set: a water drop drawn in white outline.",
-        "zh": "同一套里的第三个线描图标：白色轮廓画出的一滴水。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate The line icons the game draws.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「The line icons the game draws」。"
       }
     }
   ],

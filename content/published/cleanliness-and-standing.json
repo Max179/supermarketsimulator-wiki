@@ -41,11 +41,11 @@
   ],
   "images": [
     {
-      "file": "mapped/cleanliness-and-standing-mop.jpg",
+      "file": "mapped/cleanliness-and-standing-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the mop used to clean the shop.",
-        "zh": "取自游戏的清洁拖把反照率贴图。"
+        "en": "In-game picture of Bleach (WC Boeff) from Supermarket Simulator, used to illustrate Cleanliness and the shop's standing.",
+        "zh": "《Supermarket Simulator》游戏内Bleach (WC Boeff)的画面，用于说明「Cleanliness and the shop's standing」。"
       }
     },
     {

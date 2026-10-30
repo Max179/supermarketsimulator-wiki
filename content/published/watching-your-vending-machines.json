@@ -59,19 +59,11 @@
   ],
   "images": [
     {
-      "file": "mapped/watching-your-vending-machines-machine.jpg",
+      "file": "mapped/watching-your-vending-machines-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own picture of the vending machine the tracker keeps an eye on.",
-        "zh": "游戏自带的自动售货机图，追踪面板看的就是它。"
-      }
-    },
-    {
-      "file": "mapped/watching-your-vending-machines-computer-icon.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The icon the game uses for vending machine computer screens.",
-        "zh": "游戏用于售货机电脑界面的图标。"
+        "en": "In-game picture of Book (Piticha) from Supermarket Simulator, used to illustrate Watching your vending machines.",
+        "zh": "《Supermarket Simulator》游戏内Book (Piticha)的画面，用于说明「Watching your vending machines」。"
       }
     }
   ],

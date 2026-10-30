@@ -55,11 +55,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-controls-the-menus-are-built-from-sheet.jpg",
+      "file": "mapped/the-controls-the-menus-are-built-from-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own sheet of keyboard and mouse pictures, the key caps and mouse icons its control prompts are drawn from.",
-        "zh": "游戏自带的键鼠图片表：提示里用到的键帽与鼠标图标都取自这里。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate The controls the menus are built from.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「The controls the menus are built from」。"
       }
     },
     {

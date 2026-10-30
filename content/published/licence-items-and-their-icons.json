@@ -44,19 +44,11 @@
   ],
   "images": [
     {
-      "file": "mapped/licence-items-and-their-icons-sheet.jpg",
+      "file": "mapped/licence-items-and-their-icons-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon sheet for its first ten product licences: groceries, drinks and household goods.",
-        "zh": "游戏自带的十个商品执照图标表：食品、饮料与日用品。"
-      }
-    },
-    {
-      "file": "mapped/licence-items-and-their-icons-vegetables.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own icon sheet for its fruit and vegetable licences.",
-        "zh": "游戏自带的果蔬类执照图标表。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate Licence items and the icons that go with them.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「Licence items and the icons that go with them」。"
       }
     },
     {

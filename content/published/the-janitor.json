@@ -48,11 +48,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-janitor-icon.png",
+      "file": "mapped/the-janitor-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game itself uses for the janitor: a capped worker with a mop and bucket.",
-        "zh": "游戏自带的保洁图标：戴帽的工人手持拖把与水桶。"
+        "en": "In-game picture of an employee the shop can hire from Supermarket Simulator, used to illustrate The janitor and what he cleans.",
+        "zh": "《Supermarket Simulator》游戏内an employee the shop can hire的画面，用于说明「The janitor and what he cleans」。"
       }
     },
     {

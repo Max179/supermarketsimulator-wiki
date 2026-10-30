@@ -53,11 +53,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-tutorials-that-point-you-at-things-hint.jpg",
+      "file": "mapped/the-tutorials-that-point-you-at-things-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The hint picture the game ships for the tablet: a wheel of its jobs around a tablet, beside a screen showing an online order.",
-        "zh": "游戏为平板准备的提示图：平板周围一圈可选工作，旁边是显示线上订单的平板界面。"
+        "en": "In-game picture from Supermarket Simulator showing the produce aisle of the shop, used to illustrate The tutorials that point you at things.",
+        "zh": "《Supermarket Simulator》游戏内画面：the produce aisle of the shop，用于说明「The tutorials that point you at things」。"
       }
     },
     {

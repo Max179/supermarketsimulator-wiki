@@ -50,11 +50,11 @@
   ],
   "images": [
     {
-      "file": "mapped/how-customers-find-their-way-sign.jpg",
+      "file": "mapped/how-customers-find-their-way-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The base colour texture of the walk lane sign the game uses to direct customers.",
-        "zh": "游戏用于引导顾客的通道指示牌基础色贴图。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle seen from above the trolley, used to illustrate How customers find their way around.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle seen from above the trolley，用于说明「How customers find their way around」。"
       }
     },
     {

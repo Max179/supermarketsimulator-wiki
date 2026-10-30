@@ -46,11 +46,11 @@
   ],
   "images": [
     {
-      "file": "mapped/loans-and-paying-them-back-bank.jpg",
+      "file": "mapped/loans-and-paying-them-back-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the bank building the shop borrows from.",
-        "zh": "店铺借款所在的银行建筑反照率贴图。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate Loans and paying them back.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「Loans and paying them back」。"
       }
     },
     {

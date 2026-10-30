@@ -52,19 +52,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-weighing-scale-scale.jpg",
+      "file": "mapped/the-weighing-scale-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the digital scale this entry describes.",
-        "zh": "取自游戏的电子秤反照率贴图。"
-      }
-    },
-    {
-      "file": "mapped/the-weighing-scale-produce-screen.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture for the produce side of weighing: a fruit-and-vegetable stand with bins of goods beside a checkout scale a customer stands at.",
-        "zh": "游戏为按重售卖画的图：成排的果蔬货箱，旁边是顾客站着的收银台电子秤。"
+        "en": "In-game picture of Book (Colors) from Supermarket Simulator, used to illustrate The weighing scale and barcodes.",
+        "zh": "《Supermarket Simulator》游戏内Book (Colors)的画面，用于说明「The weighing scale and barcodes」。"
       }
     },
     {

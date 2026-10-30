@@ -59,27 +59,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-meat-and-dairy-section-cheese.png",
+      "file": "mapped/the-meat-and-dairy-section-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "A good the section holds: the game's own parmesan pack, a green Eros wrapper marked Parmigiano Reggiano.",
-        "zh": "这一区里的一种商品：游戏自带的帕玛森包装，绿色 Eros 外袋，写着 Parmigiano Reggiano。"
-      }
-    },
-    {
-      "file": "mapped/the-meat-and-dairy-section-milk.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second good the section holds: the game's own milk carton, a one-litre Bourlait semi-skimmed.",
-        "zh": "这一区里的第二种商品：游戏自带的牛奶盒，一升装 Bourlait 半脱脂牛奶。"
-      }
-    },
-    {
-      "file": "mapped/the-meat-and-dairy-section-eggs.png",
-      "kind": "game",
-      "alt": {
-        "en": "A third good the section holds: the game's own egg box, an eight-egg bio carton.",
-        "zh": "这一区里的第三种商品：游戏自带的蛋盒，八枚装有机鸡蛋。"
+        "en": "In-game picture of the storefront of the shop on the first day from Supermarket Simulator, used to illustrate The meat and dairy section.",
+        "zh": "《Supermarket Simulator》游戏内the storefront of the shop on the first day的画面，用于说明「The meat and dairy section」。"
       }
     }
   ],

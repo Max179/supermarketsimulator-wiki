@@ -44,19 +44,11 @@
   ],
   "images": [
     {
-      "file": "mapped/floors-and-floor-painting-atlas.jpg",
+      "file": "mapped/floors-and-floor-painting-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon atlas of the floor textures you are allowed to paint onto the shop floor.",
-        "zh": "游戏自带的店面地板贴图图标图集，展示可以刷到地面上的材质。"
-      }
-    },
-    {
-      "file": "mapped/floors-and-floor-painting-tiles.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "A tile floor texture taken from the game, one of the surfaces you can apply.",
-        "zh": "取自游戏的瓷砖地板贴图，属于可应用的地面材质之一。"
+        "en": "In-game picture from Supermarket Simulator showing the produce aisle of the shop, used to illustrate Floors and floor painting.",
+        "zh": "《Supermarket Simulator》游戏内画面：the produce aisle of the shop，用于说明「Floors and floor painting」。"
       }
     },
     {
@@ -67,14 +59,6 @@
         "zh": "示意图：拿起地板箱、选择材质、刷在地面上、地板被保存。"
       },
       "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
-    },
-    {
-      "file": "mapped/floors-and-floor-painting-pattern.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "A floor pattern the game ships for painted floors: dark cracked stone, laid out in tiles.",
-        "zh": "游戏自带的涂装地板图案之一：深色龟裂石面，按格子平铺。"
-      }
     }
   ],
   "sources": [

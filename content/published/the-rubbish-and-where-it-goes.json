@@ -50,19 +50,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-rubbish-and-where-it-goes-bin.jpg",
+      "file": "mapped/the-rubbish-and-where-it-goes-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own picture of the wheeled bin the shop's rubbish goes in.",
-        "zh": "游戏自带的带轮垃圾桶图，店里的垃圾就丢在这里。"
-      }
-    },
-    {
-      "file": "mapped/the-rubbish-and-where-it-goes-bags.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture of the box of waste bags the shop uses.",
-        "zh": "游戏自带的垃圾袋包装盒图，店里用的就是这一款。"
+        "en": "In-game picture of Dish Soap Lemon (Mouss) from Supermarket Simulator, used to illustrate The rubbish and where it goes.",
+        "zh": "《Supermarket Simulator》游戏内Dish Soap Lemon (Mouss)的画面，用于说明「The rubbish and where it goes」。"
       }
     }
   ],

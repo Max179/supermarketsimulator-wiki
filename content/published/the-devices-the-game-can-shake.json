@@ -41,11 +41,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-devices-the-game-can-shake-controller.png",
+      "file": "mapped/the-devices-the-game-can-shake-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The controller icon the game itself ships: a white rounded pad shape on a transparent field, drawn to read on the site's dark background.",
-        "zh": "游戏自带的控制器图标：透明底上的白色圆角手柄图形，按本站深色底观看绘制。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate The devices the game can shake.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「The devices the game can shake」。"
       }
     },
     {

@@ -49,19 +49,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-management-tabs-item-frame.png",
+      "file": "mapped/the-management-tabs-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The item frame the management tabs are drawn in: a navy rounded tile with a lighter top edge.",
-        "zh": "管理分页所用的条目边框：深蓝色圆角板块，顶边更亮。"
-      }
-    },
-    {
-      "file": "mapped/the-management-tabs-bar-frame.png",
-      "kind": "game",
-      "alt": {
-        "en": "The bar frame the tabs' top bar is drawn from: a navy band with a soft diagonal highlight.",
-        "zh": "分页顶栏所用的边框：深蓝色横条，带一道柔和斜向高光。"
+        "en": "In-game picture of Beer Blonde Ale Keg (Fess) from Supermarket Simulator, used to illustrate The management tabs on the computer.",
+        "zh": "《Supermarket Simulator》游戏内Beer Blonde Ale Keg (Fess)的画面，用于说明「The management tabs on the computer」。"
       }
     },
     {

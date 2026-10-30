@@ -39,11 +39,11 @@
   ],
   "images": [
     {
-      "file": "mapped/restock-areas-and-vehicles-sedan.jpg",
+      "file": "mapped/restock-areas-and-vehicles-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon for one of its vehicles: a red-orange four-door sedan seen from the front corner.",
-        "zh": "游戏自带的载具图标之一：一辆从前方一角看到的红橙色四门轿车。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle seen from above the trolley, used to illustrate Restock areas and vehicles.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle seen from above the trolley，用于说明「Restock areas and vehicles」。"
       }
     },
     {

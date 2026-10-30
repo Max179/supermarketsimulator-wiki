@@ -67,11 +67,11 @@
   ],
   "images": [
     {
-      "file": "mapped/furniture-and-shop-layout-atlas.jpg",
+      "file": "mapped/furniture-and-shop-layout-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own icon atlas of the furniture it offers you to place in the shop.",
-        "zh": "游戏自带的家具图标图集，展示可以摆放到店里的家具。"
+        "en": "In-game picture of the storefront of the shop on the first day from Supermarket Simulator, used to illustrate Furniture and shop layout.",
+        "zh": "《Supermarket Simulator》游戏内the storefront of the shop on the first day的画面，用于说明「Furniture and shop layout」。"
       }
     },
     {

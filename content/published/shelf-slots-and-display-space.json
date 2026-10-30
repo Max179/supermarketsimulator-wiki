@@ -56,19 +56,11 @@
   ],
   "images": [
     {
-      "file": "mapped/shelf-slots-and-display-space-icecream.jpg",
+      "file": "mapped/shelf-slots-and-display-space-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The texture taken from the game of a display case built for a particular product, the kind of display the entry describes.",
-        "zh": "取自游戏的产品专用陈列柜贴图，即本条词条描述的那类陈列位。"
-      }
-    },
-    {
-      "file": "mapped/shelf-slots-and-display-space-shelf.png",
-      "kind": "game",
-      "alt": {
-        "en": "The single shelf unit the game ships: a white gondola with three shelves on an upright frame and a base that turns the corner.",
-        "zh": "游戏自带的单面货架：白色货架三层层板装在立柱上，底座带转角。"
+        "en": "In-game picture of the back room racks filled with stock from Supermarket Simulator, used to illustrate Shelf slots and display space.",
+        "zh": "《Supermarket Simulator》游戏内the back room racks filled with stock的画面，用于说明「Shelf slots and display space」。"
       }
     },
     {

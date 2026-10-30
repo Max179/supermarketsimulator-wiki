@@ -50,11 +50,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-body-you-do-not-see-body.png",
+      "file": "mapped/the-body-you-do-not-see-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The colour sheet the game ships for the body of the character the player controls, showing the face, skin and the body panels laid out for the model.",
-        "zh": "游戏为玩家所控制角色的身体自带的颜色贴图，可见面部、皮肤与身体各面板的展开布局。"
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate The body you do not see.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「The body you do not see」。"
       }
     },
     {

@@ -58,19 +58,11 @@
   ],
   "images": [
     {
-      "file": "mapped/playing-with-a-controller-button-a.png",
+      "file": "mapped/playing-with-a-controller-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "One of the controller button pictures the game ships for its prompts: the green A button.",
-        "zh": "游戏自带的按键图片之一：绿色 A 键。"
-      }
-    },
-    {
-      "file": "mapped/playing-with-a-controller-button-b.png",
-      "kind": "game",
-      "alt": {
-        "en": "Another of the controller button pictures: the red B button.",
-        "zh": "另一张按键图片：红色 B 键。"
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate Playing with a controller.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「Playing with a controller」。"
       }
     },
     {

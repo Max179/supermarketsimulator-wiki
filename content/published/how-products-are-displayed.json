@@ -42,11 +42,11 @@
   ],
   "images": [
     {
-      "file": "mapped/how-products-are-displayed-pegboard.jpg",
+      "file": "mapped/how-products-are-displayed-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the pegboard display the game offers for hanging goods.",
-        "zh": "游戏提供的挂板陈列架反照率贴图。"
+        "en": "In-game picture of File:File:Products and Items.png from Supermarket Simulator, used to illustrate How products are displayed.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Products and Items.png的画面，用于说明「How products are displayed」。"
       }
     },
     {

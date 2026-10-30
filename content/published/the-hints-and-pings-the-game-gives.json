@@ -45,11 +45,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-hints-and-pings-the-game-gives-hint.jpg",
+      "file": "mapped/the-hints-and-pings-the-game-gives-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own hint picture for the tablet: a tool wheel with Bat, None, Tablet, Crate, Mop and Sponge, beside a tablet showing a restock list in front of stocked shelves.",
-        "zh": "游戏自带的平板提示图：左侧是写着 Bat、None、Tablet、Crate、Mop、Sponge 的工具轮盘，右侧是显示补货清单的平板与摆满商品的货架。"
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate The hints and pings the game gives.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「The hints and pings the game gives」。"
       }
     },
     {

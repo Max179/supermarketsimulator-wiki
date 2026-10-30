@@ -50,11 +50,11 @@
   ],
   "images": [
     {
-      "file": "mapped/vending-machines-machine.jpg",
+      "file": "mapped/vending-machines-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture taken from the game of the vending machine fixture this entry describes.",
-        "zh": "取自游戏的自动售货机反照率贴图。"
+        "en": "In-game picture of Book (Once Upon A Time) from Supermarket Simulator, used to illustrate Vending machines.",
+        "zh": "《Supermarket Simulator》游戏内Book (Once Upon A Time)的画面，用于说明「Vending machines」。"
       }
     },
     {

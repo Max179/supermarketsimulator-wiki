@@ -99,3 +99,33 @@ git status --porcelain                        -> (empty after the final reports 
 Integration commits (local, not pushed): `06fc38b` plan, `0b2b5fc` content/data, `df796c0` pipeline/tools/tests,
 `49033b5` Mac design port, `79601b0` build/docs/workflow, `041ba7b` reports, `15c24fe` status. The clean-tree
 gate chain above was run at `15c24fe`.
+
+
+---
+
+## Picture replacement — 2026-10-30 (sm-img, after the Mac integration)
+
+The 164 raw Unity texture exports that the build shipped as entry pictures were replaced with 100 sourced in-game
+pictures. Full record with data, commands and residual issues: [`reports/image-replacement-2026-10-30.md`](image-replacement-2026-10-30.md).
+
+- `content/assets/mapped/`: 164 raw textures deleted, 100 normalised in-game pictures (jpg, 1200x750) added; 94
+  original diagrams untouched. `content/images-manifest.json` replaced: 100 records, each with source site, source
+  page, original URL, licence, rights review, retrieval date, verdict/reviewer and sha256/bytes/dimensions.
+- Sources: 61 pictures from the Supermarket Simulator Wiki (Fandom) and 39 official Steam store screenshots; 48 unique
+  pictures, 13 shared groups (max 7 entries). Home page hero/featured are `web/assets/hero-shop.jpg` /
+  `web/assets/featured-card.jpg` (cropped official store screenshots; provenance in
+  `reports/image-pack-2026-10-30.json`). The 19 diagram-only entries keep their diagrams and are unchanged.
+- `/reference/sources.html` now generates a **Picture sources** table at build time from the manifest (file, entry,
+  source site, source-page link, rights review, retrieved date); `/disclaimer` and README credit the store page and
+  the community wikis and no longer claim the pictures were exported from a local game copy.
+- The site gate suite grew from 87 to **88** gates: every record must name `sourceName`, `sourcePage`,
+  `retrievedAt` and a rights review, every `sourcePage` must be an absolute http(s) URL, and every record must be
+  listed on the sources page.
+- Full chain re-run on this tree (all exit 0): image-sanity 100 records/0 flagged; image-coverage 100 used/0 unused;
+  build `pages=242 indexable=203`; tests 88 passed/0 failed; tsc clean; content-gate 119/0; verify-citations
+  unmatched=0; coverage 21/21 qualityFailures=0; classify 203 keep/31 noindex; preflight 11 ok/0 failed; smoke pass.
+  `reports/status.json` regenerated from this tree.
+- Known follow-up (reported to the Lead, not hidden): 46 entries still show a picture that is not their subject (the
+  pack's Fandom match attached item renders such as book covers/coins/beer bottles, and 13 reused pictures are spread
+  across categories); the 39 Steam records carry a third-party article as `sourcePage` while the files are official
+  store screenshots. Both need a swap pack from the Lead; no provenance field was edited locally.

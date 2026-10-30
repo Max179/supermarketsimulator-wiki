@@ -1,73 +1,73 @@
 {
- "id": "save-slots-and-what-each-one-holds",
- "title": "Save slots and what each one holds",
- "category": "Interface",
- "summary": "A Supermarket Simulator shop is kept in a save slot rather than in one unnamed file: the game has a panel for the slots, a record of what a single save is, and separate parts for writing into a slot and reading one back.",
- "body": [
-  "A shop is kept in a slot. The game has a panel for the slots, a record that describes a single save and entries inside it, which is why what you choose when you load is a named slot with a state of its own rather than a file whose name you have to remember.",
-  "Saving and loading are separate. One part writes into a slot and another reads one back, so the same panel can serve both without the game having to guess what you meant by opening it.",
-  "There is a manager over the whole business and an event to go with it. That is how the rest of the game is told a save has happened, instead of every other part having to keep asking whether one did.",
-  "A slot describes itself. The record for a save is what allows a list of shops to be shown before any of them is loaded, so you can see what you are about to open rather than opening it to find out.",
-  "What is inside a slot is the shop's own record. It is written by a handler and a root of its own and split into chunks, and the mess you left travels with it: dirt, dust and rubbish each have a save record of their own.",
-  "Because the slot is separate from the file, the same shop can be listed, chosen and written without the game treating a name as the save itself.",
-  "The image beside this entry is the game's own: a flash drive of the kind a shop is written to, packaged and branded by the game itself.",
-  "What this entry does not tell you: how many slots the game offers, whether one can be renamed or copied, or how large a save grows. We have not verified those numbers, so we do not print them."
- ],
- "facts": [
-  {
-   "claim": "A shop is kept in a save slot, with a panel of slots of its own.",
-   "evidence": "identifier: SaveSlotsPanel"
-  },
-  {
-   "claim": "A single save has a record of its own and sits among entries.",
-   "evidence": "identifiers: SaveInfo, SaveEntry"
-  },
-  {
-   "claim": "Writing into a slot and loading from one are separate behaviours.",
-   "evidence": "identifiers: SaveSlotsSaveBehaviour, SaveSlotsLoadBehaviour"
-  },
-  {
-   "claim": "A manager keeps the save and an event announces it.",
-   "evidence": "identifiers: SaveManager, SaveEvent"
-  },
-  {
-   "claim": "What a slot holds is written by a handler and a root, in chunks.",
-   "evidence": "identifiers: SaveFileHandler, SaveFileRoot, SaveChunkData"
-  },
-  {
-   "claim": "Dirt, dust and rubbish have save records of their own inside a slot.",
-   "evidence": "identifiers: DirtSaveData, DustingSaveData, GarbageSaveData"
-  },
-  {
-   "claim": "The game ships its own texture for the flash drive a shop is written to.",
-   "evidence": "asset name: Diskora_FlashDrive"
-  }
- ],
- "related": [
-  "how-your-shop-is-saved",
-  "the-management-tabs"
- ],
- "images": [
-  {
-   "file": "mapped/save-slots-and-what-each-one-holds-flashdrive.jpg",
-   "kind": "game",
-   "alt": {
-    "en": "The game's own texture for its save media: a retail package holding a black USB flash drive branded DISKORA FlashCore.",
-    "zh": "游戏为存档介质准备的贴图：零售包装内一支印着 DISKORA FlashCore 的黑色 U 盘。"
-   }
-  },
-  {
-   "file": "save-slots-and-what-each-one-holds.svg",
-   "kind": "diagram",
-   "alt": {
-    "en": "Diagram: a panel of save slots, a record per save, saving and loading as separate parts, and the shop's own chunked file behind them.",
-    "zh": "示意图：存档栏位面板、每个存档的记录、分开的保存与读取行为，以及其后按块写入的店铺存档文件。"
-   },
-   "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
-  }
- ],
- "sources": [
-  "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
- ],
- "imageTier": "game-image"
+  "id": "save-slots-and-what-each-one-holds",
+  "title": "Save slots and what each one holds",
+  "category": "Interface",
+  "summary": "A Supermarket Simulator shop is kept in a save slot rather than in one unnamed file: the game has a panel for the slots, a record of what a single save is, and separate parts for writing into a slot and reading one back.",
+  "body": [
+    "A shop is kept in a slot. The game has a panel for the slots, a record that describes a single save and entries inside it, which is why what you choose when you load is a named slot with a state of its own rather than a file whose name you have to remember.",
+    "Saving and loading are separate. One part writes into a slot and another reads one back, so the same panel can serve both without the game having to guess what you meant by opening it.",
+    "There is a manager over the whole business and an event to go with it. That is how the rest of the game is told a save has happened, instead of every other part having to keep asking whether one did.",
+    "A slot describes itself. The record for a save is what allows a list of shops to be shown before any of them is loaded, so you can see what you are about to open rather than opening it to find out.",
+    "What is inside a slot is the shop's own record. It is written by a handler and a root of its own and split into chunks, and the mess you left travels with it: dirt, dust and rubbish each have a save record of their own.",
+    "Because the slot is separate from the file, the same shop can be listed, chosen and written without the game treating a name as the save itself.",
+    "The image beside this entry is the game's own: a flash drive of the kind a shop is written to, packaged and branded by the game itself.",
+    "What this entry does not tell you: how many slots the game offers, whether one can be renamed or copied, or how large a save grows. We have not verified those numbers, so we do not print them."
+  ],
+  "facts": [
+    {
+      "claim": "A shop is kept in a save slot, with a panel of slots of its own.",
+      "evidence": "identifier: SaveSlotsPanel"
+    },
+    {
+      "claim": "A single save has a record of its own and sits among entries.",
+      "evidence": "identifiers: SaveInfo, SaveEntry"
+    },
+    {
+      "claim": "Writing into a slot and loading from one are separate behaviours.",
+      "evidence": "identifiers: SaveSlotsSaveBehaviour, SaveSlotsLoadBehaviour"
+    },
+    {
+      "claim": "A manager keeps the save and an event announces it.",
+      "evidence": "identifiers: SaveManager, SaveEvent"
+    },
+    {
+      "claim": "What a slot holds is written by a handler and a root, in chunks.",
+      "evidence": "identifiers: SaveFileHandler, SaveFileRoot, SaveChunkData"
+    },
+    {
+      "claim": "Dirt, dust and rubbish have save records of their own inside a slot.",
+      "evidence": "identifiers: DirtSaveData, DustingSaveData, GarbageSaveData"
+    },
+    {
+      "claim": "The game ships its own texture for the flash drive a shop is written to.",
+      "evidence": "asset name: Diskora_FlashDrive"
+    }
+  ],
+  "related": [
+    "how-your-shop-is-saved",
+    "the-management-tabs"
+  ],
+  "images": [
+    {
+      "file": "mapped/save-slots-and-what-each-one-holds-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate Save slots and what each one holds.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「Save slots and what each one holds」。"
+      }
+    },
+    {
+      "file": "save-slots-and-what-each-one-holds.svg",
+      "kind": "diagram",
+      "alt": {
+        "en": "Diagram: a panel of save slots, a record per save, saving and loading as separate parts, and the shop's own chunked file behind them.",
+        "zh": "示意图：存档栏位面板、每个存档的记录、分开的保存与读取行为，以及其后按块写入的店铺存档文件。"
+      },
+      "disclaimer": "Original diagram drawn for this site. It is not a screenshot of the game."
+    }
+  ],
+  "sources": [
+    "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
+  ],
+  "imageTier": "game-image"
 }

@@ -49,11 +49,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-display-behind-the-shelf-display.jpg",
+      "file": "mapped/the-display-behind-the-shelf-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own texture for a display: grey shelf panels and a dark sign printed ICE CREAM, laid out as the surface the unit is built from.",
-        "zh": "游戏自带的展示架贴图：灰色货架面板与印着 ICE CREAM 的深色标牌，按该设施所用表面的方式排布。"
+        "en": "In-game picture of File:File:Shelf.png from Supermarket Simulator, used to illustrate The display behind the shelf.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Shelf.png的画面，用于说明「The display behind the shelf」。"
       }
     },
     {

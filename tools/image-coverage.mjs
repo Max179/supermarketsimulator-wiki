@@ -44,9 +44,10 @@ writeFileSync(join(root, 'reports', 'image-coverage.md'),
   '- entries that are diagram-only, labelled as such on their own page: ' + diagramOnly.length + '\n' +
   '- mapped image records in the manifest: ' + (manifest.records ?? []).length + '\n' +
   '- manifest records no entry currently uses: ' + unused.length + (unused.length ? ' (' + unused.map((r) => r.file).join(', ') + ')' : '') + '\n\n' +
-  'Every image below was exported from the game on this machine and its bytes were hashed when it was written, so the\n' +
-  'record can be re-checked by rebuilding. An entry with no game image is not pretending to have one: its diagram is\n' +
-  'labelled "not a screenshot" and the entry says so at the top.\n\n' +
+  'Every picture below is an in-game picture sourced from the official store page or the game\'s community wikis, and\n' +
+  'the manifest records the page it came from, its rights review and the date it was retrieved. Its bytes and sha256 were\n' +
+  'hashed when it was written, so the record can be re-checked by rebuilding. An entry with no in-game picture is not\n' +
+  'pretending to have one: its diagram is labelled "not a screenshot" and the entry says so at the top.\n\n' +
   '| entry | picture tier | file | source bundle | asset name | size | bytes | sha256 (first 16) |\n' +
   '| --- | --- | --- | --- | --- | --- | --- | --- |\n' + rows.join('\n') + '\n\n' +
   (diagramOnly.length ? '## Entries still waiting for an image from the game\n\n' +

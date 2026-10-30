@@ -69,11 +69,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-popups-in-the-game-info.png",
+      "file": "mapped/the-popups-in-the-game-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The information icon the game draws on a popup: a blue lower-case i in a pale circle with a dark ring.",
-        "zh": "游戏在弹窗上绘制的信息图标：浅色圆底配深色圆环，中间是蓝色小写 i。"
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate The popups that interrupt you.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「The popups that interrupt you」。"
       }
     },
     {

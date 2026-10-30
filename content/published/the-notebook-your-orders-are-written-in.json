@@ -45,11 +45,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-notebook-your-orders-are-written-in-order.jpg",
+      "file": "mapped/the-notebook-your-orders-are-written-in-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The order icon the game itself draws: a brown paper bag with a folded top, the picture used for an online order.",
-        "zh": "游戏自己绘制的订单图标：一个折口棕色纸袋，用于表示线上订单。"
+        "en": "In-game picture of Soda Can 6-Pack (Zap) from Supermarket Simulator, used to illustrate The notebook your orders are written in.",
+        "zh": "《Supermarket Simulator》游戏内Soda Can 6-Pack (Zap)的画面，用于说明「The notebook your orders are written in」。"
       }
     },
     {

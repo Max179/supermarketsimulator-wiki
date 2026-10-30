@@ -48,11 +48,11 @@
   ],
   "images": [
     {
-      "file": "mapped/wholesale-offers-and-discounts-icon.jpg",
+      "file": "mapped/wholesale-offers-and-discounts-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game itself uses for a wholesale offer.",
-        "zh": "游戏本身用于批发报价的图标。"
+        "en": "In-game picture of Book (Krok) from Supermarket Simulator, used to illustrate Wholesale offers and discounts.",
+        "zh": "《Supermarket Simulator》游戏内Book (Krok)的画面，用于说明「Wholesale offers and discounts」。"
       }
     },
     {

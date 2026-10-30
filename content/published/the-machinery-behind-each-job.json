@@ -53,35 +53,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-machinery-behind-each-job-glue-gun.png",
+      "file": "mapped/the-machinery-behind-each-job-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game ships for one of the branded tools: an orange Glusim dual-temp hot glue gun on its card.",
-        "zh": "游戏为某款品牌工具提供的图标：橙色 Glusim 双温热熔胶枪，装在包装卡上。"
-      }
-    },
-    {
-      "file": "mapped/the-machinery-behind-each-job-level-set.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second branded tool icon: a Hyundai five-piece mini level set on a yellow card.",
-        "zh": "第二个品牌工具图标：现代（Hyundai）五件套迷你水平尺，装在黄色包装卡上。"
-      }
-    },
-    {
-      "file": "mapped/the-machinery-behind-each-job-tape-measure.png",
-      "kind": "game",
-      "alt": {
-        "en": "A third branded tool icon: a teal Mezurex tape measure on its card.",
-        "zh": "第三个品牌工具图标：青绿色 Mezurex 卷尺，装在包装卡上。"
-      }
-    },
-    {
-      "file": "mapped/the-machinery-behind-each-job-toolbox.png",
-      "kind": "game",
-      "alt": {
-        "en": "A fourth branded tool icon: an orange and black portable toolbox with a folding handle.",
-        "zh": "第四个品牌工具图标：橙黑双色便携工具箱，带折叠提手。"
+        "en": "In-game picture of the restocker employee at work from Supermarket Simulator, used to illustrate The machinery behind each job.",
+        "zh": "《Supermarket Simulator》游戏内the restocker employee at work的画面，用于说明「The machinery behind each job」。"
       }
     },
     {

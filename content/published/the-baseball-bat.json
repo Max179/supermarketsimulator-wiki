@@ -51,19 +51,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-baseball-bat-icon.png",
+      "file": "mapped/the-baseball-bat-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game itself draws for the baseball bat: a wooden bat with a taped grip, on a light background.",
-        "zh": "游戏自己为棒球棍绘制的图标：浅色底上一根木棒，握把缠着胶带。"
-      }
-    },
-    {
-      "file": "mapped/the-baseball-bat-court.png",
-      "kind": "game",
-      "alt": {
-        "en": "The basketball court the game ships with the hoop: white court markings on a grey-green surface.",
-        "zh": "游戏随篮架一起提供的篮球场地面：灰绿底色上的白色场地线。"
+        "en": "In-game picture of a customer standing in the street outside the shop from Supermarket Simulator, used to illustrate The baseball bat and what it is for.",
+        "zh": "《Supermarket Simulator》游戏内a customer standing in the street outside the shop的画面，用于说明「The baseball bat and what it is for」。"
       }
     }
   ],

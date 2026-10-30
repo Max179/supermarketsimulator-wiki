@@ -52,11 +52,11 @@
   ],
   "images": [
     {
-      "file": "mapped/questions-players-ask-question.png",
+      "file": "mapped/questions-players-ask-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own question picture: a dark question mark on a white rounded square.",
-        "zh": "游戏自带的问号图：白色圆角方块上的深色问号。"
+        "en": "In-game picture of the checkout counters inside the shop from Supermarket Simulator, used to illustrate Questions players ask most.",
+        "zh": "《Supermarket Simulator》游戏内the checkout counters inside the shop的画面，用于说明「Questions players ask most」。"
       }
     },
     {

@@ -40,27 +40,11 @@
   ],
   "images": [
     {
-      "file": "mapped/shoplifters-in-your-shop-thief.jpg",
+      "file": "mapped/shoplifters-in-your-shop-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game itself uses for a shoplifter: a black silhouette of a figure in a hat and sunglasses inside an orange circle.",
-        "zh": "游戏用于扒手的图标：橙色圆形内的黑色剪影——戴帽与墨镜的人形。"
-      }
-    },
-    {
-      "file": "mapped/shoplifters-in-your-shop-screen.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture of a shoplifter, a shopper in an orange tabard taking goods from a shelf while a tool wheel sits beside them.",
-        "zh": "游戏自带的小偷画面：穿橙色马甲的顾客在货架前拿商品，旁边是工作轮盘。"
-      }
-    },
-    {
-      "file": "mapped/shoplifters-in-your-shop-detector.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The albedo texture taken from the game of the shop door detector used against shoplifters.",
-        "zh": "取自游戏的店门防盗探测器反照率贴图。"
+        "en": "In-game picture of a customer standing in the street outside the shop from Supermarket Simulator, used to illustrate Shoplifters and the door detector.",
+        "zh": "《Supermarket Simulator》游戏内a customer standing in the street outside the shop的画面，用于说明「Shoplifters and the door detector」。"
       }
     },
     {

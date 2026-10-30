@@ -74,51 +74,11 @@
   ],
   "images": [
     {
-      "file": "mapped/signs-labels-and-organising-categorysign.jpg",
+      "file": "mapped/signs-labels-and-organising-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the category sign the entry describes.",
-        "zh": "本条描述的分类标牌反照率贴图。"
-      }
-    },
-    {
-      "file": "mapped/signs-labels-and-organising-produce-sign.png",
-      "kind": "game",
-      "alt": {
-        "en": "The produce sign the game itself draws for the aisle: an apple, an avocado and a carrot.",
-        "zh": "游戏自己为农产品货架画的标牌：苹果、牛油果与胡萝卜。"
-      }
-    },
-    {
-      "file": "mapped/signs-labels-and-organising-meat-sign.png",
-      "kind": "game",
-      "alt": {
-        "en": "The meat sign the game itself draws for the aisle: a cut of meat with a bone.",
-        "zh": "游戏自己为肉类货架画的标牌：一块带骨的肉。"
-      }
-    },
-    {
-      "file": "mapped/signs-labels-and-organising-frozen-sign.png",
-      "kind": "game",
-      "alt": {
-        "en": "The frozen sign the game itself draws for the aisle: a blue frozen bag with a snowflake beside a pizza box.",
-        "zh": "游戏自己为冷冻货架画的标牌：印着雪花的蓝色冷冻袋，旁边是一只披萨盒。"
-      }
-    },
-    {
-      "file": "mapped/signs-labels-and-organising-wine-sign.png",
-      "kind": "game",
-      "alt": {
-        "en": "The wine sign the game itself draws for the aisle: a bottle and a glass.",
-        "zh": "游戏自己为酒类货架画的标牌：一只酒瓶与一只酒杯。"
-      }
-    },
-    {
-      "file": "mapped/signs-labels-and-organising-toilet-sign.png",
-      "kind": "game",
-      "alt": {
-        "en": "One of the game's own signs: a roll of toilet paper on its holder, drawn for the toilet.",
-        "zh": "游戏自带的标牌之一：卷纸架上的卫生纸，为卫生间而画。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle seen from above the trolley, used to illustrate Signs, labels and organising the shop.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle seen from above the trolley，用于说明「Signs, labels and organising the shop」。"
       }
     },
     {

@@ -43,11 +43,11 @@
   ],
   "images": [
     {
-      "file": "mapped/repaying-a-loan-payment-by-payment-card.jpg",
+      "file": "mapped/repaying-a-loan-payment-by-payment-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The credit card artwork the game itself uses for borrowing.",
-        "zh": "游戏本身用于借贷的信用卡图案。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate Repaying a loan, payment by payment.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「Repaying a loan, payment by payment」。"
       }
     },
     {

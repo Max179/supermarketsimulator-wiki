@@ -54,19 +54,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-till-and-its-screens-take-money-back.jpg",
+      "file": "mapped/the-till-and-its-screens-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own till screen for taking money back: an open cash drawer with notes and coins under a monitor reading Received, Total, Change and Giving.",
-        "zh": "游戏自带的找零界面图：打开的收银抽屉内摆放纸币与硬币，上方屏幕显示 Received、Total、Change 与 Giving。"
-      }
-    },
-    {
-      "file": "mapped/the-till-and-its-monitor-screen.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own picture of the checkout register's monitor.",
-        "zh": "游戏自带的收银机显示器贴图。"
+        "en": "In-game picture from Supermarket Simulator showing customers paying at the checkout counters, used to illustrate The till and its screens.",
+        "zh": "《Supermarket Simulator》游戏内画面：customers paying at the checkout counters，用于说明「The till and its screens」。"
       }
     }
   ],

@@ -56,11 +56,11 @@
   ],
   "images": [
     {
-      "file": "mapped/who-comes-into-the-shop-cloth.jpg",
+      "file": "mapped/who-comes-into-the-shop-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The cloth texture the game ships for one of the customer characters it generates: the shirts and trousers it draws them in.",
-        "zh": "游戏为其中一位自动生成的顾客提供的布料贴图：其衬衫与裤装。"
+        "en": "In-game picture from Supermarket Simulator showing a customer with their licence details, used to illustrate Who comes into the shop.",
+        "zh": "《Supermarket Simulator》游戏内画面：a customer with their licence details，用于说明「Who comes into the shop」。"
       }
     },
     {

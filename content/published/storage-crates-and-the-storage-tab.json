@@ -43,11 +43,11 @@
   ],
   "images": [
     {
-      "file": "mapped/storage-crates-and-the-storage-tab-box.png",
+      "file": "mapped/storage-crates-and-the-storage-tab-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "An albedo texture taken from the game of the cardboard box used for stock.",
-        "zh": "取自游戏用于存货的纸箱反照率贴图。"
+        "en": "In-game picture of the back room racks filled with stock from Supermarket Simulator, used to illustrate Storage, crates and the storage tab.",
+        "zh": "《Supermarket Simulator》游戏内the back room racks filled with stock的画面，用于说明「Storage, crates and the storage tab」。"
       }
     },
     {

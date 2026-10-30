@@ -49,11 +49,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-mode-you-place-things-in-grid.png",
+      "file": "mapped/the-mode-you-place-things-in-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The grid the placing mode draws: white lines crossing on a dark field, one square to each place.",
-        "zh": "放置模式绘制的网格：深色底上的白色格线，每一格对应一个位置。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle seen from above the trolley, used to illustrate The mode you place things in.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle seen from above the trolley，用于说明「The mode you place things in」。"
       }
     },
     {

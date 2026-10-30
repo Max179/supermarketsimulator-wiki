@@ -55,19 +55,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-shop-windows-and-the-glass-atlas.png",
+      "file": "mapped/the-shop-windows-and-the-glass-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The window atlas the game ships: curtained, blinded and plain glass panes in a grid.",
-        "zh": "游戏自带的窗户图集：网格排布的窗帘窗、百叶窗与普通玻璃。"
-      }
-    },
-    {
-      "file": "mapped/the-shop-windows-and-the-glass-shards.png",
-      "kind": "game",
-      "alt": {
-        "en": "The strip of white shard shapes the game cuts a broken window into, drawn on a transparent field.",
-        "zh": "游戏把碎窗切成的一列白色碎玻璃形状，绘在透明底上。"
+        "en": "In-game picture of Cleaner (Touprop) from Supermarket Simulator, used to illustrate The shop windows and the glass that breaks.",
+        "zh": "《Supermarket Simulator》游戏内Cleaner (Touprop)的画面，用于说明「The shop windows and the glass that breaks」。"
       }
     }
   ],

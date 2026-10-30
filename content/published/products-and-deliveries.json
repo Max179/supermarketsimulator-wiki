@@ -66,19 +66,11 @@
   ],
   "images": [
     {
-      "file": "mapped/products-and-deliveries-egg.png",
+      "file": "mapped/products-and-deliveries-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The colour texture the game ships for an egg product: egg cartons with their labels.",
-        "zh": "游戏为鸡蛋商品提供的颜色贴图：带标签的鸡蛋盒。"
-      }
-    },
-    {
-      "file": "mapped/products-and-deliveries-sauce.png",
-      "kind": "game",
-      "alt": {
-        "en": "The colour texture the game ships for sauce products: the label artwork for ketchup, mayonnaise and hot sauce.",
-        "zh": "游戏为酱料商品提供的颜色贴图：番茄酱、蛋黄酱与辣酱的标签图案。"
+        "en": "In-game picture of Book (The Surprise) from Supermarket Simulator, used to illustrate Products and what arrives in a delivery.",
+        "zh": "《Supermarket Simulator》游戏内Book (The Surprise)的画面，用于说明「Products and what arrives in a delivery」。"
       }
     }
   ],

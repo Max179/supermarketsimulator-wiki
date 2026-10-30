@@ -58,11 +58,11 @@
   ],
   "images": [
     {
-      "file": "mapped/inside-a-vehicle-dashboard.png",
+      "file": "mapped/inside-a-vehicle-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The dashboard warning icons the game ships: check engine, anti-lock brakes, brake warning and skidding.",
-        "zh": "游戏自带的仪表盘警示图标：发动机、防抱死、制动警示与打滑。"
+        "en": "In-game picture of the storefront of the shop on the first day from Supermarket Simulator, used to illustrate Inside a vehicle: dashboard, steering and fuel.",
+        "zh": "《Supermarket Simulator》游戏内the storefront of the shop on the first day的画面，用于说明「Inside a vehicle: dashboard, steering and fuel」。"
       }
     },
     {

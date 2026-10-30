@@ -60,51 +60,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-menu-you-pause-into-menu.jpg",
+      "file": "mapped/the-menu-you-pause-into-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The menu icon the game itself draws: a grid of four rounded white squares.",
-        "zh": "游戏自己画的菜单图标：四个圆角白色方块组成的格子。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-you-pause-into-back.png",
-      "kind": "game",
-      "alt": {
-        "en": "The back pictogram from the game's own menu set: a white triangle pointing left.",
-        "zh": "游戏菜单自带的返回图标：指向左侧的白色三角。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-you-pause-into-wifi.png",
-      "kind": "game",
-      "alt": {
-        "en": "The signal pictogram from the same set: an arc with a dot beneath it.",
-        "zh": "同一套图标中的信号图标：一段弧线，下方一个圆点。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-you-pause-into-search.png",
-      "kind": "game",
-      "alt": {
-        "en": "The search mark from the same set, an outlined magnifying glass on transparency.",
-        "zh": "同一套图标中的搜索标记：描边的放大镜，背景透明。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-you-pause-into-next.png",
-      "kind": "game",
-      "alt": {
-        "en": "The next pictogram from the game's own menu set: a double chevron pointing right.",
-        "zh": "游戏菜单自带的「下一个」图标：向右的双箭头。"
-      }
-    },
-    {
-      "file": "mapped/the-menu-you-pause-into-previous.png",
-      "kind": "game",
-      "alt": {
-        "en": "The previous pictogram from the same set: the same double chevron pointing left.",
-        "zh": "同一套图标中的「上一个」图标：同款双箭头，方向向左。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate The menu you pause into.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「The menu you pause into」。"
       }
     },
     {

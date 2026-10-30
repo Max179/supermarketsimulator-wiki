@@ -67,19 +67,11 @@
   ],
   "images": [
     {
-      "file": "mapped/how-the-game-shows-what-you-can-use-crosshair.jpg",
+      "file": "mapped/how-the-game-shows-what-you-can-use-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon sheet the game itself uses for its crosshair and interaction prompts.",
-        "zh": "游戏本身用于准星与交互提示的图标图集。"
-      }
-    },
-    {
-      "file": "mapped/how-the-game-shows-what-you-can-use-mop.png",
-      "kind": "game",
-      "alt": {
-        "en": "One of the tool icons the game ships for something you can use: a blue flat mop with a long handle.",
-        "zh": "游戏为可用工具提供的图标之一：蓝色平板拖把，配长柄。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate How the game shows what you can use.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「How the game shows what you can use」。"
       }
     },
     {

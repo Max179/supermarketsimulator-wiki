@@ -57,11 +57,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-day-cycle-sun.png",
+      "file": "mapped/the-day-cycle-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The sun the game draws for its day: a warm bright flare with rays reaching out from it.",
-        "zh": "游戏为白天绘制的太阳：暖白色光斑，周围射出光芒。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle stocked with products, used to illustrate The day cycle and the clock.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle stocked with products，用于说明「The day cycle and the clock」。"
       }
     },
     {

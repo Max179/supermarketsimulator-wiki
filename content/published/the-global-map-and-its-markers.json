@@ -48,11 +48,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-global-map-and-its-markers-pin.jpg",
+      "file": "mapped/the-global-map-and-its-markers-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "One of the map icons the game itself uses on its map.",
-        "zh": "游戏本身在地图上使用的图标之一。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate The map and its markers.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「The map and its markers」。"
       }
     },
     {

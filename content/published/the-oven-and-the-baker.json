@@ -62,27 +62,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-oven-and-the-baker-oven.jpg",
+      "file": "mapped/the-oven-and-the-baker-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own picture of the bakery oven the worker loads.",
-        "zh": "游戏自带的烘焙烤箱图，员工用它来烤制。"
-      }
-    },
-    {
-      "file": "mapped/the-oven-and-the-baker-frozen-bread.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The frozen bread the bakery starts from before it goes into the oven.",
-        "zh": "烘焙起始用的冷冻面包，进烤箱之前的样子。"
-      }
-    },
-    {
-      "file": "mapped/the-oven-and-the-baker-display.png",
-      "kind": "game",
-      "alt": {
-        "en": "The double bakery display the game ships: two wooden racks of four tilted trays each, with a drawer under them.",
-        "zh": "游戏自带的双联烘焙展示架：两组木质货架、每层四只倾斜托盘，下面各有一层抽屉。"
+        "en": "In-game picture of File:File:Checkout Counter.png from Supermarket Simulator, used to illustrate The oven and the worker who runs it.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Checkout Counter.png的画面，用于说明「The oven and the worker who runs it」。"
       }
     }
   ],

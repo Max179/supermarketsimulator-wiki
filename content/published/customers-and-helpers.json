@@ -46,11 +46,11 @@
   ],
   "images": [
     {
-      "file": "mapped/customers-and-helpers-customer.jpg",
+      "file": "mapped/customers-and-helpers-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "A diffuse texture belonging to one of the game's customer characters.",
-        "zh": "游戏顾客角色之一所用的一张漫反射贴图。"
+        "en": "In-game picture of a customer standing in the street outside the shop from Supermarket Simulator, used to illustrate Customers and helpers.",
+        "zh": "《Supermarket Simulator》游戏内a customer standing in the street outside the shop的画面，用于说明「Customers and helpers」。"
       }
     },
     {

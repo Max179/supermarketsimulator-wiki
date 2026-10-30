@@ -61,11 +61,11 @@
   ],
   "images": [
     {
-      "file": "mapped/bills-loans-and-growth-screens-bill.jpg",
+      "file": "mapped/bills-loans-and-growth-screens-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The banknote the game ships: a ten-dollar Federal Reserve note, printed with a portrait, seals and the words TEN DOLLARS.",
-        "zh": "游戏自带的纸币贴图：一张十美元联邦储备券，印有人像、印章与 TEN DOLLARS 字样。"
+        "en": "In-game picture from Supermarket Simulator showing the register screen showing the money tabs, used to illustrate Bills, loans and growth screens.",
+        "zh": "《Supermarket Simulator》游戏内画面：the register screen showing the money tabs，用于说明「Bills, loans and growth screens」。"
       }
     },
     {

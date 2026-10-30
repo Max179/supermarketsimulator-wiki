@@ -22,12 +22,16 @@ export const SITE = {
   tagline: 'Run a better shop: stock shelves, price products, serve customers and grow day by day',
   searchPlaceholder: 'Search products, shelves, customers or guides',
   versionBadge: 'Supermarket Simulator · read from a local copy',
-  // Pictures taken from the game, used on the home page. Byte-identical to the Mac design commits' imagery
-  // (web/assets/hero-checkout.png and featured-restocking.png); the mapped copy is the single provenance record.
-  heroImage: 'mapped/checkout-and-cashiers-selfcheckout.png',
-  heroAlt: 'The game\'s own checkout and self-checkout area.',
-  featuredImage: 'mapped/restocking-shelves-shelf.png',
-  featuredAlt: 'The game\'s own shelf art used for restocking.',
+  // Pictures that show the game are in-game pictures sourced from the official store page and the game's community
+  // wikis; content/images-manifest.json records each one's source page and rights review, and /reference/sources.html
+  // credits them. The home-page hero and featured pictures are the pack-supplied files in web/assets, copied to the
+  // root of the build; their provenance record is reports/image-pack-2026-10-30.json.
+  heroImage: 'hero-shop.jpg',
+  heroAlt: 'The shop floor of Supermarket Simulator, from the game\'s official store screenshots.',
+  heroCaption: 'In-game shop view · official store screenshot',
+  featuredImage: 'featured-card.jpg',
+  featuredAlt: 'Customers paying at the checkout counters in Supermarket Simulator.',
+  featuredCaption: 'In-game play · official store screenshot',
   // A curated starting set for the home page: entries a new player is most likely to need, each with a picture
   // taken from the game. Not a popularity ranking - there is no data for that - and never a picture-less subject.
   featured: ['products-and-deliveries', 'restocking-shelves', 'checkout-and-cashiers', 'customers-and-helpers',
@@ -174,6 +178,40 @@ export function build(inventoryPath, outDir) {
   // drops the bracket; the identifiers stay in the content file and can be read in the evidence layer.
   const whyOf = (because) => String(because ?? '').replace(/\s*\([^()]*\)\s*$/, '').trim();
 
+  // Pictures: content/images-manifest.json is the record of where each in-game picture came from. This table is
+  // generated from it at build time, so a picture cannot reach a page without its source page and rights review
+  // being listed here. A record that has not been sourced yet says "not recorded" rather than guessing an origin.
+  const pictureSourcesHtml = () => {
+    const records = manifest.records ?? [];
+    const missing = '<span class="dim">not recorded</span>';
+    const rows = records.map((r) => {
+      const page = String(r.sourcePage ?? '');
+      const pageCell = /^https?:\/\//.test(page)
+        ? '<a href="' + esc(page) + '" rel="noopener">' + esc(page.replace(/^https?:\/\//, '')) + '</a>'
+        : missing;
+      const owner = byId.get(r.entity);
+      const subject = owner
+        ? '<a href="' + entryHref(owner.id) + '">' + esc(owner.title) + '</a>'
+        : (r.entity ? '<span class="mono">' + esc(String(r.entity)) + '</span>' : missing);
+      return '<tr><td class="mono">' + esc(String(r.file)) + '</td><td>' + subject + '</td><td>' +
+        (r.sourceName ? esc(String(r.sourceName)) : missing) + '</td><td>' + pageCell + '</td><td>' +
+        (r.rightsReview ? esc(String(r.rightsReview)) : r.license ? esc(String(r.license)) : missing) +
+        '</td><td>' + (r.retrievedAt ? esc(String(r.retrievedAt)) : missing) + '</td></tr>';
+    }).join('');
+    return '<p>Every picture on this site that shows the game is an in-game picture: an official screenshot from ' +
+      'the game\'s Steam store page, or a file shared on the game\'s community wikis (Fandom and wiki.gg). Each is ' +
+      'listed below with the page it came from, the rights review it passed before it was used, and the date it was ' +
+      'retrieved. A picture is used only to identify the subject an entry describes, is never presented as official ' +
+      'artwork, and stays the property of the developer or the person who uploaded it. Diagrams are drawn for this ' +
+      'site and are labelled as diagrams, never as screenshots.</p>' +
+      '<p class="dim small">' + records.length + ' picture records. The manifest also records each file\'s ' +
+      'dimensions, bytes and sha256, so the copy served here can be re-checked against its record. The two home-page ' +
+      'pictures (hero-shop.jpg and featured-card.jpg) are cropped official store screenshots; their source page, ' +
+      'original URL, rights review and retrieval date are recorded in reports/image-pack-2026-10-30.json.</p>' +
+      '<table class="picture-sources"><thead><tr><th>File</th><th>Used by</th><th>Source</th><th>Source page</th>' +
+      '<th>Rights review</th><th>Retrieved</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  };
+
   const card = (e) => {
     const img = imgOf(e);
     return '<a class="card" href="' + entryHref(e.id) + '">' +
@@ -181,7 +219,7 @@ export function build(inventoryPath, outDir) {
       '<span class="chip">' + esc(groupOf(e.category).name) + '</span>' +
       '<strong>' + esc(e.title) + '</strong><span class="dim">' + esc(oneLine(e)) + '</span></a>';
   };
-  const noteRow = (e) => '<li><a href="/reference/notes/' + esc(e.id) + '.html">' + esc(e.title) + '</a> <span class="dim small">— note, no confirmed game picture yet</span></li>';
+  const noteRow = (e) => '<li><a href="/reference/notes/' + esc(e.id) + '.html">' + esc(e.title) + '</a> <span class="dim small">— note, no confirmed in-game picture yet</span></li>';
 
   // ---- articles (player guides) -------------------------------------------------------------
   let articles = [];
@@ -241,18 +279,18 @@ export function build(inventoryPath, outDir) {
     '<p class="lead">' + esc(SITE.tagline) + '. Start with a first-day route, then jump into products, shelves, checkout, staff and upgrades. Every entry says what the game itself establishes, and nothing here is estimated.</p>\n' +
     '<form class="heroSearch" action="/search.html" method="get" role="search"><input type="search" name="q" placeholder="' + esc(SITE.searchPlaceholder) + '" aria-label="Search this site"><button type="submit">Search</button></form>\n' +
     '<p class="ctas"><a class="btn primary" href="/entries/">Start here</a> <a class="btn" href="/entities/">Browse entities</a> <a class="btn" href="/articles/">Read the guides</a></p>\n' +
-    '</div>\n<figure class="heroArt"><img src="/' + esc(SITE.heroImage) + '" alt="' + esc(SITE.heroAlt) + '" width="800" height="500"><figcaption class="dim small">In-game checkout view · picture taken from the game itself.</figcaption></figure>\n</section>\n' +
+    '</div>\n<figure class="heroArt"><img src="/' + esc(SITE.heroImage) + '" alt="' + esc(SITE.heroAlt) + '" width="800" height="500"><figcaption class="dim small">' + esc(SITE.heroCaption) + '</figcaption></figure>\n</section>\n' +
     shiftBoard +
     '<section class="block">\n<h2>What this game is</h2>\n<p>' + esc(SITE.gameName) + ' is a shop simulator: you order stock, fill shelves, set prices, serve customers and grow the shop. This site covers the parts of it you actually deal with — ' +
     'products, shelves, customers, tills, staff, layout, money and the routine of a day — and it documents one build at a time.</p>\n' +
     '<p class="dim small">Documented build: ' + esc(inv.version ?? 'unknown') + '. Where the game changes between builds, the entry says which one it was checked against.</p>\n</section>\n' +
-    '<section class="block">\n<h2>Popular entities</h2>\n<p class="dim">A curated starting set, each with a picture taken from the game.</p>\n<div class="grid">' + featuredList.map(card).join('') + '</div>\n<p><a href="/entities/">All entities by part of the shop &rarr;</a></p>\n</section>\n' +
+    '<section class="block">\n<h2>Popular entities</h2>\n<p class="dim">A curated starting set, each with an in-game picture credited with the page it came from.</p>\n<div class="grid">' + featuredList.map(card).join('') + '</div>\n<p><a href="/entities/">All entities by part of the shop &rarr;</a></p>\n</section>\n' +
     '<section class="block">\n<h2>What are you trying to do?</h2>\n<p class="dim">Choose the job in front of you; each card opens the pages that answer it.</p>\n<div class="task-grid">' +
     shiftTasks.map(([taskTitle, taskText, taskHref], i) => '<a class="task" href="' + taskHref + '"><span class="task-no">0' + (i + 1) + '</span><strong>' + esc(taskTitle) + '</strong><span>' + esc(taskText) + '</span><i>&rarr;</i></a>').join('') +
     '</div>\n</section>\n' +
     '<section class="block split">\n<div><p class="eyebrow">Browse the archive</p><h2>Every part of your shop, in plain language.</h2>' +
     '<p class="dim">Products, storage, customers, checkout, staff, money, layout and upgrades are grouped around the jobs you do in a shift.</p>' +
-    '<figure class="feature-card"><img loading="lazy" src="/' + esc(SITE.featuredImage) + '" alt="' + esc(SITE.featuredAlt) + '" width="520" height="180"><figcaption>Featured: restocking shelves</figcaption></figure></div>' +
+    '<figure class="feature-card"><img loading="lazy" src="/' + esc(SITE.featuredImage) + '" alt="' + esc(SITE.featuredAlt) + '" width="520" height="180"><figcaption>' + esc(SITE.featuredCaption) + '</figcaption></figure></div>' +
     '<div class="archive-list">' +
     '<a href="/entities/products.html"><b>Products &amp; pricing</b><span>What to order and put on the shelf</span></a>' +
     '<a href="/entities/checkout.html"><b>Customers &amp; checkout</b><span>Queues, payment and the till</span></a>' +
@@ -266,7 +304,7 @@ export function build(inventoryPath, outDir) {
       : '<p class="dim">No update notes yet.</p>') +
     '\n<p><a href="/updates.html">All updates &rarr;</a></p>\n</section>\n' +
     '<section class="block">\n<h2>Where the pictures and facts come from</h2>\n' +
-    '<p>Pictures are taken from a local copy of the game itself, each one recorded with the asset it came from; a diagram drawn for this site is always labelled as a diagram and is never passed off as a screenshot. ' +
+    '<p>Pictures on this site come from the game: official screenshots from the game\'s Steam store page and files shared by the community on the game\'s wiki sites. Every one is credited with the page it came from, and each is used only to identify the subject an entry describes; a diagram drawn for this site is always labelled as a diagram and is never passed off as a screenshot. ' +
     'Facts are read from the game\'s own files, not from a wiki or a forum. The build this site documents is <strong>' + esc(inv.version ?? 'unknown') + '</strong>.</p>\n' +
     '<p class="dim small">The raw identifiers, tables and extraction notes are kept in a technical reference, reachable from the footer of every page and kept out of search engines on purpose.</p>\n' +
     '<div class="note-band"><p class="eyebrow">How this wiki works</p><p>Player pages stay focused on decisions in the shop. The evidence and extraction record is kept in Reference, so you can read an answer without wading through implementation details.</p></div>\n</section>\n' +
@@ -281,11 +319,11 @@ export function build(inventoryPath, outDir) {
     '<h2>4. Grow the shop</h2><p>Levels, licences and fittings: <a href="/entities/upgrades.html">upgrades</a> and <a href="/entities/layout.html">layout</a>.</p>\n' +
     '<h2>5. Hand work over</h2><p>Staff, objectives and the daily routine: <a href="/entities/staff.html">staff</a> and <a href="/entities/running-the-shop.html">running the shop</a>.</p>\n' +
     '<h2>How to use this site</h2><p>Use the search box, browse <a href="/entities/">entities by part of the shop</a>, or read a <a href="/articles/">guide</a> that walks through one job from start to finish. ' +
-    'Pictures come from the game; a diagram is always labelled as a diagram.</p>');
+    'Pictures that show the game are in-game pictures credited with their source page; a diagram is always labelled as a diagram.</p>');
 
   // ---- entity hub and category pages --------------------------------------------------------
-  indexable('entities/index.html', 'Entities', 'Every part of the shop this site documents, with pictures taken from the game.',
-    '<h1>Entities</h1><p class="lead">Browse by what you are dealing with in the shop. Each entry says what the game itself establishes, and carries a picture taken from the game.</p>\n' +
+  indexable('entities/index.html', 'Entities', 'Every part of the shop this site documents, with in-game pictures.',
+    '<h1>Entities</h1><p class="lead">Browse by what you are dealing with in the shop. Each entry says what the game itself establishes, and carries an in-game picture credited with the page it came from.</p>\n' +
     '<div class="grid">' + CATEGORIES.map((c) => {
       const list = entities.filter((e) => groupOf(e.category).key === c.key);
       const cover = list.map(imgOf).find(Boolean);
@@ -295,7 +333,7 @@ export function build(inventoryPath, outDir) {
         '<strong>' + esc(c.name) + '</strong><span class="dim">' + esc(c.blurb) + '</span>' +
         '<span class="chip">' + list.length + ' entries</span></a>';
     }).join('') + '</div>\n' +
-    '<p class="dim small">' + notes.length + ' further subjects exist only as notes so far, because no picture has been confirmed from the game for them. They are listed on their category page and kept out of search engines.</p>');
+    '<p class="dim small">' + notes.length + ' further subjects exist only as notes so far, because no in-game picture has been confirmed for them. They are listed on their category page and kept out of search engines.</p>');
   for (const c of CATEGORIES) {
     const list = entities.filter((e) => groupOf(e.category).key === c.key);
     const onlyNotes = notes.filter((e) => groupOf(e.category).key === c.key);
@@ -303,7 +341,7 @@ export function build(inventoryPath, outDir) {
     const cover = list.map(imgOf).find(Boolean);
     indexable('entities/' + c.key + '.html', c.name + ' in ' + SITE.gameName, c.blurb + ' ' + list.map((e) => e.title).join(', ') + '.',
       '<h1>' + esc(c.name) + '</h1><p class="lead">' + esc(c.blurb) + '</p>\n' +
-      (cover ? '<figure class="banner"><img src="/' + esc(cover.file) + '" alt="' + esc(cover.alt?.en ?? '') + '" width="900" height="380"><figcaption class="dim small">Picture taken from the game itself.</figcaption></figure>' : '') +
+      (cover ? '<figure class="banner"><img src="/' + esc(cover.file) + '" alt="' + esc(cover.alt?.en ?? '') + '" width="900" height="380"><figcaption class="dim small">In-game picture, credited with its source page.</figcaption></figure>' : '') +
       '<div class="filter"><label for="f">Filter ' + esc(c.name.toLowerCase()) + '</label> <input id="f" type="search" placeholder="Type a word" autocomplete="off"> <span id="count" class="dim small"></span></div>\n' +
       '<div class="grid" id="cards">' + list.map(card).join('') + '</div>\n' +
       (onlyNotes.length ? '<section class="block notes"><h2>Notes without a confirmed picture</h2><p class="dim">These subjects rest on the same verified facts, but no picture from the game has been confirmed for them yet, so they are notes rather than finished entries.</p><ul>' + onlyNotes.map(noteRow).join('') + '</ul></section>' : '') +
@@ -319,12 +357,12 @@ export function build(inventoryPath, outDir) {
     const related = (e.related ?? []).filter((id) => byId.has(id));
     indexable('entries/' + e.id + '.html', e.title, e.summary,
       '<article class="entry">\n' +
-      (img ? '<figure class="heroimg"><img src="/' + esc(img.file) + '" alt="' + esc(img.alt?.en ?? '') + '" title="' + esc(img.alt?.zh ?? '') + '" width="900" height="520"><figcaption class="dim small">Picture taken from the game to identify this item; it remains the property of the developer.</figcaption></figure>' : '') +
+      (img ? '<figure class="heroimg"><img src="/' + esc(img.file) + '" alt="' + esc(img.alt?.en ?? '') + '" title="' + esc(img.alt?.zh ?? '') + '" width="900" height="520"><figcaption class="dim small">Picture taken from the game to identify this item; it remains the property of the developer or the person who uploaded it, and is credited in the picture sources.</figcaption></figure>' : '') +
       '<p class="kicker">' + esc(groupOf(e.category).name) + ' · ' + esc(SITE.versionBadge) + '</p>\n<h1>' + esc(e.title) + '</h1>\n' +
       '<p class="oneline">' + esc(oneLine(e)) + '</p>\n<p class="lead">' + esc(e.summary) + '</p>\n' +
       '<aside class="facts"><h2>At a glance</h2><dl>' +
       '<dt>Part of the shop</dt><dd><a href="/entities/' + groupOf(e.category).key + '.html">' + esc(groupOf(e.category).name) + '</a></dd>' +
-      '<dt>Picture</dt><dd>taken from the game itself</dd>' +
+      '<dt>Picture</dt><dd>in-game picture, credited in the picture sources</dd>' +
       '<dt>Documented build</dt><dd>' + esc(inv.version ?? 'unknown') + '</dd>' +
       '<dt>Related entries</dt><dd>' + related.length + '</dd>' +
       '</dl></aside>\n' +
@@ -341,7 +379,7 @@ export function build(inventoryPath, outDir) {
     '<li><strong>Follow the <a href="/guide.html">game guide</a></strong> through your first days.</li>' +
     '<li><strong>Read a <a href="/articles/">guide</a></strong> that walks through one job from start to finish.</li>' +
     '<li><strong>Search</strong> from the box at the top of any page.</li></ul>\n' +
-    '<h2>What the pictures are</h2><p>Where a picture could be taken from the game, it is; each one is labelled on the entry. Where no picture has been confirmed, the subject is kept as a note rather than dressed up as a finished entry.</p>\n' +
+    '<h2>What the pictures are</h2><p>Pictures that show the game are in-game pictures: official screenshots from the store page and files shared on the community wikis, each credited with the page it came from and used only to identify the subject. A diagram is labelled as a diagram. Where no in-game picture has been confirmed, the subject is kept as a note rather than dressed up as a finished entry.</p>\n' +
     '<h2>What we will never do</h2><p>We do not print a number we could not verify, we do not fill a gap with a guess, and a diagram is always labelled as a diagram.</p>');
 
   // ---- notes for subjects without a confirmed picture ----------------------------------------
@@ -455,7 +493,8 @@ export function build(inventoryPath, outDir) {
     '<p>Class names are <strong>identifier</strong>-verified for ' + (all.filter((c) => (c.nameConfidence ?? 'identifier') === 'identifier').length) +
     ' classes; the remaining ' + (all.filter((c) => (c.nameConfidence ?? 'identifier') !== 'identifier').length) +
     ' are compiler-generated names kept verbatim and marked as such.</p>' +
-    '<h2>Values</h2><p>' + esc(inv.provenance?.values ?? '') + '</p>');
+    '<h2>Values</h2><p>' + esc(inv.provenance?.values ?? '') + '</p>' +
+    '<h2>Picture sources</h2>' + pictureSourcesHtml());
 
   reference('reference/index.html', 'Technical reference', 'Identifiers, tables and provenance for modders. Not indexed.',
     '<h1>Technical reference</h1><p class="lead">This section is for modders and for anyone checking our data. It is deliberately ' +
@@ -485,7 +524,13 @@ export function build(inventoryPath, outDir) {
   indexable('disclaimer.html', 'Disclaimer', 'This site is unofficial and is not affiliated with the game or its publisher.',
     '<h1>Disclaimer</h1><p>This site is unofficial and is not affiliated with, endorsed by or sponsored by the game\'s ' +
     'developer or publisher. Game names and trademarks belong to their owners.</p>' +
-    '<p>Some images on this site are taken from the game itself, only to identify the item they belong to; those images remain the property of the developer. Diagrams drawn for this site are labelled as diagrams and are not screenshots.</p>' +
+    '<p>Pictures on this site that show the game are in-game pictures: official screenshots published on the game\'s ' +
+    'Steam store page, and images shared by the community on the game\'s wiki sites (Fandom and wiki.gg). Each one is ' +
+    'credited with the page it came from on the <a href="/reference/sources.html">picture sources</a> list, is used only ' +
+    'to identify the subject an entry describes, and remains the property of the game\'s developer or the person who ' +
+    'uploaded it. Diagrams drawn for this site are labelled as diagrams and are not screenshots. Pictures are used in ' +
+    'good faith to describe the game; if you hold rights in one and want it removed, use the ' +
+    '<a href="/contact.html">contact page</a>.</p>' +
     '<p>Data is extracted from local game files for reference and interoperability purposes. It may be incomplete or ' +
     'out of date relative to a newer game version; the version extracted is stated on the ' +
     '<a href="/reference/sources.html">sources page</a>.</p>');
@@ -619,6 +664,7 @@ export function build(inventoryPath, outDir) {
     'footer.foot{border-top:1px solid var(--line);padding:1.4rem 0 2.4rem;margin-top:2rem}',
     'footer.foot p{margin:.35rem 0}',
     'table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid var(--line);padding:.3rem .5rem;text-align:left}',
+    '.picture-sources{font-size:.9rem}.picture-sources td{vertical-align:top}.picture-sources td.mono{word-break:break-word;max-width:17rem}',
     '@media(max-width:800px){.bar{padding:12px 16px;align-items:flex-start;flex-direction:column;gap:10px}main{padding:0 16px 48px}.hero{grid-template-columns:1fr;padding:40px 0;gap:28px}.heroArt{min-height:260px}.heroArt img{height:260px}.task-grid{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr;gap:24px}.archive-list span{display:none}.hsearch{width:100%}.hsearch input{flex:1 1 auto;min-width:0}}',
     '@media(max-width:620px){.shift-heading{display:block}.shift-status{display:inline-block;margin-top:12px}.shift-tabs{overflow:auto}.shift-tab{white-space:nowrap;padding-inline:10px}.shift-checklist{align-items:stretch}.shift-checklist label{flex:1 1 100%}.check-count{margin-left:0}}',
     '@media(max-width:460px){.task-grid{grid-template-columns:1fr}}',

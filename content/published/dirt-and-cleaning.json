@@ -56,11 +56,11 @@
   ],
   "images": [
     {
-      "file": "mapped/dirt-and-cleaning-dirt.jpg",
+      "file": "mapped/dirt-and-cleaning-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of the dirt the game lays down in the shop.",
-        "zh": "游戏在店铺内生成的污渍反照率贴图。"
+        "en": "In-game picture of Cleaner (Wesh) from Supermarket Simulator, used to illustrate Dirt, mess and cleaning.",
+        "zh": "《Supermarket Simulator》游戏内Cleaner (Wesh)的画面，用于说明「Dirt, mess and cleaning」。"
       }
     },
     {

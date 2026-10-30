@@ -48,19 +48,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-warnings-the-game-shows-cleaning.jpg",
+      "file": "mapped/the-warnings-the-game-shows-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own warning screen about a dirty shop: the tool wheel with the bat, sponge, crate, mop and tablet, beside a dirty floor.",
-        "zh": "游戏自带的脏乱提醒画面：工具轮盘（球棒、海绵、货筐、拖把、平板）与脏地板。"
-      }
-    },
-    {
-      "file": "mapped/the-warnings-the-game-shows-security.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The game's own warning screen about shop security: a detector gate, a camera and a guard.",
-        "zh": "游戏自带的防盗提醒画面：防盗门、摄像头与保安。"
+        "en": "In-game picture of the store computer showing the starter licences from Supermarket Simulator, used to illustrate The warnings the game shows you.",
+        "zh": "《Supermarket Simulator》游戏内the store computer showing the starter licences的画面，用于说明「The warnings the game shows you」。"
       }
     },
     {

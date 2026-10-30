@@ -44,11 +44,11 @@
   ],
   "images": [
     {
-      "file": "mapped/who-keeps-the-shop-clean-janitor.jpg",
+      "file": "mapped/who-keeps-the-shop-clean-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The icon the game itself uses for the staff who keep the shop clean.",
-        "zh": "游戏本身用于清洁员工的图标。"
+        "en": "In-game picture of an employee the shop can hire from Supermarket Simulator, used to illustrate Who keeps the shop clean.",
+        "zh": "《Supermarket Simulator》游戏内an employee the shop can hire的画面，用于说明「Who keeps the shop clean」。"
       }
     },
     {

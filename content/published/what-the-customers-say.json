@@ -58,19 +58,11 @@
   ],
   "images": [
     {
-      "file": "mapped/what-the-customers-say-bubble.png",
+      "file": "mapped/what-the-customers-say-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The speech bubble frame the game draws a customer's line inside, with its tail pointing at the speaker.",
-        "zh": "游戏用来装顾客台词的对话气泡边框，尾巴指向说话的人。"
-      }
-    },
-    {
-      "file": "mapped/what-the-customers-say-small-bubble.png",
-      "kind": "game",
-      "alt": {
-        "en": "A second speech bubble frame the game ships for customer speech, drawn smaller and rounder.",
-        "zh": "游戏为顾客台词准备的第二个对话气泡边框，更小更圆。"
+        "en": "In-game picture of a customer standing in the street outside the shop from Supermarket Simulator, used to illustrate What the customers say.",
+        "zh": "《Supermarket Simulator》游戏内a customer standing in the street outside the shop的画面，用于说明「What the customers say」。"
       }
     }
   ],

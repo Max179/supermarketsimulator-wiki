@@ -39,11 +39,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-storage-lights-and-door-door.jpg",
+      "file": "mapped/the-storage-lights-and-door-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The albedo texture of a door of the kind the storage area uses.",
-        "zh": "仓储区所用门体的反照率贴图。"
+        "en": "In-game picture of File:File:Ten Cents Back.png from Supermarket Simulator, used to illustrate The storage lights and its door.",
+        "zh": "《Supermarket Simulator》游戏内File:File:Ten Cents Back.png的画面，用于说明「The storage lights and its door」。"
       }
     },
     {

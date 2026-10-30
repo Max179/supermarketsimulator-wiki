@@ -115,19 +115,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-street-outside-gassign.jpg",
+      "file": "mapped/the-street-outside-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own albedo for the petrol station sign: an orange QIICK logo under the grade labels Regular, Plus and Supreme Unleaded with their prices.",
-        "zh": "游戏为加油站招牌提供的反照率贴图：橙色 QIICK 标志，下方是 Regular、Plus、Supreme Unleaded 三种油品与其价格。"
-      }
-    },
-    {
-      "file": "mapped/the-street-outside-gas.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "The icon the game itself uses for the petrol station on the street.",
-        "zh": "游戏本身用于街边加油站的图标。"
+        "en": "In-game picture of Book (Abc) from Supermarket Simulator, used to illustrate The street outside the shop.",
+        "zh": "《Supermarket Simulator》游戏内Book (Abc)的画面，用于说明「The street outside the shop」。"
       }
     },
     {

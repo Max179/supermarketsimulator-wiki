@@ -44,11 +44,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-vehicles-you-can-use-car.jpg",
+      "file": "mapped/the-vehicles-you-can-use-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "A glass texture belonging to one of the vehicles the game ships.",
-        "zh": "游戏自带的某辆车的一张玻璃贴图。"
+        "en": "In-game picture of Beer Lager (Teochew) from Supermarket Simulator, used to illustrate The vehicles you can use.",
+        "zh": "《Supermarket Simulator》游戏内Beer Lager (Teochew)的画面，用于说明「The vehicles you can use」。"
       }
     },
     {

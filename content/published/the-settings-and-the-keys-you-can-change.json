@@ -71,11 +71,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-settings-and-the-keys-you-can-change-screen.jpg",
+      "file": "mapped/the-settings-and-the-keys-you-can-change-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own settings screen: a Settings panel with Gameplay, Graphics and Audio tabs and rows for language, mouse sensitivity, invert axes and enabling shoplifters.",
-        "zh": "游戏自带的设置界面：Settings 面板带 Gameplay/Graphics/Audio 三个标签，以及语言、鼠标灵敏度、反转轴与启用小偷等条目。"
+        "en": "In-game picture from Supermarket Simulator showing a player picking stock up in the freezer aisle, used to illustrate The settings and the keys you can change.",
+        "zh": "《Supermarket Simulator》游戏内画面：a player picking stock up in the freezer aisle，用于说明「The settings and the keys you can change」。"
       }
     },
     {

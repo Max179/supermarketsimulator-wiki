@@ -60,35 +60,11 @@
   ],
   "images": [
     {
-      "file": "mapped/how-a-product-is-drawn-on-a-shelf-atlas.jpg",
+      "file": "mapped/how-a-product-is-drawn-on-a-shelf-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The game's own atlas of product pictures, the sheet the goods on a shelf are drawn from.",
-        "zh": "游戏自带的产品图集，货架上的商品图片就取自这张图。"
-      }
-    },
-    {
-      "file": "mapped/how-a-product-is-drawn-on-a-shelf-atlas2.jpg",
-      "kind": "game",
-      "alt": {
-        "en": "A second product atlas the game ships, holding pictures for a further set of goods.",
-        "zh": "游戏自带的第二张产品图集，收纳另一批商品的图片。"
-      }
-    },
-    {
-      "file": "mapped/how-a-product-is-drawn-on-a-shelf-baby-formula.png",
-      "kind": "game",
-      "alt": {
-        "en": "The pack picture for the baby formula tub: a pale tub with a lilac label and the brand name across it.",
-        "zh": "婴儿配方奶粉罐的商品图：浅色罐身、淡紫色标签，标签上印着品牌名。"
-      }
-    },
-    {
-      "file": "mapped/how-a-product-is-drawn-on-a-shelf-cat-food.png",
-      "kind": "game",
-      "alt": {
-        "en": "The pack picture for the cat food bag: a large bag printed with the brand name and a chicken-and-camp flavour band.",
-        "zh": "猫粮袋的商品图：大包装袋印着品牌名，以及一条写着鸡肉口味的色带。"
+        "en": "In-game picture from Supermarket Simulator showing a shelf aisle stocked with products, used to illustrate How a product is drawn on a shelf.",
+        "zh": "《Supermarket Simulator》游戏内画面：a shelf aisle stocked with products，用于说明「How a product is drawn on a shelf」。"
       }
     }
   ],

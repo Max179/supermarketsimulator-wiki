@@ -49,11 +49,11 @@
   ],
   "images": [
     {
-      "file": "mapped/the-aim-and-its-settings-crosshairs.jpg",
+      "file": "mapped/the-aim-and-its-settings-picture.jpg",
       "kind": "game",
       "alt": {
-        "en": "The crosshair shapes the game draws: a square, a ring with a centre dot, a ring and a dot.",
-        "zh": "游戏自带的准星图形：方形、带中心点的圆环、圆环与圆点。"
+        "en": "In-game picture from Supermarket Simulator showing a cashier serving a customer at the register, used to illustrate The aim and the settings around it.",
+        "zh": "《Supermarket Simulator》游戏内画面：a cashier serving a customer at the register，用于说明「The aim and the settings around it」。"
       }
     },
     {
