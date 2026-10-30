@@ -6,8 +6,8 @@ The pictures on this build are in-game pictures: screenshots and item pictures t
 
 - pictured entries: 100
 - diagram-only entries: 19
-- pictures from the wiki: 61 (Fandom wiki files, source pages recorded)
-- pictures from the official store page: 39
-- pictures reused as category-level pictures: 52
+- pictures from the wiki: 51 (Fandom wiki files, source pages recorded)
+- pictures from the official store page: 49
+- pictures reused as category-level pictures: 72
 
 Pictures are used to identify what an entry describes; they remain the property of the game's developer and of the wiki uploaders. See /sources and /disclaimer on the built site.

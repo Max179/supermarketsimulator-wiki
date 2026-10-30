@@ -29,6 +29,8 @@ export const SITE = {
   heroImage: 'hero-shop.jpg',
   heroAlt: 'The shop floor of Supermarket Simulator, from the game\'s official store screenshots.',
   heroCaption: 'In-game shop view · official store screenshot',
+  // The official page both home-page pictures came from (PACK.json hero.source / feature.source).
+  heroSourcePage: 'https://store.steampowered.com/app/2670630/',
   featuredImage: 'featured-card.jpg',
   featuredAlt: 'Customers paying at the checkout counters in Supermarket Simulator.',
   featuredCaption: 'In-game play · official store screenshot',
@@ -206,8 +208,9 @@ export function build(inventoryPath, outDir) {
       'site and are labelled as diagrams, never as screenshots.</p>' +
       '<p class="dim small">' + records.length + ' picture records. The manifest also records each file\'s ' +
       'dimensions, bytes and sha256, so the copy served here can be re-checked against its record. The two home-page ' +
-      'pictures (hero-shop.jpg and featured-card.jpg) are cropped official store screenshots; their source page, ' +
-      'original URL, rights review and retrieval date are recorded in reports/image-pack-2026-10-30.json.</p>' +
+      'pictures (hero-shop.jpg and featured-card.jpg) are cropped official store screenshots from ' +
+      '<a href="' + esc(SITE.heroSourcePage) + '" rel="noopener">' + esc(SITE.heroSourcePage.replace(/^https?:\/\//, '')) + '</a>; ' +
+      'their original URL, rights review and retrieval date are recorded in reports/image-pack-2026-10-30.json.</p>' +
       '<table class="picture-sources"><thead><tr><th>File</th><th>Used by</th><th>Source</th><th>Source page</th>' +
       '<th>Rights review</th><th>Retrieved</th></tr></thead><tbody>' + rows + '</tbody></table>';
   };

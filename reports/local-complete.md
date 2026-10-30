@@ -129,3 +129,14 @@ pictures. Full record with data, commands and residual issues: [`reports/image-r
   pack's Fandom match attached item renders such as book covers/coins/beer bottles, and 13 reused pictures are spread
   across categories); the 39 Steam records carry a third-party article as `sourcePage` while the files are official
   store screenshots. Both need a swap pack from the Lead; no provenance field was edited locally.
+
+### Revision 2 — swap pack (same day)
+
+The Lead's swap pack replaced the picture set again: 100 mapped pictures regenerated (67 byte-different), manifest
+with 29 unique pictures (51 Fandom / 49 Steam), every Steam record's `sourcePage` now the official store page,
+the FAQ-banner picture removed, no picture under 600 px selected, 42 of the 49 wrong-subject ids remapped, and the
+sources-page home-page credit now links `https://store.steampowered.com/app/2670630/`. Ledger, sanity, coverage,
+status and the replacement record refreshed; chain re-run on the committed tree: `pages=242 indexable=203`, 88/88
+tests, tsc, content-gate, citations, coverage, classify, image-sanity, image-coverage, preflight and smoke all exit 0.
+Residual: 12 pictures still clearly off-subject and reuse is 29 unique pictures with a 14-entry shared group — both
+listed in [`reports/image-replacement-2026-10-30.md`](image-replacement-2026-10-30.md) for the Lead.

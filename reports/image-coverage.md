@@ -16,14 +16,14 @@ pretending to have one: its diagram is labelled "not a screenshot" and the entry
 | entry | picture tier | file | source bundle | asset name | size | bytes | sha256 (first 16) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | asking-a-helper-to-fetch-something | diagram-only | - | - | - | - | - |
-| barcodes-and-the-scanner | game image | mapped/barcodes-and-the-scanner-picture.jpg | supermarket-simulator.fandom.com | FAQ Banner.jpg | 1200x750 | 186878 | 385554ff8c83ffab |
+| barcodes-and-the-scanner | game image | mapped/barcodes-and-the-scanner-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
 | bills-loans-and-growth-screens | game image | mapped/bills-loans-and-growth-screens-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
 | category-signs-and-the-categories-behind-them | game image | mapped/category-signs-and-the-categories-behind-them-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
-| checkout-and-cashiers | game image | mapped/checkout-and-cashiers-picture.jpg | supermarket-simulator.fandom.com | FAQ Banner.jpg | 1200x750 | 186878 | 385554ff8c83ffab |
-| cleanliness-and-standing | game image | mapped/cleanliness-and-standing-picture.jpg | supermarket-simulator.fandom.com | File:Bleach WC Boeff.png | 1200x750 | 28288 | b54e76772cc72344 |
+| checkout-and-cashiers | game image | mapped/checkout-and-cashiers-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
+| cleanliness-and-standing | game image | mapped/cleanliness-and-standing-picture.jpg | supermarket-simulator.fandom.com | File:Cleaner Yamo.png | 1200x750 | 25307 | 38088fcfdf9aea59 |
 | customers-and-helpers | game image | mapped/customers-and-helpers-picture.jpg | supermarket-simulator.fandom.com | Ellen.png.jpg | 1200x750 | 80178 | 7178d334c763e832 |
-| dirt-and-cleaning | game image | mapped/dirt-and-cleaning-picture.jpg | supermarket-simulator.fandom.com | File:Cleaner Wesh.png | 1200x750 | 27107 | c94975074991055c |
-| dirt-dust-and-rubbish-are-three-jobs | game image | mapped/dirt-dust-and-rubbish-are-three-jobs-picture.jpg | supermarket-simulator.fandom.com | File:Cleaner Kilemol.png | 1200x750 | 24890 | ce1624aa9e7687ca |
+| dirt-and-cleaning | game image | mapped/dirt-and-cleaning-picture.jpg | supermarket-simulator.fandom.com | File:Cleaner Le Triangle.png | 1200x750 | 52396 | 915a72778b985788 |
+| dirt-dust-and-rubbish-are-three-jobs | game image | mapped/dirt-dust-and-rubbish-are-three-jobs-picture.jpg | supermarket-simulator.fandom.com | File:Dishwasher Tablet Boum.png | 1200x750 | 46086 | 4a8a4891abdfea54 |
 | floors-and-floor-painting | game image | mapped/floors-and-floor-painting-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
 | furniture-and-shop-layout | game image | mapped/furniture-and-shop-layout-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
 | glossary-of-terms | diagram-only | - | - | - | - | - |
@@ -32,8 +32,8 @@ pretending to have one: its diagram is labelled "not a screenshot" and the entry
 | how-a-shop-full-of-things-is-drawn | diagram-only | - | - | - | - | - |
 | how-a-vehicle-drives | game image | mapped/how-a-vehicle-drives-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
 | how-customers-find-their-way | game image | mapped/how-customers-find-their-way-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
-| how-products-are-displayed | game image | mapped/how-products-are-displayed-picture.jpg | supermarket-simulator.fandom.com | File:Products and Items.png | 1200x750 | 75586 | 6745ed30eabdcc5a |
-| how-the-game-decides-to-warn-you | game image | mapped/how-the-game-decides-to-warn-you-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| how-products-are-displayed | game image | mapped/how-products-are-displayed-picture.jpg | supermarket-simulator.fandom.com | File:Soda Can - 6 Pack Cola.png | 1200x750 | 38887 | 90f078c7cf19aa62 |
+| how-the-game-decides-to-warn-you | game image | mapped/how-the-game-decides-to-warn-you-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
 | how-the-game-shows-what-you-can-use | game image | mapped/how-the-game-shows-what-you-can-use-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
 | how-your-shop-is-saved | game image | mapped/how-your-shop-is-saved-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
 | inside-a-vehicle | game image | mapped/inside-a-vehicle-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
@@ -43,96 +43,96 @@ pretending to have one: its diagram is labelled "not a screenshot" and the entry
 | missions-and-the-objectives-the-game-sets | diagram-only | - | - | - | - | - |
 | mixing-paint-and-picking-a-colour | game image | mapped/mixing-paint-and-picking-a-colour-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
 | money-as-an-object-in-the-shop | game image | mapped/money-as-an-object-in-the-shop-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
-| music-in-your-shop | game image | mapped/music-in-your-shop-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
-| online-orders-and-how-they-are-tracked | game image | mapped/online-orders-and-how-they-are-tracked-picture.jpg | supermarket-simulator.fandom.com | File:Supermarket Simulator Demo | 1200x750 | 64541 | c719d7aa907a547d |
-| orders-and-what-you-can-order | game image | mapped/orders-and-what-you-can-order-picture.jpg | supermarket-simulator.fandom.com | File:Book Mother and Child.png | 1200x750 | 24904 | f552e97cc7cf13ef |
+| music-in-your-shop | game image | mapped/music-in-your-shop-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
+| online-orders-and-how-they-are-tracked | game image | mapped/online-orders-and-how-they-are-tracked-picture.jpg | supermarket-simulator.fandom.com | File:Apple Juice Bio Juice.png | 1200x750 | 34731 | 512b498a9653853c |
+| orders-and-what-you-can-order | game image | mapped/orders-and-what-you-can-order-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
 | painting-the-walls | game image | mapped/painting-the-walls-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
-| paper-bags-and-packing-a-purchase | game image | mapped/paper-bags-and-packing-a-purchase-picture.jpg | supermarket-simulator.fandom.com | FAQ Banner.jpg | 1200x750 | 186878 | 385554ff8c83ffab |
+| paper-bags-and-packing-a-purchase | game image | mapped/paper-bags-and-packing-a-purchase-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
 | paying-by-card-or-cash | game image | mapped/paying-by-card-or-cash-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
-| playing-with-a-controller | game image | mapped/playing-with-a-controller-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
-| products-and-deliveries | game image | mapped/products-and-deliveries-picture.jpg | supermarket-simulator.fandom.com | File:Book The Surprise.png | 1200x750 | 37752 | 7eb2943a077c1299 |
-| questions-players-ask | game image | mapped/questions-players-ask-picture.jpg | supermarket-simulator.fandom.com | FAQ Banner.jpg | 1200x750 | 186878 | 385554ff8c83ffab |
-| raising-your-storage-and-shop-level | game image | mapped/raising-your-storage-and-shop-level-picture.jpg | supermarket-simulator.fandom.com | File:One Cent Tras.png | 1200x750 | 96032 | 5977d3125df578be |
+| playing-with-a-controller | game image | mapped/playing-with-a-controller-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
+| products-and-deliveries | game image | mapped/products-and-deliveries-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
+| questions-players-ask | game image | mapped/questions-players-ask-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| raising-your-storage-and-shop-level | game image | mapped/raising-your-storage-and-shop-level-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
 | repaying-a-loan-payment-by-payment | game image | mapped/repaying-a-loan-payment-by-payment-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
 | restock-areas-and-vehicles | game image | mapped/restock-areas-and-vehicles-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
 | restocking-shelves | game image | mapped/restocking-shelves-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
 | running-a-shop-with-other-players | diagram-only | - | - | - | - | - |
-| save-slots-and-what-each-one-holds | game image | mapped/save-slots-and-what-each-one-holds-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| save-slots-and-what-each-one-holds | game image | mapped/save-slots-and-what-each-one-holds-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
 | security-cameras-and-guards | game image | mapped/security-cameras-and-guards-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
 | serving-ice-cream | game image | mapped/serving-ice-cream-picture.jpg | supermarket-simulator.fandom.com | Patch v0.2.1-1.png | 1200x750 | 117985 | d87b0e212225dc83 |
 | setting-prices-in-bulk | diagram-only | - | - | - | - | - |
 | shelf-slots-and-display-space | game image | mapped/shelf-slots-and-display-space-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
 | shoplifters-in-your-shop | game image | mapped/shoplifters-in-your-shop-picture.jpg | supermarket-simulator.fandom.com | Ellen.png.jpg | 1200x750 | 80178 | 7178d334c763e832 |
-| signs-labels-and-organising | game image | mapped/signs-labels-and-organising-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| signs-labels-and-organising | game image | mapped/signs-labels-and-organising-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
 | storage-crates-and-the-storage-tab | game image | mapped/storage-crates-and-the-storage-tab-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
-| storage-sections-and-sorting | game image | mapped/storage-sections-and-sorting-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
-| store-upgrades-and-licences | game image | mapped/store-upgrades-and-licences-picture.jpg | supermarket-simulator.fandom.com | File:Supermarket Management.png | 1200x750 | 56126 | ebfceb08e2b8cb47 |
-| the-aim-and-its-settings | game image | mapped/the-aim-and-its-settings-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| storage-sections-and-sorting | game image | mapped/storage-sections-and-sorting-picture.jpg | supermarket-simulator.fandom.com | File:Beer Brown Ale (Keg) Degl.png | 1200x750 | 36655 | 16eeabca8af59074 |
+| store-upgrades-and-licences | game image | mapped/store-upgrades-and-licences-picture.jpg | supermarket-simulator.fandom.com | File:Beer Blonde Ale - Keg Fess.png | 1200x750 | 40608 | bc5633c3b7b5dbb1 |
+| the-aim-and-its-settings | game image | mapped/the-aim-and-its-settings-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
 | the-animations-your-body-plays | diagram-only | - | - | - | - | - |
 | the-bakery-counter | game image | mapped/the-bakery-counter-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
-| the-baseball-bat | game image | mapped/the-baseball-bat-picture.jpg | supermarket-simulator.fandom.com | Ellen.png.jpg | 1200x750 | 80178 | 7178d334c763e832 |
-| the-body-you-do-not-see | game image | mapped/the-body-you-do-not-see-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
-| the-boxes-in-the-back-room | game image | mapped/the-boxes-in-the-back-room-picture.jpg | supermarket-simulator.fandom.com | File:50 Cents Back.png | 1200x750 | 136475 | a4db2e96f166ff3e |
+| the-baseball-bat | game image | mapped/the-baseball-bat-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
+| the-body-you-do-not-see | game image | mapped/the-body-you-do-not-see-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
+| the-boxes-in-the-back-room | game image | mapped/the-boxes-in-the-back-room-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
 | the-camera-you-play-through | diagram-only | - | - | - | - | - |
-| the-computer-and-the-tablet | game image | mapped/the-computer-and-the-tablet-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
-| the-controls-the-menus-are-built-from | game image | mapped/the-controls-the-menus-are-built-from-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
-| the-crates-you-buy | game image | mapped/the-crates-you-buy-picture.jpg | supermarket-simulator.fandom.com | File:Soda Can - 6 Pack Cola.png | 1200x750 | 38887 | 90f078c7cf19aa62 |
-| the-day-cycle | game image | mapped/the-day-cycle-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
+| the-computer-and-the-tablet | game image | mapped/the-computer-and-the-tablet-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| the-controls-the-menus-are-built-from | game image | mapped/the-controls-the-menus-are-built-from-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| the-crates-you-buy | game image | mapped/the-crates-you-buy-picture.jpg | supermarket-simulator.fandom.com | File:Soda Can - 6 Pack Zap.png | 1200x750 | 56866 | e506ed6ebc506bfb |
+| the-day-cycle | game image | mapped/the-day-cycle-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
 | the-day-results-screen-and-what-it-counts | diagram-only | - | - | - | - | - |
-| the-devices-the-game-can-shake | game image | mapped/the-devices-the-game-can-shake-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
-| the-display-behind-the-shelf | game image | mapped/the-display-behind-the-shelf-picture.jpg | supermarket-simulator.fandom.com | File:Shelf.png | 1200x750 | 19970 | 852cb0f76294cafd |
-| the-drinks-the-shop-carries | game image | mapped/the-drinks-the-shop-carries-picture.jpg | supermarket-simulator.fandom.com | File:Beer Brown Ale (Keg) Degl.png | 1200x750 | 36655 | 16eeabca8af59074 |
-| the-expansion-packs | game image | mapped/the-expansion-packs-picture.jpg | supermarket-simulator.fandom.com | File:Beer Brown Ale - 6 Pack BK.png | 1200x750 | 62432 | 5493937527807eb2 |
-| the-fresh-produce-in-the-shop | game image | mapped/the-fresh-produce-in-the-shop-picture.jpg | supermarket-simulator.fandom.com | File:Apple Juice Bio Juice.png | 1200x750 | 34731 | 512b498a9653853c |
-| the-fridges-and-freezers | game image | mapped/the-fridges-and-freezers-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
-| the-global-map-and-its-markers | game image | mapped/the-global-map-and-its-markers-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| the-devices-the-game-can-shake | game image | mapped/the-devices-the-game-can-shake-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
+| the-display-behind-the-shelf | game image | mapped/the-display-behind-the-shelf-picture.jpg | supermarket-simulator.fandom.com | File:Beer Lager - Keg Teochew.png | 1200x750 | 41440 | 625b02f84b367ff7 |
+| the-drinks-the-shop-carries | game image | mapped/the-drinks-the-shop-carries-picture.jpg | supermarket-simulator.fandom.com | File:Beer Brown Ale - 6 Pack BK.png | 1200x750 | 62432 | 5493937527807eb2 |
+| the-expansion-packs | game image | mapped/the-expansion-packs-picture.jpg | supermarket-simulator.fandom.com | File:Beer Blonde Ale - 6 Pack Fess.png | 1200x750 | 75803 | 9dd70b8fe9ec858d |
+| the-fresh-produce-in-the-shop | game image | mapped/the-fresh-produce-in-the-shop-picture.jpg | supermarket-simulator.fandom.com | File:Butter Paysans.png | 1200x750 | 31677 | 33e276ed182bb3a1 |
+| the-fridges-and-freezers | game image | mapped/the-fridges-and-freezers-picture.jpg | supermarket-simulator.fandom.com | File:Candy Bonbek.png | 1200x750 | 41619 | 50f05cee790c2634 |
+| the-global-map-and-its-markers | game image | mapped/the-global-map-and-its-markers-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
 | the-hints-and-pings-the-game-gives | game image | mapped/the-hints-and-pings-the-game-gives-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
 | the-janitor | game image | mapped/the-janitor-picture.jpg | supermarket-simulator.fandom.com | Employee.png | 1200x750 | 32411 | 68b420b815d075fa |
 | the-kinds-of-missions-the-game-builds | diagram-only | - | - | - | - | - |
-| the-lights-and-the-switches | game image | mapped/the-lights-and-the-switches-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
-| the-line-icons-the-game-draws | game image | mapped/the-line-icons-the-game-draws-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
-| the-list-you-buy-from | game image | mapped/the-list-you-buy-from-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
-| the-local-market-and-product-costs | game image | mapped/the-local-market-and-product-costs-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
-| the-machinery-behind-each-job | game image | mapped/the-machinery-behind-each-job-picture.jpg | supermarket-simulator.fandom.com | Restocker2.png | 1200x750 | 31497 | 8ff5125ca7342e82 |
-| the-management-tabs | game image | mapped/the-management-tabs-picture.jpg | supermarket-simulator.fandom.com | File:Beer Blonde Ale - Keg Fess.png | 1200x750 | 40608 | bc5633c3b7b5dbb1 |
-| the-meat-and-dairy-section | game image | mapped/the-meat-and-dairy-section-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
-| the-menu-the-game-opens-on | game image | mapped/the-menu-the-game-opens-on-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
-| the-menu-you-pause-into | game image | mapped/the-menu-you-pause-into-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
-| the-mode-you-place-things-in | game image | mapped/the-mode-you-place-things-in-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| the-lights-and-the-switches | game image | mapped/the-lights-and-the-switches-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
+| the-line-icons-the-game-draws | game image | mapped/the-line-icons-the-game-draws-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-list-you-buy-from | game image | mapped/the-list-you-buy-from-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| the-local-market-and-product-costs | game image | mapped/the-local-market-and-product-costs-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-machinery-behind-each-job | game image | mapped/the-machinery-behind-each-job-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-management-tabs | game image | mapped/the-management-tabs-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
+| the-meat-and-dairy-section | game image | mapped/the-meat-and-dairy-section-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
+| the-menu-the-game-opens-on | game image | mapped/the-menu-the-game-opens-on-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-menu-you-pause-into | game image | mapped/the-menu-you-pause-into-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| the-mode-you-place-things-in | game image | mapped/the-mode-you-place-things-in-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
 | the-networked-copies-in-a-shared-shop | diagram-only | - | - | - | - | - |
-| the-notebook-your-orders-are-written-in | game image | mapped/the-notebook-your-orders-are-written-in-picture.jpg | supermarket-simulator.fandom.com | File:Soda Can - 6 Pack Zap.png | 1200x750 | 56866 | e506ed6ebc506bfb |
-| the-oven-and-the-baker | game image | mapped/the-oven-and-the-baker-picture.jpg | supermarket-simulator.fandom.com | File:Checkout Counter.png | 1200x750 | 23050 | 036b3faa969e2b5d |
-| the-plants-and-planters | game image | mapped/the-plants-and-planters-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
-| the-popups-in-the-game | game image | mapped/the-popups-in-the-game-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-notebook-your-orders-are-written-in | game image | mapped/the-notebook-your-orders-are-written-in-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| the-oven-and-the-baker | game image | mapped/the-oven-and-the-baker-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
+| the-plants-and-planters | game image | mapped/the-plants-and-planters-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-popups-in-the-game | game image | mapped/the-popups-in-the-game-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
 | the-pricing-screen-and-how-a-price-is-chosen | diagram-only | - | - | - | - | - |
 | the-racks-the-back-room-uses | game image | mapped/the-racks-the-back-room-uses-picture.jpg | supermarket-simulator.fandom.com | File:Take money back.png | 1200x750 | 90851 | 9309aa8a387460b9 |
 | the-road-traffic-and-its-signals | game image | mapped/the-road-traffic-and-its-signals-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
-| the-rubbish-and-where-it-goes | game image | mapped/the-rubbish-and-where-it-goes-picture.jpg | supermarket-simulator.fandom.com | File:Dish Soap Lemon Mouss.png | 1200x750 | 29274 | 06fea2242a92fe71 |
+| the-rubbish-and-where-it-goes | game image | mapped/the-rubbish-and-where-it-goes-picture.jpg | supermarket-simulator.fandom.com | File:Dishwasher Tablet Cemagik.png | 1200x750 | 59060 | 3760746d2cc2e5c1 |
 | the-self-checkout-and-its-rules | game image | mapped/the-self-checkout-and-its-rules-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
-| the-settings-and-the-keys-you-can-change | game image | mapped/the-settings-and-the-keys-you-can-change-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
-| the-shop-computer | game image | mapped/the-shop-computer-picture.jpg | supermarket-simulator.fandom.com | File:Cashier new.png | 1200x750 | 30424 | 492965cf9794d12a |
-| the-shop-entrance | game image | mapped/the-shop-entrance-picture.jpg | supermarket-simulator.fandom.com | File:25 Cents Front.png | 1200x750 | 122126 | fc6c496eecdbc037 |
-| the-shop-windows-and-the-glass | game image | mapped/the-shop-windows-and-the-glass-picture.jpg | supermarket-simulator.fandom.com | File:Cleaner Touprop.png | 1200x750 | 29449 | 7f0ea23c5f3be7c9 |
-| the-shops-status-its-doors-and-its-ground | game image | mapped/the-shops-status-its-doors-and-its-ground-picture.jpg | supermarket-simulator.fandom.com | File:Ground Beef Bovora.png | 1200x750 | 45849 | 633a2de53630b284 |
-| the-storage-lights-and-door | game image | mapped/the-storage-lights-and-door-picture.jpg | supermarket-simulator.fandom.com | File:Ten Cents Back.png | 1200x750 | 120723 | ee3fdea16853bc90 |
-| the-street-outside | game image | mapped/the-street-outside-picture.jpg | supermarket-simulator.fandom.com | File:Book Abc.png | 1200x750 | 47993 | a7c5b66db7e52057 |
+| the-settings-and-the-keys-you-can-change | game image | mapped/the-settings-and-the-keys-you-can-change-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
+| the-shop-computer | game image | mapped/the-shop-computer-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
+| the-shop-entrance | game image | mapped/the-shop-entrance-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-shop-windows-and-the-glass | game image | mapped/the-shop-windows-and-the-glass-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-shops-status-its-doors-and-its-ground | game image | mapped/the-shops-status-its-doors-and-its-ground-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-storage-lights-and-door | game image | mapped/the-storage-lights-and-door-picture.jpg | supermarket-simulator.fandom.com | Filled shelf storage.jpg | 1200x750 | 184070 | e8300935fea02cf8 |
+| the-street-outside | game image | mapped/the-street-outside-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
 | the-task-layer-under-the-missions | diagram-only | - | - | - | - | - |
-| the-till-and-its-screens | game image | mapped/the-till-and-its-screens-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
-| the-tutorials-that-point-you-at-things | game image | mapped/the-tutorials-that-point-you-at-things-picture.jpg | store.steampowered.com | ss_2ba1181ebe01c7e642af2b457261e5931e14c7df.1920x1080.jpg | 1200x750 | 173980 | 37f4232cf4f1e49d |
-| the-vehicles-you-can-use | game image | mapped/the-vehicles-you-can-use-picture.jpg | supermarket-simulator.fandom.com | File:Beer Lager Teochew.png | 1200x750 | 22438 | d037adf4bfd21bcc |
-| the-warnings-the-game-shows | game image | mapped/the-warnings-the-game-shows-picture.jpg | supermarket-simulator.fandom.com | Starter license products in the store.png | 1200x750 | 110695 | 16686d295f19cb41 |
-| the-weighing-scale | game image | mapped/the-weighing-scale-picture.jpg | supermarket-simulator.fandom.com | File:Book Colors.png | 1200x750 | 46549 | d6ac635118516354 |
+| the-till-and-its-screens | game image | mapped/the-till-and-its-screens-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
+| the-tutorials-that-point-you-at-things | game image | mapped/the-tutorials-that-point-you-at-things-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-vehicles-you-can-use | game image | mapped/the-vehicles-you-can-use-picture.jpg | supermarket-simulator.fandom.com | First Look into your Store.png | 1200x750 | 249319 | 1e42ecfa64d2946b |
+| the-warnings-the-game-shows | game image | mapped/the-warnings-the-game-shows-picture.jpg | store.steampowered.com | ss_b0a62c37675c711c85c050bc8e5f96c7ff29b1a4.1920x1080.jpg | 1200x750 | 195187 | 553756b61ab51439 |
+| the-weighing-scale | game image | mapped/the-weighing-scale-picture.jpg | store.steampowered.com | ss_d7a5a9f57ed36a5552e2892fffda6aa171f9fe95.600x338.jpg | 1200x750 | 114800 | 00c07f5d44e2d88e |
 | the-window-the-money-tabs-live-in | diagram-only | - | - | - | - | - |
-| vending-machines | game image | mapped/vending-machines-picture.jpg | supermarket-simulator.fandom.com | File:Book Once Upon A Time.png | 1200x750 | 50195 | 6c1c2efe2914a1ec |
-| watching-your-vending-machines | game image | mapped/watching-your-vending-machines-picture.jpg | supermarket-simulator.fandom.com | File:Book Piticha.png | 1200x750 | 30853 | b360f22f97ad6ea1 |
+| vending-machines | game image | mapped/vending-machines-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| watching-your-vending-machines | game image | mapped/watching-your-vending-machines-picture.jpg | store.steampowered.com | ss_e429f14874ca193c42d4266408745af466ef13e3.1920x1080.jpg | 1200x750 | 224141 | fbeff3ceccb4dcfc |
 | what-a-shared-shop-keeps-in-step | diagram-only | - | - | - | - | - |
 | what-the-customers-say | game image | mapped/what-the-customers-say-picture.jpg | supermarket-simulator.fandom.com | Ellen.png.jpg | 1200x750 | 80178 | 7178d334c763e832 |
 | what-the-game-keeps-about-an-employee | diagram-only | - | - | - | - | - |
 | what-your-shop-spends | game image | mapped/what-your-shop-spends-picture.jpg | store.steampowered.com | ss_da288dfd94c052144397fb8833392ebf56448d96.1920x1080.jpg | 1200x750 | 146132 | 3f7cdb868d30519c |
-| which-version-this-site-documents | game image | mapped/which-version-this-site-documents-picture.jpg | supermarket-simulator.fandom.com | File:Book Electromagnetic Field.png | 1200x750 | 97954 | 96b202868df6a4a1 |
-| who-comes-into-the-shop | game image | mapped/who-comes-into-the-shop-picture.jpg | store.steampowered.com | ss_d91f873c71a111bc20450066b924ee3ace8aba06.600x338.jpg | 1200x750 | 157940 | 5f87cb3d93d78f3f |
-| who-keeps-the-shop-clean | game image | mapped/who-keeps-the-shop-clean-picture.jpg | supermarket-simulator.fandom.com | Employee.png | 1200x750 | 32411 | 68b420b815d075fa |
-| wholesale-offers-and-discounts | game image | mapped/wholesale-offers-and-discounts-picture.jpg | supermarket-simulator.fandom.com | File:Book Krok.png | 1200x750 | 34976 | 5d252a8668609815 |
+| which-version-this-site-documents | game image | mapped/which-version-this-site-documents-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.1920x1080.jpg | 1200x750 | 213423 | f0c75d67042a6d8a |
+| who-comes-into-the-shop | game image | mapped/who-comes-into-the-shop-picture.jpg | supermarket-simulator.fandom.com | Ellen.png.jpg | 1200x750 | 80178 | 7178d334c763e832 |
+| who-keeps-the-shop-clean | game image | mapped/who-keeps-the-shop-clean-picture.jpg | supermarket-simulator.fandom.com | Restocker2.png | 1200x750 | 31497 | 8ff5125ca7342e82 |
+| wholesale-offers-and-discounts | game image | mapped/wholesale-offers-and-discounts-picture.jpg | store.steampowered.com | ss_b40f7ee28a8429e9ad7c6f016cf4e29cfcf6ba8d.600x338.jpg | 1200x750 | 172237 | 42a752c2012b8446 |
 | writing-a-name-that-fits | diagram-only | - | - | - | - | - |
 
 ## Entries still waiting for an image from the game
