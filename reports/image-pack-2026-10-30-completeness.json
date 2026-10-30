@@ -1,0 +1,34 @@
+{
+  "site": "supermarket-simulator",
+  "changed": [
+    "how-products-are-displayed",
+    "online-orders-and-how-they-are-tracked",
+    "products-and-deliveries",
+    "questions-players-ask",
+    "storage-sections-and-sorting",
+    "store-upgrades-and-licences",
+    "the-display-behind-the-shelf",
+    "the-expansion-packs",
+    "the-fresh-produce-in-the-shop",
+    "the-fridges-and-freezers",
+    "the-hints-and-pings-the-game-gives",
+    "the-line-icons-the-game-draws",
+    "the-local-market-and-product-costs",
+    "the-machinery-behind-each-job",
+    "the-menu-the-game-opens-on",
+    "the-weighing-scale"
+  ],
+  "promoted": [
+    "asking-a-helper-to-fetch-something",
+    "hiring-a-cashier",
+    "jobs-you-can-hand-over",
+    "setting-prices-in-bulk",
+    "the-day-results-screen-and-what-it-counts",
+    "the-pricing-screen-and-how-a-price-is-chosen",
+    "the-window-the-money-tabs-live-in",
+    "what-the-game-keeps-about-an-employee"
+  ],
+  "skipped": [],
+  "picturedTotal": 108,
+  "sourceBreakdown": {}
+}

@@ -42,6 +42,14 @@
   ],
   "images": [
     {
+      "file": "mapped/jobs-you-can-hand-over-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of Employee from Supermarket Simulator, used to illustrate Jobs you can hand over.",
+        "zh": "《Supermarket Simulator》游戏内Employee，用于说明「Jobs you can hand over」。"
+      }
+    },
+    {
       "file": "jobs-you-can-hand-over.svg",
       "kind": "diagram",
       "alt": {
@@ -54,5 +62,5 @@
   "sources": [
     "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

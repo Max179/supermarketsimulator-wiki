@@ -49,6 +49,14 @@
   ],
   "images": [
     {
+      "file": "mapped/asking-a-helper-to-fetch-something-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of Restocker2 from Supermarket Simulator, used to illustrate Asking a helper to fetch something.",
+        "zh": "《Supermarket Simulator》游戏内Restocker2，用于说明「Asking a helper to fetch something」。"
+      }
+    },
+    {
       "file": "asking-a-helper-to-fetch-something.svg",
       "kind": "diagram",
       "alt": {
@@ -61,5 +69,5 @@
   "sources": [
     "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

@@ -485,6 +485,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/entries/asking-a-helper-to-fetch-something.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/entries/barcodes-and-the-scanner.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
@@ -535,6 +540,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/entries/hiring-a-cashier.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/entries/how-a-product-is-drawn-on-a-shelf.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
@@ -576,6 +586,11 @@
     },
     {
       "url": "/entries/inside-a-vehicle.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/jobs-you-can-hand-over.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
     },
@@ -680,6 +695,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/entries/setting-prices-in-bulk.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/entries/shelf-slots-and-display-space.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
@@ -751,6 +771,11 @@
     },
     {
       "url": "/entries/the-day-cycle.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/the-day-results-screen-and-what-it-counts.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
     },
@@ -870,6 +895,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/entries/the-pricing-screen-and-how-a-price-is-chosen.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/entries/the-racks-the-back-room-uses.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
@@ -950,6 +980,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/entries/the-window-the-money-tabs-live-in.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/entries/vending-machines.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
@@ -961,6 +996,11 @@
     },
     {
       "url": "/entries/what-the-customers-say.html",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
+      "url": "/entries/what-the-game-keeps-about-an-employee.html",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
     },
@@ -1035,17 +1075,7 @@
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
-      "url": "/reference/notes/asking-a-helper-to-fetch-something.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
       "url": "/reference/notes/glossary-of-terms.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
-      "url": "/reference/notes/hiring-a-cashier.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
@@ -1060,22 +1090,12 @@
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
-      "url": "/reference/notes/jobs-you-can-hand-over.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
       "url": "/reference/notes/missions-and-the-objectives-the-game-sets.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
       "url": "/reference/notes/running-a-shop-with-other-players.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
-      "url": "/reference/notes/setting-prices-in-bulk.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
@@ -1090,11 +1110,6 @@
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
-      "url": "/reference/notes/the-day-results-screen-and-what-it-counts.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
       "url": "/reference/notes/the-kinds-of-missions-the-game-builds.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
@@ -1105,27 +1120,12 @@
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
-      "url": "/reference/notes/the-pricing-screen-and-how-a-price-is-chosen.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
       "url": "/reference/notes/the-task-layer-under-the-missions.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },
     {
-      "url": "/reference/notes/the-window-the-money-tabs-live-in.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
       "url": "/reference/notes/what-a-shared-shop-keeps-in-step.html",
-      "action": "noindex",
-      "reason": "technical reference or duplicate kept reachable but not indexed"
-    },
-    {
-      "url": "/reference/notes/what-the-game-keeps-about-an-employee.html",
       "action": "noindex",
       "reason": "technical reference or duplicate kept reachable but not indexed"
     },

@@ -69,6 +69,14 @@
   ],
   "images": [
     {
+      "file": "mapped/the-pricing-screen-and-how-a-price-is-chosen-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of Starter license products in the store from Supermarket Simulator, used to illustrate The pricing screen and how a price is chosen.",
+        "zh": "《Supermarket Simulator》游戏内Starter license products in the store，用于说明「The pricing screen and how a price is chosen」。"
+      }
+    },
+    {
       "file": "the-pricing-screen-and-how-a-price-is-chosen.svg",
       "kind": "diagram",
       "alt": {
@@ -81,5 +89,5 @@
   "sources": [
     "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

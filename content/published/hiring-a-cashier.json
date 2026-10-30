@@ -44,6 +44,14 @@
   ],
   "images": [
     {
+      "file": "mapped/hiring-a-cashier-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of a cashier serving a customer at the register from Supermarket Simulator, used to illustrate Hiring a cashier.",
+        "zh": "《Supermarket Simulator》游戏内a cashier serving a customer at the register，用于说明「Hiring a cashier」。"
+      }
+    },
+    {
       "file": "hiring-a-cashier.svg",
       "kind": "diagram",
       "alt": {
@@ -56,5 +64,5 @@
   "sources": [
     "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

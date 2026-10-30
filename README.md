@@ -8,9 +8,9 @@ HTML, CSS, SVG and image files.
 The output has two deliberately separate layers:
 
 - **Player layer** — home, game guide, entity hub and category pages, entry pages, 77 guides, tools and updates.
-  These are the pages a player is meant to find (203 indexable URLs, all in `sitemap.xml`).
+  These are the pages a player is meant to find (211 indexable URLs, all in `sitemap.xml`).
 - **Evidence layer** — class, namespace and data-name tables plus provenance, under `/reference/`, plus the
-  19 picture-less subjects kept as notes. Marked `noindex` and excluded from the sitemap.
+  11 picture-less subjects kept as notes. Marked `noindex` and excluded from the sitemap.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ python3 -m http.server 4206 --directory web/dist
 
 | Command | What it does |
 | --- | --- |
-| `npm run build` | Regenerate `web/dist/` from `data/normalized/p0-inventory.json` and `content/`. Prints `pages=242 indexable=203`. |
+| `npm run build` | Regenerate `web/dist/` from `data/normalized/p0-inventory.json` and `content/`. Prints `pages=242 indexable=211`. |
 | `npm test` | Run the site gate suite (`tests/site.test.mjs`): builds into a temp directory and checks routes, canonical URLs, noindex/sitemap policy, provenance, images, content invariants, structured data and the publish configuration. |
 | `npm run gates` | Content gate, citation check, coverage matrix and image coverage; writes `reports/coverage-report.md` and `reports/image-coverage.md`. |
 | `npm run classify` | Regenerate `config/urls.json` from a full `web/dist` build (one classification per emitted page). |
@@ -64,7 +64,7 @@ npm run typecheck
 | `pipeline/` | Site generator (`site.mjs`), status generator, the shared inventory predicate, and the extraction/decoder scripts used on the Windows host (metadata reader, serialized-file readers, UnityPy probes, value normalizer). |
 | `tests/` | `site.test.mjs` — deterministic site and data-integrity gates (88 passing). |
 | `tools/` | Content gate, citation check, coverage matrix, image coverage/sanity, URL classifier, preflight, smoke test, deploy check, preview/package and image-extraction tools. |
-| `content/` | Editorial source: 119 published entry JSONs, 77 guide JSONs, `images-manifest.json` (the picture provenance ledger: source page, licence/rights review, retrieval date and sha256 for each of the 100 mapped pictures), `updates.json` and `assets/` (100 sourced in-game pictures + 94 original diagrams). |
+| `content/` | Editorial source: 119 published entry JSONs, 77 guide JSONs, `images-manifest.json` (the picture provenance ledger: source page, licence/rights review, retrieval date and sha256 for each of the 108 mapped pictures), `updates.json` and `assets/` (108 sourced in-game pictures + 94 original diagrams). |
 | `data/normalized/` | The committed data index the build reads: `p0-inventory.json` (21,152 types), `supermarket-object-names.json`, `value-index.json` (checksum/counts of the decoded 170,050 field rows) and `citation-index.json` (the 15,162 identifiers only the decoded layers hold). |
 | `data/guide-questions.json` | The player questions that pair one-to-one with the 77 guides. |
 | `web/` | Static shell assets (`web/assets/`) and the generated site (`web/dist/`, ignored). |
@@ -141,7 +141,7 @@ workflow uses a secret rather than a literal token.
 The content, images and normalized data were produced on the Windows extraction host and arrived as the
 2026-10-02 handoff package (`reports/handoff.md`, receipt `reports/mac-handoff-manifest.json`). The Mac side
 integrated that package on 2026-10-30, ported the Mac design commits (player home page, in-game imagery, shift
-dashboard, source version gate) onto the package generator, replaced the raw texture exports with 100 credited
+dashboard, source version gate) onto the package generator, replaced the raw texture exports with 108 credited
 in-game pictures and added the picture-provenance gate, and recorded the result in
 [`reports/revival-2026-10-30.md`](reports/revival-2026-10-30.md) with the full verification log in
 [`reports/local-complete.md`](reports/local-complete.md).

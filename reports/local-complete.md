@@ -140,3 +140,19 @@ status and the replacement record refreshed; chain re-run on the committed tree:
 tests, tsc, content-gate, citations, coverage, classify, image-sanity, image-coverage, preflight and smoke all exit 0.
 Residual: 12 pictures still clearly off-subject and reuse is 29 unique pictures with a 14-entry shared group — both
 listed in [`reports/image-replacement-2026-10-30.md`](image-replacement-2026-10-30.md) for the Lead.
+
+### Revision 3 — wiki completeness pass (same day)
+
+The Lead's completeness patch (`reports/image-pack-2026-10-30-completeness.json`) swapped 16 of the remaining
+weak/wrong pictures and promoted 8 diagram-only subjects to pictured entries: `asking-a-helper-to-fetch-something`,
+`hiring-a-cashier`, `jobs-you-can-hand-over`, `setting-prices-in-bulk`,
+`the-day-results-screen-and-what-it-counts`, `the-pricing-screen-and-how-a-price-is-chosen`,
+`the-window-the-money-tabs-live-in`, `what-the-game-keeps-about-an-employee`. The build stayed at **242 pages** and
+moved to **211 indexable** (the 8 note pages became entry pages); 108 pictured entries, 11 diagram-only notes and 94
+diagrams remain; the manifest now has 108 records (51 Fandom / 57 Steam, 27 unique pictures). Two pack bookkeeping
+defects were recorded rather than hidden: the 24 patch records lack `originalUrl`, and five `sourcePage` values were
+percent-encoded (literal spaces) on integration. Ledger, image-sources, sanity, coverage, URL classification, status
+and the replacement record refreshed; chain re-run: `pages=242 indexable=211`, 88/88 tests, tsc, content-gate,
+citations, coverage, classify, image-sanity, image-coverage, preflight and smoke all exit 0. Residual: four vehicle
+entries still show the shop-front screenshot and eight pictures are generic rather than subject-specific — both
+listed in [`reports/image-replacement-2026-10-30.md`](image-replacement-2026-10-30.md).

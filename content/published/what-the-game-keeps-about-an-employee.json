@@ -49,6 +49,14 @@
   ],
   "images": [
     {
+      "file": "mapped/what-the-game-keeps-about-an-employee-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of Employee from Supermarket Simulator, used to illustrate What the game keeps about an employee.",
+        "zh": "《Supermarket Simulator》游戏内Employee，用于说明「What the game keeps about an employee」。"
+      }
+    },
+    {
       "file": "what-the-game-keeps-about-an-employee.svg",
       "kind": "diagram",
       "alt": {
@@ -61,5 +69,5 @@
   "sources": [
     "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

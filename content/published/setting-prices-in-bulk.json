@@ -55,6 +55,14 @@
   ],
   "images": [
     {
+      "file": "mapped/setting-prices-in-bulk-picture.jpg",
+      "kind": "game",
+      "alt": {
+        "en": "In-game picture of a shelf aisle stocked with products from Supermarket Simulator, used to illustrate Setting prices in bulk.",
+        "zh": "《Supermarket Simulator》游戏内a shelf aisle stocked with products，用于说明「Setting prices in bulk」。"
+      }
+    },
+    {
       "file": "setting-prices-in-bulk.svg",
       "kind": "diagram",
       "alt": {
@@ -67,5 +75,5 @@
   "sources": [
     "A local copy of the game, read only. The grounding for each fact is listed on the technical reference pages; nothing here is estimated."
   ],
-  "imageTier": "diagram-only"
+  "imageTier": "game-image"
 }

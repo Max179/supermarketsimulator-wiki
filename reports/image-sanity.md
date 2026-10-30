@@ -11,4 +11,4 @@ near-white (above 235). A flag is not a verdict: it means the file has to be loo
 
 Nothing was flagged in this run: every exported picture carries visible variation.
 
-Totals: 100 records, 0 flagged.
+Totals: 108 records, 0 flagged.
