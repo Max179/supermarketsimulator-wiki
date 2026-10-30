@@ -76,3 +76,34 @@ The mix is honest but not yet all on-subject. Two pack-level defects are recorde
 3. The four pictures taken from the wiki's `FAQ Banner.jpg` carry a large "Frequently Asked Questions" banner across
    the image (`barcodes-and-the-scanner`, `checkout-and-cashiers`, `paper-bags-and-packing-a-purchase`,
    `questions-players-ask`); `how-products-are-displayed` is an upscaled small file. Both are quality, not provenance.
+
+
+### Wrong-subject picture ids (for the next pack revision)
+
+Condition check: the image is a real in-game picture but clearly does not show the entry's subject. 49 entries:
+
+```
+orders-and-what-you-can-order, products-and-deliveries, raising-your-storage-and-shop-level,
+the-boxes-in-the-back-room, the-shop-entrance, the-storage-lights-and-door, the-vehicles-you-can-use,
+the-management-tabs, vending-machines, watching-your-vending-machines,
+which-version-this-site-documents, the-weighing-scale, the-street-outside,
+wholesale-offers-and-discounts, the-shop-windows-and-the-glass,
+the-shops-status-its-doors-and-its-ground, the-notebook-your-orders-are-written-in,
+the-oven-and-the-baker, the-shop-computer,
+how-a-vehicle-drives, inside-a-vehicle, the-meat-and-dairy-section,
+the-road-traffic-and-its-signals, how-the-game-decides-to-warn-you, how-your-shop-is-saved,
+the-global-map-and-its-markers, the-warnings-the-game-shows, playing-with-a-controller,
+save-slots-and-what-each-one-holds, the-aim-and-its-settings, the-body-you-do-not-see,
+the-hints-and-pings-the-game-gives, the-popups-in-the-game, the-controls-the-menus-are-built-from,
+the-devices-the-game-can-shake, the-settings-and-the-keys-you-can-change, the-list-you-buy-from,
+music-in-your-shop, security-cameras-and-guards, the-bakery-counter,
+the-tutorials-that-point-you-at-things, the-computer-and-the-tablet, the-day-cycle,
+the-lights-and-the-switches, the-plants-and-planters, the-line-icons-the-game-draws,
+the-menu-you-pause-into, the-baseball-bat, the-machinery-behind-each-job
+```
+
+Weak or poor-quality (swap if a better file exists, not "wrong"): `how-customers-find-their-way`,
+`painting-the-walls`, `the-mode-you-place-things-in`, `signs-labels-and-organising`, `restock-areas-and-vehicles`,
+`floors-and-floor-painting`, `the-local-market-and-product-costs`, `who-comes-into-the-shop`,
+`shoplifters-in-your-shop`, `the-rubbish-and-where-it-goes`, `the-expansion-packs`, `the-fresh-produce-in-the-shop`.
+`how-products-are-displayed` is an upscaled small file; the four FAQ-banner pictures are listed above in item 3.
