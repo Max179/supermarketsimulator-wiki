@@ -132,8 +132,8 @@ measurement is in [`reports/seo-audit.md`](reports/seo-audit.md); the rules are 
 - **One URL form.** Cloudflare Pages serves `/x` from `x.html` and 308-redirects `/x.html`, so every URL printed
   by the build is the clean form: home is `/`, hubs are `/entities/`, `/articles/`, `/tools/`, everything else is
   `/path`. Canonical, `og:url`, both hreflang links, JSON-LD `url`/BreadcrumbList, sitemap `<loc>` and all internal
-  links agree; the artefact still emits the same 243 `.html` files that Pages serves. `config/urls.json` is keyed by
-  the clean URL.
+  links agree; the artefact still emits the same HTML pages that Pages serves (235 page addresses plus the 404).
+  `config/urls.json` is keyed by the clean URL.
 - **Titles and descriptions.** Every indexable page has a unique title between 25 and 60 characters (primary keyword
   first; the ` · Supermarket Simulator Wiki` suffix is dropped rather than truncated past 60) and a unique
   description between 70 and 160 characters, cut at a word boundary. No page repeats the site name in its title

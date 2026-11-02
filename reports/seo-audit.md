@@ -191,7 +191,8 @@ Internal links added:
 No noindex page was promoted: all 11 remaining notes are diagram-only and have no confirmed in-game picture, which
 is the site's documented bar for an indexable entry. No new image pack was available and IL2CPP was not re-run.
 
-Measured after the change: **243 pages / 212 indexable / 31 noindex**, sitemap 212 clean URLs, 119 `<lastmod>`
-values (108 entry pictures from 2026-10-30; 8 guides from 2026-10-01; the new guide, home and updates page from
-2026-11-03), and the 95-gate suite still green. `config/urls.json` is 212 keep / 23 noindex / 0 redirects.
+Measured after the change: **243 page outputs / 212 indexable / 23 noindex HTML pages** (the status generator's
+`noindex` field reads 31 because it also counts the 404 and the 7 non-HTML outputs), sitemap 212 clean URLs, 119
+`<lastmod>` values (108 entry pictures from 2026-10-30; 8 guides from 2026-10-01; the new guide, home and updates
+page from 2026-11-03), and the 95-gate suite still green. `config/urls.json` is 212 keep / 23 noindex / 0 redirects.
 
