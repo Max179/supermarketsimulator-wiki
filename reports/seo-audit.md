@@ -177,7 +177,8 @@ The customer-route cluster now has one more indexable guide:
 `/articles/keeping-the-route-from-the-door-to-the-till-clear` ("Keeping the route from the door to the till clear").
 It follows the route from the entrance to the till: the entrance, the walkable ground the game prepares, the
 fixtures that stand in the way, the shelf approach, the queue and the delivery boxes. Every step is grounded in
-facts already published on the entry pages; no number is estimated and no template section was rewritten.
+facts already published on the entry pages; no number is estimated. The only template addition is a small optional
+"Related guides" block; no existing section was rewritten.
 
 Internal links added:
 
