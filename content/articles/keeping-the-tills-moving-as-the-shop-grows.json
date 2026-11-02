@@ -66,6 +66,9 @@
     "the-self-checkout-and-its-rules",
     "hiring-a-cashier"
   ],
+  "relatedGuides": [
+    "keeping-the-route-from-the-door-to-the-till-clear"
+  ],
   "sources": [
     "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
   ]

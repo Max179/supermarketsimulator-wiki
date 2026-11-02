@@ -63,7 +63,7 @@ export function checkEntry(entry, dir, ids) {
 }
 
 /** @returns {string[]} violations for a published article: every step must say what to do and why it is grounded. */
-export function checkArticle(a, ids) {
+export function checkArticle(a, ids, guideIds = new Set()) {
   const bad = [];
   const prose = [a.title, a.target, ...(a.steps ?? []).map((s) => s.do), ...(a.commonMistakes ?? [])].join(' ').toLowerCase();
   for (const term of BANNED) if (prose.includes(term)) bad.push('internal term "' + term + '" in prose');
@@ -76,6 +76,7 @@ export function checkArticle(a, ids) {
   for (const s of a.steps ?? []) if (!s.do || !s.because) bad.push('step without action or grounding: ' + JSON.stringify(s));
   if (!(a.commonMistakes ?? []).length) bad.push('no common mistakes');
   for (const r of a.relatedEntities ?? []) if (!ids.has(r)) bad.push('related entity does not exist: ' + r);
+  for (const g of a.relatedGuides ?? []) if (!guideIds.has(g)) bad.push('related guide does not exist: ' + g);
   if (!(a.sources ?? []).length) bad.push('no sources');
   return bad;
 }
@@ -123,8 +124,9 @@ if (process.argv[1] && process.argv[1].endsWith('content-gate.mjs')) {
   }
   const artDir = join(root, 'content', 'articles');
   const articles = existsSync(artDir) ? readdirSync(artDir).filter((x) => x.endsWith('.json')).map((x) => JSON.parse(readFileSync(join(artDir, x), 'utf8'))) : [];
+  const guideIds = new Set(articles.map((a) => a.id));
   for (const a of articles) {
-    const bad = checkArticle(a, ids);
+    const bad = checkArticle(a, ids, guideIds);
     if (bad.length) { violations += bad.length; console.log('  FAIL article ' + a.id + ': ' + bad.join('; ')); }
     else console.log('  OK   article ' + a.id + ' (' + a.steps.length + ' step(s))');
   }

@@ -322,6 +322,7 @@ export function build(inventoryPath, outDir) {
   try { questions = JSON.parse(readFileSync(join(process.cwd(), 'data', 'guide-questions.json'), 'utf8')); } catch { /* none yet */ }
   // The changelog on the player layer lists entities and guides only: links into the evidence layer stay in the footer.
   const playerUpdates = updates.filter((u) => !String(u.url ?? '').startsWith('/reference/'));
+  const articleById = new Map(articles.map((a) => [a.id, a]));
 
   // Truthful dates only. The only dated records in this repository are content/updates.json (when a page was added)
   // and content/images-manifest.json (when an entry's picture was retrieved and put on the page). A page with no
@@ -519,6 +520,7 @@ export function build(inventoryPath, outDir) {
   // ---- articles ------------------------------------------------------------------------------
   for (const a of articles) {
     const related = (a.relatedEntities ?? []).filter((id) => byId.has(id));
+    const relatedGuides = (a.relatedGuides ?? []).map((id) => articleById.get(id)).filter(Boolean);
     indexable('articles/' + a.id + '.html', a.title, a.target,
       '<article class="entry"><p class="kicker">Guide</p>\n<h1>' + esc(a.title) + '</h1>\n<p class="lead">' + esc(a.target) + '</p>\n' +
       '<h2>Applies to</h2><p class="dim">' + esc(a.version ?? SITE.versionBadge) + '</p>\n' +
@@ -526,6 +528,8 @@ export function build(inventoryPath, outDir) {
       '<h2>Steps</h2><ol class="steps">' + (a.steps ?? []).map((s) => '<li><strong>' + esc(s.do) + '</strong><br><span class="dim small">' + esc(whyOf(s.because)) + '</span></li>').join('') + '</ol>\n' +
       '<h2>Common mistakes</h2><ul>' + (a.commonMistakes ?? []).map((m) => '<li>' + esc(m) + '</li>').join('') + '</ul>\n' +
       (related.length ? '<h2>Related entries</h2><div class="grid">' + related.map((id) => card(byId.get(id))).join('') + '</div>' : '') +
+      (relatedGuides.length ? '<h2>Related guides</h2><ul class="guide-links">' + relatedGuides.map((g) =>
+        '<li><a href="/articles/' + esc(g.id) + '.html">' + esc(g.title) + '</a><br><span class="dim small">' + esc(g.target) + '</span></li>').join('') + '</ul>' : '') +
       '<h2>Sources</h2><p class="dim small">' + esc((a.sources ?? []).join(' ')) + '</p></article>',
       { published: updateDateByPath.get(publicPath('/articles/' + a.id + '.html')) ?? null,
         modified: updateDateByPath.get(publicPath('/articles/' + a.id + '.html')) ?? null });

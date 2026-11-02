@@ -9,8 +9,8 @@ Pages 308-redirects.
 
 The output has two deliberately separate layers:
 
-- **Player layer** — home, game guide, entity hub and category pages, entry pages, 77 guides, tools and updates.
-  These are the pages a player is meant to find (211 indexable URLs, all in `sitemap.xml`).
+- **Player layer** — home, game guide, entity hub and category pages, entry pages, 78 guides, tools and updates.
+  These are the pages a player is meant to find (212 indexable URLs, all in `sitemap.xml`).
 - **Evidence layer** — class, namespace and data-name tables plus provenance, under `/reference/`, plus the
   11 picture-less subjects kept as notes. Marked `noindex` and excluded from the sitemap.
 
@@ -37,7 +37,7 @@ example `python3 -m http.server 4206 --directory web/dist`) also opens the site,
 
 | Command | What it does |
 | --- | --- |
-| `npm run build` | Regenerate `web/dist/` from `data/normalized/p0-inventory.json` and `content/`. Prints `pages=242 indexable=211`; the emitted files are still `.html`, the published URLs are clean. |
+| `npm run build` | Regenerate `web/dist/` from `data/normalized/p0-inventory.json` and `content/`. Prints `pages=243 indexable=212`; the emitted files are still `.html`, the published URLs are clean. |
 | `npm test` | Run the site gate suite (`tests/site.test.mjs`, 95 gates): builds into a temp directory and checks routes, clean URLs, canonical/sitemap equality, JSON-LD/social metadata, sitemap XML + truthful `lastmod`, robots.txt, IndexNow key, provenance, images, content invariants and the publish configuration. |
 | `npm run gates` | Content gate, citation check, coverage matrix and image coverage; writes `reports/coverage-report.md` and `reports/image-coverage.md`. |
 | `npm run classify` | Regenerate `config/urls.json` from a full `web/dist` build (one classification per emitted page). |
@@ -69,9 +69,9 @@ npm run typecheck
 | `pipeline/` | Site generator (`site.mjs`), status generator, the shared inventory predicate, and the extraction/decoder scripts used on the Windows host (metadata reader, serialized-file readers, UnityPy probes, value normalizer). |
 | `tests/` | `site.test.mjs` — deterministic site, data-integrity and SEO gates (95 passing). |
 | `tools/` | Content gate, citation check, coverage matrix, image coverage/sanity, URL classifier, preflight, smoke test, deploy check, IndexNow submission, preview/package and image-extraction tools. |
-| `content/` | Editorial source: 119 published entry JSONs, 77 guide JSONs, `images-manifest.json` (the picture provenance ledger: source page, licence/rights review, retrieval date and sha256 for each of the 108 mapped pictures), `updates.json` and `assets/` (108 sourced in-game pictures + 94 original diagrams). |
+| `content/` | Editorial source: 119 published entry JSONs, 78 guide JSONs, `images-manifest.json` (the picture provenance ledger: source page, licence/rights review, retrieval date and sha256 for each of the 108 mapped pictures), `updates.json` and `assets/` (108 sourced in-game pictures + 94 original diagrams). |
 | `data/normalized/` | The committed data index the build reads: `p0-inventory.json` (21,152 types), `supermarket-object-names.json`, `value-index.json` (checksum/counts of the decoded 170,050 field rows) and `citation-index.json` (the 15,162 identifiers only the decoded layers hold). |
-| `data/guide-questions.json` | The player questions that pair one-to-one with the 77 guides. |
+| `data/guide-questions.json` | The player questions that pair one-to-one with the 78 guides. |
 | `web/` | Static shell assets (`web/assets/`) and the generated site (`web/dist/`, ignored). |
 | `config/` | URL classification (`urls.json`) and the coverage floor/matrix (`coverage.json`). |
 | `reports/` | Gate output and audit records: coverage, image coverage/reviews/sanity and the image source lists, the SEO audit, status, handoff, local-complete, the revival record and the image replacement record. `reports/archive-2026-09-28/` holds the superseded Windows extraction probes. |
@@ -132,16 +132,17 @@ measurement is in [`reports/seo-audit.md`](reports/seo-audit.md); the rules are 
 - **One URL form.** Cloudflare Pages serves `/x` from `x.html` and 308-redirects `/x.html`, so every URL printed
   by the build is the clean form: home is `/`, hubs are `/entities/`, `/articles/`, `/tools/`, everything else is
   `/path`. Canonical, `og:url`, both hreflang links, JSON-LD `url`/BreadcrumbList, sitemap `<loc>` and all internal
-  links agree; the artefact still emits the same 242 `.html` files that Pages serves. `config/urls.json` is keyed by
+  links agree; the artefact still emits the same 243 `.html` files that Pages serves. `config/urls.json` is keyed by
   the clean URL.
 - **Titles and descriptions.** Every indexable page has a unique title between 25 and 60 characters (primary keyword
   first; the ` · Supermarket Simulator Wiki` suffix is dropped rather than truncated past 60) and a unique
   description between 70 and 160 characters, cut at a word boundary. No page repeats the site name in its title
   twice, and nothing is truncated mid-word.
-- **Sitemap.** `sitemap.xml` lists exactly the 211 indexable clean URLs. `<lastmod>` appears only where this
-  repository records a real date — `content/updates.json` (`2026-10-01`, 9 pages) or `content/images-manifest.json`
-  `retrievedAt` (`2026-10-30`, 108 entries plus the home page that shows their pictures). The 93 pages without a
-  recorded date carry no `<lastmod>`; the build date is never used as a substitute.
+- **Sitemap.** `sitemap.xml` lists exactly the 212 indexable clean URLs. `<lastmod>` appears only where this
+  repository records a real date — `content/updates.json` (`2026-10-01` on 8 guide pages; `2026-11-03` on the new
+  guide, the home page and the updates page) or `content/images-manifest.json` `retrievedAt` (`2026-10-30` on
+  108 entry pages). The 93 pages without a recorded date carry no `<lastmod>`; the build date is never used as a
+  substitute.
 - **Structured data and social.** Home ships `WebSite` + `SearchAction`; indexable pages ship `WebPage` or
   `Article` plus a `BreadcrumbList`, all pointing at the canonical. Article entries/guides carry headline,
   description, image (entries use their own in-game picture) and `datePublished`/`dateModified` only when a recorded

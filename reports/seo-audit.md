@@ -170,3 +170,27 @@ node tools/smoke.mjs                -> [smoke] 211 kept, 23 noindex, artefact in
    `/guide.html`).
 4. 90 indexable titles sit below the 45-character target band (32–44); they are short entity/guide names that read
    best unbranded. Not a defect under the 25–60 requirement; a later copy pass could lengthen a few.
+
+## 2026-11-03 addendum — one new guide in the customer cluster
+
+The customer-route cluster now has one more indexable guide:
+`/articles/keeping-the-route-from-the-door-to-the-till-clear` ("Keeping the route from the door to the till clear").
+It follows the route from the entrance to the till: the entrance, the walkable ground the game prepares, the
+fixtures that stand in the way, the shelf approach, the queue and the delivery boxes. Every step is grounded in
+facts already published on the entry pages; no number is estimated and no template section was rewritten.
+
+Internal links added:
+
+- the new guide links to three existing entries (`how-customers-find-their-way`, `furniture-and-shop-layout`,
+  `checkout-and-cashiers`);
+- the new guide links to two existing guides (`laying-out-a-shop-you-can-work-in`,
+  `signing-the-shop-so-customers-find-things`);
+- three existing guides now link back to it (the same two, plus `keeping-the-tills-moving-as-the-shop-grows`).
+
+No noindex page was promoted: all 11 remaining notes are diagram-only and have no confirmed in-game picture, which
+is the site's documented bar for an indexable entry. No new image pack was available and IL2CPP was not re-run.
+
+Measured after the change: **243 pages / 212 indexable / 31 noindex**, sitemap 212 clean URLs, 119 `<lastmod>`
+values (108 entry pictures from 2026-10-30; 8 guides from 2026-10-01; the new guide, home and updates page from
+2026-11-03), and the 95-gate suite still green. `config/urls.json` is 212 keep / 23 noindex / 0 redirects.
+

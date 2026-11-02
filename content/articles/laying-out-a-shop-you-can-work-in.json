@@ -60,6 +60,9 @@
     "how-customers-find-their-way",
     "shelf-slots-and-display-space"
   ],
+  "relatedGuides": [
+    "keeping-the-route-from-the-door-to-the-till-clear"
+  ],
   "sources": [
     "A local copy of the game, read only. Identifiers are listed on the technical reference pages; nothing here is estimated."
   ]

@@ -1,0 +1,66 @@
+{
+  "id": "keeping-the-route-from-the-door-to-the-till-clear",
+  "title": "Keeping the route from the door to the till clear",
+  "tier": "published",
+  "kind": "article",
+  "target": "A layout guide for Supermarket Simulator that follows the route a customer takes: the entrance, the walkable ground the game prepares, the fittings that stand in the way, the shelf approach and the queue at the till.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with at least one stocked shelf and a checkout",
+    "The fittings you want to place already bought",
+    "A few minutes with the shop empty enough to walk the route"
+  ],
+  "steps": [
+    {
+      "do": "Walk the route from the door to the till before you move anything.",
+      "because": "the entrance is managed and can be changed, and the shop has its own prepared ground for people to walk on (EntranceManager, EntranceChangeOverlay, StoreNavmesh)"
+    },
+    {
+      "do": "Treat the walkable ground as one connected route, not as a set of gaps between fittings.",
+      "because": "the game builds a walkable ground for the shop, and a path that leaves it uses a link of its own (NavmeshBuildRegistry, OffMeshLinkNavigator)"
+    },
+    {
+      "do": "Place a fitting only where there is still a way past it.",
+      "because": "obstacles that people walk around are kept by a manager of their own, and a placement is checked before it is taken (NavMeshObstacleManager, PositionValidator)"
+    },
+    {
+      "do": "Line the route with the shelves you actually want reached, and keep their slots stocked.",
+      "because": "a shelf is a set of slots, and stock is placed into an empty slot rather than onto a general surface (RackSlot, SpawnProductOnEmptyShelf)"
+    },
+    {
+      "do": "Put the tills where the queue can stand without cutting the route in two.",
+      "because": "customers wait in a queue, the queue has positions of its own, and a checkout position can be moved (CustomerQueue, QueuePosition, MoveCheckoutPosition)"
+    },
+    {
+      "do": "Make the way in and the categories legible, then keep them consistent.",
+      "because": "the entrance has variants and a name sign, and a category sign is a placed object tied to a product category (EntranceVariantSignboard, EntranceNameSignSetter, CategorySign, ProductCategory)"
+    },
+    {
+      "do": "Keep delivery boxes out of the customer route while you unpack.",
+      "because": "a box on a shelf is tracked against a slot, and the game defines separate restock areas for boxes and vehicles (RackSlotBoxTarget, RestockAreaBoxController, VehicleRestockAreaController)"
+    },
+    {
+      "do": "Walk the route again after every rearrangement.",
+      "because": "the entrance can be changed, and the walkable ground is built again for the new layout (EntranceChangeItem, NavmeshBuildLoader)"
+    }
+  ],
+  "commonMistakes": [
+    "Placing a row of shelves and only then noticing there is no way past the end of it.",
+    "Leaving a delivery of boxes in the aisle while you stock the far end.",
+    "Moving a till without checking where the queue will stand.",
+    "Signing a category that is stocked somewhere else, so the sign and the shelf disagree.",
+    "Rearranging the shop while it is full and expecting the route to sort itself out."
+  ],
+  "relatedEntities": [
+    "how-customers-find-their-way",
+    "furniture-and-shop-layout",
+    "checkout-and-cashiers"
+  ],
+  "relatedGuides": [
+    "laying-out-a-shop-you-can-work-in",
+    "signing-the-shop-so-customers-find-things"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

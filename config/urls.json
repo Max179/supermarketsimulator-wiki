@@ -200,6 +200,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/articles/keeping-the-route-from-the-door-to-the-till-clear",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/articles/keeping-the-shop-clean-without-stopping-the-day",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
