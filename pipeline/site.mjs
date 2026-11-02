@@ -43,6 +43,61 @@ export const SITE = {
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+/**
+ * Cloudflare Pages serves /x from x.html and 308-redirects the .html form, so the canonical URL of every page is
+ * the clean one: index.html -> /, <dir>/index.html -> /<dir>/, x.html -> /x. The build still writes the .html
+ * files (that is what Pages serves the clean URLs from); every URL printed into a page or the sitemap uses this form.
+ */
+export const publicPath = (path) => {
+  const p = String(path ?? '');
+  if (p === '' || p === '/' || p === '/index.html') return '/';
+  if (p.endsWith('/index.html')) return p.slice(0, -'index.html'.length);
+  return p.endsWith('.html') ? p.slice(0, -5) : p;
+};
+
+/**
+ * SEO titles: the page's own truthful title stays at the front, and the brand suffix is added only when the whole
+ * string fits the 60-character search-result limit. Nothing is cut mid-word: a title already near the limit simply
+ * goes unbranded, and the one page title that is longer than the limit on its own gets a shortened (still truthful)
+ * label from SHORT_TITLES below.
+ */
+export const fullTitle = (title) => {
+  const base = String(title ?? '').replace(/\s+/g, ' ').trim();
+  if (base.includes(SITE.name)) return base;
+  const branded = base + ' · ' + SITE.name;
+  return branded.length <= 60 ? branded : base;
+};
+
+// Page titles that are longer than the 60-character ceiling on their own. Keyed by emitted file path; the page's
+// own <h1> and body keep the full title, only the search-result label is shortened.
+const SHORT_TITLES = {
+  'entries/the-shops-status-its-doors-and-its-ground.html': 'Shop status, doors and the ground customers walk on',
+};
+
+const DESC_TAIL = 'A player-written Supermarket Simulator reference checked against the game\'s own files.';
+/**
+ * Meta descriptions: kept inside the 70-160 character search-snippet range. A long description is cut at a word
+ * boundary (never mid-word); a short one gets the fixed, truthful site description appended, never invented facts.
+ */
+export const metaDescription = (text) => {
+  const trimAt = (s, max) => {
+    const t = String(s ?? '').replace(/\s+/g, ' ').trim();
+    if (t.length <= max) return t;
+    const cut = t.slice(0, max);
+    const at = cut.lastIndexOf(' ');
+    return (at > 40 ? cut.slice(0, at) : cut).replace(/[.,;:!?\u2014\-\s]+$/, '');
+  };
+  const raw = String(text ?? '').replace(/\s+/g, ' ').trim();
+  let d = raw.length > 160 ? trimAt(raw, 157) + '\u2026' : raw;
+  if (d.length < 70) {
+    if (!/[.!?]$/.test(d)) d += '.';
+    const room = 160 - d.length - 1;
+    const tail = trimAt(DESC_TAIL, room).replace(/[.,;:!?\u2014\-\s]+$/, '');
+    if (tail.length > 0) d = d + ' ' + tail + '.';
+  }
+  return d;
+};
+
 /** Pure, fixture-tested: class lookup across the inventory. */
 export function lookupClasses(inventory, query, limit = 50) {
   if (typeof query !== 'string') throw new TypeError('query must be a string');
@@ -60,13 +115,13 @@ export function lookupClasses(inventory, query, limit = 50) {
   return out;
 }
 
-/** The five player-facing sections. Nothing technical belongs here. */
+/** The five player-facing sections, in their public (clean) URL form. Nothing technical belongs here. */
 export const NAV = [
-  ['/guide.html', 'Game guide'],
+  ['/guide', 'Game guide'],
   ['/entities/', 'Entities'],
   ['/articles/', 'Guides'],
   ['/tools/', 'Tools'],
-  ['/updates.html', 'Updates'],
+  ['/updates', 'Updates'],
 ];
 
 /** Evidence layer: reachable from the footer and /reference/ only, never indexed. */
@@ -112,45 +167,73 @@ export function build(inventoryPath, outDir) {
   const pages = new Map();
   const urls = [];
   const isRef = (path) => isSchemaPage(path);
-  // Search engines and social clients get a page that can describe itself: JSON-LD plus a complete preview block.
-  const layout = (title, desc, path, body) => {
-    const pageUrl = SITE.url + path;
-    const isHome = path === '/' || path === '/index.html';
-    const isArticle = (path.startsWith('/entries/') && path !== '/entries/index.html') ||
-      (path.startsWith('/articles/') && path !== '/articles/index.html');
-    const ldType = isHome ? 'WebSite' : (isArticle ? 'Article' : 'WebPage');
-    const pageTitle = title.includes(SITE.name) ? title : title + ' · ' + SITE.name;
-    const image = SITE.url + '/' + SITE.heroImage;
-    const ld = { '@context': 'https://schema.org', '@type': ldType, name: title, description: desc, url: pageUrl,
-      isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url } };
-    if (isArticle) { ld.headline = title; ld.image = image; }
+  // Cloudflare Pages redirects the .html form of every URL to the clean one, so a .html link left in a page body
+  // would send readers and crawlers through a 308. The finished page is normalised here once: internal links, form
+  // actions, meta-refresh targets and the absolute site URLs inside JSON-LD / Open Graph all get the clean form.
+  const cleanHtml = (html) => html
+    .replace(/\b(href|action)="(\/[^"]*?)\.html([^"]*)"/g, (m, attr, p, rest) => attr + '="' + publicPath(p + '.html') + rest + '"')
+    .replace(/https:\/\/supermarketsimulator\.wiki(\/[^"'\s<]*?)\.html([^"'\s<]*)/g, (m, p, rest) => SITE.url + publicPath(p + '.html') + rest)
+    .replace(/(url=)(\/[^"]*?)\.html/g, (m, a, p) => a + publicPath(p + '.html'));
+  // Search engines and social clients get a page that can describe itself: canonical + social block + JSON-LD.
+  const layout = (title, desc, path, body, meta = {}) => {
+    const urlPath = publicPath(path);
+    const pageUrl = SITE.url + urlPath;
+    const isHome = urlPath === '/';
+    const isArticle = /^\/entries\/[^/]+$/.test(urlPath) || /^\/articles\/[^/]+$/.test(urlPath);
+    const baseTitle = SHORT_TITLES[String(path).replace(/^\//, '')] ?? title;
+    const pageTitle = fullTitle(baseTitle);
+    const description = metaDescription(desc);
+    const imagePath = meta.image ? (String(meta.image).startsWith('/') ? String(meta.image) : '/' + meta.image) : '/' + SITE.heroImage;
+    const socialImage = SITE.url + imagePath;
+    const imageAlt = meta.imageAlt ?? SITE.heroAlt;
+    const imageWidth = meta.imageWidth ?? (meta.image ? 1200 : 1600);
+    const imageHeight = meta.imageHeight ?? (meta.image ? 750 : 900);
+    const modified = /^\d{4}-\d{2}-\d{2}$/.test(String(meta.modified ?? '')) ? String(meta.modified) : null;
+    const published = /^\d{4}-\d{2}-\d{2}$/.test(String(meta.published ?? '')) ? String(meta.published) : null;
+    const ld = {
+      '@context': 'https://schema.org',
+      '@type': isHome ? 'WebSite' : (isArticle ? 'Article' : 'WebPage'),
+      name: isHome ? SITE.name : pageTitle,
+      description,
+      url: pageUrl,
+      inLanguage: 'en',
+      isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url + '/' },
+    };
     if (isHome) {
-      ld.inLanguage = 'en';
-      ld.potentialAction = { '@type': 'SearchAction', target: SITE.url + '/search.html?q={search_term_string}', 'query-input': 'required name=search_term_string' };
+      ld.alternateName = SITE.gameName;
+      ld.potentialAction = { '@type': 'SearchAction', target: SITE.url + '/search?q={search_term_string}', 'query-input': 'required name=search_term_string' };
+    }
+    if (isArticle) {
+      ld.headline = pageTitle;
+      if (meta.image) ld.image = socialImage;
+      if (published) ld.datePublished = published;
+      if (modified) ld.dateModified = modified;
+    } else if (modified) {
+      ld.dateModified = modified;
     }
     const crumbs = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: isHome
       ? [{ '@type': 'ListItem', position: 1, name: SITE.name, item: SITE.url + '/' }]
       : [{ '@type': 'ListItem', position: 1, name: SITE.name, item: SITE.url + '/' },
-        { '@type': 'ListItem', position: 2, name: title, item: pageUrl }] };
+        { '@type': 'ListItem', position: 2, name: pageTitle, item: pageUrl }] };
     const ldJson = (o) => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, '\\u003c') + '</script>';
-    return '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
+    const html = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
     '<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>' + esc(pageTitle) + '</title>\n' +
-    '<meta name="description" content="' + esc(desc) + '">\n<meta name="robots" content="' + (isRef(path) ? 'noindex, follow' : 'index, follow') + '">\n' +
+    '<meta name="description" content="' + esc(description) + '">\n<meta name="robots" content="' + (isRef(path) ? 'noindex, follow' : 'index, follow') + '">\n' +
     '<meta name="theme-color" content="#101412">\n' +
     '<link rel="canonical" href="' + pageUrl + '">\n<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n' +
     '<link rel="alternate" hreflang="en" href="' + pageUrl + '">' +
     '<link rel="alternate" hreflang="x-default" href="' + pageUrl + '">' +
-    '<meta property="og:title" content="' + esc(title) + '"><meta property="og:type" content="' + (isArticle ? 'article' : 'website') + '"><meta property="og:site_name" content="' + esc(SITE.name) + '"><meta property="og:locale" content="en_US">\n' +
-    '<meta property="og:description" content="' + esc(desc) + '"><meta property="og:url" content="' + pageUrl + '">\n' +
-    '<meta property="og:image" content="' + image + '"><meta property="og:image:width" content="800"><meta property="og:image:height" content="500"><meta property="og:image:alt" content="' + esc(SITE.heroAlt) + '">\n' +
-    '<meta name="twitter:card" content="summary"><meta name="twitter:title" content="' + esc(title) + '"><meta name="twitter:description" content="' + esc(desc) + '">\n' +
+    '<meta property="og:title" content="' + esc(pageTitle) + '"><meta property="og:type" content="' + (isArticle ? 'article' : 'website') + '"><meta property="og:site_name" content="' + esc(SITE.name) + '"><meta property="og:locale" content="en_US">\n' +
+    '<meta property="og:description" content="' + esc(description) + '"><meta property="og:url" content="' + pageUrl + '">\n' +
+    '<meta property="og:image" content="' + socialImage + '"><meta property="og:image:width" content="' + imageWidth + '"><meta property="og:image:height" content="' + imageHeight + '"><meta property="og:image:alt" content="' + esc(imageAlt) + '">\n' +
+    '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="' + esc(pageTitle) + '"><meta name="twitter:description" content="' + esc(description) + '"><meta name="twitter:image" content="' + socialImage + '">\n' +
     ldJson(ld) + '\n' + ldJson(crumbs) + '\n' +
     '<style>:root{--accent:' + SITE.accent + '}</style>\n<link rel="stylesheet" href="/style.css">\n</head>\n<body>\n' +
     '<a class="skip" href="#main">Skip to content</a>\n' +
     '<header class="top">\n<div class="wrap bar">\n' +
     '<a class="brand" href="/"><img src="/brand.svg" alt="' + esc(SITE.gameName) + '" width="34" height="34"><span>' + esc(SITE.gameName) + '<em>wiki</em></span></a>\n' +
     '<nav class="main" aria-label="Sections">' + NAV.map(([h, t]) =>
-      '<a href="' + h + '"' + (path === h || (h !== '/' && path.startsWith(h.replace(/\.html$/, '').replace(/index\.html$/, '')) ) ? ' class="on"' : '') + '>' + esc(t) + '</a>').join('') + '</nav>\n' +
+      '<a href="' + h + '"' + (urlPath === h || (h !== '/' && urlPath.startsWith(h)) ? ' class="on"' : '') + '>' + esc(t) + '</a>').join('') + '</nav>\n' +
     '<form class="hsearch" action="/search.html" method="get" role="search"><input type="search" name="q" placeholder="' + esc(SITE.searchPlaceholder) + '" aria-label="Search this site"><button type="submit">Search</button></form>\n' +
     '</div>\n</header>\n<main id="main" class="wrap">\n' + body + '\n</main>\n' +
     '<footer class="foot"><div class="wrap">\n<p class="dim">' + esc(srcLine) + '</p>\n' +
@@ -158,10 +241,16 @@ export function build(inventoryPath, outDir) {
     '<p class="dim"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a> · ' +
     '<a href="/terms.html">Terms</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/reference/">Technical reference</a></p>\n' +
     '</div></footer>\n</body>\n</html>\n';
+    return cleanHtml(html);
   };
   const write = (rel, html) => { const f = join(outDir, rel); mkdirSync(dirname(f), { recursive: true }); writeFileSync(f, html, 'utf8'); pages.set('/' + rel, html); };
-  const indexable = (rel, title, desc, body) => { write(rel, layout(title, desc, '/' + rel, body)); urls.push(SITE.url + '/' + rel); };
-  const reference = (rel, title, desc, body) => { write(rel, layout(title, desc, '/' + rel, body)); };
+  const sitemapDates = new Map();
+  const indexable = (rel, title, desc, body, meta = {}) => {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(String(meta.modified ?? ''))) sitemapDates.set(SITE.url + publicPath('/' + rel), String(meta.modified));
+    write(rel, layout(title, desc, '/' + rel, body, meta));
+    urls.push(SITE.url + publicPath('/' + rel));
+  };
+  const reference = (rel, title, desc, body, meta = {}) => { write(rel, layout(title, desc, '/' + rel, body, meta)); };
 
   // Player entries. Illustrated entries are entities; the rest are notes in the evidence layer.
   const entriesDir = join(process.cwd(), 'content', 'published');
@@ -234,6 +323,25 @@ export function build(inventoryPath, outDir) {
   // The changelog on the player layer lists entities and guides only: links into the evidence layer stay in the footer.
   const playerUpdates = updates.filter((u) => !String(u.url ?? '').startsWith('/reference/'));
 
+  // Truthful dates only. The only dated records in this repository are content/updates.json (when a page was added)
+  // and content/images-manifest.json (when an entry's picture was retrieved and put on the page). A page with no
+  // recorded date gets no <lastmod> in the sitemap rather than the build date.
+  const isoDate = (s) => (/^\d{4}-\d{2}-\d{2}$/.test(String(s ?? '')) ? String(s) : null);
+  const updateDateByPath = new Map();
+  for (const u of updates) {
+    const d = isoDate(u.date);
+    const p = publicPath(String(u.url ?? ''));
+    if (d && p.startsWith('/')) updateDateByPath.set(p, !updateDateByPath.has(p) || d > updateDateByPath.get(p) ? d : updateDateByPath.get(p));
+  }
+  const latestUpdateDate = [...updateDateByPath.values()].sort().pop() ?? null;
+  const pictureDateByEntity = new Map();
+  for (const r of (manifest.records ?? [])) {
+    const d = isoDate(r.retrievedAt);
+    if (d && r.entity) pictureDateByEntity.set(r.entity, !pictureDateByEntity.has(r.entity) || d > pictureDateByEntity.get(r.entity) ? d : pictureDateByEntity.get(r.entity));
+  }
+  const latestPictureDate = [...pictureDateByEntity.values()].sort().pop() ?? null;
+  const laterOf = (a, b) => (a && b ? (a > b ? a : b) : (a ?? b ?? null));
+
   // ---- home ---------------------------------------------------------------------------------
   const featured = (SITE.featured ?? []).map((id) => byId.get(id)).filter((e) => e && e.imageTier === 'game-image');
   const featuredList = (featured.length ? featured : entities).slice(0, 8);
@@ -275,7 +383,8 @@ export function build(inventoryPath, outDir) {
     'var checks=[].slice.call(document.querySelectorAll("[data-check]"));function count(){var done=checks.filter(function(c){return c.checked;}).length;' +
     'document.getElementById("check-count").textContent=done+"/3 done";if(done===3){document.getElementById("shift-status").textContent="Shift complete · choose your next guide";}}' +
     'checks.forEach(function(c){c.addEventListener("change",count);});</script>';
-  indexable('index.html', SITE.gameName + ' guide and reference', SITE.tagline + ' — a player-written reference built from what the game itself establishes.',
+  indexable('index.html', 'Supermarket Simulator Wiki: shop guide and reference',
+    'Supermarket Simulator guide: stock shelves, price products, serve customers and grow the shop, built from the game\'s own files.',
     '<section class="hero">\n<div class="heroText">\n' +
     '<p class="kicker">' + esc(SITE.versionBadge) + '</p>\n' +
     '<h1>' + esc(SITE.gameName) + '</h1>\n' +
@@ -311,10 +420,12 @@ export function build(inventoryPath, outDir) {
     'Facts are read from the game\'s own files, not from a wiki or a forum. The build this site documents is <strong>' + esc(inv.version ?? 'unknown') + '</strong>.</p>\n' +
     '<p class="dim small">The raw identifiers, tables and extraction notes are kept in a technical reference, reachable from the footer of every page and kept out of search engines on purpose.</p>\n' +
     '<div class="note-band"><p class="eyebrow">How this wiki works</p><p>Player pages stay focused on decisions in the shop. The evidence and extraction record is kept in Reference, so you can read an answer without wading through implementation details.</p></div>\n</section>\n' +
-    shiftScript);
+    shiftScript,
+    { modified: laterOf(latestPictureDate, latestUpdateDate) });
 
   // ---- game guide ---------------------------------------------------------------------------
-  indexable('guide.html', 'Game guide', 'Where to start in Supermarket Simulator, and what to do in the first days of a shop.',
+  indexable('guide.html', 'Supermarket Simulator game guide',
+    'Where to start in Supermarket Simulator, and what to do in the first days of a shop.',
     '<h1>Game guide</h1><p class="lead">A short path through your first days, with a link to the entries behind each step.</p>\n' +
     '<h2>1. Get stock onto a shelf</h2><p>Order, receive and fill. The shelves and how they are filled are their own subject: <a href="/entities/shelves-and-stock.html">shelves and stock</a>.</p>\n' +
     '<h2>2. Let customers in</h2><p>Who comes, what they want and how they find it: <a href="/entities/customers.html">customers</a>.</p>\n' +
@@ -325,7 +436,8 @@ export function build(inventoryPath, outDir) {
     'Pictures that show the game are in-game pictures credited with their source page; a diagram is always labelled as a diagram.</p>');
 
   // ---- entity hub and category pages --------------------------------------------------------
-  indexable('entities/index.html', 'Entities', 'Every part of the shop this site documents, with in-game pictures.',
+  indexable('entities/index.html', 'Shop entities and game systems',
+    'Every part of the shop this Supermarket Simulator wiki documents, grouped by the job in front of you, with in-game pictures.',
     '<h1>Entities</h1><p class="lead">Browse by what you are dealing with in the shop. Each entry says what the game itself establishes, and carries an in-game picture credited with the page it came from.</p>\n' +
     '<div class="grid">' + CATEGORIES.map((c) => {
       const list = entities.filter((e) => groupOf(e.category).key === c.key);
@@ -342,7 +454,8 @@ export function build(inventoryPath, outDir) {
     const onlyNotes = notes.filter((e) => groupOf(e.category).key === c.key);
     if (!list.length && !onlyNotes.length) continue;
     const cover = list.map(imgOf).find(Boolean);
-    indexable('entities/' + c.key + '.html', c.name + ' in ' + SITE.gameName, c.blurb + ' ' + list.map((e) => e.title).join(', ') + '.',
+    indexable('entities/' + c.key + '.html', c.name + ' in ' + SITE.gameName,
+      c.name + ' in ' + SITE.gameName + ': ' + c.blurb,
       '<h1>' + esc(c.name) + '</h1><p class="lead">' + esc(c.blurb) + '</p>\n' +
       (cover ? '<figure class="banner"><img src="/' + esc(cover.file) + '" alt="' + esc(cover.alt?.en ?? '') + '" width="900" height="380"><figcaption class="dim small">In-game picture, credited with its source page.</figcaption></figure>' : '') +
       '<div class="filter"><label for="f">Filter ' + esc(c.name.toLowerCase()) + '</label> <input id="f" type="search" placeholder="Type a word" autocomplete="off"> <span id="count" class="dim small"></span></div>\n' +
@@ -373,9 +486,13 @@ export function build(inventoryPath, outDir) {
       '<h2>In play</h2>' + (e.body ?? []).map((p) => '<p>' + esc(p) + '</p>').join('') + '\n' +
       (related.length ? '<h2>Related</h2><div class="grid">' + related.map((id) => card(byId.get(id))).join('') + '</div>' : '') +
       '<h2>Version and sources</h2><p class="dim small">' + esc((e.sources ?? []).join(' ')) + ' Documented build: ' + esc(inv.version ?? 'unknown') + '.</p>\n' +
-      '</article>');
+      '</article>',
+      { image: img ? '/' + img.file : undefined, imageAlt: img?.alt?.en, imageWidth: 1200, imageHeight: 750,
+        published: updateDateByPath.get(publicPath('/entries/' + e.id + '.html')) ?? null,
+        modified: laterOf(pictureDateByEntity.get(e.id), updateDateByPath.get(publicPath('/entries/' + e.id + '.html'))) });
   }
-  indexable('entries/index.html', 'Start here', 'How to use this site, and where to begin with the shop.',
+  indexable('entries/index.html', 'Start here: using the Supermarket Simulator Wiki',
+    'How to use this Supermarket Simulator wiki, and where to begin in the shop, with entries and guides checked against the game.',
     '<h1>Start here</h1><p class="lead">This site is a player-written reference for ' + esc(SITE.gameName) + '. It does not try to be a full wiki: every entry states what the game itself establishes, and says plainly when something has not been verified.</p>\n' +
     '<h2>The four things you can do</h2><ul>' +
     '<li><strong>Browse <a href="/entities/">entities</a></strong> by the part of the shop you are dealing with.</li>' +
@@ -409,7 +526,9 @@ export function build(inventoryPath, outDir) {
       '<h2>Steps</h2><ol class="steps">' + (a.steps ?? []).map((s) => '<li><strong>' + esc(s.do) + '</strong><br><span class="dim small">' + esc(whyOf(s.because)) + '</span></li>').join('') + '</ol>\n' +
       '<h2>Common mistakes</h2><ul>' + (a.commonMistakes ?? []).map((m) => '<li>' + esc(m) + '</li>').join('') + '</ul>\n' +
       (related.length ? '<h2>Related entries</h2><div class="grid">' + related.map((id) => card(byId.get(id))).join('') + '</div>' : '') +
-      '<h2>Sources</h2><p class="dim small">' + esc((a.sources ?? []).join(' ')) + '</p></article>');
+      '<h2>Sources</h2><p class="dim small">' + esc((a.sources ?? []).join(' ')) + '</p></article>',
+      { published: updateDateByPath.get(publicPath('/articles/' + a.id + '.html')) ?? null,
+        modified: updateDateByPath.get(publicPath('/articles/' + a.id + '.html')) ?? null });
   }
   indexable('articles/index.html', 'Guides', 'Step-by-step guides for the shop, each grounded in what the game itself establishes.',
     '<h1>Guides</h1><p class="lead">Each guide has a goal, the build it applies to, what you need first, the steps and the mistakes people make. Every step says why it works.</p>\n' +
@@ -418,20 +537,24 @@ export function build(inventoryPath, outDir) {
       '<span class="dim">' + esc(a.target) + '</span></a>').join('') + '</div>');
 
   // ---- tools and updates ---------------------------------------------------------------------
-  indexable('tools/index.html', 'Tools', 'Search boxes and checkers for looking something up on this site.',
+  indexable('tools/index.html', 'Tools and name checkers',
+    'Browser tools for looking up Supermarket Simulator names, items and screen labels; nothing you type is sent anywhere.',
     '<h1>Tools</h1><p class="lead">The tools here run in your browser; nothing you type is sent anywhere.</p>\n<div class="grid">' +
     '<a class="card" href="/search.html"><strong>Search names</strong><span class="dim">Check whether a name you saw in a mod or a save file is one the game uses.</span></a>' +
     '<a class="card" href="/reference/tool.html"><strong>Data name checker</strong><span class="dim">Check a data name the game stores values under.</span></a>' +
     '<a class="card" href="/articles/"><strong>Guides</strong><span class="dim">Step-by-step write-ups for one job at a time.</span></a>' +
     '</div><p class="dim small">These utilities report what the game\'s files contain. They are not part of the player reference and carry no advice.</p>');
-  indexable('updates.html', 'Updates', 'What has been added to this site, newest first.',
+  indexable('updates.html', 'Updates and new entries',
+    'New entries and guides on this Supermarket Simulator wiki, newest first, each checked against the game before it is published.',
     '<h1>Updates</h1><p class="lead">What has been added, newest first. Entries are added only when a fact has been checked against the game or a picture confirmed.</p>\n' +
     (playerUpdates.length ? '<ul class="updates">' + playerUpdates.map((u) => '<li><span class="when">' + esc(u.date) + '</span> <a href="' + esc(u.url) + '">' + esc(u.title) + '</a> <span class="dim small">' + esc(u.kind ?? '') + '</span></li>').join('') + '</ul>' : '<p class="dim">No update notes yet.</p>') +
-    '<p class="dim small">Notes for subjects that have no confirmed picture yet are listed in the technical reference, which is reachable from the footer.</p>');
+    '<p class="dim small">Notes for subjects that have no confirmed picture yet are listed in the technical reference, which is reachable from the footer.</p>',
+    { modified: latestUpdateDate });
 
   // ---- evidence layer (unchanged content, reachable from the footer only) --------------------
   const gameJson = JSON.stringify(game.map((c) => [c.name, c.namespace])).replace(/</g, '\\u003c');
-  indexable('search.html', 'Search', 'Search every name the game defines, in your browser.',
+  indexable('search.html', 'Search the game name index',
+    'Search every one of the ' + game.length + ' names the game defines, in your browser, with no network requests.',
     '<h1>Search</h1><p class="dim">' + game.length + ' names, searched in your browser. No network requests.</p>' +
     '<p><input id="q" type="search" placeholder="e.g. Product, Shelf, Checkout" autocomplete="off"> ' +
     '<label class="dim"><input type="checkbox" id="ns"> match namespaces too</label></p>' +
@@ -512,19 +635,21 @@ export function build(inventoryPath, outDir) {
     '<p><a href="/entities/">Back to the player reference</a></p>');
 
   // ---- legal pages ----------------------------------------------------------------------------
-  indexable('about.html', 'About', 'Who runs this site and how it is built.',
+  indexable('about.html', 'About this Supermarket Simulator reference',
+    'About this Supermarket Simulator wiki: how every page is built from the game\'s own files, and what stays in the technical reference.',
     '<h1>About</h1><p>This site is a player-written reference for ' + esc(SITE.gameName) + '. It is generated by a static build; there is no database behind it.</p>' +
     '<h2>Method</h2><p>No page on this site is hand-written from memory. Everything shown is produced by the build from the ' +
     'files listed on the <a href="/reference/sources.html">sources page</a>. When the build cannot read something, it says so.</p>' +
     '<h2>What is on which layer</h2><p>The player reference — entities, guides, the game guide and the tools — is what the site is for. ' +
     'The identifiers, tables and extraction notes are an evidence layer behind the <a href="/reference/">technical reference</a>, kept out of search engines on purpose.</p>');
 
-  indexable('contact.html', 'Contact', 'How to reach the maintainer.',
+  indexable('contact.html', 'Contact the Supermarket Simulator Wiki',
+    'How to contact the maintainer of this Supermarket Simulator wiki, and where to open an issue about a page.',
     '<h1>Contact</h1><p>This site is a static reference. There is no form and no server to post to.</p>' +
     '<p>The maintainer address will be published here only when one exists; until then please open an issue on the ' +
     'repository the build is published from.</p>');
 
-  indexable('disclaimer.html', 'Disclaimer', 'This site is unofficial and is not affiliated with the game or its publisher.',
+  indexable('disclaimer.html', 'Disclaimer and picture credits', 'This site is unofficial and is not affiliated with the game or its publisher.',
     '<h1>Disclaimer</h1><p>This site is unofficial and is not affiliated with, endorsed by or sponsored by the game\'s ' +
     'developer or publisher. Game names and trademarks belong to their owners.</p>' +
     '<p>Pictures on this site that show the game are in-game pictures: official screenshots published on the game\'s ' +
@@ -538,12 +663,14 @@ export function build(inventoryPath, outDir) {
     'out of date relative to a newer game version; the version extracted is stated on the ' +
     '<a href="/reference/sources.html">sources page</a>.</p>');
 
-  indexable('privacy.html', 'Privacy', 'This site has no accounts, no analytics and sets no cookies.',
+  indexable('privacy.html', 'Privacy, cookies and this site',
+    'Privacy on this Supermarket Simulator wiki: no accounts, no analytics and no cookies; search runs entirely in your browser.',
     '<h1>Privacy</h1><p>No accounts, no analytics, no advertising scripts, no cookies. The pages are static files.</p>' +
     '<p>Search and the lookup tool run entirely in your browser; the query is never sent anywhere.</p>' +
     '<p>Server logs, if any, are kept by the hosting provider under its own policy.</p>');
 
-  indexable('terms.html', 'Terms', 'Conditions for using this site.',
+  indexable('terms.html', 'Terms of use for this site',
+    'Terms of use for this Supermarket Simulator wiki: the data is published as-is and you may quote it with attribution.',
     '<h1>Terms</h1><p>The data is published as-is, without warranty of accuracy or fitness for a purpose.</p>' +
     '<p>You may read and quote it with attribution. Do not present it as official documentation of the game.</p>' +
     '<p>The build that produced this site is reproducible from the version recorded on the ' +
@@ -558,18 +685,21 @@ export function build(inventoryPath, outDir) {
     const html = layout(title + ' (moved)', 'This page has moved into the technical reference.', '/' + oldRel,
       '<h1>' + esc(title) + '</h1><p class="note">This page has moved into the <a href="' + newPath + '">technical reference</a>. The address was kept so an old link still lands somewhere useful.</p>')
       .replace('content="index, follow"', 'content="noindex, follow"')
-      .split(SITE.url + '/' + oldRel).join(SITE.url + newPath)
-      .replace('<head>', '<head>\n<meta http-equiv="refresh" content="0; url=' + newPath + '">');
+      .split(SITE.url + publicPath('/' + oldRel)).join(SITE.url + publicPath(newPath))
+      .replace('<head>', '<head>\n<meta http-equiv="refresh" content="0; url=' + publicPath(newPath) + '">');
     write(oldRel, html);
   };
   for (const [oldRel, name, title] of [
     ['collection.html', 'collection', 'All names'], ['fields.html', 'fields', 'Data names'],
     ['namespaces.html', 'namespaces', 'Namespaces'], ['tool.html', 'tool', 'Name checker'], ['sources.html', 'sources', 'Sources'],
-  ]) stub(oldRel, '/reference/' + name + '.html', title);
+  ]) stub(oldRel, '/reference/' + name, title);
 
   // ---- machine-readable bits ------------------------------------------------------------------
   write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    urls.map((u) => '  <loc>' + u + '</loc>\n').join('') + '</urlset>\n');
+    urls.map((u) => {
+      const lastmod = sitemapDates.get(u);
+      return '  <url><loc>' + u + '</loc>' + (lastmod ? '<lastmod>' + lastmod + '</lastmod>' : '') + '</url>\n';
+    }).join('') + '</urlset>\n');
   write('robots.txt', 'User-agent: *\nAllow: /\nSitemap: ' + SITE.url + '/sitemap.xml\n');
   write('search.js', 'var dataEl=document.getElementById("data");var data=dataEl?JSON.parse(dataEl.textContent):[];' +
     'var q=document.getElementById("q"),out=document.getElementById("out")?document.getElementById("out").querySelector("tbody"):null,meta=document.getElementById("meta"),nsBox=document.getElementById("ns");' +

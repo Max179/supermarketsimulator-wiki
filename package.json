@@ -17,6 +17,7 @@
     "smoke": "node tools/smoke.mjs",
     "deploy-check": "node tools/deploy-check.mjs",
     "status": "node pipeline/status.mjs",
+    "indexnow": "node tools/indexnow.mjs",
     "verify": "npm test && npm run typecheck && npm run preflight"
   },
   "devDependencies": {

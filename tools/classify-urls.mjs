@@ -6,7 +6,7 @@
  */
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import { SITE } from '../pipeline/site.mjs';
+import { SITE, publicPath } from '../pipeline/site.mjs';
 
 const dist = 'web/dist';
 if (!existsSync(dist)) { console.error('run the site build first'); process.exit(1); }
@@ -18,11 +18,13 @@ const walk = (d, out = []) => {
   }
   return out;
 };
-const emitted = walk(dist).map((p) => '/' + relative(dist, p).split('\\').join('/')).sort();
+// Public URL form: Cloudflare Pages serves the clean URL and 308-redirects the .html form, so the
+// classification is keyed by the clean URL the site actually publishes (and links to).
+const emitted = walk(dist).map((p) => publicPath('/' + relative(dist, p).split('\\').join('/'))).sort();
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8');
 const indexable = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname));
 const previous = existsSync('config/urls.json') ? JSON.parse(readFileSync('config/urls.json', 'utf8')) : { redirects: [] };
-const entries = emitted.filter((p) => p !== '/404.html').map((p) => ({
+const entries = emitted.filter((p) => p !== '/404.html' && p !== '/404').map((p) => ({
   url: p,
   action: indexable.has(p) ? 'keep' : 'noindex',
   reason: indexable.has(p) ? 'player-facing page: a question a player asks' : 'technical reference or duplicate kept reachable but not indexed',

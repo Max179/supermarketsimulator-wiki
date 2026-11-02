@@ -17,16 +17,22 @@ const urls = JSON.parse(readFileSync('config/urls.json', 'utf8'));
 const status = existsSync('reports/status.json') ? JSON.parse(readFileSync('reports/status.json', 'utf8')) : {};
 const domain = urls.site || status.site;
 const outDir = 'web/dist';
+// The published URL is the clean form; Pages serves it from the .html file in the artefact.
 const fileFor = (u) => {
   const clean = u.split('#')[0].split('?')[0];
-  if (clean.endsWith('/')) return join(outDir, clean.slice(1), 'index.html');
-  return join(outDir, clean.replace(/^\//, ''));
+  if (clean === '' || clean === '/') return join(outDir, 'index.html');
+  const rel = clean.replace(/^\//, '');
+  if (clean.endsWith('/')) return join(outDir, rel, 'index.html');
+  if (existsSync(join(outDir, rel + '.html'))) return join(outDir, rel + '.html');
+  return join(outDir, rel, 'index.html');
 };
 const PLACEHOLDER = /\b(tbd|todo|lorem ipsum|placeholder|coming soon)\b/i;
 
 if (!base) {
   const fails = [];
   const sitemap = existsSync(join(outDir, 'sitemap.xml')) ? readFileSync(join(outDir, 'sitemap.xml'), 'utf8') : '';
+  // Exact loc membership: 'https://site/tool' must not match the sitemap entry for 'https://site/tools/'.
+  const sitemapLocs = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
   let kept = 0, noindexed = 0;
   for (const e of urls.entries ?? []) {
     const keep = e.action !== 'noindex';
@@ -36,12 +42,12 @@ if (!base) {
       if (!existsSync(f)) { fails.push(e.url + ': no file'); continue; }
       const h = readFileSync(f, 'utf8');
       if (!/<title>[^<]+<\/title>/.test(h)) fails.push(e.url + ': no title');
-      if (!h.includes('https://' + domain + '/')) fails.push(e.url + ': canonical is not on ' + domain);
+      if (!h.includes('rel="canonical" href="https://' + domain + e.url + '"')) fails.push(e.url + ': canonical is not the clean URL on ' + domain);
       if (h.includes('noindex')) fails.push(e.url + ': a kept page says noindex');
       if (PLACEHOLDER.test(h.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]*>/g, ' '))) fails.push(e.url + ': placeholder text');
     } else {
       noindexed++;
-      if (sitemap.includes('https://' + domain + e.url)) fails.push(e.url + ': noindex page is in the sitemap');
+      if (sitemapLocs.has('https://' + domain + e.url)) fails.push(e.url + ': noindex page is in the sitemap');
       if (existsSync(f) && !readFileSync(f, 'utf8').includes('noindex')) fails.push(e.url + ': is not marked noindex');
     }
   }

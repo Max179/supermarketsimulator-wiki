@@ -156,3 +156,31 @@ and the replacement record refreshed; chain re-run: `pages=242 indexable=211`, 8
 citations, coverage, classify, image-sanity, image-coverage, preflight and smoke all exit 0. Residual: four vehicle
 entries still show the shop-front screenshot and eight pictures are generic rather than subject-specific — both
 listed in [`reports/image-replacement-2026-10-30.md`](image-replacement-2026-10-30.md).
+
+### SEO pass — clean URLs, titles/descriptions, sitemap, IndexNow (2026-11-02)
+
+The 2026-11-02 SEO pass fixed the measured gaps before the next deploy; full before/after table and commands are in
+[`reports/seo-audit.md`](seo-audit.md). Page and URL counts are unchanged: **242 pages / 211 indexable**.
+
+- Clean URL scheme everywhere: canonical, `og:url`, both hreflang links, JSON-LD urls, sitemap locs and all 2311
+  internal `.html` links now use the form Cloudflare Pages serves; the artefact still emits the same 242 `.html`
+  files. `config/urls.json` is re-keyed by clean URL (211 keep / 23 noindex), and the classifier, smoke test and site
+  tests map a clean URL back to its file.
+- Titles: 113 over 60 chars -> **0**; all 211 unique, 25-60 chars, primary keyword first, brand suffix omitted rather
+  than truncated (one >60 page title uses a shortened label; 121 now sit in the 45-60 target band).
+- Descriptions: 149 over 160 -> **0** (max 159), 10 under 70 -> **0** (min 77), all unique, cut at word boundaries.
+- Sitemap: 211 clean locs, well-formed XML now parsed by the gate; 118 truthful `<lastmod>` values from
+  `content/updates.json` (2026-10-01) and `images-manifest.json retrievedAt` (2026-10-30); the 93 pages without a
+  recorded date carry none — the build date is never faked.
+- JSON-LD: WebSite + clean SearchAction on home; WebPage or Article + BreadcrumbList on every indexable page; Article
+  headline/description/image and dates only from recorded values; all urls equal the canonical. Full Open Graph and
+  Twitter card on every indexable page, `twitter:image == og:image`.
+- robots.txt unchanged in content (allow / + sitemap) and now gated; the evidence layer stays noindex and out of the
+  sitemap.
+- IndexNow: public key `819413a198ad7679e8eb70465295a15a` served as `/<key>.txt` (files in `web/assets/`), plus
+  `tools/indexnow.mjs` and an `npm run indexnow` script; never run by the build, tests or publish workflow.
+- Gate suite: 88 -> **95 passed, 0 failed** with 7 new SEO gates. Mutation check recorded in the audit: lengthening
+  the home title past 60 made the suite fail with `index.html title length 71`, then the source was restored.
+- Chain re-run: `pages=242 indexable=211`, 95/95 tests, tsc, content-gate 119/0, citations unmatched=0, coverage 21/21,
+  classify 211 keep/23 noindex, image-sanity 108/0 flagged, image-coverage 108 used/0 unused, preflight 11/11 and smoke
+  pass. Post-deploy IndexNow submission and Search Console stay external, recorded in the audit.
