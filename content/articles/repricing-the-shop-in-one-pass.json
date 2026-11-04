@@ -63,6 +63,9 @@
     "the-pricing-screen-and-how-a-price-is-chosen",
     "wholesale-offers-and-discounts"
   ],
+  "relatedGuides": [
+    "what-a-days-profit-is-actually-made-of"
+  ],
   "sources": [
     "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
   ]

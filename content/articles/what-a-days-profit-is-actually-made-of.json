@@ -1,0 +1,77 @@
+{
+  "id": "what-a-days-profit-is-actually-made-of",
+  "title": "What a day's profit is actually made of",
+  "tier": "published",
+  "kind": "article",
+  "target": "Where profit in Supermarket Simulator comes from: market cost, the price you display, the margin behind it, discounts, offers, expenses and the day's record.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shop with at least one product stocked and priced",
+    "The pricing side of the shop reachable",
+    "A finished day, or the day's results screen open"
+  ],
+  "steps": [
+    {
+      "do": "Start from the cost the market tracks, not from the number on the shelf.",
+      "because": "the market keeps a product cost and a displayed price as separate values, so the two can move apart without you changing a tag (LocalMarketProductCost, LocalMarketProductPriceDisplay)"
+    },
+    {
+      "do": "Treat the displayed price as a decision of its own, made on the pricing screen rather than copied from the cost.",
+      "because": "prices are set on a canvas of their own through a price manager and evaluated by a manager of their own before a change is announced (SettingPriceCanvas, PriceManager, PriceEvaluationManager, PriceChangeNotification)"
+    },
+    {
+      "do": "Use the margin the pricing screen computes instead of working it out from memory.",
+      "because": "the screen computes the margins it needs through a delegate of its own (ComputeRequiredMarginsDelegate)"
+    },
+    {
+      "do": "Count a discount against what you receive, not as a different shelf price.",
+      "because": "discounts are a separate system with their own panel, current discount and rate (DiscountManager, DiscountPanel, currentDiscount, discountRate)"
+    },
+    {
+      "do": "Count a wholesale offer against what you pay for stock, not as extra profit.",
+      "because": "offers run through their own manager, carry a kind and a time limit, and are accepted rather than applied automatically (WholeSaleManager, OfferType, offertime, CanAcceptOffer, isBuyOffer)"
+    },
+    {
+      "do": "Check whether buying in bulk actually lowered the unit cost before you count the saving.",
+      "because": "bulk buying carries a discount ratio of its own rather than being free of cost (bulkDiscountRatio)"
+    },
+    {
+      "do": "Expect some goods to reprice themselves, and read the new price before you judge the margin.",
+      "because": "there is a kind of product whose price is dynamic rather than fixed (DynamicPriceProduct)"
+    },
+    {
+      "do": "Read the day's profit from the day's own record, not from the amount of money in the till.",
+      "because": "the game tracks a daily profit and keeps a daily record, a manager and a screen of its own for it (dailyProfit, DailyStatisticsData, DailyStatisticsManager, DailyStatisticsScreen)"
+    },
+    {
+      "do": "Take the shop's running costs and any automatically paid bills off the day before you call the rest profit.",
+      "because": "recurring costs are a system of their own with types and records, and bills can be settled automatically through their own manager and canvas (ExpensesManager, ExpenseType, ExpensesData, AutoPaymentManager, AutoPaidBillsCanvas, BillItem)"
+    },
+    {
+      "do": "Keep borrowed money out of the profit figure and plan for the repayment that follows it.",
+      "because": "a loan carries a status and its own payments tab, a repayment keeps a remaining payment count, and automatic payments record how they were made (LoanStatus, LoanPaymentsTab, LoanRepaymentItem, remainingPaymentNumber, AutoPaymentManager, paymentViaCreditCard)"
+    }
+  ],
+  "commonMistakes": [
+    "Reading the till total as profit instead of reading the day's own record.",
+    "Counting a discount as if it changed the cost of the stock.",
+    "Treating a wholesale offer as earnings rather than as a cheaper purchase.",
+    "Calling the day's takings profit before the running costs and bills come out.",
+    "Counting borrowed money as a good day's trading."
+  ],
+  "relatedEntities": [
+    "the-local-market-and-product-costs",
+    "the-pricing-screen-and-how-a-price-is-chosen",
+    "wholesale-offers-and-discounts",
+    "what-your-shop-spends",
+    "the-day-results-screen-and-what-it-counts"
+  ],
+  "relatedGuides": [
+    "repricing-the-shop-in-one-pass",
+    "turning-a-days-results-into-the-next-days-plan",
+    "a-trading-day-that-pays"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -13,6 +13,14 @@ P1 — 顾客词簇：**本地完成**（2026-11-03，未 push）
 - 门禁：build 243/212、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 212/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
 - 记录：`reports/growth-2026-11-03.md`、`reports/seo-audit.md`（2026-11-03 addendum）。
 
+P1b — 利润词簇：**本地完成**（2026-11-04，未 push）
+
+- 新增可索引指南 `/articles/what-a-days-profit-is-actually-made-of`（10 步，覆盖市场成本 / 标价 / 毛利计算 / 折扣 / 批发报价 / 动态价 / 日结记录 / 经常性开支与自动账单 / 借款）。
+- 内链：新指南 → 5 个 entry + 3 篇 guide；`/`（Latest updates）、`/articles/repricing-the-shop-in-one-pass`、`/articles/turning-a-days-results-into-the-next-days-plan` → 新指南；`/articles/` 与 `/updates` 自动收录。共 3 条可见入站内链，未改模板区块。
+- noindex 升级 **0 个**：11 个 note 仍全部是 diagram-only，108 条图片记录全部在用、无未用图，无新图包且未重跑 IL2CPP；0～2 的额度用 0。
+- 门禁：build 244/213、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 213/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
+- 记录：`reports/growth-2026-11-04.md`。
+
 下一步（需 Lead 明确指令）：
 - push → Actions gate/deploy → `node tools/smoke.mjs https://supermarketsimulator.wiki`。
 - 线上通过后手动 `npm run indexnow -- --dry-run` / `npm run indexnow`（不在 CI）。

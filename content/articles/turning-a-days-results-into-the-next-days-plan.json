@@ -60,6 +60,9 @@
     "bills-loans-and-growth-screens",
     "the-day-cycle"
   ],
+  "relatedGuides": [
+    "what-a-days-profit-is-actually-made-of"
+  ],
   "sources": [
     "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
   ]

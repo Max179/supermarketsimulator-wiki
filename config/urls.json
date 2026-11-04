@@ -385,6 +385,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/articles/what-a-days-profit-is-actually-made-of",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/articles/what-gets-a-copy-in-a-shared-shop",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"
