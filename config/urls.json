@@ -305,6 +305,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/articles/reordering-by-what-is-on-the-shelf",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/articles/repricing-the-shop-in-one-pass",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"

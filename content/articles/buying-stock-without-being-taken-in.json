@@ -62,6 +62,9 @@
     "wholesale-offers-and-discounts",
     "the-local-market-and-product-costs"
   ],
+  "relatedGuides": [
+    "reordering-by-what-is-on-the-shelf"
+  ],
   "sources": [
     "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
   ]

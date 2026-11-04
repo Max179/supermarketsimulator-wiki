@@ -1,0 +1,90 @@
+{
+  "id": "reordering-by-what-is-on-the-shelf",
+  "title": "Reordering by what is on the shelf, not by habit",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to decide what to reorder in Supermarket Simulator and how much: shelf and incoming counts, slot space, the order notebook, unit cost against the display price, and the back room a bulk deal needs.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A shelf that is actually selling",
+    "Access to the ordering screen",
+    "Room in the back room for a delivery",
+    "A display price set for the product you are reordering"
+  ],
+  "steps": [
+    {
+      "do": "Count what is already on the shelf and what is still on its way as two different numbers.",
+      "because": "products are counted as a pair of amounts, so stock already displayed and stock still to come are kept apart rather than added into one figure (ProductCountPair)"
+    },
+    {
+      "do": "Read the shelf by its slots before you decide how much to buy back.",
+      "because": "a shelf is a set of rack slots with their own records and indices, so the gaps are counted slot by slot rather than as one empty shelf (RackSlot, RackSlotData, rackSlotIndex)"
+    },
+    {
+      "do": "Treat a box that is already sitting on the shelf as stock in place, not as spare stock in the back.",
+      "because": "a box on a shelf is tracked against a slot, which is why it counts toward what the shelf already holds (RackSlotBoxTarget, targetRackSlot)"
+    },
+    {
+      "do": "Read the order notebook before you add another line to it.",
+      "because": "orders are kept in a notebook held in its own container, with order data of its own, so what is already ordered can be checked rather than remembered (OrderNotebook, OrderNotebookContainer, Order, OrderData)"
+    },
+    {
+      "do": "Set the quantity with the order screen's own increase and decrease controls instead of retyping a number.",
+      "because": "the build names the order-goods action and separate increase and decrease buttons for the amount (Order Goods, Increase Product Amount Button, Decrease Product Amount Button)"
+    },
+    {
+      "do": "Compare the cost you are about to pay with the price the shelf displays, not with what you paid last time.",
+      "because": "the market keeps a product cost and a displayed price as separate values, so the two can move apart between deliveries (LocalMarketProductCost, LocalMarketProductPriceDisplay)"
+    },
+    {
+      "do": "Check the margin on the pricing screen against the cost of this reorder before the delivery is confirmed.",
+      "because": "the pricing screen has its own price manager and computes the margins it needs through a delegate of its own (PriceManager, ComputeRequiredMarginsDelegate)"
+    },
+    {
+      "do": "Take a bulk or wholesale saving only when the shelf and the back room can take the extra amount.",
+      "because": "bulk buying carries a discount ratio of its own, and a wholesale offer has a kind, a time limit and an acceptance step, so a cheaper unit is still a larger purchase (bulkDiscountRatio, WholeSaleManager, OfferType, offertime, CanAcceptOffer)"
+    },
+    {
+      "do": "Keep the back room able to take a delivery by merging part-used boxes and sorting stock into its sections.",
+      "because": "boxes can be merged, and storage is built from sections with cells that can be sorted (BoxMergeControl, StorageSectionItem, SortableAreaCell)"
+    },
+    {
+      "do": "Put the delivery where the next refill happens rather than on the first free piece of floor.",
+      "because": "the game has placement areas for boxes, including one for sorted boxes and one for stacked boxes (BoxPlacementArea, SortedBoxPlacementArea, StackedBoxPlacementArea)"
+    },
+    {
+      "do": "Reorder on a walk-order-put-away rhythm, before the slot is empty rather than after the shelf has run dry.",
+      "because": "the game runs a restock loop over products and treats an empty slot as the trigger for a refill, so the last moment to act is earlier than the empty shelf (ProductRestockLoop, SpawnProductOnEmptyShelf)"
+    },
+    {
+      "do": "Before adding a product that is new to the shop, check that the shop has reached the level it asks for.",
+      "because": "a product can carry a required shop level before it can be ordered (RequiredStoreLevel)"
+    }
+  ],
+  "commonMistakes": [
+    "Adding a delivery to a shelf that has no slot left for it.",
+    "Counting an order that has not arrived as if it were already on the shelf.",
+    "Reordering from the old cost after the market has moved.",
+    "Buying a bulk lot because the unit is cheap and then storing it on the floor.",
+    "Ordering at the first empty slot, when the shelf has been emptying for hours."
+  ],
+  "relatedEntities": [
+    "products-and-deliveries",
+    "restocking-shelves",
+    "the-local-market-and-product-costs",
+    "the-pricing-screen-and-how-a-price-is-chosen",
+    "shelf-slots-and-display-space",
+    "wholesale-offers-and-discounts",
+    "the-boxes-in-the-back-room",
+    "storage-sections-and-sorting"
+  ],
+  "relatedGuides": [
+    "restocking-routine",
+    "buying-stock-without-being-taken-in",
+    "buying-on-offer-without-filling-the-back-room",
+    "repricing-the-shop-in-one-pass"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

@@ -21,6 +21,14 @@ P1b — 利润词簇：**本地完成**（2026-11-04，未 push）
 - 门禁：build 244/213、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 213/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
 - 记录：`reports/growth-2026-11-04.md`。
 
+P1c — 进货补货 / 进货定价词簇：**本地完成**（2026-11-05，未 push）
+
+- 新增可索引指南 `/articles/reordering-by-what-is-on-the-shelf`（12 步，覆盖货架与在途数量 / 货道 / 架上箱 / 订货本 / 数量控件 / 市场成本 vs 标价 / 毛利 / 批量与批发报价 / 后仓合并与分区 / 箱子落位 / 补货节奏 / 商品所需店铺等级）。
+- 内链：新指南 → 8 个 entry + 4 篇 guide；`/`（Latest updates）、`/articles/restocking-routine`、`/articles/buying-stock-without-being-taken-in` → 新指南；`/articles/` 与 `/updates` 自动收录。共 3 条可见入站内链，未改模板区块。
+- noindex 升级 **0 个**：11 个 note 仍全部是 diagram-only，108 条图片记录全部在用、无未用图，无新图包且未重跑 IL2CPP；0～2 的额度用 0。最厚的 note（15 facts / 423 words）也受图片政策约束，不凑数。
+- 门禁：build 245/214、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 214/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
+- 记录：`reports/growth-2026-11-05.md`。
+
 下一步（需 Lead 明确指令）：
 - push → Actions gate/deploy → `node tools/smoke.mjs https://supermarketsimulator.wiki`。
 - 线上通过后手动 `npm run indexnow -- --dry-run` / `npm run indexnow`（不在 CI）。
