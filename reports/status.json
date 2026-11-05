@@ -1,9 +1,9 @@
 {
   "site": "supermarketsimulator.wiki",
-  "head": "4440601",
-  "commits": 29,
-  "pages": 245,
-  "indexable": 214,
+  "head": "91ef09f",
+  "commits": 31,
+  "pages": 246,
+  "indexable": 215,
   "noindex": 31,
   "classes": 21152,
   "fields": 170271,
@@ -11,12 +11,12 @@
   "generatedBy": "pipeline/status.mjs",
   "headNote": "generated from this commit; the commit that adds this file is one step later",
   "handoff": {
-    "trackedFiles": 524,
+    "trackedFiles": 525,
     "byTop": {
       "(root)": 9,
       ".github": 1,
       "config": 2,
-      "content": 404,
+      "content": 405,
       "data": 5,
       "docs": 2,
       "pipeline": 41,
