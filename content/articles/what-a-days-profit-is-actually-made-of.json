@@ -69,7 +69,8 @@
   "relatedGuides": [
     "repricing-the-shop-in-one-pass",
     "turning-a-days-results-into-the-next-days-plan",
-    "a-trading-day-that-pays"
+    "a-trading-day-that-pays",
+    "pricing-a-new-product-before-the-first-sale"
   ],
   "sources": [
     "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."

@@ -275,6 +275,11 @@
       "reason": "player-facing page: a question a player asks"
     },
     {
+      "url": "/articles/pricing-a-new-product-before-the-first-sale",
+      "action": "keep",
+      "reason": "player-facing page: a question a player asks"
+    },
+    {
       "url": "/articles/reading-the-games-own-objectives",
       "action": "keep",
       "reason": "player-facing page: a question a player asks"

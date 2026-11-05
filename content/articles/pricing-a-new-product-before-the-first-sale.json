@@ -1,0 +1,85 @@
+{
+  "id": "pricing-a-new-product-before-the-first-sale",
+  "title": "Pricing a new product before the first sale",
+  "tier": "published",
+  "kind": "article",
+  "target": "How to set a new product's first price in Supermarket Simulator before it sells: market cost, pricing screen margin, quick picks, dynamic goods and offers.",
+  "version": "1.6.0 (223), read from the copy of the game this site was built from (see the sources page)",
+  "prerequisites": [
+    "A product you can order at your shop's current level",
+    "The product's market cost visible while you order",
+    "Access to the pricing screen",
+    "A shelf slot or display slot that can take the first delivery",
+    "Enough cash for the first order"
+  ],
+  "steps": [
+    {
+      "do": "Start from the buying list and confirm the product is there before you plan a price around it.",
+      "because": "what can be bought is kept as sales items with a kind of sale of its own, so the list is the catalogue the shop is working from (SalesItem, SalesType)"
+    },
+    {
+      "do": "Check the shop level the product asks for, because a price is no use on a product you cannot order yet.",
+      "because": "a product can carry a required store level before it can be ordered (RequiredStoreLevel)"
+    },
+    {
+      "do": "Read the market's cost for that product on the day you order, rather than the price you remember paying.",
+      "because": "the market keeps a product cost and a displayed price as separate values, so the two can move apart (LocalMarketProductCost, LocalMarketProductPriceDisplay)"
+    },
+    {
+      "do": "Set the first price on the pricing screen, not by copying the cost onto a shelf tag.",
+      "because": "prices are set on a canvas of their own through a price manager and evaluated by a manager of their own (SettingPriceCanvas, PriceManager, PriceEvaluationManager)"
+    },
+    {
+      "do": "Use the margin the screen computes as the test of the number you typed.",
+      "because": "the screen computes the margins it needs through a delegate of its own (ComputeRequiredMarginsDelegate)"
+    },
+    {
+      "do": "Treat a quick pick as a shortcut to a price you have already decided, not as the decision itself.",
+      "because": "a price can be picked quickly through quick-pick buttons, a group, a mode and their own data (PriceQuickPickButton, PriceQuickPickGroup, PriceQuickPickMode, PriceQuickPickSO)"
+    },
+    {
+      "do": "Check whether the product prices itself before you fix a margin on it.",
+      "because": "there is a kind of product whose price is dynamic rather than fixed (DynamicPriceProduct)"
+    },
+    {
+      "do": "Keep a wholesale offer and a discount out of the shelf price, and count each where it belongs.",
+      "because": "offers run through their own manager, carry a kind and a time limit and are accepted rather than applied automatically, while discounts have their own manager and rate (WholeSaleManager, OfferType, offertime, CanAcceptOffer, DiscountManager, discountRate)"
+    },
+    {
+      "do": "Before the first box is shelved, check the slot that will hold it rather than only the shelf's total space.",
+      "because": "a shelf is made of rack slots and display slots with their own records, and a display slot can carry a condition on what may be placed in it (RackSlot, DisplaySlot, IDisplaySlotProductPlacementCondition)"
+    },
+    {
+      "do": "Let the first day's own record tell you whether the price worked before you change it again.",
+      "because": "the game keeps a daily record with a manager and a screen of its own, and a price change is evaluated and raises a notification (dailyProfit, DailyStatisticsData, DailyStatisticsManager, DailyStatisticsScreen, PriceEvaluationManager, PriceChangeNotification)"
+    }
+  ],
+  "commonMistakes": [
+    "Pricing the new product from the cost of the last one instead of its own market cost.",
+    "Copying the market cost onto the shelf and leaving no margin.",
+    "Using a quick pick without checking the margin it leaves.",
+    "Treating a wholesale offer or a discount as if it were the shelf price.",
+    "Shelving the first delivery before checking that a slot can take it.",
+    "Reading the till total instead of the day's own record when judging the first price."
+  ],
+  "relatedEntities": [
+    "the-list-you-buy-from",
+    "products-and-deliveries",
+    "the-local-market-and-product-costs",
+    "the-pricing-screen-and-how-a-price-is-chosen",
+    "wholesale-offers-and-discounts",
+    "shelf-slots-and-display-space",
+    "restocking-shelves",
+    "the-day-results-screen-and-what-it-counts"
+  ],
+  "relatedGuides": [
+    "buying-stock-without-being-taken-in",
+    "reordering-by-what-is-on-the-shelf",
+    "repricing-the-shop-in-one-pass",
+    "what-a-days-profit-is-actually-made-of",
+    "restocking-routine"
+  ],
+  "sources": [
+    "A local copy of the game, read only. Grounding for each step is on the technical reference pages; no number is estimated."
+  ]
+}

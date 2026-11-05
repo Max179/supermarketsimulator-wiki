@@ -29,6 +29,14 @@ P1c — 进货补货 / 进货定价词簇：**本地完成**（2026-11-05，未 
 - 门禁：build 245/214、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 214/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
 - 记录：`reports/growth-2026-11-05.md`。
 
+P1d — 进货定价连接路径（新品牌首次定价）：**本地完成**（2026-11-05，未 push）
+
+- 新增可索引指南 `/articles/pricing-a-new-product-before-the-first-sale`（10 步，覆盖购买清单 / 商品所需店铺等级 / 当日市场成本 / 定价画布 / 毛利 / 快速定价 / 动态价 / 批发报价与折扣 / 货道或展示槽 / 日结记录）。定位是「购买/报价」与「利润/补货」之间的连接路径：首次定价，不是顾客路线、日结利润、一键改价或按货架补货数量。
+- 内链：新指南 → 8 个 entry + 5 篇 guide；`/`（Latest updates）、`/articles/buying-stock-without-being-taken-in`、`/articles/what-a-days-profit-is-actually-made-of` → 新指南；`/articles/` 与 `/updates` 自动收录。共 3 条可见入站内链，未改模板区块。
+- noindex 升级 **0 个**：11 个 note 仍全部是 diagram-only，108 条图片记录全部在用、无未用图，无新图包且未重跑 IL2CPP；0～2 的额度用 0。最厚的三篇（15/375、10/364、9/362 facts/body words）也受图片政策约束，不凑数。
+- 门禁：build 246/215、tests 95/0、tsc 0、content-gate 119/0、citations unmatched=0、coverage 21/21、image-coverage 108/11、classify 215/23、preflight 11/11、smoke pass。`reports/status.json` 已重生成。
+- 记录：`reports/growth-2026-11-05.md`（Pass 2）。
+
 下一步（需 Lead 明确指令）：
 - push → Actions gate/deploy → `node tools/smoke.mjs https://supermarketsimulator.wiki`。
 - 线上通过后手动 `npm run indexnow -- --dry-run` / `npm run indexnow`（不在 CI）。
